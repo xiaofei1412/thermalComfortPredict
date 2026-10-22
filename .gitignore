@@ -1,0 +1,28 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Generated experiments and model weights
+outputs/
+runs/
+checkpoints/
+mlruns/
+wandb/
+*.pt
+*.pth
+*.ckpt
+
+# Operating system files
+.DS_Store
+Thumbs.db
