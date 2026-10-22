@@ -87,7 +87,7 @@ def verify_model(directory, source, model, config):
             "calibration_origins": len(calibration), "margin_rebuilt_from_validation_only": True}
 
 
-def verify_policies(root, model, config, response=False):
+def verify_policies(root, model, config, response=False, policy_factory=None):
     checks, decisions = [], []
     summaries = json.loads((root / "summary.json").read_text())
     for summary in summaries:
@@ -98,6 +98,8 @@ def verify_policies(root, model, config, response=False):
         inputs = json.loads((directory / "api_metadata.json").read_text())["inputs"]
         policy = (ResponseController(model, config, float(summary["controller"].split("_")[-1])) if response
                   else Controller(model, config, summary["controller"]))
+        if policy_factory is not None:
+            policy = policy_factory(summary)
         policy.reset(records[0]["before"], inputs)
         modes, reasons, seconds, errors = Counter(), Counter(), [], []
         for index, record in enumerate(records):
@@ -130,8 +132,8 @@ def verify_policies(root, model, config, response=False):
                        "one_step_mpc_margin_coverage": float(np.mean(abs(np.array(errors)) <= model["margin_K"][0])) if errors else None,
                        "action_and_slew_pass": True, "native_stop_band_pass": True})
     if not response:
-        for day in config["closed_loop"]["start_days"]:
-            directories = [root / f"day{day:g}__{kind}" for kind in config["closed_loop"]["controllers"]]
+        for scenario in dict.fromkeys(s["scenario"] for s in summaries):
+            directories = [root / f"{scenario}__{kind}" for kind in config["closed_loop"]["controllers"]]
             a, b = [[json.loads(s) for s in (directory / "steps.jsonl").read_text().splitlines()] for directory in directories]
             if a[0]["before"] != b[0]["before"]:
                 raise ValueError("Controller comparison started from different FMU states")

@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    {
+      "scenario": "day98_perfect",
+      "energy_saved_percent": 5.3057550201893715,
+      "discomfort_delta_Kh": 0.0,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "both_components_not_increased": true,
+      "outside_hours_not_increased": true,
+      "maximum_deviations_not_increased": true
+    },
+    {
+      "scenario": "day98_warm_bias",
+      "energy_saved_percent": 9.957825839061954,
+      "discomfort_delta_Kh": 0.0,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "both_components_not_increased": true,
+      "outside_hours_not_increased": true,
+      "maximum_deviations_not_increased": true
+    },
+    {
+      "scenario": "day98_cold_bias",
+      "energy_saved_percent": 8.298954777970645,
+      "discomfort_delta_Kh": 0.0,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "both_components_not_increased": true,
+      "outside_hours_not_increased": true,
+      "maximum_deviations_not_increased": true
+    },
+    {
+      "scenario": "day119_perfect",
+      "energy_saved_percent": 8.57290768114916,
+      "discomfort_delta_Kh": 3.508547081210658,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 3.5085470812106507,
+      "energy_lower": true,
+      "discomfort_not_increased": false,
+      "both_components_not_increased": false,
+      "outside_hours_not_increased": false,
+      "maximum_deviations_not_increased": false
+    },
+    {
+      "scenario": "day119_warm_bias",
+      "energy_saved_percent": 7.9313232863117396,
+      "discomfort_delta_Kh": 2.497170248739806,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 2.497170248739799,
+      "energy_lower": true,
+      "discomfort_not_increased": false,
+      "both_components_not_increased": false,
+      "outside_hours_not_increased": false,
+      "maximum_deviations_not_increased": false
+    },
+    {
+      "scenario": "day119_cold_bias",
+      "energy_saved_percent": 6.816457030984465,
+      "discomfort_delta_Kh": 4.654730055652394,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 4.654730055652394,
+      "energy_lower": true,
+      "discomfort_not_increased": false,
+      "both_components_not_increased": false,
+      "outside_hours_not_increased": false,
+      "maximum_deviations_not_increased": false
+    },
+    {
+      "scenario": "day140_perfect",
+      "energy_saved_percent": 10.476139356747217,
+      "discomfort_delta_Kh": 0.5621141867083965,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 0.5621141867083859,
+      "energy_lower": true,
+      "discomfort_not_increased": false,
+      "both_components_not_increased": false,
+      "outside_hours_not_increased": false,
+      "maximum_deviations_not_increased": false
+    },
+    {
+      "scenario": "day140_warm_bias",
+      "energy_saved_percent": 4.618409796645808,
+      "discomfort_delta_Kh": 0.48717762162441414,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 0.4871776216244097,
+      "energy_lower": true,
+      "discomfort_not_increased": false,
+      "both_components_not_increased": false,
+      "outside_hours_not_increased": false,
+      "maximum_deviations_not_increased": false
+    },
+    {
+      "scenario": "day140_cold_bias",
+      "energy_saved_percent": 6.271560615493313,
+      "discomfort_delta_Kh": 1.6568009740218326,
+      "cold_delta_Kh": 0.0,
+      "hot_delta_Kh": 1.656800974021829,
+      "energy_lower": true,
+      "discomfort_not_increased": false,
+      "both_components_not_increased": false,
+      "outside_hours_not_increased": false,
+      "maximum_deviations_not_increased": false
+    }
+  ],
+  "all_energy_and_integral_pass": false,
+  "all_comfort_measures_pass": false
+}

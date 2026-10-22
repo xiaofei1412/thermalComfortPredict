@@ -4,7 +4,7 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：预测、单热区仿真、灰箱残差模型与短时 MPC 基线链路已贯通。** 已有非负耗电、独立动作干预、经验裕量及规则回退对照；耗电下降伴随温度越界略增，可靠性和人员需求接入仍待完善。
+**当前状态：预测、单热区仿真、灰箱残差模型与短时 MPC 基线链路已贯通。** 已完成恢复规则、空载耗电修正与天气误差对照；较冷日期实现零越界节电，较暖日期仍增加过热，整体可靠性和人员需求接入仍待完善。
 
 ## 项目入口
 
@@ -17,6 +17,8 @@
 - [动态模型协议与 MPC 预测接口](docs/experiments/dynamics.md)
 - [灰箱残差、动作响应与 MPC 对照结果](reports/mpc/REPORT.md)
 - [MPC 运行协议与保护边界](docs/experiments/mpc.md)
+- [舒适恢复、空载耗电与天气误差结果](reports/recovery_mpc/REPORT.md)
+- [恢复MPC与天气压力测试协议](docs/experiments/recovery_mpc.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -38,6 +40,7 @@ thermalComfortPredict/
 ├── reports/simulation/    # 仿真指标、轨迹样例与验证证据
 ├── reports/dynamics/      # 隔离切分、多步误差与保护证据
 ├── reports/mpc/           # 灰箱、动作干预与短时控制对照
+├── reports/recovery_mpc/  # 恢复、停机耗电与天气误差证据
 ├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/

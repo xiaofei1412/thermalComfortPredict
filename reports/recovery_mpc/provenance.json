@@ -1,0 +1,49 @@
+{
+  "runtime": {
+    "python": "3.14.3",
+    "numpy": "2.3.5",
+    "pandas": "3.0.0",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "code_sha256": {
+    "thermal_comfort/recovery.py": "a4ed0b68e4a00facfa8f1e5273ec7caa9b05e2af19134d45207358a73453c94f",
+    "thermal_comfort/greybox.py": "a7c640d178b2054e1c990525afdae526f907367082896f0955e538758126a2d2",
+    "thermal_comfort/mpc.py": "a55356058539752019eb7916ab1b441d8aa48575c6aa257e1dacee487283d202",
+    "thermal_comfort/simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+    "scripts/verify_recovery.py": "db161c3b3f47592424a9d3249d5e3437cfd0c450f72cc22a2a75b76cdbfa16cd",
+    "scripts/report_recovery.py": "f0acf89eb20e9268a67d80611975eeb79145ad60d59135495ac34fa77c4c43ff",
+    "scripts/verify_mpc.py": "f01586fa516afe8d94551ac41972bcd51807864feeac5e5eebb373274beb4eb9",
+    "configs/recovery_mpc.json": "73ca063a7963042d60102b0c6aea555bf5fe8afbfa9a1b352487594fc0488286",
+    "configs/mpc.json": "71eafecff7bf2aa912d750baf2de9c8cf2ab8ae58d7029ab496b8451803fb1f8"
+  },
+  "scope": "Single fixed FMU, synthetic weather forecast biases, no real-building closed-loop evidence",
+  "text_artifacts": "Report JSON uses UTF-8 LF; embedded source manifests refer to original outputs, not renamed report copies",
+  "artifacts_sha256": {
+    "acceptance.json": "3edcb1b4781d69476999774484b5fb9c925d1668dc06f3f56e8dccd04d4ea511",
+    "calibration_manifest.json": "bf441120245cdd725726333f975a754cfb183fc7bf451d8190d6f47548b075ec",
+    "calibration_summary.json": "7e3b9f9a9480e40cfbde63892db25e084a0d7e8d15ed9541cf72a887d2088f95",
+    "closed_loop.png": "dfbac1dbd1f7177d264a6fb216d24efa548912298c81b0b22b47e73a4ace8fc0",
+    "comparison.csv": "edf8a29cc5750d7d894a0fdab44aed321aa59003c45d45a555394040c70db38c",
+    "daily_comparison.csv": "29871780f999dc012670e71a6806fc1d9eb04648d07a6ee9e795ab18257418f5",
+    "decision_audit.csv": "579d73319105a2cd86f2536a3a5816b8ae0f3a47d57f5c239ad9615824a5cc9b",
+    "manifest.json": "86a6d4358b71a7901089f8f53dd395bad527c5c285ade61d4d7c14debd35b884",
+    "model_coverage.csv": "c5cdb1ad6b6d5b5e6b80388b80f15acd38eb130a67d2d8a3d104d91acabab3d0",
+    "model_manifest.json": "f39d6694aeda1c48caae39bbdd2506f5d43001f2150c0622e9e7ee4aa3468354",
+    "model_metrics.csv": "f3e64abe1eacfda96e65a570d1a20f03cd98024b08ad6c50aaea0edeb9129efb",
+    "model_power_metrics.csv": "9b25f1297174c83f7b200c38d42758c72c2d7715707646cd085aeecc39122878",
+    "model_selection.json": "bbf6669a25cb10f74967b1f4827cffcdfff6dc89e7cb6e4b8375dae60b9892f6",
+    "model_split_manifest.json": "6c12899b01130ec97da8e16f3f016d4c55a5b834e78757e6d5743e0e95a3f2cc",
+    "model_weather_prediction_metrics.csv": "2e639d94df74a89bfb149fa06ffc9704ded0f63cb35aa7e2b82666a55621363c",
+    "previous_stage_comparison.csv": "a9422c23be95af8bf0041d77b3ec10f00bfb6dd39a2cc36ba4be6b2ea30c39bb",
+    "response_manifest.json": "86a6d4358b71a7901089f8f53dd395bad527c5c285ade61d4d7c14debd35b884",
+    "response_response_gate.json": "a3bbb0ae39a6107e4eb2c0427efb8803cbd829aa2cc28cef8a43c0a39c2f5338",
+    "response_response_metrics.csv": "2990534278afd40c4a391fb8dcb318a29e5f2aee02f19ac6bec709e3b081e63a",
+    "response_summary.json": "e379ca31c2867fb5a86fe61fd3a46aabd1da5a3db4ea63f736a908fd0c4a9ecd",
+    "summary.json": "d06d3c8cc4bf4b447c1de14af2be55270558f012930c0c3e6540171af10b9d66",
+    "validation_manifest.json": "8a7ef390e0ec7b53806cf645766edbc04e2d1a6b7d01bb4c272bfff46189260e",
+    "validation_summary.json": "14568057ed3f6e9370467eb9782ab6698e57f080e9fbbc64025835abf63d4914",
+    "verification.json": "1ec8e70bec7ccb614e9fd814dc4563e675d20518b7c0d089f5398733b48ec591",
+    "weather_stress.png": "4e53d294132b44c96274654454c7fe08ab2cbe95e1e99859e8854f7df4e265e9"
+  }
+}

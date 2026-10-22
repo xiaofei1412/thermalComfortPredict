@@ -1,0 +1,146 @@
+[
+  {
+    "id": "train_day014_seed101",
+    "split": "train",
+    "start_day": 14,
+    "seed": 101,
+    "warmup_start_s": 604800,
+    "start_s": 1209600,
+    "end_s": 1814400,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "7bffc624a6d8151a2263106f8c1d211477e8345daecf248f497564d67e14ed4b",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "1b7095d7e2e9d1335673fff5ba433480d4d4249d7c995c8f64c741f4fc129b71",
+      "native.csv.gz": "a014a546f0f6a3c5e2ee5b7743ffa3c6abdd316e4847484126e693ad74120e72",
+      "steps.jsonl": "bad336cabd49114e1200a9592ee3521b7e4ba8764cd37975d6b469ccaefb9921",
+      "transitions.csv.gz": "47761af49b3826ec94cf96bcae108cfe91e7999905f9fb90d9bb4b2ec4bf4fad"
+    }
+  },
+  {
+    "id": "train_day035_seed102",
+    "split": "train",
+    "start_day": 35,
+    "seed": 102,
+    "warmup_start_s": 2419200,
+    "start_s": 3024000,
+    "end_s": 3628800,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "fe27941766cbe99c64b800e154cf546319cf4f18a27d30b9b1a812b533c9b745",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "698394591e5b92a03c5d7ef6078a33c45ccc8104b57468ec1eebc78940fd7378",
+      "native.csv.gz": "91006de169c94859e6df377f11580eb3ceab0ac2a6a5466344552a64d6a7a4a2",
+      "steps.jsonl": "5572bfdde032a65a4f39ed5a0d12a037fb2f1078196ce7f452a6ba834be60954",
+      "transitions.csv.gz": "b194214ef72ddd1a92c3b26643d0d327ab9623e67bb4f41a17c83f12ec9e662d"
+    }
+  },
+  {
+    "id": "train_day056_seed103",
+    "split": "train",
+    "start_day": 56,
+    "seed": 103,
+    "warmup_start_s": 4233600,
+    "start_s": 4838400,
+    "end_s": 5443200,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "8e15c8cb197b4586c1c49e14bd0077a891a2d08a7143c0d7cd06f797ddd2252d",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "e691d782e399b3045970b016cf515186a9d1d554203ab87d742aa0f52edcf9d0",
+      "native.csv.gz": "789e4e7526b3ba61481d4a05b3964749f95ed6aa08e51ed3df9556989dff9ac1",
+      "steps.jsonl": "ccaf4f437eae8235e38f3cf84612f85f8aa3a707ba523583355dcaa55f723a9a",
+      "transitions.csv.gz": "d3c57a4e5500bd97310b61bfebd674214075bc3a5e5746547811c90a23afbeb5"
+    }
+  },
+  {
+    "id": "validation_day077_seed201",
+    "split": "validation",
+    "start_day": 77,
+    "seed": 201,
+    "warmup_start_s": 6048000,
+    "start_s": 6652800,
+    "end_s": 7257600,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "397b1f44ac5d4fd06f3560622bfd1f1db3de4e1bc16a632f12e518c6d4a7babe",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "e5154fcbf2aa03e726d3529e5a4eba80c61cf10c76625724af627f7047827536",
+      "native.csv.gz": "f7bfc4eb6e18e88f73812e402bcafcf7e9ea1e9a765cdea080bfa94c69a524fb",
+      "steps.jsonl": "4aed7b1495b214b6b16e8f9e6c53b5b4638e143156dfa2d7a8492918006b5414",
+      "transitions.csv.gz": "1f1cf6b41c30673cf22a9c4b31af71afb13021153244ea2fe1d4260c0c016829"
+    }
+  },
+  {
+    "id": "test_day098_seed301",
+    "split": "test",
+    "start_day": 98,
+    "seed": 301,
+    "warmup_start_s": 7862400,
+    "start_s": 8467200,
+    "end_s": 9072000,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "be19d4d1421d97727fd92b53f4f153a2d77091a813944359f8102122fa1a04a8",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "20ef31879d6089cc9d2078f0b3f6eb1ef42b243347c8b4e7ae033e89e39e1003",
+      "native.csv.gz": "675dbd54180897dfe988841e6434f11a9ac5f149dd909308bbaffab9f207e1d2",
+      "steps.jsonl": "0bd15872299ac340ab8f8242626e5acae77e3de193da254a0e903b763c3235fa",
+      "transitions.csv.gz": "860cc1c6596c831af7221a8c276a2de2030e6075afbad98e00759e2dfa1e68dc"
+    }
+  },
+  {
+    "id": "test_day119_seed302",
+    "split": "test",
+    "start_day": 119,
+    "seed": 302,
+    "warmup_start_s": 9676800,
+    "start_s": 10281600,
+    "end_s": 10886400,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "3e30d34adbc05dec13aef3fc1876cc51efa9b082abf808a64d1fb61597fdc0c9",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "141928fbf42c54170c59aee746373330ea80e2ba04e1fa36952ad6d3a304bb72",
+      "native.csv.gz": "04ea5f895915385e151f31929fdf9a93592e4fe6a279db6d5a1f931daaa20eff",
+      "steps.jsonl": "6ee406ae74ad53a78e30fe03d00f58751ae9944466b5bdc7f47ef6df3ebe1495",
+      "transitions.csv.gz": "cb054dccebf537f17e0bfd510584540b51d63252ab0260f15b6acfb5d97d597c"
+    }
+  },
+  {
+    "id": "warm_train_day063",
+    "split": "train",
+    "start_day": 63,
+    "seed": 401,
+    "warmup_start_s": 4838400,
+    "start_s": 5443200.0,
+    "end_s": 6048000.0,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "ef62812cb7137b09e7e7729aabf3bfce865887560a08d9acf65821376b77069a",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "de0000df8d15966b7515eb8ed7e709532d0e181149dd27ce0646e41bcd4bc53d",
+      "native.csv.gz": "d5062bb9370cd713d26d8f74a24c7faddba1d9ab072971ce400252253d3c7cde",
+      "steps.jsonl": "39e5d2bf26c4e00dd25e1437e6b74ff5e8b2eafee183449ae17e973f12e5162b",
+      "transitions.csv.gz": "a8a0d20626912f044159951d37ed3e92f0fb00bc75491372735451ef2a5edd5f"
+    }
+  },
+  {
+    "id": "warm_validation_day084",
+    "split": "validation",
+    "start_day": 84,
+    "seed": 402,
+    "warmup_start_s": 6652800,
+    "start_s": 7257600.0,
+    "end_s": 7862400.0,
+    "transitions": 672,
+    "source_hashes": {
+      "api_kpis.json": "7d85454c85ba30376206ef592a456806d31f7884d814867a1ad9b8917311f916",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "694447fe937dae819753f2fbddea22f26b7b2df46c9fa32d4c87a7a7e0a455fc",
+      "native.csv.gz": "e5516d440a72e9da75326e2ea21af0ad22ad36b7e755cc59a3f7e46f446931a0",
+      "steps.jsonl": "9b946733e1ba57fe878a843c3e51f3f43376d5730f968becb4901c9938e72213",
+      "transitions.csv.gz": "ea0a276559701699fe04cc23c44505646e9e1003bda65fb242958c856ff100e1"
+    }
+  }
+]

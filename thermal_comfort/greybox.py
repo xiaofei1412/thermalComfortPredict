@@ -74,6 +74,10 @@ def heat_prediction(model, previous_heat, error, previous_error, temperature, ou
 
 
 def energy_prediction(model, heat, outdoor):
+    if "idle_power_kW" in model:
+        gate = np.minimum(heat / model["power_transition_kW"], 1)
+        x = np.column_stack([gate, heat, heat * np.maximum(20 - outdoor, 0) / 20])
+        return .25 * (model["idle_power_kW"] + x @ model["power"])
     x = np.column_stack([np.ones_like(heat), heat, heat * np.maximum(20 - outdoor, 0) / 20])
     return .25 * (x @ model["power"])
 
