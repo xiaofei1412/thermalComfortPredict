@@ -4,11 +4,13 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：里程碑 1 尚未开始。** 现有算法为历史基线，尚未完成新的复现与评测。公开运行日志用于离线模型验证；真实楼宇闭环控制效果需要另外验证。
+**当前状态：里程碑 1 进行中，数据重建与预测基线子阶段已完成。** 已建立固定来源分组、外部气候测试、五种子预测基线及可复现验证。仿真、动态模型和闭环控制尚未开始。
 
 ## 项目入口
 
 - [PROJECT.md：项目总览、里程碑与阶段结果](PROJECT.md)
+- [正式预测基线结果](reports/baseline/REPORT.md)
+- [安装、运行与评测协议](docs/experiments/baseline.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -21,14 +23,33 @@ thermalComfortPredict/
 ├── README.md
 ├── PROJECT.md
 ├── AGENTS.md
+├── pyproject.toml          # 固定核心依赖
+├── configs/               # 正式实验配置
+├── thermal_comfort/       # 数据重建与预测基线
+├── tests/                 # 数据与模型复现检查
+├── scripts/               # 正式结果重复验证
+├── reports/baseline/      # 提交到 Git 的紧凑结果与证据
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/
 │   ├── README.md
 │   ├── raw/                # 现有原始数据
 │   └── processed/          # 现有历史处理数据
 └── docs/
-    └── development/        # 后续各阶段开发日志
+    ├── experiments/       # 实验协议与数据来源核查
+    └── development/       # 各阶段开发日志
 ```
+
+## 运行基线
+
+按 [安装说明](docs/experiments/baseline.md) 创建环境并安装依赖后，在项目根目录执行：
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -u -m thermal_comfort run
+.\.venv\Scripts\python.exe -u scripts/verify_baseline.py
+```
+
+默认完整工件保存在 `outputs/baseline/`，不提交大型模型或逐行预测。仅重建数据可以运行 `python -m thermal_comfort prepare`。
 
 ## 开发方式
 
@@ -42,4 +63,4 @@ thermalComfortPredict/
 - [BOPTEST 建筑控制评测平台](https://ibpsa.github.io/project1-boptest/)
 - [ThermBuild 数据集](https://fordatis.fraunhofer.de/handle/fordatis/486)
 
-现存数据的准确版本、引用及许可将在数据复现阶段核对。仓库暂不声明覆盖第三方数据的统一许可证。
+现存数据采用固定本地快照，准确上游发行版尚未逐文件匹配；已确认的来源、单位与许可证据见 [数据来源核查](docs/experiments/data-provenance.md)。仓库不声明覆盖第三方数据的统一许可证。

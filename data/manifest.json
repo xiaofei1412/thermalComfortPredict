@@ -1,0 +1,46 @@
+{
+  "path": "data/raw/ashrae_db2.csv",
+  "sha256": "873a83fb9c0d9a6181c663b8af19ff35380153e70ef145e22fe17a32f2727b9a",
+  "rows": 107584,
+  "columns": 70,
+  "encoding": "utf-8-sig",
+  "snapshot": "repository legacy snapshot; exact upstream release unverified",
+  "upstream_dataset": "https://doi.org/10.6078/D1F671",
+  "upstream_repository": "https://github.com/CenterForTheBuiltEnvironment/ashrae-db-II",
+  "upstream_reference_commit": "c527d6115ebadb4725a4e1406b2439a7a1ffd214",
+  "provenance_checked_on": "2026-10-22",
+  "license": {
+    "current_dryad_metadata": "CC0-1.0",
+    "metadata_evidence": "https://datadryad.org/api/v2/datasets/doi%3A10.6078%2FD1F671",
+    "scope": "The current Dryad record declares CC0-1.0. This does not establish the exact version or original distribution terms of the local modified snapshot."
+  },
+  "schema": [
+    {"index": 0, "header": "Publication (Citation)", "name": "publication"},
+    {"index": 3, "header": "Season", "name": "season"},
+    {"index": 4, "header": "Koppen climate classification", "name": "climate"},
+    {"index": 7, "header": "Country", "name": "country"},
+    {"index": 8, "header": "Building type", "name": "building_type"},
+    {"index": 9, "header": "Cooling startegy_building level", "name": "cooling_strategy"},
+    {"index": 14, "header": "Thermal sensation", "name": "thermal_sensation", "unit": "vote [-3,3], fractional values retained"},
+    {"index": 15, "header": "Thermal sensation acceptability", "name": "acceptability_code"},
+    {"index": 16, "header": "Thermal preference", "name": "thermal_preference"},
+    {"index": 19, "header": "Thermal comfort", "name": "reported_comfort"},
+    {"index": 23, "header": "Clo", "name": "clothing_clo", "unit": "clo"},
+    {"index": 24, "header": "Met", "name": "metabolic_rate_met", "unit": "met"},
+    {"index": 29, "header": "Air temperature", "name": "air_temperature_c", "unit": "degC"},
+    {"index": 30, "header": "Air temperature (\u6924?", "name": "air_temperature_f", "unit": "degF"},
+    {"index": 39, "header": "Radiant temperature (\u6924?", "name": "radiant_temperature_c", "unit": "degC"},
+    {"index": 40, "header": "Radiant temperature (\u6924?", "name": "radiant_temperature_f", "unit": "degF"},
+    {"index": 49, "header": "Relative humidity", "name": "relative_humidity_pct", "unit": "percent"},
+    {"index": 52, "header": "Air velocity (m/s)", "name": "air_speed_m_s", "unit": "m/s"},
+    {"index": 67, "header": "Outdoor air temperature", "name": "outdoor_temperature_c", "unit": "degC"}
+  ],
+  "unit_evidence": "Celsius/Fahrenheit positions are validated on paired numeric values (F = 1.8*C + 32), independently of the damaged header text.",
+  "primary_quality_rules": {
+    "air_temperature_c": "10 < ta < 40, following the official v2.1.0 maintenance script; does not use target values",
+    "relative_humidity_pct": "0 <= RH <= 100",
+    "features": "All four features must be finite and observed; no global imputation",
+    "reference": "https://github.com/CenterForTheBuiltEnvironment/ashrae-db-II/blob/c527d6115ebadb4725a4e1406b2439a7a1ffd214/v2.1.0/main.py"
+  },
+  "grouping": "Normalized publication citation; missing publications form one shared unknown-source group. This is a conservative study-source proxy, not a verified building or person identifier."
+}

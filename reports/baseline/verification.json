@@ -1,0 +1,12 @@
+{
+  "seed": 33,
+  "raw_data_rebuild_exact": true,
+  "split_rebuild_exact": true,
+  "prepared_data_rebuild_exact": true,
+  "forest_max_prediction_difference": 4.440892098500626e-16,
+  "forest_tolerance": 1e-12,
+  "neural_history_exact": true,
+  "neural_predictions_exact": true,
+  "neural_best_epoch": 8,
+  "verification_device": "cuda"
+}

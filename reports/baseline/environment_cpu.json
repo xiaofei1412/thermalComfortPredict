@@ -1,0 +1,28 @@
+{
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.0",
+    "scikit-learn": "1.8.0",
+    "torch": "2.10.0+cpu",
+    "pythermalcomfort": "4.6.2",
+    "scipy": "1.17.0",
+    "numba": "0.63.1",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3"
+  },
+  "cuda_available": false,
+  "torch_cuda": null,
+  "gpu": null,
+  "source_sha256": {
+    "thermal_comfort/__init__.py": "f430f6a194abc206af66303295e9d053081b8282dc1b3e789ce304306338412e",
+    "thermal_comfort/__main__.py": "f746a223c0025386cef7a26534559af1997e4c069ca39eedcd54b8741c0257e2",
+    "thermal_comfort/baseline.py": "694b8ac76d60960f8ed2622a85684417f80ad6c15441f9e7a8067e09f959a94c",
+    "thermal_comfort/data.py": "64dd711fa3fcae932ff027ba75cfeb9a997fb5f64108b05f562ec1d9b1482312",
+    "thermal_comfort/models.py": "7547087a24f99b6b9e7d19a2d62f953f11beb0b5714dd0dd7340506a7205ad69"
+  },
+  "isolated_cpu_environment": true,
+  "pip_check": "passed",
+  "unit_tests_passed": 13
+}

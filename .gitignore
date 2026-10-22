@@ -1,5 +1,6 @@
 # Python environments and caches
 .venv/
+.venv-*/
 venv/
 __pycache__/
 *.py[cod]
@@ -7,6 +8,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .ipynb_checkpoints/
+*.egg-info/
 
 # Local configuration and credentials
 .env

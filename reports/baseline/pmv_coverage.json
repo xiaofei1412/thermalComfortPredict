@@ -1,0 +1,18 @@
+{
+  "train": {
+    "eligible_rows": 44583,
+    "pmv_rows": 3836
+  },
+  "validation": {
+    "eligible_rows": 5913,
+    "pmv_rows": 2853
+  },
+  "test": {
+    "eligible_rows": 7388,
+    "pmv_rows": 1464
+  },
+  "external_climate": {
+    "eligible_rows": 12874,
+    "pmv_rows": 1782
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "raw_sha256": "873a83fb9c0d9a6181c663b8af19ff35380153e70ef145e22fe17a32f2727b9a",
+  "rows": 107584,
+  "numeric_parse_failures": {
+    "thermal_sensation": 0,
+    "acceptability_code": 0,
+    "reported_comfort": 1,
+    "clothing_clo": 0,
+    "metabolic_rate_met": 0,
+    "air_temperature_c": 0,
+    "air_temperature_f": 0,
+    "radiant_temperature_c": 0,
+    "radiant_temperature_f": 0,
+    "relative_humidity_pct": 0,
+    "air_speed_m_s": 0,
+    "outdoor_temperature_c": 0
+  },
+  "missing_publication_rows": 1655,
+  "non_missing_targets": {
+    "thermal_sensation": 104455,
+    "thermal_preference": 85501,
+    "reported_comfort": 36329,
+    "acceptability_code": 62445
+  },
+  "legacy_reproduction": {
+    "complete_rows": 71177,
+    "removed_by_temperature_target_rules": 8763,
+    "removed_non_integer_targets": 1715,
+    "retained_rows": 60699,
+    "matches_stored_csv": true,
+    "stored_csv_sha256": "77bda5d3686ef7c583b983a08e73fd04f1c80686de6318f32ef3c527d8a5f207"
+  },
+  "temperature_pairs": {
+    "air_temperature": {
+      "pairs": 99911,
+      "max_fahrenheit_error": 0.12000000000000455,
+      "median_fahrenheit_error": 0.03999999999999204
+    },
+    "radiant_temperature": {
+      "pairs": 32472,
+      "max_fahrenheit_error": 0.12000000000000455,
+      "median_fahrenheit_error": 0.03999999999999204
+    }
+  },
+  "feature_complete_rows": 71429,
+  "excluded_for_features": 36155,
+  "feature_quality_exclusions": 217,
+  "splits": {
+    "excluded_external_source": {
+      "rows": 206,
+      "sources": 2,
+      "sensation_rows": 206,
+      "preference_rows": 206
+    },
+    "excluded_feature_quality": {
+      "rows": 217,
+      "sources": 11,
+      "sensation_rows": 213,
+      "preference_rows": 50
+    },
+    "external_climate": {
+      "rows": 12915,
+      "sources": 13,
+      "sensation_rows": 12874,
+      "preference_rows": 5818
+    },
+    "test": {
+      "rows": 7460,
+      "sources": 6,
+      "sensation_rows": 7388,
+      "preference_rows": 4228
+    },
+    "train": {
+      "rows": 44669,
+      "sources": 16,
+      "sensation_rows": 44583,
+      "preference_rows": 42881
+    },
+    "validation": {
+      "rows": 5962,
+      "sources": 6,
+      "sensation_rows": 5913,
+      "preference_rows": 2626
+    }
+  },
+  "split_manifest_sha256": "de08bf0fdc2a8c645743d63afee7c115173d7ea466dadf6135d69178eaeb5ad6",
+  "prepared_sha256": "5a70d088a598dafb889766da608af2235c9f3edcae16e0e2c78a1f1d099b5ae1"
+}

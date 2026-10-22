@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thermal-comfort-predict"
+version = "0.1.0"
+description = "Reproducible thermal sensation and preference baselines"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "numpy==2.3.5",
+  "pandas==3.0.0",
+  "scikit-learn==1.8.0",
+  "torch==2.10.0",
+  "pythermalcomfort==4.6.2",
+  "scipy==1.17.0",
+  "numba==0.63.1",
+  "matplotlib==3.10.8",
+  "joblib==1.5.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["thermal_comfort*"]

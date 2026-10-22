@@ -1,0 +1,27 @@
+{
+  "manifest": "data/manifest.json",
+  "split_seed": 33,
+  "seeds": [
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "external_climate": "Cfa",
+  "test_group_fraction": 0.2,
+  "validation_group_fraction": 0.2,
+  "forest": {
+    "n_estimators": 100,
+    "min_samples_leaf": 5,
+    "n_jobs": 4
+  },
+  "neural": {
+    "hidden_size": 128,
+    "epochs": 100,
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "patience": 12,
+    "device": "auto"
+  }
+}
