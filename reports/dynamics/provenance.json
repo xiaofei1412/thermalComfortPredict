@@ -1,0 +1,12 @@
+{
+  "boptest_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+  "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+  "source_files_sha256": {
+    "configs\\dynamics.json": "3e4beff3c8c17604373af5c8b867cc4ab6c7bef4e5a965194f58ac20f01ece72",
+    "thermal_comfort\\dynamics.py": "51a3e5874fa1126ccf36a0b42222c54919ebcf06ec3a689dacd1545709c56186",
+    "thermal_comfort\\excitation.py": "44ea04182b37a5e6e3feb3e9b66ea55207c446921160291889ce0de989ab1fbc",
+    "thermal_comfort\\simulation.py": "c7eac24cebc1dae940e7eafbe4a852e8758860f8cca695b87b1c8eb3c4912b52",
+    "scripts\\verify_dynamics.py": "ba7a7b5bd10df3787589eb00fc630f3e7fb6bcedb0afa0241887d362a52ab561",
+    "D:\\thermalComfortPredict\\scripts\\report_dynamics.py": "c705da594a5d8c9f398eb7f34306747e49b941076a0783167a608598b1673978"
+  }
+}

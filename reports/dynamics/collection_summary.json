@@ -1,0 +1,854 @@
+[
+  {
+    "scenario": "train_day014_seed101",
+    "controller": "excitation",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 7,
+      "warmup_days": 7,
+      "excitation": {
+        "nominal_C": 22.0,
+        "levels_K": [
+          -0.75,
+          -0.375,
+          0.0,
+          0.375,
+          0.75
+        ],
+        "hold_steps": 8,
+        "action_min_C": 18.0,
+        "action_max_C": 24.0,
+        "slew_K_per_step": 0.5,
+        "soft_margin_K": 0.2,
+        "abort_min_C": 18.0,
+        "abort_max_C": 28.0
+      },
+      "episodes": [
+        {
+          "id": "train_day014_seed101",
+          "split": "train",
+          "start_day": 14,
+          "seed": 101
+        },
+        {
+          "id": "train_day035_seed102",
+          "split": "train",
+          "start_day": 35,
+          "seed": 102
+        },
+        {
+          "id": "train_day056_seed103",
+          "split": "train",
+          "start_day": 56,
+          "seed": 103
+        },
+        {
+          "id": "validation_day077_seed201",
+          "split": "validation",
+          "start_day": 77,
+          "seed": 201
+        },
+        {
+          "id": "test_day098_seed301",
+          "split": "test",
+          "start_day": 98,
+          "seed": 301
+        },
+        {
+          "id": "test_day119_seed302",
+          "split": "test",
+          "start_day": 119,
+          "seed": 302
+        }
+      ],
+      "model": {
+        "lags": [
+          4,
+          8,
+          16
+        ],
+        "ridge_alphas": [
+          0.1,
+          10.0
+        ],
+        "tree_lag": 8,
+        "tree_min_samples_leaf": [
+          2,
+          8
+        ],
+        "tree_estimators": 128,
+        "seed": 33,
+        "horizons_steps": [
+          1,
+          4,
+          16,
+          32,
+          96
+        ],
+        "selection_horizons_steps": [
+          4,
+          16,
+          32
+        ],
+        "origin_stride_steps": 4
+      },
+      "episode": {
+        "id": "train_day014_seed101",
+        "split": "train",
+        "start_day": 14,
+        "seed": 101
+      }
+    },
+    "start_time_s": 1209600,
+    "end_time_s": 1814400,
+    "transitions": 672,
+    "native_samples": 20161,
+    "metrics": {
+      "energy_kWh": 319.00053349377964,
+      "energy_kWh_m2": 1.661461111946769,
+      "boptest_energy_kWh_m2": 1.6614624411156582,
+      "discomfort_Kh": 2.0016677593833605,
+      "cost_EUR_m2": 0.4211807288228193,
+      "emissions_kg_m2": 0.2774642276663149
+    },
+    "kpis": {
+      "tdis_tot": 2.0016677593833605,
+      "idis_tot": 0,
+      "ener_tot": 1.661462441115658,
+      "cost_tot": 0.4211807288228193,
+      "emis_tot": 0.27746422766631496,
+      "pele_tot": 0.020490942785650196,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 8.690398267255473e-06
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 2.220446049250313e-16,
+      "tdis_tot": 0.0,
+      "cost_tot": 0.0,
+      "emis_tot": 5.551115123125783e-17
+    },
+    "wall_seconds": 12.715615499997512,
+    "sha256": {
+      "api_kpis.json": "7bffc624a6d8151a2263106f8c1d211477e8345daecf248f497564d67e14ed4b",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "1b7095d7e2e9d1335673fff5ba433480d4d4249d7c995c8f64c741f4fc129b71",
+      "native.csv.gz": "a014a546f0f6a3c5e2ee5b7743ffa3c6abdd316e4847484126e693ad74120e72",
+      "steps.jsonl": "bad336cabd49114e1200a9592ee3521b7e4ba8764cd37975d6b469ccaefb9921",
+      "transitions.csv.gz": "47761af49b3826ec94cf96bcae108cfe91e7999905f9fb90d9bb4b2ec4bf4fad"
+    }
+  },
+  {
+    "scenario": "train_day035_seed102",
+    "controller": "excitation",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 7,
+      "warmup_days": 7,
+      "excitation": {
+        "nominal_C": 22.0,
+        "levels_K": [
+          -0.75,
+          -0.375,
+          0.0,
+          0.375,
+          0.75
+        ],
+        "hold_steps": 8,
+        "action_min_C": 18.0,
+        "action_max_C": 24.0,
+        "slew_K_per_step": 0.5,
+        "soft_margin_K": 0.2,
+        "abort_min_C": 18.0,
+        "abort_max_C": 28.0
+      },
+      "episodes": [
+        {
+          "id": "train_day014_seed101",
+          "split": "train",
+          "start_day": 14,
+          "seed": 101
+        },
+        {
+          "id": "train_day035_seed102",
+          "split": "train",
+          "start_day": 35,
+          "seed": 102
+        },
+        {
+          "id": "train_day056_seed103",
+          "split": "train",
+          "start_day": 56,
+          "seed": 103
+        },
+        {
+          "id": "validation_day077_seed201",
+          "split": "validation",
+          "start_day": 77,
+          "seed": 201
+        },
+        {
+          "id": "test_day098_seed301",
+          "split": "test",
+          "start_day": 98,
+          "seed": 301
+        },
+        {
+          "id": "test_day119_seed302",
+          "split": "test",
+          "start_day": 119,
+          "seed": 302
+        }
+      ],
+      "model": {
+        "lags": [
+          4,
+          8,
+          16
+        ],
+        "ridge_alphas": [
+          0.1,
+          10.0
+        ],
+        "tree_lag": 8,
+        "tree_min_samples_leaf": [
+          2,
+          8
+        ],
+        "tree_estimators": 128,
+        "seed": 33,
+        "horizons_steps": [
+          1,
+          4,
+          16,
+          32,
+          96
+        ],
+        "selection_horizons_steps": [
+          4,
+          16,
+          32
+        ],
+        "origin_stride_steps": 4
+      },
+      "episode": {
+        "id": "train_day035_seed102",
+        "split": "train",
+        "start_day": 35,
+        "seed": 102
+      }
+    },
+    "start_time_s": 3024000,
+    "end_time_s": 3628800,
+    "transitions": 672,
+    "native_samples": 20161,
+    "metrics": {
+      "energy_kWh": 354.4380917154637,
+      "energy_kWh_m2": 1.846031727684707,
+      "boptest_energy_kWh_m2": 1.8460332045100891,
+      "discomfort_Kh": 0.0,
+      "cost_EUR_m2": 0.4679694173433075,
+      "emissions_kg_m2": 0.30828754515318485
+    },
+    "kpis": {
+      "tdis_tot": 0,
+      "idis_tot": 0,
+      "ener_tot": 1.846033204510089,
+      "cost_tot": 0.46796941734330755,
+      "emis_tot": 0.3082875451531849,
+      "pele_tot": 0.019814909542977162,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 8.193499048254824e-06
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 2.220446049250313e-16,
+      "tdis_tot": 0.0,
+      "cost_tot": 5.551115123125783e-17,
+      "emis_tot": 5.551115123125783e-17
+    },
+    "wall_seconds": 12.617865900043398,
+    "sha256": {
+      "api_kpis.json": "fe27941766cbe99c64b800e154cf546319cf4f18a27d30b9b1a812b533c9b745",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "698394591e5b92a03c5d7ef6078a33c45ccc8104b57468ec1eebc78940fd7378",
+      "native.csv.gz": "91006de169c94859e6df377f11580eb3ceab0ac2a6a5466344552a64d6a7a4a2",
+      "steps.jsonl": "5572bfdde032a65a4f39ed5a0d12a037fb2f1078196ce7f452a6ba834be60954",
+      "transitions.csv.gz": "b194214ef72ddd1a92c3b26643d0d327ab9623e67bb4f41a17c83f12ec9e662d"
+    }
+  },
+  {
+    "scenario": "train_day056_seed103",
+    "controller": "excitation",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 7,
+      "warmup_days": 7,
+      "excitation": {
+        "nominal_C": 22.0,
+        "levels_K": [
+          -0.75,
+          -0.375,
+          0.0,
+          0.375,
+          0.75
+        ],
+        "hold_steps": 8,
+        "action_min_C": 18.0,
+        "action_max_C": 24.0,
+        "slew_K_per_step": 0.5,
+        "soft_margin_K": 0.2,
+        "abort_min_C": 18.0,
+        "abort_max_C": 28.0
+      },
+      "episodes": [
+        {
+          "id": "train_day014_seed101",
+          "split": "train",
+          "start_day": 14,
+          "seed": 101
+        },
+        {
+          "id": "train_day035_seed102",
+          "split": "train",
+          "start_day": 35,
+          "seed": 102
+        },
+        {
+          "id": "train_day056_seed103",
+          "split": "train",
+          "start_day": 56,
+          "seed": 103
+        },
+        {
+          "id": "validation_day077_seed201",
+          "split": "validation",
+          "start_day": 77,
+          "seed": 201
+        },
+        {
+          "id": "test_day098_seed301",
+          "split": "test",
+          "start_day": 98,
+          "seed": 301
+        },
+        {
+          "id": "test_day119_seed302",
+          "split": "test",
+          "start_day": 119,
+          "seed": 302
+        }
+      ],
+      "model": {
+        "lags": [
+          4,
+          8,
+          16
+        ],
+        "ridge_alphas": [
+          0.1,
+          10.0
+        ],
+        "tree_lag": 8,
+        "tree_min_samples_leaf": [
+          2,
+          8
+        ],
+        "tree_estimators": 128,
+        "seed": 33,
+        "horizons_steps": [
+          1,
+          4,
+          16,
+          32,
+          96
+        ],
+        "selection_horizons_steps": [
+          4,
+          16,
+          32
+        ],
+        "origin_stride_steps": 4
+      },
+      "episode": {
+        "id": "train_day056_seed103",
+        "split": "train",
+        "start_day": 56,
+        "seed": 103
+      }
+    },
+    "start_time_s": 4838400,
+    "end_time_s": 5443200,
+    "transitions": 672,
+    "native_samples": 20161,
+    "metrics": {
+      "energy_kWh": 261.99043483657726,
+      "energy_kWh_m2": 1.36453351477384,
+      "boptest_energy_kWh_m2": 1.3645346064006516,
+      "discomfort_Kh": 1.934307001233231,
+      "cost_EUR_m2": 0.3459095227225652,
+      "emissions_kg_m2": 0.22787727926890888
+    },
+    "kpis": {
+      "tdis_tot": 1.9343070012332308,
+      "idis_tot": 0,
+      "ener_tot": 1.3645346064006518,
+      "cost_tot": 0.3459095227225653,
+      "emis_tot": 0.22787727926890886,
+      "pele_tot": 0.02017471774916937,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 8.605866859361497e-06
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 2.220446049250313e-16,
+      "tdis_tot": 2.220446049250313e-16,
+      "cost_tot": 1.1102230246251565e-16,
+      "emis_tot": 2.7755575615628914e-17
+    },
+    "wall_seconds": 12.727590400027111,
+    "sha256": {
+      "api_kpis.json": "8e15c8cb197b4586c1c49e14bd0077a891a2d08a7143c0d7cd06f797ddd2252d",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "e691d782e399b3045970b016cf515186a9d1d554203ab87d742aa0f52edcf9d0",
+      "native.csv.gz": "789e4e7526b3ba61481d4a05b3964749f95ed6aa08e51ed3df9556989dff9ac1",
+      "steps.jsonl": "ccaf4f437eae8235e38f3cf84612f85f8aa3a707ba523583355dcaa55f723a9a",
+      "transitions.csv.gz": "d3c57a4e5500bd97310b61bfebd674214075bc3a5e5746547811c90a23afbeb5"
+    }
+  },
+  {
+    "scenario": "validation_day077_seed201",
+    "controller": "excitation",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 7,
+      "warmup_days": 7,
+      "excitation": {
+        "nominal_C": 22.0,
+        "levels_K": [
+          -0.75,
+          -0.375,
+          0.0,
+          0.375,
+          0.75
+        ],
+        "hold_steps": 8,
+        "action_min_C": 18.0,
+        "action_max_C": 24.0,
+        "slew_K_per_step": 0.5,
+        "soft_margin_K": 0.2,
+        "abort_min_C": 18.0,
+        "abort_max_C": 28.0
+      },
+      "episodes": [
+        {
+          "id": "train_day014_seed101",
+          "split": "train",
+          "start_day": 14,
+          "seed": 101
+        },
+        {
+          "id": "train_day035_seed102",
+          "split": "train",
+          "start_day": 35,
+          "seed": 102
+        },
+        {
+          "id": "train_day056_seed103",
+          "split": "train",
+          "start_day": 56,
+          "seed": 103
+        },
+        {
+          "id": "validation_day077_seed201",
+          "split": "validation",
+          "start_day": 77,
+          "seed": 201
+        },
+        {
+          "id": "test_day098_seed301",
+          "split": "test",
+          "start_day": 98,
+          "seed": 301
+        },
+        {
+          "id": "test_day119_seed302",
+          "split": "test",
+          "start_day": 119,
+          "seed": 302
+        }
+      ],
+      "model": {
+        "lags": [
+          4,
+          8,
+          16
+        ],
+        "ridge_alphas": [
+          0.1,
+          10.0
+        ],
+        "tree_lag": 8,
+        "tree_min_samples_leaf": [
+          2,
+          8
+        ],
+        "tree_estimators": 128,
+        "seed": 33,
+        "horizons_steps": [
+          1,
+          4,
+          16,
+          32,
+          96
+        ],
+        "selection_horizons_steps": [
+          4,
+          16,
+          32
+        ],
+        "origin_stride_steps": 4
+      },
+      "episode": {
+        "id": "validation_day077_seed201",
+        "split": "validation",
+        "start_day": 77,
+        "seed": 201
+      }
+    },
+    "start_time_s": 6652800,
+    "end_time_s": 7257600,
+    "transitions": 672,
+    "native_samples": 20161,
+    "metrics": {
+      "energy_kWh": 260.2270579542173,
+      "energy_kWh_m2": 1.355349260178215,
+      "boptest_energy_kWh_m2": 1.3553503444576231,
+      "discomfort_Kh": 0.0,
+      "cost_EUR_m2": 0.3435813123200075,
+      "emissions_kg_m2": 0.2263435075244231
+    },
+    "kpis": {
+      "tdis_tot": 0,
+      "idis_tot": 0,
+      "ener_tot": 1.3553503444576231,
+      "cost_tot": 0.34358131232000755,
+      "emis_tot": 0.22634350752442312,
+      "pele_tot": 0.020147839304134954,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 8.771695489025921e-06
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0,
+      "cost_tot": 5.551115123125783e-17,
+      "emis_tot": 2.7755575615628914e-17
+    },
+    "wall_seconds": 12.682468099985272,
+    "sha256": {
+      "api_kpis.json": "397b1f44ac5d4fd06f3560622bfd1f1db3de4e1bc16a632f12e518c6d4a7babe",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "e5154fcbf2aa03e726d3529e5a4eba80c61cf10c76625724af627f7047827536",
+      "native.csv.gz": "f7bfc4eb6e18e88f73812e402bcafcf7e9ea1e9a765cdea080bfa94c69a524fb",
+      "steps.jsonl": "4aed7b1495b214b6b16e8f9e6c53b5b4638e143156dfa2d7a8492918006b5414",
+      "transitions.csv.gz": "1f1cf6b41c30673cf22a9c4b31af71afb13021153244ea2fe1d4260c0c016829"
+    }
+  },
+  {
+    "scenario": "test_day098_seed301",
+    "controller": "excitation",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 7,
+      "warmup_days": 7,
+      "excitation": {
+        "nominal_C": 22.0,
+        "levels_K": [
+          -0.75,
+          -0.375,
+          0.0,
+          0.375,
+          0.75
+        ],
+        "hold_steps": 8,
+        "action_min_C": 18.0,
+        "action_max_C": 24.0,
+        "slew_K_per_step": 0.5,
+        "soft_margin_K": 0.2,
+        "abort_min_C": 18.0,
+        "abort_max_C": 28.0
+      },
+      "episodes": [
+        {
+          "id": "train_day014_seed101",
+          "split": "train",
+          "start_day": 14,
+          "seed": 101
+        },
+        {
+          "id": "train_day035_seed102",
+          "split": "train",
+          "start_day": 35,
+          "seed": 102
+        },
+        {
+          "id": "train_day056_seed103",
+          "split": "train",
+          "start_day": 56,
+          "seed": 103
+        },
+        {
+          "id": "validation_day077_seed201",
+          "split": "validation",
+          "start_day": 77,
+          "seed": 201
+        },
+        {
+          "id": "test_day098_seed301",
+          "split": "test",
+          "start_day": 98,
+          "seed": 301
+        },
+        {
+          "id": "test_day119_seed302",
+          "split": "test",
+          "start_day": 119,
+          "seed": 302
+        }
+      ],
+      "model": {
+        "lags": [
+          4,
+          8,
+          16
+        ],
+        "ridge_alphas": [
+          0.1,
+          10.0
+        ],
+        "tree_lag": 8,
+        "tree_min_samples_leaf": [
+          2,
+          8
+        ],
+        "tree_estimators": 128,
+        "seed": 33,
+        "horizons_steps": [
+          1,
+          4,
+          16,
+          32,
+          96
+        ],
+        "selection_horizons_steps": [
+          4,
+          16,
+          32
+        ],
+        "origin_stride_steps": 4
+      },
+      "episode": {
+        "id": "test_day098_seed301",
+        "split": "test",
+        "start_day": 98,
+        "seed": 301
+      }
+    },
+    "start_time_s": 8467200,
+    "end_time_s": 9072000,
+    "transitions": 672,
+    "native_samples": 20161,
+    "metrics": {
+      "energy_kWh": 212.36421054563766,
+      "energy_kWh_m2": 1.1060635965918628,
+      "boptest_energy_kWh_m2": 1.10606448144274,
+      "discomfort_Kh": 0.0,
+      "cost_EUR_m2": 0.2803873460457346,
+      "emissions_kg_m2": 0.18471276840093762
+    },
+    "kpis": {
+      "tdis_tot": 0,
+      "idis_tot": 0,
+      "ener_tot": 1.10606448144274,
+      "cost_tot": 0.2803873460457346,
+      "emis_tot": 0.1847127684009376,
+      "pele_tot": 0.018888583962583607,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 8.871505583807183e-06
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0,
+      "cost_tot": 0.0,
+      "emis_tot": 2.7755575615628914e-17
+    },
+    "wall_seconds": 12.7035668999888,
+    "sha256": {
+      "api_kpis.json": "be19d4d1421d97727fd92b53f4f153a2d77091a813944359f8102122fa1a04a8",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "20ef31879d6089cc9d2078f0b3f6eb1ef42b243347c8b4e7ae033e89e39e1003",
+      "native.csv.gz": "675dbd54180897dfe988841e6434f11a9ac5f149dd909308bbaffab9f207e1d2",
+      "steps.jsonl": "0bd15872299ac340ab8f8242626e5acae77e3de193da254a0e903b763c3235fa",
+      "transitions.csv.gz": "860cc1c6596c831af7221a8c276a2de2030e6075afbad98e00759e2dfa1e68dc"
+    }
+  },
+  {
+    "scenario": "test_day119_seed302",
+    "controller": "excitation",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 7,
+      "warmup_days": 7,
+      "excitation": {
+        "nominal_C": 22.0,
+        "levels_K": [
+          -0.75,
+          -0.375,
+          0.0,
+          0.375,
+          0.75
+        ],
+        "hold_steps": 8,
+        "action_min_C": 18.0,
+        "action_max_C": 24.0,
+        "slew_K_per_step": 0.5,
+        "soft_margin_K": 0.2,
+        "abort_min_C": 18.0,
+        "abort_max_C": 28.0
+      },
+      "episodes": [
+        {
+          "id": "train_day014_seed101",
+          "split": "train",
+          "start_day": 14,
+          "seed": 101
+        },
+        {
+          "id": "train_day035_seed102",
+          "split": "train",
+          "start_day": 35,
+          "seed": 102
+        },
+        {
+          "id": "train_day056_seed103",
+          "split": "train",
+          "start_day": 56,
+          "seed": 103
+        },
+        {
+          "id": "validation_day077_seed201",
+          "split": "validation",
+          "start_day": 77,
+          "seed": 201
+        },
+        {
+          "id": "test_day098_seed301",
+          "split": "test",
+          "start_day": 98,
+          "seed": 301
+        },
+        {
+          "id": "test_day119_seed302",
+          "split": "test",
+          "start_day": 119,
+          "seed": 302
+        }
+      ],
+      "model": {
+        "lags": [
+          4,
+          8,
+          16
+        ],
+        "ridge_alphas": [
+          0.1,
+          10.0
+        ],
+        "tree_lag": 8,
+        "tree_min_samples_leaf": [
+          2,
+          8
+        ],
+        "tree_estimators": 128,
+        "seed": 33,
+        "horizons_steps": [
+          1,
+          4,
+          16,
+          32,
+          96
+        ],
+        "selection_horizons_steps": [
+          4,
+          16,
+          32
+        ],
+        "origin_stride_steps": 4
+      },
+      "episode": {
+        "id": "test_day119_seed302",
+        "split": "test",
+        "start_day": 119,
+        "seed": 302
+      }
+    },
+    "start_time_s": 10281600,
+    "end_time_s": 10886400,
+    "transitions": 672,
+    "native_samples": 20161,
+    "metrics": {
+      "energy_kWh": 95.41642996626231,
+      "energy_kWh_m2": 0.49696057274094957,
+      "boptest_energy_kWh_m2": 0.4969609703094077,
+      "discomfort_Kh": 52.94177887004003,
+      "cost_EUR_m2": 0.1259796059734349,
+      "emissions_kg_m2": 0.0829924820416711
+    },
+    "kpis": {
+      "tdis_tot": 52.94177887004003,
+      "idis_tot": 0,
+      "ener_tot": 0.49696097030940783,
+      "cost_tot": 0.12597960597343486,
+      "emis_tot": 0.08299248204167112,
+      "pele_tot": 0.020408657656750064,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 9.608356382973562e-06
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0,
+      "cost_tot": 5.551115123125783e-17,
+      "emis_tot": 1.3877787807814457e-17
+    },
+    "wall_seconds": 12.89056970004458,
+    "sha256": {
+      "api_kpis.json": "3e30d34adbc05dec13aef3fc1876cc51efa9b082abf808a64d1fb61597fdc0c9",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "141928fbf42c54170c59aee746373330ea80e2ba04e1fa36952ad6d3a304bb72",
+      "native.csv.gz": "04ea5f895915385e151f31929fdf9a93592e4fe6a279db6d5a1f931daaa20eff",
+      "steps.jsonl": "6ee406ae74ad53a78e30fe03d00f58751ae9944466b5bdc7f47ef6df3ebe1495",
+      "transitions.csv.gz": "cb054dccebf537f17e0bfd510584540b51d63252ab0260f15b6acfb5d97d597c"
+    }
+  }
+]

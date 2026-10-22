@@ -1,0 +1,105 @@
+{
+  "config": {
+    "version": "0.9.0",
+    "testcase": "bestest_hydronic_heat_pump",
+    "area_m2": 192,
+    "step_s": 900,
+    "days": 7,
+    "warmup_days": 7,
+    "excitation": {
+      "nominal_C": 22.0,
+      "levels_K": [
+        -0.75,
+        -0.375,
+        0.0,
+        0.375,
+        0.75
+      ],
+      "hold_steps": 8,
+      "action_min_C": 18.0,
+      "action_max_C": 24.0,
+      "slew_K_per_step": 0.5,
+      "soft_margin_K": 0.2,
+      "abort_min_C": 18.0,
+      "abort_max_C": 28.0
+    },
+    "episodes": [
+      {
+        "id": "train_day014_seed101",
+        "split": "train",
+        "start_day": 14,
+        "seed": 101
+      },
+      {
+        "id": "train_day035_seed102",
+        "split": "train",
+        "start_day": 35,
+        "seed": 102
+      },
+      {
+        "id": "train_day056_seed103",
+        "split": "train",
+        "start_day": 56,
+        "seed": 103
+      },
+      {
+        "id": "validation_day077_seed201",
+        "split": "validation",
+        "start_day": 77,
+        "seed": 201
+      },
+      {
+        "id": "test_day098_seed301",
+        "split": "test",
+        "start_day": 98,
+        "seed": 301
+      },
+      {
+        "id": "test_day119_seed302",
+        "split": "test",
+        "start_day": 119,
+        "seed": 302
+      }
+    ],
+    "model": {
+      "lags": [
+        4,
+        8,
+        16
+      ],
+      "ridge_alphas": [
+        0.1,
+        10.0
+      ],
+      "tree_lag": 8,
+      "tree_min_samples_leaf": [
+        2,
+        8
+      ],
+      "tree_estimators": 128,
+      "seed": 33,
+      "horizons_steps": [
+        1,
+        4,
+        16,
+        32,
+        96
+      ],
+      "selection_horizons_steps": [
+        4,
+        16,
+        32
+      ],
+      "origin_stride_steps": 4
+    }
+  },
+  "version": {
+    "version": "0.9.0"
+  },
+  "url": "http://127.0.0.1:8080",
+  "code_sha256": {
+    "excitation.py": "44ea04182b37a5e6e3feb3e9b66ea55207c446921160291889ce0de989ab1fbc",
+    "simulation.py": "c7eac24cebc1dae940e7eafbe4a852e8758860f8cca695b87b1c8eb3c4912b52"
+  },
+  "config_sha256": "3e4beff3c8c17604373af5c8b867cc4ab6c7bef4e5a965194f58ac20f01ece72"
+}

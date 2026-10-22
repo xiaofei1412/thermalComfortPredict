@@ -1,4 +1,4 @@
-name: Prediction and simulation checks
+name: Prediction, simulation and dynamics checks
 
 on:
   push:
@@ -22,5 +22,5 @@ jobs:
         run: |
           python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
           python -m pip install -e .
-      - name: Verify prediction baselines and simulation data contracts
+      - name: Verify prediction, simulation and dynamics isolation
         run: python -m unittest discover -s tests -v

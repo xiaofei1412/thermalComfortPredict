@@ -152,8 +152,16 @@ def run_episode(client, config, scenario, controller, output):
                 raise ValueError("Unexpected power units")
         save_json(output / "api_metadata.json", {"inputs": inputs, "measurements": measurements,
                                                 "forecast_points": forecast_points})
-        initial = client.call("PUT", f"scenario/{testid}",
-                              {"electricity_price": "constant", "time_period": scenario})["time_period"]
+        if controller == "excitation":
+            client.call("PUT", f"scenario/{testid}", {"electricity_price": "constant"})
+            initial = client.call("PUT", f"initialize/{testid}",
+                                  {"start_time": config["episode"]["start_day"] * 86400,
+                                   "warmup_period": config["warmup_days"] * 86400})
+            from .excitation import SafeExcitation
+            policy = SafeExcitation(config, inputs["oveTSet_u"], initial)
+        else:
+            initial = client.call("PUT", f"scenario/{testid}",
+                                  {"electricity_price": "constant", "time_period": scenario})["time_period"]
         client.call("PUT", f"step/{testid}", {"step": config["step_s"]})
         if client.call("GET", f"step/{testid}") != config["step_s"]:
             raise ValueError("Control step was not set")
@@ -171,13 +179,19 @@ def run_episode(client, config, scenario, controller, output):
                     action = rule_action(current["LowerSetp[1]"], current["Occupancy[1]"], inputs["oveTSet_u"], config)
                 elif controller == "embedded":
                     action = {"oveTSet_activate": 0}
+                elif controller == "excitation":
+                    action, safety = policy.action(index, before, current)
                 else:
                     raise ValueError(f"Unknown controller: {controller}")
                 after = client.call("POST", f"advance/{testid}", action)
                 record = {"before": before, "action": action, "after": after}
+                if controller == "excitation":
+                    record["safety"] = safety
                 stream.write(json.dumps(record, allow_nan=False) + "\n")
                 stream.flush()
                 records.append(record)
+                if controller == "excitation":
+                    policy.check_temperature(after["reaTZon_y"] - 273.15)
                 if after["time"] - before["time"] != config["step_s"]:
                     raise ValueError("Advance returned an unexpected time")
                 before = after

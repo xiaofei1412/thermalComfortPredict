@@ -1,0 +1,212 @@
+{
+  "episodes": [
+    {
+      "scenario": "train_day014_seed101",
+      "controller": "excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 5.773159728050814e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "train_day035_seed102",
+      "controller": "excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "train_day056_seed103",
+      "controller": "excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 9.769962616701378e-15,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 2.7755575615628914e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "validation_day077_seed201",
+      "controller": "excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 2.7755575615628914e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "test_day098_seed301",
+      "controller": "excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 2.7755575615628914e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "test_day119_seed302",
+      "controller": "excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.1102230246251565e-16,
+        "tdis_tot": 7.105427357601002e-14,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 1.3877787807814457e-17
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "repeat_episodes": [
+    {
+      "scenario": "train_day014_seed101",
+      "controller": "excitation",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "train_day035_seed102",
+      "controller": "excitation",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 3.469446951953614e-18,
+        "emis_tot": 1.734723475976807e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "train_day056_seed103",
+      "controller": "excitation",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 3.469446951953614e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "validation_day077_seed201",
+      "controller": "excitation",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 1.734723475976807e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "test_day098_seed301",
+      "controller": "excitation",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "test_day119_seed302",
+      "controller": "excitation",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "reproducibility": [
+    {
+      "episode": "test_day098_seed301__excitation",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "test_day119_seed302__excitation",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "train_day014_seed101__excitation",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "train_day035_seed102__excitation",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "train_day056_seed103__excitation",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "validation_day077_seed201__excitation",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    }
+  ]
+}

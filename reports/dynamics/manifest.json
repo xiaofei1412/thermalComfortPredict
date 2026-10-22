@@ -1,0 +1,120 @@
+{
+  "config": {
+    "version": "0.9.0",
+    "testcase": "bestest_hydronic_heat_pump",
+    "area_m2": 192,
+    "step_s": 900,
+    "days": 7,
+    "warmup_days": 7,
+    "excitation": {
+      "nominal_C": 22.0,
+      "levels_K": [
+        -0.75,
+        -0.375,
+        0.0,
+        0.375,
+        0.75
+      ],
+      "hold_steps": 8,
+      "action_min_C": 18.0,
+      "action_max_C": 24.0,
+      "slew_K_per_step": 0.5,
+      "soft_margin_K": 0.2,
+      "abort_min_C": 18.0,
+      "abort_max_C": 28.0
+    },
+    "episodes": [
+      {
+        "id": "train_day014_seed101",
+        "split": "train",
+        "start_day": 14,
+        "seed": 101
+      },
+      {
+        "id": "train_day035_seed102",
+        "split": "train",
+        "start_day": 35,
+        "seed": 102
+      },
+      {
+        "id": "train_day056_seed103",
+        "split": "train",
+        "start_day": 56,
+        "seed": 103
+      },
+      {
+        "id": "validation_day077_seed201",
+        "split": "validation",
+        "start_day": 77,
+        "seed": 201
+      },
+      {
+        "id": "test_day098_seed301",
+        "split": "test",
+        "start_day": 98,
+        "seed": 301
+      },
+      {
+        "id": "test_day119_seed302",
+        "split": "test",
+        "start_day": 119,
+        "seed": 302
+      }
+    ],
+    "model": {
+      "lags": [
+        4,
+        8,
+        16
+      ],
+      "ridge_alphas": [
+        0.1,
+        10.0
+      ],
+      "tree_lag": 8,
+      "tree_min_samples_leaf": [
+        2,
+        8
+      ],
+      "tree_estimators": 128,
+      "seed": 33,
+      "horizons_steps": [
+        1,
+        4,
+        16,
+        32,
+        96
+      ],
+      "selection_horizons_steps": [
+        4,
+        16,
+        32
+      ],
+      "origin_stride_steps": 4
+    }
+  },
+  "source": "outputs\\excitation",
+  "python": "3.14.3",
+  "numpy": "2.3.5",
+  "pandas": "3.0.0",
+  "sklearn": "1.8.0",
+  "code_sha256": {
+    "dynamics.py": "51a3e5874fa1126ccf36a0b42222c54919ebcf06ec3a689dacd1545709c56186",
+    "excitation.py": "44ea04182b37a5e6e3feb3e9b66ea55207c446921160291889ce0de989ab1fbc",
+    "simulation.py": "c7eac24cebc1dae940e7eafbe4a852e8758860f8cca695b87b1c8eb3c4912b52"
+  },
+  "config_sha256": "3e4beff3c8c17604373af5c8b867cc4ab6c7bef4e5a965194f58ac20f01ece72",
+  "source_manifest_sha256": "1ff24cd29d8b50446f763518509cef1eb84491631b332ee7e64b8200aafa8aee",
+  "source_summary_sha256": "e3d792a6f6e5c45e65ea520f93111f38852e662597443c1b6fd4e60a9907d42f",
+  "ridge_spectral_radius": 0.9362801460196356,
+  "artifacts_sha256": {
+    "coverage.csv": "69744694618d52fca77b14861b3686d3e6f80c334f015efc9c867fc22a60a5ec",
+    "errors.csv.gz": "9afd7ed6252477467743d08e6288a2be54791e7e806783aae8c462f66b3a5273",
+    "evaluation_origins.json": "deae37cff2e83684090f686b1de2c5de23a62530b28bcad25481cfd954fee6ba",
+    "metrics.csv": "249d8da18de97dd3afd3033f839bb26066b2d2b9027fd84eacbaa7a417618ade",
+    "models.joblib": "70d59519b66e3a46bf116d607b33269f1656383835ed7cce70210b3cd5874e25",
+    "rollout_examples.csv": "c7eb8e522684fe635ef9a658abc00b191f13adfd8a526e012e19e2e7c84be71c",
+    "selection.json": "13265e113ffd7be147a80d26086493d9dcf5332beee8cae56978b33271c73dbb",
+    "split_manifest.json": "8f428d0272180af3668f1d35a4d01a46d36ffad0734dcf99499c6df5aca174a4"
+  }
+}

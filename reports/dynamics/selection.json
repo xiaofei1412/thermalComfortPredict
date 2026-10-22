@@ -1,0 +1,75 @@
+{
+  "criterion": "Mean endpoint temperature RMSE at 1, 4 and 8 hours on validation only",
+  "candidates": [
+    {
+      "kind": "ridge",
+      "lag": 4,
+      "parameter": 0.1,
+      "validation_temperature_score_C": 0.2846849600455653,
+      "training_rows": 2004
+    },
+    {
+      "kind": "ridge",
+      "lag": 4,
+      "parameter": 10.0,
+      "validation_temperature_score_C": 0.3360952387974731,
+      "training_rows": 2004
+    },
+    {
+      "kind": "ridge",
+      "lag": 8,
+      "parameter": 0.1,
+      "validation_temperature_score_C": 0.28421827751218287,
+      "training_rows": 1992
+    },
+    {
+      "kind": "ridge",
+      "lag": 8,
+      "parameter": 10.0,
+      "validation_temperature_score_C": 0.32382973708440166,
+      "training_rows": 1992
+    },
+    {
+      "kind": "ridge",
+      "lag": 16,
+      "parameter": 0.1,
+      "validation_temperature_score_C": 0.2943613570118413,
+      "training_rows": 1968
+    },
+    {
+      "kind": "ridge",
+      "lag": 16,
+      "parameter": 10.0,
+      "validation_temperature_score_C": 0.3340367652388627,
+      "training_rows": 1968
+    },
+    {
+      "kind": "extra_trees",
+      "lag": 8,
+      "parameter": 2,
+      "validation_temperature_score_C": 0.19105631294828215,
+      "training_rows": 1992
+    },
+    {
+      "kind": "extra_trees",
+      "lag": 8,
+      "parameter": 8,
+      "validation_temperature_score_C": 0.20664176886008548,
+      "training_rows": 1992
+    }
+  ],
+  "selected": {
+    "ridge": {
+      "lag": 8,
+      "parameter": 0.1,
+      "validation_score": 0.28421827751218287,
+      "training_rows": 1992
+    },
+    "extra_trees": {
+      "lag": 8,
+      "parameter": 2,
+      "validation_score": 0.19105631294828215,
+      "training_rows": 1992
+    }
+  }
+}

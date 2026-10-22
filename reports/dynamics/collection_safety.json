@@ -1,0 +1,94 @@
+[
+  {
+    "episode": "train_day014_seed101",
+    "modes": {
+      "excite": 648,
+      "recover_heat": 3,
+      "coast": 21
+    },
+    "slew_limited_steps": 72,
+    "operative_min_C": 21.06917682463552,
+    "operative_max_C": 24.62971788788286,
+    "action_min_C": 18.0,
+    "action_max_C": 22.75,
+    "distinct_actions": 26,
+    "stop_band_violations": 0,
+    "exact_policy_replay": true
+  },
+  {
+    "episode": "train_day035_seed102",
+    "modes": {
+      "excite": 668,
+      "recover_heat": 4
+    },
+    "slew_limited_steps": 64,
+    "operative_min_C": 21.073997389233227,
+    "operative_max_C": 23.98802337021658,
+    "action_min_C": 21.25,
+    "action_max_C": 23.25,
+    "distinct_actions": 15,
+    "stop_band_violations": 0,
+    "exact_policy_replay": true
+  },
+  {
+    "episode": "train_day056_seed103",
+    "modes": {
+      "excite": 645,
+      "recover_heat": 7,
+      "coast": 20
+    },
+    "slew_limited_steps": 86,
+    "operative_min_C": 21.130842266951333,
+    "operative_max_C": 24.694081253430625,
+    "action_min_C": 18.0,
+    "action_max_C": 23.25,
+    "distinct_actions": 28,
+    "stop_band_violations": 0,
+    "exact_policy_replay": true
+  },
+  {
+    "episode": "validation_day077_seed201",
+    "modes": {
+      "excite": 670,
+      "recover_heat": 2
+    },
+    "slew_limited_steps": 67,
+    "operative_min_C": 21.17598685592185,
+    "operative_max_C": 23.670436386592144,
+    "action_min_C": 21.25,
+    "action_max_C": 22.75,
+    "distinct_actions": 13,
+    "stop_band_violations": 0,
+    "exact_policy_replay": true
+  },
+  {
+    "episode": "test_day098_seed301",
+    "modes": {
+      "recover_heat": 1,
+      "excite": 671
+    },
+    "slew_limited_steps": 59,
+    "operative_min_C": 21.196299475243336,
+    "operative_max_C": 23.877401147708213,
+    "action_min_C": 21.25,
+    "action_max_C": 22.75,
+    "distinct_actions": 14,
+    "stop_band_violations": 0,
+    "exact_policy_replay": true
+  },
+  {
+    "episode": "test_day119_seed302",
+    "modes": {
+      "excite": 431,
+      "coast": 241
+    },
+    "slew_limited_steps": 105,
+    "operative_min_C": 21.371850605928103,
+    "operative_max_C": 27.405583321907784,
+    "action_min_C": 18.0,
+    "action_max_C": 22.75,
+    "distinct_actions": 36,
+    "stop_band_violations": 0,
+    "exact_policy_replay": true
+  }
+]
