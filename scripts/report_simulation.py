@@ -54,8 +54,8 @@ if __name__ == "__main__":
     axes[0, 1].legend(fontsize=8)
     fig.savefig(args.report / "trajectories.png", dpi=150)
     plt.close(fig)
-    pd.DataFrame(rows).to_csv(args.report / "metrics.csv", index=False)
-    pd.concat(samples, ignore_index=True).to_csv(args.report / "first_day_transitions.csv", index=False)
+    pd.DataFrame(rows).to_csv(args.report / "metrics.csv", index=False, lineterminator="\n")
+    pd.concat(samples, ignore_index=True).to_csv(args.report / "first_day_transitions.csv", index=False, lineterminator="\n")
     source = Path("outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu")
     save_json(args.report / "provenance.json", {
         "boptest_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
