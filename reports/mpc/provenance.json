@@ -1,0 +1,17 @@
+{
+  "python": "3.14.3",
+  "numpy": "2.3.5",
+  "pandas": "3.0.0",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "source_files_sha256": {
+    "configs\\mpc.json": "71eafecff7bf2aa912d750baf2de9c8cf2ab8ae58d7029ab496b8451803fb1f8",
+    "thermal_comfort\\greybox.py": "9cb55de754567da651cf5f44485c76a9502f8d7068358b3cce86a8d9896ad977",
+    "thermal_comfort\\mpc.py": "a55356058539752019eb7916ab1b441d8aa48575c6aa257e1dacee487283d202",
+    "thermal_comfort\\simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+    "scripts\\verify_mpc.py": "475d1b87643bac62518e82f9867ec7c68808146c0bebe7af40ca24015e256cf2",
+    "scripts\\report_mpc.py": "16572fe12c275216b5ab8b543c52df6913d21e361b9c691d622a014d8e831da5"
+  },
+  "boptest_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+  "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e"
+}

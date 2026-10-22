@@ -1,0 +1,67 @@
+{
+  "config": {
+    "dynamics_config": "configs/dynamics.json",
+    "observer_mass_gain": 0.2,
+    "residual_alpha": 10.0,
+    "residual_weights": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "validation_selection_days": 3,
+    "validation_calibration_start_day": 4,
+    "fit_max_nfev": 150,
+    "heat_max_kW": 15.0,
+    "horizon_steps": 8,
+    "move_block_steps": 2,
+    "moves_K": [
+      -0.5,
+      0.0,
+      0.5
+    ],
+    "action_min_C": 18.0,
+    "action_max_C": 23.25,
+    "slew_K_per_step": 0.5,
+    "margin_quantile": 0.95,
+    "sensor_margin_K": 0.1,
+    "initial_rule_steps": 8,
+    "support_tolerance": [
+      0.5,
+      1.0,
+      100.0
+    ],
+    "move_weight": 0.05,
+    "rule_occupied_offset_K": 0.5,
+    "rule_unoccupied_offset_K": 3.0,
+    "guard_margin_K": 0.2,
+    "abort_min_C": 18.0,
+    "abort_max_C": 28.0,
+    "response": {
+      "start_days": [
+        84.0,
+        90.0
+      ],
+      "prelude_steps": 8,
+      "steps": 32,
+      "setpoints_C": [
+        21.5,
+        22.0,
+        22.5
+      ]
+    },
+    "closed_loop": {
+      "start_days": [
+        98,
+        119
+      ],
+      "days": 7,
+      "controllers": [
+        "guarded_rule",
+        "mpc"
+      ]
+    }
+  },
+  "model_sha256": "9c64b4f8571f7c465a07ba2c2778f16bc64a9aa3ef695a27ab153454d0410bdf",
+  "code_sha256": "a55356058539752019eb7916ab1b441d8aa48575c6aa257e1dacee487283d202",
+  "config_sha256": "71eafecff7bf2aa912d750baf2de9c8cf2ab8ae58d7029ab496b8451803fb1f8"
+}

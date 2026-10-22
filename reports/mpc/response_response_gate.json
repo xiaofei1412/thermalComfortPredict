@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "direction_checks": [
+    true,
+    true
+  ],
+  "nonzero_response_observed": true,
+  "model_sha256": "9c64b4f8571f7c465a07ba2c2778f16bc64a9aa3ef695a27ab153454d0410bdf",
+  "config_sha256": "71eafecff7bf2aa912d750baf2de9c8cf2ab8ae58d7029ab496b8451803fb1f8",
+  "scope": "Two-hour monotonic direction check on two calibration contexts; not an error bound or arbitrary-action certificate"
+}

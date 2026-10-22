@@ -137,7 +137,7 @@ def transitions_frame(records, native, forecast, config):
     return frame
 
 
-def run_episode(client, config, scenario, controller, output):
+def run_episode(client, config, scenario, controller, output, policy=None):
     output.mkdir(parents=True, exist_ok=False)
     testid = client.call("POST", f"testcases/{config['testcase']}/select")["testid"]
     started = time.perf_counter()
@@ -152,13 +152,16 @@ def run_episode(client, config, scenario, controller, output):
                 raise ValueError("Unexpected power units")
         save_json(output / "api_metadata.json", {"inputs": inputs, "measurements": measurements,
                                                 "forecast_points": forecast_points})
-        if controller == "excitation":
+        if controller == "excitation" or policy is not None:
             client.call("PUT", f"scenario/{testid}", {"electricity_price": "constant"})
             initial = client.call("PUT", f"initialize/{testid}",
                                   {"start_time": config["episode"]["start_day"] * 86400,
                                    "warmup_period": config["warmup_days"] * 86400})
-            from .excitation import SafeExcitation
-            policy = SafeExcitation(config, inputs["oveTSet_u"], initial)
+            if controller == "excitation":
+                from .excitation import SafeExcitation
+                policy = SafeExcitation(config, inputs["oveTSet_u"], initial)
+            else:
+                policy.reset(initial, inputs)
         else:
             initial = client.call("PUT", f"scenario/{testid}",
                                   {"electricity_price": "constant", "time_period": scenario})["time_period"]
@@ -169,13 +172,17 @@ def run_episode(client, config, scenario, controller, output):
         if duration <= 0 or duration % config["step_s"] or duration > 14 * 86400:
             raise ValueError("Duration must be whole control intervals within the official 14-day period")
         forecast = pd.DataFrame(client.call("PUT", f"forecast/{testid}",
-                                {"point_names": FORECAST, "horizon": duration, "interval": 30}))
+                                {"point_names": FORECAST, "horizon": duration + (getattr(policy, "horizon_steps", 0) * config["step_s"]), "interval": 30}))
         forecast.to_csv(output / "exogenous.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
         before, records = initial, []
         with (output / "steps.jsonl").open("w", encoding="utf-8") as stream:
             for index in range(int(duration // config["step_s"])):
                 current = schedule_at(forecast, np.array([before["time"]])).iloc[0]
-                if controller == "rule":
+                if policy is not None and controller != "excitation":
+                    decision_started = time.perf_counter()
+                    action, control = policy.decide(index, before, forecast)
+                    control["decision_seconds"] = time.perf_counter() - decision_started
+                elif controller == "rule":
                     action = rule_action(current["LowerSetp[1]"], current["Occupancy[1]"], inputs["oveTSet_u"], config)
                 elif controller == "embedded":
                     action = {"oveTSet_activate": 0}
@@ -187,11 +194,17 @@ def run_episode(client, config, scenario, controller, output):
                 record = {"before": before, "action": action, "after": after}
                 if controller == "excitation":
                     record["safety"] = safety
+                elif policy is not None:
+                    record["control"] = control
                 stream.write(json.dumps(record, allow_nan=False) + "\n")
                 stream.flush()
                 records.append(record)
                 if controller == "excitation":
                     policy.check_temperature(after["reaTZon_y"] - 273.15)
+                elif policy is not None:
+                    interval = pd.DataFrame(client.call("PUT", f"results/{testid}",
+                         {"point_names": ["reaQFloHea_y"], "start_time": before["time"], "final_time": after["time"]}))
+                    policy.update(before, after, interval, current)
                 if after["time"] - before["time"] != config["step_s"]:
                     raise ValueError("Advance returned an unexpected time")
                 before = after

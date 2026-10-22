@@ -1,0 +1,417 @@
+{
+  "model": {
+    "physical_constraints_pass": true,
+    "reloaded_metrics_match": true,
+    "selection_and_calibration_separated": true,
+    "selection_origins": 65,
+    "calibration_origins": 71,
+    "margin_rebuilt_from_validation_only": true
+  },
+  "response_trajectories": [
+    {
+      "scenario": "day84",
+      "controller": "response_21.5",
+      "transitions": 40,
+      "native_samples": 1201,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 5.551115123125783e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day84",
+      "controller": "response_22",
+      "transitions": 40,
+      "native_samples": 1201,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day84",
+      "controller": "response_22.5",
+      "transitions": 40,
+      "native_samples": 1201,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day90",
+      "controller": "response_21.5",
+      "transitions": 40,
+      "native_samples": 1201,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 3.469446951953614e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day90",
+      "controller": "response_22",
+      "transitions": 40,
+      "native_samples": 1201,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 3.469446951953614e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day90",
+      "controller": "response_22.5",
+      "transitions": 40,
+      "native_samples": 1201,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 5.551115123125783e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "control_trajectories": [
+    {
+      "scenario": "day98",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 2.1316282072803006e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day98",
+      "controller": "mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.3306690738754696e-16,
+        "tdis_tot": 9.769962616701378e-15,
+        "cost_tot": 2.7755575615628914e-17,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day119",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 5.551115123125783e-17,
+        "tdis_tot": 5.684341886080802e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 1.3877787807814457e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day119",
+      "controller": "mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 5.551115123125783e-17,
+        "tdis_tot": 4.263256414560601e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 6.938893903907228e-18
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "response_policy_replay": [
+    {
+      "scenario": "day84",
+      "controller": "response_21.5",
+      "decisions_replayed": 40,
+      "modes": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "operative_min_C": 21.14955563207502,
+      "operative_max_C": 21.934987612425857,
+      "decision_mean_s": 0.00013115999463479965,
+      "decision_p95_s": 2.712507848627862e-05,
+      "decision_max_s": 0.004508899990469217,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day84",
+      "controller": "response_22",
+      "decisions_replayed": 40,
+      "modes": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "operative_min_C": 21.14955563207502,
+      "operative_max_C": 22.330381250682535,
+      "decision_mean_s": 0.00011768999684136361,
+      "decision_p95_s": 3.0325102852657406e-05,
+      "decision_max_s": 0.004017899977043271,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day84",
+      "controller": "response_22.5",
+      "decisions_replayed": 40,
+      "modes": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "operative_min_C": 21.14955563207502,
+      "operative_max_C": 22.907982892537404,
+      "decision_mean_s": 0.0001159099891083315,
+      "decision_p95_s": 3.043499309569593e-05,
+      "decision_max_s": 0.003967699944041669,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day90",
+      "controller": "response_21.5",
+      "decisions_replayed": 40,
+      "modes": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "operative_min_C": 21.19032747090546,
+      "operative_max_C": 22.046153933990297,
+      "decision_mean_s": 0.00013438749883789569,
+      "decision_p95_s": 1.960502704605459e-05,
+      "decision_max_s": 0.004733199952170253,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day90",
+      "controller": "response_22",
+      "decisions_replayed": 40,
+      "modes": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "operative_min_C": 21.19032747090546,
+      "operative_max_C": 22.332359406255478,
+      "decision_mean_s": 0.00011964250297751278,
+      "decision_p95_s": 3.402502625249324e-05,
+      "decision_max_s": 0.004030899959616363,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day90",
+      "controller": "response_22.5",
+      "decisions_replayed": 40,
+      "modes": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 8,
+        "intervention": 32
+      },
+      "operative_min_C": 21.19032747090546,
+      "operative_max_C": 22.886417867218483,
+      "decision_mean_s": 0.00011698249145410954,
+      "decision_p95_s": 2.4659954942762844e-05,
+      "decision_max_s": 0.004030099953524768,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    }
+  ],
+  "control_policy_replay": [
+    {
+      "scenario": "day98",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "recover_heat": 45,
+        "guarded_rule": 627
+      },
+      "reasons": {
+        "recover_heat": 45,
+        "rule": 627
+      },
+      "operative_min_C": 19.139380022143655,
+      "operative_max_C": 22.76028901211299,
+      "decision_mean_s": 0.00015902128212647292,
+      "decision_p95_s": 0.0002525200077798211,
+      "decision_max_s": 0.0006312000332400203,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day98",
+      "controller": "mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "fallback": 166,
+        "guarded_rule": 7,
+        "mpc": 499
+      },
+      "reasons": {
+        "recover_heat": 43,
+        "observer_initialization": 7,
+        "feasible_plan": 499,
+        "outside_training_support": 91,
+        "no_margin_feasible_plan": 32
+      },
+      "operative_min_C": 19.07364473986445,
+      "operative_max_C": 22.67700006067753,
+      "decision_mean_s": 0.0016221773832859028,
+      "decision_p95_s": 0.002202875009970739,
+      "decision_max_s": 0.014197499956935644,
+      "one_step_mpc_temperature_RMSE_C": 0.11578158879054823,
+      "one_step_mpc_margin_coverage": 0.9579158316633266,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day119",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 492,
+        "recover_heat": 28,
+        "coast": 152
+      },
+      "reasons": {
+        "rule": 492,
+        "recover_heat": 28,
+        "coast": 152
+      },
+      "operative_min_C": 19.835924768738835,
+      "operative_max_C": 26.880117150805177,
+      "decision_mean_s": 0.0001742501472541508,
+      "decision_p95_s": 0.0002989899483509362,
+      "decision_max_s": 0.0005249000387266278,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day119",
+      "controller": "mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "mpc": 163,
+        "fallback": 501
+      },
+      "reasons": {
+        "observer_initialization": 8,
+        "feasible_plan": 163,
+        "outside_training_support": 313,
+        "recover_heat": 27,
+        "coast": 154,
+        "no_margin_feasible_plan": 7
+      },
+      "operative_min_C": 19.737869212362227,
+      "operative_max_C": 26.92042793211465,
+      "decision_mean_s": 0.0007657970210337746,
+      "decision_p95_s": 0.00201146001345478,
+      "decision_max_s": 0.003907799953594804,
+      "one_step_mpc_temperature_RMSE_C": 0.0490994330796931,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    }
+  ],
+  "paired_action_response_gate_rebuilt": true,
+  "independent_model_repeat_exact": true,
+  "short_simulation_repeat": [
+    {
+      "episode": "day119__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day119__mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day98__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day98__mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    }
+  ]
+}
