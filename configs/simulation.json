@@ -1,0 +1,11 @@
+{
+  "version": "0.9.0",
+  "testcase": "bestest_hydronic_heat_pump",
+  "area_m2": 192,
+  "step_s": 900,
+  "days": 14,
+  "scenarios": ["peak_heat_day", "typical_heat_day"],
+  "controllers": ["embedded", "rule"],
+  "occupied_offset_K": 0.5,
+  "unoccupied_offset_K": 3.0
+}

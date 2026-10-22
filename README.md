@@ -4,13 +4,15 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：里程碑 1 进行中，数据重建与预测基线子阶段已完成。** 已建立固定来源分组、外部气候测试、五种子预测基线及可复现验证。仿真、动态模型和闭环控制尚未开始。
+**当前状态：里程碑 1 进行中，预测基线、BOPTEST 单热区与规则控制采集已完成。** 已有固定切分的预测结果，以及两场景、两控制器的 14 天仿真对照和轨迹；动态模型与 MPC 待开始。
 
 ## 项目入口
 
 - [PROJECT.md：项目总览、里程碑与阶段结果](PROJECT.md)
 - [正式预测基线结果](reports/baseline/REPORT.md)
 - [安装、运行与评测协议](docs/experiments/baseline.md)
+- [单热区仿真与规则控制结果](reports/simulation/REPORT.md)
+- [仿真部署与轨迹采集协议](docs/experiments/simulation.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -25,10 +27,12 @@ thermalComfortPredict/
 ├── AGENTS.md
 ├── pyproject.toml          # 固定核心依赖
 ├── configs/               # 正式实验配置
-├── thermal_comfort/       # 数据重建与预测基线
-├── tests/                 # 数据与模型复现检查
-├── scripts/               # 正式结果重复验证
+├── thermal_comfort/       # 预测基线与仿真采集
+├── tests/                 # 数据、模型与仿真协议检查
+├── scripts/               # 部署、结果验证与报告
 ├── reports/baseline/      # 提交到 Git 的紧凑结果与证据
+├── reports/simulation/    # 仿真指标、轨迹样例与验证证据
+├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/
 │   ├── README.md

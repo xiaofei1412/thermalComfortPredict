@@ -1,0 +1,7 @@
+{
+  "ghcr.io/ibpsa/boptest-worker:v0.9.0": "sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+  "ghcr.io/ibpsa/boptest-web:v0.9.0": "sha256:707cdc0fd0144b944b7c6812f6fa21564c3c1320ac87b28d305ce72002d31ebc",
+  "thermal-boptest-storage:2025-04": "sha256:88c260d36dfcc0967c2ff0321d7ac9d160d8bdfa7c7a6227d55e895c2496739e",
+  "thermal-boptest-provision:latest": "sha256:a90fbdf385ab4caa760c98d845eaec6ef99205d83deba427b1884d0d8433ec79",
+  "redis:7.4.2-alpine": "sha256:02419de7eddf55aa5bcf49efb74e88fa8d931b4d77c07eff8a6b2144472b6952"
+}

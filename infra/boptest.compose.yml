@@ -1,0 +1,77 @@
+name: thermal-boptest
+
+x-boptest: &boptest
+  BOPTEST_REDIS_HOST: redis
+  BOPTEST_INTERNAL_S3_URL: http://minio:9000
+  BOPTEST_PUBLIC_S3_URL: http://minio:9000
+  BOPTEST_S3_BUCKET: boptest
+  BOPTEST_REGION: us-west-1
+  BOPTEST_TIMEOUT: '900'
+  BOPTEST_MESSAGE_TIMEOUT: '300000'
+  AWS_ACCESS_KEY_ID: local-boptest
+  AWS_SECRET_ACCESS_KEY: local-boptest-only
+  BOPTEST_USE_TEST_USERS: 'true'
+  BOPTEST_TEST_USERNAME: canary
+  BOPTEST_TEST_KEY: canarykey
+  BOPTEST_TEST_PRIVILEGED_USERNAME: crusader
+  BOPTEST_TEST_PRIVILEGED_KEY: crusaderkey
+  BOPTEST_DASHBOARD_SERVER: http://127.0.0.1/disabled
+
+services:
+  redis:
+    image: redis:7.4.2-alpine@sha256:02419de7eddf55aa5bcf49efb74e88fa8d931b4d77c07eff8a6b2144472b6952
+  minio:
+    image: thermal-boptest-storage:2025-04
+    build:
+      context: ../outputs/storage-build
+      dockerfile: ../../infra/storage.Dockerfile
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: local-admin
+      MINIO_ROOT_PASSWORD: local-admin-only
+  initialize-store:
+    image: thermal-boptest-storage:2025-04
+    pull_policy: never
+    depends_on: [minio]
+    entrypoint: /bin/sh
+    command:
+      - -ec
+      - |
+        ready=0
+        for attempt in 1 2 3 4 5 6 7 8 9 10; do
+          if mc alias set local http://minio:9000 local-admin local-admin-only; then
+            ready=1
+            break
+          fi
+          sleep 2
+        done
+        test "$$ready" = 1
+        mc mb --ignore-existing local/boptest
+        mc anonymous set download local/boptest
+        mc admin user svcacct info local local-boptest >/dev/null 2>&1 || mc admin user svcacct add --access-key local-boptest --secret-key local-boptest-only local local-admin
+  worker:
+    image: ghcr.io/ibpsa/boptest-worker:v0.9.0@sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7
+    environment:
+      <<: *boptest
+      BOPTEST_LOGLEVEL: WARNING
+    depends_on:
+      redis:
+        condition: service_started
+      initialize-store:
+        condition: service_completed_successfully
+  web:
+    image: ghcr.io/ibpsa/boptest-web:v0.9.0@sha256:707cdc0fd0144b944b7c6812f6fa21564c3c1320ac87b28d305ce72002d31ebc
+    ports: ['127.0.0.1:8080:80']
+    environment:
+      <<: *boptest
+      NODE_ENV: production
+    depends_on: [worker]
+  provision:
+    build:
+      context: ../outputs/boptest-v0.9.0/service/provision
+    environment:
+      BOPTEST_SERVER: http://web
+      BOPTEST_DASHBOARD_API_KEY: crusaderkey
+    volumes:
+      - ../outputs/boptest-v0.9.0:/usr/src/boptest:ro
+    depends_on: [web]

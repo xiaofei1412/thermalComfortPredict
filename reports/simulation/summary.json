@@ -1,0 +1,238 @@
+[
+  {
+    "scenario": "peak_heat_day",
+    "controller": "embedded",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 14,
+      "scenarios": [
+        "peak_heat_day",
+        "typical_heat_day"
+      ],
+      "controllers": [
+        "embedded",
+        "rule"
+      ],
+      "occupied_offset_K": 0.5,
+      "unoccupied_offset_K": 3.0
+    },
+    "start_time_s": 1382400,
+    "end_time_s": 2592000,
+    "transitions": 1344,
+    "native_samples": 40321,
+    "metrics": {
+      "energy_kWh": 667.7317984100271,
+      "energy_kWh_m2": 3.4777697833855576,
+      "boptest_energy_kWh_m2": 3.4777725656013843,
+      "discomfort_Kh": 8.38169294251308,
+      "cost_EUR_m2": 0.8816153453799508,
+      "emissions_kg_m2": 0.5807880184554312
+    },
+    "kpis": {
+      "tdis_tot": 8.381692942513078,
+      "idis_tot": 0,
+      "ener_tot": 3.4777725656013834,
+      "cost_tot": 0.8816153453799507,
+      "emis_tot": 0.5807880184554309,
+      "pele_tot": 0.01891307030662192,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 1.230555412303211e-05
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 8.881784197001252e-16,
+      "tdis_tot": 1.7763568394002505e-15,
+      "cost_tot": 1.1102230246251565e-16,
+      "emis_tot": 2.220446049250313e-16
+    },
+    "wall_seconds": 29.250224599963985,
+    "sha256": {
+      "api_kpis.json": "aa8ef342a53391b3162bfeb503de2438a591fc213f42be6ba69b2efc685a8e1d",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "f5daf90b9e73b71a82bf6fc8ec5b3fd6e77e1f234d28e3a0ff1839a178171204",
+      "native.csv.gz": "38edd2ce467006bf7d313e36350a0da3b05cfe17fc9657fa0b3dc150536b23cd",
+      "steps.jsonl": "09eaf9bf97e2523674cfb2ccbf4425118fffefed7303a2535b861f5c0ae54631",
+      "transitions.csv.gz": "a632ec6d3a782ebaf9bddb443fcd3385d0755b3b1a4221634569b48e201e880f"
+    }
+  },
+  {
+    "scenario": "peak_heat_day",
+    "controller": "rule",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 14,
+      "scenarios": [
+        "peak_heat_day",
+        "typical_heat_day"
+      ],
+      "controllers": [
+        "embedded",
+        "rule"
+      ],
+      "occupied_offset_K": 0.5,
+      "unoccupied_offset_K": 3.0
+    },
+    "start_time_s": 1382400,
+    "end_time_s": 2592000,
+    "transitions": 1344,
+    "native_samples": 40321,
+    "metrics": {
+      "energy_kWh": 539.7094262661625,
+      "energy_kWh_m2": 2.810986595136263,
+      "boptest_energy_kWh_m2": 2.810988843925539,
+      "discomfort_Kh": 50.96424792653312,
+      "cost_EUR_m2": 0.7125856719351242,
+      "emissions_kg_m2": 0.4694351369355651
+    },
+    "kpis": {
+      "tdis_tot": 50.96424792653312,
+      "idis_tot": 0,
+      "ener_tot": 2.8109888439255393,
+      "cost_tot": 0.7125856719351241,
+      "emis_tot": 0.4694351369355651,
+      "pele_tot": 0.021067632171889148,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 1.1586894012221414e-05
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 4.440892098500626e-16,
+      "tdis_tot": 0.0,
+      "cost_tot": 1.1102230246251565e-16,
+      "emis_tot": 0.0
+    },
+    "wall_seconds": 28.397724799928255,
+    "sha256": {
+      "api_kpis.json": "785f267113767c2a50e4e914656f91d8871203268146de3380816addfabef3ec",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "f5daf90b9e73b71a82bf6fc8ec5b3fd6e77e1f234d28e3a0ff1839a178171204",
+      "native.csv.gz": "2f0f30e7841540aa27dfb647e5d02d7306dd4c35b18c9fde2caefa3116efddd3",
+      "steps.jsonl": "60d066f17a49d0a44ad96e6ed1734757c5afc132594c5ebcefc338d1d08bd8d3",
+      "transitions.csv.gz": "284e087393a8ce90cad539c45a6b953e3deefad8b6571f59b21d8d25250a9e47"
+    }
+  },
+  {
+    "scenario": "typical_heat_day",
+    "controller": "embedded",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 14,
+      "scenarios": [
+        "peak_heat_day",
+        "typical_heat_day"
+      ],
+      "controllers": [
+        "embedded",
+        "rule"
+      ],
+      "occupied_offset_K": 0.5,
+      "unoccupied_offset_K": 3.0
+    },
+    "start_time_s": 9331200,
+    "end_time_s": 10540800,
+    "transitions": 1344,
+    "native_samples": 40321,
+    "metrics": {
+      "energy_kWh": 340.4143515111541,
+      "energy_kWh_m2": 1.7729914141205942,
+      "boptest_energy_kWh_m2": 1.7729928325137256,
+      "discomfort_Kh": 9.445893160232401,
+      "cost_EUR_m2": 0.4494536830422295,
+      "emissions_kg_m2": 0.2960898030297922
+    },
+    "kpis": {
+      "tdis_tot": 9.445893160232403,
+      "idis_tot": 0,
+      "ener_tot": 1.7729928325137256,
+      "cost_tot": 0.44945368304222943,
+      "emis_tot": 0.2960898030297922,
+      "pele_tot": 0.01649236610082463,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 1.2764042499018651e-05
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 1.7763568394002505e-15,
+      "cost_tot": 5.551115123125783e-17,
+      "emis_tot": 0.0
+    },
+    "wall_seconds": 29.75534399994649,
+    "sha256": {
+      "api_kpis.json": "6f0321facfbab7278c3b518fe44cdeabef83d0c7beb8fcdbef64020c1c4df5ad",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "a93cc0cdc741f9dd1e7d0cbfcf761da9fe7a0db57b96be92189b96239fddb313",
+      "native.csv.gz": "2541685df25902c1f73db67aa7a509d93ac1bfa90bbb62da086d767ab17dd569",
+      "steps.jsonl": "09074e83234cd976098f15ded6c749ab0f3a5fa4f300d2a880f6e431bef96591",
+      "transitions.csv.gz": "ec9b02ccc714ed1da0e2288f2350d8966f736bb09730540fdfa1971530ca1b4f"
+    }
+  },
+  {
+    "scenario": "typical_heat_day",
+    "controller": "rule",
+    "config": {
+      "version": "0.9.0",
+      "testcase": "bestest_hydronic_heat_pump",
+      "area_m2": 192,
+      "step_s": 900,
+      "days": 14,
+      "scenarios": [
+        "peak_heat_day",
+        "typical_heat_day"
+      ],
+      "controllers": [
+        "embedded",
+        "rule"
+      ],
+      "occupied_offset_K": 0.5,
+      "unoccupied_offset_K": 3.0
+    },
+    "start_time_s": 9331200,
+    "end_time_s": 10540800,
+    "transitions": 1344,
+    "native_samples": 40321,
+    "metrics": {
+      "energy_kWh": 319.8569384469414,
+      "energy_kWh_m2": 1.6659215544111532,
+      "boptest_energy_kWh_m2": 1.6659228871483964,
+      "discomfort_Kh": 12.822163437928822,
+      "cost_EUR_m2": 0.4223114518921185,
+      "emissions_kg_m2": 0.2782091221537822
+    },
+    "kpis": {
+      "tdis_tot": 12.822163437928822,
+      "idis_tot": 0,
+      "ener_tot": 1.6659228871483962,
+      "cost_tot": 0.4223114518921185,
+      "emis_tot": 0.27820912215378224,
+      "pele_tot": 0.02076975996307548,
+      "pgas_tot": null,
+      "pdih_tot": null,
+      "time_rat": 1.2167469388233222e-05
+    },
+    "kpi_absolute_difference": {
+      "ener_tot": 2.220446049250313e-16,
+      "tdis_tot": 0.0,
+      "cost_tot": 0.0,
+      "emis_tot": 5.551115123125783e-17
+    },
+    "wall_seconds": 28.896739099989645,
+    "sha256": {
+      "api_kpis.json": "89d62a35e65e2cc725ae2a36595bc4eceb8ebf55f4ecd2966c82bfd0d57521ee",
+      "api_metadata.json": "f700bc4f10176cbbad409b6cd979e89465eabf05f1335b815d5aa8f11920c78e",
+      "exogenous.csv.gz": "a93cc0cdc741f9dd1e7d0cbfcf761da9fe7a0db57b96be92189b96239fddb313",
+      "native.csv.gz": "f7b7494f3a1e8f79a9a16edc57d4bca7c9fbd1b1318e5147f5db3e3d577b4d93",
+      "steps.jsonl": "758e472876045cb8d17c0df15237e8519922a884f9f93f66abf0f6b16aa20dd4",
+      "transitions.csv.gz": "2adec70c6850c27bb5e693f43d899f63c49795d362e3519f0589ef16efe7bd4e"
+    }
+  }
+]

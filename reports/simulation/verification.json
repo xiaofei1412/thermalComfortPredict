@@ -1,0 +1,144 @@
+{
+  "episodes": [
+    {
+      "scenario": "peak_heat_day",
+      "controller": "embedded",
+      "transitions": 1344,
+      "native_samples": 40321,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 8.881784197001252e-16,
+        "tdis_tot": 5.1514348342607263e-14,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 2.220446049250313e-16
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "peak_heat_day",
+      "controller": "rule",
+      "transitions": 1344,
+      "native_samples": 40321,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 4.440892098500626e-16,
+        "tdis_tot": 7.105427357601002e-14,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "typical_heat_day",
+      "controller": "embedded",
+      "transitions": 1344,
+      "native_samples": 40321,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 2.6645352591003757e-14,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "typical_heat_day",
+      "controller": "rule",
+      "transitions": 1344,
+      "native_samples": 40321,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 1.7763568394002505e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "repeat_episodes": [
+    {
+      "scenario": "peak_heat_day",
+      "controller": "embedded",
+      "transitions": 96,
+      "native_samples": 2881,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 5.551115123125783e-17,
+        "tdis_tot": 2.9976021664879227e-15,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 6.938893903907228e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "peak_heat_day",
+      "controller": "rule",
+      "transitions": 96,
+      "native_samples": 2881,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 3.552713678800501e-15,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "typical_heat_day",
+      "controller": "embedded",
+      "transitions": 96,
+      "native_samples": 2881,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "typical_heat_day",
+      "controller": "rule",
+      "transitions": 96,
+      "native_samples": 2881,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 1.8943180357666733e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "reproducibility": [
+    {
+      "episode": "peak_heat_day__embedded",
+      "native_samples": 2881,
+      "transitions": 96,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "peak_heat_day__rule",
+      "native_samples": 2881,
+      "transitions": 96,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "typical_heat_day__embedded",
+      "native_samples": 2881,
+      "transitions": 96,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "typical_heat_day__rule",
+      "native_samples": 2881,
+      "transitions": 96,
+      "exact_prefix_match": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "boptest_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+  "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+  "local_full_artifacts": "outputs\\simulation",
+  "tracked_files_sha256": {
+    "infra\\boptest.compose.yml": "32b18aec011f80eb9345900065dcf347727520e9fa284456c7423fa535100099",
+    "infra\\storage.Dockerfile": "cd6e82f1ccfe22db723d5be6f9e6b041e00d030776276b895845715b7011e012",
+    "scripts\\setup_boptest.ps1": "b14ca89aa750a22e2436c87a58aa8a0abfe060413fda6b5238057cb8561968b1",
+    "thermal_comfort\\simulation.py": "d15435e0823fd4f66be47469928a20c4130ef9ec76b5fd4111a9ef3c8e0592b0",
+    "configs\\simulation.json": "ce4460d9b75217518125e4c159302be14577374a5853479a74abd9039674d476",
+    "scripts\\verify_simulation.py": "1dd82d993172709c14ee0532580fcaafae76cf7025b2561b306dfa3f431e09b0",
+    "D:\\thermalComfortPredict\\scripts\\report_simulation.py": "106ddc5c2c2cc5d50cabd5c773aca797ccaaed547646ee38b8b46aef710cbb69"
+  }
+}
