@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+  "config_sha256": "0334a65b272205bfd21a5795fdf759b6a16ee987d3e5da31f21fae19dee2b27f",
+  "scope": "6h paired direction, not arbitrary-action accuracy or safety"
+}

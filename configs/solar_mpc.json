@@ -1,0 +1,26 @@
+{
+  "base_config": "configs/recovery_mpc.json",
+  "new_episodes": [
+    {"id": "solar_train147", "split": "train", "start_day": 147, "seed": 501},
+    {"id": "solar_validation168", "split": "validation", "start_day": 168, "seed": 601},
+    {"id": "solar_validation189", "split": "validation", "start_day": 189, "seed": 602}
+  ],
+  "test_start_days": [238, 273, 315],
+  "validation_start_days": [168, 189],
+  "controllers": ["guarded_rule", "minimum_heat", "solar_mpc"],
+  "weather_modes": ["perfect", "warm_bias", "cold_bias"],
+  "horizon_steps": 24,
+  "move_block_steps": 6,
+  "mass_window_steps": 16,
+  "mass_ridge": 0.001,
+  "abort_max_C": 35,
+  "solar_coast_buffer_K": 0.2,
+  "collection_nominal_C": 21.0,
+  "collection_levels_K": [-3.0, -0.5, 1.0],
+  "minimum_trigger_K": 0.3,
+  "minimum_release_K": 0.6,
+  "response": {
+    "start_days": [168, 189], "prelude_steps": 16,
+    "steps": 32, "setpoints_C": [18.0, 22.0, 23.25]
+  }
+}

@@ -4,7 +4,7 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：预测、单热区仿真、灰箱残差模型与短时 MPC 基线链路已贯通。** 已完成恢复规则、空载耗电修正与天气误差对照；较冷日期实现零越界节电，较暖日期仍增加过热，整体可靠性和人员需求接入仍待完善。
+**当前状态：本轮九组新时间留出控制测试实现节电且不增加温度越界。** 暖天气数据、提前停热与最小供暖对照已完成；复杂蓄热候选未胜出，采用验证选出的简单模型。热浪、人员需求接入与真实迁移仍待进一步验证。
 
 ## 项目入口
 
@@ -19,6 +19,8 @@
 - [MPC 运行协议与保护边界](docs/experiments/mpc.md)
 - [舒适恢复、空载耗电与天气误差结果](reports/recovery_mpc/REPORT.md)
 - [恢复MPC与天气压力测试协议](docs/experiments/recovery_mpc.md)
+- [暖天气、蓄热消融与提前停热结果](reports/solar_mpc/REPORT.md)
+- [新时间切分、最小供暖与复现协议](docs/experiments/solar_mpc.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -41,6 +43,7 @@ thermalComfortPredict/
 ├── reports/dynamics/      # 隔离切分、多步误差与保护证据
 ├── reports/mpc/           # 灰箱、动作干预与短时控制对照
 ├── reports/recovery_mpc/  # 恢复、停机耗电与天气误差证据
+├── reports/solar_mpc/     # 暖天气新切分、蓄热消融与提前停热
 ├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/

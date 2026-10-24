@@ -1,0 +1,103 @@
+[
+  {
+    "id": "train_day014_seed101",
+    "split": "train",
+    "original_role": "train",
+    "warmup_start_s": 604800.0,
+    "start_s": 1209600.0,
+    "end_s": 1814400.0,
+    "source": "outputs\\excitation\\train_day014_seed101__excitation",
+    "source_summary_sha256": "28a35bbc9092f8c24ab99efef49cefaaf91d6c7659e3e5c7c4505d2a32bc7beb"
+  },
+  {
+    "id": "train_day035_seed102",
+    "split": "train",
+    "original_role": "train",
+    "warmup_start_s": 2419200.0,
+    "start_s": 3024000.0,
+    "end_s": 3628800.0,
+    "source": "outputs\\excitation\\train_day035_seed102__excitation",
+    "source_summary_sha256": "e3e13ba701bc1bdb59b9eff77cf1dd26bf1504a19d1c8ac2056b2a022f35881a"
+  },
+  {
+    "id": "train_day056_seed103",
+    "split": "train",
+    "original_role": "train",
+    "warmup_start_s": 4233600.0,
+    "start_s": 4838400.0,
+    "end_s": 5443200.0,
+    "source": "outputs\\excitation\\train_day056_seed103__excitation",
+    "source_summary_sha256": "5c9ca933c07809951589b05eb7cf700cfda6e952f2b2dafc48d3346325618bd8"
+  },
+  {
+    "id": "test_day119_seed302",
+    "split": "train",
+    "original_role": "test",
+    "warmup_start_s": 9676800.0,
+    "start_s": 10281600.0,
+    "end_s": 10886400.0,
+    "source": "outputs\\excitation\\test_day119_seed302__excitation",
+    "source_summary_sha256": "7e88f9402e5e0fffd57d05552f58f8bd0b613eb638112930d79b66d3c6a7fc1c"
+  },
+  {
+    "id": "warm_train_day063",
+    "split": "train",
+    "original_role": "train",
+    "warmup_start_s": 4838400.0,
+    "start_s": 5443200.0,
+    "end_s": 6048000.0,
+    "source": "outputs\\recovery-calibration\\warm_train_day063__warm_excitation",
+    "source_summary_sha256": "08266908d9a1a10502b7b8df768bc6e5ab633da1ddd6b2b83f3e0ce542a8d66e"
+  },
+  {
+    "id": "solar_train147",
+    "split": "train",
+    "original_role": "train",
+    "warmup_start_s": 12096000.0,
+    "start_s": 12700800.0,
+    "end_s": 13305600.0,
+    "source": "outputs\\solar-data\\solar_train147__solar_excitation",
+    "source_summary_sha256": "a98ec5c6a18face852b590fcf1efc8a90674b06e4fa7da89a2c1be2e23eb1cb5"
+  },
+  {
+    "id": "solar_validation168",
+    "split": "validation",
+    "original_role": "validation",
+    "warmup_start_s": 13910400.0,
+    "start_s": 14515200.0,
+    "end_s": 15120000.0,
+    "source": "outputs\\solar-data\\solar_validation168__solar_excitation",
+    "source_summary_sha256": "5328379cb02c4603ab472866923f79647a011dbf67afc63a2b58406b9a910f1c"
+  },
+  {
+    "id": "solar_validation189",
+    "split": "validation",
+    "original_role": "validation",
+    "warmup_start_s": 15724800.0,
+    "start_s": 16329600.0,
+    "end_s": 16934400.0,
+    "source": "outputs\\solar-data\\solar_validation189__solar_excitation",
+    "source_summary_sha256": "79c07f53c0febb0e8ba79c6622802b14da60c65d7faef0130a89235d32440d5b"
+  },
+  {
+    "id": "day238",
+    "split": "test",
+    "warmup_start_s": 19958400,
+    "start_s": 20563200,
+    "end_s": 21168000
+  },
+  {
+    "id": "day273",
+    "split": "test",
+    "warmup_start_s": 22982400,
+    "start_s": 23587200,
+    "end_s": 24192000
+  },
+  {
+    "id": "day315",
+    "split": "test",
+    "warmup_start_s": 26611200,
+    "start_s": 27216000,
+    "end_s": 27820800
+  }
+]

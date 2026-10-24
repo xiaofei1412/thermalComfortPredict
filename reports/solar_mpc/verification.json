@@ -1,0 +1,2484 @@
+{
+  "model": {
+    "independent_refit_byte_identical": true,
+    "train_only_RC_actuator_and_power_rebuilt": true,
+    "selection_and_margins_rebuilt": true,
+    "chronological_split_pass": true,
+    "retired_test_day119_used_as_training": true,
+    "selected_model": "expanded_baseline",
+    "training_rows": 4032,
+    "calibration_origins": 222
+  },
+  "collection_trajectories": [
+    {
+      "scenario": "solar_train147",
+      "controller": "solar_excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 5.684341886080802e-14,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "solar_validation168",
+      "controller": "solar_excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 1.865174681370263e-14,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 1.734723475976807e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "solar_validation189",
+      "controller": "solar_excitation",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.7053025658242404e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "collection_replay": [
+    {
+      "episode": "solar_train147",
+      "replayed": 672,
+      "temperature_min_C": 20.821299277059666,
+      "temperature_max_C": 26.043334800395655,
+      "native_points_above_28C": 0
+    },
+    {
+      "episode": "solar_validation168",
+      "replayed": 672,
+      "temperature_min_C": 21.38186556546418,
+      "temperature_max_C": 25.265410898872915,
+      "native_points_above_28C": 0
+    },
+    {
+      "episode": "solar_validation189",
+      "replayed": 672,
+      "temperature_min_C": 23.94349084569211,
+      "temperature_max_C": 30.330590654144657,
+      "native_points_above_28C": 4336
+    }
+  ],
+  "response_trajectories": [
+    {
+      "scenario": "day168",
+      "controller": "response_18",
+      "transitions": 48,
+      "native_samples": 1441,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 5.162537064506978e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day168",
+      "controller": "response_22",
+      "transitions": 48,
+      "native_samples": 1441,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 5.162537064506978e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day168",
+      "controller": "response_23.25",
+      "transitions": 48,
+      "native_samples": 1441,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 5.162537064506978e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 4.336808689942018e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189",
+      "controller": "response_18",
+      "transitions": 48,
+      "native_samples": 1441,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.0658141036401503e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189",
+      "controller": "response_22",
+      "transitions": 48,
+      "native_samples": 1441,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.4210854715202004e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189",
+      "controller": "response_23.25",
+      "transitions": 48,
+      "native_samples": 1441,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.4210854715202004e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "validation_trajectories": [
+    {
+      "scenario": "day168_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 2.3092638912203256e-14,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 2.6645352591003757e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 1.9539925233402755e-14,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 2.2737367544323206e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.7053025658242404e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.7053025658242404e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "control_trajectories": [
+    {
+      "scenario": "day238_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.831068712794149e-15,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.1102230246251565e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 1.3877787807814457e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.831068712794149e-15,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 1.3877787807814457e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.831068712794149e-15,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.1102230246251565e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 2.7755575615628914e-17,
+        "emis_tot": 1.3877787807814457e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.042810365310288e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.509903313490213e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 1.687538997430238e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.042810365310288e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.509903313490213e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.398081733190338e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 2.042810365310288e-14,
+        "cost_tot": 1.3877787807814457e-17,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.509903313490213e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.7755575615628914e-17,
+        "tdis_tot": 1.509903313490213e-14,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 8.881784197001252e-14,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 8.881784197001252e-14,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.6653345369377348e-16,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 8.881784197001252e-14,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "repeat_trajectories": [
+    {
+      "scenario": "day238_perfect",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_perfect",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_perfect",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 4.718447854656915e-16,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 4.718447854656915e-16,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "guarded_rule",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "minimum_heat",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 4.718447854656915e-16,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "solar_mpc",
+      "transitions": 24,
+      "native_samples": 721,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "response_replay": [
+    {
+      "scenario": "day168",
+      "controller": "response_18",
+      "decisions_replayed": 48,
+      "modes": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "operative_min_C": 23.153912688256582,
+      "operative_max_C": 24.463156219112307,
+      "decision_mean_s": 0.0001347187523303243,
+      "decision_p95_s": 3.915994893759489e-05,
+      "decision_max_s": 0.005384399904869497,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day168",
+      "controller": "response_22",
+      "decisions_replayed": 48,
+      "modes": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "operative_min_C": 23.153914071088593,
+      "operative_max_C": 24.463156219112307,
+      "decision_mean_s": 0.00015645000530639663,
+      "decision_p95_s": 3.773505450226366e-05,
+      "decision_max_s": 0.006284800008870661,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day168",
+      "controller": "response_23.25",
+      "decisions_replayed": 48,
+      "modes": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "operative_min_C": 23.28376717871845,
+      "operative_max_C": 24.463156219112307,
+      "decision_mean_s": 0.00013471248045486087,
+      "decision_p95_s": 2.919498947449028e-05,
+      "decision_max_s": 0.005401700036600232,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189",
+      "controller": "response_18",
+      "decisions_replayed": 48,
+      "modes": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "operative_min_C": 26.587578493261503,
+      "operative_max_C": 27.80071261801288,
+      "decision_mean_s": 0.0001361812343626904,
+      "decision_p95_s": 2.7894979575648902e-05,
+      "decision_max_s": 0.005492100026458502,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189",
+      "controller": "response_22",
+      "decisions_replayed": 48,
+      "modes": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "operative_min_C": 26.587580151532677,
+      "operative_max_C": 27.80071261801288,
+      "decision_mean_s": 0.00010751042524740721,
+      "decision_p95_s": 2.859998494386673e-05,
+      "decision_max_s": 0.0041096999775618315,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189",
+      "controller": "response_23.25",
+      "decisions_replayed": 48,
+      "modes": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "intervention": 32
+      },
+      "operative_min_C": 26.587579591612894,
+      "operative_max_C": 27.80071261801288,
+      "decision_mean_s": 0.0001452083330756674,
+      "decision_p95_s": 4.210997140035032e-05,
+      "decision_max_s": 0.005856200004927814,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    }
+  ],
+  "validation_replay": [
+    {
+      "scenario": "day168_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 72,
+        "guarded_rule": 600
+      },
+      "reasons": {
+        "coast": 72,
+        "rule": 600
+      },
+      "operative_min_C": 21.44770349081176,
+      "operative_max_C": 25.265407867566296,
+      "decision_mean_s": 0.001118128421997729,
+      "decision_p95_s": 0.0014048349868971853,
+      "decision_max_s": 0.0018968000076711178,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "coast": 8,
+        "minimum_setpoint": 654,
+        "reactive_heat": 10
+      },
+      "operative_min_C": 21.182180127896345,
+      "operative_max_C": 25.265407819036227,
+      "decision_mean_s": 0.0009192788643953723,
+      "decision_p95_s": 0.0011898450437001884,
+      "decision_max_s": 0.003170000039972365,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "early_coast": 214,
+        "fallback": 171,
+        "mpc": 279
+      },
+      "reasons": {
+        "coast": 8,
+        "stored_solar_heat": 214,
+        "no_margin_feasible_plan": 171,
+        "solar_feasible_plan": 279
+      },
+      "operative_min_C": 21.407440300670828,
+      "operative_max_C": 25.265407819036227,
+      "decision_mean_s": 0.027822022324211763,
+      "decision_p95_s": 0.0396760200150311,
+      "decision_max_s": 0.04691190004814416,
+      "one_step_mpc_temperature_RMSE_C": 0.06882852943178533,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 460,
+        "guarded_rule": 212
+      },
+      "reasons": {
+        "coast": 460,
+        "rule": 212
+      },
+      "operative_min_C": 23.943482870945274,
+      "operative_max_C": 30.330583451455823,
+      "decision_mean_s": 0.001129271130290969,
+      "decision_p95_s": 0.0014211899950169026,
+      "decision_max_s": 0.0019935000455006957,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "coast": 8,
+        "minimum_setpoint": 664
+      },
+      "operative_min_C": 23.94348958987382,
+      "operative_max_C": 30.33059208160381,
+      "decision_mean_s": 0.0009223208320950757,
+      "decision_p95_s": 0.0011867749562952665,
+      "decision_max_s": 0.0016963999951258302,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "early_coast": 422,
+        "fallback": 208,
+        "mpc": 34
+      },
+      "reasons": {
+        "coast": 8,
+        "stored_solar_heat": 422,
+        "no_margin_feasible_plan": 26,
+        "solar_feasible_plan": 34,
+        "outside_training_support": 182
+      },
+      "operative_min_C": 23.94348816516458,
+      "operative_max_C": 30.330592635424978,
+      "decision_mean_s": 0.008258059673174839,
+      "decision_p95_s": 0.03886924998951145,
+      "decision_max_s": 0.04290399991441518,
+      "one_step_mpc_temperature_RMSE_C": 0.03467893922495768,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    }
+  ],
+  "control_replay": [
+    {
+      "scenario": "day238_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 661,
+        "coast": 6
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 661,
+        "coast": 6
+      },
+      "operative_min_C": 21.180279179924128,
+      "operative_max_C": 24.03491511690106,
+      "decision_mean_s": 0.0011384805061208595,
+      "decision_p95_s": 0.0014215899980627,
+      "decision_max_s": 0.0019980999641120434,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 3,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 3,
+        "minimum_setpoint": 602,
+        "reactive_heat": 62
+      },
+      "operative_min_C": 20.83594376772362,
+      "operative_max_C": 23.91451142299894,
+      "decision_mean_s": 0.0009257614580010774,
+      "decision_p95_s": 0.0012095000129193063,
+      "decision_max_s": 0.0032581000123173,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 3,
+        "fallback": 328,
+        "mpc": 300,
+        "early_coast": 36
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 3,
+        "no_margin_feasible_plan": 328,
+        "solar_feasible_plan": 300,
+        "stored_solar_heat": 36
+      },
+      "operative_min_C": 21.0430529010971,
+      "operative_max_C": 23.988534970517208,
+      "decision_mean_s": 0.036275311902586725,
+      "decision_p95_s": 0.039966824965085836,
+      "decision_max_s": 0.043293299968354404,
+      "one_step_mpc_temperature_RMSE_C": 0.037299378899081234,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 661,
+        "coast": 6
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 661,
+        "coast": 6
+      },
+      "operative_min_C": 21.180279179924128,
+      "operative_max_C": 24.03491511690106,
+      "decision_mean_s": 0.0011362203890928953,
+      "decision_p95_s": 0.0014167450251989062,
+      "decision_max_s": 0.0018293000757694244,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 3,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 3,
+        "minimum_setpoint": 602,
+        "reactive_heat": 62
+      },
+      "operative_min_C": 20.83594376772362,
+      "operative_max_C": 23.91451142299894,
+      "decision_mean_s": 0.0009240558035907313,
+      "decision_p95_s": 0.001191264990484342,
+      "decision_max_s": 0.0017712999833747745,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 3,
+        "fallback": 338,
+        "mpc": 290,
+        "early_coast": 36
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 3,
+        "no_margin_feasible_plan": 338,
+        "solar_feasible_plan": 290,
+        "stored_solar_heat": 36
+      },
+      "operative_min_C": 21.0430529010971,
+      "operative_max_C": 23.982832097420044,
+      "decision_mean_s": 0.036357086162405766,
+      "decision_p95_s": 0.040372690081130716,
+      "decision_max_s": 0.04522769991308451,
+      "one_step_mpc_temperature_RMSE_C": 0.03659352013345796,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 661,
+        "coast": 6
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 661,
+        "coast": 6
+      },
+      "operative_min_C": 21.180279179924128,
+      "operative_max_C": 24.03491511690106,
+      "decision_mean_s": 0.0011406471728280718,
+      "decision_p95_s": 0.0014322150789666918,
+      "decision_max_s": 0.0018811000045388937,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 3,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 3,
+        "minimum_setpoint": 602,
+        "reactive_heat": 62
+      },
+      "operative_min_C": 20.83594376772362,
+      "operative_max_C": 23.91451142299894,
+      "decision_mean_s": 0.000887147319146953,
+      "decision_p95_s": 0.0010860249516554173,
+      "decision_max_s": 0.001422500004991889,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 5,
+        "guarded_rule": 3,
+        "fallback": 357,
+        "mpc": 295,
+        "early_coast": 12
+      },
+      "reasons": {
+        "anticipatory_recovery": 5,
+        "rule": 3,
+        "no_margin_feasible_plan": 357,
+        "solar_feasible_plan": 295,
+        "stored_solar_heat": 12
+      },
+      "operative_min_C": 21.04305579661809,
+      "operative_max_C": 24.002873332383103,
+      "decision_mean_s": 0.03773589300388786,
+      "decision_p95_s": 0.040707044984446834,
+      "decision_max_s": 0.06412469991482794,
+      "one_step_mpc_temperature_RMSE_C": 0.038345695543812536,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 621,
+        "anticipatory_recovery": 6,
+        "coast": 45
+      },
+      "reasons": {
+        "rule": 621,
+        "anticipatory_recovery": 6,
+        "coast": 45
+      },
+      "operative_min_C": 21.037275460835872,
+      "operative_max_C": 25.331357279870076,
+      "decision_mean_s": 0.001111783780548389,
+      "decision_p95_s": 0.0013850900053512306,
+      "decision_max_s": 0.0019301000284031034,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "rule": 8,
+        "minimum_setpoint": 636,
+        "reactive_heat": 28
+      },
+      "operative_min_C": 20.702143291330685,
+      "operative_max_C": 25.267965666878297,
+      "decision_mean_s": 0.0009201125008292452,
+      "decision_p95_s": 0.0011844050022773442,
+      "decision_max_s": 0.0017766000237315893,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "fallback": 278,
+        "mpc": 319,
+        "early_coast": 67
+      },
+      "reasons": {
+        "rule": 8,
+        "no_margin_feasible_plan": 278,
+        "solar_feasible_plan": 319,
+        "stored_solar_heat": 67
+      },
+      "operative_min_C": 20.958798518392996,
+      "operative_max_C": 25.293999757293136,
+      "decision_mean_s": 0.03541027009123354,
+      "decision_p95_s": 0.04072566503891721,
+      "decision_max_s": 0.045532100019045174,
+      "one_step_mpc_temperature_RMSE_C": 0.04213623251749869,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 621,
+        "anticipatory_recovery": 6,
+        "coast": 45
+      },
+      "reasons": {
+        "rule": 621,
+        "anticipatory_recovery": 6,
+        "coast": 45
+      },
+      "operative_min_C": 21.037275460835872,
+      "operative_max_C": 25.331357279870076,
+      "decision_mean_s": 0.0012557938969707937,
+      "decision_p95_s": 0.001550355047220364,
+      "decision_max_s": 0.002061599981971085,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "rule": 8,
+        "minimum_setpoint": 636,
+        "reactive_heat": 28
+      },
+      "operative_min_C": 20.702143291330685,
+      "operative_max_C": 25.267965666878297,
+      "decision_mean_s": 0.000932061307442685,
+      "decision_p95_s": 0.001235824980540201,
+      "decision_max_s": 0.0017087999731302261,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "fallback": 262,
+        "mpc": 313,
+        "early_coast": 89
+      },
+      "reasons": {
+        "rule": 8,
+        "no_margin_feasible_plan": 262,
+        "solar_feasible_plan": 313,
+        "stored_solar_heat": 89
+      },
+      "operative_min_C": 20.958798600905425,
+      "operative_max_C": 25.292000131527743,
+      "decision_mean_s": 0.034107587202535275,
+      "decision_p95_s": 0.04088197997189126,
+      "decision_max_s": 0.04485369997564703,
+      "one_step_mpc_temperature_RMSE_C": 0.042229881767583674,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 621,
+        "anticipatory_recovery": 6,
+        "coast": 45
+      },
+      "reasons": {
+        "rule": 621,
+        "anticipatory_recovery": 6,
+        "coast": 45
+      },
+      "operative_min_C": 21.037275460835872,
+      "operative_max_C": 25.331357279870076,
+      "decision_mean_s": 0.0011110168137141347,
+      "decision_p95_s": 0.0013405550271272657,
+      "decision_max_s": 0.0017925999127328396,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "rule": 8,
+        "minimum_setpoint": 636,
+        "reactive_heat": 28
+      },
+      "operative_min_C": 20.702143291330685,
+      "operative_max_C": 25.267965666878297,
+      "decision_mean_s": 0.000914738093429367,
+      "decision_p95_s": 0.00119194999570027,
+      "decision_max_s": 0.0017230999656021595,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "guarded_rule": 8,
+        "fallback": 293,
+        "mpc": 322,
+        "early_coast": 49
+      },
+      "reasons": {
+        "rule": 8,
+        "no_margin_feasible_plan": 293,
+        "solar_feasible_plan": 322,
+        "stored_solar_heat": 49
+      },
+      "operative_min_C": 20.958798518392996,
+      "operative_max_C": 25.294141316464106,
+      "decision_mean_s": 0.03558367990938548,
+      "decision_p95_s": 0.03990728004137054,
+      "decision_max_s": 0.0444184000371024,
+      "one_step_mpc_temperature_RMSE_C": 0.040510585177357124,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 112,
+        "guarded_rule": 560
+      },
+      "reasons": {
+        "anticipatory_recovery": 112,
+        "rule": 560
+      },
+      "operative_min_C": 20.35305928703525,
+      "operative_max_C": 22.518484302852016,
+      "decision_mean_s": 0.0011533797594546783,
+      "decision_p95_s": 0.0014567450329195709,
+      "decision_max_s": 0.0022003999911248684,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 6,
+        "guarded_rule": 2,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "anticipatory_recovery": 6,
+        "rule": 2,
+        "minimum_setpoint": 362,
+        "reactive_heat": 302
+      },
+      "operative_min_C": 18.821519831360547,
+      "operative_max_C": 22.42113831331494,
+      "decision_mean_s": 0.0009393388378763726,
+      "decision_p95_s": 0.0012147000525146723,
+      "decision_max_s": 0.001714400015771389,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 6,
+        "guarded_rule": 2,
+        "fallback": 518,
+        "mpc": 146
+      },
+      "reasons": {
+        "anticipatory_recovery": 6,
+        "rule": 2,
+        "no_margin_feasible_plan": 378,
+        "solar_feasible_plan": 146,
+        "outside_training_support": 140
+      },
+      "operative_min_C": 20.099679972051092,
+      "operative_max_C": 22.195494204558486,
+      "decision_mean_s": 0.030210059667990122,
+      "decision_p95_s": 0.040045729983830824,
+      "decision_max_s": 0.0447773999767378,
+      "one_step_mpc_temperature_RMSE_C": 0.1504274972249319,
+      "one_step_mpc_margin_coverage": 0.8424657534246576,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 112,
+        "guarded_rule": 560
+      },
+      "reasons": {
+        "anticipatory_recovery": 112,
+        "rule": 560
+      },
+      "operative_min_C": 20.35305928703525,
+      "operative_max_C": 22.518484302852016,
+      "decision_mean_s": 0.0011409910676732017,
+      "decision_p95_s": 0.00142047498957254,
+      "decision_max_s": 0.0018388000316917896,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 6,
+        "guarded_rule": 2,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "anticipatory_recovery": 6,
+        "rule": 2,
+        "minimum_setpoint": 362,
+        "reactive_heat": 302
+      },
+      "operative_min_C": 18.821519831360547,
+      "operative_max_C": 22.42113831331494,
+      "decision_mean_s": 0.0008998779772983177,
+      "decision_p95_s": 0.0011291599832475184,
+      "decision_max_s": 0.0017161000287160277,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 6,
+        "guarded_rule": 2,
+        "fallback": 477,
+        "mpc": 187
+      },
+      "reasons": {
+        "anticipatory_recovery": 6,
+        "rule": 2,
+        "no_margin_feasible_plan": 409,
+        "solar_feasible_plan": 187,
+        "outside_training_support": 68
+      },
+      "operative_min_C": 20.03991186648227,
+      "operative_max_C": 22.254309289638798,
+      "decision_mean_s": 0.03420524895617356,
+      "decision_p95_s": 0.04007655998575501,
+      "decision_max_s": 0.04851950006559491,
+      "one_step_mpc_temperature_RMSE_C": 0.1452604905988813,
+      "one_step_mpc_margin_coverage": 0.8609625668449198,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 112,
+        "guarded_rule": 560
+      },
+      "reasons": {
+        "anticipatory_recovery": 112,
+        "rule": 560
+      },
+      "operative_min_C": 20.35305928703525,
+      "operative_max_C": 22.518484302852016,
+      "decision_mean_s": 0.001146934968433232,
+      "decision_p95_s": 0.0014535800088196992,
+      "decision_max_s": 0.00194540002848953,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 6,
+        "guarded_rule": 2,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "anticipatory_recovery": 6,
+        "rule": 2,
+        "minimum_setpoint": 362,
+        "reactive_heat": 302
+      },
+      "operative_min_C": 18.821519831360547,
+      "operative_max_C": 22.42113831331494,
+      "decision_mean_s": 0.0009319261915238929,
+      "decision_p95_s": 0.0012071599951013923,
+      "decision_max_s": 0.001740699983201921,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "anticipatory_recovery": 6,
+        "guarded_rule": 2,
+        "fallback": 528,
+        "mpc": 136
+      },
+      "reasons": {
+        "anticipatory_recovery": 6,
+        "rule": 2,
+        "no_margin_feasible_plan": 343,
+        "solar_feasible_plan": 136,
+        "outside_training_support": 185
+      },
+      "operative_min_C": 20.097382720317682,
+      "operative_max_C": 22.45935497417298,
+      "decision_mean_s": 0.028081018301842658,
+      "decision_p95_s": 0.04049500497640111,
+      "decision_max_s": 0.05246999999508262,
+      "one_step_mpc_temperature_RMSE_C": 0.12826502518730032,
+      "one_step_mpc_margin_coverage": 0.8897058823529411,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    }
+  ],
+  "validation_v1_trajectories": [
+    {
+      "scenario": "day168_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 2.3092638912203256e-14,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 2.6645352591003757e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 2.3092638912203256e-14,
+        "cost_tot": 3.469446951953614e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "guarded_rule",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 2.2737367544323206e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "minimum_heat",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.7053025658242404e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "solar_mpc",
+      "transitions": 672,
+      "native_samples": 20161,
+      "max_native_gap_s": 30.0,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.7053025658242404e-13,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "artifact_hashes_match": true
+    }
+  ],
+  "validation_v1_replay": [
+    {
+      "scenario": "day168_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 72,
+        "guarded_rule": 600
+      },
+      "reasons": {
+        "coast": 72,
+        "rule": 600
+      },
+      "operative_min_C": 21.44770349081176,
+      "operative_max_C": 25.265407867566296,
+      "decision_mean_s": 0.001153687501625557,
+      "decision_p95_s": 0.001474740001140162,
+      "decision_max_s": 0.0019792000530287623,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "coast": 8,
+        "minimum_setpoint": 654,
+        "reactive_heat": 10
+      },
+      "operative_min_C": 21.182180127896345,
+      "operative_max_C": 25.265407819036227,
+      "decision_mean_s": 0.0009148025296564724,
+      "decision_p95_s": 0.0011594050447456539,
+      "decision_max_s": 0.00297220004722476,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day168_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "early_coast": 238,
+        "fallback": 49,
+        "mpc": 377
+      },
+      "reasons": {
+        "coast": 8,
+        "stored_solar_heat": 238,
+        "no_margin_feasible_plan": 49,
+        "solar_feasible_plan": 377
+      },
+      "operative_min_C": 21.63388648247627,
+      "operative_max_C": 25.265407819036227,
+      "decision_mean_s": 0.009856039583523636,
+      "decision_p95_s": 0.012349934974918141,
+      "decision_max_s": 0.014062599977478385,
+      "one_step_mpc_temperature_RMSE_C": 0.06476250913123988,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "guarded_rule",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 460,
+        "guarded_rule": 212
+      },
+      "reasons": {
+        "coast": 460,
+        "rule": 212
+      },
+      "operative_min_C": 23.943482870945274,
+      "operative_max_C": 30.330583451455823,
+      "decision_mean_s": 0.0011416680056191538,
+      "decision_p95_s": 0.0014332599705085152,
+      "decision_max_s": 0.0018982000183314085,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "minimum_heat",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "minimum_heat": 664
+      },
+      "reasons": {
+        "coast": 8,
+        "minimum_setpoint": 664
+      },
+      "operative_min_C": 23.94348958987382,
+      "operative_max_C": 30.33059208160381,
+      "decision_mean_s": 0.0009104020829822513,
+      "decision_p95_s": 0.0011904049839358776,
+      "decision_max_s": 0.0015084999613463879,
+      "one_step_mpc_temperature_RMSE_C": null,
+      "one_step_mpc_margin_coverage": null,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    },
+    {
+      "scenario": "day189_perfect",
+      "controller": "solar_mpc",
+      "decisions_replayed": 672,
+      "modes": {
+        "coast": 8,
+        "early_coast": 422,
+        "fallback": 208,
+        "mpc": 34
+      },
+      "reasons": {
+        "coast": 8,
+        "stored_solar_heat": 422,
+        "no_margin_feasible_plan": 26,
+        "solar_feasible_plan": 34,
+        "outside_training_support": 182
+      },
+      "operative_min_C": 23.94348816516458,
+      "operative_max_C": 30.330592635424978,
+      "decision_mean_s": 0.005819904168414983,
+      "decision_p95_s": 0.011350889934692531,
+      "decision_max_s": 0.012341500027105212,
+      "one_step_mpc_temperature_RMSE_C": 0.03467893922495768,
+      "one_step_mpc_margin_coverage": 1.0,
+      "action_and_slew_pass": true,
+      "native_stop_band_pass": true
+    }
+  ],
+  "validation_v1_source_hash_matches": true,
+  "repeat_exact": [
+    {
+      "episode": "day238_cold_bias__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_cold_bias__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_cold_bias__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_perfect__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_perfect__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_perfect__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_warm_bias__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_warm_bias__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day238_warm_bias__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_cold_bias__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_cold_bias__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_cold_bias__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_perfect__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_perfect__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_perfect__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_warm_bias__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_warm_bias__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day273_warm_bias__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_cold_bias__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_cold_bias__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_cold_bias__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_perfect__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_perfect__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_perfect__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_warm_bias__guarded_rule",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_warm_bias__minimum_heat",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    },
+    {
+      "episode": "day315_warm_bias__solar_mpc",
+      "native_samples": 721,
+      "transitions": 24,
+      "exact_prefix_match": true
+    }
+  ],
+  "paired_initialization_true_weather_and_reference_invariance": true,
+  "acceptance": [
+    {
+      "scenario": "day238_perfect",
+      "energy_saved_percent": 3.0021197040318577,
+      "energy_delta_kWh": -2.911069444348911,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 49.350984942166676,
+      "discomfort_delta_vs_minimum_Kh": -0.11215541012908545
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "energy_saved_percent": 3.2779663663717122,
+      "energy_delta_kWh": -3.1785500477987796,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 49.08350433871681,
+      "discomfort_delta_vs_minimum_Kh": -0.11215541012908545
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "energy_saved_percent": 1.9979324741206659,
+      "energy_delta_kWh": -1.9373378648006678,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 50.32471652171492,
+      "discomfort_delta_vs_minimum_Kh": -0.11215541012908545
+    },
+    {
+      "scenario": "day273_perfect",
+      "energy_saved_percent": 8.793997995626953,
+      "energy_delta_kWh": -3.069042204979006,
+      "discomfort_delta_Kh": -0.33841186122339373,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 17.640209311582908,
+      "discomfort_delta_vs_minimum_Kh": -0.28930792789487914
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "energy_saved_percent": 9.494974322876287,
+      "energy_delta_kWh": -3.313677913798724,
+      "discomfort_delta_Kh": -0.35632432937450886,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 17.395573602763193,
+      "discomfort_delta_vs_minimum_Kh": -0.30722039604599427
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "energy_saved_percent": 8.80758995643018,
+      "energy_delta_kWh": -3.07378570177924,
+      "discomfort_delta_Kh": -0.337157480831638,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 17.635465814782677,
+      "discomfort_delta_vs_minimum_Kh": -0.2880535475031234
+    },
+    {
+      "scenario": "day315_perfect",
+      "energy_saved_percent": 2.3828637900336402,
+      "energy_delta_kWh": -8.803886389027525,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 77.73539468217052,
+      "discomfort_delta_vs_minimum_Kh": -27.324176997846276
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "energy_saved_percent": 3.063817259350769,
+      "energy_delta_kWh": -11.319782180115737,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 75.21949889108231,
+      "discomfort_delta_vs_minimum_Kh": -27.324176997846276
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "energy_saved_percent": 1.6155657374102774,
+      "energy_delta_kWh": -5.968976181372398,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 80.57030488982565,
+      "discomfort_delta_vs_minimum_Kh": -27.324176997846276
+    }
+  ],
+  "validation_acceptance": [
+    {
+      "scenario": "day168_perfect",
+      "energy_saved_percent": 25.006090968980573,
+      "energy_delta_kWh": -2.193820414622386,
+      "discomfort_delta_Kh": -0.20320998588944317,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 1.2758842683759672,
+      "discomfort_delta_vs_minimum_Kh": -1.2489432512827987
+    },
+    {
+      "scenario": "day189_perfect",
+      "energy_saved_percent": null,
+      "energy_delta_kWh": 0.0,
+      "discomfort_delta_Kh": 0.0008934846258625839,
+      "energy_lower": false,
+      "discomfort_not_increased": false,
+      "all_comfort_measures_not_increased": false,
+      "energy_delta_vs_minimum_kWh": 0.0,
+      "discomfort_delta_vs_minimum_Kh": -9.442830901207344e-06
+    }
+  ]
+}

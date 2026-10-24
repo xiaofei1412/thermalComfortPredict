@@ -1,0 +1,104 @@
+{
+  "scenarios": [
+    {
+      "scenario": "day238_perfect",
+      "energy_saved_percent": 3.0021197040318577,
+      "energy_delta_kWh": -2.911069444348911,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 49.350984942166676,
+      "discomfort_delta_vs_minimum_Kh": -0.11215541012908545
+    },
+    {
+      "scenario": "day238_warm_bias",
+      "energy_saved_percent": 3.2779663663717122,
+      "energy_delta_kWh": -3.1785500477987796,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 49.08350433871681,
+      "discomfort_delta_vs_minimum_Kh": -0.11215541012908545
+    },
+    {
+      "scenario": "day238_cold_bias",
+      "energy_saved_percent": 1.9979324741206659,
+      "energy_delta_kWh": -1.9373378648006678,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 50.32471652171492,
+      "discomfort_delta_vs_minimum_Kh": -0.11215541012908545
+    },
+    {
+      "scenario": "day273_perfect",
+      "energy_saved_percent": 8.793997995626953,
+      "energy_delta_kWh": -3.069042204979006,
+      "discomfort_delta_Kh": -0.33841186122339373,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 17.640209311582908,
+      "discomfort_delta_vs_minimum_Kh": -0.28930792789487914
+    },
+    {
+      "scenario": "day273_warm_bias",
+      "energy_saved_percent": 9.494974322876287,
+      "energy_delta_kWh": -3.313677913798724,
+      "discomfort_delta_Kh": -0.35632432937450886,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 17.395573602763193,
+      "discomfort_delta_vs_minimum_Kh": -0.30722039604599427
+    },
+    {
+      "scenario": "day273_cold_bias",
+      "energy_saved_percent": 8.80758995643018,
+      "energy_delta_kWh": -3.07378570177924,
+      "discomfort_delta_Kh": -0.337157480831638,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 17.635465814782677,
+      "discomfort_delta_vs_minimum_Kh": -0.2880535475031234
+    },
+    {
+      "scenario": "day315_perfect",
+      "energy_saved_percent": 2.3828637900336402,
+      "energy_delta_kWh": -8.803886389027525,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 77.73539468217052,
+      "discomfort_delta_vs_minimum_Kh": -27.324176997846276
+    },
+    {
+      "scenario": "day315_warm_bias",
+      "energy_saved_percent": 3.063817259350769,
+      "energy_delta_kWh": -11.319782180115737,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 75.21949889108231,
+      "discomfort_delta_vs_minimum_Kh": -27.324176997846276
+    },
+    {
+      "scenario": "day315_cold_bias",
+      "energy_saved_percent": 1.6155657374102774,
+      "energy_delta_kWh": -5.968976181372398,
+      "discomfort_delta_Kh": 0.0,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 80.57030488982565,
+      "discomfort_delta_vs_minimum_Kh": -27.324176997846276
+    }
+  ],
+  "all_energy_and_integral_pass": true
+}

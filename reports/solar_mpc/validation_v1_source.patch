@@ -1,0 +1,37 @@
+--- a/thermal_comfort/solar.py
++++ b/thermal_comfort/solar.py
+@@ -241 +241 @@
+-        self.horizon_steps = 48  # 8h projection plus the rule's 4h schedule lookahead.
++        self.horizon_steps = 32
+@@ -265,19 +264,0 @@
+-
+-    def reference_trajectory(self, start, forecast):
+-        shadow = RecoveryController(self.model,self.config,"guarded_rule")
+-        shadow.state,shadow.q,shadow.error = self.state.copy(),self.q,self.error
+-        shadow.previous,shadow.recovering = self.previous,self.recovering
+-        shadow.view = forecast
+-        actions,states = [],[]
+-        for k in range(32):
+-            time = start+k*900
+-            current = schedule_at(forecast,[time]).iloc[0]
+-            before = {"time":time,"reaTZon_y":shadow.state[0]+273.15}
+-            target,_ = shadow.guarded_rule(before,current)
+-            value = limited_command(target,shadow.previous,self.config)
+-            prediction = greybox.rollout(self.model,shadow.state[None],np.array([shadow.q]),np.array([shadow.error]),
+-                np.array([[value]]),exogenous(pd.DataFrame([current]))[None])[0,0]
+-            shadow.error = value-shadow.state[0]
+-            shadow.state,shadow.q,shadow.previous = prediction[:2],prediction[2],value
+-            actions.append(value); states.append(prediction)
+-        return np.array(actions),np.array(states)
+@@ -328 +308,0 @@
+-        reference_actions,reference = self.reference_trajectory(start,forecast)
+@@ -330 +310 @@
+-        actions = np.unique(np.vstack([actions,coast[:h],reference_actions[:h]]),axis=0)
++        actions = np.unique(np.vstack([actions,coast[:h],self.ramp(fallback,h)]),axis=0)
+@@ -336,2 +315,0 @@
+-        feasible &= (prediction[:,:,:2]<=reference[None,:h,:2]+1e-9).all(axis=(1,2))
+-        feasible &= actions[:,0]<=reference_actions[0]+1e-9
+@@ -346,2 +324 @@
+-            "planned_actions_C":actions[selected].tolist(),"predicted_mass_C":prediction[selected,:,1].tolist(),
+-            "reference_temperature_C":reference[:h,0].tolist(),"reference_mass_C":reference[:h,1].tolist()}
++            "planned_actions_C":actions[selected].tolist()}

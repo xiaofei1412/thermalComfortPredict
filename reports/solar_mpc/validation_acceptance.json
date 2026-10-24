@@ -1,0 +1,27 @@
+{
+  "scenarios": [
+    {
+      "scenario": "day168_perfect",
+      "energy_saved_percent": 25.006090968980573,
+      "energy_delta_kWh": -2.193820414622386,
+      "discomfort_delta_Kh": -0.20320998588944317,
+      "energy_lower": true,
+      "discomfort_not_increased": true,
+      "all_comfort_measures_not_increased": true,
+      "energy_delta_vs_minimum_kWh": 1.2758842683759672,
+      "discomfort_delta_vs_minimum_Kh": -1.2489432512827987
+    },
+    {
+      "scenario": "day189_perfect",
+      "energy_saved_percent": null,
+      "energy_delta_kWh": 0.0,
+      "discomfort_delta_Kh": 0.0008934846258625839,
+      "energy_lower": false,
+      "discomfort_not_increased": false,
+      "all_comfort_measures_not_increased": false,
+      "energy_delta_vs_minimum_kWh": 0.0,
+      "discomfort_delta_vs_minimum_Kh": -9.442830901207344e-06
+    }
+  ],
+  "all_energy_and_integral_pass": false
+}
