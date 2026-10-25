@@ -1,0 +1,34 @@
+{
+  "training": {
+    "reused_development_days": 12,
+    "native_intervals": 34560,
+    "native_samples": 34564
+  },
+  "excitation_validation": {
+    "reused_development_days": 6,
+    "native_intervals": 17280,
+    "native_samples": 17282
+  },
+  "rule_validation": {
+    "fresh_runs_at_existing_development_dates_days": 6,
+    "decision_intervals": 576,
+    "native_intervals": 17280,
+    "native_samples": 17282
+  },
+  "response": {
+    "reused_paired_development_days": 2,
+    "decision_intervals": 192,
+    "native_intervals": 5760,
+    "native_samples": 5764
+  },
+  "rule_repeat": {
+    "additional_days": 0.5,
+    "decision_intervals": 48,
+    "native_samples": 1442,
+    "complete_three_days_repeated": false
+  },
+  "new_calibration_days": 0,
+  "new_scenario_test_days": 0,
+  "selected_deployable_candidate": null,
+  "primary_control": "guarded_rule"
+}

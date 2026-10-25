@@ -1,0 +1,12 @@
+{
+  "created_UTC": "2026-10-25T12:49:53.682893+00:00",
+  "role": "development_repeat",
+  "code_sha256": {
+    "thermal_comfort/native.py": "9b1e3d9a8d43160e2826e561b01d888a8d026ca39fe4e4bb842e4bdffe32daaa",
+    "thermal_comfort/native_model.py": "e8ea34f15ccfce37bd3d4c4ed4763aa28128bc56f0e28a8c3817e23059658af4",
+    "configs\\native_terminal.json": "179abd3afe4ce06d309c423ceab31a1a873b154fce3bfcb1fa40c00865b0802c",
+    "docs/experiments/native_terminal.md": "dcb2ad8ed0d079815414aa925e4b2270751354e256f662d7f8ccf7a56baa5f28"
+  },
+  "days": 0.25,
+  "repeated_full_days": false
+}

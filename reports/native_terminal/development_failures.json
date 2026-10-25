@@ -1,0 +1,11 @@
+{
+  "initial_rule_initialization": "RecoveryController(None) rejected during reset; switched to unchanged frozen SolarController rule implementation before evaluation",
+  "source_check": "Collection snapshot hashes verified against archived collection source; frozen current protocol added response fields after original collection, so compare collection-affecting fields and original role plan",
+  "native_flow": "Negative solver mass-flow tails down to -4.96645e-8 kg/s; normalized-flow tolerance 1e-6, original files preserved, energy thresholds unchanged",
+  "candidate_failures": "Neither predeclared candidate passed seasonal/carrier qualification; no loss, parameter-bound or threshold adjustment. Final data-role/coverage guards were followed by byte-identical fitting and independent refitting",
+  "local_evidence": [
+    "outputs/native-rule-development-initialization-failed",
+    "outputs/native-rule-initialization-failed.log",
+    "outputs/native-fit-source-check-failed.log"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "created_UTC": "2026-10-25T13:03:55.301351+00:00",
+  "code_sha256": {
+    "thermal_comfort/native.py": "d87a548756c97793ef230e235024b4fb26633311e860250440cd9284d243a734",
+    "thermal_comfort/native_model.py": "e8ea34f15ccfce37bd3d4c4ed4763aa28128bc56f0e28a8c3817e23059658af4",
+    "configs\\native_terminal.json": "179abd3afe4ce06d309c423ceab31a1a873b154fce3bfcb1fa40c00865b0802c",
+    "docs/experiments/native_terminal.md": "dcb2ad8ed0d079815414aa925e4b2270751354e256f662d7f8ccf7a56baa5f28"
+  },
+  "summary": {
+    "native_one_step": {
+      "all_capability_gates_passed": false,
+      "gates_passed": 37,
+      "gates_total": 72
+    },
+    "native_joint": {
+      "all_capability_gates_passed": false,
+      "gates_passed": 41,
+      "gates_total": 72
+    }
+  },
+  "activity": [
+    {
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "origins": 63,
+      "active_origins": [
+        45,
+        21,
+        34
+      ]
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "origins": 63,
+      "active_origins": [
+        2,
+        39,
+        29
+      ]
+    },
+    {
+      "day": 62,
+      "trajectory": "day62__guarded_rule",
+      "origins": 63,
+      "active_origins": [
+        42,
+        21,
+        32
+      ]
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "origins": 63,
+      "active_origins": [
+        0,
+        38,
+        28
+      ]
+    }
+  ],
+  "response": [
+    {
+      "model": "native_one_step",
+      "day": 62,
+      "active": true,
+      "direction_passed": true,
+      "observed_gas_delta_6h_kWh": 3.1798937260600826,
+      "predicted_gas_delta_6h_kWh": 5.403089634211934,
+      "absolute_error_kWh": 2.2231959081518515,
+      "limit_kWh": 1.5899468630300413,
+      "passed": false
+    },
+    {
+      "model": "native_joint",
+      "day": 62,
+      "active": true,
+      "direction_passed": true,
+      "observed_gas_delta_6h_kWh": 3.1798937260600826,
+      "predicted_gas_delta_6h_kWh": 5.411469981105211,
+      "absolute_error_kWh": 2.231576255045128,
+      "limit_kWh": 1.5899468630300413,
+      "passed": false
+    },
+    {
+      "model": "native_one_step",
+      "day": 150,
+      "active": true,
+      "direction_passed": true,
+      "observed_gas_delta_6h_kWh": 1.4681613367341557,
+      "predicted_gas_delta_6h_kWh": 2.1646470435197074,
+      "absolute_error_kWh": 0.6964857067855517,
+      "limit_kWh": 0.7340806683670779,
+      "passed": true
+    },
+    {
+      "model": "native_joint",
+      "day": 150,
+      "active": true,
+      "direction_passed": true,
+      "observed_gas_delta_6h_kWh": 1.4681613367341557,
+      "predicted_gas_delta_6h_kWh": 2.1852866173307026,
+      "absolute_error_kWh": 0.7171252805965469,
+      "limit_kWh": 0.7340806683670779,
+      "passed": true
+    }
+  ],
+  "calibration_exists": false
+}

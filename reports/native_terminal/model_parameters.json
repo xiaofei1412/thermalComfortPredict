@@ -1,0 +1,64 @@
+{
+  "native_one_step": {
+    "parameters": {
+      "R_out_air_K_per_kW": 11.288924223452943,
+      "R_air_mass_K_per_kW": 2.6442522255684096,
+      "C_air_kWh_per_K": 0.24144515993394983,
+      "C_mass_kWh_per_K": 3.5429991347454606,
+      "solar_air_m2": 0.8017660737322108,
+      "solar_mass_m2": 1.7529734432486948,
+      "internal_gain_multiplier": 2.333377014883149,
+      "PI_integral_seconds": 32.07287741823101,
+      "antiwindup_ratio": 0.4793316450356841,
+      "fan_time_constant_seconds": 283.3036414321009,
+      "heating_power_gain": 0.9726422866183699,
+      "cooling_power_gain": 0.9089172812620536,
+      "fan_cubic_kW": 0.1669199451329286,
+      "fan_linear_kW": 0.0003272138158424746
+    },
+    "model_sha256": "713f718364bc6165bd50518352ad6a4a678b13ffe1e58ff9b237a4c39b51dd0f",
+    "diagnostics": {
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 59,
+      "cost": 1.7327647270702362,
+      "origins": 3264,
+      "horizons_seconds": [
+        30
+      ]
+    }
+  },
+  "native_joint": {
+    "parameters": {
+      "R_out_air_K_per_kW": 10.496132630092442,
+      "R_air_mass_K_per_kW": 2.5616560618204947,
+      "C_air_kWh_per_K": 0.1961375582554801,
+      "C_mass_kWh_per_K": 3.5640486752327614,
+      "solar_air_m2": 0.6610623086362869,
+      "solar_mass_m2": 2.223406179126239,
+      "internal_gain_multiplier": 2.3910135335209044,
+      "PI_integral_seconds": 42.073345514321176,
+      "antiwindup_ratio": 0.31506910928857895,
+      "fan_time_constant_seconds": 274.14944930940976,
+      "heating_power_gain": 0.848038054557406,
+      "cooling_power_gain": 0.8338844565774948,
+      "fan_cubic_kW": 0.14241333277633908,
+      "fan_linear_kW": 0.001795390430294962
+    },
+    "model_sha256": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d",
+    "diagnostics": {
+      "success": true,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 19,
+      "cost": 122.47243346133494,
+      "origins": 128,
+      "horizons_seconds": [
+        30,
+        300,
+        900,
+        3600,
+        21600
+      ]
+    }
+  }
+}

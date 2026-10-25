@@ -1,0 +1,133 @@
+{
+  "created_UTC": "2026-10-25T13:03:57.457090+00:00",
+  "integrity_passed": true,
+  "capability_passed": false,
+  "code_sha256": {
+    "thermal_comfort/native.py": "d87a548756c97793ef230e235024b4fb26633311e860250440cd9284d243a734",
+    "thermal_comfort/native_model.py": "e8ea34f15ccfce37bd3d4c4ed4763aa28128bc56f0e28a8c3817e23059658af4",
+    "configs\\native_terminal.json": "179abd3afe4ce06d309c423ceab31a1a873b154fce3bfcb1fa40c00865b0802c",
+    "docs/experiments/native_terminal.md": "dcb2ad8ed0d079815414aa925e4b2270751354e256f662d7f8ccf7a56baa5f28"
+  },
+  "model_sha256": {
+    "native_one_step": "713f718364bc6165bd50518352ad6a4a678b13ffe1e58ff9b237a4c39b51dd0f",
+    "native_joint": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d"
+  },
+  "independent_refit_byte_identical": true,
+  "source_episodes": [
+    {
+      "id": "day24__excitation",
+      "role": "train",
+      "day": 24,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "f09f470d0d666cd7db2c3b5e6e6a3307f4b663f54aaeb9430955aa104bf3f002",
+      "native_sha256": "2810ed4f29b2481479f8e58a152c8cd95aed3ee2cdfb531c5135e707e53b3bdf",
+      "minimum_raw_mass_flow_kg_s": -2.8989420947791977e-08,
+      "maximum_raw_mass_flow_kg_s": 0.3850543478891982
+    },
+    {
+      "id": "day94__excitation",
+      "role": "train",
+      "day": 94,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "86d160ee4ef90e7c51938b7403b2cca65f16903cc6735363190b0f31a662f95b",
+      "native_sha256": "fc2758f641f9dff42afff850c525cbf15367c0528b23bc175ca1c253e51b66fb",
+      "minimum_raw_mass_flow_kg_s": -2.1514698567035236e-08,
+      "maximum_raw_mass_flow_kg_s": 0.3082894908174953
+    },
+    {
+      "id": "day124__excitation",
+      "role": "train",
+      "day": 124,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "c3caf52c9aff29916a38020f0948acd0411d764b31c9484d604763f8c75fe3f7",
+      "native_sha256": "f3acd8e97c0c517b4920fd72d281b186650012d80ea34fe9a6503daf021d5576",
+      "minimum_raw_mass_flow_kg_s": -2.167427899997275e-08,
+      "maximum_raw_mass_flow_kg_s": 0.24280440908773074
+    },
+    {
+      "id": "day328__excitation",
+      "role": "train",
+      "day": 328,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "34cfca647b60c469e0cb85c4c8c63d60efe61baa6ee50af7f875bddb8baa51e1",
+      "native_sha256": "18f91ae1d14e364e179c38d4a018a9d1c01ba0c4dd610994b79dc2344d722b1b",
+      "minimum_raw_mass_flow_kg_s": -4.966450463960016e-08,
+      "maximum_raw_mass_flow_kg_s": 0.3951772851439153
+    },
+    {
+      "id": "day62__excitation",
+      "role": "development",
+      "day": 62,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "ec58f36f48546bf7d8bd2f5ca9ac41eea10a6a14b7f8a6e4ef2ec693cd860101",
+      "native_sha256": "b1023b67f233fdcbe16a8576f5ed483b2c12a400681aeacb7f930ddd4109c869",
+      "minimum_raw_mass_flow_kg_s": -1.3544687333532995e-08,
+      "maximum_raw_mass_flow_kg_s": 0.35647177812742564
+    },
+    {
+      "id": "day150__excitation",
+      "role": "development",
+      "day": 150,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "3cc5b87d07eb4ed2ab1cb838272677ccdefe0656c3b8ad8dfc69f1a39e67cc2b",
+      "native_sha256": "43da8c218ee801d2788ba46409477e637ab5305a1b23820699f7b03b9f4f6551",
+      "minimum_raw_mass_flow_kg_s": -1.2145573582779628e-08,
+      "maximum_raw_mass_flow_kg_s": 0.3051078596844791
+    },
+    {
+      "id": "day62__guarded_rule",
+      "role": "development",
+      "day": 62,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "c8d3ded62abe321dfbb6c0e853601cb41eeb31b312e27742016ce36cd40f27bb",
+      "native_sha256": "18c639764ed05641d15e0312bc06b2cb85ee4d796e58caa8b8553c0c849c75ab",
+      "minimum_raw_mass_flow_kg_s": -8.033232877641685e-09,
+      "maximum_raw_mass_flow_kg_s": 0.35600460612478657
+    },
+    {
+      "id": "day150__guarded_rule",
+      "role": "development",
+      "day": 150,
+      "native_intervals": 8640,
+      "native_samples": 8641,
+      "summary_sha256": "24340badd151cd1880d2a46abca70b670bdffa0d83dee3f1b7f9edddc14b4ac8",
+      "native_sha256": "f12d804010f8f38521a76675ec9b332c4425310263d494a99cdeb0f0cbd7b16f",
+      "minimum_raw_mass_flow_kg_s": -2.074754915528713e-08,
+      "maximum_raw_mass_flow_kg_s": 0.3031291592383841
+    }
+  ],
+  "causal_future_label_mutations": 16,
+  "native_unit_max_error_kWh": 1.545430450278218e-13,
+  "rule_decision_audits": [
+    {
+      "day": 62,
+      "decisions_replayed": 288,
+      "native_samples": 8641,
+      "prefix_steps_repeated": 24,
+      "prefix_native_samples": 721,
+      "complete_three_days_repeated": false,
+      "KPI_max_error": 2.220446049250313e-16
+    },
+    {
+      "day": 150,
+      "decisions_replayed": 288,
+      "native_samples": 8641,
+      "prefix_steps_repeated": 24,
+      "prefix_native_samples": 721,
+      "complete_three_days_repeated": false,
+      "KPI_max_error": 5.551115123125783e-17
+    }
+  ],
+  "native_API_KPI_max_error": 2.220446049250313e-16,
+  "calibration_not_generated": true,
+  "lock_not_created": true,
+  "new_scenario_not_run": true,
+  "lock_rejection": "Development capability gate failed; calibration and new-scenario evaluation remain closed"
+}

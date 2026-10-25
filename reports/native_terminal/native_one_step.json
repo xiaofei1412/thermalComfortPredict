@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "message": "`ftol` termination condition is satisfied.",
+  "nfev": 59,
+  "cost": 1.7327647270702362,
+  "origins": 3264,
+  "horizons_seconds": [
+    30
+  ]
+}

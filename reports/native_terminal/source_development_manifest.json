@@ -1,0 +1,142 @@
+{
+  "mode": "collect",
+  "config": {
+    "baseline_commit": "11a704e5855eeea6442380e02d14c8b04467226c",
+    "development_case": "bestest_air",
+    "test_case": "terminal_office_brussels",
+    "episodes": [
+      {
+        "day": 24,
+        "role": "train",
+        "seed": 801
+      },
+      {
+        "day": 94,
+        "role": "train",
+        "seed": 802
+      },
+      {
+        "day": 124,
+        "role": "train",
+        "seed": 803
+      },
+      {
+        "day": 328,
+        "role": "train",
+        "seed": 804
+      },
+      {
+        "day": 62,
+        "role": "selection",
+        "seed": 805
+      },
+      {
+        "day": 150,
+        "role": "selection",
+        "seed": 806
+      },
+      {
+        "day": 74,
+        "role": "calibration",
+        "seed": 807
+      },
+      {
+        "day": 240,
+        "role": "calibration",
+        "seed": 808
+      },
+      {
+        "day": 312,
+        "role": "calibration",
+        "seed": 809
+      }
+    ],
+    "collection_days": 3,
+    "test_days": [
+      28,
+      196,
+      315
+    ],
+    "test_days_length": 7,
+    "weather_modes": [
+      "perfect",
+      "warm_bias",
+      "cold_bias"
+    ],
+    "controllers": [
+      "guarded_rule",
+      "office_prior",
+      "terminal_mpc"
+    ],
+    "dwell_steps": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "initial_rule_steps": 16,
+    "residual_weights": [
+      0.0,
+      1.0
+    ],
+    "regimes": [
+      "heating",
+      "cooling",
+      "idle",
+      "transition"
+    ],
+    "active_threshold_kW": 0.01,
+    "minimum_regime_origins": 20,
+    "margin_quantile": 0.95,
+    "sensor_margin_K": 0.1,
+    "origin_stride": 4,
+    "horizons": [
+      1,
+      4,
+      24,
+      32
+    ]
+  },
+  "plans": [
+    {
+      "day": 24,
+      "role": "train",
+      "seed": 801
+    },
+    {
+      "day": 94,
+      "role": "train",
+      "seed": 802
+    },
+    {
+      "day": 124,
+      "role": "train",
+      "seed": 803
+    },
+    {
+      "day": 328,
+      "role": "train",
+      "seed": 804
+    },
+    {
+      "day": 62,
+      "role": "selection",
+      "seed": 805
+    },
+    {
+      "day": 150,
+      "role": "selection",
+      "seed": 806
+    }
+  ],
+  "code_sha256": {
+    "thermal_comfort/terminal.py": "1bc19bd1300814fd4d6e815f29f0604e338a9d7f2dc46093811b556ed4116788",
+    "thermal_comfort/terminal_model.py": "9948e79730c456813ae8bc94d208b443149c71f40412a86bf52ee0a9ed97ef21",
+    "configs\\terminal_dynamics.json": "9bd0df726fec92e40d3a56e71ef5ca940d3241a5f3f8c8c846ba92bd22dca61d",
+    "docs/experiments/terminal_dynamics.md": "4a1dc3a121c822c76370385f80b7c0f8c9dcceb081d768b6ed505a5c9d5d4672"
+  },
+  "created_UTC": "2026-10-25T11:34:44.041614+00:00",
+  "model_sha256": null,
+  "lock_sha256": null,
+  "days_override": null
+}

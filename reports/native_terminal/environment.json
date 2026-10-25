@@ -1,0 +1,9 @@
+{
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "numba": "0.63.1",
+  "boptest": "0.9.0",
+  "upstream_commit": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9"
+}

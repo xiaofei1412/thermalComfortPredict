@@ -4,7 +4,7 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：冷暖季末端比较与未触碰校准完成，新气候控制未达双目标。** 新模型离线预测改善，但布鲁塞尔办公室九组均未同时节能和保持温度越界不增；冷季新增过冷，旧MPC另有六支中止。保留失败与完整验证证据，人员需求接入和真实迁移尚未完成。
+**当前状态：原生末端辨识与温度/功率联合训练完成，开发能力门未通过。** 温度与部分燃气预测改善，制冷/风机误差、响应幅度及暖季供暖样本仍不足；保持规则主基线，未启动新校准或新场景测试。此前新气候控制仍未达双目标，人员需求接入和真实迁移尚未完成。
 
 ## 项目入口
 
@@ -27,6 +27,8 @@
 - [办公室语义、末端、能源适配与冻结协议](docs/experiments/office_calibration.md)
 - [冷暖季末端、未触碰校准与新气候结果](reports/terminal_dynamics/REPORT.md)
 - [开发锁、工况裕量和场景隔离协议](docs/experiments/terminal_dynamics.md)
+- [原生末端与联合训练开发结果](reports/native_terminal/REPORT.md)
+- [分季节、分能源能力门协议](docs/experiments/native_terminal.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -53,6 +55,7 @@ thermalComfortPredict/
 ├── reports/generalization/ # 冻结模型、跨天气与跨建筑验证
 ├── reports/office_calibration/ # 目标校准、预测裕量与独立控制对照
 ├── reports/terminal_dynamics/ # 冷暖季末端、未触碰校准与新气候失败证据
+├── reports/native_terminal/ # 原生辨识、联合训练与能力门负结果
 ├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/

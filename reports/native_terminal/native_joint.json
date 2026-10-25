@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "message": "`xtol` termination condition is satisfied.",
+  "nfev": 19,
+  "cost": 122.47243346133494,
+  "origins": 128,
+  "horizons_seconds": [
+    30,
+    300,
+    900,
+    3600,
+    21600
+  ]
+}

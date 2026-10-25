@@ -1,0 +1,83 @@
+{
+  "created_UTC": "2026-10-25T12:45:22.234780+00:00",
+  "role": "development",
+  "config": {
+    "baseline_commit": "e537267a8c46d963fcf365eeb5f951fe07c0763f",
+    "native_seconds": 30,
+    "decision_seconds": 900,
+    "training_days": [
+      24,
+      94,
+      124,
+      328
+    ],
+    "development": [
+      {
+        "day": 62,
+        "season": "cold"
+      },
+      {
+        "day": 150,
+        "season": "warm"
+      }
+    ],
+    "development_days": 3,
+    "reserved_calibration_days": [
+      51,
+      110,
+      276
+    ],
+    "reserved_calibration_length_days": 1,
+    "origin_start_hours": 4,
+    "training_stride_seconds": 7200,
+    "validation_stride_seconds": 3600,
+    "horizons_seconds": [
+      30,
+      300,
+      900,
+      3600,
+      21600
+    ],
+    "power_scales_kW": [
+      1.0,
+      0.5,
+      0.1
+    ],
+    "fit_max_nfev": 100,
+    "gates": {
+      "temperature_RMSE_K": {
+        "3600": 0.5,
+        "21600": 1.0
+      },
+      "temperature_regression_tolerance_K": 0.05,
+      "energy_relative_RMSE": 0.2,
+      "energy_absolute_floor_kWh": [
+        0.05,
+        0.05,
+        0.005
+      ],
+      "power_relative_RMSE": 0.3,
+      "power_absolute_floor_kW": [
+        0.1,
+        0.05,
+        0.01
+      ],
+      "energy_regression_tolerance_kWh": [
+        0.01,
+        0.01,
+        0.001
+      ],
+      "minimum_origins": 20,
+      "minimum_active_origins": 10,
+      "active_mean_kW": [
+        0.1,
+        0.05,
+        0.005
+      ],
+      "response_relative_error": 0.5,
+      "response_absolute_floor_kWh": 0.05
+    }
+  },
+  "collection_protocol_sha256": "6fc1e8b38bfd92c2d944c38e53fdc643321d2444e7b980d98b77995947f8f0f2",
+  "prior_freeze_sha256": "598188f277195f44c58bb1014c34ef1235191a5f27433a833499d758ace64522"
+}

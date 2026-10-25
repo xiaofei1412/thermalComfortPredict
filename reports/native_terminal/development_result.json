@@ -1,0 +1,10 @@
+{
+  "integrity_passed": true,
+  "capability_passed": false,
+  "eligible_candidates": [],
+  "primary_control": "guarded_rule",
+  "calibration_generated": false,
+  "unused_scenario_evaluated": false,
+  "assessment_sha256": "f3ccb3d16acb5d06733f0c68f7a0ddc894772c4c01b8a2d3e8ce93d186187cd6",
+  "audit_sha256": "b3477640b99b27ab5363bb89607fbd97a980772fdc27fbdbd01fc0a7b1834afd"
+}

@@ -1,0 +1,22 @@
+{
+  "created_UTC": "2026-10-25T12:59:48.974147+00:00",
+  "code_sha256": {
+    "thermal_comfort/native.py": "d87a548756c97793ef230e235024b4fb26633311e860250440cd9284d243a734",
+    "thermal_comfort/native_model.py": "e8ea34f15ccfce37bd3d4c4ed4763aa28128bc56f0e28a8c3817e23059658af4",
+    "configs\\native_terminal.json": "179abd3afe4ce06d309c423ceab31a1a873b154fce3bfcb1fa40c00865b0802c",
+    "docs/experiments/native_terminal.md": "dcb2ad8ed0d079815414aa925e4b2270751354e256f662d7f8ccf7a56baa5f28"
+  },
+  "source_summary_sha256": "b6e2de69dc6967e831978f5e9aad9d376c7a78368494059ff93c05c31dfcabfb",
+  "training_days": [
+    24,
+    94,
+    124,
+    328
+  ],
+  "artifacts_sha256": {
+    "native_joint.joblib": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d",
+    "native_joint.json": "5a3c30d5913c0c9d50e351b8b120f6b02fc4c0a2fc35383c7d7fc56c69cbdbd7",
+    "native_one_step.joblib": "713f718364bc6165bd50518352ad6a4a678b13ffe1e58ff9b237a4c39b51dd0f",
+    "native_one_step.json": "e3dd80e8ec27dfe0eda7b93463b6739577de65d259e238e255de9db35de68e11"
+  }
+}
