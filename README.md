@@ -21,6 +21,8 @@
 - [恢复MPC与天气压力测试协议](docs/experiments/recovery_mpc.md)
 - [暖天气、蓄热消融与提前停热结果](reports/solar_mpc/REPORT.md)
 - [新时间切分、最小供暖与复现协议](docs/experiments/solar_mpc.md)
+- [冻结方案的跨天气与跨建筑结果](reports/generalization/REPORT.md)
+- [零目标训练泛化验证协议](docs/experiments/generalization.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -44,6 +46,7 @@ thermalComfortPredict/
 ├── reports/mpc/           # 灰箱、动作干预与短时控制对照
 ├── reports/recovery_mpc/  # 恢复、停机耗电与天气误差证据
 ├── reports/solar_mpc/     # 暖天气新切分、蓄热消融与提前停热
+├── reports/generalization/ # 冻结模型、跨天气与跨建筑验证
 ├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/

@@ -1,0 +1,1689 @@
+[
+  {
+    "scenario": "house_brussels_day210_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 381,
+      "guarded_rule": 291
+    },
+    "reasons": {
+      "coast": 381,
+      "rule": 291
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09764372770393948,
+      "HGloHor": 10.64924417356201
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.998668146072305e-12,
+      "SolTim": 4.9989670515060425e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.842170943040401e-14
+  },
+  {
+    "scenario": "house_brussels_day210_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "early_coast": 487,
+      "fallback": 97,
+      "mpc": 80
+    },
+    "reasons": {
+      "coast": 8,
+      "stored_solar_heat": 487,
+      "outside_training_support": 86,
+      "solar_feasible_plan": 80,
+      "no_margin_feasible_plan": 11
+    },
+    "fallback_fraction_all": 0.14434523809523808,
+    "fallback_fraction_after_initialization": 0.1460843373493976,
+    "mpc_fraction_all": 0.11904761904761904,
+    "early_coast_fraction_all": 0.7247023809523809,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09764372770393948,
+      "HGloHor": 10.64924417356201
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.998668146072305e-12,
+      "SolTim": 4.9989670515060425e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_brussels_day210_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 381,
+      "guarded_rule": 291
+    },
+    "reasons": {
+      "coast": 381,
+      "rule": 291
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09764372770393948,
+      "HGloHor": 10.64924417356201
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.998668146072305e-12,
+      "SolTim": 4.9989670515060425e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.842170943040401e-14
+  },
+  {
+    "scenario": "house_brussels_day210_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "early_coast": 483,
+      "fallback": 127,
+      "mpc": 54
+    },
+    "reasons": {
+      "coast": 8,
+      "stored_solar_heat": 483,
+      "outside_training_support": 93,
+      "solar_feasible_plan": 54,
+      "no_margin_feasible_plan": 34
+    },
+    "fallback_fraction_all": 0.18898809523809523,
+    "fallback_fraction_after_initialization": 0.19126506024096385,
+    "mpc_fraction_all": 0.08035714285714286,
+    "early_coast_fraction_all": 0.71875,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09764372770393948,
+      "HGloHor": 10.64924417356201
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.998668146072305e-12,
+      "SolTim": 4.9989670515060425e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.842170943040401e-14
+  },
+  {
+    "scenario": "house_brussels_day210_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 381,
+      "guarded_rule": 291
+    },
+    "reasons": {
+      "coast": 381,
+      "rule": 291
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09764372770393948,
+      "HGloHor": 10.64924417356201
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.998668146072305e-12,
+      "SolTim": 4.9989670515060425e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.842170943040401e-14
+  },
+  {
+    "scenario": "house_brussels_day210_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "early_coast": 480,
+      "fallback": 93,
+      "mpc": 91
+    },
+    "reasons": {
+      "coast": 8,
+      "stored_solar_heat": 480,
+      "no_margin_feasible_plan": 23,
+      "outside_training_support": 70,
+      "solar_feasible_plan": 91
+    },
+    "fallback_fraction_all": 0.13839285714285715,
+    "fallback_fraction_after_initialization": 0.14006024096385541,
+    "mpc_fraction_all": 0.13541666666666666,
+    "early_coast_fraction_all": 0.7142857142857143,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09764372770393948,
+      "HGloHor": 10.64924417356201
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.998668146072305e-12,
+      "SolTim": 4.9989670515060425e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 5.684341886080802e-14
+  },
+  {
+    "scenario": "house_brussels_day259_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 633,
+      "anticipatory_recovery": 6,
+      "coast": 33
+    },
+    "reasons": {
+      "rule": 633,
+      "anticipatory_recovery": 6,
+      "coast": 33
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0926258063914247,
+      "HGloHor": 4.454939948290871
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.993339075554104e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 1.1102230246251565e-16
+  },
+  {
+    "scenario": "house_brussels_day259_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 420,
+      "mpc": 182,
+      "early_coast": 62
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 420,
+      "solar_feasible_plan": 182,
+      "stored_solar_heat": 62
+    },
+    "fallback_fraction_all": 0.625,
+    "fallback_fraction_after_initialization": 0.6325301204819277,
+    "mpc_fraction_all": 0.2708333333333333,
+    "early_coast_fraction_all": 0.09226190476190477,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0926258063914247,
+      "HGloHor": 4.454939948290871
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.993339075554104e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 1.1102230246251565e-16
+  },
+  {
+    "scenario": "house_brussels_day259_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 633,
+      "anticipatory_recovery": 6,
+      "coast": 33
+    },
+    "reasons": {
+      "rule": 633,
+      "anticipatory_recovery": 6,
+      "coast": 33
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0926258063914247,
+      "HGloHor": 4.454939948290871
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.993339075554104e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 1.1102230246251565e-16
+  },
+  {
+    "scenario": "house_brussels_day259_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 375,
+      "mpc": 204,
+      "early_coast": 85
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 375,
+      "solar_feasible_plan": 204,
+      "stored_solar_heat": 85
+    },
+    "fallback_fraction_all": 0.5580357142857143,
+    "fallback_fraction_after_initialization": 0.5647590361445783,
+    "mpc_fraction_all": 0.30357142857142855,
+    "early_coast_fraction_all": 0.12648809523809523,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0926258063914247,
+      "HGloHor": 4.454939948290871
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.993339075554104e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 1.1102230246251565e-16
+  },
+  {
+    "scenario": "house_brussels_day259_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 633,
+      "anticipatory_recovery": 6,
+      "coast": 33
+    },
+    "reasons": {
+      "rule": 633,
+      "anticipatory_recovery": 6,
+      "coast": 33
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0926258063914247,
+      "HGloHor": 4.454939948290871
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.993339075554104e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 1.1102230246251565e-16
+  },
+  {
+    "scenario": "house_brussels_day259_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 440,
+      "mpc": 185,
+      "early_coast": 39
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 440,
+      "solar_feasible_plan": 185,
+      "stored_solar_heat": 39
+    },
+    "fallback_fraction_all": 0.6547619047619048,
+    "fallback_fraction_after_initialization": 0.6626506024096386,
+    "mpc_fraction_all": 0.27529761904761907,
+    "early_coast_fraction_all": 0.05803571428571429,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0926258063914247,
+      "HGloHor": 4.454939948290871
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.993339075554104e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_brussels_day343_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 622,
+      "anticipatory_recovery": 50
+    },
+    "reasons": {
+      "rule": 622,
+      "anticipatory_recovery": 50
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.047453086419750434,
+      "HGloHor": 2.1546379369138435
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.978906176233977e-12,
+      "SolTim": 4.992261528968811e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "house_brussels_day343_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 458,
+      "mpc": 206
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 457,
+      "solar_feasible_plan": 206,
+      "outside_training_support": 1
+    },
+    "fallback_fraction_all": 0.6815476190476191,
+    "fallback_fraction_after_initialization": 0.6897590361445783,
+    "mpc_fraction_all": 0.30654761904761907,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.047453086419750434,
+      "HGloHor": 2.1546379369138435
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.978906176233977e-12,
+      "SolTim": 4.992261528968811e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "house_brussels_day343_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 622,
+      "anticipatory_recovery": 50
+    },
+    "reasons": {
+      "rule": 622,
+      "anticipatory_recovery": 50
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.047453086419750434,
+      "HGloHor": 2.1546379369138435
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.978906176233977e-12,
+      "SolTim": 4.992261528968811e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "house_brussels_day343_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 451,
+      "mpc": 213
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 450,
+      "solar_feasible_plan": 213,
+      "outside_training_support": 1
+    },
+    "fallback_fraction_all": 0.6711309523809523,
+    "fallback_fraction_after_initialization": 0.6792168674698795,
+    "mpc_fraction_all": 0.3169642857142857,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.047453086419750434,
+      "HGloHor": 2.1546379369138435
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.978906176233977e-12,
+      "SolTim": 4.992261528968811e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_brussels_day343_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 622,
+      "anticipatory_recovery": 50
+    },
+    "reasons": {
+      "rule": 622,
+      "anticipatory_recovery": 50
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.047453086419750434,
+      "HGloHor": 2.1546379369138435
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.978906176233977e-12,
+      "SolTim": 4.992261528968811e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "house_brussels_day343_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 470,
+      "mpc": 194
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 470,
+      "solar_feasible_plan": 194
+    },
+    "fallback_fraction_all": 0.6994047619047619,
+    "fallback_fraction_after_initialization": 0.7078313253012049,
+    "mpc_fraction_all": 0.28869047619047616,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.047453086419750434,
+      "HGloHor": 2.1546379369138435
+    },
+    "native_lat_rad": 0.8883725892651138,
+    "native_lon_rad": 0.07906341511534314,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.978906176233977e-12,
+      "SolTim": 4.992261528968811e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "house_denver_day210_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 657,
+      "guarded_rule": 15
+    },
+    "reasons": {
+      "coast": 657,
+      "rule": 15
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0898837450114911,
+      "HGloHor": 7.51144237244165
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day210_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "fallback": 664
+    },
+    "reasons": {
+      "coast": 8,
+      "outside_training_support": 664
+    },
+    "fallback_fraction_all": 0.9880952380952381,
+    "fallback_fraction_after_initialization": 1.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0898837450114911,
+      "HGloHor": 7.51144237244165
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day210_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 657,
+      "guarded_rule": 15
+    },
+    "reasons": {
+      "coast": 657,
+      "rule": 15
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0898837450114911,
+      "HGloHor": 7.51144237244165
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day210_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "fallback": 664
+    },
+    "reasons": {
+      "coast": 8,
+      "outside_training_support": 664
+    },
+    "fallback_fraction_all": 0.9880952380952381,
+    "fallback_fraction_after_initialization": 1.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0898837450114911,
+      "HGloHor": 7.51144237244165
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day210_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 657,
+      "guarded_rule": 15
+    },
+    "reasons": {
+      "coast": 657,
+      "rule": 15
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0898837450114911,
+      "HGloHor": 7.51144237244165
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day210_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "fallback": 664
+    },
+    "reasons": {
+      "coast": 8,
+      "outside_training_support": 664
+    },
+    "fallback_fraction_all": 0.9880952380952381,
+    "fallback_fraction_after_initialization": 1.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.0898837450114911,
+      "HGloHor": 7.51144237244165
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day259_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 410,
+      "guarded_rule": 262
+    },
+    "reasons": {
+      "coast": 410,
+      "rule": 262
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.15857713580248856,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day259_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "early_coast": 339,
+      "fallback": 260,
+      "mpc": 65
+    },
+    "reasons": {
+      "coast": 8,
+      "stored_solar_heat": 339,
+      "no_margin_feasible_plan": 61,
+      "outside_training_support": 199,
+      "solar_feasible_plan": 65
+    },
+    "fallback_fraction_all": 0.3869047619047619,
+    "fallback_fraction_after_initialization": 0.39156626506024095,
+    "mpc_fraction_all": 0.09672619047619048,
+    "early_coast_fraction_all": 0.5044642857142857,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.15857713580248856,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day259_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 410,
+      "guarded_rule": 262
+    },
+    "reasons": {
+      "coast": 410,
+      "rule": 262
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.15857713580248856,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day259_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "early_coast": 268,
+      "fallback": 355,
+      "mpc": 41
+    },
+    "reasons": {
+      "coast": 8,
+      "stored_solar_heat": 268,
+      "outside_training_support": 327,
+      "solar_feasible_plan": 41,
+      "no_margin_feasible_plan": 28
+    },
+    "fallback_fraction_all": 0.5282738095238095,
+    "fallback_fraction_after_initialization": 0.5346385542168675,
+    "mpc_fraction_all": 0.06101190476190476,
+    "early_coast_fraction_all": 0.39880952380952384,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.15857713580248856,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day259_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 410,
+      "guarded_rule": 262
+    },
+    "reasons": {
+      "coast": 410,
+      "rule": 262
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.15857713580248856,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day259_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "coast": 8,
+      "early_coast": 332,
+      "mpc": 83,
+      "fallback": 249
+    },
+    "reasons": {
+      "coast": 8,
+      "stored_solar_heat": 332,
+      "solar_feasible_plan": 83,
+      "no_margin_feasible_plan": 66,
+      "outside_training_support": 183
+    },
+    "fallback_fraction_all": 0.3705357142857143,
+    "fallback_fraction_after_initialization": 0.375,
+    "mpc_fraction_all": 0.12351190476190477,
+    "early_coast_fraction_all": 0.49404761904761907,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.15857713580248856,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 5.684341886080802e-14
+  },
+  {
+    "scenario": "house_denver_day343_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 412,
+      "anticipatory_recovery": 211,
+      "coast": 49
+    },
+    "reasons": {
+      "rule": 412,
+      "anticipatory_recovery": 211,
+      "coast": 49
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08480065343007936,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day343_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 587,
+      "mpc": 77
+    },
+    "reasons": {
+      "rule": 8,
+      "outside_training_support": 576,
+      "solar_feasible_plan": 77,
+      "no_margin_feasible_plan": 11
+    },
+    "fallback_fraction_all": 0.8735119047619048,
+    "fallback_fraction_after_initialization": 0.8840361445783133,
+    "mpc_fraction_all": 0.11458333333333333,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08480065343007936,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "house_denver_day343_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 412,
+      "anticipatory_recovery": 211,
+      "coast": 49
+    },
+    "reasons": {
+      "rule": 412,
+      "anticipatory_recovery": 211,
+      "coast": 49
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08480065343007936,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day343_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 565,
+      "mpc": 99
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 63,
+      "solar_feasible_plan": 99,
+      "outside_training_support": 502
+    },
+    "fallback_fraction_all": 0.8407738095238095,
+    "fallback_fraction_after_initialization": 0.8509036144578314,
+    "mpc_fraction_all": 0.14732142857142858,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08480065343007936,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day343_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 412,
+      "anticipatory_recovery": 211,
+      "coast": 49
+    },
+    "reasons": {
+      "rule": 412,
+      "anticipatory_recovery": 211,
+      "coast": 49
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08480065343007936,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "house_denver_day343_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 632,
+      "mpc": 32
+    },
+    "reasons": {
+      "rule": 8,
+      "outside_training_support": 627,
+      "solar_feasible_plan": 32,
+      "no_margin_feasible_plan": 5
+    },
+    "fallback_fraction_all": 0.9404761904761905,
+    "fallback_fraction_after_initialization": 0.9518072289156626,
+    "mpc_fraction_all": 0.047619047619047616,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08480065343007936,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day210_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 385,
+      "coast": 287
+    },
+    "reasons": {
+      "rule": 385,
+      "coast": 287
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09446708647499236,
+      "HGloHor": 7.511442372441643
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "office_denver_day210_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 276,
+      "fallback": 288,
+      "mpc": 100
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 276,
+      "outside_training_support": 288,
+      "solar_feasible_plan": 100
+    },
+    "fallback_fraction_all": 0.42857142857142855,
+    "fallback_fraction_after_initialization": 0.43373493975903615,
+    "mpc_fraction_all": 0.1488095238095238,
+    "early_coast_fraction_all": 0.4107142857142857,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09446708647499236,
+      "HGloHor": 7.511442372441643
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "office_denver_day210_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 385,
+      "coast": 287
+    },
+    "reasons": {
+      "rule": 385,
+      "coast": 287
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09446708647499236,
+      "HGloHor": 7.511442372441643
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "office_denver_day210_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 432,
+      "mpc": 100,
+      "early_coast": 132
+    },
+    "reasons": {
+      "rule": 8,
+      "outside_training_support": 432,
+      "solar_feasible_plan": 100,
+      "stored_solar_heat": 132
+    },
+    "fallback_fraction_all": 0.6428571428571429,
+    "fallback_fraction_after_initialization": 0.6506024096385542,
+    "mpc_fraction_all": 0.1488095238095238,
+    "early_coast_fraction_all": 0.19642857142857142,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09446708647499236,
+      "HGloHor": 7.511442372441643
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "scenario": "office_denver_day210_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 385,
+      "coast": 287
+    },
+    "reasons": {
+      "rule": 385,
+      "coast": 287
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09446708647499236,
+      "HGloHor": 7.511442372441643
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "office_denver_day210_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 312,
+      "fallback": 252,
+      "mpc": 100
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 312,
+      "outside_training_support": 252,
+      "solar_feasible_plan": 100
+    },
+    "fallback_fraction_all": 0.375,
+    "fallback_fraction_after_initialization": 0.3795180722891566,
+    "mpc_fraction_all": 0.1488095238095238,
+    "early_coast_fraction_all": 0.4642857142857143,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.09446708647499236,
+      "HGloHor": 7.511442372441643
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.969580302827126e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "office_denver_day259_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 394,
+      "coast": 275,
+      "anticipatory_recovery": 3
+    },
+    "reasons": {
+      "rule": 394,
+      "coast": 275,
+      "anticipatory_recovery": 3
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.16047460799137525,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day259_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 380,
+      "mpc": 170,
+      "fallback": 114
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 380,
+      "solar_feasible_plan": 170,
+      "outside_training_support": 80,
+      "no_margin_feasible_plan": 34
+    },
+    "fallback_fraction_all": 0.16964285714285715,
+    "fallback_fraction_after_initialization": 0.1716867469879518,
+    "mpc_fraction_all": 0.25297619047619047,
+    "early_coast_fraction_all": 0.5654761904761905,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.16047460799137525,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "scenario": "office_denver_day259_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 394,
+      "coast": 275,
+      "anticipatory_recovery": 3
+    },
+    "reasons": {
+      "rule": 394,
+      "coast": 275,
+      "anticipatory_recovery": 3
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.16047460799137525,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day259_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 269,
+      "fallback": 233,
+      "mpc": 162
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 269,
+      "outside_training_support": 220,
+      "solar_feasible_plan": 162,
+      "no_margin_feasible_plan": 13
+    },
+    "fallback_fraction_all": 0.34672619047619047,
+    "fallback_fraction_after_initialization": 0.3509036144578313,
+    "mpc_fraction_all": 0.24107142857142858,
+    "early_coast_fraction_all": 0.40029761904761907,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.16047460799137525,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "scenario": "office_denver_day259_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 394,
+      "coast": 275,
+      "anticipatory_recovery": 3
+    },
+    "reasons": {
+      "rule": 394,
+      "coast": 275,
+      "anticipatory_recovery": 3
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.16047460799137525,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day259_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 378,
+      "mpc": 186,
+      "fallback": 100
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 378,
+      "solar_feasible_plan": 186,
+      "outside_training_support": 58,
+      "no_margin_feasible_plan": 42
+    },
+    "fallback_fraction_all": 0.1488095238095238,
+    "fallback_fraction_after_initialization": 0.15060240963855423,
+    "mpc_fraction_all": 0.2767857142857143,
+    "early_coast_fraction_all": 0.5625,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.16047460799137525,
+      "HGloHor": 6.096537146444575
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.994005209368879e-12,
+      "SolTim": 4.999339580535889e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day343_perfect",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 461,
+      "anticipatory_recovery": 21,
+      "coast": 190
+    },
+    "reasons": {
+      "rule": 461,
+      "anticipatory_recovery": 21,
+      "coast": 190
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08910454940394175,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day343_perfect",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 658,
+      "early_coast": 2,
+      "mpc": 4
+    },
+    "reasons": {
+      "rule": 8,
+      "outside_training_support": 576,
+      "no_margin_feasible_plan": 82,
+      "stored_solar_heat": 2,
+      "solar_feasible_plan": 4
+    },
+    "fallback_fraction_all": 0.9791666666666666,
+    "fallback_fraction_after_initialization": 0.9909638554216867,
+    "mpc_fraction_all": 0.005952380952380952,
+    "early_coast_fraction_all": 0.002976190476190476,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08910454940394175,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day343_warm_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 461,
+      "anticipatory_recovery": 21,
+      "coast": 190
+    },
+    "reasons": {
+      "rule": 461,
+      "anticipatory_recovery": 21,
+      "coast": 190
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08910454940394175,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day343_warm_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 625,
+      "mpc": 27,
+      "early_coast": 12
+    },
+    "reasons": {
+      "rule": 8,
+      "no_margin_feasible_plan": 123,
+      "solar_feasible_plan": 27,
+      "outside_training_support": 502,
+      "stored_solar_heat": 12
+    },
+    "fallback_fraction_all": 0.9300595238095238,
+    "fallback_fraction_after_initialization": 0.9412650602409639,
+    "mpc_fraction_all": 0.04017857142857143,
+    "early_coast_fraction_all": 0.017857142857142856,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08910454940394175,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day343_cold_bias",
+    "controller": "guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 461,
+      "anticipatory_recovery": 21,
+      "coast": 190
+    },
+    "reasons": {
+      "rule": 461,
+      "anticipatory_recovery": 21,
+      "coast": 190
+    },
+    "fallback_fraction_all": 0.0,
+    "fallback_fraction_after_initialization": 0.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08910454940394175,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "scenario": "office_denver_day343_cold_bias",
+    "controller": "solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 664
+    },
+    "reasons": {
+      "rule": 8,
+      "outside_training_support": 627,
+      "no_margin_feasible_plan": 37
+    },
+    "fallback_fraction_all": 0.9880952380952381,
+    "fallback_fraction_after_initialization": 1.0,
+    "mpc_fraction_all": 0.0,
+    "early_coast_fraction_all": 0.0,
+    "weather_measurement_forecast_max_abs": {
+      "TDryBul": 0.08910454940394175,
+      "HGloHor": 6.30859374999999
+    },
+    "native_lat_rad": 0.6939429105929453,
+    "native_lon_rad": -1.830152253641254,
+    "solar_geometry_vs_weather_resource_max_abs": {
+      "SolZen": 4.991118629504854e-12,
+      "SolTim": 4.991888999938965e-05
+    },
+    "native_stop_band_pass": true,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  }
+]

@@ -1,0 +1,343 @@
+{
+  "frozen_model_config_source_pass": true,
+  "target_training_rows": 0,
+  "fmu_checks": {
+    "only_three_house_resources_changed": true,
+    "binary_and_model_description_identical": true,
+    "both_actual_and_forecast_weather_copied_from_pinned_donor": true
+  },
+  "paired_initialization_and_rule_weather_invariance": true,
+  "formal_episodes": 54,
+  "complete_episodes": 54,
+  "formal_transitions": 36288,
+  "native_samples": 1088694,
+  "decisions_replayed": 36288,
+  "official_kpi_max_difference": 5.684341886080802e-14,
+  "repeat_prefixes": [
+    {
+      "episode": "house_brussels_day210_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day210_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day210_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day210_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day210_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day210_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day259_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day259_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day259_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day259_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day259_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day259_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day343_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day343_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day343_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day343_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day343_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_brussels_day343_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day210_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day210_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day210_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day210_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day210_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day210_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day259_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day259_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day259_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day259_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day259_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day259_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day343_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day343_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day343_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day343_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day343_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "house_denver_day343_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day210_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day210_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day210_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day210_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day210_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day210_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day259_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day259_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day259_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day259_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day259_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day259_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day343_perfect__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day343_perfect__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day343_warm_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day343_warm_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day343_cold_bias__guarded_rule",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "office_denver_day343_cold_bias__solar_mpc",
+      "repeated_steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    }
+  ],
+  "full_seven_day_repeat_verified": false
+}

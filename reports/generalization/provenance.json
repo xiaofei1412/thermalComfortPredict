@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "d156645b93cd289081b1c8f0755b65121a9c83b0",
+  "runtime": {
+    "python": "3.14.3",
+    "numpy": "2.3.5",
+    "pandas": "3.0.0",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "scope": "Frozen zero-target-training simulation transfer; house operative and office air temperature kept distinct",
+  "frozen_model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+  "code_sha256": {
+    "thermal_comfort/generalization.py": "3ad174f155049ba8e3d9ef5c905cb41230b761e84f190ed7ed97fcfcd1f09cdf",
+    "configs/generalization.json": "aa3246616b32eb92e5d80ac4e0daa542e41e44932360c0e3043f36efb44e0464",
+    "docs/experiments/generalization.md": "2ec2ce5478889de51bc83eeb836e4a27d1b5e399b9232662eb0f18cd5e941505",
+    "scripts/verify_generalization.py": "8ec8c2290932aff41963d14e4bb5ca3b1e46456bd0aa905198de367247987949",
+    "scripts/report_generalization.py": "d96761ccd8b5dadc4f42331635a96aa5d8fda8c1436b53f8f5d92f37806cfde1",
+    "tests/test_generalization.py": "9feed9b2f6965ab0e7cd0876c449ec6f7331a4f59ba5a504af2ad56690610470"
+  },
+  "text_artifacts": "UTF-8 LF report copies; embedded hashes refer to original output files",
+  "artifacts_sha256": {
+    "acceptance.json": "a2ae5e4cdd37134b05478c01450824b48ba8b5645f245df95455acc4f9d19242",
+    "comparison.csv": "2e593094b6f9be40c352bf05b39ba46c02fc08afbcb9e621dcaa5013c33522af",
+    "daily_metrics.csv": "100b8d795f8c4ce704a65101eef6829ea9582c6c84af38d105590654697cbf9b",
+    "decision_audit.json": "8b0f2659d7b7131cb6255a8e30834a8f9d9b976a7329c4422589a044f19b6343",
+    "domain_summary.csv": "cb784ca285fd533813824e848b528b6418c2cf78027e86c0e7706a97b2349551",
+    "freeze.json": "aad9a15cfc0f2e92d35c7f53ab5230504b06490362dcfe70640a7aa943d0834a",
+    "manifest.json": "a1a044b73675a3a83ea5e631a8cf8f6e99b0b4e9a71b9e70c5e20380d7d055b4",
+    "policy_config.json": "e79ab52ad04cf007c1ca585b66a6c33b2fc8dfd46d0d9bc1cb1f3bb697df2a5d",
+    "prediction_and_fallback.png": "7edfbc9bf870d0d39997a33363b55090d7c5cb884daf4441f17cf414dbe49ee4",
+    "prediction_metrics.csv": "998e14202b9be9213588a35c2d31d72abc67d650565ada37e1454bff53fbb095",
+    "repeat_archive_checks.json": "e03f9e6574b6fca126e8139f34e570d55da96304cb9fceb2f963a81945d286e0",
+    "repeat_manifest.json": "8676e361695230c1c7a15e21a518badf66bc5496d29996cdb426375a11d25b79",
+    "repeat_summary.json": "2acb912a3655dfbc68681812eb3df30ac55fd171be88687b1acd1841bd12e092",
+    "results_table.md": "cac888f8f3c6aae9d205d1d4ddd234bc152c2174f362a8cc195770292c77c763",
+    "summary.json": "040e7a0b8811addc91ae51e79458d04cb369f628ef31299a5620c5db57cd7950",
+    "transfer_outcomes.png": "d1bec92d1314406a6bc72bb6bf2da7adfa76a8e8cc8b4064dd3d4f025806e328",
+    "verification.json": "4d09c9b1786cf73f8578c69e4b18d28aa57cf4e8f3755aedd49ab87270eb5b38"
+  }
+}

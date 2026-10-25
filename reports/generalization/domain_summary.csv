@@ -1,0 +1,4 @@
+domain,groups,passed,nonzero_electricity_base_groups,electricity_lower_groups,comfort_not_increased_groups,electricity_saved_percent_min,electricity_saved_percent_max,rule_perfect_6h_RMSE_min_C,rule_perfect_6h_RMSE_max_C,rule_perfect_6h_margin_coverage_min,rule_perfect_6h_margin_coverage_max,fallback_after_initialization_min,fallback_after_initialization_max
+house_brussels,9,6,6,6,7,2.534571875273649,5.32412793220666,0.1033057905823279,0.364457051410247,0.961783439490446,1.0,0.14006024096385541,0.7078313253012049
+house_denver,9,0,3,1,4,-0.02503512695888596,0.22328823559448047,0.639121950382397,1.7911407704044542,0.3694267515923566,0.8407643312101911,0.375,1.0
+office_denver,9,1,9,5,4,-2.304966131127453e-05,0.22342341288376938,1.4121763591830785,3.769540427553527,0.267515923566879,0.554140127388535,0.15060240963855423,1.0

@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "d156645b93cd289081b1c8f0755b65121a9c83b0",
+  "model": "outputs/solar-selected/model.joblib",
+  "boptest_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+  "start_days": [210, 259, 343],
+  "days": 7,
+  "embedded_warmup_days": 6,
+  "common_prelude_days": 1,
+  "common_prelude_setpoint_C": 22.0,
+  "weather_modes": ["perfect", "warm_bias", "cold_bias"],
+  "controllers": ["guarded_rule", "solar_mpc"],
+  "prediction_horizons": [1, 4, 24, 32],
+  "origin_stride": 4,
+  "acceptance_tolerance": 0.000001,
+  "domains": [
+    {"id": "house_brussels", "testcase": "bestest_hydronic_heat_pump", "interface": "house", "area_m2": 192},
+    {"id": "house_denver", "testcase": "generalization_house_denver", "interface": "house", "area_m2": 192},
+    {"id": "office_denver", "testcase": "bestest_air", "interface": "office", "area_m2": 48}
+  ]
+}

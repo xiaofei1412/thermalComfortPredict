@@ -1,0 +1,2432 @@
+[
+  {
+    "scenario": "house_brussels_day210_perfect",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 17.704420824315005,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 3.487775924928428,
+      "temperature_min_C": 26.3336640885625,
+      "temperature_max_C": 27.487775924928428,
+      "discomfort_Kh": 17.704420824315005,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.167799200047739,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "e8ca3937585758461f6288f7673f8cb8257895e56e6fe2ca9287438967ac7d89",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "f2fef5f334fae312b603fc9d19ce35f05b8211da49a4585d0608d4de04127c7a",
+      "including_prelude.csv.gz": "725f8560c0a5f966612534bad882426e3000975967606f301d4a6ea5b533713e",
+      "native.csv.gz": "029fe65e3bccb4c2e07cc9e9f21d0e055bd5d1f46962498de55931e2d87192c6",
+      "prelude.json": "d7977b6542e9ac56f3557cc895b7f9efe46cdecfeea83f809af5787eb5cc5c33",
+      "steps.jsonl": "9e21741c198a85fed6950f367a83eaf93f83a025d2a679a0d997c7d324713c4f"
+    }
+  },
+  {
+    "scenario": "house_brussels_day210_perfect",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 17.704420824315005,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 3.487775924928428,
+      "temperature_min_C": 26.3336640885625,
+      "temperature_max_C": 27.487775924928428,
+      "discomfort_Kh": 17.704420824315005,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.2949991000350565,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "26d2e4442e7e92609ba50b80cbe5ed3cb4918d208407a86bfeb9d327bf403eb9",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "f2fef5f334fae312b603fc9d19ce35f05b8211da49a4585d0608d4de04127c7a",
+      "including_prelude.csv.gz": "725f8560c0a5f966612534bad882426e3000975967606f301d4a6ea5b533713e",
+      "native.csv.gz": "029fe65e3bccb4c2e07cc9e9f21d0e055bd5d1f46962498de55931e2d87192c6",
+      "prelude.json": "d7977b6542e9ac56f3557cc895b7f9efe46cdecfeea83f809af5787eb5cc5c33",
+      "steps.jsonl": "d8dc32888f73926fc5e7bf00ef25493a01642f9c41b9b54fad6e0a7181e300cd"
+    }
+  },
+  {
+    "scenario": "house_brussels_day210_warm_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 17.704420824315005,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 3.487775924928428,
+      "temperature_min_C": 26.3336640885625,
+      "temperature_max_C": 27.487775924928428,
+      "discomfort_Kh": 17.704420824315005,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.4642920000478625,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "91a3ec8911e47b40ba7bc0fd46ef7b0632e30523f263777d61dba30df101f010",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "f2fef5f334fae312b603fc9d19ce35f05b8211da49a4585d0608d4de04127c7a",
+      "including_prelude.csv.gz": "725f8560c0a5f966612534bad882426e3000975967606f301d4a6ea5b533713e",
+      "native.csv.gz": "029fe65e3bccb4c2e07cc9e9f21d0e055bd5d1f46962498de55931e2d87192c6",
+      "prelude.json": "d7977b6542e9ac56f3557cc895b7f9efe46cdecfeea83f809af5787eb5cc5c33",
+      "steps.jsonl": "82ec62b7f5718b98fddeda4b329234983dbd3e983524b200375d298cc4b6baf9"
+    }
+  },
+  {
+    "scenario": "house_brussels_day210_warm_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 17.704420824315005,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 3.487775924928428,
+      "temperature_min_C": 26.3336640885625,
+      "temperature_max_C": 27.487775924928428,
+      "discomfort_Kh": 17.704420824315005,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.440622999914922,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "feb28241fbad3102f6c1e501f65067a6e0a166b795f153860e654c261a6bcb32",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "f2fef5f334fae312b603fc9d19ce35f05b8211da49a4585d0608d4de04127c7a",
+      "including_prelude.csv.gz": "725f8560c0a5f966612534bad882426e3000975967606f301d4a6ea5b533713e",
+      "native.csv.gz": "029fe65e3bccb4c2e07cc9e9f21d0e055bd5d1f46962498de55931e2d87192c6",
+      "prelude.json": "d7977b6542e9ac56f3557cc895b7f9efe46cdecfeea83f809af5787eb5cc5c33",
+      "steps.jsonl": "cbc51b51db4cd8160ce93c2a14e95176b89bf93cc6acb04d7c5eebc5b515f817"
+    }
+  },
+  {
+    "scenario": "house_brussels_day210_cold_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 17.704420824315005,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 3.487775924928428,
+      "temperature_min_C": 26.3336640885625,
+      "temperature_max_C": 27.487775924928428,
+      "discomfort_Kh": 17.704420824315005,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.7317887000972405,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "55d099ccb2e21722fa60230fa218b49fe92b12a6e0ab9808d6d824e5a805d1ca",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "f2fef5f334fae312b603fc9d19ce35f05b8211da49a4585d0608d4de04127c7a",
+      "including_prelude.csv.gz": "725f8560c0a5f966612534bad882426e3000975967606f301d4a6ea5b533713e",
+      "native.csv.gz": "029fe65e3bccb4c2e07cc9e9f21d0e055bd5d1f46962498de55931e2d87192c6",
+      "prelude.json": "d7977b6542e9ac56f3557cc895b7f9efe46cdecfeea83f809af5787eb5cc5c33",
+      "steps.jsonl": "078c9f2bc03f9a79d25eefde3133a57484d89b6a9c167efd9d0eb39e461801af"
+    }
+  },
+  {
+    "scenario": "house_brussels_day210_cold_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 17.704420824315005,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 3.487775924928428,
+      "temperature_min_C": 26.3336640885625,
+      "temperature_max_C": 27.487775924928428,
+      "discomfort_Kh": 17.704420824315005,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.66025279997848,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "58781f20f87b6738ba070bf10cb49a6d43cda891f7be12a3f95951aa9156cfb9",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "f2fef5f334fae312b603fc9d19ce35f05b8211da49a4585d0608d4de04127c7a",
+      "including_prelude.csv.gz": "725f8560c0a5f966612534bad882426e3000975967606f301d4a6ea5b533713e",
+      "native.csv.gz": "029fe65e3bccb4c2e07cc9e9f21d0e055bd5d1f46962498de55931e2d87192c6",
+      "prelude.json": "d7977b6542e9ac56f3557cc895b7f9efe46cdecfeea83f809af5787eb5cc5c33",
+      "steps.jsonl": "5d5cfe0d1682d1431b041b0a0a015e2a0cc8ac31cbff5462a5d6d2dbf2e6bae2"
+    }
+  },
+  {
+    "scenario": "house_brussels_day259_perfect",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 5.965168950452749,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 5.965168950452749,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.407869322744205,
+      "temperature_max_C": 21.93515408779365,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.031068613138478692
+    },
+    "wall_seconds": 4.686598700005561,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "cbc34a5eba8a33e71ba22865bf9885a591efa925bcd7aa15a0a247758b23b0c9",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "a1c9562dfbc174249dc6580d52cb8d3daf04e32f60aae055e86ae25984e65548",
+      "including_prelude.csv.gz": "6fd75bb7e72b651711ed43b62670de621053cb6e0b41d5b92013b88f095eb925",
+      "native.csv.gz": "04d8de1ab8726cab186a711a5734ae6e7869706b54aa2ad9e91d7ea8024947d1",
+      "prelude.json": "3f42a4834f5feec0fcb4f13b1539be81031c8298628eda70d3fa6aeaf5747671",
+      "steps.jsonl": "8ba0a0283f726c60cbbde02fdaa0906888d1ee4a839733eade68c4b303188a79"
+    }
+  },
+  {
+    "scenario": "house_brussels_day259_perfect",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 5.965168950452749,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 5.965168950452749,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.407869322744205,
+      "temperature_max_C": 21.93515408779365,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.031068613138478692
+    },
+    "wall_seconds": 5.628642000025138,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "d45e6482ef3fd94a41eebcc72cc793d13b3519afe760b153dd017fc5fd7446bd",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "a1c9562dfbc174249dc6580d52cb8d3daf04e32f60aae055e86ae25984e65548",
+      "including_prelude.csv.gz": "6fd75bb7e72b651711ed43b62670de621053cb6e0b41d5b92013b88f095eb925",
+      "native.csv.gz": "04d8de1ab8726cab186a711a5734ae6e7869706b54aa2ad9e91d7ea8024947d1",
+      "prelude.json": "3f42a4834f5feec0fcb4f13b1539be81031c8298628eda70d3fa6aeaf5747671",
+      "steps.jsonl": "529b48c849b68223943347deaf4698df05a1bf2602ff3dcfaa2147769a05e965"
+    }
+  },
+  {
+    "scenario": "house_brussels_day259_warm_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 5.965168950452749,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 5.965168950452749,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.407869322744205,
+      "temperature_max_C": 21.93515408779365,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.031068613138478692
+    },
+    "wall_seconds": 4.210469500045292,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "6d9f96709f8d8369676db16ffe4babbb62e87bea2ba6b8a4cd5a5a337aa147b8",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "a1c9562dfbc174249dc6580d52cb8d3daf04e32f60aae055e86ae25984e65548",
+      "including_prelude.csv.gz": "6fd75bb7e72b651711ed43b62670de621053cb6e0b41d5b92013b88f095eb925",
+      "native.csv.gz": "04d8de1ab8726cab186a711a5734ae6e7869706b54aa2ad9e91d7ea8024947d1",
+      "prelude.json": "3f42a4834f5feec0fcb4f13b1539be81031c8298628eda70d3fa6aeaf5747671",
+      "steps.jsonl": "70fb97425af12a573963c1217dadb70822da91b94ae9b66aaf14eaae8f019a06"
+    }
+  },
+  {
+    "scenario": "house_brussels_day259_warm_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 5.965168950452749,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 5.965168950452749,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.407869322744205,
+      "temperature_max_C": 21.93515408779365,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.031068613138478692
+    },
+    "wall_seconds": 6.829287300002761,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "67a91e92e4567c8f47f4a363bb8f2179f7b082474f2fc1381206f5be6c3ce729",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "a1c9562dfbc174249dc6580d52cb8d3daf04e32f60aae055e86ae25984e65548",
+      "including_prelude.csv.gz": "6fd75bb7e72b651711ed43b62670de621053cb6e0b41d5b92013b88f095eb925",
+      "native.csv.gz": "04d8de1ab8726cab186a711a5734ae6e7869706b54aa2ad9e91d7ea8024947d1",
+      "prelude.json": "3f42a4834f5feec0fcb4f13b1539be81031c8298628eda70d3fa6aeaf5747671",
+      "steps.jsonl": "ad4195376f401a8e80005b128f178fac02b8b82dd22ad834a5205bb5404fb3e1"
+    }
+  },
+  {
+    "scenario": "house_brussels_day259_cold_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 5.965168950452749,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 5.965168950452749,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.407869322744205,
+      "temperature_max_C": 21.93515408779365,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.031068613138478692
+    },
+    "wall_seconds": 5.232334900065325,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "c61566495b362b85fe582f6dfe23932bb00509ef7cc79700af0020e805449f4c",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "a1c9562dfbc174249dc6580d52cb8d3daf04e32f60aae055e86ae25984e65548",
+      "including_prelude.csv.gz": "6fd75bb7e72b651711ed43b62670de621053cb6e0b41d5b92013b88f095eb925",
+      "native.csv.gz": "04d8de1ab8726cab186a711a5734ae6e7869706b54aa2ad9e91d7ea8024947d1",
+      "prelude.json": "3f42a4834f5feec0fcb4f13b1539be81031c8298628eda70d3fa6aeaf5747671",
+      "steps.jsonl": "cfdd9952741b7cdff10e97a42c1a8c123dfab1445aa159e2295f27caf0c0c1ae"
+    }
+  },
+  {
+    "scenario": "house_brussels_day259_cold_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 5.965168950452749,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 5.965168950452749,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.407869322744205,
+      "temperature_max_C": 21.93515408779365,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.031068613138478692
+    },
+    "wall_seconds": 5.201494100037962,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "9b8b8f6fd6954dae29fbde78c6e0364f9060f697d4596af52fcf0352d2eef956",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "a1c9562dfbc174249dc6580d52cb8d3daf04e32f60aae055e86ae25984e65548",
+      "including_prelude.csv.gz": "6fd75bb7e72b651711ed43b62670de621053cb6e0b41d5b92013b88f095eb925",
+      "native.csv.gz": "04d8de1ab8726cab186a711a5734ae6e7869706b54aa2ad9e91d7ea8024947d1",
+      "prelude.json": "3f42a4834f5feec0fcb4f13b1539be81031c8298628eda70d3fa6aeaf5747671",
+      "steps.jsonl": "dfc46da9d63046d82f186c5f1946630fcb7e1404a528ac2b9b00d2e7de45604b"
+    }
+  },
+  {
+    "scenario": "house_brussels_day343_perfect",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 12.452000967504809,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 12.452000967504809,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.361661833608252,
+      "temperature_max_C": 22.000786239264812,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.06485422358909157
+    },
+    "wall_seconds": 6.147125700023025,
+    "api_full_period_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "eaec2d0ede167dad781c1241439534e7cdde20d09060d0dacc8584f0c3b79740",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ea08dd3285589f2af4badb7a3e56ca1ecce66f106b0f0935c9362a9bde190c02",
+      "including_prelude.csv.gz": "a04e09bdc23eab389ef21fbc23208e04e9099ae0004676f5bcb439623dd51816",
+      "native.csv.gz": "f644eba0a30520934bec1deea723a3ed507b66ab8d71303dd45790d0fadbcfff",
+      "prelude.json": "b9c49350c76f3939ac42f7eb428dae2f1045695d5f33e22f3ea319d29a1eb214",
+      "steps.jsonl": "871b3d8043f9efaa44173282fc4a76de6243a005355fc92650291282f4ad8161"
+    }
+  },
+  {
+    "scenario": "house_brussels_day343_perfect",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 12.452000967504809,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 12.452000967504809,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.361661833608252,
+      "temperature_max_C": 22.000786239264812,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.06485422358909157
+    },
+    "wall_seconds": 6.335615599993616,
+    "api_full_period_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "62db7f5711258300698b083b9da0469f86823e3dde230a79cacc93c5d7fe0224",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ea08dd3285589f2af4badb7a3e56ca1ecce66f106b0f0935c9362a9bde190c02",
+      "including_prelude.csv.gz": "a04e09bdc23eab389ef21fbc23208e04e9099ae0004676f5bcb439623dd51816",
+      "native.csv.gz": "f644eba0a30520934bec1deea723a3ed507b66ab8d71303dd45790d0fadbcfff",
+      "prelude.json": "b9c49350c76f3939ac42f7eb428dae2f1045695d5f33e22f3ea319d29a1eb214",
+      "steps.jsonl": "fc64d75a49d67eefc9a7a67992ff525dc48553f6a9d0c4ef2568327178036023"
+    }
+  },
+  {
+    "scenario": "house_brussels_day343_warm_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 12.452000967504809,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 12.452000967504809,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.361661833608252,
+      "temperature_max_C": 22.000786239264812,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.06485422358909157
+    },
+    "wall_seconds": 5.7219381999457255,
+    "api_full_period_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "ba6fde2e04133198c3630df9dc54148d00e0cf688eb3d44774a98b441e23c7f4",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ea08dd3285589f2af4badb7a3e56ca1ecce66f106b0f0935c9362a9bde190c02",
+      "including_prelude.csv.gz": "a04e09bdc23eab389ef21fbc23208e04e9099ae0004676f5bcb439623dd51816",
+      "native.csv.gz": "f644eba0a30520934bec1deea723a3ed507b66ab8d71303dd45790d0fadbcfff",
+      "prelude.json": "b9c49350c76f3939ac42f7eb428dae2f1045695d5f33e22f3ea319d29a1eb214",
+      "steps.jsonl": "c23711808ab38544415d3738905273ac53601db9b6d37bec40924856cf8801da"
+    }
+  },
+  {
+    "scenario": "house_brussels_day343_warm_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 12.452000967504809,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 12.452000967504809,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.361661833608252,
+      "temperature_max_C": 22.000786239264812,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.06485422358909157
+    },
+    "wall_seconds": 5.417195800109766,
+    "api_full_period_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "549336b6b53ee3c52eb4976f4bbac7a9aa791940826228fb082902e7321c9ec9",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ea08dd3285589f2af4badb7a3e56ca1ecce66f106b0f0935c9362a9bde190c02",
+      "including_prelude.csv.gz": "a04e09bdc23eab389ef21fbc23208e04e9099ae0004676f5bcb439623dd51816",
+      "native.csv.gz": "f644eba0a30520934bec1deea723a3ed507b66ab8d71303dd45790d0fadbcfff",
+      "prelude.json": "b9c49350c76f3939ac42f7eb428dae2f1045695d5f33e22f3ea319d29a1eb214",
+      "steps.jsonl": "be11dfa735f504c9db16e991827193ffc5ec25c352cc19402c92834e5b2d0863"
+    }
+  },
+  {
+    "scenario": "house_brussels_day343_cold_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 12.452000967504809,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 12.452000967504809,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.361661833608252,
+      "temperature_max_C": 22.000786239264812,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.06485422358909157
+    },
+    "wall_seconds": 4.57255229994189,
+    "api_full_period_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "0c095cdb8e9e78ecdc79ad6720645cde633651ba14333ce648efa92269d362c2",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ea08dd3285589f2af4badb7a3e56ca1ecce66f106b0f0935c9362a9bde190c02",
+      "including_prelude.csv.gz": "a04e09bdc23eab389ef21fbc23208e04e9099ae0004676f5bcb439623dd51816",
+      "native.csv.gz": "f644eba0a30520934bec1deea723a3ed507b66ab8d71303dd45790d0fadbcfff",
+      "prelude.json": "b9c49350c76f3939ac42f7eb428dae2f1045695d5f33e22f3ea319d29a1eb214",
+      "steps.jsonl": "b0f8e9da24fdfba86a581ed1041eb9c96781807cfdc0eeec9cd35964eb80221b"
+    }
+  },
+  {
+    "scenario": "house_brussels_day343_cold_bias",
+    "domain": {
+      "id": "house_brussels",
+      "testcase": "bestest_hydronic_heat_pump",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 12.452000967504809,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 12.452000967504809,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.361661833608252,
+      "temperature_max_C": 22.000786239264812,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.06485422358909157
+    },
+    "wall_seconds": 4.741074899910018,
+    "api_full_period_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "ac0cf5a5e199c9ce03e78fd78575e6ca30994446f27fae361c53d066be6619f7",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ea08dd3285589f2af4badb7a3e56ca1ecce66f106b0f0935c9362a9bde190c02",
+      "including_prelude.csv.gz": "a04e09bdc23eab389ef21fbc23208e04e9099ae0004676f5bcb439623dd51816",
+      "native.csv.gz": "f644eba0a30520934bec1deea723a3ed507b66ab8d71303dd45790d0fadbcfff",
+      "prelude.json": "b9c49350c76f3939ac42f7eb428dae2f1045695d5f33e22f3ea319d29a1eb214",
+      "steps.jsonl": "f9e37f623b1aafd42b8b885578fa9ec6bb670e09798b9f562e2ebd1715fa0e97"
+    }
+  },
+  {
+    "scenario": "house_denver_day210_perfect",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 36.08978365574076,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 6.766254258339643,
+      "temperature_min_C": 29.323719333851784,
+      "temperature_max_C": 30.766254258339643,
+      "discomfort_Kh": 36.08978365574076,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.941112900036387,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "1d72ecd85896222592090ff580803771347c9ea0225d241449ebd516f3a908eb",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ebc596ef620b47e3011dc5fb4d69b44bdabc99053abe3145266cf736266f9347",
+      "including_prelude.csv.gz": "20b050b6f7b313abad08101cdd89403fd9372a0ff4d3151d6446d0729897ce2b",
+      "native.csv.gz": "41eb8ea643c405c9df6cfb5e6103451f161b61c5a2fae1cd89536504f12b372f",
+      "prelude.json": "80b7a93fae6e4112e817ee89e6ad87bd7e122bc1cf8ac944f66c7b5cb83f12eb",
+      "steps.jsonl": "436b27009c4f4b2e93a48908adbd095a6dda6ec3aecb86a920e1bb62aaee082e"
+    }
+  },
+  {
+    "scenario": "house_denver_day210_perfect",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 36.08978365574076,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 6.766254258339643,
+      "temperature_min_C": 29.323719333851784,
+      "temperature_max_C": 30.766254258339643,
+      "discomfort_Kh": 36.08978365574076,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.080439000041224,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "0e50c26b64503bc7372e3ca72375b4cc4687870727ad7283cfc18a1f2297a648",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ebc596ef620b47e3011dc5fb4d69b44bdabc99053abe3145266cf736266f9347",
+      "including_prelude.csv.gz": "20b050b6f7b313abad08101cdd89403fd9372a0ff4d3151d6446d0729897ce2b",
+      "native.csv.gz": "41eb8ea643c405c9df6cfb5e6103451f161b61c5a2fae1cd89536504f12b372f",
+      "prelude.json": "80b7a93fae6e4112e817ee89e6ad87bd7e122bc1cf8ac944f66c7b5cb83f12eb",
+      "steps.jsonl": "c20d3952cdc13f08f85e9e2969f702124eb3638aef7036c42c70e01bd9a718aa"
+    }
+  },
+  {
+    "scenario": "house_denver_day210_warm_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 36.08978365574076,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 6.766254258339643,
+      "temperature_min_C": 29.323719333851784,
+      "temperature_max_C": 30.766254258339643,
+      "discomfort_Kh": 36.08978365574076,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.926771600032225,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "051d7a18202817483f5f107feea0b160b527ff8ec957fa7ae1025034227f5983",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ebc596ef620b47e3011dc5fb4d69b44bdabc99053abe3145266cf736266f9347",
+      "including_prelude.csv.gz": "20b050b6f7b313abad08101cdd89403fd9372a0ff4d3151d6446d0729897ce2b",
+      "native.csv.gz": "41eb8ea643c405c9df6cfb5e6103451f161b61c5a2fae1cd89536504f12b372f",
+      "prelude.json": "80b7a93fae6e4112e817ee89e6ad87bd7e122bc1cf8ac944f66c7b5cb83f12eb",
+      "steps.jsonl": "b4902836428fdc2d6fcacf75530ffcaccaaaf2dcdf5cb3e44834930e01a9fefa"
+    }
+  },
+  {
+    "scenario": "house_denver_day210_warm_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 36.08978365574076,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 6.766254258339643,
+      "temperature_min_C": 29.323719333851784,
+      "temperature_max_C": 30.766254258339643,
+      "discomfort_Kh": 36.08978365574076,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.2125727001111954,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "bd54cf682ac4af1f657859a0000f31f46bc4285c260594e499dc99ab8d5af172",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ebc596ef620b47e3011dc5fb4d69b44bdabc99053abe3145266cf736266f9347",
+      "including_prelude.csv.gz": "20b050b6f7b313abad08101cdd89403fd9372a0ff4d3151d6446d0729897ce2b",
+      "native.csv.gz": "41eb8ea643c405c9df6cfb5e6103451f161b61c5a2fae1cd89536504f12b372f",
+      "prelude.json": "80b7a93fae6e4112e817ee89e6ad87bd7e122bc1cf8ac944f66c7b5cb83f12eb",
+      "steps.jsonl": "633e167c755657c88135e713b46966d8dda7387ee747214873d3b9a607a86212"
+    }
+  },
+  {
+    "scenario": "house_denver_day210_cold_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 36.08978365574076,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 6.766254258339643,
+      "temperature_min_C": 29.323719333851784,
+      "temperature_max_C": 30.766254258339643,
+      "discomfort_Kh": 36.08978365574076,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.4950229000533,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "3461560510448bc9386169adfe372a4186dcbd0b492aa0445794323e7fcf6051",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ebc596ef620b47e3011dc5fb4d69b44bdabc99053abe3145266cf736266f9347",
+      "including_prelude.csv.gz": "20b050b6f7b313abad08101cdd89403fd9372a0ff4d3151d6446d0729897ce2b",
+      "native.csv.gz": "41eb8ea643c405c9df6cfb5e6103451f161b61c5a2fae1cd89536504f12b372f",
+      "prelude.json": "80b7a93fae6e4112e817ee89e6ad87bd7e122bc1cf8ac944f66c7b5cb83f12eb",
+      "steps.jsonl": "3e4447f7a28e3f5aea997d275d7ffda74e15d39627aa21531068baebeead87e5"
+    }
+  },
+  {
+    "scenario": "house_denver_day210_cold_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 210,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 36.08978365574076,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 6.766254258339643,
+      "temperature_min_C": 29.323719333851784,
+      "temperature_max_C": 30.766254258339643,
+      "discomfort_Kh": 36.08978365574076,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.1860353000229225,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "83dd844513695a251997fa7c61e04d269c0f05d86b55d922500030dd86372408",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "ebc596ef620b47e3011dc5fb4d69b44bdabc99053abe3145266cf736266f9347",
+      "including_prelude.csv.gz": "20b050b6f7b313abad08101cdd89403fd9372a0ff4d3151d6446d0729897ce2b",
+      "native.csv.gz": "41eb8ea643c405c9df6cfb5e6103451f161b61c5a2fae1cd89536504f12b372f",
+      "prelude.json": "80b7a93fae6e4112e817ee89e6ad87bd7e122bc1cf8ac944f66c7b5cb83f12eb",
+      "steps.jsonl": "7f74de08b7b2ba00754296e29512e7498fe1d99265300233dd6e31777d5073c5"
+    }
+  },
+  {
+    "scenario": "house_denver_day259_perfect",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 5.122073405521855,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.6155389708730468,
+      "temperature_min_C": 24.143755051335233,
+      "temperature_max_C": 25.615538970873047,
+      "discomfort_Kh": 5.122073405521855,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.100724400021136,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "ca1c88cbc4e05f31299f4fb88d8396fe95b01429c6e95105659a4a45ba7697e8",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "dd9727766ef6e5b96d93c043a24fdc4df1f43b4feb67db532cf6d84eb92e07d2",
+      "including_prelude.csv.gz": "d8c2dd209dc15abef1f7f8c35613a38e726854b281d762fc0120b7f0b7a4ab31",
+      "native.csv.gz": "fc362393dfdd2337a6c6db6e1b9da2610cc05e83052a884a72198b924e80a88e",
+      "prelude.json": "6e656461700f59d2e177268151a839cafda2709415137f84e3b1808d929d70fc",
+      "steps.jsonl": "301c3169d5c45b7c11728b7406966c2a3b3bf422f6b5e015065308c10cf0bfa5"
+    }
+  },
+  {
+    "scenario": "house_denver_day259_perfect",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 5.122073405521855,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.6155389708730468,
+      "temperature_min_C": 24.143755051335233,
+      "temperature_max_C": 25.615538970873047,
+      "discomfort_Kh": 5.122073405521855,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.204215500038117,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "32bc1d94698d8bd96d2e0ee79bc08ec908a7ee2237ed3496d7cb96f87d615018",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "dd9727766ef6e5b96d93c043a24fdc4df1f43b4feb67db532cf6d84eb92e07d2",
+      "including_prelude.csv.gz": "d8c2dd209dc15abef1f7f8c35613a38e726854b281d762fc0120b7f0b7a4ab31",
+      "native.csv.gz": "fc362393dfdd2337a6c6db6e1b9da2610cc05e83052a884a72198b924e80a88e",
+      "prelude.json": "6e656461700f59d2e177268151a839cafda2709415137f84e3b1808d929d70fc",
+      "steps.jsonl": "023362538eba883ab6de4301190857ada6c2de1cd21f38cd1846346b0f1a9668"
+    }
+  },
+  {
+    "scenario": "house_denver_day259_warm_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 5.122073405521855,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.6155389708730468,
+      "temperature_min_C": 24.143755051335233,
+      "temperature_max_C": 25.615538970873047,
+      "discomfort_Kh": 5.122073405521855,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.963663800037466,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "7222bd4ab33260a2d9c1a36c43a8096b5b26685084d8d07efe87939dcc188d64",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "dd9727766ef6e5b96d93c043a24fdc4df1f43b4feb67db532cf6d84eb92e07d2",
+      "including_prelude.csv.gz": "d8c2dd209dc15abef1f7f8c35613a38e726854b281d762fc0120b7f0b7a4ab31",
+      "native.csv.gz": "fc362393dfdd2337a6c6db6e1b9da2610cc05e83052a884a72198b924e80a88e",
+      "prelude.json": "6e656461700f59d2e177268151a839cafda2709415137f84e3b1808d929d70fc",
+      "steps.jsonl": "dff20f34cd9909f951a73b506fea1bb7220f7b37b5440ba61f1ddbe14bc77a87"
+    }
+  },
+  {
+    "scenario": "house_denver_day259_warm_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 5.122073405521855,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.6155389708730468,
+      "temperature_min_C": 24.143755051335233,
+      "temperature_max_C": 25.615538970873047,
+      "discomfort_Kh": 5.122073405521855,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.183004999998957,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "0799696a8c9ade0999ce54a7ad2b52a321513fb6908138656aa3868e3cde20d5",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "dd9727766ef6e5b96d93c043a24fdc4df1f43b4feb67db532cf6d84eb92e07d2",
+      "including_prelude.csv.gz": "d8c2dd209dc15abef1f7f8c35613a38e726854b281d762fc0120b7f0b7a4ab31",
+      "native.csv.gz": "fc362393dfdd2337a6c6db6e1b9da2610cc05e83052a884a72198b924e80a88e",
+      "prelude.json": "6e656461700f59d2e177268151a839cafda2709415137f84e3b1808d929d70fc",
+      "steps.jsonl": "6fd28c14b697599644af43ec801901413ddbd0a05018fe38534a157850f3ae49"
+    }
+  },
+  {
+    "scenario": "house_denver_day259_cold_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 5.122073405521855,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.6155389708730468,
+      "temperature_min_C": 24.143755051335233,
+      "temperature_max_C": 25.615538970873047,
+      "discomfort_Kh": 5.122073405521855,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 4.667491300031543,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "fcc742de7e6c37d23889d2d5c2796aa7c0075da110203cacd756f7b484fefcd0",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "dd9727766ef6e5b96d93c043a24fdc4df1f43b4feb67db532cf6d84eb92e07d2",
+      "including_prelude.csv.gz": "d8c2dd209dc15abef1f7f8c35613a38e726854b281d762fc0120b7f0b7a4ab31",
+      "native.csv.gz": "fc362393dfdd2337a6c6db6e1b9da2610cc05e83052a884a72198b924e80a88e",
+      "prelude.json": "6e656461700f59d2e177268151a839cafda2709415137f84e3b1808d929d70fc",
+      "steps.jsonl": "82a10a6120c72678165283eca8827c44c00ec6278d4744b06c985675e686dbbf"
+    }
+  },
+  {
+    "scenario": "house_denver_day259_cold_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 259,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.0,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 0.0,
+      "cold_Kh": 0.0,
+      "hot_Kh": 5.122073405521855,
+      "outside_hours": 6.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.6155389708730468,
+      "temperature_min_C": 24.143755051335233,
+      "temperature_max_C": 25.615538970873047,
+      "discomfort_Kh": 5.122073405521855,
+      "official_energy_kWh_m2": 0.0
+    },
+    "wall_seconds": 5.479412299930118,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "5b2ed732aa151d0e4faa585e891f7dc28c962d5211310b710fb77f359ef30359",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "dd9727766ef6e5b96d93c043a24fdc4df1f43b4feb67db532cf6d84eb92e07d2",
+      "including_prelude.csv.gz": "d8c2dd209dc15abef1f7f8c35613a38e726854b281d762fc0120b7f0b7a4ab31",
+      "native.csv.gz": "fc362393dfdd2337a6c6db6e1b9da2610cc05e83052a884a72198b924e80a88e",
+      "prelude.json": "6e656461700f59d2e177268151a839cafda2709415137f84e3b1808d929d70fc",
+      "steps.jsonl": "a68e74bbcff0ff57b0a68a95c251193c3e8a72ba04759a8bf938253709583c57"
+    }
+  },
+  {
+    "scenario": "house_denver_day343_perfect",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 15.726468227619291,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 15.726468227619291,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.351034379181897,
+      "temperature_max_C": 21.858514309441148,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.08190875421246809
+    },
+    "wall_seconds": 4.5579633000306785,
+    "api_full_period_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "b1c4e76055d33c948fd04f04ae2a12395b031eb3bd76d5f4be09145aa69ba398",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "0f9ea95a4ee78a2d01f2eed589a42588db0073a4763ca47752ef5260792bd8ed",
+      "including_prelude.csv.gz": "6b001a898248f5b41bf8cc8ec48f5c9f42eb77ba64fafa455234de0a9ba3a1c6",
+      "native.csv.gz": "7cedb65e4a8e5f22fc4a58563304656d0f939b2adb8b626c5e618aba1e63c652",
+      "prelude.json": "3ba614bcbbb781de24ea1bd1b2ffe2555f6d622e20460c90aaac65c06d947d39",
+      "steps.jsonl": "9fdf4b8c2750ccf5e6450986c29449536c77708fc7d2ab8859521fb218f1791c"
+    }
+  },
+  {
+    "scenario": "house_denver_day343_perfect",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 15.726468227619291,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 15.726468227619291,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.351034379181897,
+      "temperature_max_C": 21.858514309441148,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.08190875421246809
+    },
+    "wall_seconds": 4.804827899904922,
+    "api_full_period_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "716cbd706fd437207bcb9661d913d07bd4de7bf3fb8a2e8677589ec428dbeb7e",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "0f9ea95a4ee78a2d01f2eed589a42588db0073a4763ca47752ef5260792bd8ed",
+      "including_prelude.csv.gz": "6b001a898248f5b41bf8cc8ec48f5c9f42eb77ba64fafa455234de0a9ba3a1c6",
+      "native.csv.gz": "7cedb65e4a8e5f22fc4a58563304656d0f939b2adb8b626c5e618aba1e63c652",
+      "prelude.json": "3ba614bcbbb781de24ea1bd1b2ffe2555f6d622e20460c90aaac65c06d947d39",
+      "steps.jsonl": "f50932abf4605e22c6fdba19b4bf9d9a46ce04c9dcd3a4a3ff686723302131ef"
+    }
+  },
+  {
+    "scenario": "house_denver_day343_warm_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 15.726468227619291,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 15.726468227619291,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.351034379181897,
+      "temperature_max_C": 21.858514309441148,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.08190875421246809
+    },
+    "wall_seconds": 4.077929700026289,
+    "api_full_period_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "3da64869b8ae03b4d58f3de36648e61a5e451f06156be53e5b745622b61a91bc",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "0f9ea95a4ee78a2d01f2eed589a42588db0073a4763ca47752ef5260792bd8ed",
+      "including_prelude.csv.gz": "6b001a898248f5b41bf8cc8ec48f5c9f42eb77ba64fafa455234de0a9ba3a1c6",
+      "native.csv.gz": "7cedb65e4a8e5f22fc4a58563304656d0f939b2adb8b626c5e618aba1e63c652",
+      "prelude.json": "3ba614bcbbb781de24ea1bd1b2ffe2555f6d622e20460c90aaac65c06d947d39",
+      "steps.jsonl": "34df644e854f34cfe97da1c204dfa637b25bb4f3baf5edb7c0a9cd3369a0804c"
+    }
+  },
+  {
+    "scenario": "house_denver_day343_warm_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 15.726468227619291,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 15.726468227619291,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.351034379181897,
+      "temperature_max_C": 21.858514309441148,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.08190875421246809
+    },
+    "wall_seconds": 5.663734799949452,
+    "api_full_period_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "c4d4159c139e034120969d7659fe005abbd708562d08495f2b8297dc968dcba6",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "0f9ea95a4ee78a2d01f2eed589a42588db0073a4763ca47752ef5260792bd8ed",
+      "including_prelude.csv.gz": "6b001a898248f5b41bf8cc8ec48f5c9f42eb77ba64fafa455234de0a9ba3a1c6",
+      "native.csv.gz": "7cedb65e4a8e5f22fc4a58563304656d0f939b2adb8b626c5e618aba1e63c652",
+      "prelude.json": "3ba614bcbbb781de24ea1bd1b2ffe2555f6d622e20460c90aaac65c06d947d39",
+      "steps.jsonl": "b078a3623ec2f275ab83f124017c88faa5358d9c121642c7c14bca597aa21e3b"
+    }
+  },
+  {
+    "scenario": "house_denver_day343_cold_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 15.726468227619291,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 15.726468227619291,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.351034379181897,
+      "temperature_max_C": 21.858514309441148,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.08190875421246809
+    },
+    "wall_seconds": 4.973683100077324,
+    "api_full_period_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "e9072ca3a50b7431f1d7cba1fbd7740311887725c68b6568203f170fc31c1ef8",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "0f9ea95a4ee78a2d01f2eed589a42588db0073a4763ca47752ef5260792bd8ed",
+      "including_prelude.csv.gz": "6b001a898248f5b41bf8cc8ec48f5c9f42eb77ba64fafa455234de0a9ba3a1c6",
+      "native.csv.gz": "7cedb65e4a8e5f22fc4a58563304656d0f939b2adb8b626c5e618aba1e63c652",
+      "prelude.json": "3ba614bcbbb781de24ea1bd1b2ffe2555f6d622e20460c90aaac65c06d947d39",
+      "steps.jsonl": "8a780063d688fcbd0a3d744934e3a2ed8cc4b592810bab6552271113d43354e0"
+    }
+  },
+  {
+    "scenario": "house_denver_day343_cold_bias",
+    "domain": {
+      "id": "house_denver",
+      "testcase": "generalization_house_denver",
+      "interface": "house",
+      "area_m2": 192
+    },
+    "day": 343,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 15.726468227619291,
+      "gas_kWh": 0.0,
+      "total_energy_kWh": 15.726468227619291,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 21.351034379181897,
+      "temperature_max_C": 21.858514309441148,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.08190875421246809
+    },
+    "wall_seconds": 5.593333100085147,
+    "api_full_period_difference": {
+      "ener_tot": 1.1102230246251565e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "67b496fbb7ba089b90c8c4da2c3b682fb42626177f96378ac16e9e816c79c070",
+      "api_metadata.json": "780a824ebc08ae45a991a10411e38cefe39745243e635094c1189b87ff25a254",
+      "exogenous.csv.gz": "0f9ea95a4ee78a2d01f2eed589a42588db0073a4763ca47752ef5260792bd8ed",
+      "including_prelude.csv.gz": "6b001a898248f5b41bf8cc8ec48f5c9f42eb77ba64fafa455234de0a9ba3a1c6",
+      "native.csv.gz": "7cedb65e4a8e5f22fc4a58563304656d0f939b2adb8b626c5e618aba1e63c652",
+      "prelude.json": "3ba614bcbbb781de24ea1bd1b2ffe2555f6d622e20460c90aaac65c06d947d39",
+      "steps.jsonl": "e1de1cd03495c827008800ee29d09c6cf8b83d0bc7b60f1371dbd7954447c7af"
+    }
+  },
+  {
+    "scenario": "office_denver_day210_perfect",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 210,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.0563586015076782e-253,
+      "gas_kWh": 1.5494888427696457e-251,
+      "total_energy_kWh": 1.5600524287847225e-251,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 25.230351263448085,
+      "temperature_max_C": 27.537239511955363,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 3.2501118267222193e-253
+    },
+    "wall_seconds": 4.75200760003645,
+    "api_full_period_difference": {
+      "ener_tot": 2.7755575615628914e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "b85fc8aef1e18f0345ed4eaf5793627d629a7d35a40606394fb0bcff63e75d0e",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "9001609ecf02028a3fb6fb34120a02cdc7ab2b5c98a138c3e3b0aed1e8ce70f9",
+      "including_prelude.csv.gz": "c03d4854f8d0a88c34034b2e44670848d794d04ad1183fa74b8db59c41f7614b",
+      "native.csv.gz": "c0a1312b57b5e2be568d8993590a74d24ebed82cf46f030afb18d765889b7bfd",
+      "prelude.json": "6dac13d3734edc4d08a8e7db0bff9a2e99976f55fa6a64661e4059a04311ecd7",
+      "steps.jsonl": "56e3cd2b30d05f154f359ea1cbb93705da04d4a54fc12a88476b1151c56d1eb4"
+    }
+  },
+  {
+    "scenario": "office_denver_day210_perfect",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 210,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.0563586015076782e-253,
+      "gas_kWh": 1.5494888427696457e-251,
+      "total_energy_kWh": 1.5600524287847225e-251,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 25.23035121663287,
+      "temperature_max_C": 27.537239511955363,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 3.2501118267222193e-253
+    },
+    "wall_seconds": 4.854311499977484,
+    "api_full_period_difference": {
+      "ener_tot": 2.7755575615628914e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "b5514ba7603069f43a1ae0b0cdcee52696e9858e1a65ca4433f3989a54dbb887",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "9001609ecf02028a3fb6fb34120a02cdc7ab2b5c98a138c3e3b0aed1e8ce70f9",
+      "including_prelude.csv.gz": "c4650652ec00df975306dc96ac67330289fea9e7a1d34f38d9cd1ebba7b2def1",
+      "native.csv.gz": "3f68f86a5061e34eb85fc229f748626c6e5efe9a3d4592b20c7b0d932b117ef9",
+      "prelude.json": "6dac13d3734edc4d08a8e7db0bff9a2e99976f55fa6a64661e4059a04311ecd7",
+      "steps.jsonl": "b32375efa2698312e55596f6695ee6c99fd84d1bb6adbc4061d52d08422409c3"
+    }
+  },
+  {
+    "scenario": "office_denver_day210_warm_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 210,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.0563586015076782e-253,
+      "gas_kWh": 1.5494888427696457e-251,
+      "total_energy_kWh": 1.5600524287847225e-251,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 25.230351263448085,
+      "temperature_max_C": 27.537239511955363,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 3.2501118267222193e-253
+    },
+    "wall_seconds": 5.269518899964169,
+    "api_full_period_difference": {
+      "ener_tot": 2.7755575615628914e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "de3c4d0955cc21596186d3b2fe2a4a1cd5eccd193e5d96fd15af6dc380d626a8",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "9001609ecf02028a3fb6fb34120a02cdc7ab2b5c98a138c3e3b0aed1e8ce70f9",
+      "including_prelude.csv.gz": "c03d4854f8d0a88c34034b2e44670848d794d04ad1183fa74b8db59c41f7614b",
+      "native.csv.gz": "c0a1312b57b5e2be568d8993590a74d24ebed82cf46f030afb18d765889b7bfd",
+      "prelude.json": "6dac13d3734edc4d08a8e7db0bff9a2e99976f55fa6a64661e4059a04311ecd7",
+      "steps.jsonl": "c49906014f66023f5de889c851cffe4b9b8aa19a833a46ca12e3ceb5f262e2b9"
+    }
+  },
+  {
+    "scenario": "office_denver_day210_warm_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 210,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.0563586015076782e-253,
+      "gas_kWh": 1.5494888427696457e-251,
+      "total_energy_kWh": 1.5600524287847225e-251,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 25.230351263448085,
+      "temperature_max_C": 27.537239511955363,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 3.2501118267222193e-253
+    },
+    "wall_seconds": 4.804684899980202,
+    "api_full_period_difference": {
+      "ener_tot": 2.7755575615628914e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "a795607393cad5a7dc348c8435073023206725e8b1953c5bcaca3396febaf43f",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "9001609ecf02028a3fb6fb34120a02cdc7ab2b5c98a138c3e3b0aed1e8ce70f9",
+      "including_prelude.csv.gz": "c03d4854f8d0a88c34034b2e44670848d794d04ad1183fa74b8db59c41f7614b",
+      "native.csv.gz": "c0a1312b57b5e2be568d8993590a74d24ebed82cf46f030afb18d765889b7bfd",
+      "prelude.json": "6dac13d3734edc4d08a8e7db0bff9a2e99976f55fa6a64661e4059a04311ecd7",
+      "steps.jsonl": "6dfe54e4efad56e2e8fafa800a3dd65f48b10fdd4d59b3ae14ffde1cd9149829"
+    }
+  },
+  {
+    "scenario": "office_denver_day210_cold_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 210,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.0563586015076782e-253,
+      "gas_kWh": 1.5494888427696457e-251,
+      "total_energy_kWh": 1.5600524287847225e-251,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 25.230351263448085,
+      "temperature_max_C": 27.537239511955363,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 3.2501118267222193e-253
+    },
+    "wall_seconds": 4.637513400055468,
+    "api_full_period_difference": {
+      "ener_tot": 2.7755575615628914e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "e148cef613c1a79af875b2cb7929839c81ee1161fdf0f32851295a6940444784",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "9001609ecf02028a3fb6fb34120a02cdc7ab2b5c98a138c3e3b0aed1e8ce70f9",
+      "including_prelude.csv.gz": "c03d4854f8d0a88c34034b2e44670848d794d04ad1183fa74b8db59c41f7614b",
+      "native.csv.gz": "c0a1312b57b5e2be568d8993590a74d24ebed82cf46f030afb18d765889b7bfd",
+      "prelude.json": "6dac13d3734edc4d08a8e7db0bff9a2e99976f55fa6a64661e4059a04311ecd7",
+      "steps.jsonl": "34acdd8087df31d0248d050af59196fcc5dfd1176d05e01a0f77a6a5930487d3"
+    }
+  },
+  {
+    "scenario": "office_denver_day210_cold_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 210,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.0563586015076782e-253,
+      "gas_kWh": 1.5494888427696457e-251,
+      "total_energy_kWh": 1.5600524287847225e-251,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 25.230351202317024,
+      "temperature_max_C": 27.537239511955363,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 3.2501118267222193e-253
+    },
+    "wall_seconds": 4.8272318000672385,
+    "api_full_period_difference": {
+      "ener_tot": 2.7755575615628914e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "434ff6cf8ba345e716ae4757db3dd3b4562413023f553b30844de9d6385d5e71",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "9001609ecf02028a3fb6fb34120a02cdc7ab2b5c98a138c3e3b0aed1e8ce70f9",
+      "including_prelude.csv.gz": "795dca706afddcd86c338f4c5865ebec906a7e8ab3fa92e143e32ab4a0a52030",
+      "native.csv.gz": "a71f28995dd62236e2f829c9360fc19bdf8564b243712a276cb0fd544ba5697c",
+      "prelude.json": "6dac13d3734edc4d08a8e7db0bff9a2e99976f55fa6a64661e4059a04311ecd7",
+      "steps.jsonl": "ba330a6803f640846ecabc20ea4eaad2bbdf302efb49f81817d1c655925ff750"
+    }
+  },
+  {
+    "scenario": "office_denver_day259_perfect",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 259,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.2002225396165969e-212,
+      "gas_kWh": 7.215281511095209e-209,
+      "total_energy_kWh": 7.216481733634825e-209,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 22.18334843708635,
+      "temperature_max_C": 24.83942943574897,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 1.5034348972542108e-210
+    },
+    "wall_seconds": 5.285805799998343,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "c47374900941252fb8ab877e2c52c6e7253f9b3e9f3fd6955e6b17c9dcc514f3",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "2477a1f20c5ed333b77f05a007cbe0e51695202ef5650c76a04060dfc45a6f43",
+      "including_prelude.csv.gz": "21da261545ba2cb9e35d1687b230de2729a09dd1c1fb8ff0506eb7ae5b9570ac",
+      "native.csv.gz": "5576478bd7be250aacd6a4b1439d26e3346d11192c192f4ccfb7c5890ba7918d",
+      "prelude.json": "c6b56eb387d23250916bd69646767cfcc92b3a12181c720fef1a4d2a38b897f8",
+      "steps.jsonl": "22b25bee34d643d0e3adade8ae5cdc9a55b8c40087d52643689cc634ca643eee"
+    }
+  },
+  {
+    "scenario": "office_denver_day259_perfect",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 259,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.2002225396165969e-212,
+      "gas_kWh": 7.215281511095209e-209,
+      "total_energy_kWh": 7.216481733634825e-209,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 22.18334842483648,
+      "temperature_max_C": 24.83942943574897,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 1.5034348972542108e-210
+    },
+    "wall_seconds": 5.110092699993402,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "f5616600aed80215e1ddd60d400b4a84d6fb40fed7fa68c93401159dc45c5af4",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "2477a1f20c5ed333b77f05a007cbe0e51695202ef5650c76a04060dfc45a6f43",
+      "including_prelude.csv.gz": "67857cc94aa86a875590f8b5ace42d44c7f755d89dae32aba35b4d6c840f8b0e",
+      "native.csv.gz": "7a89ccb647ccd929065b90c06ef0959c3976813785293ce1fa0ef1f1be21318b",
+      "prelude.json": "c6b56eb387d23250916bd69646767cfcc92b3a12181c720fef1a4d2a38b897f8",
+      "steps.jsonl": "5c95fc7941cc6e8fc75e2c4e92c188bb37ffed340ff26ceab4b0f7190b387331"
+    }
+  },
+  {
+    "scenario": "office_denver_day259_warm_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 259,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.2002225396165969e-212,
+      "gas_kWh": 7.215281511095209e-209,
+      "total_energy_kWh": 7.216481733634825e-209,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 22.18334843708635,
+      "temperature_max_C": 24.83942943574897,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 1.5034348972542108e-210
+    },
+    "wall_seconds": 4.751766800065525,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "93ce7e02c05dc5dd64b0a417603ef3ebdc05c6ffb4b3a7953c26d0e056e0e3f1",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "2477a1f20c5ed333b77f05a007cbe0e51695202ef5650c76a04060dfc45a6f43",
+      "including_prelude.csv.gz": "21da261545ba2cb9e35d1687b230de2729a09dd1c1fb8ff0506eb7ae5b9570ac",
+      "native.csv.gz": "5576478bd7be250aacd6a4b1439d26e3346d11192c192f4ccfb7c5890ba7918d",
+      "prelude.json": "c6b56eb387d23250916bd69646767cfcc92b3a12181c720fef1a4d2a38b897f8",
+      "steps.jsonl": "55c4e123d52b34ac8c15cc95f0e8990bb64b602c691df16419ad1fc8838501d4"
+    }
+  },
+  {
+    "scenario": "office_denver_day259_warm_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 259,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.2002225396165969e-212,
+      "gas_kWh": 7.215281511095209e-209,
+      "total_energy_kWh": 7.216481733634825e-209,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 22.183348435156574,
+      "temperature_max_C": 24.83942943574897,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 1.5034348972542108e-210
+    },
+    "wall_seconds": 5.482309199986048,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "6d3b1058de83ba78a03ae72892fed933c2d6671609fc5f92628085bb299c57b8",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "2477a1f20c5ed333b77f05a007cbe0e51695202ef5650c76a04060dfc45a6f43",
+      "including_prelude.csv.gz": "3d3151c02fb2639fccf5921f366b3a3dc0d526d355cff489e45f1832e8ac45bb",
+      "native.csv.gz": "2d2e313c1e8b581f8e04c148ebedb33b483d38199c017fb859013903f82e5998",
+      "prelude.json": "c6b56eb387d23250916bd69646767cfcc92b3a12181c720fef1a4d2a38b897f8",
+      "steps.jsonl": "b44fe6a59d1d7fdc242110656372b047f41ffad44d9901ef04ff117cca0005cf"
+    }
+  },
+  {
+    "scenario": "office_denver_day259_cold_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 259,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.2002225396165969e-212,
+      "gas_kWh": 7.215281511095209e-209,
+      "total_energy_kWh": 7.216481733634825e-209,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 22.18334843708635,
+      "temperature_max_C": 24.83942943574897,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 1.5034348972542108e-210
+    },
+    "wall_seconds": 5.633832200081088,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "05f0b6d96a2f3979dfd67a36f5108e442c3a1ad8ec627514742b78dde50c9208",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "2477a1f20c5ed333b77f05a007cbe0e51695202ef5650c76a04060dfc45a6f43",
+      "including_prelude.csv.gz": "21da261545ba2cb9e35d1687b230de2729a09dd1c1fb8ff0506eb7ae5b9570ac",
+      "native.csv.gz": "5576478bd7be250aacd6a4b1439d26e3346d11192c192f4ccfb7c5890ba7918d",
+      "prelude.json": "c6b56eb387d23250916bd69646767cfcc92b3a12181c720fef1a4d2a38b897f8",
+      "steps.jsonl": "f1e55d57c96ec3ae7ac2f9c90a2778a8495118fd59385541499383d19238268f"
+    }
+  },
+  {
+    "scenario": "office_denver_day259_cold_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 259,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 1.2002225396165969e-212,
+      "gas_kWh": 7.215281511095209e-209,
+      "total_energy_kWh": 7.216481733634825e-209,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 22.18334842483648,
+      "temperature_max_C": 24.83942943574897,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 1.5034348972542108e-210
+    },
+    "wall_seconds": 5.34201080002822,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "34ce327a2d7f9f674948f4305de30c0926bc94e730da2eb8ce2f6de81ad2415a",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "2477a1f20c5ed333b77f05a007cbe0e51695202ef5650c76a04060dfc45a6f43",
+      "including_prelude.csv.gz": "67857cc94aa86a875590f8b5ace42d44c7f755d89dae32aba35b4d6c840f8b0e",
+      "native.csv.gz": "7a89ccb647ccd929065b90c06ef0959c3976813785293ce1fa0ef1f1be21318b",
+      "prelude.json": "c6b56eb387d23250916bd69646767cfcc92b3a12181c720fef1a4d2a38b897f8",
+      "steps.jsonl": "4625ee5faac653a3c3a3804fdcd8924e7b165b67f97639d954d23653a3fe4a70"
+    }
+  },
+  {
+    "scenario": "office_denver_day343_perfect",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 343,
+    "weather": "perfect",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.030147947761770356,
+      "gas_kWh": 6.336225353512623,
+      "total_energy_kWh": 6.366373301274394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 20.417853496925773,
+      "temperature_max_C": 22.04234370907676,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.13263288321610492
+    },
+    "wall_seconds": 5.048302299925126,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "25664dfa33023e882876b283e24d4114048f5bd1a94dbfc8a5aab27d9682e02c",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "73754688d061f5ccfe2a94463595d363d919c33b778de01864efbfa00a69fc0b",
+      "including_prelude.csv.gz": "a0738c5b1b587c5c059c126870646ea78e9724ea0d45edab3f17d6b631ab9dda",
+      "native.csv.gz": "0684eaac5a527aee598d4b680b3f70c4965bcd8f08ab806b8c6d3d4a47962fc8",
+      "prelude.json": "9f74a9bb16e807121960d8b906869d238b96f97720389a359a95f5fc0d7caf90",
+      "steps.jsonl": "3c1bfe657f2100e5b450ed656111abe3bcb3390c372067c2839967f92f159c32"
+    }
+  },
+  {
+    "scenario": "office_denver_day343_perfect",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 343,
+    "weather": "perfect",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.030147947761770356,
+      "gas_kWh": 6.336225353512623,
+      "total_energy_kWh": 6.366373301274394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 20.417853496925773,
+      "temperature_max_C": 22.04234370907676,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.13263288321610492
+    },
+    "wall_seconds": 5.252920099999756,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "e818cfa8a47b45c9ecda8f9f4a9b456d756e07a82dc768f7e5075d6477da45b2",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "73754688d061f5ccfe2a94463595d363d919c33b778de01864efbfa00a69fc0b",
+      "including_prelude.csv.gz": "a0738c5b1b587c5c059c126870646ea78e9724ea0d45edab3f17d6b631ab9dda",
+      "native.csv.gz": "0684eaac5a527aee598d4b680b3f70c4965bcd8f08ab806b8c6d3d4a47962fc8",
+      "prelude.json": "9f74a9bb16e807121960d8b906869d238b96f97720389a359a95f5fc0d7caf90",
+      "steps.jsonl": "037bcf0431fe916a8be94ad7882f6cbaf39d02c550a47a616f226c30d10736ab"
+    }
+  },
+  {
+    "scenario": "office_denver_day343_warm_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 343,
+    "weather": "warm_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.030147947761770356,
+      "gas_kWh": 6.336225353512623,
+      "total_energy_kWh": 6.366373301274394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 20.417853496925773,
+      "temperature_max_C": 22.04234370907676,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.13263288321610492
+    },
+    "wall_seconds": 4.638267599977553,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "1dc7a9b512884110edee15f729ee9e3709a4f297a16baf0fb278663ee163982a",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "73754688d061f5ccfe2a94463595d363d919c33b778de01864efbfa00a69fc0b",
+      "including_prelude.csv.gz": "a0738c5b1b587c5c059c126870646ea78e9724ea0d45edab3f17d6b631ab9dda",
+      "native.csv.gz": "0684eaac5a527aee598d4b680b3f70c4965bcd8f08ab806b8c6d3d4a47962fc8",
+      "prelude.json": "9f74a9bb16e807121960d8b906869d238b96f97720389a359a95f5fc0d7caf90",
+      "steps.jsonl": "0ff357b15dae2e381a15c1ad537188e8217011fe6b55df1c22e79305a1cdae98"
+    }
+  },
+  {
+    "scenario": "office_denver_day343_warm_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 343,
+    "weather": "warm_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.030147947761770356,
+      "gas_kWh": 6.336225353512623,
+      "total_energy_kWh": 6.366373301274394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 20.417853496925773,
+      "temperature_max_C": 22.04234370907676,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.13263288321610492
+    },
+    "wall_seconds": 5.213263000012375,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "86c3e097173114bb15ed67405a395287c94ae2604d0e901e881c337a4e70d421",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "73754688d061f5ccfe2a94463595d363d919c33b778de01864efbfa00a69fc0b",
+      "including_prelude.csv.gz": "a0738c5b1b587c5c059c126870646ea78e9724ea0d45edab3f17d6b631ab9dda",
+      "native.csv.gz": "0684eaac5a527aee598d4b680b3f70c4965bcd8f08ab806b8c6d3d4a47962fc8",
+      "prelude.json": "9f74a9bb16e807121960d8b906869d238b96f97720389a359a95f5fc0d7caf90",
+      "steps.jsonl": "dcab32775a4569155e887af06c9487604d007adcb59ebe68b75417898dd69653"
+    }
+  },
+  {
+    "scenario": "office_denver_day343_cold_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 343,
+    "weather": "cold_bias",
+    "controller": "guarded_rule",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.030147947761770356,
+      "gas_kWh": 6.336225353512623,
+      "total_energy_kWh": 6.366373301274394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 20.417853496925773,
+      "temperature_max_C": 22.04234370907676,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.13263288321610492
+    },
+    "wall_seconds": 4.1869493999984115,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "fea2c4659e4c3654a97d886f637e044a76ecb6059f8fe72ab39bfb7ed500ff44",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "73754688d061f5ccfe2a94463595d363d919c33b778de01864efbfa00a69fc0b",
+      "including_prelude.csv.gz": "a0738c5b1b587c5c059c126870646ea78e9724ea0d45edab3f17d6b631ab9dda",
+      "native.csv.gz": "0684eaac5a527aee598d4b680b3f70c4965bcd8f08ab806b8c6d3d4a47962fc8",
+      "prelude.json": "9f74a9bb16e807121960d8b906869d238b96f97720389a359a95f5fc0d7caf90",
+      "steps.jsonl": "a1350202414fad88e73b948bda595c02fb53d618256284f8c81fd0cfd516ef6d"
+    }
+  },
+  {
+    "scenario": "office_denver_day343_cold_bias",
+    "domain": {
+      "id": "office_denver",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "day": 343,
+    "weather": "cold_bias",
+    "controller": "solar_mpc",
+    "days": 0.25,
+    "complete": true,
+    "failure": null,
+    "transitions": 24,
+    "native_samples": 721,
+    "metrics": {
+      "electricity_kWh": 0.030147947761770356,
+      "gas_kWh": 6.336225353512623,
+      "total_energy_kWh": 6.366373301274394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.0,
+      "outside_hours": 0.0,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 0.0,
+      "temperature_min_C": 20.417853496925773,
+      "temperature_max_C": 22.04234370907676,
+      "discomfort_Kh": 0.0,
+      "official_energy_kWh_m2": 0.13263288321610492
+    },
+    "wall_seconds": 4.423194499919191,
+    "api_full_period_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "d43140b3f17c9b9325f65fc86f6ef86a20acd1d7944cdcdcae96ca4b95b906ae",
+      "api_metadata.json": "fb7a2d894ac51a4cc8f91a2b9173b24c2fb06815889a2cb131d630195ad22b42",
+      "exogenous.csv.gz": "73754688d061f5ccfe2a94463595d363d919c33b778de01864efbfa00a69fc0b",
+      "including_prelude.csv.gz": "a0738c5b1b587c5c059c126870646ea78e9724ea0d45edab3f17d6b631ab9dda",
+      "native.csv.gz": "0684eaac5a527aee598d4b680b3f70c4965bcd8f08ab806b8c6d3d4a47962fc8",
+      "prelude.json": "9f74a9bb16e807121960d8b906869d238b96f97720389a359a95f5fc0d7caf90",
+      "steps.jsonl": "3563fc9ee4055b912faf937e47aa5c87118ddb952c960d5025dabf5b32bfa958"
+    }
+  }
+]
