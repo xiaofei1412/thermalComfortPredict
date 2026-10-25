@@ -1,0 +1,12 @@
+{
+  "development_lock_sha256": "3d73ba0bc45b87aef7f56a47e452a991854e171f6785354d2d6d82ecd0d61a1a",
+  "model_sha256": "33e4a46c4e6e70c8a56010ff3c2630813d584d4d5265ef09812309e0081f6ac8",
+  "calibration_summary_sha256": "33c255c9e3a39696a9844edb59353a77191e2a0c478c2e81d992134a4576ba6c",
+  "margins_sha256": "1254b6f2e7a4e099b5f90b66b6a61f482ed809b5b3b201dc3165d978dbafa7d1",
+  "code_sha256": {
+    "thermal_comfort/terminal.py": "2df64ceec78b5cd1cf36dafe7d3e860ca21d6ccc03ca930cf84d35812c378a27",
+    "thermal_comfort/terminal_model.py": "fc8e4ad458e133e7b8090d1c094ded0d5cc8c1d96c1fcac91d186feb03149652",
+    "configs\\terminal_dynamics.json": "1795cfb587290603f673448c2b789f9c8cf665e4ae073a005e15b22dd9c1d5ce",
+    "docs/experiments/terminal_dynamics.md": "e91fb5ba2516ff424db7d2d2b4a7cb15847636840073494cd66f667c961da7a6"
+  }
+}

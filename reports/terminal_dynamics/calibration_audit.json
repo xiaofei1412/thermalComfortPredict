@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "development_locked_before_collection": true,
+  "margins_exactly_reconstructed": true,
+  "model_sha256": "33e4a46c4e6e70c8a56010ff3c2630813d584d4d5265ef09812309e0081f6ac8",
+  "untouched_calibration_days": [
+    74,
+    240,
+    312
+  ],
+  "audits": [
+    {
+      "episode": "day74__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 185,
+        "heat_protection": 5,
+        "coast_protection": 98
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day240__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 156,
+        "coast_protection": 132
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day312__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 167,
+        "heat_protection": 20,
+        "coast_protection": 101
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16,
+      "actual_forecast_weather_max_error": {}
+    }
+  ],
+  "shadow_feasibility_on_excitation_states_not_closed_loop": [
+    {
+      "day": 74,
+      "operational_steps": 272,
+      "modes": {
+        "fallback": 184,
+        "reference_selected": 40,
+        "mpc": 48
+      },
+      "reasons": {
+        "empty_tightened_band": 123,
+        "no_margin_feasible_plan": 61,
+        "terminal_feasible_plan": 88
+      }
+    },
+    {
+      "day": 240,
+      "operational_steps": 272,
+      "modes": {
+        "fallback": 255,
+        "mpc": 3,
+        "reference_selected": 14
+      },
+      "reasons": {
+        "outside_training_support": 244,
+        "terminal_feasible_plan": 17,
+        "empty_tightened_band": 6,
+        "no_margin_feasible_plan": 5
+      }
+    },
+    {
+      "day": 312,
+      "operational_steps": 272,
+      "modes": {
+        "fallback": 184,
+        "reference_selected": 42,
+        "mpc": 46
+      },
+      "reasons": {
+        "empty_tightened_band": 125,
+        "no_margin_feasible_plan": 59,
+        "terminal_feasible_plan": 88
+      }
+    }
+  ]
+}

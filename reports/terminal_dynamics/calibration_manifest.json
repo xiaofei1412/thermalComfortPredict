@@ -1,0 +1,135 @@
+{
+  "mode": "collect-calibration",
+  "config": {
+    "baseline_commit": "11a704e5855eeea6442380e02d14c8b04467226c",
+    "development_case": "bestest_air",
+    "test_case": "terminal_office_brussels",
+    "episodes": [
+      {
+        "day": 24,
+        "role": "train",
+        "seed": 801
+      },
+      {
+        "day": 94,
+        "role": "train",
+        "seed": 802
+      },
+      {
+        "day": 124,
+        "role": "train",
+        "seed": 803
+      },
+      {
+        "day": 328,
+        "role": "train",
+        "seed": 804
+      },
+      {
+        "day": 62,
+        "role": "selection",
+        "seed": 805
+      },
+      {
+        "day": 150,
+        "role": "selection",
+        "seed": 806
+      },
+      {
+        "day": 74,
+        "role": "calibration",
+        "seed": 807
+      },
+      {
+        "day": 240,
+        "role": "calibration",
+        "seed": 808
+      },
+      {
+        "day": 312,
+        "role": "calibration",
+        "seed": 809
+      }
+    ],
+    "collection_days": 3,
+    "test_days": [
+      28,
+      196,
+      315
+    ],
+    "test_days_length": 7,
+    "weather_modes": [
+      "perfect",
+      "warm_bias",
+      "cold_bias"
+    ],
+    "controllers": [
+      "guarded_rule",
+      "office_prior",
+      "terminal_mpc"
+    ],
+    "response_days": [
+      62,
+      150
+    ],
+    "response_settings_C": [
+      20.5,
+      23.25
+    ],
+    "dwell_steps": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "initial_rule_steps": 16,
+    "residual_weights": [
+      0.0,
+      1.0
+    ],
+    "regimes": [
+      "heating",
+      "cooling",
+      "idle",
+      "transition"
+    ],
+    "active_threshold_kW": 0.01,
+    "minimum_regime_origins": 20,
+    "margin_quantile": 0.95,
+    "sensor_margin_K": 0.1,
+    "origin_stride": 4,
+    "horizons": [
+      1,
+      4,
+      24,
+      32
+    ]
+  },
+  "plans": [
+    {
+      "day": 74,
+      "role": "calibration",
+      "seed": 807
+    },
+    {
+      "day": 240,
+      "role": "calibration",
+      "seed": 808
+    },
+    {
+      "day": 312,
+      "role": "calibration",
+      "seed": 809
+    }
+  ],
+  "code_sha256": {
+    "thermal_comfort/terminal.py": "2df64ceec78b5cd1cf36dafe7d3e860ca21d6ccc03ca930cf84d35812c378a27",
+    "thermal_comfort/terminal_model.py": "fc8e4ad458e133e7b8090d1c094ded0d5cc8c1d96c1fcac91d186feb03149652",
+    "configs\\terminal_dynamics.json": "1795cfb587290603f673448c2b789f9c8cf665e4ae073a005e15b22dd9c1d5ce",
+    "docs/experiments/terminal_dynamics.md": "e91fb5ba2516ff424db7d2d2b4a7cb15847636840073494cd66f667c961da7a6"
+  },
+  "created_UTC": "2026-10-25T11:51:16.807684+00:00",
+  "model_sha256": "33e4a46c4e6e70c8a56010ff3c2630813d584d4d5265ef09812309e0081f6ac8",
+  "lock_sha256": "3d73ba0bc45b87aef7f56a47e452a991854e171f6785354d2d6d82ecd0d61a1a",
+  "days_override": null
+}

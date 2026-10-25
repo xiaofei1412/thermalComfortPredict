@@ -1,0 +1,496 @@
+{
+  "passed": true,
+  "calibration_not_generated": true,
+  "independent_refit_byte_identical": true,
+  "code_sha256": {
+    "thermal_comfort/terminal.py": "2df64ceec78b5cd1cf36dafe7d3e860ca21d6ccc03ca930cf84d35812c378a27",
+    "thermal_comfort/terminal_model.py": "fc8e4ad458e133e7b8090d1c094ded0d5cc8c1d96c1fcac91d186feb03149652",
+    "configs\\terminal_dynamics.json": "1795cfb587290603f673448c2b789f9c8cf665e4ae073a005e15b22dd9c1d5ce",
+    "docs/experiments/terminal_dynamics.md": "e91fb5ba2516ff424db7d2d2b4a7cb15847636840073494cd66f667c961da7a6"
+  },
+  "model_sha256": "33e4a46c4e6e70c8a56010ff3c2630813d584d4d5265ef09812309e0081f6ac8",
+  "windows": [
+    {
+      "day": 24,
+      "role": "train",
+      "seed": 801,
+      "warmup_start_day": 17,
+      "end_day": 27
+    },
+    {
+      "day": 94,
+      "role": "train",
+      "seed": 802,
+      "warmup_start_day": 87,
+      "end_day": 97
+    },
+    {
+      "day": 124,
+      "role": "train",
+      "seed": 803,
+      "warmup_start_day": 117,
+      "end_day": 127
+    },
+    {
+      "day": 328,
+      "role": "train",
+      "seed": 804,
+      "warmup_start_day": 321,
+      "end_day": 331
+    },
+    {
+      "day": 62,
+      "role": "selection",
+      "seed": 805,
+      "warmup_start_day": 55,
+      "end_day": 65
+    },
+    {
+      "day": 150,
+      "role": "selection",
+      "seed": 806,
+      "warmup_start_day": 143,
+      "end_day": 153
+    },
+    {
+      "day": 74,
+      "role": "calibration",
+      "seed": 807,
+      "warmup_start_day": 67,
+      "end_day": 77
+    },
+    {
+      "day": 240,
+      "role": "calibration",
+      "seed": 808,
+      "warmup_start_day": 233,
+      "end_day": 243
+    },
+    {
+      "day": 312,
+      "role": "calibration",
+      "seed": 809,
+      "warmup_start_day": 305,
+      "end_day": 315
+    }
+  ],
+  "responses": [
+    {
+      "day": 62,
+      "horizon_steps": 1,
+      "actual_temperature_delta_C": 1.0384703967351925,
+      "predicted_temperature_delta_C": 0.9868717045987339,
+      "actual_gas_delta_kWh": 0.1356469596458738,
+      "predicted_gas_delta_kWh": 0.2703141344341934,
+      "actual_cooling_delta_kWh": 0.0,
+      "predicted_cooling_delta_kWh": 0.0
+    },
+    {
+      "day": 62,
+      "horizon_steps": 4,
+      "actual_temperature_delta_C": 2.753892366090099,
+      "predicted_temperature_delta_C": 2.240506067561185,
+      "actual_gas_delta_kWh": 0.8469032649272594,
+      "predicted_gas_delta_kWh": 1.760992223305017,
+      "actual_cooling_delta_kWh": 0.0,
+      "predicted_cooling_delta_kWh": 0.0
+    },
+    {
+      "day": 62,
+      "horizon_steps": 24,
+      "actual_temperature_delta_C": -0.011050543756084608,
+      "predicted_temperature_delta_C": 0.0,
+      "actual_gas_delta_kWh": 3.1798937260600946,
+      "predicted_gas_delta_kWh": 6.768273476962891,
+      "actual_cooling_delta_kWh": 0.05374457347343378,
+      "predicted_cooling_delta_kWh": 0.12014392349747853
+    },
+    {
+      "day": 62,
+      "horizon_steps": 32,
+      "actual_temperature_delta_C": -0.0013123890384463266,
+      "predicted_temperature_delta_C": 0.0,
+      "actual_gas_delta_kWh": 3.1798937260600946,
+      "predicted_gas_delta_kWh": 6.768273476962891,
+      "actual_cooling_delta_kWh": 0.15457504150848322,
+      "predicted_cooling_delta_kWh": 0.4157575259233594
+    },
+    {
+      "day": 150,
+      "horizon_steps": 1,
+      "actual_temperature_delta_C": 0.4874687074072881,
+      "predicted_temperature_delta_C": 0.35582227289413737,
+      "actual_gas_delta_kWh": 0.043887915595600846,
+      "predicted_gas_delta_kWh": 0.09746331692516702,
+      "actual_cooling_delta_kWh": 0.0,
+      "predicted_cooling_delta_kWh": 0.0
+    },
+    {
+      "day": 150,
+      "horizon_steps": 4,
+      "actual_temperature_delta_C": 1.495841169863354,
+      "predicted_temperature_delta_C": 1.1966101784147405,
+      "actual_gas_delta_kWh": 0.42285398507349037,
+      "predicted_gas_delta_kWh": 0.8584862164054806,
+      "actual_cooling_delta_kWh": 0.0,
+      "predicted_cooling_delta_kWh": 0.0
+    },
+    {
+      "day": 150,
+      "horizon_steps": 24,
+      "actual_temperature_delta_C": -0.00046858145753958524,
+      "predicted_temperature_delta_C": 0.0,
+      "actual_gas_delta_kWh": 1.468161336734155,
+      "predicted_gas_delta_kWh": 2.6261471380404835,
+      "actual_cooling_delta_kWh": 0.03875513085698216,
+      "predicted_cooling_delta_kWh": 0.12795846122447418
+    },
+    {
+      "day": 150,
+      "horizon_steps": 32,
+      "actual_temperature_delta_C": -0.00046159399579437377,
+      "predicted_temperature_delta_C": 0.0,
+      "actual_gas_delta_kWh": 1.468161336734155,
+      "predicted_gas_delta_kWh": 2.6261471380404835,
+      "actual_cooling_delta_kWh": 0.08266997226003969,
+      "predicted_cooling_delta_kWh": 0.2287302454421886
+    }
+  ],
+  "audits": [
+    {
+      "episode": "day24__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 186,
+        "heat_protection": 30,
+        "coast_protection": 72
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.220446049250313e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day94__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 181,
+        "coast_protection": 104,
+        "heat_protection": 3
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day124__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 199,
+        "coast_protection": 80,
+        "heat_protection": 9
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day328__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 220,
+        "coast_protection": 57,
+        "heat_protection": 11
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day62__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 196,
+        "heat_protection": 32,
+        "coast_protection": 60
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day150__excitation",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "variable_dwell_excitation": 174,
+        "coast_protection": 114
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.220446049250313e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day62_perfect__guarded_rule",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "guarded_rule": 219,
+        "anticipatory_recovery": 9,
+        "coast": 60
+      },
+      "reasons": {
+        "rule": 219,
+        "anticipatory_recovery": 9,
+        "coast": 60
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.220446049250313e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day62_perfect__office_prior",
+      "complete": false,
+      "failure": "Control aborted: operative temperature 17.96733503517129 °C outside stop band",
+      "native_stop_band_pass": false,
+      "decisions_replayed": 174,
+      "modes": {
+        "initial_rule": 16,
+        "fallback": 113,
+        "reference_selected": 1,
+        "mpc": 44
+      },
+      "reasons": {
+        "common_initialization": 16,
+        "no_margin_feasible_plan": 113,
+        "office_feasible_plan": 45
+      },
+      "fallback_after_initialization": 0.7151898734177216,
+      "mpc_after_initialization": 0.27848101265822783,
+      "reference_selected_after_initialization": 0.006329113924050633,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day62_perfect__terminal_mpc",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "initial_rule": 16,
+        "fallback": 236,
+        "reference_selected": 5,
+        "mpc": 31
+      },
+      "reasons": {
+        "common_initialization": 16,
+        "no_margin_feasible_plan": 106,
+        "empty_tightened_band": 41,
+        "terminal_feasible_plan": 36,
+        "outside_training_support": 89
+      },
+      "fallback_after_initialization": 0.8676470588235294,
+      "mpc_after_initialization": 0.11397058823529412,
+      "reference_selected_after_initialization": 0.01838235294117647,
+      "official_kpi_max_difference": 2.220446049250313e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day150_perfect__guarded_rule",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "guarded_rule": 172,
+        "coast": 114,
+        "anticipatory_recovery": 2
+      },
+      "reasons": {
+        "rule": 172,
+        "coast": 114,
+        "anticipatory_recovery": 2
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 5.551115123125783e-17,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day150_perfect__office_prior",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "initial_rule": 16,
+        "fallback": 184,
+        "reference_selected": 3,
+        "mpc": 85
+      },
+      "reasons": {
+        "common_initialization": 16,
+        "no_margin_feasible_plan": 184,
+        "office_feasible_plan": 88
+      },
+      "fallback_after_initialization": 0.6764705882352942,
+      "mpc_after_initialization": 0.3125,
+      "reference_selected_after_initialization": 0.011029411764705883,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day150_perfect__terminal_mpc",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 288,
+      "modes": {
+        "initial_rule": 16,
+        "fallback": 190,
+        "mpc": 81,
+        "reference_selected": 1
+      },
+      "reasons": {
+        "common_initialization": 16,
+        "outside_training_support": 118,
+        "terminal_feasible_plan": 82,
+        "no_margin_feasible_plan": 58,
+        "empty_tightened_band": 14
+      },
+      "fallback_after_initialization": 0.6985294117647058,
+      "mpc_after_initialization": 0.2977941176470588,
+      "reference_selected_after_initialization": 0.003676470588235294,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day62_perfect__response_20.5",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 0.0,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day62_perfect__response_23.25",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day150_perfect__response_20.5",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.7755575615628914e-17,
+      "actual_forecast_weather_max_error": {}
+    },
+    {
+      "episode": "day150_perfect__response_23.25",
+      "complete": true,
+      "failure": null,
+      "native_stop_band_pass": true,
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.7755575615628914e-17,
+      "actual_forecast_weather_max_error": {}
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "frozen_source_model_margins_pass": true,
+  "planned_episodes": 27,
+  "complete_episodes": 21,
+  "formal_transitions": 14637,
+  "native_samples": 439137,
+  "decisions_replayed": 14637,
+  "official_kpi_max_difference": 8.881784197001252e-16,
+  "paired_and_rule_weather_invariance": true,
+  "prefixes": [
+    {
+      "episode": "day28_perfect__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_perfect__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_perfect__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_warm_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_warm_bias__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_warm_bias__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_cold_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_cold_bias__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day28_cold_bias__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_perfect__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_perfect__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_perfect__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_warm_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_warm_bias__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_warm_bias__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_cold_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_cold_bias__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day196_cold_bias__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_perfect__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_perfect__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_perfect__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_warm_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_warm_bias__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_warm_bias__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_cold_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_cold_bias__office_prior",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day315_cold_bias__terminal_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    }
+  ],
+  "full_seven_day_repeat_verified": false
+}

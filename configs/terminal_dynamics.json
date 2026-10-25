@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "11a704e5855eeea6442380e02d14c8b04467226c",
+  "development_case": "bestest_air",
+  "test_case": "terminal_office_brussels",
+  "episodes": [
+    {"day": 24, "role": "train", "seed": 801},
+    {"day": 94, "role": "train", "seed": 802},
+    {"day": 124, "role": "train", "seed": 803},
+    {"day": 328, "role": "train", "seed": 804},
+    {"day": 62, "role": "selection", "seed": 805},
+    {"day": 150, "role": "selection", "seed": 806},
+    {"day": 74, "role": "calibration", "seed": 807},
+    {"day": 240, "role": "calibration", "seed": 808},
+    {"day": 312, "role": "calibration", "seed": 809}
+  ],
+  "collection_days": 3,
+  "test_days": [28, 196, 315],
+  "test_days_length": 7,
+  "weather_modes": ["perfect", "warm_bias", "cold_bias"],
+  "controllers": ["guarded_rule", "office_prior", "terminal_mpc"],
+  "response_days": [62, 150],
+  "response_settings_C": [20.5, 23.25],
+  "dwell_steps": [1, 2, 4, 8],
+  "initial_rule_steps": 16,
+  "residual_weights": [0.0, 1.0],
+  "regimes": ["heating", "cooling", "idle", "transition"],
+  "active_threshold_kW": 0.01,
+  "minimum_regime_origins": 20,
+  "margin_quantile": 0.95,
+  "sensor_margin_K": 0.1,
+  "origin_stride": 4,
+  "horizons": [1, 4, 24, 32]
+}

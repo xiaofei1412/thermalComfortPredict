@@ -1,0 +1,123 @@
+{
+  "config": {
+    "baseline_commit": "11a704e5855eeea6442380e02d14c8b04467226c",
+    "development_case": "bestest_air",
+    "test_case": "terminal_office_brussels",
+    "episodes": [
+      {
+        "day": 24,
+        "role": "train",
+        "seed": 801
+      },
+      {
+        "day": 94,
+        "role": "train",
+        "seed": 802
+      },
+      {
+        "day": 124,
+        "role": "train",
+        "seed": 803
+      },
+      {
+        "day": 328,
+        "role": "train",
+        "seed": 804
+      },
+      {
+        "day": 62,
+        "role": "selection",
+        "seed": 805
+      },
+      {
+        "day": 150,
+        "role": "selection",
+        "seed": 806
+      },
+      {
+        "day": 74,
+        "role": "calibration",
+        "seed": 807
+      },
+      {
+        "day": 240,
+        "role": "calibration",
+        "seed": 808
+      },
+      {
+        "day": 312,
+        "role": "calibration",
+        "seed": 809
+      }
+    ],
+    "collection_days": 3,
+    "test_days": [
+      28,
+      196,
+      315
+    ],
+    "test_days_length": 7,
+    "weather_modes": [
+      "perfect",
+      "warm_bias",
+      "cold_bias"
+    ],
+    "controllers": [
+      "guarded_rule",
+      "office_prior",
+      "terminal_mpc"
+    ],
+    "response_days": [
+      62,
+      150
+    ],
+    "response_settings_C": [
+      20.5,
+      23.25
+    ],
+    "dwell_steps": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "initial_rule_steps": 16,
+    "residual_weights": [
+      0.0,
+      1.0
+    ],
+    "regimes": [
+      "heating",
+      "cooling",
+      "idle",
+      "transition"
+    ],
+    "active_threshold_kW": 0.01,
+    "minimum_regime_origins": 20,
+    "margin_quantile": 0.95,
+    "sensor_margin_K": 0.1,
+    "origin_stride": 4,
+    "horizons": [
+      1,
+      4,
+      24,
+      32
+    ]
+  },
+  "code_sha256": {
+    "thermal_comfort/terminal.py": "2df64ceec78b5cd1cf36dafe7d3e860ca21d6ccc03ca930cf84d35812c378a27",
+    "thermal_comfort/terminal_model.py": "fc8e4ad458e133e7b8090d1c094ded0d5cc8c1d96c1fcac91d186feb03149652",
+    "configs\\terminal_dynamics.json": "1795cfb587290603f673448c2b789f9c8cf665e4ae073a005e15b22dd9c1d5ce",
+    "docs/experiments/terminal_dynamics.md": "e91fb5ba2516ff424db7d2d2b4a7cb15847636840073494cd66f667c961da7a6"
+  },
+  "data_sha256": "b6e2de69dc6967e831978f5e9aad9d376c7a78368494059ff93c05c31dfcabfb",
+  "artifacts_sha256": {
+    "development_margins.json": "e8b94e2cf1d62808281193629a1cd8defd9463243663d68415af98ba114abd8b",
+    "dynamic_0.joblib": "0bbf0968a195ef4002657fe18f00fa98c2e52b887ff6f8097349947054ba4027",
+    "dynamic_1.joblib": "d6c9ab8f546b5c1fbe93bc02a5f9ac126b25c8f3d6f8cf6a9a8910e1a67ea5b9",
+    "model.joblib": "33e4a46c4e6e70c8a56010ff3c2630813d584d4d5265ef09812309e0081f6ac8",
+    "selection.json": "bcbbaba77af1a7bcac57b714fef40da768663871713ee1415de73924922f09a6",
+    "static_0.joblib": "33e4a46c4e6e70c8a56010ff3c2630813d584d4d5265ef09812309e0081f6ac8",
+    "static_1.joblib": "d971f77914b0b91613dd8d915faed2624fbd97bcccd2a8842f1fd4fc93d75d9a"
+  }
+}

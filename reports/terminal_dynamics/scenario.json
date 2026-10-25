@@ -1,0 +1,111 @@
+{
+  "source": "outputs\\boptest-v0.9.0\\testcases\\bestest_air\\models\\wrapped.fmu",
+  "source_sha256": "158008fa3b635280a67dfed8bab5804d1f9a96d218b467dfebab77e5cbf8b86a",
+  "weather_donor": "outputs\\boptest-v0.9.0\\testcases\\bestest_hydronic_heat_pump\\models\\wrapped.fmu",
+  "donor_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+  "target": "outputs\\terminal-scenario\\testcases\\terminal_office_brussels\\models\\wrapped.fmu",
+  "target_sha256": "608cf5458e71a8d10913c71c89e96dea4d711ba6d8ac58b5f2d99851cff3e32e",
+  "only_changed_entries": [
+    "resources/0/DRYCOLD.mos",
+    "resources/weather.csv",
+    "resources/config.json"
+  ],
+  "old_office_freeze_sha256": "11bfe85cceb5250d5e2e94343e9c3fc6e211750d93506bdabf46af1f3e0dbaf9",
+  "config": {
+    "baseline_commit": "11a704e5855eeea6442380e02d14c8b04467226c",
+    "development_case": "bestest_air",
+    "test_case": "terminal_office_brussels",
+    "episodes": [
+      {
+        "day": 24,
+        "role": "train",
+        "seed": 801
+      },
+      {
+        "day": 94,
+        "role": "train",
+        "seed": 802
+      },
+      {
+        "day": 124,
+        "role": "train",
+        "seed": 803
+      },
+      {
+        "day": 328,
+        "role": "train",
+        "seed": 804
+      },
+      {
+        "day": 62,
+        "role": "selection",
+        "seed": 805
+      },
+      {
+        "day": 150,
+        "role": "selection",
+        "seed": 806
+      },
+      {
+        "day": 74,
+        "role": "calibration",
+        "seed": 807
+      },
+      {
+        "day": 240,
+        "role": "calibration",
+        "seed": 808
+      },
+      {
+        "day": 312,
+        "role": "calibration",
+        "seed": 809
+      }
+    ],
+    "collection_days": 3,
+    "test_days": [
+      28,
+      196,
+      315
+    ],
+    "test_days_length": 7,
+    "weather_modes": [
+      "perfect",
+      "warm_bias",
+      "cold_bias"
+    ],
+    "controllers": [
+      "guarded_rule",
+      "office_prior",
+      "terminal_mpc"
+    ],
+    "dwell_steps": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "initial_rule_steps": 16,
+    "residual_weights": [
+      0.0,
+      1.0
+    ],
+    "regimes": [
+      "heating",
+      "cooling",
+      "idle",
+      "transition"
+    ],
+    "active_threshold_kW": 0.01,
+    "minimum_regime_origins": 20,
+    "margin_quantile": 0.95,
+    "sensor_margin_K": 0.1,
+    "origin_stride": 4,
+    "horizons": [
+      1,
+      4,
+      24,
+      32
+    ]
+  }
+}

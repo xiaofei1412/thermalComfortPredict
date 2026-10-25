@@ -1,0 +1,104 @@
+{
+  "scores": [
+    {
+      "candidate": "static_0",
+      "score": 2.4416397299243378,
+      "seasons": [
+        {
+          "day": 62,
+          "temperature_score_C": 0.5468933763248703,
+          "gas_6h_RMSE_kWh": 1.3946937196808666,
+          "cooling_6h_RMSE_kWh": 0.5870823249771859,
+          "joint_score": 2.528669420982923
+        },
+        {
+          "day": 150,
+          "temperature_score_C": 0.669390650352338,
+          "gas_6h_RMSE_kWh": 0.14169905330302252,
+          "cooling_6h_RMSE_kWh": 1.5435203352103917,
+          "joint_score": 2.3546100388657525
+        }
+      ]
+    },
+    {
+      "candidate": "static_1",
+      "score": 2.521447799347663,
+      "seasons": [
+        {
+          "day": 62,
+          "temperature_score_C": 0.5276694442300564,
+          "gas_6h_RMSE_kWh": 1.632398105749753,
+          "cooling_6h_RMSE_kWh": 0.5751997030146416,
+          "joint_score": 2.735267252994451
+        },
+        {
+          "day": 150,
+          "temperature_score_C": 0.661900207785862,
+          "gas_6h_RMSE_kWh": 0.11508915778558745,
+          "cooling_6h_RMSE_kWh": 1.5306389801294256,
+          "joint_score": 2.3076283457008753
+        }
+      ]
+    },
+    {
+      "candidate": "dynamic_0",
+      "score": 2.572743567843876,
+      "seasons": [
+        {
+          "day": 62,
+          "temperature_score_C": 0.6810849849755101,
+          "gas_6h_RMSE_kWh": 1.3290793715028204,
+          "cooling_6h_RMSE_kWh": 0.5834408334298933,
+          "joint_score": 2.5936051899082235
+        },
+        {
+          "day": 150,
+          "temperature_score_C": 0.794955805544972,
+          "gas_6h_RMSE_kWh": 0.25940953667485284,
+          "cooling_6h_RMSE_kWh": 1.4975166035597032,
+          "joint_score": 2.5518819457795283
+        }
+      ]
+    },
+    {
+      "candidate": "dynamic_1",
+      "score": 2.5819157504122794,
+      "seasons": [
+        {
+          "day": 62,
+          "temperature_score_C": 0.6672222573705457,
+          "gas_6h_RMSE_kWh": 1.4520631555555175,
+          "cooling_6h_RMSE_kWh": 0.5697205487611473,
+          "joint_score": 2.6890059616872106
+        },
+        {
+          "day": 150,
+          "temperature_score_C": 0.7812545913210917,
+          "gas_6h_RMSE_kWh": 0.21162201930484065,
+          "cooling_6h_RMSE_kWh": 1.4819489285114154,
+          "joint_score": 2.4748255391373477
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "candidate": "static_0",
+    "score": 2.4416397299243378,
+    "seasons": [
+      {
+        "day": 62,
+        "temperature_score_C": 0.5468933763248703,
+        "gas_6h_RMSE_kWh": 1.3946937196808666,
+        "cooling_6h_RMSE_kWh": 0.5870823249771859,
+        "joint_score": 2.528669420982923
+      },
+      {
+        "day": 150,
+        "temperature_score_C": 0.669390650352338,
+        "gas_6h_RMSE_kWh": 0.14169905330302252,
+        "cooling_6h_RMSE_kWh": 1.5435203352103917,
+        "joint_score": 2.3546100388657525
+      }
+    ]
+  }
+}

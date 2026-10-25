@@ -1,0 +1,236 @@
+[
+  {
+    "case": "bestest_air",
+    "day": 62,
+    "days": 3,
+    "controller": "guarded_rule",
+    "weather": "perfect",
+    "complete": true,
+    "failure": null,
+    "transitions": 288,
+    "native_samples": 8641,
+    "wall_seconds": 17.17628229991533,
+    "metrics": {
+      "electricity_kWh": 7.139007196249363,
+      "gas_kWh": 55.01389724392992,
+      "total_energy_kWh": 62.152904440179285,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.47865577734715054,
+      "outside_hours": 7.766666666666667,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.3138581913567577,
+      "temperature_min_C": 20.341303527774812,
+      "temperature_max_C": 25.54175022786677,
+      "discomfort_Kh": 0.47865577734715054,
+      "official_energy_kWh_m2": 1.2948532117188092
+    },
+    "api_difference": {
+      "ener_tot": 2.220446049250313e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "8e2f42296549b795cc558b2f033a585ba37362877238792db61be5766663eb32",
+      "api_metadata.json": "754dc75246a2923e245ccd4ec124f86b418a34f7acf16db436f50751491e5a04",
+      "exogenous.csv.gz": "94fb634245bf52dad6f9eda8efb182324260e16b747d53d1cd5a5181321b5433",
+      "including_prelude.csv.gz": "2a17a30eef59ab28ec377ef5b092cd524c97bfb4233b041b744e4d106fe7495d",
+      "native.csv.gz": "18c639764ed05641d15e0312bc06b2cb85ee4d796e58caa8b8553c0c849c75ab",
+      "prelude.json": "5ac11d11d775805804766e976e7fb4822d95118422779cb233d47a2d8bb7be3e",
+      "steps.jsonl": "829d611230ee02231d927cc7cd16d0167f9a286a9a6b3d820bfa7ee1d70d688b"
+    }
+  },
+  {
+    "case": "bestest_air",
+    "day": 62,
+    "days": 3,
+    "controller": "office_prior",
+    "weather": "perfect",
+    "complete": false,
+    "failure": "Control aborted: operative temperature 17.96733503517129 °C outside stop band",
+    "transitions": 174,
+    "native_samples": 5221,
+    "wall_seconds": 18.097437700023875,
+    "metrics": {
+      "electricity_kWh": 5.670210358977145,
+      "gas_kWh": 19.850788339439358,
+      "total_energy_kWh": 25.520998698416502,
+      "cold_Kh": 0.3810918419977668,
+      "hot_Kh": 0.3500226919668132,
+      "outside_hours": 6.366666666666666,
+      "maximum_cold_K": 0.6824216211530825,
+      "maximum_hot_K": 1.3138581913567577,
+      "temperature_min_C": 17.91005833837204,
+      "temperature_max_C": 25.54175026949025,
+      "discomfort_Kh": 0.7311145339645799,
+      "official_energy_kWh_m2": 0.5316878982336554
+    },
+    "api_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "77e6b5c075fed719e9fa2792ff8c806fa4cb2ab7be4ab8ef4ed937cd87c2d86b",
+      "api_metadata.json": "754dc75246a2923e245ccd4ec124f86b418a34f7acf16db436f50751491e5a04",
+      "exogenous.csv.gz": "94fb634245bf52dad6f9eda8efb182324260e16b747d53d1cd5a5181321b5433",
+      "including_prelude.csv.gz": "3d5b4a39b6319d3ad1fc52dc7c9a4bc901515bcb8f9e05044da601b78800435e",
+      "native.csv.gz": "df120a4fd1efbf343683eac4e289f7892d06a6cd9436f6640e8041add99c65ec",
+      "prelude.json": "5ac11d11d775805804766e976e7fb4822d95118422779cb233d47a2d8bb7be3e",
+      "steps.jsonl": "e4974dd4d0da9ad9dbbd0dc8a91c7f289b21241424fe54517cc16c31167a7b83"
+    }
+  },
+  {
+    "case": "bestest_air",
+    "day": 62,
+    "days": 3,
+    "controller": "terminal_mpc",
+    "weather": "perfect",
+    "complete": true,
+    "failure": null,
+    "transitions": 288,
+    "native_samples": 8641,
+    "wall_seconds": 21.550136400037445,
+    "metrics": {
+      "electricity_kWh": 7.137942418412827,
+      "gas_kWh": 54.92720439636445,
+      "total_energy_kWh": 62.06514681477728,
+      "cold_Kh": 0.0,
+      "hot_Kh": 0.4786053941075493,
+      "outside_hours": 7.758333333333334,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 1.3138581913567577,
+      "temperature_min_C": 19.712741692126144,
+      "temperature_max_C": 25.54175026949025,
+      "discomfort_Kh": 0.4786053941075493,
+      "official_energy_kWh_m2": 1.2930249263936402
+    },
+    "api_difference": {
+      "ener_tot": 2.220446049250313e-16,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "c8a67c77b7d53522977c29368cd9260117ddf53078b0d9076a8fce2cd821193b",
+      "api_metadata.json": "754dc75246a2923e245ccd4ec124f86b418a34f7acf16db436f50751491e5a04",
+      "exogenous.csv.gz": "94fb634245bf52dad6f9eda8efb182324260e16b747d53d1cd5a5181321b5433",
+      "including_prelude.csv.gz": "6ee0bda527630fb2ed2f69503cc591ef82ccd99f625a3e51fbf4f6c9f87804ab",
+      "native.csv.gz": "c1b6707df03909c7b039243bac5e54aa878312479b608fe088568c4196a599a4",
+      "prelude.json": "5ac11d11d775805804766e976e7fb4822d95118422779cb233d47a2d8bb7be3e",
+      "steps.jsonl": "8c1d67473b689a5f9a38702fd06f8b7c6a23f0980fd4cf0308e810137d7b9c3c"
+    }
+  },
+  {
+    "case": "bestest_air",
+    "day": 150,
+    "days": 3,
+    "controller": "guarded_rule",
+    "weather": "perfect",
+    "complete": true,
+    "failure": null,
+    "transitions": 288,
+    "native_samples": 8641,
+    "wall_seconds": 15.545409800019115,
+    "metrics": {
+      "electricity_kWh": 11.61893089335578,
+      "gas_kWh": 0.463702552191127,
+      "total_energy_kWh": 12.082633445546906,
+      "cold_Kh": 0.0,
+      "hot_Kh": 1.0321963438628288,
+      "outside_hours": 18.133333333333333,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 2.5298477087291644,
+      "temperature_min_C": 21.286203124920746,
+      "temperature_max_C": 27.632002000881585,
+      "discomfort_Kh": 1.0321963438628288,
+      "official_energy_kWh_m2": 0.25172173149278465
+    },
+    "api_difference": {
+      "ener_tot": 5.551115123125783e-17,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "932035fdcb674f527e9e72f25aa4a3c61c0a7163e811ea1ac61e25f0eb3ed6de",
+      "api_metadata.json": "754dc75246a2923e245ccd4ec124f86b418a34f7acf16db436f50751491e5a04",
+      "exogenous.csv.gz": "6c89c56aa8da218ac21e1d1b82e210e3fd62777f26ca2caf3c725aea108768d9",
+      "including_prelude.csv.gz": "e9d8ec4f064e6f610382510449e9f5b2c950f482dffa19518e10ab1996f1f41c",
+      "native.csv.gz": "f12d804010f8f38521a76675ec9b332c4425310263d494a99cdeb0f0cbd7b16f",
+      "prelude.json": "20713bd9a500721f150ac4837b7a8ed33fa2260b51708b3c4adf011c09332a37",
+      "steps.jsonl": "2055f43c4a057c36869159285dfd841a1c077d7df3b59a7a524f21976987b32d"
+    }
+  },
+  {
+    "case": "bestest_air",
+    "day": 150,
+    "days": 3,
+    "controller": "office_prior",
+    "weather": "perfect",
+    "complete": true,
+    "failure": null,
+    "transitions": 288,
+    "native_samples": 8641,
+    "wall_seconds": 26.703479300020263,
+    "metrics": {
+      "electricity_kWh": 11.618936620561389,
+      "gas_kWh": 0.4636996216525526,
+      "total_energy_kWh": 12.08263624221394,
+      "cold_Kh": 0.0,
+      "hot_Kh": 1.032196990430262,
+      "outside_hours": 18.133333333333333,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 2.5298477087291644,
+      "temperature_min_C": 21.28620685196455,
+      "temperature_max_C": 27.631998845416433,
+      "discomfort_Kh": 1.032196990430262,
+      "official_energy_kWh_m2": 0.2517217897567278
+    },
+    "api_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "140cab6fcb8a98f892316b23e03043f1bf3471f41e33681db71f81beffd2cfa4",
+      "api_metadata.json": "754dc75246a2923e245ccd4ec124f86b418a34f7acf16db436f50751491e5a04",
+      "exogenous.csv.gz": "6c89c56aa8da218ac21e1d1b82e210e3fd62777f26ca2caf3c725aea108768d9",
+      "including_prelude.csv.gz": "e1486308dbfde20b3fc180c4578da2262935a787edb37543af5396cbe407aa30",
+      "native.csv.gz": "2c67acef151a06b320600f190d704af78fe7547ab85cca677bd4cdb4b8231608",
+      "prelude.json": "20713bd9a500721f150ac4837b7a8ed33fa2260b51708b3c4adf011c09332a37",
+      "steps.jsonl": "ea8acdb7a8c0febb242f60d95a0330db6ea42f0ed2275531feb76a7ddbb71f1b"
+    }
+  },
+  {
+    "case": "bestest_air",
+    "day": 150,
+    "days": 3,
+    "controller": "terminal_mpc",
+    "weather": "perfect",
+    "complete": true,
+    "failure": null,
+    "transitions": 288,
+    "native_samples": 8641,
+    "wall_seconds": 18.641332200029865,
+    "metrics": {
+      "electricity_kWh": 11.618937149358636,
+      "gas_kWh": 0.4637004298009052,
+      "total_energy_kWh": 12.082637579159542,
+      "cold_Kh": 0.0,
+      "hot_Kh": 1.0321980460027638,
+      "outside_hours": 18.133333333333333,
+      "maximum_cold_K": 0.0,
+      "maximum_hot_K": 2.5298477087291644,
+      "temperature_min_C": 21.286205909887656,
+      "temperature_max_C": 27.632002000881585,
+      "discomfort_Kh": 1.0321980460027638,
+      "official_energy_kWh_m2": 0.25172181760978346
+    },
+    "api_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0
+    },
+    "sha256": {
+      "api_kpis.json": "54deef570f82e877c40435c686a923d716f10cb1bea2abd1132b03b9af3e170d",
+      "api_metadata.json": "754dc75246a2923e245ccd4ec124f86b418a34f7acf16db436f50751491e5a04",
+      "exogenous.csv.gz": "6c89c56aa8da218ac21e1d1b82e210e3fd62777f26ca2caf3c725aea108768d9",
+      "including_prelude.csv.gz": "30b2919f146073dc7dfc0ba12e580b69eb8ebb0e3028ece4b0d452239d0fc09e",
+      "native.csv.gz": "84f9d299e313533cb41776a4fad8f47eadc10455f4594e44d86cea1bb771f61d",
+      "prelude.json": "20713bd9a500721f150ac4837b7a8ed33fa2260b51708b3c4adf011c09332a37",
+      "steps.jsonl": "b53825176aee07ee37067661941ac1f6ecea0b3e037110836eaf2edc9536f6be"
+    }
+  }
+]
