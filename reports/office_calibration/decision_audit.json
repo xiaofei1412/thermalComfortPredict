@@ -1,0 +1,519 @@
+[
+  {
+    "episode": "day224_perfect__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 380,
+      "coast": 292
+    },
+    "reasons": {
+      "rule": 380,
+      "coast": 292
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day224_perfect__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 120,
+      "fallback": 478,
+      "mpc": 66
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 120,
+      "outside_training_support": 477,
+      "solar_feasible_plan": 66,
+      "no_margin_feasible_plan": 1
+    },
+    "fallback_after_initialization": 0.7198795180722891,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.09939759036144578,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day224_perfect__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 530,
+      "reference_selected": 82,
+      "mpc": 52
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 125,
+      "outside_training_support": 405,
+      "office_feasible_plan": 134
+    },
+    "fallback_after_initialization": 0.7981927710843374,
+    "reference_selected_after_initialization": 0.12349397590361445,
+    "mpc_after_initialization": 0.0783132530120482,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day224_warm_bias__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 380,
+      "coast": 292
+    },
+    "reasons": {
+      "rule": 380,
+      "coast": 292
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day224_warm_bias__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "fallback": 530,
+      "mpc": 66,
+      "early_coast": 68
+    },
+    "reasons": {
+      "rule": 8,
+      "outside_training_support": 529,
+      "solar_feasible_plan": 66,
+      "stored_solar_heat": 68,
+      "no_margin_feasible_plan": 1
+    },
+    "fallback_after_initialization": 0.7981927710843374,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.09939759036144578,
+    "official_kpi_max_difference": 0.0
+  },
+  {
+    "episode": "day224_warm_bias__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 535,
+      "reference_selected": 77,
+      "mpc": 52
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 55,
+      "outside_training_support": 480,
+      "office_feasible_plan": 129
+    },
+    "fallback_after_initialization": 0.8057228915662651,
+    "reference_selected_after_initialization": 0.11596385542168675,
+    "mpc_after_initialization": 0.0783132530120482,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day224_cold_bias__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 380,
+      "coast": 292
+    },
+    "reasons": {
+      "rule": 380,
+      "coast": 292
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day224_cold_bias__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 180,
+      "fallback": 418,
+      "mpc": 66
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 180,
+      "outside_training_support": 417,
+      "solar_feasible_plan": 66,
+      "no_margin_feasible_plan": 1
+    },
+    "fallback_after_initialization": 0.6295180722891566,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.09939759036144578,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day224_cold_bias__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 530,
+      "reference_selected": 82,
+      "mpc": 52
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 161,
+      "outside_training_support": 369,
+      "office_feasible_plan": 134
+    },
+    "fallback_after_initialization": 0.7981927710843374,
+    "reference_selected_after_initialization": 0.12349397590361445,
+    "mpc_after_initialization": 0.0783132530120482,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day294_perfect__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 398,
+      "coast": 262,
+      "anticipatory_recovery": 12
+    },
+    "reasons": {
+      "rule": 398,
+      "coast": 262,
+      "anticipatory_recovery": 12
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day294_perfect__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 255,
+      "fallback": 126,
+      "mpc": 283
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 255,
+      "no_margin_feasible_plan": 126,
+      "solar_feasible_plan": 283
+    },
+    "fallback_after_initialization": 0.1897590361445783,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.42620481927710846,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "episode": "day294_perfect__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 448,
+      "reference_selected": 7,
+      "mpc": 209
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 448,
+      "office_feasible_plan": 216
+    },
+    "fallback_after_initialization": 0.6746987951807228,
+    "reference_selected_after_initialization": 0.010542168674698794,
+    "mpc_after_initialization": 0.3147590361445783,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day294_warm_bias__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 398,
+      "coast": 262,
+      "anticipatory_recovery": 12
+    },
+    "reasons": {
+      "rule": 398,
+      "coast": 262,
+      "anticipatory_recovery": 12
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day294_warm_bias__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 274,
+      "fallback": 119,
+      "mpc": 271
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 274,
+      "no_margin_feasible_plan": 119,
+      "solar_feasible_plan": 271
+    },
+    "fallback_after_initialization": 0.17921686746987953,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.40813253012048195,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day294_warm_bias__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 448,
+      "reference_selected": 7,
+      "mpc": 209
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 448,
+      "office_feasible_plan": 216
+    },
+    "fallback_after_initialization": 0.6746987951807228,
+    "reference_selected_after_initialization": 0.010542168674698794,
+    "mpc_after_initialization": 0.3147590361445783,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day294_cold_bias__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 398,
+      "coast": 262,
+      "anticipatory_recovery": 12
+    },
+    "reasons": {
+      "rule": 398,
+      "coast": 262,
+      "anticipatory_recovery": 12
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day294_cold_bias__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "early_coast": 238,
+      "fallback": 182,
+      "mpc": 244
+    },
+    "reasons": {
+      "rule": 8,
+      "stored_solar_heat": 238,
+      "no_margin_feasible_plan": 117,
+      "solar_feasible_plan": 244,
+      "outside_training_support": 65
+    },
+    "fallback_after_initialization": 0.2740963855421687,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.3674698795180723,
+    "official_kpi_max_difference": 2.220446049250313e-16
+  },
+  {
+    "episode": "day294_cold_bias__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 448,
+      "reference_selected": 7,
+      "mpc": 209
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 448,
+      "office_feasible_plan": 216
+    },
+    "fallback_after_initialization": 0.6746987951807228,
+    "reference_selected_after_initialization": 0.010542168674698794,
+    "mpc_after_initialization": 0.3147590361445783,
+    "official_kpi_max_difference": 8.881784197001252e-16
+  },
+  {
+    "episode": "day357_perfect__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 427,
+      "anticipatory_recovery": 21,
+      "coast": 224
+    },
+    "reasons": {
+      "rule": 427,
+      "anticipatory_recovery": 21,
+      "coast": 224
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_perfect__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "mpc": 230,
+      "fallback": 339,
+      "early_coast": 95
+    },
+    "reasons": {
+      "rule": 8,
+      "solar_feasible_plan": 230,
+      "no_margin_feasible_plan": 124,
+      "stored_solar_heat": 95,
+      "outside_training_support": 215
+    },
+    "fallback_after_initialization": 0.5105421686746988,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.3463855421686747,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_perfect__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 448,
+      "reference_selected": 7,
+      "mpc": 209
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 448,
+      "office_feasible_plan": 216
+    },
+    "fallback_after_initialization": 0.6746987951807228,
+    "reference_selected_after_initialization": 0.010542168674698794,
+    "mpc_after_initialization": 0.3147590361445783,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_warm_bias__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 427,
+      "anticipatory_recovery": 21,
+      "coast": 224
+    },
+    "reasons": {
+      "rule": 427,
+      "anticipatory_recovery": 21,
+      "coast": 224
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_warm_bias__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "mpc": 243,
+      "fallback": 313,
+      "early_coast": 108
+    },
+    "reasons": {
+      "rule": 8,
+      "solar_feasible_plan": 243,
+      "no_margin_feasible_plan": 154,
+      "stored_solar_heat": 108,
+      "outside_training_support": 159
+    },
+    "fallback_after_initialization": 0.4713855421686747,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.36596385542168675,
+    "official_kpi_max_difference": 6.661338147750939e-16
+  },
+  {
+    "episode": "day357_warm_bias__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 448,
+      "reference_selected": 7,
+      "mpc": 209
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 448,
+      "office_feasible_plan": 216
+    },
+    "fallback_after_initialization": 0.6746987951807228,
+    "reference_selected_after_initialization": 0.010542168674698794,
+    "mpc_after_initialization": 0.3147590361445783,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_cold_bias__guarded_rule",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 427,
+      "anticipatory_recovery": 21,
+      "coast": 224
+    },
+    "reasons": {
+      "rule": 427,
+      "anticipatory_recovery": 21,
+      "coast": 224
+    },
+    "fallback_after_initialization": 0.0,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.0,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_cold_bias__solar_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "guarded_rule": 8,
+      "mpc": 136,
+      "fallback": 461,
+      "early_coast": 67
+    },
+    "reasons": {
+      "rule": 8,
+      "solar_feasible_plan": 136,
+      "no_margin_feasible_plan": 135,
+      "stored_solar_heat": 67,
+      "outside_training_support": 326
+    },
+    "fallback_after_initialization": 0.6942771084337349,
+    "reference_selected_after_initialization": 0.0,
+    "mpc_after_initialization": 0.20481927710843373,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  },
+  {
+    "episode": "day357_cold_bias__office_mpc",
+    "decisions_replayed": 672,
+    "modes": {
+      "initial_rule": 8,
+      "fallback": 448,
+      "reference_selected": 7,
+      "mpc": 209
+    },
+    "reasons": {
+      "common_initialization": 8,
+      "no_margin_feasible_plan": 448,
+      "office_feasible_plan": 216
+    },
+    "fallback_after_initialization": 0.6746987951807228,
+    "reference_selected_after_initialization": 0.010542168674698794,
+    "mpc_after_initialization": 0.3147590361445783,
+    "official_kpi_max_difference": 4.440892098500626e-16
+  }
+]

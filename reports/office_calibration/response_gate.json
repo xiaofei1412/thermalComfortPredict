@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "heating_first_hour_direction_pass": true,
+  "mixed_six_eight_hour_gas_direction_pass": true,
+  "mixed_paired_error_within_two_empirical_margins": true,
+  "original_long_temperature_monotonicity_pass": false,
+  "model_sha256": "bb4f5f75b256250955f8b5d3ffde960dd9cca881210eebb4a3b8523ed475b080",
+  "limited_development_gate_not_safety_certificate": true,
+  "responses": [
+    {
+      "day": 42,
+      "horizon_steps": 1,
+      "actual_temperature_high_minus_low_C": 1.028761927187702,
+      "predicted_temperature_high_minus_low_C": 0.962773113477013,
+      "actual_gas_delta_kWh": 0.13698269811419433,
+      "predicted_gas_delta_kWh": 0.2801483620208496,
+      "paired_temperature_margin_K": 0.9001026443876743
+    },
+    {
+      "day": 42,
+      "horizon_steps": 4,
+      "actual_temperature_high_minus_low_C": 2.758230768943747,
+      "predicted_temperature_high_minus_low_C": 2.6850688823256164,
+      "actual_gas_delta_kWh": 0.8696742999082067,
+      "predicted_gas_delta_kWh": 1.8001391170994991,
+      "paired_temperature_margin_K": 1.433968571473966
+    },
+    {
+      "day": 42,
+      "horizon_steps": 24,
+      "actual_temperature_high_minus_low_C": 0.6492243739296555,
+      "predicted_temperature_high_minus_low_C": 1.2085393041623895,
+      "actual_gas_delta_kWh": 3.836551993331489,
+      "predicted_gas_delta_kWh": 5.209803796538865,
+      "paired_temperature_margin_K": 2.9117894831125213
+    },
+    {
+      "day": 42,
+      "horizon_steps": 32,
+      "actual_temperature_high_minus_low_C": -0.0009150515406872728,
+      "predicted_temperature_high_minus_low_C": 0.002504882695998134,
+      "actual_gas_delta_kWh": 3.836551993331489,
+      "predicted_gas_delta_kWh": 5.209803796538865,
+      "paired_temperature_margin_K": 3.362995759211599
+    },
+    {
+      "day": 168,
+      "horizon_steps": 1,
+      "actual_temperature_high_minus_low_C": 1.0555148603713178,
+      "predicted_temperature_high_minus_low_C": 0.7737253644880937,
+      "actual_gas_delta_kWh": 0.11004249564291085,
+      "predicted_gas_delta_kWh": 0.225139122064296,
+      "paired_temperature_margin_K": 0.9001026443876743
+    },
+    {
+      "day": 168,
+      "horizon_steps": 4,
+      "actual_temperature_high_minus_low_C": 2.047451624329028,
+      "predicted_temperature_high_minus_low_C": 1.6409963993489285,
+      "actual_gas_delta_kWh": 0.5646909130122799,
+      "predicted_gas_delta_kWh": 1.1626715938702035,
+      "paired_temperature_margin_K": 1.433968571473966
+    },
+    {
+      "day": 168,
+      "horizon_steps": 24,
+      "actual_temperature_high_minus_low_C": -0.022323214086497956,
+      "predicted_temperature_high_minus_low_C": 0.0025146021012574238,
+      "actual_gas_delta_kWh": 2.126817499388083,
+      "predicted_gas_delta_kWh": 3.203048188352886,
+      "paired_temperature_margin_K": 2.9117894831125213
+    },
+    {
+      "day": 168,
+      "horizon_steps": 32,
+      "actual_temperature_high_minus_low_C": 3.9498784531133424e-05,
+      "predicted_temperature_high_minus_low_C": 0.0010036031954854252,
+      "actual_gas_delta_kWh": 2.126817499388083,
+      "predicted_gas_delta_kWh": 3.203048188352886,
+      "paired_temperature_margin_K": 3.362995759211599
+    }
+  ]
+}

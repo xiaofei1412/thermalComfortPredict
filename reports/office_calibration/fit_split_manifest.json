@@ -1,0 +1,96 @@
+{
+  "windows": {
+    "train": [
+      [
+        7,
+        17
+      ],
+      [
+        77,
+        87
+      ],
+      [
+        133,
+        143
+      ]
+    ],
+    "selection": [
+      [
+        154,
+        164
+      ]
+    ],
+    "calibration": [
+      [
+        164,
+        174
+      ],
+      [
+        175,
+        185
+      ],
+      [
+        189,
+        199
+      ]
+    ],
+    "test": [
+      [
+        217,
+        231
+      ],
+      [
+        287,
+        301
+      ],
+      [
+        350,
+        364
+      ]
+    ]
+  },
+  "development": [
+    {
+      "day": 14,
+      "role": "train",
+      "seed": 701
+    },
+    {
+      "day": 84,
+      "role": "train",
+      "seed": 702
+    },
+    {
+      "day": 140,
+      "role": "train",
+      "seed": 703
+    },
+    {
+      "day": 161,
+      "role": "selection",
+      "seed": 704
+    },
+    {
+      "day": 171,
+      "role": "calibration",
+      "seed": 707
+    },
+    {
+      "day": 182,
+      "role": "calibration",
+      "seed": 705
+    },
+    {
+      "day": 196,
+      "role": "calibration",
+      "seed": 706
+    }
+  ],
+  "budgets_rows": [
+    288,
+    864
+  ],
+  "selection_rows": 288,
+  "calibration_rows": 864,
+  "target_development_total_rows": 2016
+}

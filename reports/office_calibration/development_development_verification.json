@@ -1,0 +1,381 @@
+{
+  "passed": true,
+  "model_sha256": "bb4f5f75b256250955f8b5d3ffde960dd9cca881210eebb4a3b8523ed475b080",
+  "code_sha256": {
+    "thermal_comfort/office.py": "82e9b365bb62b752b93dcc37ceb02aab7771f6dc63b7fd2449a4510c6167ef00",
+    "thermal_comfort/office_model.py": "fce0328cc0cb1cf7ceadc2c2efe61a598ba4e8a3edf54bd5ac13b8b8f8d10b5f",
+    "configs\\office_calibration.json": "28974dc62f5caba8bea4cde9395ef222224834269f6b652139a12faebf6fe1ca",
+    "docs/experiments/office_calibration.md": "3fe8c46d97a03349087401f3a54d1a68b5f73e1cc7637531b561d372238ae0da"
+  },
+  "windows": {
+    "train": [
+      [
+        7,
+        17
+      ],
+      [
+        77,
+        87
+      ],
+      [
+        133,
+        143
+      ]
+    ],
+    "selection": [
+      [
+        154,
+        164
+      ]
+    ],
+    "calibration": [
+      [
+        164,
+        174
+      ],
+      [
+        175,
+        185
+      ],
+      [
+        189,
+        199
+      ]
+    ],
+    "test": [
+      [
+        217,
+        231
+      ],
+      [
+        287,
+        301
+      ],
+      [
+        350,
+        364
+      ]
+    ]
+  },
+  "independent_refit_byte_identical": true,
+  "margins_reconstructed": true,
+  "recollected_six_native_trajectories_identical": true,
+  "development_transitions": 2016,
+  "regimes": [
+    {
+      "day": 14,
+      "role": "train",
+      "rows": 288,
+      "heat_rows": 160,
+      "cool_rows": 86,
+      "idle_rows": 42
+    },
+    {
+      "day": 84,
+      "role": "train",
+      "rows": 288,
+      "heat_rows": 32,
+      "cool_rows": 114,
+      "idle_rows": 142
+    },
+    {
+      "day": 140,
+      "role": "train",
+      "rows": 288,
+      "heat_rows": 19,
+      "cool_rows": 118,
+      "idle_rows": 151
+    },
+    {
+      "day": 161,
+      "role": "selection",
+      "rows": 288,
+      "heat_rows": 48,
+      "cool_rows": 112,
+      "idle_rows": 128
+    },
+    {
+      "day": 171,
+      "role": "calibration",
+      "rows": 288,
+      "heat_rows": 20,
+      "cool_rows": 123,
+      "idle_rows": 145
+    },
+    {
+      "day": 182,
+      "role": "calibration",
+      "rows": 288,
+      "heat_rows": 0,
+      "cool_rows": 123,
+      "idle_rows": 165
+    },
+    {
+      "day": 196,
+      "role": "calibration",
+      "rows": 288,
+      "heat_rows": 0,
+      "cool_rows": 123,
+      "idle_rows": 165
+    }
+  ],
+  "audits": [
+    {
+      "episode": "day14__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 179,
+        "heat_protection": 22,
+        "coast_protection": 87
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 4.440892098500626e-16
+    },
+    {
+      "episode": "day84__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 168,
+        "heat_protection": 7,
+        "coast_protection": 113
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "episode": "day140__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 169,
+        "coast_protection": 118,
+        "heat_protection": 1
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.220446049250313e-16
+    },
+    {
+      "episode": "day161__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 180,
+        "coast_protection": 108
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "episode": "day171__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 167,
+        "coast_protection": 121
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "episode": "day182__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 165,
+        "coast_protection": 123
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 4.440892098500626e-16
+    },
+    {
+      "episode": "day196__excitation",
+      "decisions_replayed": 288,
+      "modes": {
+        "excitation": 288
+      },
+      "reasons": {
+        "seeded_excitation": 165,
+        "coast_protection": 123
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 0.0
+    },
+    {
+      "episode": "day161_perfect__guarded_rule",
+      "decisions_replayed": 288,
+      "modes": {
+        "guarded_rule": 174,
+        "anticipatory_recovery": 6,
+        "coast": 108
+      },
+      "reasons": {
+        "rule": 174,
+        "anticipatory_recovery": 6,
+        "coast": 108
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.220446049250313e-16
+    },
+    {
+      "episode": "day161_perfect__solar_mpc",
+      "decisions_replayed": 288,
+      "modes": {
+        "guarded_rule": 8,
+        "mpc": 81,
+        "fallback": 131,
+        "early_coast": 68
+      },
+      "reasons": {
+        "rule": 8,
+        "solar_feasible_plan": 81,
+        "outside_training_support": 129,
+        "stored_solar_heat": 68,
+        "no_margin_feasible_plan": 2
+      },
+      "fallback_after_initialization": 0.46785714285714286,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.2892857142857143,
+      "official_kpi_max_difference": 2.220446049250313e-16
+    },
+    {
+      "episode": "day161_perfect__office_mpc",
+      "decisions_replayed": 288,
+      "modes": {
+        "initial_rule": 8,
+        "fallback": 192,
+        "reference_selected": 3,
+        "mpc": 85
+      },
+      "reasons": {
+        "common_initialization": 8,
+        "no_margin_feasible_plan": 152,
+        "office_feasible_plan": 88,
+        "outside_training_support": 40
+      },
+      "fallback_after_initialization": 0.6857142857142857,
+      "reference_selected_after_initialization": 0.010714285714285714,
+      "mpc_after_initialization": 0.30357142857142855,
+      "official_kpi_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "episode": "day42__response_20.5",
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 0.0
+    },
+    {
+      "episode": "day42__response_22",
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "episode": "day42__response_23.25",
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "episode": "day168__response_20.5",
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 1.3877787807814457e-17
+    },
+    {
+      "episode": "day168__response_22",
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.7755575615628914e-17
+    },
+    {
+      "episode": "day168__response_23.25",
+      "decisions_replayed": 48,
+      "modes": {
+        "intervention": 48
+      },
+      "reasons": {
+        "common_prelude": 16,
+        "fixed_setting": 32
+      },
+      "fallback_after_initialization": 0.0,
+      "reference_selected_after_initialization": 0.0,
+      "mpc_after_initialization": 0.0,
+      "official_kpi_max_difference": 2.7755575615628914e-17
+    }
+  ]
+}

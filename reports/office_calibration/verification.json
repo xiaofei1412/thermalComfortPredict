@@ -1,0 +1,175 @@
+{
+  "frozen_sources_pass": true,
+  "formal_episodes": 27,
+  "complete_episodes": 27,
+  "formal_transitions": 18144,
+  "native_samples": 544347,
+  "decisions_replayed": 18144,
+  "official_kpi_max_difference": 8.881784197001252e-16,
+  "paired_initialization_rule_invariance": true,
+  "repeat_prefixes": [
+    {
+      "episode": "day224_perfect__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_perfect__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_perfect__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_warm_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_warm_bias__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_warm_bias__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_cold_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_cold_bias__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day224_cold_bias__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_perfect__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_perfect__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_perfect__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_warm_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_warm_bias__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_warm_bias__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_cold_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_cold_bias__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day294_cold_bias__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_perfect__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_perfect__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_perfect__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_warm_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_warm_bias__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_warm_bias__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_cold_bias__guarded_rule",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_cold_bias__solar_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    },
+    {
+      "episode": "day357_cold_bias__office_mpc",
+      "steps": 24,
+      "native_samples": 721,
+      "exact_match": true
+    }
+  ],
+  "full_seven_day_repeat_verified": false
+}

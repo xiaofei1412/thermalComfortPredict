@@ -1,0 +1,118 @@
+{
+  "mode": "test",
+  "config": {
+    "baseline_commit": "27c30c4c624bdf8948b18af7560c272409704726",
+    "domain": {
+      "id": "office",
+      "testcase": "bestest_air",
+      "interface": "office",
+      "area_m2": 48
+    },
+    "episodes": [
+      {
+        "day": 14,
+        "role": "train",
+        "seed": 701
+      },
+      {
+        "day": 84,
+        "role": "train",
+        "seed": 702
+      },
+      {
+        "day": 140,
+        "role": "train",
+        "seed": 703
+      },
+      {
+        "day": 161,
+        "role": "selection",
+        "seed": 704
+      },
+      {
+        "day": 171,
+        "role": "calibration",
+        "seed": 707
+      },
+      {
+        "day": 182,
+        "role": "calibration",
+        "seed": 705
+      },
+      {
+        "day": 196,
+        "role": "calibration",
+        "seed": 706
+      }
+    ],
+    "collection_days": 3,
+    "training_days_per_episode": [
+      1,
+      3
+    ],
+    "test_days": [
+      224,
+      294,
+      357
+    ],
+    "test_duration_days": 7,
+    "validation_days": [
+      161
+    ],
+    "validation_duration_days": 3,
+    "weather_modes": [
+      "perfect",
+      "warm_bias",
+      "cold_bias"
+    ],
+    "controllers": [
+      "guarded_rule",
+      "solar_mpc",
+      "office_mpc"
+    ],
+    "response_days": [
+      42,
+      168
+    ],
+    "response_settings_C": [
+      20.5,
+      22.0,
+      23.25
+    ],
+    "response_prelude_steps": 16,
+    "response_steps": 32,
+    "heat_efficiency": 0.9,
+    "cooling_COP": 3.0,
+    "thermal_cap_kW": 20.0,
+    "fan_cap_kW": 1.0,
+    "observer_gain": 0.2,
+    "residual_weights": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "residual_alpha": 10.0,
+    "residual_cap_K": 0.5,
+    "margin_quantile": 0.95,
+    "sensor_margin_K": 0.1,
+    "horizons": [
+      1,
+      4,
+      24,
+      32
+    ],
+    "origin_stride": 4,
+    "fit_max_nfev": 150
+  },
+  "days_override": 0.25,
+  "created_UTC": "2026-10-25T10:52:08.056095+00:00",
+  "code_sha256": {
+    "thermal_comfort/office.py": "82e9b365bb62b752b93dcc37ceb02aab7771f6dc63b7fd2449a4510c6167ef00",
+    "thermal_comfort/office_model.py": "fce0328cc0cb1cf7ceadc2c2efe61a598ba4e8a3edf54bd5ac13b8b8f8d10b5f",
+    "configs\\office_calibration.json": "28974dc62f5caba8bea4cde9395ef222224834269f6b652139a12faebf6fe1ca",
+    "docs/experiments/office_calibration.md": "3fe8c46d97a03349087401f3a54d1a68b5f73e1cc7637531b561d372238ae0da"
+  },
+  "source_model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+  "office_model_sha256": "bb4f5f75b256250955f8b5d3ffde960dd9cca881210eebb4a3b8523ed475b080",
+  "source_freeze_sha256": "b031d9127e968900d0f99fecc500dde47a862b02ff3344274a088bfcbfe4d11c"
+}

@@ -1,0 +1,45 @@
+{
+  "controlled_ablation": false,
+  "note": "Development iterations changed input/physics assumptions; only final 3d vs 9d is a matched-data-budget comparison",
+  "iterations": [
+    {
+      "local_directory": "outputs\\office-model-v1",
+      "selected": {
+        "days_per_episode": 3,
+        "training_rows": 864,
+        "residual_weight": 1.0,
+        "score_C": 0.8666929504568243
+      },
+      "model_sha256": "1cf10c7f94a8c07425079a170ca4b43e69948301a6a6263297019a666c4c65cc",
+      "source_snapshots_sha256": {
+        "source_office_model_v1.py": "fceb52bf7926503f296cb804e3eca4a66b5b6a6085df162ccb2189d36b124a11"
+      }
+    },
+    {
+      "local_directory": "outputs\\office-model-multistart",
+      "selected": {
+        "days_per_episode": 3,
+        "training_rows": 864,
+        "residual_weight": 1.0,
+        "score_C": 0.8667013105811368
+      },
+      "model_sha256": "352dde1e4a7f76a764d39a70e19fc442033916026d3c37c3f7194b7fca1e4f57",
+      "source_snapshots_sha256": {
+        "source_office_model_v2.py": "09ee4c02c1ab9c1c05b330e2295b61719b4eaec656b786ae225ac4f1229ffa37"
+      }
+    },
+    {
+      "local_directory": "outputs\\office-model-before-radiant",
+      "selected": {
+        "days_per_episode": 3,
+        "training_rows": 864,
+        "residual_weight": 1.0,
+        "score_C": 0.8098444751215279
+      },
+      "model_sha256": "049383bd391f313d8e2bd250c1025320ba379ae812cc13aa5549d687b1e3443d",
+      "source_snapshots_sha256": {
+        "source_office_model_projection.py": "f67f0db9c2cc338c0de132fb3996c2f26d3736427398cd373d1afaf547287a5d"
+      }
+    }
+  ]
+}
