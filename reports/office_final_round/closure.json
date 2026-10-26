@@ -1,0 +1,26 @@
+{
+  "sealed_UTC": "2026-10-26T07:40:13.517139+00:00",
+  "status": "closed_negative",
+  "scope": "this_office_simulation_migration_campaign",
+  "code_sha256": {
+    "thermal_comfort/source_terminal.py": "dd686b3b7e1e5f3be3bd82ed42f273f78531b4a7a752cb526f29f243fe6ee0ea",
+    "thermal_comfort/office_final_round.py": "43857b4fccc48009554a214af3e9fe890f044fdcef4a3f2f2d6e4bb521e7c4f0",
+    "configs\\office_final_round.json": "8b56eaf73026b2af0b2f4de2b01a7fd94ae4e274bfc6ba5c9d4c928703f3de06",
+    "docs/experiments/office_final_round.md": "7227c69888387112606a4fa86c716fddd8aeb2d0ba7154baba691d3c2a99afbe"
+  },
+  "artifacts_sha256": {
+    "protocol_lock.json": "b772e1c71f749b38d23490263d39a65fe2c1e421aaa717e14080676aeb56d79c",
+    "model/model.joblib": "ceb5276fa1e42369a85e81d7cfa844bbbbff652d05cd2bc02f5b516cfdd30d65",
+    "model/manifest.json": "1b4be9d1f62ecac2acfb4bb438c5e3562efd30ab05797bf07246b3baf3377b09",
+    "model/fit.json": "18e7efecb503e6d1e424eb4a7e5739b5d8f85a4d67cdda8d7769f758414ada33",
+    "metrics.csv": "2f435d98880508de61798791b38e85d1ceda9d836ed74ca6a4fa7281f2739478",
+    "gates.json": "9f895b3516e5450c611712f40c5f11a8608cc54aafca6ee1ee386bc482d63138",
+    "assessment.json": "c327911910492aa705968e605725470c8ac54f2af1429a98b50979f13d523bd4",
+    "audit.json": "ba24991acdc7c9286a5348c8711bc38bc26469fde366fdccfcb5489a6ceeada0"
+  },
+  "primary_controller": "guarded_rule",
+  "calibration_generated": false,
+  "blind_evaluation_run": false,
+  "further_automatic_development_allowed": false,
+  "boundary": "Offline modeling research in the fixed 48m2 bestest_air interface only; no cross-season energy-saving control qualification or real-building claim"
+}

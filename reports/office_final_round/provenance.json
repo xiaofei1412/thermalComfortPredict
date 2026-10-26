@@ -1,0 +1,43 @@
+{
+  "raw_output_sha256": {
+    "outputs\\office-final-round\\protocol_lock.json": "b772e1c71f749b38d23490263d39a65fe2c1e421aaa717e14080676aeb56d79c",
+    "outputs\\office-final-round\\model\\manifest.json": "1b4be9d1f62ecac2acfb4bb438c5e3562efd30ab05797bf07246b3baf3377b09",
+    "outputs\\office-final-round\\model\\fit.json": "18e7efecb503e6d1e424eb4a7e5739b5d8f85a4d67cdda8d7769f758414ada33",
+    "outputs\\office-final-round\\assessment.json": "c327911910492aa705968e605725470c8ac54f2af1429a98b50979f13d523bd4",
+    "outputs\\office-final-round\\gates.json": "9f895b3516e5450c611712f40c5f11a8608cc54aafca6ee1ee386bc482d63138",
+    "outputs\\office-final-round\\audit.json": "ba24991acdc7c9286a5348c8711bc38bc26469fde366fdccfcb5489a6ceeada0",
+    "outputs\\office-final-round\\closure.json": "d0f010afea694e1fe63b0cd2b92d803ed7155d9ac6ae06492c6da9231da81121",
+    "outputs\\office-final-round\\metrics.csv": "2f435d98880508de61798791b38e85d1ceda9d836ed74ca6a4fa7281f2739478",
+    "outputs\\office-final-entrypoint-check.json": "a24078ccc4729f56573885b485bba622adaa85eb166ac797e4a6b209805d33f1"
+  },
+  "source_sha256": {
+    "thermal_comfort/source_terminal.py": "dd686b3b7e1e5f3be3bd82ed42f273f78531b4a7a752cb526f29f243fe6ee0ea",
+    "thermal_comfort/office_final_round.py": "43857b4fccc48009554a214af3e9fe890f044fdcef4a3f2f2d6e4bb521e7c4f0",
+    "configs\\office_final_round.json": "8b56eaf73026b2af0b2f4de2b01a7fd94ae4e274bfc6ba5c9d4c928703f3de06",
+    "docs/experiments/office_final_round.md": "7227c69888387112606a4fa86c716fddd8aeb2d0ba7154baba691d3c2a99afbe",
+    "scripts/verify_office_final_round.py": "827d785b12750d0adc73c6079cf2c31af6bbc64d52f06da7805620847a68da25",
+    "scripts/report_office_final_round.py": "c5846d4d49124155db3d880ca69b73da34c712c27e00b0f5b6427b74cf40ee97",
+    "tests/test_office_final_round.py": "01783937d3360f02bf107f71de21b7b6838b0112d8eab4bc938862ac61daa959"
+  },
+  "archived_sha256": {
+    "assessment.json": "deb14a7f41a97ac4c3096c161612234477cbc91bd156805bde3117ec379a232c",
+    "audit.json": "b82de5fac0a93fe153cd7a9e31bce92d50b3015e020f63a0c31de414c80f67d5",
+    "budget_notes.json": "b5e7d0135d179918a0d3878210a653df9eb88cd2661a870f8d21a3430096d917",
+    "capability_matrix.csv": "bfedb2787de6e99ceb5c937282cdca56886876df82d2a7c061dea464138b7177",
+    "closed_entrypoint_checks.json": "a24078ccc4729f56573885b485bba622adaa85eb166ac797e4a6b209805d33f1",
+    "closure.json": "0c9ab5807c836841b89895f5d2deb23d0ac7ab8b57129cac17173ccb50abd560",
+    "comparison_metrics.csv": "bc7d33e694ded101886ef6a688c9c8be7f0e62e80583497129859459c4e6637a",
+    "development_comparison.png": "ba239ab14917bdc6e8f826c0823311806bb90f1d8464eb6a4be7bd6853d78d59",
+    "failed_gates.csv": "41e5c29440e5885ec4a5590b0631a56ef5c104e3c77b1d79ac9d71366193a953",
+    "gates.csv": "f43800d3119f6d007bfaf8a2cec611a8c1c2794d2cad39e9bd1a3f7b2b23fbd4",
+    "gates.json": "77b0b7709bd848d06a7b9eaf711a3058b7fc116369ed6c8fd2dd4b01665eaa3d",
+    "metrics.csv": "2f435d98880508de61798791b38e85d1ceda9d836ed74ca6a4fa7281f2739478",
+    "model_fit.json": "f160399b190b1ecdace18ed3b1ff17757fae9e4f359f4c527ba8affe98909dfb",
+    "model_manifest.json": "9d9cfd447f9b76fa5314dbfd35760169266f2f7bae81ef61f2f3123aa9443bcb",
+    "model_parameters.json": "d30908a29b85046513b0a0c285341d820a5a920d28f2ae1b96e3cbbe53cbbc8b",
+    "protocol_lock.json": "5eced350ff5f82666f4bb1650a68db2d35a1ee265140307eded69709e6bb5a29",
+    "results_table.md": "968a04fef00c7f5c15fe262bf7fb70dbce2eedd2cefe3645fba3ae5e321cbb57",
+    "stop_decision.json": "fa7752642b82d12eef22006ded4b49a7aa14539dd5034ff88764ead34ee212c5"
+  },
+  "note": "JSON normalized to UTF-8 LF; original sealed outputs stay unchanged. closed_negative is a stop, not a successful migration or deployment freeze."
+}

@@ -1,0 +1,15 @@
+{
+  "code_sha256": {
+    "thermal_comfort/source_terminal.py": "dd686b3b7e1e5f3be3bd82ed42f273f78531b4a7a752cb526f29f243fe6ee0ea",
+    "thermal_comfort/office_final_round.py": "43857b4fccc48009554a214af3e9fe890f044fdcef4a3f2f2d6e4bb521e7c4f0",
+    "configs\\office_final_round.json": "8b56eaf73026b2af0b2f4de2b01a7fd94ae4e274bfc6ba5c9d4c928703f3de06",
+    "docs/experiments/office_final_round.md": "7227c69888387112606a4fa86c716fddd8aeb2d0ba7154baba691d3c2a99afbe"
+  },
+  "protocol_lock_sha256": "b772e1c71f749b38d23490263d39a65fe2c1e421aaa717e14080676aeb56d79c",
+  "candidate": "source_causal_final",
+  "independent_reproduction": false,
+  "artifacts_sha256": {
+    "fit.json": "18e7efecb503e6d1e424eb4a7e5739b5d8f85a4d67cdda8d7769f758414ada33",
+    "model.joblib": "ceb5276fa1e42369a85e81d7cfa844bbbbff652d05cd2bc02f5b516cfdd30d65"
+  }
+}

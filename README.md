@@ -4,7 +4,7 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：一轮限定末端诊断完成，优先修正风量前向动态。** 原生模型的PI反推失真、风量与源二阶滤波不匹配；真值风量替换显著降低风机误差，却没有改善整个耦合模型。本轮没有重训或控制升级，保持规则主基线，未启动新校准、新场景、网络或RL；人员需求接入和真实迁移尚未完成。
+**当前状态：本轮办公室迁移攻关已结束，负结果已封存。** 最终源结构因果候选通过60/72开发门和2/2响应，长时能源、温度回归及供暖覆盖仍未全过；按预设停止，维持规则，新校准/盲评均为0次。部分离线预测改善不代表控制升级，固定仿真适用边界已记录；人员需求接入、系统学习控制和真实迁移仍未完成。
 
 ## 项目入口
 
@@ -31,6 +31,9 @@
 - [分季节、分能源能力门协议](docs/experiments/native_terminal.md)
 - [PI、切换、风量与焓差限定诊断](reports/terminal_diagnostic/REPORT.md)
 - [固定单因素消融与停止条件](docs/experiments/terminal_diagnostic.md)
+- [办公室最终一轮与负结果封存](reports/office_final_round/REPORT.md)
+- [办公室适用边界与结束决定](reports/office_final_round/BOUNDARY.md)
+- [最终有限修复停止协议](docs/experiments/office_final_round.md)
 - [阶段开发日志约定](docs/development/README.md)
 - [数据说明](data/README.md)
 - [历史代码说明](legacy/README.md)
@@ -59,6 +62,7 @@ thermalComfortPredict/
 ├── reports/terminal_dynamics/ # 冷暖季末端、未触碰校准与新气候失败证据
 ├── reports/native_terminal/ # 原生辨识、联合训练与能力门负结果
 ├── reports/terminal_diagnostic/ # 开发末端诊断与非部署oracle消融
+├── reports/office_final_round/ # 最终有限修复、失败门与办公室边界封存
 ├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/

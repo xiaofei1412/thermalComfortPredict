@@ -1,0 +1,187 @@
+{
+  "created_UTC": "2026-10-26T07:33:00.334631+00:00",
+  "config": {
+    "baseline_commit": "39b169b963bf28b53b610a4d6e12e8974b61fc14",
+    "candidate": "source_causal_final",
+    "maximum_candidates": 1,
+    "training_days": [
+      24,
+      94,
+      124,
+      328
+    ],
+    "development_days": [
+      62,
+      150
+    ],
+    "gate_source": "configs/native_terminal.json",
+    "training_stride_seconds": 28800,
+    "fit_max_nfev": 60,
+    "substep_seconds": 1,
+    "PI_k": 0.1,
+    "PI_Ti_seconds": 120.0,
+    "PI_Ni": 0.9,
+    "fan_pole_per_second": 0.259487839385516,
+    "permit_new_development_data": false,
+    "permit_threshold_changes": false,
+    "failure_action": "close_office_migration_with_frozen_negative_result"
+  },
+  "code_sha256": {
+    "thermal_comfort/source_terminal.py": "dd686b3b7e1e5f3be3bd82ed42f273f78531b4a7a752cb526f29f243fe6ee0ea",
+    "thermal_comfort/office_final_round.py": "43857b4fccc48009554a214af3e9fe890f044fdcef4a3f2f2d6e4bb521e7c4f0",
+    "configs\\office_final_round.json": "8b56eaf73026b2af0b2f4de2b01a7fd94ae4e274bfc6ba5c9d4c928703f3de06",
+    "docs/experiments/office_final_round.md": "7227c69888387112606a4fa86c716fddd8aeb2d0ba7154baba691d3c2a99afbe"
+  },
+  "reference_gate_sha256": "179abd3afe4ce06d309c423ceab31a1a873b154fce3bfcb1fa40c00865b0802c",
+  "reference_configuration": {
+    "baseline_commit": "e537267a8c46d963fcf365eeb5f951fe07c0763f",
+    "native_seconds": 30,
+    "decision_seconds": 900,
+    "training_days": [
+      24,
+      94,
+      124,
+      328
+    ],
+    "development": [
+      {
+        "day": 62,
+        "season": "cold"
+      },
+      {
+        "day": 150,
+        "season": "warm"
+      }
+    ],
+    "development_days": 3,
+    "reserved_calibration_days": [
+      51,
+      110,
+      276
+    ],
+    "reserved_calibration_length_days": 1,
+    "origin_start_hours": 4,
+    "training_stride_seconds": 7200,
+    "validation_stride_seconds": 3600,
+    "horizons_seconds": [
+      30,
+      300,
+      900,
+      3600,
+      21600
+    ],
+    "power_scales_kW": [
+      1.0,
+      0.5,
+      0.1
+    ],
+    "fit_max_nfev": 100,
+    "gates": {
+      "temperature_RMSE_K": {
+        "3600": 0.5,
+        "21600": 1.0
+      },
+      "temperature_regression_tolerance_K": 0.05,
+      "energy_relative_RMSE": 0.2,
+      "energy_absolute_floor_kWh": [
+        0.05,
+        0.05,
+        0.005
+      ],
+      "power_relative_RMSE": 0.3,
+      "power_absolute_floor_kW": [
+        0.1,
+        0.05,
+        0.01
+      ],
+      "energy_regression_tolerance_kWh": [
+        0.01,
+        0.01,
+        0.001
+      ],
+      "minimum_origins": 20,
+      "minimum_active_origins": 10,
+      "active_mean_kW": [
+        0.1,
+        0.05,
+        0.005
+      ],
+      "response_relative_error": 0.5,
+      "response_absolute_floor_kWh": 0.05
+    }
+  },
+  "original_model_sha256": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d",
+  "compiled_prior_sha256": "ad4131d8847b074d1af7b0a8ac3cd8154c3ee5d79c7af02f7945090108ad6bf1",
+  "data_summary_sha256": {
+    "outputs\\terminal-development\\day24__excitation\\summary.json": "f09f470d0d666cd7db2c3b5e6e6a3307f4b663f54aaeb9430955aa104bf3f002",
+    "outputs\\terminal-development\\day94__excitation\\summary.json": "86d160ee4ef90e7c51938b7403b2cca65f16903cc6735363190b0f31a662f95b",
+    "outputs\\terminal-development\\day124__excitation\\summary.json": "c3caf52c9aff29916a38020f0948acd0411d764b31c9484d604763f8c75fe3f7",
+    "outputs\\terminal-development\\day328__excitation\\summary.json": "34cfca647b60c469e0cb85c4c8c63d60efe61baa6ee50af7f875bddb8baa51e1",
+    "outputs\\terminal-development\\day62__excitation\\summary.json": "ec58f36f48546bf7d8bd2f5ca9ac41eea10a6a14b7f8a6e4ef2ec693cd860101",
+    "outputs\\terminal-development\\day150__excitation\\summary.json": "3cc5b87d07eb4ed2ab1cb838272677ccdefe0656c3b8ad8dfc69f1a39e67cc2b",
+    "outputs\\native-rule-development\\day62__guarded_rule\\summary.json": "c8d3ded62abe321dfbb6c0e853601cb41eeb31b312e27742016ce36cd40f27bb",
+    "outputs\\native-rule-development\\day150__guarded_rule\\summary.json": "24340badd151cd1880d2a46abca70b670bdffa0d83dee3f1b7f9edddc14b4ac8",
+    "outputs\\terminal-response\\day62_perfect__response_20.5\\summary.json": "ddf08a4ecfe8eca849d4fa249b2cea6a3a2ded4c32f0eb39847dad1cd7e0f087",
+    "outputs\\terminal-response\\day62_perfect__response_23.25\\summary.json": "d18737766d4a8ec4461bb7da16414af7d9c4b0402dc03b580da0661de1438884",
+    "outputs\\terminal-response\\day150_perfect__response_20.5\\summary.json": "feabb1037bf069cc39bd42f86dd0156f55d282c9d41709bec27868dbd62f42e9",
+    "outputs\\terminal-response\\day150_perfect__response_23.25\\summary.json": "be5daa75c58502f5b347f10c6437c4af2e38235c152b4d27082a5dcf0eae7f4f"
+  },
+  "preflight_activity": [
+    {
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "origins": 63,
+      "active_origins": [
+        45,
+        21,
+        34
+      ]
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "origins": 63,
+      "active_origins": [
+        2,
+        39,
+        29
+      ]
+    },
+    {
+      "day": 62,
+      "trajectory": "day62__guarded_rule",
+      "origins": 63,
+      "active_origins": [
+        42,
+        21,
+        32
+      ]
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "origins": 63,
+      "active_origins": [
+        0,
+        38,
+        28
+      ]
+    }
+  ],
+  "preflight_support_failures": [
+    {
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "carrier": "gas",
+      "active_origins": 2
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "carrier": "gas",
+      "active_origins": 0
+    }
+  ],
+  "no_new_development_data": true,
+  "maximum_candidates": 1
+}

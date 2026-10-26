@@ -1,0 +1,216 @@
+{
+  "created_UTC": "2026-10-26T07:38:18.077097+00:00",
+  "code_sha256": {
+    "thermal_comfort/source_terminal.py": "dd686b3b7e1e5f3be3bd82ed42f273f78531b4a7a752cb526f29f243fe6ee0ea",
+    "thermal_comfort/office_final_round.py": "43857b4fccc48009554a214af3e9fe890f044fdcef4a3f2f2d6e4bb521e7c4f0",
+    "configs\\office_final_round.json": "8b56eaf73026b2af0b2f4de2b01a7fd94ae4e274bfc6ba5c9d4c928703f3de06",
+    "docs/experiments/office_final_round.md": "7227c69888387112606a4fa86c716fddd8aeb2d0ba7154baba691d3c2a99afbe"
+  },
+  "model_sha256": "ceb5276fa1e42369a85e81d7cfa844bbbbff652d05cd2bc02f5b516cfdd30d65",
+  "candidate": "source_causal_final",
+  "activity": [
+    {
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "origins": 63,
+      "active_origins": [
+        45,
+        21,
+        34
+      ]
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "origins": 63,
+      "active_origins": [
+        2,
+        39,
+        29
+      ]
+    },
+    {
+      "day": 62,
+      "trajectory": "day62__guarded_rule",
+      "origins": 63,
+      "active_origins": [
+        42,
+        21,
+        32
+      ]
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "origins": 63,
+      "active_origins": [
+        0,
+        38,
+        28
+      ]
+    }
+  ],
+  "response": [
+    {
+      "day": 62,
+      "active": true,
+      "direction_passed": true,
+      "actual_gas_delta_6h_kWh": 3.1798937260600826,
+      "predicted_gas_delta_6h_kWh": 3.6400692451923344,
+      "absolute_error_kWh": 0.46017551913225185,
+      "limit_kWh": 1.5899468630300413,
+      "passed": true
+    },
+    {
+      "day": 150,
+      "active": true,
+      "direction_passed": true,
+      "actual_gas_delta_6h_kWh": 1.4681613367341557,
+      "predicted_gas_delta_6h_kWh": 1.6134189357531252,
+      "absolute_error_kWh": 0.1452575990189695,
+      "limit_kWh": 0.7340806683670779,
+      "passed": true
+    }
+  ],
+  "accuracy_and_support_gates_passed": 60,
+  "accuracy_and_support_gates_total": 72,
+  "response_gates_passed": 2,
+  "response_gates_total": 2,
+  "optimizer_converged": true,
+  "eligible_for_calibration": false,
+  "failed_gates": [
+    {
+      "model": "source_causal_final",
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "target": "temperature",
+      "seconds": 21600,
+      "criterion": "temperature_accuracy",
+      "value": 0.7105641104023073,
+      "limit": 0.6740603077974444,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "target": "cooling_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.5689785717454002,
+      "limit": 0.2681898621950602,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "target": "fan_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.028646517293885985,
+      "limit": 0.014440601071968973,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "target": "gas_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.07939180208152807,
+      "limit": 0.05,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "target": "cooling_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.48436035401608984,
+      "limit": 0.3153043729340429,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "target": "fan_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.04052836305388379,
+      "limit": 0.01186224576791342,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 62,
+      "trajectory": "day62__guarded_rule",
+      "target": "cooling_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.555174031848182,
+      "limit": 0.26775419416845486,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 62,
+      "trajectory": "day62__guarded_rule",
+      "target": "fan_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.027927361784028177,
+      "limit": 0.014456252567498176,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "target": "cooling_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.475879238525206,
+      "limit": 0.3116695198710717,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "target": "fan_electricity_energy",
+      "seconds": 21600,
+      "criterion": "energy_accuracy",
+      "value": 0.03989864808399388,
+      "limit": 0.011653389589369165,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "target": "gas",
+      "seconds": 21600,
+      "criterion": "active_support",
+      "value": 2.0,
+      "limit": 10.0,
+      "passed": false
+    },
+    {
+      "model": "source_causal_final",
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "target": "gas",
+      "seconds": 21600,
+      "criterion": "active_support",
+      "value": 0.0,
+      "limit": 10.0,
+      "passed": false
+    }
+  ],
+  "decision": "close_negative_no_calibration_or_blind"
+}

@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "39b169b963bf28b53b610a4d6e12e8974b61fc14",
+  "candidate": "source_causal_final",
+  "maximum_candidates": 1,
+  "training_days": [24, 94, 124, 328],
+  "development_days": [62, 150],
+  "gate_source": "configs/native_terminal.json",
+  "training_stride_seconds": 28800,
+  "fit_max_nfev": 60,
+  "substep_seconds": 1,
+  "PI_k": 0.1,
+  "PI_Ti_seconds": 120.0,
+  "PI_Ni": 0.9,
+  "fan_pole_per_second": 0.259487839385516,
+  "permit_new_development_data": false,
+  "permit_threshold_changes": false,
+  "failure_action": "close_office_migration_with_frozen_negative_result"
+}

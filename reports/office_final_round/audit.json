@@ -1,0 +1,109 @@
+{
+  "created_UTC": "2026-10-26T07:38:20.303930+00:00",
+  "integrity_passed": true,
+  "code_sha256": {
+    "thermal_comfort/source_terminal.py": "dd686b3b7e1e5f3be3bd82ed42f273f78531b4a7a752cb526f29f243fe6ee0ea",
+    "thermal_comfort/office_final_round.py": "43857b4fccc48009554a214af3e9fe890f044fdcef4a3f2f2d6e4bb521e7c4f0",
+    "configs\\office_final_round.json": "8b56eaf73026b2af0b2f4de2b01a7fd94ae4e274bfc6ba5c9d4c928703f3de06",
+    "docs/experiments/office_final_round.md": "7227c69888387112606a4fa86c716fddd8aeb2d0ba7154baba691d3c2a99afbe"
+  },
+  "model_sha256": "ceb5276fa1e42369a85e81d7cfa844bbbbff652d05cd2bc02f5b516cfdd30d65",
+  "protocol_lock_sha256": "b772e1c71f749b38d23490263d39a65fe2c1e421aaa717e14080676aeb56d79c",
+  "independent_refit_byte_identical": true,
+  "gate_recompute_byte_identical": true,
+  "baseline_rows_exact": 32,
+  "causal_checks": [
+    {
+      "role": "train",
+      "episode": "day24__excitation",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "train",
+      "episode": "day94__excitation",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "train",
+      "episode": "day124__excitation",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "train",
+      "episode": "day328__excitation",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "development",
+      "episode": "day62__excitation",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "development",
+      "episode": "day150__excitation",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "development",
+      "episode": "day62__guarded_rule",
+      "future_label_and_oracle_mutations_ignored": true
+    },
+    {
+      "role": "development",
+      "episode": "day150__guarded_rule",
+      "future_label_and_oracle_mutations_ignored": true
+    }
+  ],
+  "native_energy_unit_max_error_kWh": 1.545430450278218e-13,
+  "postfit_observer_checks_against_internal_truth": [
+    {
+      "day": 62,
+      "trajectory": "day62__excitation",
+      "PI_integral_RMSE_output_units": [
+        0.003557111514120764,
+        1.5837359559404424e-05
+      ],
+      "causal_flow_RMSE_fraction": 0.0035494761907389014
+    },
+    {
+      "day": 62,
+      "trajectory": "day62__guarded_rule",
+      "PI_integral_RMSE_output_units": [
+        0.00909707463907417,
+        1.5696777632146925e-05
+      ],
+      "causal_flow_RMSE_fraction": 0.009078464707976653
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__excitation",
+      "PI_integral_RMSE_output_units": [
+        2.9539491674207868e-05,
+        3.451776219471006e-05
+      ],
+      "causal_flow_RMSE_fraction": 4.586908316721075e-05
+    },
+    {
+      "day": 150,
+      "trajectory": "day150__guarded_rule",
+      "PI_integral_RMSE_output_units": [
+        6.107411843450617e-06,
+        3.425162771212098e-05
+      ],
+      "causal_flow_RMSE_fraction": 3.4878483896888726e-05
+    }
+  ],
+  "internal_truth_entered_fitting_or_prediction": false,
+  "failed_gate_counts": {
+    "temperature_accuracy": 1,
+    "energy_accuracy": 9,
+    "active_support": 2
+  },
+  "all_development_gates_passed": false,
+  "assessment_sha256": "c327911910492aa705968e605725470c8ac54f2af1429a98b50979f13d523bd4",
+  "gates_sha256": "9f895b3516e5450c611712f40c5f11a8608cc54aafca6ee1ee386bc482d63138",
+  "calibration_generated": false,
+  "blind_evaluation_run": false,
+  "original_native_model_sha256": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d",
+  "old_freezes_valid": true
+}

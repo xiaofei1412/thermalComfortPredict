@@ -1,0 +1,13 @@
+{
+  "status": "closed_negative",
+  "development_passed": false,
+  "new_calibration_runs": 0,
+  "new_blind_runs": 0,
+  "new_development_collection_runs": 0,
+  "maximum_candidates": 1,
+  "actual_candidates": 1,
+  "independent_refit_is_reproduction": true,
+  "primary_controller": "guarded_rule",
+  "next_office_development_iteration_scheduled": false,
+  "scope": "This office migration campaign is ended; the overall project and unfinished milestones remain distinct."
+}

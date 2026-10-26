@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "closure_sha256": "d0f010afea694e1fe63b0cd2b92d803ed7155d9ac6ae06492c6da9231da81121",
+  "checks": {
+    "prepare": {
+      "rejected": true,
+      "reason": "Office migration round is closed; no new development protocol"
+    },
+    "fit": {
+      "rejected": true,
+      "reason": "Office migration round is closed; no further fitting or development"
+    },
+    "refit": {
+      "rejected": true,
+      "reason": "Office migration round is closed; no further fitting or development"
+    },
+    "evaluate": {
+      "rejected": true,
+      "reason": "Office migration round is closed; no further fitting or development"
+    }
+  }
+}

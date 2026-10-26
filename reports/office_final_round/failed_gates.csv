@@ -1,0 +1,13 @@
+model,day,trajectory,target,seconds,criterion,value,limit,passed
+source_causal_final,62,day62__excitation,temperature,21600,temperature_accuracy,0.7105641104023073,0.6740603077974444,False
+source_causal_final,62,day62__excitation,cooling_electricity_energy,21600,energy_accuracy,0.5689785717454002,0.2681898621950602,False
+source_causal_final,62,day62__excitation,fan_electricity_energy,21600,energy_accuracy,0.028646517293885985,0.014440601071968973,False
+source_causal_final,150,day150__excitation,gas_energy,21600,energy_accuracy,0.07939180208152807,0.05,False
+source_causal_final,150,day150__excitation,cooling_electricity_energy,21600,energy_accuracy,0.48436035401608984,0.3153043729340429,False
+source_causal_final,150,day150__excitation,fan_electricity_energy,21600,energy_accuracy,0.04052836305388379,0.01186224576791342,False
+source_causal_final,62,day62__guarded_rule,cooling_electricity_energy,21600,energy_accuracy,0.555174031848182,0.26775419416845486,False
+source_causal_final,62,day62__guarded_rule,fan_electricity_energy,21600,energy_accuracy,0.027927361784028177,0.014456252567498176,False
+source_causal_final,150,day150__guarded_rule,cooling_electricity_energy,21600,energy_accuracy,0.475879238525206,0.3116695198710717,False
+source_causal_final,150,day150__guarded_rule,fan_electricity_energy,21600,energy_accuracy,0.03989864808399388,0.011653389589369165,False
+source_causal_final,150,day150__excitation,gas,21600,active_support,2.0,10.0,False
+source_causal_final,150,day150__guarded_rule,gas,21600,active_support,0.0,10.0,False

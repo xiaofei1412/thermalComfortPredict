@@ -1,0 +1,11 @@
+{
+  "configured_max_nfev": 60,
+  "reported_nfev": 13,
+  "reported_nfev_definition": "SciPy counter excludes calls for numerical Jacobian approximation; these extra calls were not separately counted.",
+  "independent_reproduction_same_budget": true,
+  "training_origins": 32,
+  "training_native_rows": 34560,
+  "training_days": 12,
+  "no_loss_initialization_threshold_or_additional_candidate_search": true,
+  "comparison_limit": "Previous native joint used 128 training origins and 14 free parameters; this round uses 32 origins and 11 parameters. Do not attribute all changes exclusively to controller structure."
+}

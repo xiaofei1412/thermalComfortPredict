@@ -1,0 +1,28 @@
+{
+  "candidate": "source_causal_final",
+  "parameters": {
+    "R_out_air_K_per_kW": 12.52969565600061,
+    "R_air_mass_K_per_kW": 3.3648651520843713,
+    "C_air_kWh_per_K": 0.0066477121614184394,
+    "C_mass_kWh_per_K": 2.114101625966021,
+    "solar_air_m2": 0.12659059346280083,
+    "solar_mass_m2": 1.4126994465305247,
+    "internal_gain_multiplier": 1.9768567213232773,
+    "heating_power_gain": 1.235389291920136,
+    "cooling_power_gain": 0.9974563638946057,
+    "fan_cubic_kW": 0.2008229411111993,
+    "fan_linear_kW": 3.51760370139422e-05
+  },
+  "model_sha256": "ceb5276fa1e42369a85e81d7cfa844bbbbff652d05cd2bc02f5b516cfdd30d65",
+  "source_prior": {
+    "k": 0.1,
+    "Ti_seconds": 120.0,
+    "Ni": 0.9,
+    "two_flow_poles_per_second": [
+      -0.259487839385516,
+      -0.259487839385516
+    ]
+  },
+  "oracle_fields_used": false,
+  "note": "Effective parameters fitted in this simulator; not measured building parameters or real-office system identification."
+}
