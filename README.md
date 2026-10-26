@@ -8,6 +8,7 @@
 
 ## 项目入口
 
+- [第一版简要交付报告：做了什么、原因与后续方向](reports/DELIVERY_V1.md)
 - [PROJECT.md：项目总览、里程碑与阶段结果](PROJECT.md)
 - [正式预测基线结果](reports/baseline/REPORT.md)
 - [安装、运行与评测协议](docs/experiments/baseline.md)
