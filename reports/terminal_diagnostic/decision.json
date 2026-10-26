@@ -1,0 +1,15 @@
+{
+  "diagnostic_round_complete": true,
+  "retrained_model": false,
+  "deployment_candidate_selected": null,
+  "new_calibration_generated": false,
+  "new_scenario_evaluated": false,
+  "primary_controller": "guarded_rule",
+  "next_priority": "Validate a causal source-consistent PI and second-order air-flow forward model on development data before thermal/energy joint refitting",
+  "hypotheses": {
+    "H1": "Integral reconstruction error supported, but origin-only oracle has little 6h benefit",
+    "H2": "Only sparse boundary mismatches under observed temperature; future-mode oracle has little overall benefit",
+    "H3": "First-order mismatch supported; future-flow oracle strongly reduces fan energy error, not all thermal/energy error",
+    "H4": "Stream energy identity closes; constant-cp error is small here and its correction has little 6h benefit"
+  }
+}

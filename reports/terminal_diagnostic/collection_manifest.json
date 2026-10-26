@@ -1,0 +1,58 @@
+{
+  "created_UTC": "2026-10-26T06:39:26.125530+00:00",
+  "role": "development_diagnostic",
+  "fmu_sha256": "158008fa3b635280a67dfed8bab5804d1f9a96d218b467dfebab77e5cbf8b86a",
+  "collector_sha256": "3ae0a883ddac202c0449267b0cc9189b7d7a449fee84c9f5cb10c6f56c4a4432",
+  "protocol_sha256": "13c84459d38a0d4d16efd9e110223f3e2c9c6a02ebb537ad81ec5d82522ba8f8",
+  "plans": [
+    {
+      "day": 62,
+      "kind": "excitation",
+      "source": "/workspace/outputs/terminal-development/day62__excitation"
+    },
+    {
+      "day": 62,
+      "kind": "guarded_rule",
+      "source": "/workspace/outputs/native-rule-development/day62__guarded_rule"
+    },
+    {
+      "day": 150,
+      "kind": "excitation",
+      "source": "/workspace/outputs/terminal-development/day150__excitation"
+    },
+    {
+      "day": 150,
+      "kind": "guarded_rule",
+      "source": "/workspace/outputs/native-rule-development/day150__guarded_rule"
+    }
+  ],
+  "internal_variables": [
+    "mod.con.heaPI.I.y",
+    "mod.con.cooPI.I.y",
+    "mod.con.heaPI.y",
+    "mod.con.cooPI.y",
+    "mod.con.hysCoo.y",
+    "mod.con.yFan",
+    "mod.con.TSup",
+    "mod.con.oveTSetCoo.y",
+    "mod.fcu.fan.filter.x[1]",
+    "mod.fcu.fan.filter.x[2]",
+    "der(mod.fcu.fan.filter.x[1])",
+    "der(mod.fcu.fan.filter.x[2])",
+    "mod.fcu.fan.filter.u",
+    "mod.fcu.fan.filter.y",
+    "mod.fcu.fan.P",
+    "mod.fcu.fan.dpMachine",
+    "mod.fcu.fan.eta",
+    "mod.fcu.fan.eff.rho",
+    "mod.fcu.coi.h_in_a",
+    "mod.fcu.coi.h_internal_b",
+    "mod.fcu.coi.Xi_in_a[1]",
+    "mod.fcu.coi.Xi_internal_b[1]",
+    "mod.zon.returnAir.h_outflow",
+    "mod.fcu.supplyAir.h_outflow"
+  ],
+  "network_required": false,
+  "changed_fmu": false,
+  "changed_solver": false
+}

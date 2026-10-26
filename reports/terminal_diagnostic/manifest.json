@@ -1,0 +1,28 @@
+{
+  "created_UTC": "2026-10-26T06:57:13.395758+00:00",
+  "purpose": "diagnostic_only_no_deployment",
+  "code_sha256": {
+    "thermal_comfort/terminal_diagnostic.py": "638e34be9db31da84a767e42eb5eecc8e8e7fba91abf5dd3db3a1e7dd0d77f3d",
+    "scripts/collect_terminal_diagnostic.py": "3ae0a883ddac202c0449267b0cc9189b7d7a449fee84c9f5cb10c6f56c4a4432",
+    "docs/experiments/terminal_diagnostic.md": "13c84459d38a0d4d16efd9e110223f3e2c9c6a02ebb537ad81ec5d82522ba8f8"
+  },
+  "model_sha256": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d",
+  "collection_manifest_sha256": "060b0f4cd2c012e14ca98b098b1aee69056a4b38cefb5d123d053b006f44899f",
+  "collection_summary_sha256": "e220e07463132defe247a8b510120e163bca8ccd0eca7de8c38e0ef0e95fd8d5",
+  "variants": [
+    "baseline",
+    "initial_PI_oracle",
+    "cooling_mode_oracle",
+    "flow_oracle",
+    "enthalpy_correction_oracle"
+  ],
+  "refitted_parameters": false,
+  "future_oracles": [
+    "cooling_mode_oracle",
+    "flow_oracle",
+    "enthalpy_correction_oracle"
+  ],
+  "initial_state_oracle": "initial_PI_oracle",
+  "calibration_not_generated": true,
+  "new_scenario_run": false
+}

@@ -1,0 +1,39 @@
+{
+  "raw_output_sha256": {
+    "outputs\\terminal-diagnostic-replay\\manifest.json": "060b0f4cd2c012e14ca98b098b1aee69056a4b38cefb5d123d053b006f44899f",
+    "outputs\\terminal-diagnostic-replay\\summary.json": "e220e07463132defe247a8b510120e163bca8ccd0eca7de8c38e0ef0e95fd8d5",
+    "outputs\\terminal-diagnostic-analysis\\manifest.json": "35e8fccbc204ca6c14c62d540d040c02a1866960f0a40a9c806307694d18abca",
+    "outputs\\terminal-diagnostic-analysis\\audit.json": "38ec17c110431694e084001ae6e99415a6f0db703b335bc43cf9fea4aed7a86f",
+    "outputs\\terminal-diagnostic-analysis\\component_checks.json": "45bf90735824dbf95fe5351c425387161feae997980c5f9da696abbf10b23575",
+    "outputs\\terminal-diagnostic-analysis\\metrics.csv": "6482d1867ba8de6939b681e398837d2d37e5d62e5934433e9e903671a82c2755",
+    "outputs\\terminal-diagnostic-analysis\\paired_6h_errors.csv": "6363918c04634d2ff3fe46df1c2fd20eef4e48e7ce504d3fa8dfc6bc61f3ace1"
+  },
+  "source_sha256": {
+    "thermal_comfort/terminal_diagnostic.py": "638e34be9db31da84a767e42eb5eecc8e8e7fba91abf5dd3db3a1e7dd0d77f3d",
+    "scripts/collect_terminal_diagnostic.py": "3ae0a883ddac202c0449267b0cc9189b7d7a449fee84c9f5cb10c6f56c4a4432",
+    "docs/experiments/terminal_diagnostic.md": "13c84459d38a0d4d16efd9e110223f3e2c9c6a02ebb537ad81ec5d82522ba8f8",
+    "scripts/verify_terminal_diagnostic.py": "06d2ffffb0b81a13e93e0774716a126681cf096914410691a8a183681e04bab6",
+    "scripts/report_terminal_diagnostic.py": "e9c223fa4dcdb352228d6b748fb1577b6174ea1d0369337d2c478325b5269c63",
+    "tests/test_terminal_diagnostic.py": "f7585fa9ae5622e8226e233ee10d353deeffd3a1df0820bb583ce13221339c68"
+  },
+  "source_fmu_sha256": "158008fa3b635280a67dfed8bab5804d1f9a96d218b467dfebab77e5cbf8b86a",
+  "unchanged_native_model_sha256": "71de604f98e68f599f55f5b479866707857660b26eb83f76989080ded476517d",
+  "archived_sha256": {
+    "additional_equation_checks.json": "3e6971b7c33c92d58ad44a3e3868e1877a507533fa9d3c28b69493bdb205ca3d",
+    "audit.json": "38ec17c110431694e084001ae6e99415a6f0db703b335bc43cf9fea4aed7a86f",
+    "collection_failures.json": "98a8f23105de0380ddd0e6d08a05a0667844c975885b7254a73dc3880257fe78",
+    "collection_manifest.json": "060b0f4cd2c012e14ca98b098b1aee69056a4b38cefb5d123d053b006f44899f",
+    "collection_summary.json": "e220e07463132defe247a8b510120e163bca8ccd0eca7de8c38e0ef0e95fd8d5",
+    "compiled_parameters.json": "ad4131d8847b074d1af7b0a8ac3cd8154c3ee5d79c7af02f7945090108ad6bf1",
+    "component_checks.json": "d26602885a39b7ff54c8179ffeb1f82279a6b18090e0c51aa3ac6c3a16f8c569",
+    "component_replay.png": "10389335d6f68ee9dd4324b2d0f0328dbc0e1339e9b7e644aa34858ad9228e09",
+    "data_ledger.json": "991087efda2ce506fa68ccffcc02da288a153a9d8544700cac1937034c019078",
+    "decision.json": "9246ab30f9dfdd26d4bf78ef761c5ffb5aa6cdb21fb961bca2369d05cc8b3669",
+    "manifest.json": "fa74fb0d1a2171eab4249054d68ba5dbaad7bbcd028a9e1c4183335d3a723e9c",
+    "metrics.csv": "6482d1867ba8de6939b681e398837d2d37e5d62e5934433e9e903671a82c2755",
+    "oracle_ratios.png": "5e724e94bc6e2288022d11179ab334907a3a1822ffd92572d696e9312b844820",
+    "paired_6h_errors.csv": "6363918c04634d2ff3fe46df1c2fd20eef4e48e7ce504d3fa8dfc6bc61f3ace1",
+    "results_table.md": "89ec8c570b264ff17cac592b655fcebbeea0c06cc9adb77eaa09b2025fe96d74"
+  },
+  "note": "JSON archives normalized to UTF-8 LF. Internal trajectories and oracle forecasts are diagnostic evidence, not deployment qualification."
+}

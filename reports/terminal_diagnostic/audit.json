@@ -1,0 +1,66 @@
+{
+  "created_UTC": "2026-10-26T06:57:19.982469+00:00",
+  "integrity_passed": true,
+  "diagnostic_only": true,
+  "source_sha256": {
+    "thermal_comfort/terminal_diagnostic.py": "638e34be9db31da84a767e42eb5eecc8e8e7fba91abf5dd3db3a1e7dd0d77f3d",
+    "scripts/collect_terminal_diagnostic.py": "3ae0a883ddac202c0449267b0cc9189b7d7a449fee84c9f5cb10c6f56c4a4432",
+    "docs/experiments/terminal_diagnostic.md": "13c84459d38a0d4d16efd9e110223f3e2c9c6a02ebb537ad81ec5d82522ba8f8",
+    "scripts/verify_terminal_diagnostic.py": "06d2ffffb0b81a13e93e0774716a126681cf096914410691a8a183681e04bab6",
+    "tests/test_terminal_diagnostic.py": "f7585fa9ae5622e8226e233ee10d353deeffd3a1df0820bb583ce13221339c68"
+  },
+  "collection_manifest_sha256": "060b0f4cd2c012e14ca98b098b1aee69056a4b38cefb5d123d053b006f44899f",
+  "analysis_manifest_sha256": "35e8fccbc204ca6c14c62d540d040c02a1866960f0a40a9c806307694d18abca",
+  "public_replay_audits": [
+    {
+      "day": 62,
+      "kind": "excitation",
+      "public_samples_exact": 8641,
+      "actions_exact": 288,
+      "enthalpy_balance_max_kW": 8.881784197001252e-16,
+      "source_summary_sha256": "ec58f36f48546bf7d8bd2f5ca9ac41eea10a6a14b7f8a6e4ef2ec693cd860101",
+      "native_sha256": "b1023b67f233fdcbe16a8576f5ed483b2c12a400681aeacb7f930ddd4109c869"
+    },
+    {
+      "day": 62,
+      "kind": "guarded_rule",
+      "public_samples_exact": 8641,
+      "actions_exact": 288,
+      "enthalpy_balance_max_kW": 8.881784197001252e-16,
+      "source_summary_sha256": "c8d3ded62abe321dfbb6c0e853601cb41eeb31b312e27742016ce36cd40f27bb",
+      "native_sha256": "18c639764ed05641d15e0312bc06b2cb85ee4d796e58caa8b8553c0c849c75ab"
+    },
+    {
+      "day": 150,
+      "kind": "excitation",
+      "public_samples_exact": 8641,
+      "actions_exact": 288,
+      "enthalpy_balance_max_kW": 4.440892098500626e-16,
+      "source_summary_sha256": "3cc5b87d07eb4ed2ab1cb838272677ccdefe0656c3b8ad8dfc69f1a39e67cc2b",
+      "native_sha256": "43da8c218ee801d2788ba46409477e637ab5305a1b23820699f7b03b9f4f6551"
+    },
+    {
+      "day": 150,
+      "kind": "guarded_rule",
+      "public_samples_exact": 8641,
+      "actions_exact": 288,
+      "enthalpy_balance_max_kW": 4.440892098500626e-16,
+      "source_summary_sha256": "24340badd151cd1880d2a46abca70b670bdffa0d83dee3f1b7f9edddc14b4ac8",
+      "native_sha256": "f12d804010f8f38521a76675ec9b332c4425310263d494a99cdeb0f0cbd7b16f"
+    }
+  ],
+  "independent_recompute_byte_identical": true,
+  "baseline_metric_rows_exact": 140,
+  "diagnostic_metric_rows": 700,
+  "paired_6h_rows": 1260,
+  "refitted_parameters": false,
+  "old_freezes_valid": true,
+  "calibration_not_generated": true,
+  "new_scenario_run": false,
+  "oracle_variants_not_deployment_candidates": [
+    "initial_PI_oracle",
+    "cooling_mode_oracle",
+    "flow_oracle",
+    "enthalpy_correction_oracle"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "registered_development_dates": [
+    62,
+    150
+  ],
+  "registered_policies": [
+    "excitation",
+    "guarded_rule"
+  ],
+  "full_three_day_replays": 4,
+  "replayed_evaluation_days": 12,
+  "unique_weather_calendar_days": 6,
+  "decision_intervals": 1152,
+  "native_intervals": 34560,
+  "native_samples": 34564,
+  "additional_initialization_days_per_replay": 7,
+  "failed_collection_attempts_counted_as_independent_evidence": false,
+  "new_training_rows": 0,
+  "new_calibration_rows": 0,
+  "new_test_rows": 0,
+  "overlapping_forecast_origins": 252,
+  "oracle_variants": 4,
+  "main_metric_rows": 700,
+  "paired_6h_rows": 1260,
+  "note": "Failed collection attempts and initialization have additional computational cost; 12 evaluation days are not total simulation cost or independent climates."
+}

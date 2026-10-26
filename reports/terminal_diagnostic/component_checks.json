@@ -1,0 +1,154 @@
+[
+  {
+    "day": 62,
+    "trajectory": "day62__excitation",
+    "observed_samples": 8161,
+    "active_flow_samples": 6902,
+    "PI_inverse_RMSE_output_units": [
+      0.2672516524298994,
+      0.5831611569951715
+    ],
+    "PI_source_teacher_RMSE_output_units": [
+      0.00016082800761154723,
+      1.5837359559404424e-05
+    ],
+    "PI_zero_initial_teacher_RMSE_output_units": [
+      0.003557111514120764,
+      1.5837359559404424e-05
+    ],
+    "PI_inverse_error_above_0_05_fraction": 0.8182820732753339,
+    "cooling_mode_mismatch_samples": 2,
+    "schedule_mismatch_samples": 6,
+    "first_order_fan_teacher_RMSE_fraction": 0.020625583257881473,
+    "source_second_order_fan_teacher_RMSE_fraction": 0.0018524871007579433,
+    "source_filter_output_closure_max_fraction": 5.551115123125783e-17,
+    "source_filter_dx1_closure_max": 4.434217478876262e-17,
+    "source_filter_dx2_closure_max": 2.6871484976932238e-17,
+    "source_filter_pole_parameter_closure": 0.0,
+    "stream_enthalpy_balance_max_kW": 4.440892098500626e-16,
+    "constant_cp_temperature_balance_RMSE_kW": 0.0033439917544560156,
+    "constant_cp_temperature_balance_bias_kW": -0.0007288200571580861,
+    "coil_inlet_water_mass_fraction_range": [
+      0.0010279121972273757,
+      0.004525319655313421
+    ],
+    "coil_outlet_water_mass_fraction_range": [
+      0.0010279121972273757,
+      0.004525319655313421
+    ]
+  },
+  {
+    "day": 62,
+    "trajectory": "day62__guarded_rule",
+    "observed_samples": 8161,
+    "active_flow_samples": 6769,
+    "PI_inverse_RMSE_output_units": [
+      0.25775247191600337,
+      0.5795780007024515
+    ],
+    "PI_source_teacher_RMSE_output_units": [
+      0.00011801806279765046,
+      1.5696777632146925e-05
+    ],
+    "PI_zero_initial_teacher_RMSE_output_units": [
+      0.00909707463907417,
+      1.5696777632146925e-05
+    ],
+    "PI_inverse_error_above_0_05_fraction": 0.822386962382061,
+    "cooling_mode_mismatch_samples": 2,
+    "schedule_mismatch_samples": 6,
+    "first_order_fan_teacher_RMSE_fraction": 0.013702215078395526,
+    "source_second_order_fan_teacher_RMSE_fraction": 0.0012870927496801067,
+    "source_filter_output_closure_max_fraction": 5.551115123125783e-17,
+    "source_filter_dx1_closure_max": 4.7040821758714824e-17,
+    "source_filter_dx2_closure_max": 2.6654432784198323e-17,
+    "source_filter_pole_parameter_closure": 0.0,
+    "stream_enthalpy_balance_max_kW": 8.881784197001252e-16,
+    "constant_cp_temperature_balance_RMSE_kW": 0.003283845884868211,
+    "constant_cp_temperature_balance_bias_kW": -0.0006853763799660239,
+    "coil_inlet_water_mass_fraction_range": [
+      0.0010279582142231518,
+      0.004525322397680986
+    ],
+    "coil_outlet_water_mass_fraction_range": [
+      0.0010279582142231518,
+      0.004525322397680986
+    ]
+  },
+  {
+    "day": 150,
+    "trajectory": "day150__excitation",
+    "observed_samples": 8161,
+    "active_flow_samples": 4057,
+    "PI_inverse_RMSE_output_units": [
+      0.39245102625312306,
+      0.36585269940661225
+    ],
+    "PI_source_teacher_RMSE_output_units": [
+      2.9539491674207868e-05,
+      3.451776219471006e-05
+    ],
+    "PI_zero_initial_teacher_RMSE_output_units": [
+      2.9539491674207868e-05,
+      3.451776219471006e-05
+    ],
+    "PI_inverse_error_above_0_05_fraction": 0.8891679941183679,
+    "cooling_mode_mismatch_samples": 3,
+    "schedule_mismatch_samples": 6,
+    "first_order_fan_teacher_RMSE_fraction": 0.02151446618571378,
+    "source_second_order_fan_teacher_RMSE_fraction": 0.0022418989336789926,
+    "source_filter_output_closure_max_fraction": 5.551115123125783e-17,
+    "source_filter_dx1_closure_max": 4.6065886836425124e-17,
+    "source_filter_dx2_closure_max": 2.672939520003033e-17,
+    "source_filter_pole_parameter_closure": 0.0,
+    "stream_enthalpy_balance_max_kW": 4.440892098500626e-16,
+    "constant_cp_temperature_balance_RMSE_kW": 0.006595988223752016,
+    "constant_cp_temperature_balance_bias_kW": 0.005373722877700647,
+    "coil_inlet_water_mass_fraction_range": [
+      0.005349542814497023,
+      0.007801693965577141
+    ],
+    "coil_outlet_water_mass_fraction_range": [
+      0.005349542814497023,
+      0.007801693965577141
+    ]
+  },
+  {
+    "day": 150,
+    "trajectory": "day150__guarded_rule",
+    "observed_samples": 8161,
+    "active_flow_samples": 3716,
+    "PI_inverse_RMSE_output_units": [
+      0.39397179078562444,
+      0.3687458963966085
+    ],
+    "PI_source_teacher_RMSE_output_units": [
+      6.107411843450617e-06,
+      3.425162771212098e-05
+    ],
+    "PI_zero_initial_teacher_RMSE_output_units": [
+      6.107411843450617e-06,
+      3.425162771212098e-05
+    ],
+    "PI_inverse_error_above_0_05_fraction": 0.8802842788873912,
+    "cooling_mode_mismatch_samples": 3,
+    "schedule_mismatch_samples": 6,
+    "first_order_fan_teacher_RMSE_fraction": 0.019746894068475556,
+    "source_second_order_fan_teacher_RMSE_fraction": 0.002188014136174264,
+    "source_filter_output_closure_max_fraction": 5.551115123125783e-17,
+    "source_filter_dx1_closure_max": 4.393136380934429e-17,
+    "source_filter_dx2_closure_max": 2.7175358046759718e-17,
+    "source_filter_pole_parameter_closure": 0.0,
+    "stream_enthalpy_balance_max_kW": 4.440892098500626e-16,
+    "constant_cp_temperature_balance_RMSE_kW": 0.006778229395903386,
+    "constant_cp_temperature_balance_bias_kW": 0.0058979910174238506,
+    "coil_inlet_water_mass_fraction_range": [
+      0.005349674911912615,
+      0.007801491535252003
+    ],
+    "coil_outlet_water_mass_fraction_range": [
+      0.005349674911912615,
+      0.007801491535252003
+    ]
+  }
+]

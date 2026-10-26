@@ -1,0 +1,8 @@
+{
+  "cwd": "Initial standalone TestCase required version.txt in its working directory; preserved outputs/terminal-diagnostic-data-cwd-failed",
+  "array_filter": "PyFMI wildcard filters interpreted Modelica array brackets; escaped literal brackets; preserved outputs/terminal-diagnostic-data-filter-failed",
+  "first_endpoint": "First captured simulate result was after applying a new action; original store uses previous left endpoint. Read pre-action FMU state and discard each new interval start; round-trip CSV parsing used",
+  "failed_directory": "outputs/terminal-diagnostic-data retained in place after Windows denied renaming; final successful replay isolated in outputs/terminal-diagnostic-replay",
+  "source_checks": "Coil inlet enthalpy differs from external return stream; power meter uses external return. Filter states are normalized flow, not multiplied by cr. Corrected against compiled derivatives before running fixed ablations",
+  "no_algorithm_tuning": "No new candidate, loss, parameter fit or capability-threshold change was made"
+}

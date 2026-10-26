@@ -1,0 +1,58 @@
+[
+  {
+    "day": 62,
+    "kind": "excitation",
+    "schedule_mismatch_times_seconds": [
+      5385600.0,
+      5421600.0,
+      5472000.0,
+      5508000.0,
+      5558400.0,
+      5594400.0
+    ],
+    "fan_power_given_true_flow_RMSE_kW": 0.0018439573220248963,
+    "fan_power_given_true_flow_bias_kW": -0.0009899027084844956
+  },
+  {
+    "day": 62,
+    "kind": "guarded_rule",
+    "schedule_mismatch_times_seconds": [
+      5385600.0,
+      5421600.0,
+      5472000.0,
+      5508000.0,
+      5558400.0,
+      5594400.0
+    ],
+    "fan_power_given_true_flow_RMSE_kW": 0.001837945209164954,
+    "fan_power_given_true_flow_bias_kW": -0.0009642927434700107
+  },
+  {
+    "day": 150,
+    "kind": "excitation",
+    "schedule_mismatch_times_seconds": [
+      12988800.0,
+      13024800.0,
+      13075200.0,
+      13111200.0,
+      13161600.0,
+      13197600.0
+    ],
+    "fan_power_given_true_flow_RMSE_kW": 0.0014490224962416139,
+    "fan_power_given_true_flow_bias_kW": -0.0007538832501245613
+  },
+  {
+    "day": 150,
+    "kind": "guarded_rule",
+    "schedule_mismatch_times_seconds": [
+      12988800.0,
+      13024800.0,
+      13075200.0,
+      13111200.0,
+      13161600.0,
+      13197600.0
+    ],
+    "fan_power_given_true_flow_RMSE_kW": 0.0014226885297700474,
+    "fan_power_given_true_flow_bias_kW": -0.0007356480434933989
+  }
+]
