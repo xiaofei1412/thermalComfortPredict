@@ -1,0 +1,245 @@
+{
+  "scope": "workbench_smoke_not_research_evaluation",
+  "runs": [
+    {
+      "id": "ad02910ce120",
+      "scene": "cool",
+      "steps": 4,
+      "metrics": {
+        "energy_kWh": 2.572915057274989,
+        "energy_kWh_m2": 0.013400599256640567,
+        "boptest_energy_kWh_m2": 0.013400609977119973,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.0033970546291999136,
+        "emissions_kg_m2": 0.0022379018661790357
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 4.336808689942018e-19,
+        "emis_tot": 0.0
+      },
+      "comparison_valid": null,
+      "provenance": {
+        "engine": "BOPTEST",
+        "version": "0.9.0",
+        "case": "bestest_hydronic_heat_pump",
+        "start_s": 5472000,
+        "warmup_s": 604800,
+        "area_m2": 192,
+        "step_s": 900,
+        "temperature_kind": "operative",
+        "energy_kind": "electricity",
+        "role_semantics": "virtual_control_intent_only",
+        "rule": "demo_schedule_guard_v1; not frozen research MPC",
+        "code_sha256": {
+          "workbench.py": "b483535bc235a6b6d6ff7671e5f676b14096871bdd43f11874e48e1913360449",
+          "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "index.html": "60dd67b4f9b43bae0dbc5c7d533000a7a1ad81bb76867c697a3f3640df3d031f",
+          "app.js": "9d96e1c86b11f78dd67ba38136b2f53ea48d37a48fd9ef6d18dc68e16ea7757f",
+          "style.css": "b1544af2053c7802fa12c990ec935f16069f230a57f87d98ffe8243a3c78613a"
+        }
+      }
+    },
+    {
+      "id": "4f98d784ba97",
+      "scene": "cool",
+      "steps": 4,
+      "metrics": {
+        "energy_kWh": 0.007614738841330925,
+        "energy_kWh_m2": 3.9660098131931905e-05,
+        "boptest_energy_kWh_m2": 3.96601298600104e-05,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 1.0053842919512638e-05,
+        "emissions_kg_m2": 6.6232416866217385e-06
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 8.470329472543003e-22
+      },
+      "comparison_valid": true,
+      "provenance": {
+        "engine": "BOPTEST",
+        "version": "0.9.0",
+        "case": "bestest_hydronic_heat_pump",
+        "start_s": 5472000,
+        "warmup_s": 604800,
+        "area_m2": 192,
+        "step_s": 900,
+        "temperature_kind": "operative",
+        "energy_kind": "electricity",
+        "role_semantics": "virtual_control_intent_only",
+        "rule": "demo_schedule_guard_v1; not frozen research MPC",
+        "code_sha256": {
+          "workbench.py": "b483535bc235a6b6d6ff7671e5f676b14096871bdd43f11874e48e1913360449",
+          "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "index.html": "60dd67b4f9b43bae0dbc5c7d533000a7a1ad81bb76867c697a3f3640df3d031f",
+          "app.js": "9d96e1c86b11f78dd67ba38136b2f53ea48d37a48fd9ef6d18dc68e16ea7757f",
+          "style.css": "b1544af2053c7802fa12c990ec935f16069f230a57f87d98ffe8243a3c78613a"
+        }
+      }
+    },
+    {
+      "id": "46e03f67437b",
+      "scene": "warm",
+      "steps": 4,
+      "metrics": {
+        "energy_kWh": 1.0777234827578475,
+        "energy_kWh_m2": 0.005613143139363789,
+        "boptest_energy_kWh_m2": 0.005613147629878301,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.0014229329241741493,
+        "emissions_kg_m2": 0.0009373956541896763
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 8.673617379884035e-19,
+        "tdis_tot": 0.0,
+        "cost_tot": 2.168404344971009e-19,
+        "emis_tot": 0.0
+      },
+      "comparison_valid": null,
+      "provenance": {
+        "engine": "BOPTEST",
+        "version": "0.9.0",
+        "case": "bestest_hydronic_heat_pump",
+        "start_s": 12729600,
+        "warmup_s": 604800,
+        "area_m2": 192,
+        "step_s": 900,
+        "temperature_kind": "operative",
+        "energy_kind": "electricity",
+        "role_semantics": "virtual_control_intent_only",
+        "rule": "demo_schedule_guard_v1; not frozen research MPC",
+        "code_sha256": {
+          "workbench.py": "b483535bc235a6b6d6ff7671e5f676b14096871bdd43f11874e48e1913360449",
+          "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "index.html": "60dd67b4f9b43bae0dbc5c7d533000a7a1ad81bb76867c697a3f3640df3d031f",
+          "app.js": "9d96e1c86b11f78dd67ba38136b2f53ea48d37a48fd9ef6d18dc68e16ea7757f",
+          "style.css": "b1544af2053c7802fa12c990ec935f16069f230a57f87d98ffe8243a3c78613a"
+        }
+      }
+    },
+    {
+      "id": "48e65bd1e293",
+      "scene": "warm",
+      "steps": 4,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "comparison_valid": true,
+      "provenance": {
+        "engine": "BOPTEST",
+        "version": "0.9.0",
+        "case": "bestest_hydronic_heat_pump",
+        "start_s": 12729600,
+        "warmup_s": 604800,
+        "area_m2": 192,
+        "step_s": 900,
+        "temperature_kind": "operative",
+        "energy_kind": "electricity",
+        "role_semantics": "virtual_control_intent_only",
+        "rule": "demo_schedule_guard_v1; not frozen research MPC",
+        "code_sha256": {
+          "workbench.py": "b483535bc235a6b6d6ff7671e5f676b14096871bdd43f11874e48e1913360449",
+          "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "index.html": "60dd67b4f9b43bae0dbc5c7d533000a7a1ad81bb76867c697a3f3640df3d031f",
+          "app.js": "9d96e1c86b11f78dd67ba38136b2f53ea48d37a48fd9ef6d18dc68e16ea7757f",
+          "style.css": "b1544af2053c7802fa12c990ec935f16069f230a57f87d98ffe8243a3c78613a"
+        }
+      }
+    },
+    {
+      "id": "3fca73bfe8ac",
+      "scene": "cold",
+      "steps": 4,
+      "metrics": {
+        "energy_kWh": 2.526908560208529,
+        "energy_kWh_m2": 0.013160982084419423,
+        "boptest_energy_kWh_m2": 0.01316099261320509,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.00333631162744749,
+        "emissions_kg_m2": 0.0021978857664052497
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 4.336808689942018e-19,
+        "emis_tot": 4.336808689942018e-19
+      },
+      "comparison_valid": null,
+      "provenance": {
+        "engine": "BOPTEST",
+        "version": "0.9.0",
+        "case": "bestest_hydronic_heat_pump",
+        "start_s": 27244800,
+        "warmup_s": 604800,
+        "area_m2": 192,
+        "step_s": 900,
+        "temperature_kind": "operative",
+        "energy_kind": "electricity",
+        "role_semantics": "virtual_control_intent_only",
+        "rule": "demo_schedule_guard_v1; not frozen research MPC",
+        "code_sha256": {
+          "workbench.py": "b483535bc235a6b6d6ff7671e5f676b14096871bdd43f11874e48e1913360449",
+          "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "index.html": "60dd67b4f9b43bae0dbc5c7d533000a7a1ad81bb76867c697a3f3640df3d031f",
+          "app.js": "9d96e1c86b11f78dd67ba38136b2f53ea48d37a48fd9ef6d18dc68e16ea7757f",
+          "style.css": "b1544af2053c7802fa12c990ec935f16069f230a57f87d98ffe8243a3c78613a"
+        }
+      }
+    },
+    {
+      "id": "389b9df4e5ef",
+      "scene": "cold",
+      "steps": 4,
+      "metrics": {
+        "energy_kWh": 0.007311016002400573,
+        "energy_kWh_m2": 3.8078208345836315e-05,
+        "boptest_energy_kWh_m2": 3.807823880840299e-05,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 9.652833537930158e-06,
+        "emissions_kg_m2": 6.3590658810033e-06
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 6.776263578034403e-21,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.6940658945086007e-21,
+        "emis_tot": 8.470329472543003e-22
+      },
+      "comparison_valid": true,
+      "provenance": {
+        "engine": "BOPTEST",
+        "version": "0.9.0",
+        "case": "bestest_hydronic_heat_pump",
+        "start_s": 27244800,
+        "warmup_s": 604800,
+        "area_m2": 192,
+        "step_s": 900,
+        "temperature_kind": "operative",
+        "energy_kind": "electricity",
+        "role_semantics": "virtual_control_intent_only",
+        "rule": "demo_schedule_guard_v1; not frozen research MPC",
+        "code_sha256": {
+          "workbench.py": "b483535bc235a6b6d6ff7671e5f676b14096871bdd43f11874e48e1913360449",
+          "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "index.html": "60dd67b4f9b43bae0dbc5c7d533000a7a1ad81bb76867c697a3f3640df3d031f",
+          "app.js": "9d96e1c86b11f78dd67ba38136b2f53ea48d37a48fd9ef6d18dc68e16ea7757f",
+          "style.css": "b1544af2053c7802fa12c990ec935f16069f230a57f87d98ffe8243a3c78613a"
+        }
+      }
+    }
+  ]
+}

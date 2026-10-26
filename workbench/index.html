@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thermal Lab · 房间工作台</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-icon">◈</span> THERMAL LAB <span class="brand-sub">房间工作台</span></a><div class="topmeta"><span class="dot"></span> 本地仿真 <span class="version">V0.1</span></div></header>
+<main>
+  <section class="intro"><div><div class="eyebrow">INTERACTIVE BUILDING LAB</div><h1>亲手控制一个房间。</h1><p>改变需求，推进时间，观察建筑如何回应。</p></div><button id="office" class="quiet">办公室边界 <span>↗</span></button></section>
+  <div class="workspace">
+    <aside class="controls panel">
+      <div class="panel-heading"><h2>实验设置</h2><span class="section-number">01</span></div>
+      <label class="field-label" for="scene">新会话场景</label><select id="scene"><option value="cool">早春 · 第63天</option><option value="warm">暖季 · 第147天</option><option value="cold">晚秋 · 第315天</option></select>
+      <p class="hint">统一从 08:00 开始，七天预热。重建会恢复同一起点。</p><button id="create" class="primary wide">＋ 新建仿真会话</button>
+      <div class="divider"></div><h2>谁来决定供暖？</h2><div class="segmented"><button id="manual" class="active">由我控制</button><button id="rule">演示规则</button></div>
+      <div class="target-label"><label for="target">我的供暖目标</label><output id="target-value">21.0<span> °C</span></output></div><input id="target" aria-label="供暖目标" type="range" min="18" max="23.25" value="21" step="0.25"><div class="range-labels"><span>18 °C</span><span>23.25 °C</span></div>
+      <p id="mode-note" class="hint">目标经变化速率限制后下发，室温会滞后响应。</p>
+      <div class="divider"></div><div class="panel-heading"><h2>虚拟住户需求</h2><span class="tag">角色扮演</span></div>
+      <div class="people-tabs"><button id="person-a" class="active">● 住户 A</button><button id="person-b">● 住户 B</button></div>
+      <div class="preference-buttons"><button data-pref="warmer">更暖</button><button data-pref="hold" class="active">保持</button><button data-pref="cooler">更凉</button></div>
+      <p id="preference-summary" class="hint">A：保持　B：保持</p><p id="conflict" class="conflict" hidden>需求冲突 · 请由你裁决供暖目标</p><p class="hint small">只记录虚拟控制意图，不是实际热感觉标签，也不改变仿真人数或人体散热。</p>
+      <div class="divider"></div><button id="step" class="primary wide" disabled>应用需求 · 推进 15 分钟 <span>→</span></button><div class="button-pair"><button id="run" disabled>快进 4 小时</button><button id="pause" disabled>步后暂停</button></div><button id="end" class="text-button wide" disabled>结束并保存会话</button>
+    </aside>
+    <section class="room-column">
+      <div class="room-card panel">
+        <div class="room-heading"><div><span id="view-badge" class="live-badge">尚未连接会话</span><h2>住宅 · 单一热区</h2></div><div class="sim-clock"><strong id="clock">--:--</strong><span id="sim-day">等待开始</span></div></div>
+        <div class="weather"><span>☀ <span id="outdoor">--</span> °C 室外</span><span>太阳辐照 <b id="solar">--</b> W/m²</span></div>
+        <svg id="room" viewBox="0 0 680 400" role="group" aria-label="单热区房间示意，点击住户选择需求，点击热泵查看供暖设定">
+          <defs><pattern id="floor" width="70" height="70" patternUnits="userSpaceOnUse"><rect width="70" height="70" fill="#f0eee5"/><path d="M0 0H70V70" fill="none" stroke="#e5e2d7" stroke-width="1"/></pattern><linearGradient id="window-light" x1="0" y1="0" x2="0.4" y2="1"><stop stop-color="#f3d68d" stop-opacity=".5"/><stop offset="1" stop-color="#f3d68d" stop-opacity="0"/></linearGradient></defs>
+          <path d="M85 45H595V330H85Z" fill="#e2e3d8"/><path d="M98 59H582V316H98Z" fill="url(#floor)"/><path d="M100 63H580V78H100Z" fill="#d2d5c8"/><path d="M98 78H112V316H98Z" fill="#dcdfd2"/><path d="M260 65H415L495 280H225Z" fill="url(#window-light)"/>
+          <rect x="265" y="45" width="150" height="22" rx="3" fill="#bed2cd" stroke="#9eada4"/><path d="M315 46V66M365 46V66" stroke="#eff5ef" stroke-width="4"/>
+          <rect x="143" y="98" width="145" height="80" rx="12" fill="#bac6b2"/><rect x="156" y="110" width="56" height="55" rx="9" fill="#cfdbc4"/><rect x="220" y="110" width="56" height="55" rx="9" fill="#cfdbc4"/><path d="M151 176V187M278 176V187" stroke="#7b8b72" stroke-width="5"/>
+          <rect x="153" y="217" width="115" height="50" rx="20" fill="#d9bd92"/><rect x="183" y="225" width="36" height="23" rx="3" fill="#fcf7e7"/><circle cx="238" cy="238" r="9" fill="#728e77"/>
+          <rect x="465" y="95" width="82" height="130" rx="8" fill="#d4b991"/><rect x="475" y="110" width="62" height="34" rx="3" fill="#f7f0da"/><rect x="479" y="165" width="55" height="40" rx="4" fill="#b0bdb3"/>
+          <g id="heat-device" class="svg-button" tabindex="0" role="button" aria-label="查看供暖设备"><rect x="342" y="270" width="100" height="40" rx="8" fill="#fffaf0" stroke="#adbaa5" stroke-width="2"/><path d="M357 281V300M369 281V300M381 281V300M393 281V300M405 281V300M417 281V300" stroke="#a6b89b" stroke-width="3"/><g id="heat-waves" class="heat-waves" hidden><path d="M365 262Q350 251 365 240T365 218M392 262Q377 251 392 240T392 218M419 262Q404 251 419 240T419 218" fill="none" stroke="#c9884a" stroke-width="3"/></g><text x="392" y="347" text-anchor="middle" class="svg-label">热泵供暖 · 点击查看</text></g>
+          <g id="avatar-a" class="svg-button" tabindex="0" role="button" aria-label="选择住户A"><circle class="person-halo" cx="324" cy="153" r="31"/><ellipse cx="324" cy="169" rx="18" ry="22" fill="#778c79"/><circle cx="324" cy="139" r="13" fill="#e0bb94"/><text x="324" y="213" text-anchor="middle" class="svg-label">A · <tspan id="pref-a">保持</tspan></text></g>
+          <g id="avatar-b" class="svg-button" tabindex="0" role="button" aria-label="选择住户B"><circle class="person-halo" cx="431" cy="171" r="31"/><ellipse cx="431" cy="187" rx="18" ry="22" fill="#af8a70"/><circle cx="431" cy="157" r="13" fill="#e8c6a1"/><text x="431" y="231" text-anchor="middle" class="svg-label">B · <tspan id="pref-b">保持</tspan></text></g>
+          <text x="110" y="369" class="room-footnote">均匀单热区示意 · 不表示座位温差或真实房间布局</text>
+        </svg>
+        <div class="room-stats"><div><span>实测操作温度</span><strong id="temperature">--<small> °C</small></strong></div><div><span>实际供暖设定</span><strong id="applied">--<small> °C</small></strong></div><div><span>瞬时电功率</span><strong id="power">--<small> kW</small></strong></div></div>
+        <div class="status-line"><span id="status-dot" class="dot"></span><p id="status" role="status" aria-live="polite">准备就绪 · 新建会话后才会显示真实测量</p></div>
+      </div>
+      <div class="timeline panel"><div class="panel-heading"><h2>这个房间，刚刚发生了什么</h2><div class="legend"><span class="legend-temp">温度</span><span class="legend-target">设定</span><span class="legend-band">日程上下界</span></div></div><svg id="trend" viewBox="0 0 660 135" aria-label="本会话实际操作温度与设定值轨迹"></svg><div class="timeline-bottom"><span id="elapsed">还没有推进时间</span><span id="bound">温度指标：操作温度</span></div></div>
+    </section>
+    <aside class="journal-column">
+      <section class="panel results"><div class="panel-heading"><h2>会话读数</h2><span class="section-number">02</span></div><div class="metric"><span>累计耗电</span><strong id="energy">-- <small>kWh</small></strong></div><div class="metric"><span>日程温度越界积分</span><strong id="violation">-- <small>K·h</small></strong></div><p class="hint">来自原生轨迹积分。温度越界不等于人员不舒适投票。</p><div class="divider"></div><h2>最近一次决策</h2><p id="decision" class="decision">操作后显示本步的目标、限速与实际下发结果。</p><div class="notice">操作温度 ≠ 空气温度<br>设定温度 ≠ 实际室温</div></section>
+      <section class="panel replay"><div class="panel-heading"><h2>保存与回放</h2><span class="section-number">03</span></div><label class="field-label" for="session-list">本地会话记录</label><select id="session-list"><option value="">当前实时会话</option></select><div class="replay-row"><button id="replay-play" disabled>▶ 回放</button><button id="live">返回实时</button></div><label class="field-label" for="scrubber">已记录时间点 <span id="frame-index">0 / 0</span></label><input id="scrubber" type="range" min="0" max="0" value="0" disabled aria-label="回放时间点"><a id="download" class="download disabled" href="#">↓ 导出完整会话 JSON</a><button id="compare" class="wide" disabled>运行同起点规则对照</button><div id="comparison" class="comparison" hidden></div><p class="hint small">回放只读取记录。规则对照会重建仿真并顺序运行；不会从任意历史点“跳转”物理状态。</p></section>
+    </aside>
+  </div>
+  <footer><span>软件仿真演示 · 非真实楼宇控制 · 本版未接入 MPC 或人员预测模型</span><div><button data-evidence="delivery">交付说明 ↗</button><button data-evidence="house">住宅研究结果 ↗</button></div></footer>
+</main>
+<dialog id="details"><div class="dialog-header"><h2 id="dialog-title">证据与边界</h2><button id="close-dialog" aria-label="关闭">×</button></div><pre id="dialog-text"></pre></dialog>
+<script src="/app.js"></script>
+</body></html>

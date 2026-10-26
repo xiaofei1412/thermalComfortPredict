@@ -4,10 +4,22 @@
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
-**当前状态：本轮办公室迁移攻关已结束，负结果已封存。** 最终源结构因果候选通过60/72开发门和2/2响应，长时能源、温度回归及供暖覆盖仍未全过；按预设停止，维持规则，新校准/盲评均为0次。部分离线预测改善不代表控制升级，固定仿真适用边界已记录；人员需求接入、系统学习控制和真实迁移仍未完成。
+**当前状态：本轮办公室迁移攻关已结束，负结果已封存。** 最终源结构因果候选通过60/72开发门和2/2响应，长时能源、温度回归及供暖覆盖仍未全过；按预设停止，维持规则，新校准/盲评均为0次。部分离线预测改善不代表控制升级，固定仿真适用边界已记录；人员主观需求模型闭环、系统学习控制和真实迁移仍未完成。
+
+**可以亲自体验了：[本地房间工作台V0.1](docs/workbench.md)。** 连接真实BOPTEST，支持调节供暖、两位虚拟住户需求记录、手动/演示规则步进、保存回放及同起点规则对照。它不自动生成真实热感觉标签，也尚未接入MPC或人员预测模型。
+
+已有Python环境和BOPTEST部署时，在项目根目录运行：
+
+```powershell
+./scripts/setup_boptest.ps1 -Action up
+./scripts/start_workbench.ps1
+```
+
+然后打开 <http://127.0.0.1:8765>。[安装、使用及能力边界](docs/workbench.md) · [验收结果](reports/workbench/REPORT.md)
 
 ## 项目入口
 
+- [交互工作台：启动、操作、保存与回放](docs/workbench.md)
 - [第一版简要交付报告：做了什么、原因与后续方向](reports/DELIVERY_V1.md)
 - [PROJECT.md：项目总览、里程碑与阶段结果](PROJECT.md)
 - [正式预测基线结果](reports/baseline/REPORT.md)
@@ -50,6 +62,7 @@ thermalComfortPredict/
 ├── pyproject.toml          # 固定核心依赖
 ├── configs/               # 正式实验配置
 ├── thermal_comfort/       # 预测、仿真采集与动态模型
+├── workbench/             # 本地交互房间网页，无前端构建依赖
 ├── tests/                 # 数据、模型与仿真协议检查
 ├── scripts/               # 部署、结果验证与报告
 ├── reports/baseline/      # 提交到 Git 的紧凑结果与证据
@@ -64,6 +77,7 @@ thermalComfortPredict/
 ├── reports/native_terminal/ # 原生辨识、联合训练与能力门负结果
 ├── reports/terminal_diagnostic/ # 开发末端诊断与非部署oracle消融
 ├── reports/office_final_round/ # 最终有限修复、失败门与办公室边界封存
+├── reports/workbench/     # 交互工作台验收与能力边界
 ├── infra/                 # 本地 BOPTEST 部署
 ├── legacy/                 # 保留原算法，作为历史基线
 ├── data/
