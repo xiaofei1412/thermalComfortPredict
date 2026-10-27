@@ -1,0 +1,32 @@
+{
+  "protocol": "residential_rl_v2_sac_first_chain_1",
+  "status": "engineering_chain_completed_with_one_resume_per_seed_not_formal_uninterrupted_benchmark",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13"
+  },
+  "files_sha256": {
+    "configs/v2_sac.json": "9e716a75bc4cfe95a99cfc11db473784ab31685726f5a6279d5fb824f80e7bce",
+    "docs/experiments/v2_sac.md": "dcc30d565100538a0718b82ed5785fcd333d9ddcc671669efb00b0a2c4054448",
+    "docs/experiments/v2_sac_repair.md": "49a1d222f447c4cdf61b078dc96f4b98e041f05e67073c235327d771cfe43ec2",
+    "thermal_comfort/sac_env.py": "310005438fbe2078a94d3cbeec3376bb3992dfecbc2981b826ef4087e5eb8ac2",
+    "scripts/run_sac.py": "eb8a0359ff0570a9b4f803007a83b1aa98c1075d0576373831f3c6530654592f",
+    "scripts/verify_sac.py": "2f4c507dc11afefc93eae819f2b447f1929a5804886e5b65f3e8ed903aef2b79",
+    "scripts/check_sac_checkpoint.py": "b48fe24bd5dee5bfaa6ad1c7f6f98f9a7d8f58e735cc8fc0887f0f057444ae3e",
+    "scripts/plot_sac.py": "818053267252708169d35bfc7b3110b659417a321f193601eb71b1849cddd320",
+    "tests/test_sac.py": "69e3866e915f6047733a7a3f4e4b54f33d8572747f050b1d8d89d36df42a29d4",
+    "requirements/sac.txt": "d22dcd3c37fd8294106a64fd0c753940d45f9ed19c699e3076bd9537dbd2f63d",
+    "requirements/sac-windows-py314.lock.txt": "201c0513db5bd9ff14ceb6f3b213aa81dd918437d6a8eb92b71fce9b29440797",
+    ".github/workflows/baseline-tests.yml": "8480d100f609512adf8bafd3d8969f235b5b87723d794dce2c56c0e0c4e3d981",
+    "reports/v2_sac/archive-audit.json": "419e2317b3c71e2a7ba3a7440183c5eb5ebf79668d67c26075cec3977e5ae92a",
+    "reports/v2_sac/engineering-repair.diff": "e4e93a19a6bae48da8428177afb2375eb43b402a98d7422252b172fc960d9504",
+    "reports/v2_sac/engineering-repair.json": "d4e630bcbcc6a5fa6061602f15c70b5edf62715b6cc4bc6e8cb05b27a9b5fa65",
+    "reports/v2_sac/learning-curve.png": "708c35cd3a47a8c3609d50f20e95228cabf23bc1b2efeddf7d71826071571c69",
+    "reports/v2_sac/optimizer-audit.json": "9fd4604ee05614f9b14942155fe4424615e6a659f77f740f38dc5e6bda6f94e1",
+    "reports/v2_sac/registration.json": "ef541776a86695370ef886cf4e25ee99b527ca46c42debce69e1189925293f6e",
+    "reports/v2_sac/REPORT.md": "eafd687ca4253d43609f9bb283b65138e5db8cef9d547a36c18665f280c013a2",
+    "reports/v2_sac/summary.json": "198ab0df7f40fad30b6ec59dac7f1b3869f04e33e5a29b7a13847579bfbc4943"
+  }
+}

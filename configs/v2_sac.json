@@ -1,0 +1,26 @@
+{
+  "protocol": "residential_rl_v2_sac_first_chain_1",
+  "parent_locks": ["reports/v2_0/lock.json", "reports/v2_1/lock.json", "reports/v2_2/lock.json", "reports/v2_3_numerics/lock.json"],
+  "training_authorized": true,
+  "algorithms": ["SAC"],
+  "seeds": [11, 23, 37],
+  "train_ids": ["train014", "train035", "train056", "train063", "train119", "train147"],
+  "development_ids": ["development084", "development168", "development189"],
+  "replicas": {"11": {"project": "thermal-sac-11", "port": 8083}, "23": {"project": "thermal-sac-23", "port": 8084}, "37": {"project": "thermal-sac-37", "port": 8085}},
+  "budget_per_seed": {"select_max": 9, "initialize_max": 9, "advance_max": 6048, "wall_seconds_max": 3600, "train_actor_steps": 3984, "evaluation_actor_steps": 1992},
+  "total_budget": {"select_max": 27, "initialize_max": 27, "advance_max": 18144, "train_actor_steps": 11952, "wall_seconds_max": 5400},
+  "sac": {"learning_rate": 0.0003, "buffer_size": 10000, "learning_starts": 256, "batch_size": 128, "tau": 0.005, "gamma": 0.995, "train_freq": 1, "gradient_steps": 1, "ent_coef": "auto", "target_entropy": -1.0, "net_arch": [64, 64], "device": "cpu", "torch_threads": 1},
+  "reward": {"energy": 1.0, "cold_Kh": 20.0, "hot_Kh": 20.0, "move_squared_K": 0.01, "fallback": 0.05, "scale": 0.1, "abort_fixed": 10000.0, "abort_per_remaining_step": 100.0},
+  "guard": {"low_enter_C": 19.0, "low_release_C": 19.5, "high_enter_C": 34.0, "high_release_C": 33.5},
+  "fixed_observation_scaling": {
+    "history_offset": [21, 21, 21, 0, 0, 0, 0, 0, 0],
+    "history_scale": [10, 5, 5, 15, 10, 15, 1, 1, 672],
+    "forecast_offset": [294.15, 294.15, 0, 273.15, 0, 0, 0],
+    "forecast_scale": [10, 10, 5, 30, 1000, 1, 1],
+    "flatten_order": ["forecast", "history", "history_mask"]
+  },
+  "selection": "final_checkpoint_only_no_development_selection",
+  "evaluation": "deterministic_reloaded_policy_no_updates",
+  "comparison": "unchanged_V2_0_all_strict_metrics_low_load_reported_separately",
+  "on_failure": "stop_seed_preserve_partial_no_retry_no_extra_config_or_episode"
+}

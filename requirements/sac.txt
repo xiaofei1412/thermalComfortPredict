@@ -1,0 +1,2 @@
+# SAC add-on for the separate V2 environment. Keep the V1 runtime unchanged.
+stable-baselines3==2.9.2

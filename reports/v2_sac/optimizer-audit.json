@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "checkpoints": {
+    "seed11/partial_checkpoint.zip": {
+      "steps": 664,
+      "updates": 408,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          408
+        ],
+        "critic.optimizer": [
+          408
+        ],
+        "ent_coef_optimizer": [
+          408
+        ]
+      },
+      "serialized_and_restored_states_equal": true
+    },
+    "seed11/checkpoint.zip": {
+      "steps": 3984,
+      "updates": 3728,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          3728
+        ],
+        "critic.optimizer": [
+          3728
+        ],
+        "ent_coef_optimizer": [
+          3728
+        ]
+      },
+      "serialized_and_restored_states_equal": true
+    },
+    "seed23/partial_checkpoint.zip": {
+      "steps": 664,
+      "updates": 408,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          408
+        ],
+        "critic.optimizer": [
+          408
+        ],
+        "ent_coef_optimizer": [
+          408
+        ]
+      },
+      "serialized_and_restored_states_equal": true
+    },
+    "seed23/checkpoint.zip": {
+      "steps": 3984,
+      "updates": 3728,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          3728
+        ],
+        "critic.optimizer": [
+          3728
+        ],
+        "ent_coef_optimizer": [
+          3728
+        ]
+      },
+      "serialized_and_restored_states_equal": true
+    },
+    "seed37/partial_checkpoint.zip": {
+      "steps": 664,
+      "updates": 408,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          408
+        ],
+        "critic.optimizer": [
+          408
+        ],
+        "ent_coef_optimizer": [
+          408
+        ]
+      },
+      "serialized_and_restored_states_equal": true
+    },
+    "seed37/checkpoint.zip": {
+      "steps": 3984,
+      "updates": 3728,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          3728
+        ],
+        "critic.optimizer": [
+          3728
+        ],
+        "ent_coef_optimizer": [
+          3728
+        ]
+      },
+      "serialized_and_restored_states_equal": true
+    }
+  },
+  "additional_training_or_FMU_calls": 0
+}

@@ -1,0 +1,183 @@
+--- original/scripts/run_sac.py
++++ repaired/scripts/run_sac.py
+@@ -6,0 +7 @@
++import hashlib
+@@ -21,0 +23 @@
++from thermal_comfort.rl_interface import native_score
+@@ -83 +85,4 @@
+-    np.savez_compressed(folder/"actor_observations.npz", observations=np.asarray(env.observations, dtype=np.float32))
++    np.savez_compressed(folder/"actor_observations.npz", observations=np.asarray(env.observations, dtype=np.float32),
++                        terminal_observation=env.cached_obs)
++    with gzip.open(folder/"terminal_forecast.json.gz", "wt", encoding="utf-8") as stream:
++        json.dump(env.view.to_dict("list"), stream, allow_nan=False)
+@@ -88 +93,2 @@
+-        "actor_return": sum(r.get("reward", 0) for r in env.records), "outcome": env.final_info,
++        "actor_return": sum(r.get("reward", 0) for r in env.records),
++        "outcome": outcome_for_json(env.final_info),
+@@ -98,0 +105,19 @@
++def outcome_for_json(info):
++    # DummyVecEnv mutates the returned info with this ndarray after env.step.
++    # Its exact value is stored separately in actor_observations.npz.
++    return None if info is None else {k: v for k, v in info.items() if k != "terminal_observation"}
++
++
++def verify_registration(output, registration, resume):
++    if not resume:
++        verify_files(ROOT, registration["files_sha256"])
++        return None
++    repair = read(output/"engineering-repair.json")
++    verify_files(ROOT, repair["files_sha256"])
++    for name, expected in registration["files_sha256"].items():
++        path = ROOT/name if digest(ROOT/name) == expected else output/"registered-source"/name
++        if digest(path) != expected:
++            raise ValueError("Original registered source was not preserved")
++    return repair
++
++
+@@ -107 +132 @@
+-def run_seed(output, seed):
++def run_seed(output, seed, resume=False):
+@@ -112 +137 @@
+-    verify_files(ROOT, registration["files_sha256"])
++    repair = verify_registration(output, registration, resume)
+@@ -118 +143,4 @@
+-    root.mkdir(exist_ok=False)
++    if not resume:
++        root.mkdir(exist_ok=False)
++    elif (root/"result.json").exists():
++        raise ValueError("Cannot resume a completed seed")
+@@ -119,0 +148,3 @@
++    if resume:
++        stat = root.stat()
++        deadline = min(deadline, getattr(stat, "st_birthtime", stat.st_ctime)+plan["budget_per_seed"]["wall_seconds_max"])
+@@ -132 +163,26 @@
+-        for name in plan["train_ids"]:
++        train_ids = plan["train_ids"]
++        if resume:
++            preserved = repair["seeds"][str(seed)]
++            if digest(root/"failure.json") != preserved["failure_sha256"]:
++                raise ValueError("Original failure changed")
++            for name in ["partial_checkpoint.zip", "partial_replay.pkl"]:
++                if digest(root/name) != preserved[name+"_sha256"]:
++                    raise ValueError("Recovery checkpoint changed")
++            failure = read(root/"failure.json")
++            if failure["counts"] != {"select": 1, "initialize": 1, "advance": 672} or failure["timesteps"] != 664:
++                raise ValueError("Only the completed first-episode export failure may resume")
++            with (root/"resume-marker.json").open("x", encoding="utf-8") as stream:
++                json.dump({"started_utc": datetime.now(timezone.utc).isoformat(), "repair_sha256": digest(output/"engineering-repair.json")}, stream)
++            client.counts = dict(failure["counts"])
++            model = SAC.load(root/"partial_checkpoint.zip", device="cpu")
++            model.load_replay_buffer(root/"partial_replay.pkl")
++            if model.num_timesteps != 664 or replay_hash(model) != preserved["replay"] or weights_hash(model) != preserved["weights_sha256"]:
++                raise ValueError("Partial learned state recovery mismatch")
++            save_json(root/"resume-state.json", {"rng_reset_by_checkpoint_load": True,
++                "torch_rng_sha256": hashlib.sha256(torch.get_rng_state().numpy().tobytes()).hexdigest(),
++                "steps": model.num_timesteps, "gradient_updates": model._n_updates,
++                "weights_sha256": weights_hash(model), "replay": replay_hash(model),
++                "not_bitwise_continuation_of_uninterrupted_training": True})
++            summaries["train014"] = read(root/"train/train014/summary.json")
++            train_ids = train_ids[1:]
++        for name in train_ids:
+@@ -191 +247 @@
+-            "wall_seconds": time.perf_counter()-started})
++            "wall_seconds": time.perf_counter()-started, "engineering_resume": resume})
+@@ -197,3 +253,3 @@
+-            model.save(root/"partial_checkpoint.zip")
+-            model.save_replay_buffer(root/"partial_replay.pkl")
+-        save_json(root/"failure.json", {"error": str(error), "counts": client.counts,
++            model.save(root/("resume_partial_checkpoint.zip" if resume else "partial_checkpoint.zip"))
++            model.save_replay_buffer(root/("resume_partial_replay.pkl" if resume else "partial_replay.pkl"))
++        save_json(root/("resume_failure.json" if resume else "failure.json"), {"error": str(error), "counts": client.counts,
+@@ -247,0 +304,63 @@
++def prepare_repair(output):
++    plan = load_plan()
++    if (output/"engineering-repair.json").exists():
++        raise ValueError("A repair has already been registered")
++    registration = read(output/"registration.json")
++    preserved = {}
++    for seed in plan["seeds"]:
++        root = output/f"seed{seed}"
++        failure = read(root/"failure.json")
++        if (failure["error"] != "Object of type ndarray is not JSON serializable"
++                or failure["counts"] != {"select": 1, "initialize": 1, "advance": 672}
++                or failure["timesteps"] != 664 or (root/"development").exists()):
++            raise ValueError("This is not the one permitted export-only recovery")
++        calls = (root/"calls.jsonl").read_bytes()
++        entries = [json.loads(s) for s in calls.decode("utf-8").splitlines()]
++        if not all(c["ok"] for c in entries) or not entries[-1]["path"].startswith("stop/"):
++            raise ValueError("The completed first worker was not released cleanly")
++        model = SAC.load(root/"partial_checkpoint.zip", device="cpu")
++        model.load_replay_buffer(root/"partial_replay.pkl")
++        state = replay_hash(model)
++        if model.num_timesteps != 664 or state["size"] != 664 or state["terminal_transitions"] != 1 or state["timeouts"] != 0:
++            raise ValueError("First episode learned state is incomplete")
++        preserved[str(seed)] = {"failure_sha256": digest(root/"failure.json"),
++            "partial_checkpoint.zip_sha256": digest(root/"partial_checkpoint.zip"),
++            "partial_replay.pkl_sha256": digest(root/"partial_replay.pkl"),
++            "weights_sha256": weights_hash(model), "replay": state,
++            "original_calls_prefix_bytes": len(calls), "original_calls_prefix_sha256": hashlib.sha256(calls).hexdigest()}
++        folder = root/"train/train014"
++        with gzip.open(folder/"steps.jsonl.gz", "rt", encoding="utf-8") as stream:
++            records = [json.loads(s) for s in stream]
++        native = pd.read_csv(folder/"native.csv.gz", float_precision="round_trip")
++        schedule = pd.read_csv(folder/"schedule.csv.gz", float_precision="round_trip")
++        if len(records) != 672 or len(native) != 20161:
++            raise ValueError("Completed raw first episode missing")
++        metrics = native_score(native, schedule)
++        modes = Counter(r["control"].get("mode") for r in records[8:])
++        b = records[-1]["after"]
++        summary = {"episode": {"id": "train014", "role": "train", "start_day": 14}, "role": "train",
++            "transitions": 672, "actor_transitions": 664, "modes": dict(modes),
++            "fallback_fraction_excluding_prefix": modes["fallback"]/664,
++            "actor_return": sum(r.get("reward", 0) for r in records), "wall_seconds": None,
++            "outcome": {"metrics": records[-1]["metrics"], "control": records[-1]["control"],
++                "aborted": False, "episode_complete": True, "end_reason": "finite_horizon",
++                "terminated": True, "truncated": False, "score": {"metrics": metrics,
++                    "kpis": None, "kpi_absolute_difference": None, "transitions": 672, "native_samples": 20161,
++                    "live_validation_passed_before_export": True, "official_values_not_retained": True}},
++            "end_state": {"operative_C": b["reaTZon_y"]-273.15, "return_C": b["reaTRet_y"]-273.15,
++                "supply_C": b["reaTSup_y"]-273.15, "heat_kW": b["reaQFloHea_y"]/1000,
++                "electric_kW": sum(b[p] for p in ["reaPHeaPum_y", "reaPFan_y", "reaPPumEmi_y"])/1000},
++            "recovered_export": True, "terminal_observation_source": "replay_buffer.next_observations[663]",
++            "sha256": {p.name: digest(p) for p in folder.iterdir() if p.is_file()}}
++        save_json(folder/"summary.json", summary)
++    changed = [p for p, expected in registration["files_sha256"].items() if digest(ROOT/p) != expected]
++    for filename in changed:
++        if digest(output/"registered-source"/filename) != registration["files_sha256"][filename]:
++            raise ValueError("Unpreserved source change")
++    save_json(output/"engineering-repair.json", {"utc": datetime.now(timezone.utc).isoformat(),
++        "reason": "DummyVecEnv terminal_observation ndarray JSON export failure after the first complete training episode",
++        "remaining_train_ids": plan["train_ids"][1:], "extra_physical_budget": 0,
++        "RNG_reset_disclosed": True, "original_registration_sha256": digest(output/"registration.json"),
++        "files_sha256": {p: digest(ROOT/p) for p in [*changed, "docs/experiments/v2_sac_repair.md"]}, "seeds": preserved})
++
++
+@@ -250 +369 @@
+-    parser.add_argument("mode", choices=["register", "seed", "summarize"])
++    parser.add_argument("mode", choices=["register", "seed", "prepare-repair", "resume", "summarize"])
+@@ -256,2 +375,4 @@
+-    elif args.mode == "seed":
+-        run_seed(args.output, args.seed)
++    elif args.mode == "prepare-repair":
++        prepare_repair(args.output)
++    elif args.mode in ["seed", "resume"]:
++        run_seed(args.output, args.seed, resume=args.mode == "resume")
+--- original/tests/test_sac.py
++++ repaired/tests/test_sac.py
+@@ -1,0 +2 @@
++import json
+@@ -188,0 +190,14 @@
++    def test_export_after_sb3_mutates_terminal_info_is_json_safe(self):
++        from scripts.run_sac import export
++        with patch("thermal_comfort.rl_interface.STEPS", 10):
++            env = self.env()
++            env.reset()
++            env.step([0])
++            env.step([0])
++            env.final_info["terminal_observation"] = env.cached_obs
++            result = export(env, self.folder/"export", .1)
++            json.dumps(result, allow_nan=False)
++            self.assertNotIn("terminal_observation", result["outcome"])
++            with np.load(self.folder/"export/actor_observations.npz") as observations:
++                np.testing.assert_array_equal(observations["terminal_observation"], env.cached_obs)
++
