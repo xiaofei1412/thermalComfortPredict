@@ -66,4 +66,6 @@ node --check workbench/app.js
 .venv-cpu/Scripts/python.exe scripts/verify_demand_flow.py
 ```
 
-实际验收结果见[原工作台验收](../reports/workbench/REPORT.md)与[B阶段验收](../reports/demand-b/REPORT.md)。下一步C检查新目标切换下的数据覆盖、模型能力门及采纳相同需求的共同规则基线，再考虑D影子预测；模型预测应与仿真测量分别展示，通过独立验证后才考虑控制授权。
+实际验收结果见[原工作台验收](../reports/workbench/REPORT.md)与[B阶段验收](../reports/demand-b/REPORT.md)。C1已完成覆盖核查/共同基线/开发门预注册，下一步C2补采与验证资格，再考虑D影子预测；模型预测应与仿真测量分别展示，通过独立验证后才考虑控制授权。
+
+[C1研究共同规则](../reports/residential_c/REPORT.md)已实现并验证与“按需求”模式等价，可通过`scripts/verify_common_rule.py`复核。现有“同起点规则对照”按钮仍使用忽略人员请求的演示规则，界面的旁路提示继续有效；后续模型比较须使用C协议共同基线。C2补采/模型资格尚未执行，网页无须为本轮重启。

@@ -1,0 +1,17 @@
+{
+  "created_UTC": "2026-10-27T05:57:26.123693+00:00",
+  "status": "preregistered_not_model_qualified",
+  "source_base_commit": "b0c643a3c21e95fe103f8fc3b2c82af67dbec74d",
+  "files_sha256": {
+    "configs/residential_c.json": "c85d02f11527f19775dbeb930527a6d5aa04a112c789a0e4257bc9794dbc7fbe",
+    "docs/experiments/residential_c.md": "17b6a93edb2f5e8145f46480ae91b7f200941a87b67e4b1f8cd420ccf83a56f3",
+    "thermal_comfort/residential_c.py": "9d39c153ed580ead347d93ab7f9298cca349877ad2bc28987ef9e67a549c06c9",
+    "thermal_comfort/demand_rule.py": "99aeb4d913abc4e59f7692889ae59f5d6c068f3fabc47eeb24cd9ef5e44a4f4c",
+    "thermal_comfort/demands.py": "4a6996ab186030302e8cf9c2dd876b14e3ef24c1cfad2424557cd0ce7bd228eb",
+    "thermal_comfort/workbench.py": "9401a58d12a85f42d69cbaa5834fc26f9aa4b3fc20a81291373b7fc326000e69",
+    "scripts/verify_common_rule.py": "4cf93886fc27a6fca5acbf948bd8bc8534074990852b29e9a99850979ddb1d20"
+  },
+  "registry_sha256": "640aad731a36e530bdc991c8268a96b511cba6f48d56e3d967a4e26f7b0c6f97",
+  "coverage_sha256": "3d72974e678ec31fe964b6b80f92e703b97e880a8fea6ab6aa97e2a2b57ec0c0",
+  "frozen_reference_model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17"
+}

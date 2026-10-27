@@ -1,0 +1,415 @@
+{
+  "protocol_sha256": "c85d02f11527f19775dbeb930527a6d5aa04a112c789a0e4257bc9794dbc7fbe",
+  "status": "audit_and_preregistration_only",
+  "sources": [
+    {
+      "root": "outputs/excitation",
+      "day": 14,
+      "role": "legacy_train",
+      "source": "outputs/excitation/train_day014_seed101__excitation",
+      "sha256": {
+        "transitions.csv.gz": "47761af49b3826ec94cf96bcae108cfe91e7999905f9fb90d9bb4b2ec4bf4fad",
+        "native.csv.gz": "a014a546f0f6a3c5e2ee5b7743ffa3c6abdd316e4847484126e693ad74120e72",
+        "steps.jsonl": "bad336cabd49114e1200a9592ee3521b7e4ba8764cd37975d6b469ccaefb9921"
+      },
+      "transitions": 672,
+      "rise_steps": 70,
+      "fall_steps": 69,
+      "outside_current_action_steps": 0,
+      "outside_current_slew_steps": 0,
+      "active_steps": 435,
+      "idle_steps": 84,
+      "transition_steps": 153,
+      "occupied_steps": 417,
+      "high_solar_steps": 14,
+      "outdoor_range_C": [
+        0.4375,
+        10.600000000000025
+      ],
+      "operative_range_C": [
+        21.06920735868175,
+        24.62920471981897
+      ],
+      "setpoint_range_C": [
+        18.0,
+        22.75
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/excitation",
+      "day": 35,
+      "role": "legacy_train",
+      "source": "outputs/excitation/train_day035_seed102__excitation",
+      "sha256": {
+        "transitions.csv.gz": "b194214ef72ddd1a92c3b26643d0d327ab9623e67bb4f41a17c83f12ec9e662d",
+        "native.csv.gz": "91006de169c94859e6df377f11580eb3ceab0ac2a6a5466344552a64d6a7a4a2",
+        "steps.jsonl": "5572bfdde032a65a4f39ed5a0d12a037fb2f1078196ce7f452a6ba834be60954"
+      },
+      "transitions": 672,
+      "rise_steps": 68,
+      "fall_steps": 65,
+      "outside_current_action_steps": 0,
+      "outside_current_slew_steps": 0,
+      "active_steps": 453,
+      "idle_steps": 105,
+      "transition_steps": 114,
+      "occupied_steps": 417,
+      "high_solar_steps": 61,
+      "outdoor_range_C": [
+        -3.099999999999966,
+        9.700000000000044
+      ],
+      "operative_range_C": [
+        21.080532905978203,
+        23.986289823341508
+      ],
+      "setpoint_range_C": [
+        21.25,
+        23.25
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/excitation",
+      "day": 56,
+      "role": "legacy_train",
+      "source": "outputs/excitation/train_day056_seed103__excitation",
+      "sha256": {
+        "transitions.csv.gz": "d3c57a4e5500bd97310b61bfebd674214075bc3a5e5746547811c90a23afbeb5",
+        "native.csv.gz": "789e4e7526b3ba61481d4a05b3964749f95ed6aa08e51ed3df9556989dff9ac1",
+        "steps.jsonl": "ccaf4f437eae8235e38f3cf84612f85f8aa3a707ba523583355dcaa55f723a9a"
+      },
+      "transitions": 672,
+      "rise_steps": 76,
+      "fall_steps": 73,
+      "outside_current_action_steps": 0,
+      "outside_current_slew_steps": 0,
+      "active_steps": 324,
+      "idle_steps": 202,
+      "transition_steps": 146,
+      "occupied_steps": 417,
+      "high_solar_steps": 88,
+      "outdoor_range_C": [
+        -0.3999999999999772,
+        11.0
+      ],
+      "operative_range_C": [
+        21.134746802713323,
+        24.694014741003627
+      ],
+      "setpoint_range_C": [
+        18.0,
+        23.25
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/excitation",
+      "day": 119,
+      "role": "legacy_train_retired_test",
+      "source": "outputs/excitation/test_day119_seed302__excitation",
+      "sha256": {
+        "transitions.csv.gz": "cb054dccebf537f17e0bfd510584540b51d63252ab0260f15b6acfb5d97d597c",
+        "native.csv.gz": "04ea5f895915385e151f31929fdf9a93592e4fe6a279db6d5a1f931daaa20eff",
+        "steps.jsonl": "6ee406ae74ad53a78e30fe03d00f58751ae9944466b5bdc7f47ef6df3ebe1495"
+      },
+      "transitions": 672,
+      "rise_steps": 77,
+      "fall_steps": 78,
+      "outside_current_action_steps": 0,
+      "outside_current_slew_steps": 0,
+      "active_steps": 105,
+      "idle_steps": 471,
+      "transition_steps": 96,
+      "occupied_steps": 417,
+      "high_solar_steps": 179,
+      "outdoor_range_C": [
+        3.9359933040000215,
+        24.80000000000001
+      ],
+      "operative_range_C": [
+        21.371850605928103,
+        27.40537701607764
+      ],
+      "setpoint_range_C": [
+        18.0,
+        22.75
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/recovery-calibration",
+      "day": 63,
+      "role": "legacy_train",
+      "source": "outputs/recovery-calibration/warm_train_day063__warm_excitation",
+      "sha256": {
+        "transitions.csv.gz": "a8a0d20626912f044159951d37ed3e92f0fb00bc75491372735451ef2a5edd5f",
+        "native.csv.gz": "d5062bb9370cd713d26d8f74a24c7faddba1d9ab072971ce400252253d3c7cde",
+        "steps.jsonl": "39e5d2bf26c4e00dd25e1437e6b74ff5e8b2eafee183449ae17e973f12e5162b"
+      },
+      "transitions": 672,
+      "rise_steps": 158,
+      "fall_steps": 149,
+      "outside_current_action_steps": 109,
+      "outside_current_slew_steps": 0,
+      "active_steps": 232,
+      "idle_steps": 300,
+      "transition_steps": 140,
+      "occupied_steps": 417,
+      "high_solar_steps": 73,
+      "outdoor_range_C": [
+        0.845192308000037,
+        10.831250000000011
+      ],
+      "operative_range_C": [
+        20.595434788105763,
+        26.00478581153084
+      ],
+      "setpoint_range_C": [
+        18.0,
+        24.0
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/solar-data",
+      "day": 147,
+      "role": "legacy_train",
+      "source": "outputs/solar-data/solar_train147__solar_excitation",
+      "sha256": {
+        "transitions.csv.gz": "f76772b0824e1cd40a16eff3d2bf0b509278290a66c1991c10da182415b6ef55",
+        "native.csv.gz": "5b44aeda23d0a63f2c3c4ba00672a7610ab2ba22af91a50864ead9fbdefd392d",
+        "steps.jsonl": "ed4d9acb7eaff2fca352eb7809c3aaf0c294faadb7ba9b9ca87c565055ade1ec"
+      },
+      "transitions": 672,
+      "rise_steps": 68,
+      "fall_steps": 68,
+      "outside_current_action_steps": 1,
+      "outside_current_slew_steps": 0,
+      "active_steps": 40,
+      "idle_steps": 604,
+      "transition_steps": 28,
+      "occupied_steps": 417,
+      "high_solar_steps": 283,
+      "outdoor_range_C": [
+        5.511883734000037,
+        26.96194852900004
+      ],
+      "operative_range_C": [
+        20.82214352330084,
+        26.04332168761937
+      ],
+      "setpoint_range_C": [
+        18.0,
+        23.5
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/solar-data",
+      "day": 168,
+      "role": "legacy_diagnostic_only",
+      "source": "outputs/solar-data/solar_validation168__solar_excitation",
+      "sha256": {
+        "transitions.csv.gz": "0a98514f08d8f9fcf2798d3f284bac1cd837eb6e8f63b24d5c44d911b1f3fb74",
+        "native.csv.gz": "626bb11afd7060c94defdac9231a9e30f0dc63401302e2a74c43520882b23f5d",
+        "steps.jsonl": "5140cc636b276fde0a9110f9eeae211ffee5132fa28fa08897f636706831bfe2"
+      },
+      "transitions": 672,
+      "rise_steps": 75,
+      "fall_steps": 81,
+      "outside_current_action_steps": 0,
+      "outside_current_slew_steps": 0,
+      "active_steps": 9,
+      "idle_steps": 639,
+      "transition_steps": 24,
+      "occupied_steps": 417,
+      "high_solar_steps": 273,
+      "outdoor_range_C": [
+        9.761598558000005,
+        22.600000000000023
+      ],
+      "operative_range_C": [
+        21.38187632374604,
+        25.264928343773533
+      ],
+      "setpoint_range_C": [
+        18.0,
+        22.0
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    },
+    {
+      "root": "outputs/solar-data",
+      "day": 189,
+      "role": "legacy_diagnostic_only",
+      "source": "outputs/solar-data/solar_validation189__solar_excitation",
+      "sha256": {
+        "transitions.csv.gz": "41cdf8c8f486ebeccb4ea3cab2ee3eb495a1870edb85a8526c3981adb5966852",
+        "native.csv.gz": "48854a9e5bdf111191e6e7453ad05c212198349c38904c14384b63a6b13993bd",
+        "steps.jsonl": "611b8f46eb0732b67d1424a2e94c68f64f31f08d216df792338932836fa94687"
+      },
+      "transitions": 672,
+      "rise_steps": 39,
+      "fall_steps": 45,
+      "outside_current_action_steps": 0,
+      "outside_current_slew_steps": 0,
+      "active_steps": 0,
+      "idle_steps": 672,
+      "transition_steps": 0,
+      "occupied_steps": 417,
+      "high_solar_steps": 257,
+      "outdoor_range_C": [
+        12.049267240999995,
+        31.6275
+      ],
+      "operative_range_C": [
+        23.97448952220566,
+        30.32990342196308
+      ],
+      "setpoint_range_C": [
+        18.0,
+        22.0
+      ],
+      "demand_ledger_present": false,
+      "semantic_event_counts": {
+        "replace": 0,
+        "withdraw": 0,
+        "expire": 0,
+        "conflict_resolved": 0,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    }
+  ],
+  "engineering_demos": [
+    {
+      "id": "0a2e84c3cb66",
+      "steps": 5,
+      "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+      "role": "engineering_only",
+      "semantic_events": {
+        "submit": 4,
+        "replace": 0,
+        "withdraw": 1,
+        "expire": 3,
+        "conflict_resolved": 2,
+        "infeasible_resolved": 1,
+        "return_to_base": 1
+      }
+    },
+    {
+      "id": "98a50ff4cdf4",
+      "steps": 3,
+      "source_sha256": "eaa92776a9016c3994ab44ccd1538f84690e04a1bcd244f0450ae6fd070e460c",
+      "role": "engineering_only",
+      "semantic_events": {
+        "submit": 4,
+        "replace": 0,
+        "withdraw": 2,
+        "expire": 1,
+        "conflict_resolved": 1,
+        "infeasible_resolved": 0,
+        "return_to_base": 0
+      }
+    }
+  ],
+  "reserved_not_collected": [
+    {
+      "id": "intent_train224",
+      "role": "train",
+      "start_day": 224,
+      "warmup_start_day": 217,
+      "end_day": 226
+    },
+    {
+      "id": "intent_development287",
+      "role": "development",
+      "start_day": 287,
+      "warmup_start_day": 280,
+      "end_day": 289
+    },
+    {
+      "id": "intent_calibration300",
+      "role": "calibration",
+      "start_day": 300,
+      "warmup_start_day": 293,
+      "end_day": 302
+    },
+    {
+      "id": "intent_test329",
+      "role": "test",
+      "start_day": 329,
+      "warmup_start_day": 322,
+      "end_day": 331
+    },
+    {
+      "id": "intent_test357",
+      "role": "test",
+      "start_day": 357,
+      "warmup_start_day": 350,
+      "end_day": 359
+    }
+  ],
+  "new_model_fits": 0,
+  "new_calibration_rounds": 0,
+  "new_blind_rounds": 0,
+  "model_control_qualified": false
+}

@@ -1,0 +1,59 @@
+{
+  "protocol": "residential_demand_development_v1",
+  "case": "bestest_hydronic_heat_pump",
+  "baseline": "demand_tracking_rule_v1",
+  "step_s": 900,
+  "warmup_days": 7,
+  "episode_days": 2,
+  "history_steps": 16,
+  "origin_stride_steps": 4,
+  "horizons_steps": [1, 4, 16, 24],
+  "candidates": [
+    {"id": "frozen_expanded_baseline", "model": "outputs/solar-selected/model.joblib"},
+    {"id": "refit_expanded_baseline", "structure": "same_frozen_2R2C", "residual_alpha": 10.0, "residual_weight": 1.0}
+  ],
+  "support_tolerance": {"operative_K": 0.5, "outdoor_K": 1.0, "solar_W_m2": 100.0},
+  "source_episodes": [
+    {"root": "outputs/excitation", "day": 14, "role": "legacy_train"},
+    {"root": "outputs/excitation", "day": 35, "role": "legacy_train"},
+    {"root": "outputs/excitation", "day": 56, "role": "legacy_train"},
+    {"root": "outputs/excitation", "day": 119, "role": "legacy_train_retired_test"},
+    {"root": "outputs/recovery-calibration", "day": 63, "role": "legacy_train"},
+    {"root": "outputs/solar-data", "day": 147, "role": "legacy_train"},
+    {"root": "outputs/solar-data", "day": 168, "role": "legacy_diagnostic_only"},
+    {"root": "outputs/solar-data", "day": 189, "role": "legacy_diagnostic_only"}
+  ],
+  "reserved_episodes": [
+    {"id": "intent_train224", "role": "train", "start_day": 224},
+    {"id": "intent_development287", "role": "development", "start_day": 287},
+    {"id": "intent_calibration300", "role": "calibration", "start_day": 300},
+    {"id": "intent_test329", "role": "test", "start_day": 329},
+    {"id": "intent_test357", "role": "test", "start_day": 357}
+  ],
+  "budget": {"model_candidates": 2, "refits": 1, "fit_max_nfev": 150,
+             "new_train_development_days": 4, "calibration_days": 2, "final_days": 4,
+             "response_runs": 2, "response_hours_per_run": 10, "calibration_rounds": 1, "blind_rounds": 1},
+  "minimum_coverage": {"origins_per_group": 12, "distinct_days_per_group": 2,
+    "groups": ["all", "active", "idle", "transition", "rise", "fall", "replace", "withdraw", "expire", "conflict_resolved", "infeasible_resolved", "return_to_base"]},
+  "regime_thresholds": {"idle_heat_kW_max": 0.05, "active_heat_kW_min": 0.5, "transition_lookback_steps": 4, "action_change_K_min": 0.1, "high_solar_W_m2_min": 200},
+  "gates": {
+    "temperature_RMSE_K_max": [0.2, 0.4, 0.8, 1.0],
+    "temperature_absolute_error_q95_K_max": [0.5, 0.8, 1.5, 2.0],
+    "energy_RMSE_kWh_max": [0.3, 0.8, 2.0, 3.0],
+    "energy_absolute_bias_kWh_max": [0.1, 0.25, 0.5, 0.75],
+    "power_MAE_kW_max": [0.5, 0.5, 0.5, 0.5],
+    "idle_power_absolute_bias_kW_max": 0.05,
+    "temperature_persistence_ratio_max": 0.95,
+    "temperature_persistence_floor_K": 0.05,
+    "energy_persistence_ratio_max": 1.05,
+    "energy_persistence_slack_kWh": 0.01,
+    "nonfinite_predictions_max": 0, "negative_power_predictions_max": 0,
+    "response_temperature_min_K": 0.05, "response_energy_min_kWh": 0.1,
+    "response_relative_error_max": 0.5, "response_temperature_error_floor_K": 0.1,
+    "response_energy_error_floor_kWh": 0.2
+  },
+  "calibration": {"quantile": 0.95, "sensor_margin_K": 0.1, "minimum_origins_per_regime": 20, "origin_stride_steps": 1,
+                  "lower_upper_separate": true, "pool_sparse_regimes": false},
+  "stop": {"missing_coverage_blocks_calibration": true, "any_gate_failure_blocks_control": true,
+           "future_window_overlap_blocks_collection": true, "no_test_tuning": true}
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "post_run_integrity_check_not_model_or_controller_selection",
+  "exact_repeat_full_records": true,
+  "source_native_max_absolute_difference": 0.0,
+  "native_tolerance": 1e-07,
+  "actions": 10,
+  "interval_points_including_repeated_boundaries": 310,
+  "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+  "run_sha256": {
+    "outputs/residential-c-smoke-final/repeat1/steps.json": "d2d5bfefb3e68079f0d89d70cef6f8044a79eaee4217feffe2feeadfae5a8f66",
+    "outputs/residential-c-smoke-final/repeat2/steps.json": "d2d5bfefb3e68079f0d89d70cef6f8044a79eaee4217feffe2feeadfae5a8f66"
+  }
+}

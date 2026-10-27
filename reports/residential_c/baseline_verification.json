@@ -1,0 +1,57 @@
+{
+  "baseline": "demand_tracking_rule_v1",
+  "role": "engineering_only_existing_day63",
+  "source": "outputs/workbench/sessions/0a2e84c3cb66.json",
+  "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+  "code_sha256": {
+    "thermal_comfort/demand_rule.py": "99aeb4d913abc4e59f7692889ae59f5d6c068f3fabc47eeb24cd9ef5e44a4f4c",
+    "thermal_comfort/demands.py": "4a6996ab186030302e8cf9c2dd876b14e3ef24c1cfad2424557cd0ce7bd228eb",
+    "thermal_comfort/workbench.py": "9401a58d12a85f42d69cbaa5834fc26f9aa4b3fc20a81291373b7fc326000e69",
+    "thermal_comfort/simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+    "configs/residential_c.json": "2a6e45d3179d03659ffb9851e89ccb4f19eca96c5458913504fd07c625b7925f"
+  },
+  "runs": [
+    {
+      "steps": 5,
+      "native_interval_points": 155,
+      "same_demand_snapshots": true,
+      "same_actions_as_B_needs": true,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 4.336808689942018e-19
+      },
+      "metrics": {
+        "energy_kWh": 3.2092728172911706,
+        "energy_kWh_m2": 0.01671496259005818,
+        "boptest_energy_kWh_m2": 0.016714975962028252,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.004237246406374163,
+        "emissions_kg_m2": 0.002791400985658718
+      }
+    },
+    {
+      "steps": 5,
+      "native_interval_points": 155,
+      "same_demand_snapshots": true,
+      "same_actions_as_B_needs": true,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 8.673617379884035e-19,
+        "emis_tot": 4.336808689942018e-19
+      },
+      "metrics": {
+        "energy_kWh": 3.2092728172911706,
+        "energy_kWh_m2": 0.01671496259005818,
+        "boptest_energy_kWh_m2": 0.016714975962028252,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.004237246406374163,
+        "emissions_kg_m2": 0.002791400985658718
+      }
+    }
+  ],
+  "exact_repeat": true,
+  "new_model_or_energy_efficacy_claim": false
+}
