@@ -110,6 +110,101 @@ class WorkbenchTests(unittest.TestCase):
         self.app.create("cool")
         self.wait()
 
+    def submit(self, person="A", kind="warmer", ttl=4, **extra):
+        self.app.submit_demand({"person": person, "kind": kind, "base_C": 21., "ttl_steps": ttl,
+                                "revision": self.app.session["demand_revision"], **extra})
+
+    def needs(self, resolution="unresolved"):
+        return {**REQUEST, "mode": "needs", "target_C": 21., "resolution": resolution,
+                "demand_revision": self.app.session["demand_revision"]}
+
+    def test_demand_submit_revoke_and_stale_revision_never_advance_time(self):
+        self.start()
+        before = self.app.session["frames"][-1]["time_s"]
+        self.submit()
+        self.assertEqual(self.app.demand_preview({"base_C": 21., "resolution": "unresolved"})["target_C"], 21.5)
+        with self.assertRaises(Conflict):
+            self.app.revoke_demand({"person": "A", "revision": 0})
+        self.app.revoke_demand({"person": "A", "revision": 1})
+        self.assertEqual(self.app.session["frames"][-1]["time_s"], before)
+        self.assertEqual(self.app.session["demands"]["A"]["status"], "withdrawn")
+        self.assertEqual(self.app.session["demand_revision"], 2)
+
+    def test_conflict_blocks_without_closing_or_advancing_and_choice_is_audited(self):
+        self.start(); self.submit(); self.submit("B", "cooler")
+        with self.assertRaises(Conflict):
+            self.app.advance({"steps": 1, "intent": self.needs()})
+        self.assertEqual(self.app.session["events"], [])
+        self.assertEqual(self.app.session["status"], "paused")
+        self.app.advance({"steps": 1, "intent": self.needs("A")}); self.wait()
+        event = self.app.session["events"][0]
+        self.assertEqual(event["decision"]["target_C"], 21.5)
+        self.assertEqual(event["demand_evaluation"]["unmet_people"], ["B"])
+        self.assertEqual(self.app.session["demand_summary"]["B"]["unmet_steps"], 1)
+
+    def test_batch_expiry_is_not_refreshed_and_returns_to_base(self):
+        self.start(); self.submit(ttl=1)
+        self.app.advance({"steps": 3, "intent": self.needs()}); self.wait()
+        self.assertEqual([e["decision"]["target_C"] for e in self.app.session["events"]], [21.5, 21., 21.])
+        self.assertEqual(self.app.session["demands"]["A"]["status"], "expired")
+        self.assertEqual([e["action"] for e in self.app.session["demand_events"]], ["submit", "expire"])
+        self.assertEqual(self.app.session["demand_summary"]["A"]["active_steps"], 1)
+
+    def test_old_confirmation_invalidated_when_selected_person_expires(self):
+        self.start(); self.submit(kind="target", target_C=26.)
+        self.submit("B", "target", ttl=1, target_C=21.)
+        self.app.advance({"steps": 3, "intent": self.needs("B")}); self.wait()
+        self.assertEqual(len(self.app.session["events"]), 1)
+        self.assertEqual(self.app.session["status"], "paused")
+        self.assertIsNotNone(self.app.testid)
+        self.app.advance({"steps": 1, "intent": self.needs("base")}); self.wait()
+        self.assertEqual(self.app.session["events"][-1]["demand_evaluation"]["unmet_people"], ["A"])
+
+    def test_comparison_preserves_demand_timeline_and_rejects_equal_comfort_claim(self):
+        self.start(); self.submit(ttl=1)
+        self.app.advance({"steps": 3, "intent": self.needs()}); self.wait()
+        self.app.end(); self.wait()
+        sid = self.app.session["id"]; source = self.app.load(sid)
+        self.app.compare(sid); self.wait()
+        result = self.app.session
+        self.assertTrue(result["demand_replay_valid"])
+        self.assertTrue(result["comparison_valid"])
+        self.assertEqual(result["demand_events"], source["demand_events"])
+        self.assertEqual([e["demand_snapshot"] for e in result["events"]], [e["demand_snapshot"] for e in source["events"]])
+        self.assertGreater(result["demand_summary"]["A"]["deviation_Kh"], source["demand_summary"]["A"]["deviation_Kh"])
+        self.assertEqual(self.app.load(sid), source)
+
+    def test_need_changes_rejected_while_action_in_flight(self):
+        self.start(); blocker = threading.Event(); self.client.block = blocker
+        self.app.advance({"steps": 1, "intent": REQUEST})
+        try:
+            with self.assertRaises(Conflict): self.submit()
+            self.assertEqual(self.app.session["demand_events"], [])
+        finally:
+            blocker.set(); self.wait()
+
+    def test_stale_demand_confirmation_and_malformed_intent_do_not_advance(self):
+        self.start(); old = self.needs(); self.submit()
+        with self.assertRaises(Conflict): self.app.advance({"steps": 1, "intent": old})
+        with self.assertRaises(ValueError): self.app.advance({"steps": 1, "intent": []})
+        self.assertEqual(self.app.session["events"], [])
+        self.assertEqual(self.app.session["status"], "paused")
+
+    def test_legacy_preferences_are_not_activated_as_new_demands(self):
+        self.start(); self.app.advance({"steps": 1, "intent": REQUEST}); self.wait()
+        self.assertEqual(self.app.session["demand_events"], [])
+        self.assertFalse(any(self.app.session["demands"].values()))
+        self.assertEqual(self.app.session["events"][0]["decision"]["demand"]["active_requests"], {})
+
+    def test_new_session_starts_without_previous_person_requests(self):
+        self.start(); self.submit(); self.app.end(); self.wait()
+        old = self.app.load(self.app.session["id"])
+        self.app.create("cool"); self.wait()
+        self.assertEqual(self.app.session["demand_revision"], 0)
+        self.assertFalse(any(self.app.session["demands"].values()))
+        self.assertEqual(self.app.session["demand_events"], [])
+        self.assertEqual(old["demands"]["A"]["status"], "active")
+
     def completed(self):
         self.start()
         self.app.advance({"steps": 2, "intent": REQUEST})

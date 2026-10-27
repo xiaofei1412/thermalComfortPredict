@@ -20,6 +20,7 @@ import pandas as pd
 
 from .simulation import (Client, FORECAST, POINTS, POWER, digest, integrate,
                          rule_action, schedule_at, transitions_frame, validate_kpis)
+from . import demands
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,10 +53,18 @@ class LocalServer(ThreadingHTTPServer):
 
 
 def intent(body):
-    if set(body) != {"mode", "target_C", "preferences"}:
+    if not isinstance(body, dict):
+        raise ValueError("intent必须是JSON对象")
+    fields = {"mode", "target_C", "preferences"}
+    if body.get("mode") == "needs":
+        fields |= {"resolution", "demand_revision"}
+    if set(body) != fields:
         raise ValueError("需要 mode、target_C、preferences，不能增加其他字段")
-    if body["mode"] not in ("manual", "rule"):
-        raise ValueError("控制方式只能是 manual 或 rule")
+    if body["mode"] not in ("manual", "rule", "needs"):
+        raise ValueError("控制方式只能是 manual、rule 或 needs")
+    if body["mode"] == "needs" and (body["resolution"] not in demands.RESOLUTIONS or
+            type(body["demand_revision"]) is not int or body["demand_revision"] < 0):
+        raise ValueError("需求裁决或版本无效")
     target = body["target_C"]
     if type(target) not in (int, float) or not math.isfinite(target) or not 18 <= target <= 23.25:
         raise ValueError("供暖目标必须是 18～23.25 °C 的有限数值")
@@ -132,6 +141,58 @@ class Workbench:
                 result.append({k: s[k] for k in ("id", "scene", "created_at", "status", "comparison_of")}
                               | {"steps": max(0, len(s["frames"]) - 1)})
             return result
+
+    def demand_access(self, revision):
+        if self.busy or not self.testid or not self.session or self.session["status"] != "paused":
+            raise Conflict("只可在住宅会话暂停时变更需求")
+        if type(revision) is not int or revision != self.session["demand_revision"]:
+            raise Conflict("需求版本已变化，请刷新后重新确认")
+
+    def submit_demand(self, body):
+        with self.lock:
+            self.demand_access(body.get("revision"))
+            now = self.session["frames"][-1]["time_s"]
+            value = demands.submission(body, now, self.session["demand_revision"])
+            self.session["demands"][value["person"]] = value
+            self.session["demand_revision"] += 1
+            self.session["demand_events"].append({"action": "submit", "time_s": now,
+                "revision": self.session["demand_revision"], "request": copy.deepcopy(value)})
+            self.message = "需求已提交；切到按需求模式并推进才会影响动作。"
+            self.save()
+
+    def revoke_demand(self, body):
+        with self.lock:
+            if set(body) != {"person", "revision"} or body["person"] not in ("A", "B"):
+                raise ValueError("撤销需提供住户A/B及需求版本")
+            self.demand_access(body["revision"])
+            value = self.session["demands"][body["person"]]
+            if not value or value["status"] != "active":
+                raise Conflict("该住户没有可撤销的有效需求")
+            value["status"] = "withdrawn"
+            now = self.session["frames"][-1]["time_s"]
+            value["withdrawn_s"] = now
+            self.session["demand_revision"] += 1
+            self.session["demand_events"].append({"action": "withdraw", "time_s": now,
+                "revision": self.session["demand_revision"], "request": copy.deepcopy(value)})
+            self.message = "需求已撤销，仿真时间未推进。"
+            self.save()
+
+    def expire_demands(self, now):
+        for value in self.session["demands"].values():
+            if value and value["status"] == "active" and value["expires_s"] <= now:
+                value["status"] = "expired"
+                self.session["demand_revision"] += 1
+                self.session["demand_events"].append({"action": "expire", "time_s": value["expires_s"],
+                    "revision": self.session["demand_revision"], "request": copy.deepcopy(value)})
+
+    def demand_preview(self, body):
+        with self.lock:
+            if set(body) != {"base_C", "resolution"} or not self.session or not self.session["frames"]:
+                raise ValueError("需求预览需提供基准和裁决，并先初始化住宅")
+            frame = self.session["frames"][-1]
+            return {**demands.resolve(self.session["demands"], body["base_C"], frame["time_s"],
+                                     frame["temperature_C"], body["resolution"]),
+                    "revision": self.session["demand_revision"], "time_s": frame["time_s"]}
 
     def launch(self, task, message):
         with self.lock:
@@ -210,7 +271,7 @@ class Workbench:
         if version != "0.9.0":
             raise ValueError("只支持固定的 BOPTEST 0.9.0")
         with self.lock:
-            self.session = {"schema": 1, "id": uuid.uuid4().hex[:12], "scene": scene,
+            self.session = {"schema": 2, "id": uuid.uuid4().hex[:12], "scene": scene,
                 "created_at": datetime.now(timezone.utc).isoformat(), "status": "initializing",
                 "comparison_of": source["id"] if source else None,
                 "provenance": {"engine": "BOPTEST", "version": version, "case": CASE,
@@ -218,11 +279,15 @@ class Workbench:
                     "warmup_s": 7 * 86400, "area_m2": 192, "step_s": 900,
                     "temperature_kind": "operative", "energy_kind": "electricity",
                     "role_semantics": "virtual_control_intent_only",
+                    "demand_protocol": demands.PROTOCOL,
                     "rule": "demo_schedule_guard_v1; not frozen research MPC",
                     "code_sha256": {"workbench.py": digest(Path(__file__)),
+                                    "demands.py": digest(ROOT / "thermal_comfort/demands.py"),
                                     "simulation.py": digest(ROOT / "thermal_comfort/simulation.py"),
                                     **{name: digest(ASSETS / name) for name in ("index.html", "app.js", "style.css")}}},
-                "frames": [], "events": [], "intervals": []}
+                "frames": [], "events": [], "intervals": [],
+                "demands": {"A": None, "B": None}, "demand_events": [], "demand_revision": 0,
+                "demand_summary": {p: {"active_steps": 0, "unmet_steps": 0, "deviation_Kh": 0.} for p in ("A", "B")}}
             self.save()
         self.testid = self.client.call("POST", f"testcases/{CASE}/select")["testid"]
         inputs = self.client.call("GET", f"inputs/{self.testid}")
@@ -251,11 +316,18 @@ class Workbench:
             if not np.allclose([before[k] for k in POINTS], [source["initial"][k] for k in POINTS], atol=1e-7, rtol=0):
                 raise ValueError("规则对照与原会话初始状态不同，不给出收益比较")
             requests = [{**e["intent"], "mode": "rule"} for e in source["events"]]
-            self.advance_many(requests)
+            self.advance_many(requests, source)
             with self.lock:
                 n = len(self.session["events"])
                 valid = n == len(source["events"]) and all(
                     a["forecast"] == b["forecast"] for a, b in zip(self.session["intervals"], source["intervals"]))
+                demand_valid = all(a["demand_snapshot"] == b.get("demand_snapshot", a["demand_snapshot"])
+                                   for a, b in zip(self.session["events"], source["events"]))
+                valid = valid and demand_valid
+                self.session["demand_replay_valid"] = demand_valid and n == len(source["events"]) if "demands" in source else None
+                if n == len(source["events"]) and "demands" in source:
+                    for key in ("demands", "demand_events", "demand_revision"):
+                        self.session[key] = copy.deepcopy(source[key])
                 self.session["comparison_valid"] = valid
                 self.session["comparison_note"] = "相同初始化、时长、天气和日程；规则不采纳虚拟住户偏好。" if valid else "中断或外生条件不一致，不比较收益。"
                 self.save()
@@ -289,15 +361,40 @@ class Workbench:
                 raise Conflict("没有可推进的住宅会话")
             if len(self.session["events"]) + body["steps"] > 96:
                 raise ValueError("每会话最多演示 24 小时，请结束后重建")
+            if request["mode"] == "needs":
+                self.demand_access(request["demand_revision"])
+                preview = self.demand_preview({"base_C": request["target_C"], "resolution": request["resolution"]})
+                if preview["blocked"]:
+                    raise Conflict("需求冲突或目标不可执行：请撤销/修改需求，或显式选择A、B、基准后确认")
             self.launch(lambda: self.advance_many([request] * body["steps"]), "正在计算真实仿真反馈…")
 
-    def advance_many(self, requests):
-        for request in requests:
+    def advance_many(self, requests, source=None):
+        for index, request in enumerate(requests):
             if self.cancel.is_set():
                 break
             before = self.session["events"][-1]["after"] if self.session["events"] else self.session["initial"]
+            with self.lock:
+                if source and "demand_snapshot" in source["events"][index]:
+                    snapshot = source["events"][index]["demand_snapshot"]
+                    self.session["demands"] = copy.deepcopy(snapshot["demands"])
+                    self.session["demand_revision"] = snapshot["revision"]
+                    self.session["demand_events"] = copy.deepcopy([e for e in source["demand_events"] if e["time_s"] <= before["time"]])
+                snapshot = {"demands": copy.deepcopy(self.session["demands"]),
+                            "revision": self.session["demand_revision"], "time_s": before["time"]}
+                resolution = request.get("resolution", "unresolved") if request.get("demand_revision") == snapshot["revision"] else "unresolved"
+                resolved = demands.resolve(snapshot["demands"], request["target_C"], before["time"],
+                                           before["reaTZon_y"] - 273.15, resolution)
+                if request["mode"] == "needs" and resolved["blocked"]:
+                    self.message = "需求已变化且存在冲突/不可执行目标，本步未下发，已暂停等待裁决。"
+                    self.save()
+                    break
             forecast = self.forecast(before["time"])
-            action, decision = command(request, before, forecast.iloc[0])
+            control = {**request, "mode": "manual", "target_C": resolved["target_C"]} if request["mode"] == "needs" else request
+            action, decision = command(control, before, forecast.iloc[0])
+            if request["mode"] == "needs":
+                decision["reason"] = "demand_target"
+            decision.update(demand=resolved, demand_handling="adopted" if request["mode"] == "needs" else "bypassed_" + request["mode"])
+            evaluation = demands.evaluate(resolved, decision["applied_C"])
             # Never retry a mutation: a failed response may follow an applied action.
             after = self.client.call("POST", f"advance/{self.testid}", action)
             native = pd.DataFrame(self.client.call("PUT", f"results/{self.testid}",
@@ -314,9 +411,16 @@ class Workbench:
                 previous = self.session["frames"][-1]
                 cumulative = {k: previous[k] + metrics[k] for k in ("energy_kWh", "discomfort_Kh")}
                 self.session["events"].append({**record, "intent": copy.deepcopy(request),
-                    "decision": decision, "metrics": metrics})
+                    "decision": decision, "metrics": metrics, "demand_snapshot": snapshot,
+                    "demand_evaluation": evaluation})
                 self.session["intervals"].append({"native": native.to_dict("list"), "forecast": forecast.to_dict("list")})
                 self.session["frames"].append(self.frame(after, forecast.iloc[-1], cumulative))
+                for p, value in evaluation["setpoint_intent_deviation_Kh"].items():
+                    totals = self.session["demand_summary"][p]
+                    totals["active_steps"] += 1
+                    totals["unmet_steps"] += int(p in evaluation["unmet_people"])
+                    totals["deviation_Kh"] += value
+                self.expire_demands(after["time"])
                 self.session["status"] = "paused"
                 self.message = "本步已保存。" + ("设定值受每步0.5 K变化限制。" if decision["rate_limited"] else "")
                 self.save()
@@ -419,6 +523,12 @@ class Handler(BaseHTTPRequestHandler):
                 app.create(body["scene"])
             elif path == "/api/advance":
                 app.advance(body)
+            elif path == "/api/demand":
+                app.submit_demand(body)
+            elif path == "/api/demand/revoke":
+                app.revoke_demand(body)
+            elif path == "/api/demand-preview":
+                return self.send(200, app.demand_preview(body))
             elif path == "/api/pause" and not body:
                 app.cancel.set()
             elif path == "/api/end" and not body:

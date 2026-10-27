@@ -13,14 +13,21 @@
       <div class="panel-heading"><h2>实验设置</h2><span class="section-number">01</span></div>
       <label class="field-label" for="scene">新会话场景</label><select id="scene"><option value="cool">早春 · 第63天</option><option value="warm">暖季 · 第147天</option><option value="cold">晚秋 · 第315天</option></select>
       <p class="hint">统一从 08:00 开始，七天预热。重建会恢复同一起点。</p><button id="create" class="primary wide">＋ 新建仿真会话</button>
-      <div class="divider"></div><h2>谁来决定供暖？</h2><div class="segmented"><button id="manual" class="active">由我控制</button><button id="rule">演示规则</button></div>
-      <div class="target-label"><label for="target">我的供暖目标</label><output id="target-value">21.0<span> °C</span></output></div><input id="target" aria-label="供暖目标" type="range" min="18" max="23.25" value="21" step="0.25"><div class="range-labels"><span>18 °C</span><span>23.25 °C</span></div>
+      <div class="divider"></div><h2>谁来决定供暖？</h2><div class="segmented"><button id="needs" class="active">按需求</button><button id="manual">手动</button><button id="rule">演示规则</button></div>
+      <div class="target-label"><label for="target">操作者基准供暖目标</label><output id="target-value">21.0<span> °C</span></output></div><input id="target" aria-label="供暖目标" type="range" min="18" max="23.25" value="21" step="0.25"><div class="range-labels"><span>18 °C</span><span>23.25 °C</span></div>
       <p id="mode-note" class="hint">目标经变化速率限制后下发，室温会滞后响应。</p>
       <div class="divider"></div><div class="panel-heading"><h2>虚拟住户需求</h2><span class="tag">角色扮演</span></div>
       <div class="people-tabs"><button id="person-a" class="active">● 住户 A</button><button id="person-b">● 住户 B</button></div>
       <div class="preference-buttons"><button data-pref="warmer">更暖</button><button data-pref="hold" class="active">保持</button><button data-pref="cooler">更凉</button></div>
-      <p id="preference-summary" class="hint">A：保持　B：保持</p><p id="conflict" class="conflict" hidden>需求冲突 · 请由你裁决供暖目标</p><p class="hint small">只记录虚拟控制意图，不是实际热感觉标签，也不改变仿真人数或人体散热。</p>
-      <div class="divider"></div><button id="step" class="primary wide" disabled>应用需求 · 推进 15 分钟 <span>→</span></button><div class="button-pair"><button id="run" disabled>快进 4 小时</button><button id="pause" disabled>步后暂停</button></div><button id="end" class="text-button wide" disabled>结束并保存会话</button>
+      <details id="demand-options" class="demand-options"><summary>目标、区间和有效期</summary><label class="field-label" for="demand-kind">待提交需求类型</label><select id="demand-kind"><option value="hold">保持基准</option><option value="warmer">基准以上至少0.5°C</option><option value="cooler">基准以下至少0.5°C</option><option value="target">指定供暖目标</option><option value="range">供暖目标区间</option></select>
+      <div id="point-field" hidden><label class="field-label" for="demand-point">目标 °C（供暖设定意图）</label><input id="demand-point" type="number" min="5" max="40" step="0.25" value="21"></div>
+      <div id="range-fields" class="demand-range" hidden><label>下界 °C<input id="demand-low" aria-label="需求区间下界" type="number" min="5" max="40" step="0.25" value="20.5"></label><label>上界 °C<input id="demand-high" aria-label="需求区间上界" type="number" min="5" max="40" step="0.25" value="21.5"></label></div>
+      <label class="field-label" for="demand-ttl">仿真有效期</label><select id="demand-ttl"><option value="1">15分钟</option><option value="2">30分钟</option><option value="4" selected>1小时</option><option value="8">2小时</option><option value="16">4小时</option></select></details>
+      <div class="button-pair"><button id="submit-demand" disabled>提交A需求</button><button id="revoke-demand" disabled>撤销A需求</button></div>
+      <p id="preference-summary" class="hint">A：无请求　B：无请求</p><details class="demand-options"><summary>需求事件记录</summary><ol id="demand-events" class="demand-journal"></ol></details>
+      <label class="field-label" for="resolution">冲突/不可行时的显式裁决</label><select id="resolution"><option value="unresolved">不裁决，先暂停</option><option value="A">优先A，其余记未满足</option><option value="B">优先B，其余记未满足</option><option value="base">按操作者基准</option></select>
+      <p id="demand-preview" class="demand-preview">先新建住宅，提交需求后预览映射。</p><p id="conflict" class="conflict" hidden></p><p class="hint small">虚拟控制意图；按需求模式会改变供暖目标，不是实际热感觉标签。不改变人数或人体散热；有效期按仿真时钟计算。</p>
+      <div class="divider"></div><button id="step" class="primary wide" disabled>推进 15 分钟 <span>→</span></button><div class="button-pair"><button id="run" disabled>快进 4 小时</button><button id="pause" disabled>步后暂停</button></div><button id="end" class="text-button wide" disabled>结束并保存会话</button>
     </aside>
     <section class="room-column">
       <div class="room-card panel">

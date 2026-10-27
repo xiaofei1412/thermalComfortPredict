@@ -1,4 +1,12 @@
 *{box-sizing:border-box}
+.demand-options{margin:12px 0;font-size:11px}
+.demand-options summary{cursor:pointer;color:#647b58;margin-bottom:10px}
+.demand-options .field-label{margin-top:10px}
+.demand-range{display:flex;gap:8px;margin-top:10px}
+.demand-range label{flex:1;min-width:0;font-size:10px;color:#718264}
+input[type=number]{width:100%;padding:9px 7px;border:1px solid #dbe1d3;border-radius:7px;background:#fff;color:var(--ink);font-size:12px}
+.demand-preview{font-size:11px;line-height:1.8;background:#edf3e5;border-radius:7px;padding:10px;color:#536e43}
+.demand-journal{padding-left:18px;font-size:10px;line-height:1.8;color:#6c805e}
  :root{--ink:#273c36;--muted:#738078;--line:#e1e5dc;--green:#355b49;--accent:#d4e4ba;--paper:#fafbf7;--warm:#b57b48}
 body{margin:0;background:#f0f3eb;color:var(--ink);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;font-size:14px}
 button,input,select{font:inherit}

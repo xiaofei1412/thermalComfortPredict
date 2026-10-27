@@ -7,6 +7,7 @@
       "paths": [
         "thermal_comfort/__init__.py",
         "thermal_comfort/workbench.py",
+        "thermal_comfort/demands.py",
         "thermal_comfort/simulation.py",
         "workbench/index.html",
         "workbench/app.js",
