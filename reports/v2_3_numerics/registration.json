@@ -1,0 +1,131 @@
+{
+  "plan": {
+    "protocol": "residential_rl_v2_zero_load_diagnostic_1",
+    "phase": "V2-3 preparation only",
+    "parent_locks": [
+      "reports/v2_0/lock.json",
+      "reports/v2_1/lock.json",
+      "reports/v2_2/lock.json"
+    ],
+    "episode": "development189",
+    "start_day": 189,
+    "training_authorized": false,
+    "tolerance_changes_authorized": false,
+    "live_engine": "http://127.0.0.1:8082",
+    "compose_project": "thermal-rl-v2",
+    "live_budget": {
+      "select_attempts_max": 4,
+      "initializations_max": 4,
+      "advance_attempts_max": 2688,
+      "wall_seconds_max": 1200
+    },
+    "runs": [
+      {
+        "id": "rule_A",
+        "archived_kind": "guarded_rule"
+      },
+      {
+        "id": "rule_B",
+        "archived_kind": "guarded_rule"
+      },
+      {
+        "id": "mpc_replay",
+        "archived_kind": "solar_mpc"
+      },
+      {
+        "id": "minimum_replay",
+        "archived_kind": "minimum_heat"
+      }
+    ],
+    "scored_steps": 672,
+    "step_s": 900,
+    "native_interval_s": 30,
+    "warmup_s": 604800,
+    "sampled_zero_flow_absolute_W": 1e-09,
+    "zero_channels": [
+      "reaPHeaPum_y",
+      "reaPFan_y",
+      "reaPPumEmi_y",
+      "reaQFloHea_y",
+      "reaQHeaPumCon_y",
+      "reaQHeaPumEva_y"
+    ],
+    "analysis": {
+      "decimal_precision": 50,
+      "same_waveform_max_abs_temperature_K": 1e-10,
+      "same_waveform_max_abs_Kh": 1e-10,
+      "postprocessing_Kh_difference_max": 1e-10,
+      "additional_initializations_after_budget": 0,
+      "automatic_retraining_or_protocol_upgrade": false
+    }
+  },
+  "git_base": "6ecf14f76234d375aad9b38bfc27cf7dcb8d9858",
+  "files_sha256": {
+    "configs/v2_3_numerics.json": "aea1663b5ece35d6c59aa4ea05c9364b18fd511e57d23be6735d236b458b8e7a",
+    "docs/experiments/v2_3_numerics.md": "8733020629f18415d5f974d792e0553b9668662b316fe9e86b5ddfd42108d6a0",
+    "thermal_comfort/v2_numerics.py": "06c0243db4cea7c7839714c42953507411d36e9bc380d447d8d06f3580f9528a",
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a"
+  },
+  "source_metadata": {
+    "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+    "fmi": {
+      "fmiVersion": "2.0",
+      "modelName": "wrapped",
+      "guid": "31f29e2c04197d918f113370dd8df356",
+      "generationTool": "JModelica.org",
+      "generationDateAndTime": "2023-09-29T03:42:15",
+      "variableNamingConvention": "structured",
+      "numberOfEventIndicators": "62"
+    },
+    "cosimulation": {
+      "modelIdentifier": "wrapped",
+      "needsExecutionTool": "false",
+      "canHandleVariableCommunicationStepSize": "true",
+      "canInterpolateInputs": "true",
+      "maxOutputDerivativeOrder": "0",
+      "canRunAsynchronuously": "false",
+      "canBeInstantiatedOnlyOncePerProcess": "true",
+      "canNotUseMemoryManagementFunctions": "false",
+      "canSerializeFMUstate": "false",
+      "providesDirectionalDerivative": "false"
+    },
+    "default_experiment_present": false,
+    "internal_parameter_metadata_not_output_error_bounds": {
+      "_cs_rel_tol": {
+        "relativeQuantity": "false",
+        "start": "1.0E-6"
+      },
+      "_cs_solver": {
+        "start": "0"
+      },
+      "_cs_step_size": {
+        "relativeQuantity": "false",
+        "start": "0.001"
+      },
+      "_events_default_tol": {
+        "relativeQuantity": "false",
+        "start": "1.0E-10"
+      }
+    },
+    "bootstrap_config": {
+      "name": "bestest_hydronic_heat_pump",
+      "area": 192.0,
+      "start_time": 0.0,
+      "warmup_period": 0.0,
+      "step": 3600.0
+    },
+    "source_sha256": {
+      "testcase.py": "0743312935883070320e6315e4a664e1534995511d0cd9856061886c110504d4",
+      "testcases/bestest_hydronic_heat_pump/models/wrapped.mo": "e2944155f2411eb400b76fb7cb0dbd21e1502a1b56d02e4e6a5eb09abadf1404",
+      "testcases/bestest_hydronic_heat_pump/models/config.json": "5047c8db6c7348561c619e8d84c54ad642c21a7c644e1a4622a48de681bf2685",
+      "testcases/bestest_hydronic_heat_pump/models/BESTESTHydronicHeatPump/TestCase.mo": "69927ee36a69241a4eeec7a6a50eef88ea9900ef0a943f26ed4c58f2c3122630"
+    }
+  },
+  "archived_action_sha256": {
+    "guarded_rule": "98308b511006d76fb29876d84ef4cd8ceafc5c8bc50fde918d6cb42d9337344a",
+    "solar_mpc": "8c3180754f548442c92357b6f9b1e000736185800e2dc0ae634a354792bee57c",
+    "minimum_heat": "73472cfd3e0983cefd90eff1bb573473f3a7752d618b39dd5820793425d34238"
+  }
+}

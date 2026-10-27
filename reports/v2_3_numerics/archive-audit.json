@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "counts": {
+    "initialize": 4,
+    "advance": 2688,
+    "stop": 4,
+    "forecast": 2688,
+    "results": 2688,
+    "select": 4
+  },
+  "runs": [
+    {
+      "run": "rule_A",
+      "transitions_checked": 672,
+      "native_points": 20161,
+      "summary_sha256": "9ae92cb7303927a6ab93d9d63bf2ebf8f9376c1440406b443a5686c263036813"
+    },
+    {
+      "run": "rule_B",
+      "transitions_checked": 672,
+      "native_points": 20161,
+      "summary_sha256": "bdf210f9cc6ecbf2ab78b336b9daff4b5b8b6934ff0daeb279e31808201d8920"
+    },
+    {
+      "run": "mpc_replay",
+      "transitions_checked": 672,
+      "native_points": 20161,
+      "summary_sha256": "427cb7ac3cb34c9657ab9b041eb2063b70f237352e0246f63de786b450f9984c"
+    },
+    {
+      "run": "minimum_replay",
+      "transitions_checked": 672,
+      "native_points": 20161,
+      "summary_sha256": "2f9507ac0cc489d5c10c4e71cc0dbd16184c7d354100b5e43b06818b436691e8"
+    }
+  ],
+  "official_kpi_max_absolute_difference": 0.0,
+  "diagnostic_recomputed": true,
+  "old_failure_preserved": true,
+  "training_runs": 0,
+  "holdout_initializations": 0,
+  "new_tolerance_authorized": false,
+  "result_sha256": "68dc6a49327acc74a1575e6da0dd70cb06ea547ef5fc53d82c51a8049c0157de"
+}

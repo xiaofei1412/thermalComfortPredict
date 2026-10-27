@@ -1,0 +1,473 @@
+{
+  "status": "diagnostic_complete_original_failure_preserved",
+  "counts": {
+    "initialize": 4,
+    "advance": 2688,
+    "select": 4
+  },
+  "wall_seconds": 215.9108582001645,
+  "same_waveform_repeatable": true,
+  "postprocessing_excluded_at_registered_scale": true,
+  "input_associated_FMU_path_evidence": true,
+  "specific_internal_solver_cause_proven": false,
+  "solver_convergence_test_run": false,
+  "original_tolerances_changed": false,
+  "training_authorized": false,
+  "original_Kh_tolerance": 1e-06,
+  "equivalent_mean_K_over_7days": 5.9523809523809525e-09,
+  "equivalent_mean_K_over_original_hot_hours": 8.881980681692017e-09,
+  "precision_checks": {
+    "rule_A": {
+      "decimal_thermal_Kh": {
+        "cold_Kh": "0",
+        "hot_Kh": "292.69565746213999075"
+      },
+      "float_vs_decimal_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 2.5579538487363607e-12
+      },
+      "csv_default_vs_api_max_temperature_K": 5.684341886080802e-14,
+      "csv_default_vs_api_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 2.2737367544323206e-13
+      },
+      "api_json_to_csv_round_trip_equal": true,
+      "postprocessing_below_registered_diagnostic_limit": true
+    },
+    "rule_B": {
+      "decimal_thermal_Kh": {
+        "cold_Kh": "0",
+        "hot_Kh": "292.69565746213999075"
+      },
+      "float_vs_decimal_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 2.5579538487363607e-12
+      },
+      "csv_default_vs_api_max_temperature_K": 5.684341886080802e-14,
+      "csv_default_vs_api_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 2.2737367544323206e-13
+      },
+      "api_json_to_csv_round_trip_equal": true,
+      "postprocessing_below_registered_diagnostic_limit": true
+    },
+    "mpc_replay": {
+      "decimal_thermal_Kh": {
+        "cold_Kh": "0",
+        "hot_Kh": "292.69655094676581783333333333333333333333333333333"
+      },
+      "float_vs_decimal_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 2.6147972675971687e-12
+      },
+      "csv_default_vs_api_max_temperature_K": 5.684341886080802e-14,
+      "csv_default_vs_api_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 1.7053025658242404e-13
+      },
+      "api_json_to_csv_round_trip_equal": true,
+      "postprocessing_below_registered_diagnostic_limit": true
+    },
+    "minimum_replay": {
+      "decimal_thermal_Kh": {
+        "cold_Kh": "0",
+        "hot_Kh": "292.69656038959672841666666666666666666666666666667"
+      },
+      "float_vs_decimal_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 2.5579538487363607e-12
+      },
+      "csv_default_vs_api_max_temperature_K": 5.684341886080802e-14,
+      "csv_default_vs_api_abs_Kh": {
+        "cold_Kh": 0.0,
+        "hot_Kh": 1.7053025658242404e-13
+      },
+      "api_json_to_csv_round_trip_equal": true,
+      "postprocessing_below_registered_diagnostic_limit": true
+    }
+  },
+  "archived_reproduction": {
+    "rule_A": {
+      "temperature_max_abs_difference_K": 0.0,
+      "hot_integral_difference_Kh": 0.0
+    },
+    "rule_B": {
+      "temperature_max_abs_difference_K": 0.0,
+      "hot_integral_difference_Kh": 0.0
+    },
+    "mpc_replay": {
+      "temperature_max_abs_difference_K": 0.0,
+      "hot_integral_difference_Kh": 0.0
+    },
+    "minimum_replay": {
+      "temperature_max_abs_difference_K": 0.0,
+      "hot_integral_difference_Kh": 0.0
+    }
+  },
+  "pairs_vs_rule_A": {
+    "rule_B": {
+      "temperature_max_abs_K": 0.0,
+      "thermal_differences": {
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "first_action_difference_s": null,
+      "first_temperature_difference_s": null,
+      "hot_integral_abs_difference_over_original_tolerance": 0.0,
+      "original_degree_hour_nonincrease_passed": true,
+      "official_tdis_difference_Kh": 0.0
+    },
+    "mpc_replay": {
+      "temperature_max_abs_K": 1.945915801115916e-05,
+      "thermal_differences": {
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0008934846258625839,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 8.707062704615964e-06
+      },
+      "first_action_difference_s": 16372830.0,
+      "first_temperature_difference_s": 16372830.0,
+      "hot_integral_abs_difference_over_original_tolerance": 893.4846258625839,
+      "original_degree_hour_nonincrease_passed": false,
+      "official_tdis_difference_Kh": 0.0008934846258625839
+    },
+    "minimum_replay": {
+      "temperature_max_abs_K": 2.2406990694889828e-05,
+      "thermal_differences": {
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0009029274567637913,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 6.302098711330473e-06
+      },
+      "first_action_difference_s": 16355730.0,
+      "first_temperature_difference_s": 16355730.0,
+      "hot_integral_abs_difference_over_original_tolerance": 902.9274567637913,
+      "original_degree_hour_nonincrease_passed": false,
+      "official_tdis_difference_Kh": 0.0009029274567637913
+    }
+  },
+  "source_metadata": {
+    "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+    "fmi": {
+      "fmiVersion": "2.0",
+      "modelName": "wrapped",
+      "guid": "31f29e2c04197d918f113370dd8df356",
+      "generationTool": "JModelica.org",
+      "generationDateAndTime": "2023-09-29T03:42:15",
+      "variableNamingConvention": "structured",
+      "numberOfEventIndicators": "62"
+    },
+    "cosimulation": {
+      "modelIdentifier": "wrapped",
+      "needsExecutionTool": "false",
+      "canHandleVariableCommunicationStepSize": "true",
+      "canInterpolateInputs": "true",
+      "maxOutputDerivativeOrder": "0",
+      "canRunAsynchronuously": "false",
+      "canBeInstantiatedOnlyOncePerProcess": "true",
+      "canNotUseMemoryManagementFunctions": "false",
+      "canSerializeFMUstate": "false",
+      "providesDirectionalDerivative": "false"
+    },
+    "default_experiment_present": false,
+    "internal_parameter_metadata_not_output_error_bounds": {
+      "_cs_rel_tol": {
+        "relativeQuantity": "false",
+        "start": "1.0E-6"
+      },
+      "_cs_solver": {
+        "start": "0"
+      },
+      "_cs_step_size": {
+        "relativeQuantity": "false",
+        "start": "0.001"
+      },
+      "_events_default_tol": {
+        "relativeQuantity": "false",
+        "start": "1.0E-10"
+      }
+    },
+    "bootstrap_config": {
+      "name": "bestest_hydronic_heat_pump",
+      "area": 192.0,
+      "start_time": 0.0,
+      "warmup_period": 0.0,
+      "step": 3600.0
+    },
+    "source_sha256": {
+      "testcase.py": "0743312935883070320e6315e4a664e1534995511d0cd9856061886c110504d4",
+      "testcases/bestest_hydronic_heat_pump/models/wrapped.mo": "e2944155f2411eb400b76fb7cb0dbd21e1502a1b56d02e4e6a5eb09abadf1404",
+      "testcases/bestest_hydronic_heat_pump/models/config.json": "5047c8db6c7348561c619e8d84c54ad642c21a7c644e1a4622a48de681bf2685",
+      "testcases/bestest_hydronic_heat_pump/models/BESTESTHydronicHeatPump/TestCase.mo": "69927ee36a69241a4eeec7a6a50eef88ea9900ef0a943f26ed4c58f2c3122630"
+    }
+  },
+  "explicit_scope": {
+    "new_dates": [
+      189
+    ],
+    "select_attempts": 4,
+    "explicit_initializations": 4,
+    "upstream_bootstrap": "Each select constructs the same case with fixed time0/warmup0; no bootstrap trajectories queried or scored. Internal FMI lifecycle calls are not counted as REST initialize calls.",
+    "training_runs": 0,
+    "heldout_initializations": 0,
+    "new_scenarios": 0,
+    "new_solver_settings": false
+  },
+  "runs": {
+    "rule_A": {
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.69565746214255,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69565746214255,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080333109387539,
+        "heat_kWh": 0.0
+      },
+      "kpis": {
+        "tdis_tot": 292.69565746214255,
+        "idis_tot": 0,
+        "ener_tot": 0,
+        "cost_tot": 0,
+        "emis_tot": 0,
+        "pele_tot": 0,
+        "pgas_tot": null,
+        "pdih_tot": null,
+        "time_rat": 7.258051376229071e-05
+      },
+      "zero_channel_max_abs_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 2.6222796418905065e-12,
+        "reaQHeaPumEva_y": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "wall_seconds": 53.08847070019692,
+      "source_summary_sha256": "9ae92cb7303927a6ab93d9d63bf2ebf8f9376c1440406b443a5686c263036813",
+      "flow_channel_max_abs_difference_vs_rule_A_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 0.0,
+        "reaQHeaPumEva_y": 0.0
+      }
+    },
+    "rule_B": {
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.69565746214255,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69565746214255,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080333109387539,
+        "heat_kWh": 0.0
+      },
+      "kpis": {
+        "tdis_tot": 292.69565746214255,
+        "idis_tot": 0,
+        "ener_tot": 0,
+        "cost_tot": 0,
+        "emis_tot": 0,
+        "pele_tot": 0,
+        "pgas_tot": null,
+        "pdih_tot": null,
+        "time_rat": 7.682409798157375e-05
+      },
+      "zero_channel_max_abs_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 2.6222796418905065e-12,
+        "reaQHeaPumEva_y": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "wall_seconds": 54.29755249992013,
+      "source_summary_sha256": "bdf210f9cc6ecbf2ab78b336b9daff4b5b8b6934ff0daeb279e31808201d8920",
+      "flow_channel_max_abs_difference_vs_rule_A_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 0.0,
+        "reaQHeaPumEva_y": 0.0
+      }
+    },
+    "mpc_replay": {
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.6965509467684,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965509467684,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080341816450243,
+        "heat_kWh": 0.0
+      },
+      "kpis": {
+        "tdis_tot": 292.6965509467684,
+        "idis_tot": 0,
+        "ener_tot": 0,
+        "cost_tot": 0,
+        "emis_tot": 0,
+        "pele_tot": 0,
+        "pgas_tot": null,
+        "pdih_tot": null,
+        "time_rat": 7.219917747748966e-05
+      },
+      "zero_channel_max_abs_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 2.6222796418905065e-12,
+        "reaQHeaPumEva_y": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "wall_seconds": 53.03056739992462,
+      "source_summary_sha256": "427cb7ac3cb34c9657ab9b041eb2063b70f237352e0246f63de786b450f9984c",
+      "flow_channel_max_abs_difference_vs_rule_A_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 0.0,
+        "reaQHeaPumEva_y": 0.0
+      }
+    },
+    "minimum_replay": {
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.6965603895993,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965603895993,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625,
+        "heat_kWh": 0.0
+      },
+      "kpis": {
+        "tdis_tot": 292.6965603895993,
+        "idis_tot": 0,
+        "ener_tot": 0,
+        "cost_tot": 0,
+        "emis_tot": 0,
+        "pele_tot": 0,
+        "pgas_tot": null,
+        "pdih_tot": null,
+        "time_rat": 7.810455735382367e-05
+      },
+      "zero_channel_max_abs_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 2.6222796418905065e-12,
+        "reaQHeaPumEva_y": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "wall_seconds": 53.48940169997513,
+      "source_summary_sha256": "2f9507ac0cc489d5c10c4e71cc0dbd16184c7d354100b5e43b06818b436691e8",
+      "flow_channel_max_abs_difference_vs_rule_A_W": {
+        "reaPHeaPum_y": 0.0,
+        "reaPFan_y": 0.0,
+        "reaPPumEmi_y": 0.0,
+        "reaQFloHea_y": 0.0,
+        "reaQHeaPumCon_y": 0.0,
+        "reaQHeaPumEva_y": 0.0
+      }
+    }
+  },
+  "verification": {
+    "full_tests": 250,
+    "full_test_seconds": 8.303,
+    "new_tests": 11,
+    "checked_actions": 2688,
+    "checked_native_points": 80644,
+    "official_kpi_max_abs_difference": 0.0,
+    "successful_stops": 4,
+    "API_failures": 0,
+    "old_failure_preserved": true,
+    "workbench_id_status_unchanged": true,
+    "original_parent_locks_unchanged": true,
+    "raw_payload_note": "Saved JSON is Client-decoded API payload, not HTTP wire bytes; Decimal checks the stored decimal representation, not physical truth."
+  },
+  "decision": {
+    "one_round_closed": true,
+    "additional_FMU_diagnostics_authorized": false,
+    "automatic_tolerance_upgrade": false,
+    "precise_solver_mechanism_unresolved": true,
+    "next": "Register learning protocol/zero-control interpretation and budgets, preserving all original strict results; then verify training-only interface. No training in this phase."
+  },
+  "evidence_sha256": {
+    "outputs/v2-3-numerics/live-registered/result.json": "68dc6a49327acc74a1575e6da0dd70cb06ea547ef5fc53d82c51a8049c0157de",
+    "outputs/v2-3-numerics/live-registered/calls.jsonl": "e4f358f4a2cc6e14912b35e7bd5f173c5252e3129c29fa1bc54e056866fb6fe8",
+    "outputs/v2-3-numerics/live-registered/attempts.jsonl": "d6b455d36f0e2bf9f4e1eca8b9976f5b1e19720cd4e28a963c2f7c2ef47a9174",
+    "outputs/v2-3-numerics/full-tests.txt": "7a23646fb05b2a68f43ad9d882ef767b0f26af5d1da7f4f3f2ed1d981e518c32",
+    "outputs/v2-3-numerics/archive-audit.json": "dc7d45db7df00e56a5f3175d84415d169e902106e1942fe7fa92cf4152c6305c",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_2/summary.json": "c81c63038a448f3286b5ac7136b6704f3dc6624b58412790c98a9848f2c35167",
+    "outputs/v2-2/live-registered/failure.json": "e8611f5af96c24b35bf5383544885ddd646d780d5b0fc19dfb07e371677a3e12"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "protocol": "residential_rl_v2_zero_load_diagnostic_1",
+  "status": "one_round_closed_original_failure_and_tolerances_preserved_no_training",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a"
+  },
+  "files_sha256": {
+    "configs/v2_3_numerics.json": "aea1663b5ece35d6c59aa4ea05c9364b18fd511e57d23be6735d236b458b8e7a",
+    "docs/experiments/v2_3_numerics.md": "8733020629f18415d5f974d792e0553b9668662b316fe9e86b5ddfd42108d6a0",
+    "thermal_comfort/v2_numerics.py": "06c0243db4cea7c7839714c42953507411d36e9bc380d447d8d06f3580f9528a",
+    "scripts/verify_v2_numerics.py": "e0794adf2e7db81c4a67333db0b85f9b1ebfb15e50c542cdf896c81e479eb2de",
+    "tests/test_v2_numerics.py": "50e7448d56badef53c30488799758a3397d4a12f14523fde036dfb0261329fa4",
+    "reports/v2_3_numerics/archive-audit.json": "facc292341051077a008c37208b64c9b2dc1fb69512837dd106315f76d8c378d",
+    "reports/v2_3_numerics/registration.json": "6a74999fbc4f8ae720effc006b76794a562ebad5c35ca36ff423b9414f5fe929",
+    "reports/v2_3_numerics/REPORT.md": "bb0209998d34ab9895a10e271a8cb9287472359d1dc4c9b4d091b0e309b2650d",
+    "reports/v2_3_numerics/summary.json": "eccfc3ceeb3a532bc59f76e427b3058788becf0bc03ebf5e37113f1f39cd3651"
+  }
+}

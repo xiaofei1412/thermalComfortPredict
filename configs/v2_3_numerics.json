@@ -1,0 +1,32 @@
+{
+  "protocol": "residential_rl_v2_zero_load_diagnostic_1",
+  "phase": "V2-3 preparation only",
+  "parent_locks": ["reports/v2_0/lock.json", "reports/v2_1/lock.json", "reports/v2_2/lock.json"],
+  "episode": "development189",
+  "start_day": 189,
+  "training_authorized": false,
+  "tolerance_changes_authorized": false,
+  "live_engine": "http://127.0.0.1:8082",
+  "compose_project": "thermal-rl-v2",
+  "live_budget": {"select_attempts_max": 4, "initializations_max": 4, "advance_attempts_max": 2688, "wall_seconds_max": 1200},
+  "runs": [
+    {"id": "rule_A", "archived_kind": "guarded_rule"},
+    {"id": "rule_B", "archived_kind": "guarded_rule"},
+    {"id": "mpc_replay", "archived_kind": "solar_mpc"},
+    {"id": "minimum_replay", "archived_kind": "minimum_heat"}
+  ],
+  "scored_steps": 672,
+  "step_s": 900,
+  "native_interval_s": 30,
+  "warmup_s": 604800,
+  "sampled_zero_flow_absolute_W": 1e-9,
+  "zero_channels": ["reaPHeaPum_y", "reaPFan_y", "reaPPumEmi_y", "reaQFloHea_y", "reaQHeaPumCon_y", "reaQHeaPumEva_y"],
+  "analysis": {
+    "decimal_precision": 50,
+    "same_waveform_max_abs_temperature_K": 1e-10,
+    "same_waveform_max_abs_Kh": 1e-10,
+    "postprocessing_Kh_difference_max": 1e-10,
+    "additional_initializations_after_budget": 0,
+    "automatic_retraining_or_protocol_upgrade": false
+  }
+}
