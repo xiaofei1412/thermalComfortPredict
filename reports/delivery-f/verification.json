@@ -1,0 +1,76 @@
+{
+  "scope": "source-workspace rule/replay candidate, not a clean new host/container or research retraining",
+  "environment": {
+    "python": "3.14.3",
+    "isolated_venv": true,
+    "project_from_clean_copy": true,
+    "raw_csv_present": false,
+    "old_model_present": false,
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "3.0.0",
+      "python-dateutil": "2.9.0.post0",
+      "six": "1.17.0",
+      "tzdata": "2025.3"
+    },
+    "dependencies_inside_venv": true
+  },
+  "offline_verification": {
+    "sample_id": "0a2e84c3cb66",
+    "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+    "replayed_actions": 5,
+    "native_interval_points": 155,
+    "kpi_max_absolute_difference": 3.469446951953614e-18,
+    "c2_stop_decision_reproduced": true,
+    "new_simulations": 0,
+    "new_model_fits": 0,
+    "scope": "archived trajectory and decision audit; not model retraining or a new control evaluation"
+  },
+  "clean_delivery_tests": 6,
+  "full_research_environment_tests": 196,
+  "runtime_source_sha256": {
+    "thermal_comfort/workbench.py": "9401a58d12a85f42d69cbaa5834fc26f9aa4b3fc20a81291373b7fc326000e69",
+    "thermal_comfort/demands.py": "4a6996ab186030302e8cf9c2dd876b14e3ef24c1cfad2424557cd0ce7bd228eb",
+    "thermal_comfort/demand_rule.py": "99aeb4d913abc4e59f7692889ae59f5d6c068f3fabc47eeb24cd9ef5e44a4f4c",
+    "thermal_comfort/simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+    "scripts/install_demo.py": "2fa5b06f3954c7eff86a1df35afc0613c305e4fa840eb2ba09b9c5e0effbe96c",
+    "scripts/verify_delivery.py": "38bdd7a3ac58c35319a6fdf8d6c611acae316bcb75d726b372da2d26d6432db1",
+    "scripts/package_delivery.py": "6913dcd79ea37e54a5cc3342b02f38e52560d6768408c26bd29e9746278c8412",
+    "requirements/workbench.lock.txt": "2ce0f2777d95ad6f98efc9371eea8eb9a1a6b73074ccd5c5c6592d27b2117c8a",
+    "examples/workbench/manifest.json": "1e7e412299e115df3515742a81d2acfdb949eb121ff56b9383febec7abf29053",
+    "examples/workbench/0a2e84c3cb66.json.gz": "2f89ad5d11bc4c092b39bd316b0014d2ca44617b947b7f9ff1150280a6fe982e",
+    "scripts/start_workbench.ps1": "d3c8287e7c66387b417d0c0ef217a911bcd1daa33cf196418d2acff79ff03722",
+    "workbench/index.html": "6ff913cfaa6f36f24a80c26f15a0e54c12c5d03e6ab613ed69237aa37048de4a",
+    "workbench/app.js": "f09f8e29048bd9a945df57a3227addf3b8024d1015b1930547a82ed8ed238af3",
+    "workbench/style.css": "14882d0b85886e1c2f85af7acc683a9c7ea553fc3c4a6c8885245ff094cf4441"
+  },
+  "http_export_matches_original_bytes": true,
+  "ui_history_play_seek_events_checked": true,
+  "live_session_after_browser_acceptance": null,
+  "new_research_experiments": 0,
+  "existing_containers_status_only": true,
+  "fresh_container_rebuild_verified": false,
+  "preflight_source_package": {
+    "kind": "source",
+    "source_base_commit": "f5876d17eece284ff8f5b33e961c305469b93291",
+    "archive": "preflight-source.zip",
+    "archive_sha256": "a041ac06ddfc83b8468d11569fe15ce18f7b530359afc77a904d2058b3332677",
+    "archive_bytes": 5595684,
+    "file_count": 444,
+    "uncompressed_bytes": 10892067,
+    "read_back_verified": true,
+    "scope": "source workspace, no historical CSV/weights/FMU"
+  },
+  "private_archive": {
+    "kind": "private",
+    "source_base_commit": "f5876d17eece284ff8f5b33e961c305469b93291",
+    "archive": "private-research-evidence.zip",
+    "archive_sha256": "f78250f1db43cc3de0c85fe93113bd49daf14c0c8adf4607a15c97296dd5f82e",
+    "archive_bytes": 739003972,
+    "file_count": 4164,
+    "uncompressed_bytes": 1403578050,
+    "read_back_verified": true,
+    "scope": "private local copy only; not off-site backup or a redistribution license"
+  },
+  "offsite_backup_verified": false
+}

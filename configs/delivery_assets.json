@@ -1,5 +1,5 @@
 {
-  "scope": "A audit; local source checkout delivery, not an all-in-one redistribution license",
+  "scope": "A inventory maintained through F; source-workspace delivery candidate, not an all-in-one redistribution license",
   "assets": [
     {
       "id": "workbench-source",
@@ -12,7 +12,9 @@
         "workbench/index.html",
         "workbench/app.js",
         "workbench/style.css",
-        "scripts/start_workbench.ps1"
+        "scripts/start_workbench.ps1",
+        "scripts/install_demo.py",
+        "examples/workbench"
       ],
       "source": "this Git repository",
       "license": "No root code LICENSE found; license decision remains open",
@@ -34,7 +36,8 @@
       "id": "dependency-spec",
       "tier": "workbench",
       "paths": [
-        "pyproject.toml"
+        "pyproject.toml",
+        "requirements/workbench.lock.txt"
       ],
       "source": "pinned direct Python dependencies",
       "license": "Individual package licenses; no blanket license",
@@ -80,7 +83,7 @@
       "id": "boptest-license",
       "tier": "live-simulation",
       "paths": [
-        "outputs/boptest-v0.9.0/LICENSE.md"
+        "outputs/boptest-v0.9.0/license.md"
       ],
       "source": "same pinned BOPTEST checkout",
       "license": "Composite IBPSA and dependency notices; actual text retained upstream",
@@ -302,6 +305,22 @@
       "source": "C2 frozen residential train224/development287 and paired development response; 464 actions",
       "license": "Derived FMU/weather trajectories; no blanket redistribution permission; virtual intentions are not human observations",
       "rebuild": "docs/experiments/residential_c2.md in a separate reproduction workspace with original prerequisites; preserve original local files for exact identities. Current round is closed_negative; calibration/test not authorized"
+    },
+    {
+      "id": "delivery-candidate-and-local-evidence",
+      "tier": "delivery",
+      "paths": [
+        "DELIVERY.md",
+        "docs/DEMO.md",
+        "docs/REPRODUCE.md",
+        "THIRD_PARTY_NOTICES.md",
+        "reports/delivery-f",
+        "outputs/delivery-f/private-research-evidence.zip",
+        "outputs/delivery-f/private-research-evidence.manifest.json"
+      ],
+      "source": "F source-workspace candidate and read-back verified private local archive",
+      "license": "Root code license/CSV provenance unresolved; private archive is not authorized for public redistribution",
+      "rebuild": "docs/REPRODUCE.md; runtime source zip built from reviewed Git index; off-site evidence availability and clean container rebuild remain open"
     },
     {
       "id": "project-code-license",

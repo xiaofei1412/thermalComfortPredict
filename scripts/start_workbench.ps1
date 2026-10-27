@@ -28,6 +28,8 @@ Push-Location -LiteralPath $workspaceRoot
 try {
     & $PythonPath -c 'import numpy, pandas; import thermal_comfort.workbench'
     if ($LASTEXITCODE -ne 0) { throw 'Missing workbench dependencies. Install the project with this Python as documented.' }
+    & $PythonPath -m scripts.install_demo
+    if ($LASTEXITCODE -ne 0) { throw 'Could not install the bundled replay without overwriting history.' }
     & $PythonPath -m thermal_comfort.workbench --port $Port
     if ($LASTEXITCODE -ne 0) { throw 'Workbench stopped with an error.' }
 } finally {

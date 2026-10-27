@@ -1,0 +1,6 @@
+# Source-workspace rule/replay runtime; Python 3.14 acceptance target.
+numpy==2.3.5
+pandas==3.0.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2025.3

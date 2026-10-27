@@ -7,18 +7,23 @@
 在项目根目录的 PowerShell 中运行：
 
 ```powershell
-# 首次安装，沿用CPU研究环境；已有环境可跳过以下安装命令。
+# 首次使用规则/离线回放，只需轻量环境；已有研究环境可直接复用。
 py -3.14 -m venv .venv
-./.venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
-./.venv/Scripts/python.exe -m pip install -e .
+./.venv/Scripts/python.exe -m pip install -r requirements/workbench.lock.txt
+./.venv/Scripts/python.exe -m scripts.verify_delivery
+./scripts/start_workbench.ps1 -PythonPath ./.venv/Scripts/python.exe
+```
+
+无引擎也可启动并选择内置历史`0a2e84`回放。新建实时仿真才需要以下服务，在另一终端操作：
+
+```powershell
 # 已部署过 BOPTEST 时，先检查服务；首次部署见下方协议。
 ./scripts/setup_boptest.ps1 -Action status
 # 如果服务没有运行：
 ./scripts/setup_boptest.ps1 -Action up
-./scripts/start_workbench.ps1
 ```
 
-打开 <http://127.0.0.1:8765>。终端保持运行，Ctrl+C退出；先在网页结束会话可立即释放仿真工作进程。启动器依次查找`.venv-cpu`和`.venv`，也支持`-PythonPath`指定已有解释器；不会自动安装依赖。安装步骤见[基线协议](experiments/baseline.md)；BOPTEST需要已有WSL/Docker，部署见[仿真协议](experiments/simulation.md)。网页不需要Node、前端构建或外网字体。
+打开 <http://127.0.0.1:8765>。终端保持运行，Ctrl+C退出；先在网页结束会话可立即释放仿真工作进程。启动器依次查找`.venv-cpu`和`.venv`，也支持`-PythonPath`指定已有解释器；不会自动安装依赖，会校验并安装内置真实回放，已有不同内容的同ID历史不覆盖。完整研究环境见[基线协议](experiments/baseline.md)；BOPTEST需要已有WSL/Docker，部署见[仿真协议](experiments/simulation.md)。网页不需要Node、前端构建或外网字体。
 
 同工作区重复运行启动器会显示已有URL；其他工作区/未知服务占用端口时不会接管，可显式指定`-Port`。Python直接入口在端口被占用时以状态码2退出，Windows使用独占监听防止两个进程分享端口。本次A阶段修复服务运行在<http://127.0.0.1:8768>，可用`./scripts/start_workbench.ps1 -Port 8768`复用。当前交付支持在源码目录运行/editable安装，未声明wheel独立分发；资产和发布缺口见[交付范围](delivery-scope.md)。
 
@@ -27,6 +32,8 @@ py -3.14 -m venv .venv
 服务器只监听本机，不开放外网访问。当前只有一个BOPTEST worker，不要同时运行另一份工作台或研究采集脚本。启动工作台本身不要求BOPTEST在线：已有会话仍可回放，创建新仿真时才检查引擎。
 
 ## 一次完整体验
+
+无需引擎的第一入口见[十分钟演示](DEMO.md)：在历史列表选择内置`0a2e84`，播放/拖动/导出，明确是HISTORY。下面的新建会话仅适用于已有引擎；F验收没有追加新仿真回合。
 
 1. 选择早春、暖季或晚秋，新建会话。它们复用既有演示日期day63/147/315，统一08:00起步、七天预热，不是新的独立研究留出。
 2. 默认“按需求”模式：点击住户A/B，选择“更暖／保持／更凉”，再点击“提交”；展开“目标、区间和有效期”可输入显式目标/区间和15～240分钟有效期。相对需求锚定提交时基准±0.5°C，不自动累加；“保持”固定该基准。提交本身不推进时间。虚拟意图不是实际热感觉标签，不改变人数或人体散热。
@@ -58,6 +65,10 @@ B阶段新会话使用schema2，增加需求事件账本、版本、绝对仿真
 ## 验证
 
 ```powershell
+# 轻量环境：不要求旧数据、权重或引擎。
+python -m scripts.verify_delivery
+python -m unittest discover -s tests -p test_delivery_release.py -v
+# 维护者完整回归：需要原研究依赖与历史CSV，轻量源码包不承诺支持。
 .venv-cpu/Scripts/python.exe -m unittest discover -s tests -v
 node --check workbench/app.js
 # 先结束网页会话；该命令新建真实演示轨迹，不能与用户操作同时执行。

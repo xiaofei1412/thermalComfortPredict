@@ -1,6 +1,6 @@
 # thermalComfortPredict
 
-面向热舒适与节能的楼宇世界模型及自主控制研究项目。
+面向人员需求的楼宇动态建模、预测控制与交互仿真研究项目。
 
 项目起源于 2023 年在西交利物浦大学参与的智慧楼宇研究，现有资产包括热环境预测脚本与 ASHRAE 格式数据。后续以公开数据和软件仿真为基础，逐步建立热感觉与冷热偏好预测、建筑动态建模、受约束控制及真实数据迁移验证流程。
 
@@ -10,14 +10,16 @@
 
 [C1预注册](reports/residential_c/REPORT.md)及[C2开发收尾](reports/residential_c2/REPORT.md)已归档：完成464动作需求补采，稳态覆盖与能源门未全过，按约定封存负结果；重拟合/新校准/盲评0次，规则工作台继续可用。
 
-已有Python环境和BOPTEST部署时，在项目根目录运行：
+**当前交付候选**：[交付报告](DELIVERY.md) · [十分钟演示](docs/DEMO.md) · [分层复现](docs/REPRODUCE.md) · [发布说明](RELEASE_NOTES.md)。首次离线回放无需BOPTEST、历史CSV或权重，在源码根目录运行：
 
 ```powershell
-./scripts/setup_boptest.ps1 -Action up
-./scripts/start_workbench.ps1
+py -3.14 -m venv .venv
+./.venv/Scripts/python.exe -m pip install -r requirements/workbench.lock.txt
+./.venv/Scripts/python.exe -m scripts.verify_delivery
+./scripts/start_workbench.ps1 -PythonPath ./.venv/Scripts/python.exe
 ```
 
-然后打开 <http://127.0.0.1:8765>。[安装、使用及能力边界](docs/workbench.md) · [验收结果](reports/workbench/REPORT.md)
+打开终端打印的URL（默认8765），历史列表选`0a2e84`。新建实时仿真才需要[部署BOPTEST](docs/experiments/simulation.md)。[安装与边界](docs/workbench.md) · [F验收/发布缺口](reports/delivery-f/REPORT.md)。根代码许可、历史CSV链、完整新容器构建和异地资产获取仍未全部闭合，不宣称已经统一授权正式发行。
 
 ## 项目入口
 

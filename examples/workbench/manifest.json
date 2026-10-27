@@ -1,0 +1,12 @@
+{
+  "source": "B stage real BOPTEST engineering session, not a research holdout",
+  "original_session_id": "0a2e84c3cb66",
+  "original_session_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+  "gzip_sha256": "2f89ad5d11bc4c092b39bd316b0014d2ca44617b947b7f9ff1150280a6fe982e",
+  "engine": "BOPTEST 0.9.0",
+  "case": "bestest_hydronic_heat_pump",
+  "start_day": 63,
+  "original_code_provenance": "embedded unchanged in the session",
+  "semantics": "virtual setpoint intents; not real human comfort labels",
+  "includes": "numerical trace, native intervals and provenance; no FMU, weather source file or ASHRAE records"
+}
