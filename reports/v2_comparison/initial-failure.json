@@ -1,0 +1,12 @@
+{
+  "status": "initial_offline_acceptance_failed_then_fixed",
+  "case": "SAC-11-partial_checkpoint",
+  "different_probe": "model_observation",
+  "reason": "uninitialized Box generator first draw uses system entropy; preserving None is insufficient",
+  "correction": "require explicit local seeds before save; preserve generator sharing across roots",
+  "raw_failed_log_sha256": "0aa5752299004ad27b6b6d4994b34cacf4ef9d3a84c541e66e4b4e9b0488cebe",
+  "raw_failed_expected_sha256": "99f699460cb6b06e4907831ae640f36e81411586b74bdf68d6dc1f2cabd362f4",
+  "raw_failed_restored_sha256": "d114f01e0833563ef9f9e86c2c3f8e33fa9af98c4f545642c4728b9a0a16b9c3",
+  "research_training_or_FMU_retries": 0,
+  "retained_private_directory": "outputs/v2-rng/acceptance"
+}

@@ -1,0 +1,182 @@
+{
+  "status": "passed",
+  "runtime": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cpu",
+    "gymnasium": "1.4.0",
+    "sb3": "2.9.2",
+    "platform": "Windows",
+    "machine": "AMD64",
+    "torch_threads": 1,
+    "deterministic_algorithms": false
+  },
+  "cases": {
+    "SAC-11-partial_checkpoint": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "c59f747af1ad95a45a0b2af2fac8dfc79fbbbff140c8b5f74ed5145156a796d8",
+      "replay_sha256": "77535ffea68850778c516392414d592e646b85538a1b0a0398d528dc2c74d8ed",
+      "probe_sha256": "6cc9c96e57960045b57666b86380a2da6534e177d362296d36b6fabf9a47d72f"
+    },
+    "SAC-11-checkpoint": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "901847d9400741f751c41258201d816715b69281d96b755279a645c9f4ad8474",
+      "replay_sha256": "7aa612c2e6854d055e8297e97e18dd68dd50dfc72bfdac4f17a81fb8080ac9ad",
+      "probe_sha256": "47d5af22c30c167aac57b3aa7099a252e48309ba340a473a207ab3a296194957"
+    },
+    "SAC-23-partial_checkpoint": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "1d11de578cb00e48eae7a12d2e2b293412fd626a857c21bac050680758b844c6",
+      "replay_sha256": "321ad87a5af1b407d0d05f2300fc387d3c8b6507a7c925e28aee8abbbd5af947",
+      "probe_sha256": "9035f5e178c017627c81a3175fa1e707c8d70930dd3814a054a8608448b05a2c"
+    },
+    "SAC-23-checkpoint": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "b8bc9fc40f9943365982e0ea4123db8e50e690081d9a027e96a694c13ff22f6a",
+      "replay_sha256": "8de2aa00af96bf14dd51dab6d7b0bf5e42bf4ddb5f7b7cdc88d994ec93ab8ae7",
+      "probe_sha256": "e98f4a9eeaf1a51e613efd98933d657675b9e60167301f7099ced376cda994e5"
+    },
+    "SAC-37-partial_checkpoint": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "15983cc28dbfe08c60622eac0ab1a3b2b38ff496dd461eb8b894019ad4a665be",
+      "replay_sha256": "75eca9bb781eab5280e97304b1acde1ce51b2999ae9d1f1e09f9b0e3f85c66fd",
+      "probe_sha256": "da32bb489e97f060380534277145f03f011ef7712f1c02c4cc013ce283c4b1b0"
+    },
+    "SAC-37-checkpoint": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "28ba810620ac5bc6cd9d75a43a7cb87b264b4052ebdc969043018e0b214a20c7",
+      "replay_sha256": "23e8312886b8ae0e1cb6cf7c34cef1b1ae4a24cb54d990cca089d96de7af6fbb",
+      "probe_sha256": "6ec5029b3b66bd19048006577ed168976163c69da0ae3dcd833e76d628a23677"
+    },
+    "PPO-initialized-no-training": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "b7165d69bf104b1391134cd512d07da266d5ab7c512116454a3625a6d3c957d8",
+      "replay_sha256": null,
+      "probe_sha256": "678cfaf7313456413cd9d4a7ec5e74a021fb10dd7b4c0e3604a6c289cdce23bc"
+    },
+    "TD3-initialized-no-training": {
+      "all_probes_exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "exploration_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ],
+      "model_sha256": "eb0cd80d85d1ca3934e684910d20a46c4675243d5780c6a786567be06f4686ae",
+      "replay_sha256": "db0b9a05cd22d7288fd978050d41ce8ab3762ab5737101603f45be3f8ed40fd7",
+      "probe_sha256": "9a6107b4794dbcddd1f869f6d725262e6ecd27bd094a86f93404fa0a3c221247"
+    }
+  },
+  "fresh_worker_processes": 16,
+  "research_training_steps": 0,
+  "optimizer_updates": 0,
+  "FMU_calls": 0,
+  "heldout_reads_or_initializations": 0,
+  "scope": "RNG streams and checkpoint loading only; not a proof of uninterrupted learning or FMU state recovery"
+}

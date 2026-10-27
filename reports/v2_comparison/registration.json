@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-27T16:09:51.622584+00:00",
+  "git_base": "a511939c79aaece3b340d855f064be735d56e198",
+  "training_authorized": false,
+  "research_training_steps": 0,
+  "FMU_calls": 0,
+  "heldout_payload_reads_or_initializations": 0,
+  "protocol_sha256": "79f2d84a690721cf816cde3ed04026b458e0f30dce8f3fc9ab3306dceb30f32d",
+  "local_SB3_source_sha256": {
+    "common/base_class.py": "8e142f3efc4397a94dbe8bbb0ee1998cfe9e809b2fb34a9297f737ed4d81ab63",
+    "common/off_policy_algorithm.py": "dead003f3d28157593b25d1b4474e37a969ef58013cac3f54c83a2923a78a2e8",
+    "common/on_policy_algorithm.py": "ce1984ea8e8a2d969443a484ab159194b9d70ff92a7ef1bc25fcc183e391e35c",
+    "common/buffers.py": "21db27f000048615f5848facf18af9afc22e6e2a1c26148911c2cba542d1988d",
+    "common/noise.py": "335d9e322c8b5bf1b43703ac284951a01bb7980822cb30c8c2b94b0f48dc4e1f",
+    "common/utils.py": "c95c6d88f810e48ac32b488511cd63d87b83ef7b459b8a0a9e5e955a9856d809",
+    "common/save_util.py": "5dc9afe3aa245830fbdf8784e7ce77df8132944ab48e570eefd6b073ae0e83a1",
+    "sac/sac.py": "287e5beda6e021d93026be35d08d053879a42afa5b0b096d3af94a17bfbb9bb2",
+    "ppo/ppo.py": "623622a6edaaf64e07be8eb51ee7512577be06051ce8563e0862568322e767bb",
+    "td3/td3.py": "23a22c484a70d50366cf45f0764c90873f84cece384240c3ba5ace50fcb4bbf3"
+  },
+  "full_tests": {
+    "count": 279,
+    "seconds": 11.166,
+    "status": "passed",
+    "raw_log_sha256": "a090ee780a8d6d65744f28c5449c20c2cce47bafcabfd14c253e266953767a68"
+  },
+  "scope": "new RNG sidecars on existing weights, not restoration of missing historical RNG; no optimizer update",
+  "old_checkpoints_and_replay_unchanged": true
+}

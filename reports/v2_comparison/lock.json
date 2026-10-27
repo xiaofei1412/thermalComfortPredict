@@ -1,0 +1,26 @@
+{
+  "protocol": "residential_rl_v2_formal_comparison_1",
+  "status": "random_stream_acceptance_and_comparison_preregistration_complete_no_training",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d"
+  },
+  "files_sha256": {
+    "configs/v2_comparison.json": "79f2d84a690721cf816cde3ed04026b458e0f30dce8f3fc9ab3306dceb30f32d",
+    "docs/experiments/v2_comparison.md": "dada0b8d2e579fd48c1f5838a2f1fd0b39b3591f93a7ca2ce2233e69cd67c54e",
+    "thermal_comfort/rl_random_state.py": "c1103e4cda2d9b6abee90f64abb686eadb7b2b93791b7e24fd3e116795647c7e",
+    "thermal_comfort/rl_comparison_protocol.py": "742632720e4414cbf06668f67e7976752a8dbe898e60b01e205923dfa2edd75c",
+    "scripts/verify_rl_random_state.py": "64fa786986465ea3829a99b182891cef5a8a9d561c647d9cd234be7aedc94270",
+    "scripts/verify_v2_comparison.py": "4778b583803f6dd5ff5146ac6e4edb57d21494ab35106c7d146eefd1c5b7a6b2",
+    "tests/test_rl_random_state.py": "f23249207d0650388bd8d8bb828697b0f1dd298a28e68a5ec86ed4f4ac33a2fd",
+    "tests/test_rl_comparison_protocol.py": "9d152779e4c88ba30cbd6c678b4f13878c3b585c2219f21c7943c38584590ab5",
+    "reports/v2_comparison/comparison-audit.json": "96b9e0e5ad6de45cb908b2a27ef7fa578192d5495f9e3c0b1a10618ce57af785",
+    "reports/v2_comparison/initial-failure.json": "84a874edb692481382dfb65b605feedc0c99b045cb848a443db8e7272c504ff6",
+    "reports/v2_comparison/registration.json": "8facb2694a73b1bb23542feabaef0a99e00cb399b6164ed3650bbe0d79ed44bb",
+    "reports/v2_comparison/REPORT.md": "831dfe5f49a74d26c90732bcb6f79a1ea61b713901069636f00062818cba5a86",
+    "reports/v2_comparison/rng-audit.json": "9613ef521fb5a3798586c51a9e7f90a6c651a2ea5781f51babb84e6f645b2fd2"
+  }
+}

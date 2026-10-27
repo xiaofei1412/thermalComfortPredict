@@ -1,0 +1,65 @@
+{
+  "status": "passed_preregistered_not_training",
+  "budget_per_algorithm_seed": {
+    "train_episodes": 72,
+    "development_episodes": 3,
+    "select_max": 75,
+    "initialize_max": 75,
+    "advance_max": 50400,
+    "train_actor_steps": 47808,
+    "development_actor_steps": 1992,
+    "common_prefix_advances": 600,
+    "wall_seconds_max": 10800
+  },
+  "budget_total_all_algorithms_seeds": {
+    "select_max": 675,
+    "initialize_max": 675,
+    "advance_max": 453600,
+    "train_actor_steps": 430272,
+    "development_actor_steps": 17928,
+    "common_prefix_advances": 5400,
+    "stage_wall_seconds_max": 43200
+  },
+  "parent_locks_checked": 5,
+  "training_authorized": false,
+  "FMU_calls": 0,
+  "heldout_reads_or_initializations": 0,
+  "algorithm_construction": {
+    "SAC": {
+      "steps": 0,
+      "updates": 0,
+      "observation_shape": [
+        503
+      ],
+      "action_shape": [
+        1
+      ],
+      "buffer_capacity": 50000,
+      "policy": "SACPolicy(\n  (actor): Actor(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (latent_pi): Sequential(\n      (0): Linear(in_features=503, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n    )\n    (mu): Linear(in_features=64, out_features=1, bias=True)\n    (log_std): Linear(in_features=64, out_features=1, bias=True)\n  )\n  (critic): ContinuousCritic(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (qf0): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n    (qf1): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n  )\n  (critic_target): ContinuousCritic(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (qf0): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n    (qf1): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n  )\n)"
+    },
+    "PPO": {
+      "steps": 0,
+      "updates": 0,
+      "observation_shape": [
+        503
+      ],
+      "action_shape": [
+        1
+      ],
+      "buffer_capacity": 664,
+      "policy": "ActorCriticPolicy(\n  (features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (pi_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (vf_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (mlp_extractor): MlpExtractor(\n    (policy_net): Sequential(\n      (0): Linear(in_features=503, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n    )\n    (value_net): Sequential(\n      (0): Linear(in_features=503, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n    )\n  )\n  (action_net): Linear(in_features=64, out_features=1, bias=True)\n  (value_net): Linear(in_features=64, out_features=1, bias=True)\n)"
+    },
+    "TD3": {
+      "steps": 0,
+      "updates": 0,
+      "observation_shape": [
+        503
+      ],
+      "action_shape": [
+        1
+      ],
+      "buffer_capacity": 50000,
+      "policy": "TD3Policy(\n  (actor): Actor(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (mu): Sequential(\n      (0): Linear(in_features=503, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n      (5): Tanh()\n    )\n  )\n  (actor_target): Actor(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (mu): Sequential(\n      (0): Linear(in_features=503, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n      (5): Tanh()\n    )\n  )\n  (critic): ContinuousCritic(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (qf0): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n    (qf1): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n  )\n  (critic_target): ContinuousCritic(\n    (features_extractor): FlattenExtractor(\n      (flatten): Flatten(start_dim=1, end_dim=-1)\n    )\n    (qf0): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n    (qf1): Sequential(\n      (0): Linear(in_features=504, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): ReLU()\n      (4): Linear(in_features=64, out_features=1, bias=True)\n    )\n  )\n)"
+    }
+  }
+}
