@@ -1,0 +1,5 @@
+# Additional dependency; install into a separate V2 environment, not the V1 runtime.
+gymnasium==1.4.0
+cloudpickle==3.1.2
+farama-notifications==0.0.4
+typing-extensions==4.16.0

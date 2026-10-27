@@ -1,0 +1,229 @@
+{
+  "status": "interface_passed_not_training_qualified",
+  "training_runs": 0,
+  "episodes_initialized": [
+    "train014",
+    "train014",
+    "train014"
+  ],
+  "counts": {
+    "initialize": 3,
+    "advance": 1368
+  },
+  "wall_seconds": 96.15807370003313,
+  "call_timing_seconds": {
+    "initialize": {
+      "count": 3,
+      "mean": 2.1864569999743253,
+      "p95": 2.2078613699181004,
+      "max": 2.211600099923089
+    },
+    "advance": {
+      "count": 1368,
+      "mean": 0.02119535847964604,
+      "p95": 0.03380064998054877,
+      "max": 0.04554109997116029
+    },
+    "forecast": {
+      "count": 699,
+      "mean": 0.02555453090512797,
+      "p95": 0.03604690995998681,
+      "max": 0.12878210004419088
+    },
+    "results": {
+      "count": 1369,
+      "mean": 0.015900712201087425,
+      "p95": 0.027551040053367615,
+      "max": 0.1440874000545591
+    },
+    "stop": {
+      "count": 3,
+      "mean": 0.017767433387537796,
+      "p95": 0.02663947003893554,
+      "max": 0.027402000036090612
+    }
+  },
+  "equivalence_max_absolute_K": {
+    "reaTZon_y": 0.0,
+    "oveTSet_u": 0.0
+  },
+  "equivalence_energy_difference_kWh": 0.0,
+  "environment": {
+    "platform": "Windows/WSL Ubuntu-24.04, CPU",
+    "python": "3.14.3",
+    "gymnasium": "1.4.0",
+    "processor": "Intel Core Ultra 9 275HX, 24 logical CPUs",
+    "engine": "BOPTEST 0.9.0 same FMU, isolated thermal-rl-v2:8082",
+    "gpu_used": false
+  },
+  "runs": {
+    "legacy_rule": {
+      "transitions": 672,
+      "native_samples": 20161,
+      "metrics": {
+        "energy_kWh": 325.1694136917475,
+        "energy_kWh_m2": 1.6935906963111849,
+        "boptest_energy_kWh_m2": 1.6935920511837417,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.42932558497507856,
+        "emissions_kg_m2": 0.28282987254768494
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.1102230246251565e-16,
+        "emis_tot": 5.551115123125783e-17
+      },
+      "wall_seconds": 32.0877984999679
+    },
+    "gym_rule": {
+      "reset": {
+        "episode": "train014",
+        "common_prefix_steps": 8,
+        "initialize_seconds": 2.2121584999840707,
+        "reset_seconds": 5.201145200058818,
+        "prefix_energy_kWh": 5.171872518268193
+      },
+      "wall_seconds": 52.48755329987034,
+      "actor_steps": 664,
+      "step_wall_seconds": {
+        "mean": 0.07120921746869739,
+        "median": 0.07004699995741248,
+        "p95": 0.09717926005832851,
+        "max": 0.2552607001271099
+      },
+      "outcome": {
+        "episode_complete": true,
+        "end_reason": "finite_horizon",
+        "terminated": true,
+        "truncated": false,
+        "aborted": false,
+        "score": {
+          "metrics": {
+            "energy_kWh": 325.1694136917475,
+            "energy_kWh_m2": 1.6935906963111849,
+            "boptest_energy_kWh_m2": 1.6935920511837417,
+            "discomfort_Kh": 0.0,
+            "cost_EUR_m2": 0.42932558497507856,
+            "emissions_kg_m2": 0.28282987254768494,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "kpis": {
+            "tdis_tot": 0,
+            "idis_tot": 0,
+            "ener_tot": 1.6935920511837417,
+            "cost_tot": 0.42932558497507844,
+            "emis_tot": 0.2828298725476849,
+            "pele_tot": 0.021106723109405926,
+            "pgas_tot": null,
+            "pdih_tot": null,
+            "time_rat": 7.065913439941911e-05
+          },
+          "kpi_absolute_difference": {
+            "ener_tot": 0.0,
+            "tdis_tot": 0.0,
+            "cost_tot": 1.1102230246251565e-16,
+            "emis_tot": 5.551115123125783e-17
+          },
+          "transitions": 672,
+          "native_samples": 20161
+        }
+      }
+    },
+    "gym_action_probe": {
+      "reset": {
+        "episode": "train014",
+        "common_prefix_steps": 8,
+        "initialize_seconds": 2.174104900099337,
+        "reset_seconds": 3.9608410999644548,
+        "prefix_energy_kWh": 5.171872518268193
+      },
+      "wall_seconds": 5.261141699971631,
+      "actor_steps": 16,
+      "step_wall_seconds": {
+        "mean": 0.08119534372235648,
+        "median": 0.086585049983114,
+        "p95": 0.10038679995341226,
+        "max": 0.11388319986872375
+      },
+      "outcome": {
+        "episode_complete": false,
+        "end_reason": "external_cap",
+        "terminated": false,
+        "truncated": true,
+        "aborted": false,
+        "score": {
+          "metrics": {
+            "energy_kWh": 11.495257495662988,
+            "energy_kWh_m2": 0.0598711327899114,
+            "boptest_energy_kWh_m2": 0.05987118068681763,
+            "discomfort_Kh": 0.0,
+            "cost_EUR_m2": 0.015177344304108267,
+            "emissions_kg_m2": 0.009998487174698542,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "kpis": {
+            "tdis_tot": 0,
+            "idis_tot": 0,
+            "ener_tot": 0.05987118068681762,
+            "cost_tot": 0.015177344304108263,
+            "emis_tot": 0.009998487174698544,
+            "pele_tot": 0.020355457270000366,
+            "pgas_tot": null,
+            "pdih_tot": null,
+            "time_rat": 0.00017758961461016525
+          },
+          "kpi_absolute_difference": {
+            "ener_tot": 6.938893903907228e-18,
+            "tdis_tot": 0.0,
+            "cost_tot": 3.469446951953614e-18,
+            "emis_tot": 1.734723475976807e-18
+          },
+          "transitions": 24,
+          "native_samples": 721
+        }
+      }
+    }
+  },
+  "checks": {
+    "full_regression_tests": 227,
+    "full_regression_seconds": 14.786,
+    "new_interface_tests": 14,
+    "parent_v2_0_hashes": true,
+    "v1_baseline_hashes": true,
+    "c2_office_closed_negative_preserved": true,
+    "workbench_session_id_status_preserved": true,
+    "holdout_or_development_initializations": 0,
+    "mechanical_violations": 0,
+    "failed_api_calls": 0,
+    "successful_stops": 3,
+    "archive_audit_passed": true,
+    "pip_check_passed": true,
+    "training_qualified": false
+  },
+  "resource_estimate_not_budget": {
+    "gym_actor_steps_per_wall_second": 14.043125813587075,
+    "100k_actor_steps_hours_including_resets_excluding_gradient_and_checkpoints": 2.19561854079961
+  },
+  "evidence_sha256": {
+    "outputs/v2-1/live-registered/result.json": "8ceac29374ca41e5841eb84d3016dceefab5710e779c05da810cfec437c56a84",
+    "outputs/v2-1/live-registered/calls.jsonl": "c07b55a50eb9ff024756d7d21b143588264966ba6e6ba1a77e2bd7418d5710f1",
+    "outputs/v2-1/live-registered/attempts.jsonl": "35dc03da83957fe1cda1d31210b29fd67ba1998a85eac98b4267f7c9fbe18489",
+    "outputs/v2-1/full-tests.txt": "e59101cff3a90ee11987ff2d09212455ff77be7f2ae61676cd3aa7dd7a77ab9a",
+    "outputs/v2-1/environment.freeze.txt": "a760fce5e95a54c9ce3ccb85f8665ba310db6df6f955f9abe0bb0b487f007210",
+    "outputs/v2-1/pip-check.txt": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+    "outputs/v2-1/c2-freeze.txt": "40b68bdd27a5133148a9fad26ca6fc7dafa3cd4f925ce35fea657d8d1d8f7946",
+    "outputs/v2-1/office-freeze.txt": "d0f010afea694e1fe63b0cd2b92d803ed7155d9ac6ae06492c6da9231da81121",
+    "outputs/v2-1/archive-audit.json": "c3c0e93b37bee47ef6ec4ee40c49a5558a7a6af431673878484baef98f8ac151"
+  }
+}

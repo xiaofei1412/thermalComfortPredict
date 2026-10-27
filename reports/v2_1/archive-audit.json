@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "runs": {
+    "gym_rule": {
+      "transitions": 672,
+      "native_points": 20161,
+      "bounded_forecasts": 672,
+      "energy_kWh": 325.1694136917475,
+      "prefix_energy_kWh": 5.171872518268193,
+      "actor_energy_kWh": 319.99754117347925,
+      "action_min_C": 20.5,
+      "action_max_C": 23.25,
+      "projected_actor_actions": 0
+    },
+    "gym_action_probe": {
+      "transitions": 24,
+      "native_points": 721,
+      "bounded_forecasts": 24,
+      "energy_kWh": 11.495257495662988,
+      "prefix_energy_kWh": 5.171872518268193,
+      "actor_energy_kWh": 6.323384977394793,
+      "action_min_C": 18.0,
+      "action_max_C": 23.25,
+      "projected_actor_actions": 3
+    }
+  },
+  "all_native_fields_max_absolute_difference": 0.0,
+  "parent_lock_sha256": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+  "initializations": [
+    {
+      "start_time": 1209600,
+      "warmup_period": 604800
+    },
+    {
+      "start_time": 1209600,
+      "warmup_period": 604800
+    },
+    {
+      "start_time": 1209600,
+      "warmup_period": 604800
+    }
+  ],
+  "successful_stops": 3,
+  "bounded_forecast_api_calls": 698,
+  "raw_result_sha256": "8ceac29374ca41e5841eb84d3016dceefab5710e779c05da810cfec437c56a84"
+}

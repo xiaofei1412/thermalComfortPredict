@@ -1,0 +1,19 @@
+{
+  "protocol": "residential_rl_v2_interface_1",
+  "parent_lock": "reports/v2_0/lock.json",
+  "allowed_episode": "train014",
+  "start_day": 14,
+  "training_authorized": false,
+  "live_budget": {
+    "initializations_max": 3,
+    "advance_attempts_max": 1368,
+    "wall_seconds_max": 5400,
+    "runs": ["legacy_rule_672", "gym_rule_672", "gym_action_probe_24"]
+  },
+  "engineering_reward": "negative_interval_energy_kWh_not_a_training_reward",
+  "terminal": "finite_672_steps_or_engineering_temperature_abort",
+  "truncated": "external_agent_step_cap",
+  "api_failure": "raise_invalidate_episode_no_retry_no_transition",
+  "live_engine": "http://127.0.0.1:8082",
+  "compose_project": "thermal-rl-v2"
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-27T12:51:42.405706+00:00",
+  "git_base": "97232ef200184dde41bcc5924eb9b04aac8b01a8",
+  "python": "3.14.3",
+  "protocol": {
+    "protocol": "residential_rl_v2_interface_1",
+    "parent_lock": "reports/v2_0/lock.json",
+    "allowed_episode": "train014",
+    "start_day": 14,
+    "training_authorized": false,
+    "live_budget": {
+      "initializations_max": 3,
+      "advance_attempts_max": 1368,
+      "wall_seconds_max": 5400,
+      "runs": [
+        "legacy_rule_672",
+        "gym_rule_672",
+        "gym_action_probe_24"
+      ]
+    },
+    "engineering_reward": "negative_interval_energy_kWh_not_a_training_reward",
+    "terminal": "finite_672_steps_or_engineering_temperature_abort",
+    "truncated": "external_agent_step_cap",
+    "api_failure": "raise_invalidate_episode_no_retry_no_transition",
+    "live_engine": "http://127.0.0.1:8082",
+    "compose_project": "thermal-rl-v2"
+  },
+  "sha256": {
+    "configs/v2_1.json": "c3ceb06ab8f2cbc2f7d1c8ff0eacd013992e1d61fb1e97ee3303df7f9168695b",
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "docs/experiments/v2_1.md": "fec2ef8bf65a10b10f159813f5822b3dad5092abb6eab2ea2a27d368bc9d0414",
+    "thermal_comfort/rl_interface.py": "0f1624c492334e5b718cf8c989b659ac1d96fd394b5853ae0c9fe6dee13453d3",
+    "scripts/verify_rl_interface.py": "aab2227de01011eecb53d09951c94513865a3fbe585f6d8e6b737ba2b922e6ea",
+    "requirements/rl-interface.txt": "9cb99ddab0e641193f76425e1a5319e86a083d3988d3fc1e3a3beb454b6b115c"
+  }
+}
