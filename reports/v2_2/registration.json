@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-27T13:15:27.891334+00:00",
+  "protocol": {
+    "protocol": "residential_rl_v2_development_baselines_1",
+    "parent_locks": [
+      "reports/v2_0/lock.json",
+      "reports/v2_1/lock.json"
+    ],
+    "episodes": [
+      "development084",
+      "development168",
+      "development189"
+    ],
+    "controllers": [
+      "guarded_rule",
+      "solar_mpc",
+      "minimum_heat"
+    ],
+    "weather": "perfect",
+    "training_authorized": false,
+    "live_engine": "http://127.0.0.1:8082",
+    "compose_project": "thermal-rl-v2",
+    "live_budget": {
+      "initializations_max": 15,
+      "advance_attempts_max": 6192,
+      "wall_seconds_max": 7200
+    },
+    "response": {
+      "common_prefix_steps": 8,
+      "intervention_steps": 16,
+      "targets_C": [
+        18.0,
+        23.25
+      ]
+    },
+    "coverage": {
+      "cold_outdoor_max_C": 10.0,
+      "cold_hours_min_in_one_episode": 24.0,
+      "warm_outdoor_min_C": 18.0,
+      "warm_hours_min_in_one_episode": 24.0,
+      "sunny_min_W_m2": 200.0,
+      "sunny_hours_min_in_one_episode": 12.0,
+      "active_development_dates_min": 2,
+      "responsive_active_dates_min": 1,
+      "response_energy_difference_min_kWh": 0.01,
+      "response_end_temperature_difference_min_K": 0.02,
+      "response_heat_difference_min_kWh": 0.01
+    },
+    "terminal_state_warning": {
+      "operative_difference_K": 0.2,
+      "water_difference_K": 1.0
+    }
+  },
+  "git_base": "ebac157510ef8136a494a09f772c85df3bc39c70",
+  "sha256": {
+    "configs/v2_2.json": "d80f45d25a8b595dbd4890351a717bfe129cf6c9865dabdd61fa0a7c8313fba5",
+    "docs/experiments/v2_2.md": "e55ff9f3a6f92edb107a043fc9248b1f5cd93c3261f6639dd748733bf4de1508",
+    "thermal_comfort/v2_baselines.py": "c4c29298b18702e5220d0284d85fa96a68a3f97293e959f550d3092d53cefb18",
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581"
+  }
+}

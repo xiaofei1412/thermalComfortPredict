@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "calls": {
+    "initialize": 15,
+    "advance": 6192,
+    "stop": 15,
+    "forecast": 6192
+  },
+  "initialized_days": [
+    84.0,
+    84.0,
+    84.0,
+    168.0,
+    168.0,
+    168.0,
+    189.0,
+    189.0,
+    189.0,
+    84.0,
+    84.0,
+    168.0,
+    168.0,
+    189.0,
+    189.0
+  ],
+  "holdout_initializations": 0,
+  "training_runs": 0,
+  "runs": [
+    {
+      "run": "development084__guarded_rule",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "851dc92667903462ef012ee150428a78b85c8eea630cf928089fe3950348eca8"
+    },
+    {
+      "run": "development084__minimum_heat",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "1d8550eff33355005f540201844305a9741729e7c97105d42f50f91a0d1a261a"
+    },
+    {
+      "run": "development084__response_18",
+      "transitions_replayed": 24,
+      "native_points": 721,
+      "summary_sha256": "71be95ff34e4d43430cf49e1bbfb6d4194c75532a0c94c6b3611f310713910f8"
+    },
+    {
+      "run": "development084__response_23.25",
+      "transitions_replayed": 24,
+      "native_points": 721,
+      "summary_sha256": "1c97a33aad58032ef3fa5cf5efbc726d60a162c41dc7ab92ac07eac0bda180b4"
+    },
+    {
+      "run": "development084__solar_mpc",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "9ca264570ee2dbb07a8ff25f1696524dea8e82f0d42943041bb11a08dd04ab08"
+    },
+    {
+      "run": "development168__guarded_rule",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "9709990e0accbfb71714b504c61ee4b3273ad727e8b41da1f862db6ed9ffc361"
+    },
+    {
+      "run": "development168__minimum_heat",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "b54d35302d45559241116e52a65cdf83b537f011960d201add07074af0c7fe0d"
+    },
+    {
+      "run": "development168__response_18",
+      "transitions_replayed": 24,
+      "native_points": 721,
+      "summary_sha256": "dd5be4a3ff3bd655264c2671a783e8df6bb0e02f3ced3dfe22a0fd4da7404976"
+    },
+    {
+      "run": "development168__response_23.25",
+      "transitions_replayed": 24,
+      "native_points": 721,
+      "summary_sha256": "be486c49f28027d05af4e6b69d865c278b350a21318c5fedea3c910f64e84b6e"
+    },
+    {
+      "run": "development168__solar_mpc",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "fed6032951a96b13cb42c7af8c95b99ea3d676b3b14990a70bbc4fd1d3adadfb"
+    },
+    {
+      "run": "development189__guarded_rule",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "d05d0a2d7b507bb304c1acc5793149033215f3d5ce88d26a7f45cd3922ce2b99"
+    },
+    {
+      "run": "development189__minimum_heat",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "1d823dab1ea2cd7b1fea29c072924669f5a470fad41886d955a66a61642d6256"
+    },
+    {
+      "run": "development189__response_18",
+      "transitions_replayed": 24,
+      "native_points": 721,
+      "summary_sha256": "2947406ba9c55cdb13537169c054923f0eff2ad1fd01f8195274ec904a1adc7c"
+    },
+    {
+      "run": "development189__response_23.25",
+      "transitions_replayed": 24,
+      "native_points": 721,
+      "summary_sha256": "6a830feb5615264b86b72cc157c3bb24dcb877e0ea702f991c220a4039ed02ed"
+    },
+    {
+      "run": "development189__solar_mpc",
+      "transitions_replayed": 672,
+      "native_points": 20161,
+      "summary_sha256": "b73b2c661e56cbc01babbb4094de5ab709332aeee094a86d3cf209574f488aa0"
+    }
+  ],
+  "frozen_action_max_absolute_difference_K": 0.0,
+  "official_kpi_max_absolute_difference": 2.2737367544323206e-13,
+  "stage_gates_recomputed": true,
+  "paired_prefix_and_exogenous_equal": true,
+  "source_result_sha256": "e161dc8b1bed3c02af97067b575fd6dd1d8adf9c2e1ddb39f94dfb59fe3b4066"
+}

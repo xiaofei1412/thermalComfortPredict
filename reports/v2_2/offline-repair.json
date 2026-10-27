@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-27T13:26:29.000124+00:00",
+  "reason": "CSV integer/float inference in zero-only response prefix; retain exact numeric equality",
+  "original_sha256": "c4c29298b18702e5220d0284d85fa96a68a3f97293e959f550d3092d53cefb18",
+  "files_sha256": {
+    "thermal_comfort/v2_baselines.py": "a5519d30d18caa61c1e2939cec260f28bf427e33ea81c7f0d2fdfffc4957461f"
+  },
+  "simulator_calls_added": 0,
+  "policy_or_threshold_changes": false,
+  "private_diff_sha256": "e41d10d8de15aa278892d8cad514b527c9fbfee4545607f686150d56081363c7",
+  "published_diff_sha256": "1b6c50cf14be34fe504e0ab7bf851bb12139be36380195362b5e8ad769ad0bc3",
+  "published_diff_context_lines": 0
+}

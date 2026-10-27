@@ -1,0 +1,1017 @@
+{
+  "status": "completed_development_only_not_training_authorized",
+  "training_runs": 0,
+  "counts": {
+    "initialize": 15,
+    "advance": 6192
+  },
+  "coverage": {
+    "development084": {
+      "outdoor_min_C": 0.7000000000000455,
+      "outdoor_max_C": 19.200000000000045,
+      "cold_hours": 148.62083333333334,
+      "warm_hours": 3.683333333333333,
+      "sunny_hours": 37.791666666666664,
+      "daytime_low_solar_hours": 6.233333333333333,
+      "night_hours": 98.0,
+      "solar_peak_W_m2": 498.0,
+      "solar_total_kWh_m2": 16.49619206542168
+    },
+    "development168": {
+      "outdoor_min_C": 9.761598558000003,
+      "outdoor_max_C": 22.600000000000023,
+      "cold_hours": 0.9083333333333333,
+      "warm_hours": 44.53333333333333,
+      "sunny_hours": 68.19166666666666,
+      "daytime_low_solar_hours": 0.0,
+      "night_hours": 98.0,
+      "solar_peak_W_m2": 772.81229097,
+      "solar_total_kWh_m2": 32.22506953125072
+    },
+    "development189": {
+      "outdoor_min_C": 12.049267240999995,
+      "outdoor_max_C": 31.627499999999998,
+      "cold_hours": 0.0,
+      "warm_hours": 73.62916666666666,
+      "sunny_hours": 64.21666666666667,
+      "daytime_low_solar_hours": 0.0,
+      "night_hours": 98.0,
+      "solar_peak_W_m2": 852.268864329,
+      "solar_total_kWh_m2": 32.41712499999945
+    }
+  },
+  "active_dates": {
+    "development084": true,
+    "development168": true,
+    "development189": false
+  },
+  "responses": {
+    "development084": {
+      "delta_energy_kWh": 14.04908728029068,
+      "delta_heat_kWh": 39.79281945566986,
+      "delta_end_temperature_K": 2.553468816523832,
+      "responsive": true,
+      "reversed": false
+    },
+    "development168": {
+      "delta_energy_kWh": 2.538736250873788,
+      "delta_heat_kWh": 2.182744605914392,
+      "delta_end_temperature_K": 0.10609075589064787,
+      "responsive": true,
+      "reversed": false
+    },
+    "development189": {
+      "delta_energy_kWh": 0.0,
+      "delta_heat_kWh": 0.0,
+      "delta_end_temperature_K": -1.7579416180524277e-06,
+      "responsive": false,
+      "reversed": false
+    }
+  },
+  "comparisons_vs_rule": {
+    "development084": {
+      "solar_mpc": {
+        "active": true,
+        "saving_kWh": 9.345101732323116,
+        "saving_fraction": 0.038114298031036206,
+        "thermal_nonincrease": true,
+        "energy_gate_passed": true,
+        "joint_gate_passed": true,
+        "different_actor_setpoint_samples": 4680,
+        "end_temperature_difference_K": -0.012897634711805495,
+        "end_water_difference_K": {
+          "reaTRet_y": 0.2289962975341382,
+          "reaTSup_y": 0.3587621999184307
+        },
+        "terminal_storage_warning": false,
+        "thermal_differences": {
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 0.0,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 0.0
+        }
+      },
+      "minimum_heat": {
+        "active": true,
+        "saving_kWh": 67.72687514084268,
+        "saving_fraction": 0.27622623891833753,
+        "thermal_nonincrease": false,
+        "energy_gate_passed": true,
+        "joint_gate_passed": false,
+        "different_actor_setpoint_samples": 19350,
+        "end_temperature_difference_K": 0.05747417343656025,
+        "end_water_difference_K": {
+          "reaTRet_y": 4.561918532915115,
+          "reaTSup_y": 0.07596977170322816
+        },
+        "terminal_storage_warning": true,
+        "thermal_differences": {
+          "cold_Kh": 13.940631426001614,
+          "cold_duration_s": 104280.0,
+          "cold_max_K": 1.8519601718609238,
+          "hot_Kh": 0.0,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 0.0
+        }
+      }
+    },
+    "development168": {
+      "solar_mpc": {
+        "active": true,
+        "saving_kWh": 2.193820414622386,
+        "saving_fraction": 0.2500609096898057,
+        "thermal_nonincrease": true,
+        "energy_gate_passed": true,
+        "joint_gate_passed": true,
+        "different_actor_setpoint_samples": 11250,
+        "end_temperature_difference_K": -0.06026909200068076,
+        "end_water_difference_K": {
+          "reaTRet_y": -0.16679779682999651,
+          "reaTSup_y": -0.06084938947435603
+        },
+        "terminal_storage_warning": false,
+        "thermal_differences": {
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": -0.20320998588944317,
+          "hot_duration_s": -1620.0,
+          "hot_max_K": -1.6906744804146001e-06
+        }
+      },
+      "minimum_heat": {
+        "active": true,
+        "saving_kWh": 3.469704682998353,
+        "saving_fraction": 0.3954915833595661,
+        "thermal_nonincrease": false,
+        "energy_gate_passed": true,
+        "joint_gate_passed": false,
+        "different_actor_setpoint_samples": 18570,
+        "end_temperature_difference_K": 0.1558335931869692,
+        "end_water_difference_K": {
+          "reaTRet_y": 5.631187074975003,
+          "reaTSup_y": 3.2479463022555137
+        },
+        "terminal_storage_warning": true,
+        "thermal_differences": {
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 1.0457332653933555,
+          "hot_duration_s": 15855.0,
+          "hot_max_K": -1.6906744804146001e-06
+        }
+      }
+    },
+    "development189": {
+      "solar_mpc": {
+        "active": false,
+        "saving_kWh": 0.0,
+        "saving_fraction": null,
+        "thermal_nonincrease": false,
+        "energy_gate_passed": true,
+        "joint_gate_passed": false,
+        "different_actor_setpoint_samples": 4830,
+        "end_temperature_difference_K": 5.29421930650642e-06,
+        "end_water_difference_K": {
+          "reaTRet_y": 0.0,
+          "reaTSup_y": 0.0
+        },
+        "terminal_storage_warning": false,
+        "thermal_differences": {
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 0.0008934846258625839,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 8.707062704615964e-06
+        }
+      },
+      "minimum_heat": {
+        "active": false,
+        "saving_kWh": 0.0,
+        "saving_fraction": null,
+        "thermal_nonincrease": false,
+        "energy_gate_passed": true,
+        "joint_gate_passed": false,
+        "different_actor_setpoint_samples": 7260,
+        "end_temperature_difference_K": 6.718928545978997e-06,
+        "end_water_difference_K": {
+          "reaTRet_y": 0.0,
+          "reaTSup_y": 0.0
+        },
+        "terminal_storage_warning": false,
+        "thermal_differences": {
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 0.0009029274567637913,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 6.302098711330473e-06
+        }
+      }
+    }
+  },
+  "development_gate": {
+    "checks": {
+      "cold": true,
+      "warm": true,
+      "sunny": true,
+      "active_dates": true,
+      "responsive_active_dates": true,
+      "no_reversed_response": true
+    },
+    "passed": true,
+    "training_authorized": false
+  },
+  "sum_run_wall_seconds": 577.2205054997467,
+  "whole_run_wall_seconds": null,
+  "wall_clock_note": "Live aggregation failed on CSV dtype after all runs; separate run wall_seconds and API durations retained. Offline repair added no simulator calls.",
+  "runs": {
+    "development084__guarded_rule": {
+      "episode": {
+        "id": "development084",
+        "role": "development",
+        "start_day": 84
+      },
+      "kind": "guarded_rule",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 245.1862480771249,
+        "energy_kWh_m2": 1.2770117087350255,
+        "boptest_energy_kWh_m2": 1.2770127303443923,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.32372272714230343,
+        "emissions_kg_m2": 0.21326112596751357,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0,
+        "heat_kWh": 527.4949557688244
+      },
+      "post_prefix_modes": {
+        "guarded_rule": 622,
+        "anticipatory_recovery": 42
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 0.0010635427711952299,
+        "p95": 0.001376465021166951
+      },
+      "wall_seconds": 57.58685490000062,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 21.452966478265864,
+        "return_C": 22.769818954867446,
+        "supply_C": 23.757433580765962,
+        "heat_kW": 2.003408498008456,
+        "electric_kW": 1.754637003557865
+      },
+      "summary_sha256": "851dc92667903462ef012ee150428a78b85c8eea630cf928089fe3950348eca8"
+    },
+    "development084__minimum_heat": {
+      "episode": {
+        "id": "development084",
+        "role": "development",
+        "start_day": 84
+      },
+      "kind": "minimum_heat",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 177.45937293628222,
+        "energy_kWh_m2": 0.9242675673764699,
+        "boptest_energy_kWh_m2": 0.9242683067905237,
+        "discomfort_Kh": 13.940631426001614,
+        "cost_EUR_m2": 0.23430201577139778,
+        "emissions_kg_m2": 0.1543528072340175,
+        "cold_Kh": 13.940631426001614,
+        "cold_duration_s": 104280.0,
+        "cold_max_K": 1.8519601718609238,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0,
+        "heat_kWh": 519.0379045839021
+      },
+      "post_prefix_modes": {
+        "minimum_heat": 664
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 0.0007135262081668858,
+        "p95": 0.0009932501125149429
+      },
+      "wall_seconds": 53.08158969995566,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.1102230246251565e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 2.7755575615628914e-17
+      },
+      "end_state": {
+        "operative_C": 21.510440651702424,
+        "return_C": 27.33173748778256,
+        "supply_C": 23.83340335246919,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "1d8550eff33355005f540201844305a9741729e7c97105d42f50f91a0d1a261a"
+    },
+    "development084__response_18": {
+      "episode": {
+        "id": "development084",
+        "role": "development",
+        "start_day": 84
+      },
+      "kind": "guarded_rule",
+      "target_C": 18.0,
+      "transitions": 24,
+      "native_points": 721,
+      "metrics": {
+        "energy_kWh": 8.626529984777209,
+        "energy_kWh_m2": 0.04492984367071463,
+        "boptest_energy_kWh_m2": 0.04492987961458957,
+        "discomfort_Kh": 0.07185036812373771,
+        "cost_EUR_m2": 0.011389724482298455,
+        "emissions_kg_m2": 0.007503289895636458,
+        "cold_Kh": 0.07185036812373771,
+        "cold_duration_s": 2385.0,
+        "cold_max_K": 0.2113321457933921,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0,
+        "heat_kWh": 23.890763952322168
+      },
+      "post_prefix_modes": {
+        "intervention": 16
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 3.744999412447214e-05,
+        "p95": 5.7299970649182796e-05
+      },
+      "wall_seconds": 6.29602129990235,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 3.469446951953614e-18,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 20.788667854206608,
+        "return_C": 30.666203212491155,
+        "supply_C": 25.766402089664325,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "71be95ff34e4d43430cf49e1bbfb6d4194c75532a0c94c6b3611f310713910f8"
+    },
+    "development084__response_23.25": {
+      "episode": {
+        "id": "development084",
+        "role": "development",
+        "start_day": 84
+      },
+      "kind": "guarded_rule",
+      "target_C": 23.25,
+      "transitions": 24,
+      "native_points": 721,
+      "metrics": {
+        "energy_kWh": 22.67561726506789,
+        "energy_kWh_m2": 0.11810217325556192,
+        "boptest_energy_kWh_m2": 0.11810226773730052,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.029938924871405686,
+        "emissions_kg_m2": 0.019723078712129187,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0,
+        "heat_kWh": 63.683583407992025
+      },
+      "post_prefix_modes": {
+        "intervention": 16
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 3.423746966291219e-05,
+        "p95": 6.0475082136690617e-05
+      },
+      "wall_seconds": 6.263699000002816,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 23.342136670730383,
+        "return_C": 33.45971571860861,
+        "supply_C": 38.314287062043775,
+        "heat_kW": 10.156560528496716,
+        "electric_kW": 3.636595680163037
+      },
+      "summary_sha256": "1c97a33aad58032ef3fa5cf5efbc726d60a162c41dc7ab92ac07eac0bda180b4"
+    },
+    "development084__solar_mpc": {
+      "episode": {
+        "id": "development084",
+        "role": "development",
+        "start_day": 84
+      },
+      "kind": "solar_mpc",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 235.84114634480179,
+        "energy_kWh_m2": 1.228339303879176,
+        "boptest_energy_kWh_m2": 1.228340286550619,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.31138426264058194,
+        "emissions_kg_m2": 0.2051328278539534,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0,
+        "heat_kWh": 521.6643057254604
+      },
+      "post_prefix_modes": {
+        "fallback": 451,
+        "mpc": 213
+      },
+      "fallback_fraction_excluding_prefix": 0.6792168674698795,
+      "decision_seconds": {
+        "mean": 0.03867236491263261,
+        "p95": 0.05419704999076203
+      },
+      "wall_seconds": 81.22427890007384,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 21.44006884355406,
+        "return_C": 22.998815252401585,
+        "supply_C": 24.116195780684393,
+        "heat_kW": 2.269689784920433,
+        "electric_kW": 1.7910355084981506
+      },
+      "summary_sha256": "9ca264570ee2dbb07a8ff25f1696524dea8e82f0d42943041bb11a08dd04ab08"
+    },
+    "development168__guarded_rule": {
+      "episode": {
+        "id": "development168",
+        "role": "development",
+        "start_day": 168
+      },
+      "kind": "guarded_rule",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 8.773144180526916,
+        "energy_kWh_m2": 0.04569345927357769,
+        "boptest_energy_kWh_m2": 0.04569349582834511,
+        "discomfort_Kh": 4.913889917546553,
+        "cost_EUR_m2": 0.011583301192485483,
+        "emissions_kg_m2": 0.007630813803333633,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.913889917546553,
+        "hot_duration_s": 45975.0,
+        "hot_max_K": 1.0526214781158387,
+        "heat_kWh": 8.802503583779135
+      },
+      "post_prefix_modes": {
+        "coast": 64,
+        "guarded_rule": 600
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 0.0010488483425740332,
+        "p95": 0.0016310899984091523
+      },
+      "wall_seconds": 55.45884230011143,
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 8.881784197001252e-16,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "end_state": {
+        "operative_C": 23.937944936385577,
+        "return_C": 23.426997845743358,
+        "supply_C": 21.955436662472266,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "9709990e0accbfb71714b504c61ee4b3273ad727e8b41da1f862db6ed9ffc361"
+    },
+    "development168__minimum_heat": {
+      "episode": {
+        "id": "development168",
+        "role": "development",
+        "start_day": 168
+      },
+      "kind": "minimum_heat",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 5.303439497528563,
+        "energy_kWh_m2": 0.0276220807162946,
+        "boptest_energy_kWh_m2": 0.027622102813959173,
+        "discomfort_Kh": 5.959623182939908,
+        "cost_EUR_m2": 0.00700220306333865,
+        "emissions_kg_m2": 0.004612891169931182,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 5.959623182939908,
+        "hot_duration_s": 61830.0,
+        "hot_max_K": 1.0526197874413583,
+        "heat_kWh": 16.491752141112343
+      },
+      "post_prefix_modes": {
+        "minimum_heat": 664
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 0.0006962600896970919,
+        "p95": 0.0011962901451624932
+      },
+      "wall_seconds": 53.73850279999897,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 24.093778529572546,
+        "return_C": 29.05818492071836,
+        "supply_C": 25.20338296472778,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "b54d35302d45559241116e52a65cdf83b537f011960d201add07074af0c7fe0d"
+    },
+    "development168__response_18": {
+      "episode": {
+        "id": "development168",
+        "role": "development",
+        "start_day": 168
+      },
+      "kind": "guarded_rule",
+      "target_C": 18.0,
+      "transitions": 24,
+      "native_points": 721,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 0.433279534981169,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.433279534981169,
+        "hot_duration_s": 6915.0,
+        "hot_max_K": 0.46315621911230664,
+        "heat_kWh": 0.0
+      },
+      "post_prefix_modes": {
+        "intervention": 16
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 3.93125374102965e-05,
+        "p95": 6.847502663731575e-05
+      },
+      "wall_seconds": 6.115758600179106,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 23.296460049526672,
+        "return_C": 23.686834337808932,
+        "supply_C": 21.98937380215898,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "dd5be4a3ff3bd655264c2671a783e8df6bb0e02f3ced3dfe22a0fd4da7404976"
+    },
+    "development168__response_23.25": {
+      "episode": {
+        "id": "development168",
+        "role": "development",
+        "start_day": 168
+      },
+      "kind": "guarded_rule",
+      "target_C": 23.25,
+      "transitions": 24,
+      "native_points": 721,
+      "metrics": {
+        "energy_kWh": 2.5387362508737885,
+        "energy_kWh_m2": 0.013222584639967649,
+        "boptest_energy_kWh_m2": 0.013222595218035359,
+        "discomfort_Kh": 0.433279534981169,
+        "cost_EUR_m2": 0.003351927887771963,
+        "emissions_kg_m2": 0.002208173401411905,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.433279534981169,
+        "hot_duration_s": 6915.0,
+        "hot_max_K": 0.46315621911230664,
+        "heat_kWh": 2.182744605914392
+      },
+      "post_prefix_modes": {
+        "intervention": 16
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 3.967501106671989e-05,
+        "p95": 7.765006739646196e-05
+      },
+      "wall_seconds": 6.171612299978733,
+      "kpi_absolute_difference": {
+        "ener_tot": 3.469446951953614e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 4.336808689942018e-19,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 23.402550805417377,
+        "return_C": 24.653355111488736,
+        "supply_C": 25.331001280639896,
+        "heat_kW": 1.4154953123266407,
+        "electric_kW": 1.6679983074936582
+      },
+      "summary_sha256": "be486c49f28027d05af4e6b69d865c278b350a21318c5fedea3c910f64e84b6e"
+    },
+    "development168__solar_mpc": {
+      "episode": {
+        "id": "development168",
+        "role": "development",
+        "start_day": 168
+      },
+      "kind": "solar_mpc",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 6.5793237659045305,
+        "energy_kWh_m2": 0.03426731128075276,
+        "boptest_energy_kWh_m2": 0.03426733869460179,
+        "discomfort_Kh": 4.7106799316571095,
+        "cost_EUR_m2": 0.008686770359081554,
+        "emissions_kg_m2": 0.005722645561998499,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.7106799316571095,
+        "hot_duration_s": 44355.0,
+        "hot_max_K": 1.0526197874413583,
+        "heat_kWh": 6.606576037457616
+      },
+      "post_prefix_modes": {
+        "early_coast": 214,
+        "fallback": 171,
+        "mpc": 279
+      },
+      "fallback_fraction_excluding_prefix": 0.2575301204819277,
+      "decision_seconds": {
+        "mean": 0.023553743675850468,
+        "p95": 0.03729204990668223
+      },
+      "wall_seconds": 70.60051949997433,
+      "kpi_absolute_difference": {
+        "ener_tot": 6.938893903907228e-18,
+        "tdis_tot": 0.0,
+        "cost_tot": 1.734723475976807e-18,
+        "emis_tot": 8.673617379884035e-19
+      },
+      "end_state": {
+        "operative_C": 23.877675844384896,
+        "return_C": 23.26020004891336,
+        "supply_C": 21.89458727299791,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "fed6032951a96b13cb42c7af8c95b99ea3d676b3b14990a70bbc4fd1d3adadfb"
+    },
+    "development189__guarded_rule": {
+      "episode": {
+        "id": "development189",
+        "role": "development",
+        "start_day": 189
+      },
+      "kind": "guarded_rule",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.69565746214255,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69565746214255,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080333109387539,
+        "heat_kWh": 0.0
+      },
+      "post_prefix_modes": {
+        "coast": 452,
+        "guarded_rule": 212
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 0.000974773643229785,
+        "p95": 0.0016785549116320909
+      },
+      "wall_seconds": 53.621945399791,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 23.943482870945274,
+        "return_C": 25.03201043227051,
+        "supply_C": 22.774404073259007,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "d05d0a2d7b507bb304c1acc5793149033215f3d5ce88d26a7f45cd3922ce2b99"
+    },
+    "development189__minimum_heat": {
+      "episode": {
+        "id": "development189",
+        "role": "development",
+        "start_day": 189
+      },
+      "kind": "minimum_heat",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.6965603895993,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965603895993,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625,
+        "heat_kWh": 0.0
+      },
+      "post_prefix_modes": {
+        "minimum_heat": 664
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 0.0007606838813685553,
+        "p95": 0.0012678799103014173
+      },
+      "wall_seconds": 55.45676130009815,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 23.94348958987382,
+        "return_C": 25.03201043227051,
+        "supply_C": 22.774404073259007,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "1d823dab1ea2cd7b1fea29c072924669f5a470fad41886d955a66a61642d6256"
+    },
+    "development189__response_18": {
+      "episode": {
+        "id": "development189",
+        "role": "development",
+        "start_day": 189
+      },
+      "kind": "guarded_rule",
+      "target_C": 18.0,
+      "transitions": 24,
+      "native_points": 721,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 20.472050221646978,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 20.472050221646978,
+        "hot_duration_s": 21600.0,
+        "hot_max_K": 3.8007126180128807,
+        "heat_kWh": 0.0
+      },
+      "post_prefix_modes": {
+        "intervention": 16
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 3.4968776162713766e-05,
+        "p95": 7.457513129338622e-05
+      },
+      "wall_seconds": 6.087765999836847,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 26.84897873119735,
+        "return_C": 25.03201043227051,
+        "supply_C": 22.774404073259007,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "2947406ba9c55cdb13537169c054923f0eff2ad1fd01f8195274ec904a1adc7c"
+    },
+    "development189__response_23.25": {
+      "episode": {
+        "id": "development189",
+        "role": "development",
+        "start_day": 189
+      },
+      "kind": "guarded_rule",
+      "target_C": 23.25,
+      "transitions": 24,
+      "native_points": 721,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 20.47204048071124,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 20.47204048071124,
+        "hot_duration_s": 21600.0,
+        "hot_max_K": 3.8007126180128807,
+        "heat_kWh": 0.0
+      },
+      "post_prefix_modes": {
+        "intervention": 16
+      },
+      "fallback_fraction_excluding_prefix": 0.0,
+      "decision_seconds": {
+        "mean": 3.6887533497065306e-05,
+        "p95": 7.422512862831354e-05
+      },
+      "wall_seconds": 5.675527799874544,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 26.84897697325573,
+        "return_C": 25.03201043227051,
+        "supply_C": 22.774404073259007,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "6a830feb5615264b86b72cc157c3bb24dcb877e0ea702f991c220a4039ed02ed"
+    },
+    "development189__solar_mpc": {
+      "episode": {
+        "id": "development189",
+        "role": "development",
+        "start_day": 189
+      },
+      "kind": "solar_mpc",
+      "target_C": null,
+      "transitions": 672,
+      "native_points": 20161,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 292.6965509467684,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965509467684,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080341816450243,
+        "heat_kWh": 0.0
+      },
+      "post_prefix_modes": {
+        "early_coast": 422,
+        "fallback": 208,
+        "mpc": 34
+      },
+      "fallback_fraction_excluding_prefix": 0.3132530120481928,
+      "decision_seconds": {
+        "mean": 0.006745993225983939,
+        "p95": 0.02966787989716977
+      },
+      "wall_seconds": 59.84082569996826,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "end_state": {
+        "operative_C": 23.94348816516458,
+        "return_C": 25.03201043227051,
+        "supply_C": 22.774404073259007,
+        "heat_kW": 0.0,
+        "electric_kW": 0.0
+      },
+      "summary_sha256": "b73b2c661e56cbc01babbb4094de5ab709332aeee094a86d3cf209574f488aa0"
+    }
+  },
+  "verification": {
+    "full_tests": 239,
+    "full_test_seconds": 10.389,
+    "new_tests": 12,
+    "archived_transitions_replayed": 6192,
+    "native_points": 185775,
+    "action_replay_max_abs_K": 0.0,
+    "official_kpi_max_abs_difference": 2.2737367544323206e-13,
+    "api_failures": 0,
+    "successful_stops": 15,
+    "development_dates": [
+      84,
+      168,
+      189
+    ],
+    "holdout_initializations": 0,
+    "old_protected_initializations": 0,
+    "model_refits": 0,
+    "policy_training_runs": 0,
+    "parent_locks_unchanged": true,
+    "workbench_ids_status_unchanged": true,
+    "offline_aggregation_dtype_repair": true,
+    "further_simulator_calls_for_repair": 0
+  },
+  "necessary_before_learning": [
+    "Diagnose development189 zero-load numerical resolution under a new development-only budget; preserve current failed thermal comparisons and frozen tolerances.",
+    "Lock learning reward/failure penalty/discount/normalization/checkpoint and interaction/wall budgets.",
+    "Add an explicitly authorized training-only environment for the six V2 training dates; do not reuse development sampler as replay data."
+  ],
+  "evidence_sha256": {
+    "outputs/v2-2/live-registered/result.json": "e161dc8b1bed3c02af97067b575fd6dd1d8adf9c2e1ddb39f94dfb59fe3b4066",
+    "outputs/v2-2/live-registered/calls.jsonl": "519ad53c04a27dde9d8b5c40630cbdc8c8cf5a872eb264643376a11f01da3882",
+    "outputs/v2-2/live-registered/attempts.jsonl": "50d61f7b03b65a74412008c60244d1a33b5b87ac1c5cbf9a8e9f3b09ddc606ff",
+    "outputs/v2-2/live-registered/failure.json": "e8611f5af96c24b35bf5383544885ddd646d780d5b0fc19dfb07e371677a3e12",
+    "outputs/v2-2/live-registered/offline-repair.json": "663f41647d0e4f9dafc0d52aaeef02293d81ec2c4d3c489170eafcdc30bb4efc",
+    "outputs/v2-2/live-registered/registered-source/thermal_comfort/v2_baselines.py": "c4c29298b18702e5220d0284d85fa96a68a3f97293e959f550d3092d53cefb18",
+    "outputs/v2-2/full-tests.txt": "4e7d30978310873b390d9dedc2b1cd198b000fa4aea4d420b40bd06858f7bac9",
+    "outputs/v2-2/archive-verification.txt": "6c964e870820cc3e5cd266b4db869895c3e279d41c4bee6898cc7ef75a4662b6",
+    "outputs/v2-2/shutdown.txt": "5af9df7098dd0a38718456f2f262575ef9c5b50328419b873ecf3c909d3eecb8"
+  }
+}

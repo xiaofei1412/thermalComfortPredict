@@ -1,0 +1,21 @@
+{
+  "protocol": "residential_rl_v2_development_baselines_1",
+  "status": "development_coverage_response_passed_low_load_thermal_comparison_failed_not_training_authorized",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581"
+  },
+  "files_sha256": {
+    "configs/v2_2.json": "d80f45d25a8b595dbd4890351a717bfe129cf6c9865dabdd61fa0a7c8313fba5",
+    "docs/experiments/v2_2.md": "e55ff9f3a6f92edb107a043fc9248b1f5cd93c3261f6639dd748733bf4de1508",
+    "thermal_comfort/v2_baselines.py": "a5519d30d18caa61c1e2939cec260f28bf427e33ea81c7f0d2fdfffc4957461f",
+    "scripts/verify_v2_baselines.py": "d6b86575b3d39c909d04ff682b886d8bad897ba3e19a2b8c680d3e3dc52a5985",
+    "tests/test_v2_baselines.py": "750cfe86c02e8dcd432f83ad736f59552c73e9728c2cda8030334de43c6cfdeb",
+    "reports/v2_2/archive-audit.json": "9d8be36b29b4e932b291b6b126877807ca5487bddfce8d4e16162a09d7b3ed9d",
+    "reports/v2_2/offline-repair.diff": "1b6c50cf14be34fe504e0ab7bf851bb12139be36380195362b5e8ad769ad0bc3",
+    "reports/v2_2/offline-repair.json": "3226e0daf2fe0f82c96e4049b79e46f770fb198a070e71ced166009483e2e411",
+    "reports/v2_2/registration.json": "63ebb7989e960e1ab76a306c461a65b9157f925b1dc1cf7e479cccf691e84c65",
+    "reports/v2_2/REPORT.md": "8982c58bf4492d983c578cccbaff97f70bcdd54c28e661e7bc1550fe201b3b4b",
+    "reports/v2_2/summary.json": "c81c63038a448f3286b5ac7136b6704f3dc6624b58412790c98a9848f2c35167"
+  }
+}

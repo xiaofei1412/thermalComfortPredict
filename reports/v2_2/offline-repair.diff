@@ -1,0 +1,19 @@
+--- a/thermal_comfort/v2_baselines.py
++++ b/thermal_comfort/v2_baselines.py
+@@ -263,0 +264,5 @@
++def assert_same_values(left, right):
++    # CSV inference can type an all-zero short trace as int and its longer peer as float.
++    pd.testing.assert_frame_equal(left, right, check_exact=True, check_dtype=False)
++
++
+@@ -281 +286 @@
+-            pd.testing.assert_frame_equal(schedule, pd.read_csv(other_folder/"schedule.csv.gz"), check_exact=True)
++            assert_same_values(schedule, pd.read_csv(other_folder/"schedule.csv.gz"))
+@@ -283 +288 @@
+-            pd.testing.assert_frame_equal(native.iloc[:241], other_native.iloc[:241], check_exact=True)
++            assert_same_values(native.iloc[:241], other_native.iloc[:241])
+@@ -297,2 +302,2 @@
+-            pd.testing.assert_frame_equal(native.iloc[:241], branch_native.iloc[:241], check_exact=True)
+-            pd.testing.assert_frame_equal(schedule.iloc[:721], pd.read_csv(directory/name/"schedule.csv.gz"), check_exact=True)
++            assert_same_values(native.iloc[:241], branch_native.iloc[:241])
++            assert_same_values(schedule.iloc[:721], pd.read_csv(directory/name/"schedule.csv.gz"))
