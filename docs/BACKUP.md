@@ -5,7 +5,7 @@
 ## 本轮交付及权限边界
 
 - 公开源码：GitHub `main`与审查过的rc3源码zip，排除原CSV、历史脚本、完整权重、FMU、`outputs/`和凭据。
-- 私有归档：原研究证据zip及逐文件清单、rc3源码及清单、部署/安装/运行证据和可选wheel。密码不在上传目录或源码包内。
+- 私有归档：原研究证据zip及逐文件清单、rc4源码及清单、办公室封存核验需要的固定FMU与上游许可、部署/安装/运行证据和可选wheel。密码不在上传目录或源码包内。
 - 加密：标准7z AES-256并加密文件名，随机密钥仅留在本机独立目录，设当前Windows用户访问权限。请另外保存密钥到你自己的可靠离线位置；仅留同一台电脑，电脑损坏后仍可能无法恢复。
 - 保留“封存研究版”和最近两次交付版；本轮不自动删除旧版本、不创建定时任务或公开下载入口。
 
@@ -13,7 +13,7 @@
 
 ## 手动传输（文件准备完成后）
 
-1. 本机上传目录：`D:\thermalComfortPredict\outputs\release-final\upload`。只上传其中的加密`.7z`、收据和说明；**不要上传`key`目录或密码文件**。
+1. 本机最终上传目录：`D:\thermalComfortPredict\outputs\release-final\upload-final`。只上传其中的加密`.7z`、收据和说明；**不要上传`key`目录或密码文件**。旧`upload`仅为发现FMU缺口前的预检包，不再使用。
 2. 在自己的百度网盘创建私有目录`thermalComfortPredict/2026-10-27`，上传上述文件；不点击“分享”。
 3. 上传完成后，从网盘重新下载`.7z`到`D:\thermalComfortPredict\outputs\release-final\download`。本地复制或复制上传缓存不算远程下载。
 4. 将实际下载路径告知维护者，由其运行下述校验并保存远程来源/日期。网页“上传完成”或文件名相同不能替代SHA和恢复校验。
@@ -28,10 +28,10 @@
 py -3.14 -m venv .venv-backup
 ./.venv-backup/Scripts/python.exe -m pip install -r requirements/backup.lock.txt
 ./.venv-backup/Scripts/python.exe -m pip check
-./.venv-backup/Scripts/python.exe -m scripts.restore_private_backup --archive outputs/release-final/download/thermalComfortPredict-private-20261027.7z --receipt reports/release-final/backup-receipt.json --key-file outputs/release-final/key/RECOVERY_KEY.txt --destination outputs/release-final/remote-restore
+./.venv-backup/Scripts/python.exe -m scripts.restore_private_backup --archive outputs/release-final/download/thermalComfortPredict-private-20261027-r2.7z --receipt reports/release-final/backup-receipt.json --key-file outputs/release-final/key/RECOVERY_KEY_R2.txt --destination outputs/release-final/remote-restore
 ```
 
-目标目录必须为全新目录；失败时保留已解密的诊断文件，不自动清理用户文件。脚本先核对加密包，再核对内部文件和两个zip的逐文件摘要；拒绝路径越界和覆盖不同的历史内容。恢复后完整新研究环境应在恢复源码目录执行：
+目标目录必须为全新目录；失败时保留已解密的诊断文件，不自动清理用户文件。脚本先核对加密包，再核对内部文件和源码/研究/上游核验依赖三个zip的逐文件摘要；拒绝路径越界和覆盖不同的历史内容。私有包的BOPTEST子目录只是只读核验所需文件，不是完整Git克隆；重建实时引擎另用干净源码目录按DEPLOYMENT部署，不直接在该不完整子目录运行setup。恢复后完整新研究环境应在恢复源码目录执行：
 
 ```powershell
 # 先切换到outputs/release-final/remote-restore/restored-source；解释器使用原新建完整研究环境的绝对路径。

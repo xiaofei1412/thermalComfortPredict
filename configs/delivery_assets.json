@@ -30,7 +30,7 @@
         "reports/office_final_round/BOUNDARY.md"
       ],
       "source": "tracked research reports",
-      "license": "Project code/report license decision open",
+      "license": "Project-owned code/docs MIT; third-party and data exceptions in LICENSE_SCOPE.md",
       "rebuild": "git clone; reports are read-only evidence, not regenerated on app startup"
     },
     {
@@ -56,7 +56,7 @@
         "docs/experiments"
       ],
       "source": "current source tree; frozen experiments verified separately",
-      "license": "Project licensing decision open; external sources retain own notices",
+      "license": "Project-owned code MIT; external sources retain own notices",
       "rebuild": "git clone; use each historical protocol in a separate reproduction workspace"
     },
     {
@@ -327,7 +327,7 @@
         "reports/deployment-f2"
       ],
       "source": "F source-workspace candidate and read-back verified private local archive",
-      "license": "Root code license/CSV provenance unresolved; private archive is not authorized for public redistribution",
+      "license": "Project-owned code MIT; historical CSV provenance unresolved; private archive not publicly redistributed",
       "rebuild": "docs/DEPLOYMENT.md; Windows/WSL scoped clean deployment and local restore passed; off-site destination and access remain open"
     },
     {
@@ -339,7 +339,7 @@
         "reports/deployment-f2/verification.json"
       ],
       "source": "F02 isolated day63 three-action engineering smoke; no model experiment",
-      "license": "Owner licensing decision remains open; original generators retain conditions",
+      "license": "Project-owned code MIT; original generators retain conditions",
       "rebuild": "docs/DEPLOYMENT.md; run only on an idle independently deployed workbench, not calibration/test windows"
     },
     {

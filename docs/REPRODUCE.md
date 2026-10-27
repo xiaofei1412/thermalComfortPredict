@@ -55,4 +55,4 @@ py -3.14 -m venv .venv-research
 
 发布条件见[来源说明](../THIRD_PARTY_NOTICES.md)。F02按[实测Windows/WSL范围](../reports/deployment-f2/REPORT.md)关闭；自有代码MIT已由所有者确认，适用范围及第三方/历史数据例外见[LICENSE_SCOPE](../LICENSE_SCOPE.md)。百度网盘私有灾备的真实传输/恢复尚待完成，见[交接](BACKUP.md)。不创建包含原CSV的自动GitHub Release，住宅与办公室封存不重启，保护窗口不消耗。
 
-F02候选`outputs/deployment-f2/thermal-rule-workbench-rc2.zip`保留；MIT增量候选使用新文件名`outputs/release-final/thermal-rule-workbench-rc3.zip`，从审查索引打包并附manifest，不覆盖旧包。完整依赖wheel已纳入本轮私有备份范围，远程恢复前不宣称异地保存完成。
+F02候选`outputs/deployment-f2/thermal-rule-workbench-rc2.zip`保留；MIT增量候选使用新文件名`outputs/release-final/thermal-rule-workbench-rc4.zip`，从审查索引打包并附manifest，不覆盖旧包。完整依赖wheel已纳入本轮私有备份范围，远程恢复前不宣称异地保存完成。

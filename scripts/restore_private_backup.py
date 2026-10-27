@@ -84,10 +84,12 @@ def restore(archive_path, receipt, key_file, destination):
         raise ValueError('Unexpected backup contents')
     check_files(destination, rows)
     source = destination/'restored-source'
-    count = restore_zip(destination/'source.zip', json.loads((destination/'source.manifest.json').read_text()), source)
-    evidence = restore_zip(destination/'research-evidence.zip', json.loads((destination/'research-evidence.manifest.json').read_text()), source)
+    count = restore_zip(destination/'source.zip', json.loads((destination/'source.manifest.json').read_text(encoding='utf-8')), source)
+    evidence = restore_zip(destination/'research-evidence.zip', json.loads((destination/'research-evidence.manifest.json').read_text(encoding='utf-8')), source)
+    prerequisites = restore_zip(destination/'upstream-prerequisites.zip',
+                                json.loads((destination/'upstream-prerequisites.manifest.json').read_text(encoding='utf-8')), source)
     return {'encrypted_sha256_verified': True, 'decrypted_files_verified': len(rows),
-            'source_files_restored': count, 'research_files_restored': evidence,
+            'source_files_restored': count, 'research_files_restored': evidence, 'upstream_files_restored': prerequisites,
             'restored_source': str(source), 'new_research_experiments': 0,
             'remote_provenance': 'caller must document actual remote download; local restore alone is not off-site verification'}
 

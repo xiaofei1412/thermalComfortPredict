@@ -8,6 +8,21 @@ from scripts.restore_private_backup import check_files, member_path, restore, re
 
 
 class BackupDeliveryTests(unittest.TestCase):
+    def test_valid_unicode_evidence_restores_and_identical_history_is_preserved(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder); archive = root/'evidence.zip'; data = b'preserved original evidence'
+            name = 'records/原始记录.json'
+            with zipfile.ZipFile(archive, 'w') as package:
+                package.writestr(name, data)
+            manifest = {'archive_sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),
+                        'files':[{'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}]}
+            destination = root/'restore'
+            self.assertEqual(restore_zip(archive, manifest, destination), 1)
+            timestamp = (destination/name).stat().st_mtime_ns
+            self.assertEqual(restore_zip(archive, manifest, destination), 1)
+            self.assertEqual((destination/name).read_bytes(), data)
+            self.assertEqual((destination/name).stat().st_mtime_ns, timestamp)
+
     def test_untrusted_archive_names_cannot_escape_recovery(self):
         with tempfile.TemporaryDirectory() as folder:
             for name in ('../key.txt', '/outside', 'C:/outside', 'a\\..\\outside'):
