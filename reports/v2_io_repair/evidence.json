@@ -1,0 +1,45 @@
+{
+  "status": "offline_repair_verified_no_training_authorized",
+  "base_commit": "2a337214372452b48488000a97cc703dd589ea4e",
+  "full_tests": {
+    "count": 318,
+    "seconds": 37.789,
+    "passed": true,
+    "log_sha256": "13d5c63b4b6990fd970c914f5a4d908e331a7703f9f01ff4c335e58b95f60883"
+  },
+  "initial_concurrency_failure": {
+    "path": "outputs/v2-io-repair/windows-concurrency",
+    "reason": "frozen LK_LOCK: OSError errno36 Resource deadlock avoided",
+    "worker_log_sha256": "e53efd9b31f65f7d70e3da07d5f93e17fc7a85c6232030ab8fb9962c9c2d7b54"
+  },
+  "final_concurrency_audit_sha256": "87d3f2b439a7150201321d83a4ae498477ee78da60429ecdd24bbfb81b729cc1",
+  "old_trial": {
+    "files_checked": 119,
+    "unchanged": true,
+    "before_manifest_sha256": "81c8328c89a72f57b839941b609bf8385bc0e00a8d93acb6bd5af74559b49641",
+    "after_manifest_sha256": "6398cb6d96e4ece37369f389502db85a4a1feef756e8c147a945a41e61474fa5",
+    "formal_training_authorized": false,
+    "counts": {
+      "select": 10,
+      "initialize": 10,
+      "advance": 4956
+    }
+  },
+  "offline_registration": {
+    "path": "outputs/v2-io-repair/registered-offline",
+    "formal_training_authorized": false,
+    "counts": {
+      "select": 0,
+      "initialize": 0,
+      "advance": 0
+    },
+    "stage_start": null,
+    "seeds": {}
+  },
+  "parent_locks_verified": 8,
+  "parent_pinned_files_verified": 102,
+  "research_training_steps": 0,
+  "FMU_calls": 0,
+  "heldout_reads_or_initializations": 0,
+  "old_trial_reopened": false
+}

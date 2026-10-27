@@ -1,0 +1,26 @@
+{
+  "protocol": "residential_rl_v2_io_repair_1",
+  "status": "offline_repair_verified_no_training_authorized",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01",
+    "reports/v2_runner/lock.json": "f69e9ee3e86bd7d41ce95cb115d5db71254c049f50bb44d1abe46d37574eda54",
+    "reports/v2_formal/lock.json": "c24314d26105adab193c7b956852357dd836edf36b23e6ed0c7761ff1395d8b2"
+  },
+  "files_sha256": {
+    "thermal_comfort/rl_budget_safe.py": "e72ed117e6729cf7e3bb799228b72545e39d941375e4e0f84bf3848cf5318589",
+    "thermal_comfort/rl_failure_export.py": "dfbdcfd4109a2ec9074ff6b2be828ef6cafac5579137d89d3e1354c15497ed95",
+    "scripts/run_v2_safe.py": "11b7c5cc9861e3d7d4c196b753aba75e863769af2649394777e88723816aeb27",
+    "scripts/verify_v2_io_repair.py": "9c684bcfb0a0905db1d232d343401adaa8944cfc1fc71a70c4b35c15a6829389",
+    "tests/test_v2_io_repair.py": "a6a7c9fd974d631397b1661f22c98d0395306e39eaf684ccf52857289f00a3b1",
+    ".github/workflows/rl-io-windows.yml": "caa87543d4364b8a678e98acc978a975838efec885f8a91bc83fe3a9fdc7a86a",
+    "docs/experiments/v2_io_repair.md": "36ec7007e3f28973331e76d7f35c4bc589bfd31d41b458b1aaf1dc9dd66d4723",
+    "reports/v2_io_repair/REPORT.md": "d3c75586588d759a857c8bda383cf6706c1b3a7ded8bbcaa24ca54830179461a",
+    "reports/v2_io_repair/concurrency-audit.json": "87d3f2b439a7150201321d83a4ae498477ee78da60429ecdd24bbfb81b729cc1",
+    "reports/v2_io_repair/evidence.json": "9b9e9afb0a641bedf64f41e71a00432d28e166ebbd03d89fba33ce31e45d88f3"
+  }
+}

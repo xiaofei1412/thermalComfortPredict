@@ -1,0 +1,69 @@
+{
+  "status": "passed_offline_io_regression",
+  "platform": "win32",
+  "concurrent_processes": 6,
+  "concurrent_writers": 3,
+  "concurrent_readers": 2,
+  "concurrent_monitors": 1,
+  "writer_attempts": 1200,
+  "budget_snapshots": 1800,
+  "monitor_snapshots": 600,
+  "worker_results": {
+    "SAC-11": {
+      "status": "passed",
+      "role": "writer",
+      "iterations": 400,
+      "budget_reads": 0,
+      "progress_reads": 0
+    },
+    "SAC-23": {
+      "status": "passed",
+      "role": "writer",
+      "iterations": 400,
+      "budget_reads": 0,
+      "progress_reads": 0
+    },
+    "SAC-37": {
+      "status": "passed",
+      "role": "writer",
+      "iterations": 400,
+      "budget_reads": 0,
+      "progress_reads": 0
+    },
+    "reader-0": {
+      "status": "passed",
+      "role": "reader",
+      "iterations": 600,
+      "budget_reads": 600,
+      "progress_reads": 600
+    },
+    "reader-1": {
+      "status": "passed",
+      "role": "reader",
+      "iterations": 600,
+      "budget_reads": 600,
+      "progress_reads": 599
+    },
+    "monitor-0": {
+      "status": "passed",
+      "role": "monitor",
+      "iterations": 600,
+      "budget_reads": 600,
+      "progress_reads": 0
+    }
+  },
+  "original_clocks_preserved": true,
+  "injected_failed_attempt_charged": true,
+  "forced_fixture_exit_released_handles": true,
+  "final_fixture_counts": {
+    "select": 3,
+    "initialize": 3,
+    "advance": 1202
+  },
+  "uncommitted_temp_preserved": true,
+  "snapshot_or_sharing_errors": 0,
+  "research_training_steps": 0,
+  "FMU_calls": 0,
+  "heldout_reads_or_initializations": 0,
+  "old_trial_reopened": false
+}
