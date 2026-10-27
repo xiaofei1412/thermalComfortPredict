@@ -1,0 +1,79 @@
+{
+  "plan_sha256": "bbe61408b59dd90efa72109650ffff0c1f6444b8ceb8772c847f6d3b1dc6dc69",
+  "stage_start": {
+    "wall": 1793121787.0149567,
+    "monotonic": 1103683.257298
+  },
+  "counts": {
+    "select": 10,
+    "initialize": 10,
+    "advance": 4956
+  },
+  "seeds": {
+    "SAC-11": {
+      "status": "failed",
+      "start": {
+        "wall": 1793121779.651498,
+        "monotonic": 1103675.8938398
+      },
+      "elapsed_seconds": 22.83639459987171,
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 73
+      }
+    },
+    "SAC-23": {
+      "status": "failed",
+      "start": {
+        "wall": 1793121789.1095042,
+        "monotonic": 1103685.351846
+      },
+      "elapsed_seconds": 133.6825085999444,
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 550
+      }
+    },
+    "SAC-37": {
+      "status": "failed",
+      "start": {
+        "wall": 1793121806.101173,
+        "monotonic": 1103702.343515
+      },
+      "elapsed_seconds": 156.41550540924072,
+      "counts": {
+        "select": 2,
+        "initialize": 2,
+        "advance": 798
+      }
+    },
+    "PPO-11": {
+      "status": "failed",
+      "start": {
+        "wall": 1793121963.9620137,
+        "monotonic": 1103860.2043558
+      },
+      "elapsed_seconds": 406.2891697883606,
+      "counts": {
+        "select": 3,
+        "initialize": 3,
+        "advance": 1767
+      }
+    },
+    "PPO-23": {
+      "status": "failed",
+      "start": {
+        "wall": 1793121970.0155377,
+        "monotonic": 1103866.2578796
+      },
+      "elapsed_seconds": 399.226393799996,
+      "counts": {
+        "select": 3,
+        "initialize": 3,
+        "advance": 1768
+      }
+    }
+  }
+}

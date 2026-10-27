@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-27T17:22:32.426334+00:00",
+  "basis": "explicit_owner_request_in_current_chat",
+  "request": "\u6b63\u5f0f\u542f\u52a8\u51bb\u7ed3\u9884\u7b97\u4e0b\u7684SAC\u3001PPO\u3001TD3\u6bd4\u8f83\uff1b\u539f\u9884\u7b97\u5185\u6838\u67e5\u9996\u56de\u5408\uff1b\u5931\u8d25\u505c\u6b62\uff0c\u4e0d\u89e6\u78b0\u7559\u51fa",
+  "protocol_sha256": "79f2d84a690721cf816cde3ed04026b458e0f30dce8f3fc9ab3306dceb30f32d",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01",
+    "reports/v2_runner/lock.json": "f69e9ee3e86bd7d41ce95cb115d5db71254c049f50bb44d1abe46d37574eda54"
+  },
+  "frozen_assets_sha256": {
+    "outputs/solar-selected/model.joblib": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+    "outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e"
+  },
+  "replicas": [
+    {
+      "project": "thermal-sac-11",
+      "port": 8083
+    },
+    {
+      "project": "thermal-sac-23",
+      "port": 8084
+    }
+  ],
+  "actual_max_parallel": 2,
+  "reason_for_parallel_limit": "preserve memory for other active applications; within frozen maximum three",
+  "heldout_initializations_authorized": 0,
+  "first_episode_gate_extra_FMU_calls": 0,
+  "initial_registration_sha256": "ce36891a85f8aab131c24dbac7d387c0f1cecc305a18419744b0a587d40dc846",
+  "preflight_sha256": "68ed4f529a368657094bc963865ad5e2176ae966d4110f7cb17acd6562065f04",
+  "launch_sources_sha256": {
+    "scripts/run_v2_formal.py": "3d9e6e8522f4b347c7561c060aed8f250e3cf2096c2775f69d833b4ab48785fa",
+    "scripts/dispatch_v2_formal.py": "d357dbc89a1fd4b6c6cf05d164764e524c1d0e1451501b872a3998302490c167",
+    "docs/experiments/v2_formal.md": "ed8a42999075c0468914e3771d33557307bfeeaebd74a390f11fb0e73b30ca47"
+  }
+}

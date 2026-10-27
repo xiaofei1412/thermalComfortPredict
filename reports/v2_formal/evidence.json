@@ -1,0 +1,147 @@
+{
+  "status": "closed_infrastructure_failure_not_algorithm_negative_result",
+  "utc": "2026-10-27T17:43:49.069818+00:00",
+  "launch_git_revision": "58f73f5d3b44296435b542968fcb4c3c3b3d3035",
+  "close_base_git_revision": "58f73f5d3b44296435b542968fcb4c3c3b3d3035",
+  "active_window_seconds_first_select_to_last_recorded_failure": 583.2362267971039,
+  "full_tests_before_start": {
+    "count": 300,
+    "seconds": 37.827,
+    "passed": true,
+    "raw_sha256": "c5d2af19621baf7fbd09d53e8505eb3b0e1b56c9abd553fe14a66743a6f4b3ae"
+  },
+  "full_tests_after_close": {
+    "count": 301,
+    "seconds": 33.545,
+    "passed": true,
+    "raw_sha256": "e8b3a2df15c0cb3eb2e20ed1af76693865cf7805c32df9c0936531a3524a8e7a"
+  },
+  "pre_start_failed_test_stub": {
+    "raw_sha256": "dcf9c44958018dff0f9e687b724f6a4ad0a847f398875e0abbdc484ae1ac3f56",
+    "reason": "mock check_output returned bytes despite text=True; fixed before authorization, no trial calls"
+  },
+  "pre_start_read_only_preflight_fixes": [
+    "target membership instead of exclusive testcase registry",
+    "worker hash command uses system python3; no extra select/initialize"
+  ],
+  "dispatcher_error": "PermissionError opening budget.json in unlocked progress ledger.read()",
+  "dispatcher_log_sha256": "55099d66257d43ec70118337fd746c5135c8212654bd91d2f7adcb861be16fc9",
+  "dispatch_events_sha256": "58e26f124747a249c32ba21255b18863099eebe7498363aec62ee49df28af42c",
+  "uncommitted_budget_temporary_files": {
+    "budget.json.asshis7a.tmp": "e2d5b8d45df3b23486421103d9771767f736751e6fdc5b973ed117f77223f92a",
+    "budget.json.ms3d9zes.tmp": "b9f10e7bcd67dbfb4f303eb64499a56a472919489528386fa37a4e2e28b0c8a0",
+    "budget.json.u6gqd4hd.tmp": "3d343c2433622806d0bd982c2837f991485ed77d8d76ef9a96c6adad52908512"
+  },
+  "first_gates": {
+    "PPO-11": {
+      "status": "passed",
+      "episode": "train014",
+      "prefix": "frozen_reset_compared_all_native_prefix_fields",
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 672
+      },
+      "native_samples": 20161,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 5.551115123125783e-17,
+        "emis_tot": 2.7755575615628914e-17
+      },
+      "episode_wall_seconds_including_reset_and_updates": 160.71976789995097,
+      "original_seed_elapsed_seconds": 168.30736756324768,
+      "env_step_seconds_mean_excluding_policy_updates": 0.19846275390871992,
+      "cost_gate": "unchanged_original_seed_and_stage_clocks_no_projected_threshold",
+      "extra_FMU_calls": 0,
+      "max_exported_native_metric_difference": 0.0
+    },
+    "PPO-23": {
+      "status": "passed",
+      "episode": "train014",
+      "prefix": "frozen_reset_compared_all_native_prefix_fields",
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 672
+      },
+      "native_samples": 20161,
+      "kpi_absolute_difference": {
+        "ener_tot": 2.220446049250313e-16,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "episode_wall_seconds_including_reset_and_updates": 122.17831450002268,
+      "original_seed_elapsed_seconds": 132.95213570003398,
+      "env_step_seconds_mean_excluding_policy_updates": 0.1501783673197076,
+      "cost_gate": "unchanged_original_seed_and_stage_clocks_no_projected_threshold",
+      "extra_FMU_calls": 0,
+      "max_exported_native_metric_difference": 0.0
+    },
+    "SAC-37": {
+      "status": "passed",
+      "episode": "train014",
+      "prefix": "frozen_reset_compared_all_native_prefix_fields",
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 672
+      },
+      "native_samples": 20161,
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 7.105427357601002e-15,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "episode_wall_seconds_including_reset_and_updates": 130.47113239997998,
+      "original_seed_elapsed_seconds": 138.48666715621948,
+      "env_step_seconds_mean_excluding_policy_updates": 0.14963187093436942,
+      "cost_gate": "unchanged_original_seed_and_stage_clocks_no_projected_threshold",
+      "extra_FMU_calls": 0,
+      "max_exported_native_metric_difference": 0.0
+    }
+  },
+  "raw_seed_logs_sha256": {
+    "PPO-11.log": "65416143391f5fc2ef63868349fa331431c8a0f5863e51a1bf41a925484e5ca7",
+    "PPO-23.log": "9c2f4f00bff06dee9dc1b535a1f006de8b4540d3314f26e788aaaec4681e211e",
+    "SAC-11.log": "0bb0e3156a768c32b333a9fe2e9a72e36ae5f7bb5273957355b9758ad67272bf",
+    "SAC-23.log": "5005f8f7f090b5e5c5789ae1701244631b12cda0f1f186fca466aa8a2db1d89e",
+    "SAC-37.log": "be845f4d92abf6ce074cc0ef9d2564b747134f5f74d865ec9327c66f9be7b92b"
+  },
+  "workbench_before": {
+    "8768": {
+      "id": "98a50ff4cdf4",
+      "status": "completed",
+      "busy": false
+    },
+    "8770": {
+      "id": "64ac6cbb6570",
+      "status": "completed",
+      "busy": false
+    }
+  },
+  "workbench_after": {
+    "8768": {
+      "id": "98a50ff4cdf4",
+      "status": "completed",
+      "busy": false
+    },
+    "8770": {
+      "id": "64ac6cbb6570",
+      "status": "completed",
+      "busy": false
+    }
+  },
+  "workbench_unchanged": true,
+  "shutdown_logs_sha256": {
+    "11": "86ba2ce66bab0f3690ed0f5285f289a748459b34111b9785536ff48fb96a0193",
+    "23": "4fb5a3abfd0d1282eb8d19822ae56df344349a29a3e52f43652b472e3d96c2d2"
+  },
+  "run_time_source_unchanged_after_start": true,
+  "repairs_or_restarts_after_training_start": 0,
+  "remaining_seed_replacements": 0,
+  "formal_development_or_holdout_episodes": 0,
+  "next_action": "offline reader/writer lifecycle repair and regression; any new trial requires new registration, not resuming this one"
+}

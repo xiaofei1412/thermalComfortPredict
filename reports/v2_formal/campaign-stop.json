@@ -1,0 +1,15 @@
+{
+  "reason": "dispatcher exited after Windows shared budget file read failure; frozen no-resume policy",
+  "active_seeds_cooperatively_stopped": [
+    "PPO-11",
+    "PPO-23"
+  ],
+  "no_dispatcher_restart": true,
+  "not_started": [
+    "PPO-37",
+    "TD3-11",
+    "TD3-23",
+    "TD3-37"
+  ],
+  "clock_and_attempts_not_reset": true
+}

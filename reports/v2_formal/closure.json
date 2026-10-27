@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-27T17:34:44.636529+00:00",
+  "authorized_registration_sha256": "851566b6bd786b65f3ac1cb1d463e0cae074ce79bee8be8b85386278790b2e5d",
+  "closed_registration_sha256": "e230163cceb4f59e8eed9a0d275d4331d608fcb7312cf5cb215c7d7ce56d68c5",
+  "no_retry_or_restart": true,
+  "reason": "Windows shared budget I/O failure stopped dispatcher; two active PPO seeds cooperatively stopped; remaining four never launched"
+}

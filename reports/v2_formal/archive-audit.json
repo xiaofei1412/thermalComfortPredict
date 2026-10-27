@@ -1,0 +1,243 @@
+{
+  "status": "stopped_formal_trial_audit_passed_incomplete_evidence_disclosed",
+  "seeds": {
+    "SAC-11": {
+      "status": "failed_budget_io",
+      "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'D:\\\\thermalComfortPredict\\\\outputs\\\\v2-formal\\\\live-registered\\\\budget.json.ms3d9zes.tmp' -> 'outputs\\\\v2-formal\\\\live-registered\\\\budget.json'",
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 73,
+        "stop": 1
+      },
+      "first_gate_passed": false,
+      "actor_steps_at_failure": 64,
+      "retained_action_rows": 64,
+      "elapsed_seconds": 22.83639459987171,
+      "exports": [
+        {
+          "folder": "failed-episode",
+          "episode": "train014",
+          "stored_transitions": 72,
+          "actor_observations": 64,
+          "complete_official_KPI_retained": false,
+          "summary_sha256": "77b7ea1bd26481f90ca73a1d767eab8235a99edbe29e38dc7aa7b33a97bcf355"
+        }
+      ],
+      "successful_advances_without_retained_native_segment": 1,
+      "partial_export_error": "'score'",
+      "failure_sha256": "9669cd86bf53625bd138c28c38c1780c892ea8e85a09668abba1c90a3d7f9e2d",
+      "calls_sha256": "ddbdacf75d175c88d9eba7eef7033d8124203fc6938654a46514341da5c14ab3"
+    },
+    "SAC-23": {
+      "status": "failed_budget_io",
+      "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'D:\\\\thermalComfortPredict\\\\outputs\\\\v2-formal\\\\live-registered\\\\budget.json.u6gqd4hd.tmp' -> 'outputs\\\\v2-formal\\\\live-registered\\\\budget.json'",
+      "counts": {
+        "select": 1,
+        "initialize": 1,
+        "advance": 550,
+        "stop": 1
+      },
+      "first_gate_passed": false,
+      "actor_steps_at_failure": 541,
+      "retained_action_rows": 541,
+      "elapsed_seconds": 133.6825085999444,
+      "exports": [
+        {
+          "folder": "failed-episode",
+          "episode": "train014",
+          "stored_transitions": 550,
+          "actor_observations": 541,
+          "complete_official_KPI_retained": false,
+          "summary_sha256": "e53bac47cf7965aa0dab646ea4977e98d414ba1a43065eba72e6d121dbd89449"
+        }
+      ],
+      "successful_advances_without_retained_native_segment": 0,
+      "partial_export_error": "'score'",
+      "failure_sha256": "f8b51ab95e2cfee2345815d3d4500c225ae3f60a4da1e06c3bca0f13cd1b5d29",
+      "calls_sha256": "703c3d8ad95b768790faadb5d9f013323af08abae35339d1f6003f349529f8ec"
+    },
+    "SAC-37": {
+      "status": "failed_budget_io",
+      "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'D:\\\\thermalComfortPredict\\\\outputs\\\\v2-formal\\\\live-registered\\\\budget.json.asshis7a.tmp' -> 'outputs\\\\v2-formal\\\\live-registered\\\\budget.json'",
+      "counts": {
+        "select": 2,
+        "initialize": 2,
+        "advance": 798,
+        "stop": 2
+      },
+      "first_gate_passed": true,
+      "actor_steps_at_failure": 781,
+      "retained_action_rows": 781,
+      "elapsed_seconds": 156.41550540924072,
+      "exports": [
+        {
+          "folder": "failed-episode",
+          "episode": "train035",
+          "stored_transitions": 125,
+          "actor_observations": 117,
+          "complete_official_KPI_retained": false,
+          "summary_sha256": "6708717382a4f4bfe8ebbaf71fef26f9173d2d4facd21046bb54be4a32da23ca"
+        },
+        {
+          "folder": "train\\cycle-01\\train014",
+          "episode": "train014",
+          "stored_transitions": 672,
+          "actor_observations": 664,
+          "complete_official_KPI_retained": true,
+          "summary_sha256": "dc064b000edba02af5b9e6b628e9b5140ad3ddaa2009e809951b522adaf2f9bf"
+        }
+      ],
+      "successful_advances_without_retained_native_segment": 1,
+      "partial_export_error": null,
+      "failure_sha256": "8970d4882332ae7fdb6dad3428281e255f6f4bff5480bd580e7afcc544baf6ed",
+      "calls_sha256": "ea7a7506ab3d3e26a84d6768655e82cc7217cbe15be06613aab9f034808a4936"
+    },
+    "PPO-11": {
+      "status": "cooperatively_aborted_after_dispatcher_failure",
+      "error": "Seed has already stopped",
+      "counts": {
+        "select": 3,
+        "initialize": 3,
+        "advance": 1767,
+        "stop": 3
+      },
+      "first_gate_passed": true,
+      "actor_steps_at_failure": 1743,
+      "retained_action_rows": 1742,
+      "elapsed_seconds": 406.2891697883606,
+      "exports": [
+        {
+          "folder": "failed-episode",
+          "episode": "train056",
+          "stored_transitions": 423,
+          "actor_observations": 415,
+          "complete_official_KPI_retained": false,
+          "summary_sha256": "642d048980b70d7f37fa75d1541e1f44766c1cba91b2f0cfa254b71854be2d37"
+        },
+        {
+          "folder": "train\\cycle-01\\train014",
+          "episode": "train014",
+          "stored_transitions": 672,
+          "actor_observations": 664,
+          "complete_official_KPI_retained": true,
+          "summary_sha256": "07a5f84865b95ce21cbfbb95f242a2fb534f24cf41f9ea23187a2cc4395e4259"
+        },
+        {
+          "folder": "train\\cycle-01\\train035",
+          "episode": "train035",
+          "stored_transitions": 672,
+          "actor_observations": 664,
+          "complete_official_KPI_retained": true,
+          "summary_sha256": "0f60bb83595d1997a959ca89cfa00646b52a37cb6b9d8a924f3235e83ba8ffe1"
+        }
+      ],
+      "successful_advances_without_retained_native_segment": 0,
+      "partial_export_error": null,
+      "failure_sha256": "c9bc2fa7f2c27c6b151507b79e6c83e573b72302a1f3e037c099a64b38cb91bc",
+      "calls_sha256": "6e3bf358db1a8c5619d74c12c535bc4bc0ef330e9d395160c5f013467149e8c7"
+    },
+    "PPO-23": {
+      "status": "cooperatively_aborted_after_dispatcher_failure",
+      "error": "Seed has already stopped",
+      "counts": {
+        "select": 3,
+        "initialize": 3,
+        "advance": 1768,
+        "stop": 3
+      },
+      "first_gate_passed": true,
+      "actor_steps_at_failure": 1744,
+      "retained_action_rows": 1743,
+      "elapsed_seconds": 399.226393799996,
+      "exports": [
+        {
+          "folder": "failed-episode",
+          "episode": "train056",
+          "stored_transitions": 424,
+          "actor_observations": 416,
+          "complete_official_KPI_retained": false,
+          "summary_sha256": "bbaf7ec1fa2abb37a86b9b854865c03459e6f980e245e14eb971781810b49c54"
+        },
+        {
+          "folder": "train\\cycle-01\\train014",
+          "episode": "train014",
+          "stored_transitions": 672,
+          "actor_observations": 664,
+          "complete_official_KPI_retained": true,
+          "summary_sha256": "a17e979c364949e5fe94f2d08683eea3c26d19202b284a90cb018029a964b5da"
+        },
+        {
+          "folder": "train\\cycle-01\\train035",
+          "episode": "train035",
+          "stored_transitions": 672,
+          "actor_observations": 664,
+          "complete_official_KPI_retained": true,
+          "summary_sha256": "5d1780bf95ba0fb03f8f717ff09f6995d71c5b50818eb74e28d5e598312866bd"
+        }
+      ],
+      "successful_advances_without_retained_native_segment": 0,
+      "partial_export_error": null,
+      "failure_sha256": "ae04d0ebe8d8f3b7752f38a665d8447304c71ab2c82539cdbd4f59c7ea30052a",
+      "calls_sha256": "be272d8603bcef1fd2f4588ad4eda9f770a9d5b2f0c4826a42f05a67047bc260"
+    },
+    "PPO-37": {
+      "status": "not_started_shared_infrastructure_stop",
+      "counts": {
+        "select": 0,
+        "initialize": 0,
+        "advance": 0
+      }
+    },
+    "TD3-11": {
+      "status": "not_started_shared_infrastructure_stop",
+      "counts": {
+        "select": 0,
+        "initialize": 0,
+        "advance": 0
+      }
+    },
+    "TD3-23": {
+      "status": "not_started_shared_infrastructure_stop",
+      "counts": {
+        "select": 0,
+        "initialize": 0,
+        "advance": 0
+      }
+    },
+    "TD3-37": {
+      "status": "not_started_shared_infrastructure_stop",
+      "counts": {
+        "select": 0,
+        "initialize": 0,
+        "advance": 0
+      }
+    }
+  },
+  "successful_service_calls": {
+    "select": 10,
+    "initialize": 10,
+    "advance": 4956,
+    "stop": 10
+  },
+  "ledger_counts": {
+    "select": 10,
+    "initialize": 10,
+    "advance": 4956
+  },
+  "first_gates_passed": [
+    "SAC-37",
+    "PPO-11",
+    "PPO-23"
+  ],
+  "complete_training_episode_KPI_archives": 5,
+  "max_official_KPI_difference": 7.105427357601002e-15,
+  "archived_transitions_checked": 4954,
+  "native_points_checked": 148630,
+  "forecast_snapshots_checked": 4954,
+  "final_candidates": 0,
+  "formal_development_episodes": 0,
+  "heldout_initializations": 0,
+  "additional_FMU_calls": 0,
+  "performance_comparison_permitted": false
+}

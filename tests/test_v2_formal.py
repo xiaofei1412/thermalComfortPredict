@@ -1,5 +1,6 @@
 import copy
 import json
+import os
 from pathlib import Path
 import tempfile
 from types import SimpleNamespace
@@ -82,6 +83,15 @@ class FormalLaunchTests(unittest.TestCase):
             result = preflight(self.root/"preflight.json")
         self.assertEqual(result["status"], "passed")
         self.assertEqual(result["FMU_select_or_initialize_calls"], 0)
+
+    def test_isolated_reader_probe_documents_platform_limit_without_trial_calls(self):
+        from scripts.diagnose_v2_formal_io import diagnose
+        result = diagnose(self.root/"io-probe")
+        self.assertEqual(result["new_training_or_FMU_calls"], 0)
+        self.assertEqual(result["after_close_and_serialization"], {"counter": 3})
+        if os.name == "nt":
+            self.assertTrue(result["matches_live_Windows_failure_pattern"])
+            self.assertEqual(result["after_held_reader_attempt"], {"counter": 0})
 
 
 if __name__ == "__main__":

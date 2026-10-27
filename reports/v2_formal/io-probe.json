@@ -1,0 +1,22 @@
+{
+  "platform": "nt",
+  "held_reader_replace_error": {
+    "type": "PermissionError",
+    "errno": 13,
+    "winerror": 5,
+    "message": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'D:\\\\thermalComfortPredict\\\\outputs\\\\v2-formal\\\\io-probe\\\\fixture-budget.json.3spjj1ng.tmp' -> 'outputs\\\\v2-formal\\\\io-probe\\\\fixture-budget.json'"
+  },
+  "after_held_reader_attempt": {
+    "counter": 0
+  },
+  "after_close_and_serialization": {
+    "counter": 3
+  },
+  "temporary_files_preserved": [
+    "fixture-budget.json.3spjj1ng.tmp"
+  ],
+  "matches_live_Windows_failure_pattern": true,
+  "trial_source_changed": false,
+  "new_training_or_FMU_calls": 0,
+  "scope": "Shows an unlocked open reader can block replacement; does not uniquely identify every live holder"
+}
