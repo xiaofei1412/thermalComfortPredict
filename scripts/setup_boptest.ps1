@@ -1,7 +1,10 @@
 param(
     [ValidateSet('up', 'down', 'status')]
     [string]$Action = 'up',
-    [string]$Distribution = 'Ubuntu-24.04'
+    [string]$Distribution = 'Ubuntu-24.04',
+    [ValidatePattern('^[a-z0-9][a-z0-9-]{0,62}$')][string]$ProjectName = 'thermal-boptest',
+    [ValidateRange(1024, 65535)][int]$Port = 8080,
+    [switch]$NoCache
 )
 
 $ErrorActionPreference = 'Stop'
@@ -57,15 +60,25 @@ if ($LASTEXITCODE -ne 0) { throw 'Could not map the project path into WSL.' }
 wsl -d $Distribution -u root -- systemctl start docker
 if ($LASTEXITCODE -ne 0) { throw 'Docker Engine is required inside the selected WSL distribution.' }
 
+$storageImage = if ($ProjectName -eq 'thermal-boptest') { 'thermal-boptest-storage:2025-04' } else { "thermal-boptest-storage:$ProjectName" }
+$provisionImage = "thermal-boptest-provision:$ProjectName"
+$composePrefix = @('-d', $Distribution, '-u', 'root', '--', 'env', "BOPTEST_PROJECT=$ProjectName",
+    "BOPTEST_PORT=$Port", "BOPTEST_STORAGE_IMAGE=$storageImage", "BOPTEST_PROVISION_IMAGE=$provisionImage",
+    'docker', 'compose', '-f', $linuxComposeFile)
+
 switch ($Action) {
     'up' {
-        wsl -d $Distribution -u root -- docker compose -f $linuxComposeFile up -d --build
+        $buildArgs = @('build')
+        if ($NoCache) { $buildArgs += '--no-cache' }
+        & wsl @composePrefix @buildArgs
+        if ($LASTEXITCODE -ne 0) { throw 'BOPTEST auxiliary image build failed.' }
+        & wsl @composePrefix up -d --no-build
         if ($LASTEXITCODE -ne 0) { throw 'BOPTEST deployment failed.' }
         $ready = $false
         for ($attempt = 0; $attempt -lt 60; $attempt++) {
             try {
-                $version = Invoke-RestMethod -Uri 'http://127.0.0.1:8080/version' -TimeoutSec 3
-                $cases = @(Invoke-RestMethod -Uri 'http://127.0.0.1:8080/testcases' -TimeoutSec 3)
+                $version = Invoke-RestMethod -Uri "http://127.0.0.1:$Port/version" -TimeoutSec 3
+                $cases = @(Invoke-RestMethod -Uri "http://127.0.0.1:$Port/testcases" -TimeoutSec 3)
                 if ($version.payload.version -eq '0.9.0' -and 'bestest_hydronic_heat_pump' -in $cases.testcaseid) {
                     $ready = $true
                     break
@@ -74,14 +87,14 @@ switch ($Action) {
             Start-Sleep -Seconds 2
         }
         if (-not $ready) { throw 'BOPTEST API or test-case provisioning is not ready; inspect compose logs.' }
-        Write-Output 'BOPTEST 0.9.0 is ready at http://127.0.0.1:8080.'
+        Write-Output "BOPTEST 0.9.0 project $ProjectName is ready at http://127.0.0.1:$Port."
     }
     'down' {
-        wsl -d $Distribution -u root -- docker compose -f $linuxComposeFile down
+        & wsl @composePrefix down
         if ($LASTEXITCODE -ne 0) { throw 'Could not stop the project containers.' }
     }
     'status' {
-        wsl -d $Distribution -u root -- docker compose -f $linuxComposeFile ps -a
+        & wsl @composePrefix ps -a
         if ($LASTEXITCODE -ne 0) { throw 'Could not read container status.' }
     }
 }

@@ -1,0 +1,568 @@
+{
+  "status": "passed_bounded_clean_deployment",
+  "source_base_commit": "0087118c265b2dbc92b01c96985f25d49fe5d663",
+  "source_archive_base": "outputs/delivery-f/thermal-rule-workbench-rc1.zip plus listed reviewed deployment files",
+  "scope": {
+    "host": "existing Windows and Ubuntu-24.04 WSL; shared Docker daemon and immutable core image layers",
+    "fresh": [
+      "source extraction",
+      "two Python venvs",
+      "fixed upstream Git checkout",
+      "storage archives",
+      "project network and all containers",
+      "storage/provision build stages with --no-cache"
+    ],
+    "not_claimed": [
+      "new physical host",
+      "empty Docker daemon",
+      "all-platform lock",
+      "historical model retraining",
+      "remote restore"
+    ]
+  },
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "venv_config": "home = C:\\Program Files\\Python314\ninclude-system-site-packages = false\nversion = 3.14.3\nexecutable = C:\\Program Files\\Python314\\python.exe\ncommand = C:\\Program Files\\Python314\\python.exe -m venv D:\\thermalComfortPredict\\outputs\\deployment-f2\\acceptance-venv\n",
+    "runtime_dependencies": [
+      {
+        "name": "contourpy",
+        "version": "1.4.0",
+        "inside_venv": true
+      },
+      {
+        "name": "cycler",
+        "version": "0.12.1",
+        "inside_venv": true
+      },
+      {
+        "name": "filelock",
+        "version": "3.32.3",
+        "inside_venv": true
+      },
+      {
+        "name": "fonttools",
+        "version": "4.67.0",
+        "inside_venv": true
+      },
+      {
+        "name": "fsspec",
+        "version": "2026.7.0",
+        "inside_venv": true
+      },
+      {
+        "name": "Jinja2",
+        "version": "3.1.6",
+        "inside_venv": true
+      },
+      {
+        "name": "joblib",
+        "version": "1.5.3",
+        "inside_venv": true
+      },
+      {
+        "name": "kiwisolver",
+        "version": "1.5.1",
+        "inside_venv": true
+      },
+      {
+        "name": "llvmlite",
+        "version": "0.46.0",
+        "inside_venv": true
+      },
+      {
+        "name": "MarkupSafe",
+        "version": "3.0.3",
+        "inside_venv": true
+      },
+      {
+        "name": "matplotlib",
+        "version": "3.10.8",
+        "inside_venv": true
+      },
+      {
+        "name": "mpmath",
+        "version": "1.3.0",
+        "inside_venv": true
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1",
+        "inside_venv": true
+      },
+      {
+        "name": "numba",
+        "version": "0.63.1",
+        "inside_venv": true
+      },
+      {
+        "name": "numpy",
+        "version": "2.3.5",
+        "inside_venv": true
+      },
+      {
+        "name": "packaging",
+        "version": "26.3",
+        "inside_venv": true
+      },
+      {
+        "name": "pandas",
+        "version": "3.0.0",
+        "inside_venv": true
+      },
+      {
+        "name": "pillow",
+        "version": "13.0.0",
+        "inside_venv": true
+      },
+      {
+        "name": "pyparsing",
+        "version": "3.3.3",
+        "inside_venv": true
+      },
+      {
+        "name": "pythermalcomfort",
+        "version": "4.6.2",
+        "inside_venv": true
+      },
+      {
+        "name": "python-dateutil",
+        "version": "3.0.0",
+        "inside_venv": true
+      },
+      {
+        "name": "scikit-learn",
+        "version": "1.8.0",
+        "inside_venv": true
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.0",
+        "inside_venv": true
+      },
+      {
+        "name": "setuptools",
+        "version": "78.1.0",
+        "inside_venv": true
+      },
+      {
+        "name": "six",
+        "version": "1.17.0",
+        "inside_venv": true
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0",
+        "inside_venv": true
+      },
+      {
+        "name": "threadpoolctl",
+        "version": "3.7.0",
+        "inside_venv": true
+      },
+      {
+        "name": "torch",
+        "version": "2.10.0+cpu",
+        "inside_venv": true
+      },
+      {
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "inside_venv": true
+      },
+      {
+        "name": "tzdata",
+        "version": "2026.5",
+        "inside_venv": true
+      }
+    ],
+    "pip_check": "No broken requirements found.",
+    "docker": "29.1.3",
+    "compose": "2.40.3+ds1-0ubuntu1~24.04.1"
+  },
+  "upstream_commit": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+  "upstream_fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+  "storage_sources_sha256": {
+    "minio.tar.gz": "ac3bc23e5d91981a89921800a931a59aad27146434f952e9a79076b919d8a661",
+    "mc.tar.gz": "703d2c20ed692c6d534f680276165fd11e006c273ec64a0c8e708b74d6176112"
+  },
+  "source_files_sha256": {
+    "scripts/setup_boptest.ps1": "1565701ab10871aa5c7350742b6b5dcffab6cbf18b026735d383aae7dda9bde7",
+    "infra/boptest.compose.yml": "2209bbd005eb9bee0a6c2485bf15995e90f91c6a7b7f818ba5386c643d865908",
+    "infra/storage.Dockerfile": "cd6e82f1ccfe22db723d5be6f9e6b041e00d030776276b895845715b7011e012",
+    "infra/provision.Dockerfile": "798c5e4c3f372a731bb8fa7e9d63d4d87ffe1fd7349220550bb3530fbc4acab4",
+    "requirements/provision-linux-amd64-py311.lock.txt": "73a7c84309e15e716f7adc34b7262ab21c759f703cd2bde909bcdce549e5f02f",
+    "scripts/serve_workbench.py": "b5fbdc244b42f0f0990b91524f2e60de124a13de9bef970b57b292be8785a598",
+    "scripts/verify_deployment_live.py": "3a513e152de7b6f73ddca1003c823c7840412c96bf862b0619df700b24d9f08f",
+    "requirements/research-windows-py314.lock.txt": "3ba63b7baa118b404b8edbe48ab8e581ce57fad506840528ad8d35b47d3dc575",
+    "thermal_comfort/workbench.py": "9401a58d12a85f42d69cbaa5834fc26f9aa4b3fc20a81291373b7fc326000e69",
+    "thermal_comfort/demands.py": "4a6996ab186030302e8cf9c2dd876b14e3ef24c1cfad2424557cd0ce7bd228eb",
+    "thermal_comfort/demand_rule.py": "99aeb4d913abc4e59f7692889ae59f5d6c068f3fabc47eeb24cd9ef5e44a4f4c",
+    ".dockerignore": "68200de7efa86fbe98f9504faa195bb40c63125830152aaed097e2d94bb0134a"
+  },
+  "engine_version": {
+    "status": 200,
+    "message": "Queried the version number successfully.",
+    "payload": {
+      "version": "0.9.0"
+    }
+  },
+  "provision_pip_check": "No broken requirements found.",
+  "containers": [
+    {
+      "name": "/thermal-accept-f2-provision-1",
+      "id": "1ce88494e4b186741468a3fbbfe5ca2c76417cc6c5395afb058b89a1c7be3caf",
+      "image_id": "sha256:de491d3f682f16f8df6fa7c4831eb632b46961b9d0ec7cdcf8453a38446d1756",
+      "service": "provision",
+      "status": "exited",
+      "exit_code": 0,
+      "started_at": "2026-10-27T08:24:01.661641453Z",
+      "networks": {
+        "thermal-accept-f2_default": "b30e49f1892a5e7a3ef8d08fb1ea51ecc6502a8a1e7958ffb7040b489beae7df"
+      },
+      "mounts": [
+        {
+          "source": "/mnt/d/thermalComfortPredict/outputs/deployment-f2/source/outputs/boptest-v0.9.0",
+          "destination": "/usr/src/boptest",
+          "read_write": false
+        }
+      ]
+    },
+    {
+      "name": "/thermal-accept-f2-web-1",
+      "id": "61caec03258b7e2ea4f842a68f76a64d21a8c8392a71db9d97dec43753a7fa37",
+      "image_id": "sha256:707cdc0fd0144b944b7c6812f6fa21564c3c1320ac87b28d305ce72002d31ebc",
+      "service": "web",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-27T08:24:01.502974849Z",
+      "networks": {
+        "thermal-accept-f2_default": "b30e49f1892a5e7a3ef8d08fb1ea51ecc6502a8a1e7958ffb7040b489beae7df"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-accept-f2-worker-1",
+      "id": "3ba3451c1ce4ef807285524768b5736f9f8c8cd7d8d2bb82936b5203108e2f4b",
+      "image_id": "sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+      "service": "worker",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-27T08:24:01.377895515Z",
+      "networks": {
+        "thermal-accept-f2_default": "b30e49f1892a5e7a3ef8d08fb1ea51ecc6502a8a1e7958ffb7040b489beae7df"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-accept-f2-initialize-store-1",
+      "id": "a30cb1838d9265d0a5346899ca456e3830d2e88cf9ee917b7fb4f63703d41f65",
+      "image_id": "sha256:743a70f0f7ac86335f15c882ac56ed2bda9ada1bdc9baa6ace4f85b2e1cf4603",
+      "service": "initialize-store",
+      "status": "exited",
+      "exit_code": 0,
+      "started_at": "2026-10-27T08:23:58.74941535Z",
+      "networks": {
+        "thermal-accept-f2_default": "b30e49f1892a5e7a3ef8d08fb1ea51ecc6502a8a1e7958ffb7040b489beae7df"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-accept-f2-redis-1",
+      "id": "69ff7bf3af65ba19d5cc817d23c572f61be2d9432ed51347670c133f96105df5",
+      "image_id": "sha256:02419de7eddf55aa5bcf49efb74e88fa8d931b4d77c07eff8a6b2144472b6952",
+      "service": "redis",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-27T08:23:58.600528067Z",
+      "networks": {
+        "thermal-accept-f2_default": "b30e49f1892a5e7a3ef8d08fb1ea51ecc6502a8a1e7958ffb7040b489beae7df"
+      },
+      "mounts": [
+        {
+          "source": "/var/lib/docker/volumes/b030b044c6b2721f6263d86bf6f1ee3c034b53b01fd0586459e8a9752680d7bb/_data",
+          "destination": "/data",
+          "read_write": true
+        }
+      ]
+    },
+    {
+      "name": "/thermal-accept-f2-minio-1",
+      "id": "e57a5e0ace71fc2fb48764d1bee1fde035a703f524d40e7fd5a9c1350bfb09ad",
+      "image_id": "sha256:743a70f0f7ac86335f15c882ac56ed2bda9ada1bdc9baa6ace4f85b2e1cf4603",
+      "service": "minio",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-27T08:23:58.604544567Z",
+      "networks": {
+        "thermal-accept-f2_default": "b30e49f1892a5e7a3ef8d08fb1ea51ecc6502a8a1e7958ffb7040b489beae7df"
+      },
+      "mounts": []
+    }
+  ],
+  "original_containers_observed_after": [
+    {
+      "name": "/thermal-boptest-provision-1",
+      "id": "5f7521c33d929a92c362922a09135d6384a905d681aaf8537e63b9cbac4906aa",
+      "image_id": "sha256:a90fbdf385ab4caa760c98d845eaec6ef99205d83deba427b1884d0d8433ec79",
+      "service": "provision",
+      "status": "exited",
+      "exit_code": 0,
+      "started_at": "2026-10-22T08:57:24.395901779Z",
+      "networks": {
+        "thermal-boptest_default": "3df6c4434eb82cba0125e6ed5215d19abe93f0937ddd704d566099647e49e3dc"
+      },
+      "mounts": [
+        {
+          "source": "/mnt/d/thermalComfortPredict/outputs/boptest-v0.9.0",
+          "destination": "/usr/src/boptest",
+          "read_write": false
+        }
+      ]
+    },
+    {
+      "name": "/thermal-boptest-initialize-store-1",
+      "id": "982bac2b5c1993eea0fb8c2997070b3fa7ceae0d7e928dfaedcb043304a239d1",
+      "image_id": "sha256:88c260d36dfcc0967c2ff0321d7ac9d160d8bdfa7c7a6227d55e895c2496739e",
+      "service": "initialize-store",
+      "status": "exited",
+      "exit_code": 0,
+      "started_at": "2026-10-25T11:36:03.813441953Z",
+      "networks": {
+        "thermal-boptest_default": "3df6c4434eb82cba0125e6ed5215d19abe93f0937ddd704d566099647e49e3dc"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-boptest-minio-1",
+      "id": "85732cbec595defce506838b0c2643b0fabcc9e23720217db7daabf8b53146d6",
+      "image_id": "sha256:88c260d36dfcc0967c2ff0321d7ac9d160d8bdfa7c7a6227d55e895c2496739e",
+      "service": "minio",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-22T08:57:21.669445183Z",
+      "networks": {
+        "thermal-boptest_default": "3df6c4434eb82cba0125e6ed5215d19abe93f0937ddd704d566099647e49e3dc"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-boptest-web-1",
+      "id": "4ef324797b9c59dfd2bf0a0a526d5f819ddf1fa8c007a398d384dab17454ff86",
+      "image_id": "sha256:707cdc0fd0144b944b7c6812f6fa21564c3c1320ac87b28d305ce72002d31ebc",
+      "service": "web",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-22T08:56:16.375120642Z",
+      "networks": {
+        "thermal-boptest_default": "3df6c4434eb82cba0125e6ed5215d19abe93f0937ddd704d566099647e49e3dc"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-boptest-worker-1",
+      "id": "a150a75d0fc0d18256a4820996b3da8d2404dbd947392a35944250173da90489",
+      "image_id": "sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+      "service": "worker",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-22T08:56:16.247915579Z",
+      "networks": {
+        "thermal-boptest_default": "3df6c4434eb82cba0125e6ed5215d19abe93f0937ddd704d566099647e49e3dc"
+      },
+      "mounts": []
+    },
+    {
+      "name": "/thermal-boptest-redis-1",
+      "id": "051fd316cd21bd8360952decbe0f3031b76a20a3584f894ac9505744eeae64c2",
+      "image_id": "sha256:02419de7eddf55aa5bcf49efb74e88fa8d931b4d77c07eff8a6b2144472b6952",
+      "service": "redis",
+      "status": "running",
+      "exit_code": 0,
+      "started_at": "2026-10-22T08:56:13.471354951Z",
+      "networks": {
+        "thermal-boptest_default": "3df6c4434eb82cba0125e6ed5215d19abe93f0937ddd704d566099647e49e3dc"
+      },
+      "mounts": [
+        {
+          "source": "/var/lib/docker/volumes/3794f326a02426642fa3badea6029910d4e57051b82fb50a739a24e3adc84ab3/_data",
+          "destination": "/data",
+          "read_write": true
+        }
+      ]
+    }
+  ],
+  "distinct_networks_and_containers": true,
+  "full_regression": {
+    "passed": 198,
+    "log": "outputs\\deployment-f2\\full-regression.txt"
+  },
+  "live": {
+    "role": "deployment_functional_only_existing_day63",
+    "source_scene": "cool",
+    "session_id": "64ac6cbb6570",
+    "actions": 3,
+    "native_interval_points": 93,
+    "conflict_rejected_without_advance": true,
+    "expiry_and_confirmed_override": true,
+    "saved_with_kpi": true,
+    "api_kpi_absolute_difference": {
+      "ener_tot": 0.0,
+      "tdis_tot": 0.0,
+      "cost_tot": 0.0,
+      "emis_tot": 0.0
+    },
+    "new_model_experiments": 0,
+    "calibration_test_windows_used": false,
+    "source_provenance": {
+      "engine": "BOPTEST",
+      "version": "0.9.0",
+      "case": "bestest_hydronic_heat_pump",
+      "start_s": 5472000,
+      "warmup_s": 604800,
+      "area_m2": 192,
+      "step_s": 900,
+      "temperature_kind": "operative",
+      "energy_kind": "electricity",
+      "role_semantics": "virtual_control_intent_only",
+      "demand_protocol": "virtual_setpoint_intent_v1",
+      "rule": "demo_schedule_guard_v1; not frozen research MPC",
+      "code_sha256": {
+        "workbench.py": "9401a58d12a85f42d69cbaa5834fc26f9aa4b3fc20a81291373b7fc326000e69",
+        "demands.py": "4a6996ab186030302e8cf9c2dd876b14e3ef24c1cfad2424557cd0ce7bd228eb",
+        "simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+        "index.html": "6ff913cfaa6f36f24a80c26f15a0e54c12c5d03e6ab613ed69237aa37048de4a",
+        "app.js": "f09f8e29048bd9a945df57a3227addf3b8024d1015b1930547a82ed8ed238af3",
+        "style.css": "14882d0b85886e1c2f85af7acc683a9c7ea553fc3c4a6c8885245ff094cf4441"
+      }
+    }
+  },
+  "workbench_finished_without_worker": true,
+  "local_artifacts": [
+    {
+      "path": "outputs/deployment-f2/full-regression.txt",
+      "bytes": 30346,
+      "sha256": "635c88594b9616e1fff9b533442d98ebe566849e701f4ae4bd8cefcd3618fd72"
+    },
+    {
+      "path": "outputs/deployment-f2/pip-hashed-install.txt",
+      "bytes": 6218,
+      "sha256": "ae973933ec8230373a6563042520e6c2bf944aec58eb3b631b37e7ece944b63d"
+    },
+    {
+      "path": "outputs/deployment-f2/deploy-build.txt",
+      "bytes": 25624,
+      "sha256": "9171127a3db858cab22cd69285ae19849add6743ae9402e4e4387b81c239e185"
+    },
+    {
+      "path": "outputs/deployment-f2/live_verification.json",
+      "bytes": 1473,
+      "sha256": "f46111dbf1076700cc91abe77dd14a5cb7ce17b6f27d8d09f903f412f1095148"
+    },
+    {
+      "path": "outputs/deployment-f2/source/outputs/workbench/sessions/64ac6cbb6570.json",
+      "bytes": 44844,
+      "sha256": "41df845eeb2bfd88be9b6c8d7339264c597360f8620e63316c17561925578a2a"
+    }
+  ],
+  "wheelhouse_bytes": {
+    "research-wheels": 255828485,
+    "provision-wheels": 729573
+  },
+  "calibration_rounds": 0,
+  "blind_rounds": 0,
+  "pending": [
+    "F01 owner license and historical CSV rights",
+    "F03 owner destination/access/encryption and remote restore acceptance"
+  ],
+  "lifecycle": {
+    "scoped_down_then_up": true,
+    "all_acceptance_container_ids_replaced": true,
+    "original_container_ids_and_started_at_unchanged_across_lifecycle": true,
+    "original_workbenches_8768_8769_respond": true,
+    "saved_session_bytes_unchanged": true,
+    "no_additional_simulator_actions": true,
+    "after": {
+      "provision": {
+        "id": "44bddd5b3c03ef1a14e4cabe5a9674ce5136d6fd8ce68a1e6109f9604981deb1",
+        "started_at": "2026-10-27T08:32:07.059382605Z",
+        "status": "exited",
+        "exit_code": 0
+      },
+      "web": {
+        "id": "e22948f06752bcddb95216fb1f9d7d0391b5ec51ffb14b766cc2adb7bf8a415d",
+        "started_at": "2026-10-27T08:32:06.944993677Z",
+        "status": "running",
+        "exit_code": 0
+      },
+      "worker": {
+        "id": "c93563b64321be7d41fbb3fea9ffb75fccfa7db949d0ae49119aeac5478ea543",
+        "started_at": "2026-10-27T08:32:06.825775706Z",
+        "status": "running",
+        "exit_code": 0
+      },
+      "initialize-store": {
+        "id": "9d41ee0171ecc33cce5f35da49aa853f9e47a07a317f83c1b9480774507da437",
+        "started_at": "2026-10-27T08:32:04.212119673Z",
+        "status": "exited",
+        "exit_code": 0
+      },
+      "redis": {
+        "id": "bc8c4a28f14c1843b2bf7566ec0b3dd9e5a9c1dd9a662a0522a29d30b3978706",
+        "started_at": "2026-10-27T08:32:04.096402279Z",
+        "status": "running",
+        "exit_code": 0
+      },
+      "minio": {
+        "id": "8d24022d1c9d90910d8650cd376b456432482d6b70277631a0d552d9b9fb3080",
+        "started_at": "2026-10-27T08:32:04.098279448Z",
+        "status": "running",
+        "exit_code": 0
+      }
+    }
+  },
+  "read_only_research": {
+    "c2": {
+      "actions": 464,
+      "native_interval_points": 14384,
+      "kpi_max_absolute_difference": 1.4210854715202004e-14,
+      "calibration_test_initializations": 0,
+      "same_response_prelude": true,
+      "all_decisions_replayed": true,
+      "development_scores_recomputed": true
+    },
+    "office_status": "closed_negative"
+  },
+  "local_restore": {
+    "archive_sha256": "f78250f1db43cc3de0c85fe93113bd49daf14c0c8adf4607a15c97296dd5f82e",
+    "restored_and_read_back_files": 4164,
+    "uncompressed_bytes": 1403578050,
+    "overwritten_different_files": 0,
+    "destination": "outputs/deployment-f2/source",
+    "role": "local_archive_restore_acceptance_not_offsite"
+  },
+  "restored_source_read_only": {
+    "c2": {
+      "actions": 464,
+      "native_interval_points": 14384,
+      "kpi_max_absolute_difference": 1.4210854715202004e-14,
+      "calibration_test_initializations": 0,
+      "same_response_prelude": true,
+      "all_decisions_replayed": true,
+      "development_scores_recomputed": true
+    },
+    "office_status": "closed_negative",
+    "new_venv": true,
+    "source_directory": "outputs/deployment-f2/source"
+  },
+  "asset_audit": {
+    "assets": 28,
+    "missing_assets": [
+      "project-code-license"
+    ],
+    "hash_mismatches": [],
+    "direct_dependency_mismatches": []
+  },
+  "tracked_markdown_link_check": "passed_changed_documents_local_targets",
+  "new_research_model_fits": 0
+}

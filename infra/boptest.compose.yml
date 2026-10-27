@@ -1,4 +1,4 @@
-name: thermal-boptest
+name: ${BOPTEST_PROJECT:-thermal-boptest}
 
 x-boptest: &boptest
   BOPTEST_REDIS_HOST: redis
@@ -21,7 +21,7 @@ services:
   redis:
     image: redis:7.4.2-alpine@sha256:02419de7eddf55aa5bcf49efb74e88fa8d931b4d77c07eff8a6b2144472b6952
   minio:
-    image: thermal-boptest-storage:2025-04
+    image: ${BOPTEST_STORAGE_IMAGE:-thermal-boptest-storage:2025-04}
     build:
       context: ../outputs/storage-build
       dockerfile: ../../infra/storage.Dockerfile
@@ -30,7 +30,7 @@ services:
       MINIO_ROOT_USER: local-admin
       MINIO_ROOT_PASSWORD: local-admin-only
   initialize-store:
-    image: thermal-boptest-storage:2025-04
+    image: ${BOPTEST_STORAGE_IMAGE:-thermal-boptest-storage:2025-04}
     pull_policy: never
     depends_on: [minio]
     entrypoint: /bin/sh
@@ -61,14 +61,16 @@ services:
         condition: service_completed_successfully
   web:
     image: ghcr.io/ibpsa/boptest-web:v0.9.0@sha256:707cdc0fd0144b944b7c6812f6fa21564c3c1320ac87b28d305ce72002d31ebc
-    ports: ['127.0.0.1:8080:80']
+    ports: ['127.0.0.1:${BOPTEST_PORT:-8080}:80']
     environment:
       <<: *boptest
       NODE_ENV: production
     depends_on: [worker]
   provision:
+    image: ${BOPTEST_PROVISION_IMAGE:-thermal-boptest-provision:local}
     build:
-      context: ../outputs/boptest-v0.9.0/service/provision
+      context: ..
+      dockerfile: infra/provision.Dockerfile
     environment:
       BOPTEST_SERVER: http://web
       BOPTEST_DASHBOARD_API_KEY: crusaderkey

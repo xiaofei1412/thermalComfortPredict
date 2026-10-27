@@ -74,7 +74,8 @@ def audit(root):
                             "executable": str(Path(sys.executable).relative_to(root)) if Path(sys.executable).is_relative_to(root) else "external interpreter",
                             "dependencies": dependencies},
             "compose_images": sorted(set(re.findall(r"^\s+image:\s*(\S+)", compose, re.M))),
-            "build_base_images": re.findall(r"^FROM (\S+)", (root / "infra/storage.Dockerfile").read_text(), re.M),
+            "build_base_images": [image for name in ("storage", "provision")
+                                  for image in re.findall(r"^FROM (\S+)", (root / f"infra/{name}.Dockerfile").read_text(), re.M)],
             "assets": assets,
             "summary": {"assets": len(assets), "missing_assets": [a["id"] for a in assets if not a["present"]],
                         "hash_mismatches": [a["id"] for a in assets if a["expected_sha256_match"] is False],

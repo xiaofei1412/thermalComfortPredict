@@ -14,7 +14,8 @@
         "workbench/style.css",
         "scripts/start_workbench.ps1",
         "scripts/install_demo.py",
-        "examples/workbench"
+        "examples/workbench",
+        "scripts/serve_workbench.py"
       ],
       "source": "this Git repository",
       "license": "No root code LICENSE found; license decision remains open",
@@ -37,9 +38,11 @@
       "tier": "workbench",
       "paths": [
         "pyproject.toml",
-        "requirements/workbench.lock.txt"
+        "requirements/workbench.lock.txt",
+        "requirements/research-windows-py314.lock.txt",
+        "requirements/provision-linux-amd64-py311.lock.txt"
       ],
-      "source": "pinned direct Python dependencies",
+      "source": "Pinned direct and platform-scoped hashed transitive runtime dependencies",
       "license": "Individual package licenses; no blanket license",
       "rebuild": "docs/workbench.md; CPU environment installation"
     },
@@ -62,7 +65,9 @@
       "paths": [
         "scripts/setup_boptest.ps1",
         "infra/boptest.compose.yml",
-        "infra/storage.Dockerfile"
+        "infra/storage.Dockerfile",
+        "infra/provision.Dockerfile",
+        ".dockerignore"
       ],
       "source": "tracked deployment recipes",
       "license": "Third-party services retain their own notices",
@@ -316,11 +321,26 @@
         "THIRD_PARTY_NOTICES.md",
         "reports/delivery-f",
         "outputs/delivery-f/private-research-evidence.zip",
-        "outputs/delivery-f/private-research-evidence.manifest.json"
+        "outputs/delivery-f/private-research-evidence.manifest.json",
+        "docs/DEPLOYMENT.md",
+        "docs/release-decisions.md",
+        "reports/deployment-f2"
       ],
       "source": "F source-workspace candidate and read-back verified private local archive",
       "license": "Root code license/CSV provenance unresolved; private archive is not authorized for public redistribution",
-      "rebuild": "docs/REPRODUCE.md; runtime source zip built from reviewed Git index; off-site evidence availability and clean container rebuild remain open"
+      "rebuild": "docs/DEPLOYMENT.md; Windows/WSL scoped clean deployment and local restore passed; off-site destination and access remain open"
+    },
+    {
+      "id": "deployment-acceptance-source",
+      "tier": "delivery",
+      "paths": [
+        "scripts/verify_deployment_live.py",
+        "tests/test_deployment_entry.py",
+        "reports/deployment-f2/verification.json"
+      ],
+      "source": "F02 isolated day63 three-action engineering smoke; no model experiment",
+      "license": "Owner licensing decision remains open; original generators retain conditions",
+      "rebuild": "docs/DEPLOYMENT.md; run only on an idle independently deployed workbench, not calibration/test windows"
     },
     {
       "id": "project-code-license",

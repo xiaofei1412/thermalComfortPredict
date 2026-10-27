@@ -25,6 +25,7 @@ jobs:
           python -m pip check
           python -m scripts.verify_delivery
           python -m unittest discover -s tests -p test_delivery_release.py -v
+          python -m unittest discover -s tests -p test_deployment_entry.py -v
   tests:
     runs-on: ubuntu-latest
     steps:

@@ -1,0 +1,5 @@
+**
+!infra/
+!infra/provision.Dockerfile
+!requirements/
+!requirements/provision-linux-amd64-py311.lock.txt

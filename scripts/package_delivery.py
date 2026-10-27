@@ -20,7 +20,7 @@ def sha_stream(stream):
 
 def public_paths(root):
     paths = [p for p in root.glob("*.md") if p.is_file()]
-    paths += [root/n for n in ("pyproject.toml", ".gitattributes", ".gitignore") if (root/n).exists()]
+    paths += [root/n for n in ("pyproject.toml", ".gitattributes", ".gitignore", ".dockerignore") if (root/n).exists()]
     for name in ("thermal_comfort", "workbench", "scripts", "configs", "requirements", "examples", "docs", "reports", "tests", "infra", ".github"):
         paths += [p for p in (root/name).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc"]
     paths += [root/n for n in ("data/README.md", "data/manifest.json", "legacy/README.md") if (root/n).exists()]
