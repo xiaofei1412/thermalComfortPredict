@@ -1,0 +1,29 @@
+{
+  "protocol": "residential_rl_v2_shared_runner_engineering_1",
+  "status": "shared_runner_engineering_gates_passed_no_formal_training",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01"
+  },
+  "files_sha256": {
+    "thermal_comfort/rl_budget.py": "c6fa98c1bbcae3ef3c6dbbbbca93908d525685c66ecc14ce71f1de23263202ca",
+    "thermal_comfort/rl_runner.py": "757266c68a2f7849ac671da78653630f9c7901dac7022ba18d8903012e8d110a",
+    "thermal_comfort/rl_checkpoint.py": "89a7fc6cb4e4fc6f0e3b2d63cce2c1ad7da6966377d28ddd28136f9bee37721c",
+    "thermal_comfort/rl_campaign.py": "6cbd8f930dd096bd4a72ef416a8e5be2be36db813555281baa4e92e5d59bd562",
+    "scripts/run_v2_comparison.py": "49c2a36f26088369114b0d3a284a2ee62c69e9582d95c29b86ff6145ba24119f",
+    "scripts/rl_runner_fixture.py": "f4ba8e9ff7a4d322d0c25f5410ec34a3e28a5564edeb41b13203ac0572dd49bd",
+    "scripts/verify_rl_runner.py": "ecdc2547bcd8c70d5a220fa21ff8794b0a1edc1dc7e78bddcb1e0d354d9032ae",
+    "scripts/check_rl_checkpoint.py": "881e0fcdcba6f871649a4b11108d6bcd1e34aeb10b0eae220f08352d27a8d267",
+    "tests/test_rl_runner.py": "f1830e5cfdc0936ade20b586d7f1059b2737b3e7680b0ebf090df122ff0f2b8a",
+    "docs/experiments/v2_runner.md": "0401bb34e937092df39e5c12c12f9483aebcf8c08461c6425403cd53ea42dd48",
+    "reports/v2_runner/bundle-rng-audit.json": "1b776355a064e14d6e24483360863549ab47e0d0994c76313e5200e980672d7f",
+    "reports/v2_runner/evidence.json": "b114f128907ca86e1643812f1f9c28ab1f2476f6d93630b41814f3d354174def",
+    "reports/v2_runner/registration.json": "f0e02dc9e29ae742a08ffdf59bff90ce12968f61a91a9f1899e21a9b22cf8045",
+    "reports/v2_runner/REPORT.md": "f38a56607b54ab748a0b69c1a2fcf2ba34064c61ebce9b3f72d41c6fc79998ee",
+    "reports/v2_runner/runner-audit.json": "673e0ac7bd0ceb9e0935c421d0f62b0040093a0dcc0c71700013578e388a5b8f"
+  }
+}

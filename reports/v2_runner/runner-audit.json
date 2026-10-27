@@ -1,0 +1,112 @@
+{
+  "status": "passed_engineering_only",
+  "algorithms": {
+    "SAC": {
+      "status": "passed_synthetic_engineering_only",
+      "actor_steps": 3984,
+      "gradient_or_epoch_updates": 3728,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          3728
+        ],
+        "critic.optimizer": [
+          3728
+        ],
+        "ent_coef_optimizer": [
+          3728
+        ]
+      },
+      "synthetic_attempts": {
+        "select": 6,
+        "initialize": 6,
+        "advance": 4032
+      },
+      "action_rows": 3984,
+      "callback_rewards": 96,
+      "fallback_rows": 6,
+      "PPO_raw_outside_Box_rows": null,
+      "manifest_sha256": "4ca20411e477c81966071482811cad21608bb9db7755477d8f2373fc64ff875d",
+      "faults_rejected": {
+        "early_development": "RuntimeError: Only the complete final checkpoint may enter development",
+        "missing_rng.pkl": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\SAC\\\\SAC-11\\\\checkpoints\\\\cycle-01\\\\rng.pkl'",
+        "missing_callback.json": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\SAC\\\\SAC-11\\\\checkpoints\\\\cycle-01\\\\callback.json'",
+        "missing_budget.json": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\SAC\\\\SAC-11\\\\checkpoints\\\\cycle-01\\\\budget.json'",
+        "modified_action_prefix": "ValueError: Action/curve log prefix differs"
+      },
+      "cycle_wall_seconds": 92.4653750997968,
+      "no_formal_development_or_holdout": true
+    },
+    "PPO": {
+      "status": "passed_synthetic_engineering_only",
+      "actor_steps": 3984,
+      "gradient_or_epoch_updates": 60,
+      "optimizer_steps": {
+        "policy.optimizer": [
+          480
+        ]
+      },
+      "synthetic_attempts": {
+        "select": 6,
+        "initialize": 6,
+        "advance": 4032
+      },
+      "action_rows": 3984,
+      "callback_rewards": 96,
+      "fallback_rows": 6,
+      "PPO_raw_outside_Box_rows": 1315,
+      "manifest_sha256": "84d12bf0dd24877563c70fdf64fefee7b39c03a34fbf6731a34231d51b80e7eb",
+      "faults_rejected": {
+        "early_development": "RuntimeError: Only the complete final checkpoint may enter development",
+        "missing_rng.pkl": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\PPO\\\\PPO-11\\\\checkpoints\\\\cycle-01\\\\rng.pkl'",
+        "missing_callback.json": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\PPO\\\\PPO-11\\\\checkpoints\\\\cycle-01\\\\callback.json'",
+        "missing_budget.json": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\PPO\\\\PPO-11\\\\checkpoints\\\\cycle-01\\\\budget.json'",
+        "modified_action_prefix": "ValueError: Action/curve log prefix differs",
+        "atomic_validation_failure": "OSError: injected load validation failure",
+        "atomic_rename_failure": "OSError: injected atomic rename failure",
+        "serialization_cost_exceeds_original_clock": "RuntimeError: Original clock or cumulative interaction budget exhausted"
+      },
+      "cycle_wall_seconds": 71.00754629983567,
+      "no_formal_development_or_holdout": true
+    },
+    "TD3": {
+      "status": "passed_synthetic_engineering_only",
+      "actor_steps": 3984,
+      "gradient_or_epoch_updates": 3728,
+      "optimizer_steps": {
+        "actor.optimizer": [
+          1864
+        ],
+        "critic.optimizer": [
+          3728
+        ]
+      },
+      "synthetic_attempts": {
+        "select": 6,
+        "initialize": 6,
+        "advance": 4032
+      },
+      "action_rows": 3984,
+      "callback_rewards": 96,
+      "fallback_rows": 6,
+      "PPO_raw_outside_Box_rows": null,
+      "manifest_sha256": "ed68f76e0b1066003954c0bd83cbf43d76d080e37f3022533be11c590c66db86",
+      "faults_rejected": {
+        "early_development": "RuntimeError: Only the complete final checkpoint may enter development",
+        "missing_rng.pkl": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\TD3\\\\TD3-11\\\\checkpoints\\\\cycle-01\\\\rng.pkl'",
+        "missing_callback.json": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\TD3\\\\TD3-11\\\\checkpoints\\\\cycle-01\\\\callback.json'",
+        "missing_budget.json": "FileNotFoundError: [Errno 2] No such file or directory: 'outputs\\\\v2-runner\\\\acceptance-final\\\\TD3\\\\TD3-11\\\\checkpoints\\\\cycle-01\\\\budget.json'",
+        "modified_action_prefix": "ValueError: Action/curve log prefix differs"
+      },
+      "cycle_wall_seconds": 92.94623750005849,
+      "no_formal_development_or_holdout": true
+    }
+  },
+  "synthetic_training_actor_steps": 11952,
+  "synthetic_scored_advances": 12096,
+  "cross_process_budget_workers": 3,
+  "cross_process_budget_reservations": 60,
+  "formal_training_steps": 0,
+  "FMU_calls": 0,
+  "development_or_holdout_initializations": 0,
+  "scope": "Synthetic parameter updates and bundle engineering, not thermal performance or formal continuation"
+}

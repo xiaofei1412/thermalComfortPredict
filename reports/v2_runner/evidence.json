@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-27T16:58:30.148816+00:00",
+  "git_base": "d07d40b4e528e266f984f6686199651b8def9b7b",
+  "full_tests": {
+    "count": 294,
+    "seconds": 36.354,
+    "passed": true,
+    "raw_log_sha256": "30c3ef6329c57221517f5f6d7da0388cb82c569bf33ed62553cab4e1a106f39b"
+  },
+  "formal_training_steps": 0,
+  "real_FMU_calls": 0,
+  "heldout_payload_reads_or_initializations": 0,
+  "frozen_local_asset_sha256": {
+    "outputs/solar-selected/model.joblib": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+    "outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e"
+  },
+  "final_engineering_sources": {
+    "configs/v2_comparison.json": "79f2d84a690721cf816cde3ed04026b458e0f30dce8f3fc9ab3306dceb30f32d",
+    "thermal_comfort/rl_budget.py": "c6fa98c1bbcae3ef3c6dbbbbca93908d525685c66ecc14ce71f1de23263202ca",
+    "thermal_comfort/rl_runner.py": "757266c68a2f7849ac671da78653630f9c7901dac7022ba18d8903012e8d110a",
+    "thermal_comfort/rl_checkpoint.py": "89a7fc6cb4e4fc6f0e3b2d63cce2c1ad7da6966377d28ddd28136f9bee37721c",
+    "thermal_comfort/rl_campaign.py": "6cbd8f930dd096bd4a72ef416a8e5be2be36db813555281baa4e92e5d59bd562",
+    "scripts/run_v2_comparison.py": "49c2a36f26088369114b0d3a284a2ee62c69e9582d95c29b86ff6145ba24119f",
+    "thermal_comfort/rl_random_state.py": "c1103e4cda2d9b6abee90f64abb686eadb7b2b93791b7e24fd3e116795647c7e",
+    "thermal_comfort/rl_comparison_protocol.py": "742632720e4414cbf06668f67e7976752a8dbe898e60b01e205923dfa2edd75c",
+    "thermal_comfort/sac_env.py": "310005438fbe2078a94d3cbeec3376bb3992dfecbc2981b826ef4087e5eb8ac2",
+    "thermal_comfort/rl_interface.py": "0f1624c492334e5b718cf8c989b659ac1d96fd394b5853ae0c9fe6dee13453d3",
+    "scripts/run_sac.py": "eb8a0359ff0570a9b4f803007a83b1aa98c1075d0576373831f3c6530654592f",
+    "requirements/sac-windows-py314.lock.txt": "201c0513db5bd9ff14ceb6f3b213aa81dd918437d6a8eb92b71fce9b29440797",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01",
+    "scripts/rl_runner_fixture.py": "f4ba8e9ff7a4d322d0c25f5410ec34a3e28a5564edeb41b13203ac0572dd49bd",
+    "scripts/verify_rl_runner.py": "ecdc2547bcd8c70d5a220fa21ff8794b0a1edc1dc7e78bddcb1e0d354d9032ae"
+  },
+  "additional_read_only_probe_script_sha256": "881e0fcdcba6f871649a4b11108d6bcd1e34aeb10b0eae220f08352d27a8d267",
+  "initial_fixture_failure": {
+    "error": "Object of type ndarray is not JSON serializable",
+    "actor_steps": 664,
+    "synthetic_attempts": {
+      "select": 1,
+      "initialize": 1,
+      "advance": 672
+    },
+    "failure_sha256": "c412b5fab36df1ff49aab1131b8210293c7cee6341a10e011f65fb67e5fb6203",
+    "raw_log_sha256": "37d7b51d744d6d2f2bfe8621b7e961bd4e8a97cc2a08d543bade151720c83102",
+    "reason": "fixture exporter omitted the existing DummyVecEnv terminal_observation filter",
+    "fix": "reuse frozen outcome_for_json; production exporter unchanged"
+  },
+  "intermediate_pass": {
+    "audit_sha256": "dfae596864452b22f29cd494d64617c0792071666b77879ebc4b96df0b027265",
+    "source_archive": "outputs/v2-runner/acceptance-export-fixed/registered-source",
+    "followup": "final completion clock checks, plan mutation rejection, file flush and atomic rename fault tests"
+  },
+  "synthetic_actor_steps_in_three_acceptance_attempts_excluding_unit_tests": 24568,
+  "synthetic_scored_advances_in_three_acceptance_attempts_excluding_unit_tests": 24864,
+  "private_registration_sha256": "f0e02dc9e29ae742a08ffdf59bff90ce12968f61a91a9f1899e21a9b22cf8045",
+  "scope": "engineering acceptance only; no thermal/energy conclusion, no new remote backup certification"
+}

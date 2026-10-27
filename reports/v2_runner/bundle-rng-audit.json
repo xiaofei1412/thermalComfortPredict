@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "cases": {
+    "SAC": {
+      "exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ]
+    },
+    "PPO": {
+      "exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "ppo_minibatch_order"
+      ]
+    },
+    "TD3": {
+      "exact": true,
+      "probes": [
+        "python",
+        "numpy",
+        "torch",
+        "environment",
+        "env_action",
+        "model_action",
+        "env_observation",
+        "model_observation",
+        "policy",
+        "target_noise",
+        "exploration_noise",
+        "replay_sample",
+        "ppo_minibatch_order"
+      ]
+    }
+  },
+  "fresh_processes": 6,
+  "optimizer_updates": 0,
+  "FMU_calls": 0,
+  "scope": "loaded complete bundles and RNG only; no training continuation"
+}
