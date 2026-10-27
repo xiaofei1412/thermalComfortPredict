@@ -6,10 +6,13 @@ from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import math
+import os
 from pathlib import Path
 import re
+import socket
 import threading
 from urllib.parse import urlsplit
+from urllib.error import HTTPError
 import uuid
 
 import numpy as np
@@ -36,6 +39,16 @@ EVIDENCE = {"delivery": "reports/DELIVERY_V1.md",
 
 class Conflict(ValueError):
     pass
+
+
+class LocalServer(ThreadingHTTPServer):
+    # On Windows SO_REUSEADDR can let a second process share a listening port.
+    allow_reuse_address = os.name != "nt"
+
+    def server_bind(self):
+        if os.name == "nt":
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
 
 
 def intent(body):
@@ -92,6 +105,7 @@ class Workbench:
     def state(self):
         with self.lock:
             return {"busy": self.busy, "message": self.message,
+                    "can_end": self.testid is not None,
                     "session": self.public(self.session) if self.session else None}
 
     @staticmethod
@@ -116,7 +130,7 @@ class Workbench:
             for path in sorted(self.store.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True):
                 s = json.loads(path.read_text(encoding="utf-8"))
                 result.append({k: s[k] for k in ("id", "scene", "created_at", "status", "comparison_of")}
-                              | {"steps": len(s["frames"]) - 1})
+                              | {"steps": max(0, len(s["frames"]) - 1)})
             return result
 
     def launch(self, task, message):
@@ -151,6 +165,30 @@ class Workbench:
             try:
                 self.client.call("PUT", f"stop/{self.testid}")
             except Exception as error:
+                # v0.9.0 explicitly rejects expired IDs. Other 400s/timeouts do
+                # not establish that a worker was released and must retain it.
+                invalid = False
+                if isinstance(error, HTTPError):
+                    try:
+                        body = json.loads(error.read())
+                        invalid = error.code == 400 and any(
+                            e.get("param") == "testid" and e.get("msg") == f"Invalid testid: {self.testid}"
+                            for e in body.get("errors", []))
+                    except (ValueError, AttributeError, TypeError):
+                        pass
+                    finally:
+                        error.close()
+                if invalid:
+                    with self.lock:
+                        self.testid = None
+                        self.message = "仿真端已确认会话失效。原轨迹仅供回放，可新建会话；最终KPI未补算。"
+                        if self.session:
+                            self.session["status"] = "interrupted"
+                            self.session["error"] = "engine_session_expired"
+                            if self.session["comparison_of"]:
+                                self.session["comparison_valid"] = False
+                            self.save()
+                    return
                 # Keep the ID so the user can retry release instead of leaking a worker.
                 with self.lock:
                     self.message += f" 释放仿真失败：{error}，请再次结束会话。"
@@ -300,7 +338,7 @@ class Workbench:
                     self.session.update(api_kpis=kpis, kpi_absolute_difference=differences)
             self.release()
             with self.lock:
-                if self.testid is None and self.session["status"] != "error":
+                if self.testid is None and self.session["status"] not in ("error", "interrupted"):
                     self.session["status"] = "completed"
                     self.message = "会话已结束并保存，可回放或运行同起点规则对照。"
                 self.save()
@@ -347,6 +385,9 @@ class Handler(BaseHTTPRequestHandler):
             self.local_request()
             app, path = self.server.app, urlsplit(self.path).path
             if method == "GET":
+                if path == "/api/health":
+                    return self.send(200, {"service": "thermal-workbench", "schema": 1,
+                                           "workspace": str(ROOT), "pid": os.getpid()})
                 if path == "/api/state":
                     return self.send(200, app.state())
                 if path == "/api/config":
@@ -408,7 +449,10 @@ def main():
     parser.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
     app = Workbench(ROOT / "outputs/workbench/sessions")
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
+    try:
+        server = LocalServer(("127.0.0.1", args.port), Handler)
+    except OSError:
+        parser.exit(2, f"Cannot listen on 127.0.0.1:{args.port}. Close the existing service or choose --port.\n")
     server.app = app
     print(f"Thermal workbench: http://127.0.0.1:{args.port}", flush=True)
     try:
@@ -421,6 +465,10 @@ def main():
             app.thread.join(timeout=310)
         if not app.busy:
             app.release()
+            if app.session and app.session["status"] in ("paused", "initializing"):
+                app.session["status"] = "interrupted"
+                app.session["error"] = "workbench_shutdown_without_final_kpi"
+                app.save()
         server.server_close()
 
 

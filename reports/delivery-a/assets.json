@@ -1,0 +1,802 @@
+{
+  "audit_schema": 1,
+  "created_utc": "2026-10-27T04:30:29.212485+00:00",
+  "source_base_commit": "d036ac9730bbf2a58d8df76349b69b5e1c2175da",
+  "scope": "current local working files; not a clean-environment or redistribution certificate",
+  "hash_method": "raw file SHA256; bundle SHA256 of ordered path-tab-filehash-newline entries",
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "executable": ".venv-cpu\\Scripts\\python.exe",
+    "dependencies": [
+      {
+        "package": "numpy",
+        "expected": "2.3.5",
+        "installed": "2.3.5",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "pandas",
+        "expected": "3.0.0",
+        "installed": "3.0.0",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "scikit-learn",
+        "expected": "1.8.0",
+        "installed": "1.8.0",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "torch",
+        "expected": "2.10.0",
+        "installed": "2.10.0+cpu",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "pythermalcomfort",
+        "expected": "4.6.2",
+        "installed": "4.6.2",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "scipy",
+        "expected": "1.17.0",
+        "installed": "1.17.0",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "numba",
+        "expected": "0.63.1",
+        "installed": "0.63.1",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "matplotlib",
+        "expected": "3.10.8",
+        "installed": "3.10.8",
+        "matches_direct_pin": true
+      },
+      {
+        "package": "joblib",
+        "expected": "1.5.3",
+        "installed": "1.5.3",
+        "matches_direct_pin": true
+      }
+    ]
+  },
+  "compose_images": [
+    "ghcr.io/ibpsa/boptest-web:v0.9.0@sha256:707cdc0fd0144b944b7c6812f6fa21564c3c1320ac87b28d305ce72002d31ebc",
+    "ghcr.io/ibpsa/boptest-worker:v0.9.0@sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+    "redis:7.4.2-alpine@sha256:02419de7eddf55aa5bcf49efb74e88fa8d931b4d77c07eff8a6b2144472b6952",
+    "thermal-boptest-storage:2025-04"
+  ],
+  "build_base_images": [
+    "golang:1.24.2-bookworm@sha256:79390b5e5af9ee6e7b1173ee3eac7fadf6751a545297672916b59bfa0ecf6f71",
+    "debian:bookworm-slim@sha256:7ff6ba31527b9e336162fa061746c366c4b2032f4d2cff2078bea43f78efe3f8"
+  ],
+  "summary": {
+    "assets": 25,
+    "missing_assets": [
+      "project-code-license"
+    ],
+    "hash_mismatches": [],
+    "direct_dependency_mismatches": []
+  },
+  "full_file_index": "outputs/delivery-audit/assets.json",
+  "boptest_source_revision_actual": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+  "assets": [
+    {
+      "id": "workbench-source",
+      "tier": "workbench",
+      "paths": [
+        "thermal_comfort/__init__.py",
+        "thermal_comfort/workbench.py",
+        "thermal_comfort/simulation.py",
+        "workbench/index.html",
+        "workbench/app.js",
+        "workbench/style.css",
+        "scripts/start_workbench.ps1"
+      ],
+      "source": "this Git repository",
+      "license": "No root code LICENSE found; license decision remains open",
+      "rebuild": "git clone; docs/workbench.md",
+      "present": true,
+      "missing": [],
+      "file_count": 7,
+      "bytes": 75471,
+      "bundle_sha256": "809d3789da76db99079e19117e46732b1ff4bfe552f5b50fa2aba939b77f823d",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "thermal_comfort/__init__.py",
+          "bytes": 61,
+          "sha256": "f430f6a194abc206af66303295e9d053081b8282dc1b3e789ce304306338412e",
+          "in_git": true
+        },
+        {
+          "path": "thermal_comfort/workbench.py",
+          "bytes": 24283,
+          "sha256": "00aec6471b8b57bc469889f0eac730b59af2ed40638e5b787056ea20f7afa0c9",
+          "in_git": true
+        },
+        {
+          "path": "thermal_comfort/simulation.py",
+          "bytes": 14681,
+          "sha256": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+          "in_git": true
+        },
+        {
+          "path": "workbench/index.html",
+          "bytes": 9991,
+          "sha256": "b1afff5357d6c07308a8642f1fffb87cd8a79aa73a40e8fec808b3116f3f5808",
+          "in_git": true
+        },
+        {
+          "path": "workbench/app.js",
+          "bytes": 14543,
+          "sha256": "d7d547c3f9d3fd259c8dcf935c8b80e8bb81a87643e73313290e96477c86c921",
+          "in_git": true
+        },
+        {
+          "path": "workbench/style.css",
+          "bytes": 10322,
+          "sha256": "6c4d3233e9fb6616cee29ca5436052dd7d2da99f5da5faa69cdaf6e29f9a6419",
+          "in_git": true
+        },
+        {
+          "path": "scripts/start_workbench.ps1",
+          "bytes": 1590,
+          "sha256": "d3d274430f67b86131bb962da0ff3cecf2628142d3d8e988047b2c17aa4c8332",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "read-only-evidence",
+      "tier": "workbench",
+      "paths": [
+        "reports/DELIVERY_V1.md",
+        "reports/solar_mpc/REPORT.md",
+        "reports/office_final_round/BOUNDARY.md"
+      ],
+      "source": "tracked research reports",
+      "license": "Project code/report license decision open",
+      "rebuild": "git clone; reports are read-only evidence, not regenerated on app startup",
+      "present": true,
+      "missing": [],
+      "file_count": 3,
+      "bytes": 18078,
+      "bundle_sha256": "8fba269ee7736122874cc7214851f4fbdb2df2deaf477a5b453388b40304211d",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "reports/DELIVERY_V1.md",
+          "bytes": 3490,
+          "sha256": "13e9238f8995edaf1640337d1a3eec55adbe98e7b4ad9a50c2e707c4211b2123",
+          "in_git": true
+        },
+        {
+          "path": "reports/solar_mpc/REPORT.md",
+          "bytes": 12209,
+          "sha256": "c6366c8bf7968fb3b1df096a54c29fba6e6b473295a0696a242b9e548eea5051",
+          "in_git": true
+        },
+        {
+          "path": "reports/office_final_round/BOUNDARY.md",
+          "bytes": 2379,
+          "sha256": "f0c8087b5af6a5411b8b285e4452c3520247b865ae228ff9a7b1d223780241e6",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "dependency-spec",
+      "tier": "workbench",
+      "paths": [
+        "pyproject.toml"
+      ],
+      "source": "pinned direct Python dependencies",
+      "license": "Individual package licenses; no blanket license",
+      "rebuild": "docs/workbench.md; CPU environment installation",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 526,
+      "bundle_sha256": "e46079c08c5a5c2fdba0b568ccc4fd6882accc99e40582fd457827b00d27296d",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "pyproject.toml",
+          "bytes": 526,
+          "sha256": "1f1abfdece297cfaec5a8a400e42c26182089b1b28b2fc8b24722ceddf2a1355",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "research-source-and-config",
+      "tier": "research",
+      "paths": [
+        "thermal_comfort",
+        "configs",
+        "scripts",
+        "docs/experiments"
+      ],
+      "source": "current source tree; frozen experiments verified separately",
+      "license": "Project licensing decision open; external sources retain own notices",
+      "rebuild": "git clone; use each historical protocol in a separate reproduction workspace",
+      "present": true,
+      "missing": [],
+      "file_count": 76,
+      "bytes": 646301,
+      "bundle_sha256": "9483515aae703334751d4a7de6a64d6d54d7606b12629efe727be3438da84d28",
+      "expected_sha256_match": null
+    },
+    {
+      "id": "simulation-deployment",
+      "tier": "live-simulation",
+      "paths": [
+        "scripts/setup_boptest.ps1",
+        "infra/boptest.compose.yml",
+        "infra/storage.Dockerfile"
+      ],
+      "source": "tracked deployment recipes",
+      "license": "Third-party services retain their own notices",
+      "rebuild": "scripts/setup_boptest.ps1 -Action up; WSL Docker prerequisites required",
+      "present": true,
+      "missing": [],
+      "file_count": 3,
+      "bytes": 7738,
+      "bundle_sha256": "6118651ee386dc073f0fcd3ac528a30c0af499b3b67d5fa91b1ef483c35a334c",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "scripts/setup_boptest.ps1",
+          "bytes": 4615,
+          "sha256": "b14ca89aa750a22e2436c87a58aa8a0abfe060413fda6b5238057cb8561968b1",
+          "in_git": true
+        },
+        {
+          "path": "infra/boptest.compose.yml",
+          "bytes": 2533,
+          "sha256": "32b18aec011f80eb9345900065dcf347727520e9fa284456c7423fa535100099",
+          "in_git": true
+        },
+        {
+          "path": "infra/storage.Dockerfile",
+          "bytes": 590,
+          "sha256": "cd6e82f1ccfe22db723d5be6f9e6b041e00d030776276b895845715b7011e012",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "house-fmu",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu"
+      ],
+      "sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+      "source": "ibpsa/project1-boptest commit 9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+      "license": "See upstream LICENSE.md and dependency notices; FMU redistribution not certified by this audit",
+      "rebuild": "setup_boptest.ps1 fetches and verifies the pinned upstream FMU",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 14505302,
+      "bundle_sha256": "02469532c36a046baf2c8e763038243b5ad0fbacf6aafc85adcd316d2ea2b48a",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu",
+          "bytes": 14505302,
+          "sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "boptest-license",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/boptest-v0.9.0/LICENSE.md"
+      ],
+      "source": "same pinned BOPTEST checkout",
+      "license": "Composite IBPSA and dependency notices; actual text retained upstream",
+      "rebuild": "setup_boptest.ps1 upstream clone",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 9269,
+      "bundle_sha256": "69351beeae90b03d5989f79090f5ab8ef715071214e1666c0703536556afaf2d",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/boptest-v0.9.0/LICENSE.md",
+          "bytes": 9269,
+          "sha256": "488fb89c0b9bb1e85b5ac63030b3cc8a1e31228e707df3e9546214d61a547951",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "minio-source",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/storage-build/minio.tar.gz"
+      ],
+      "sha256": "ac3bc23e5d91981a89921800a931a59aad27146434f952e9a79076b919d8a661",
+      "source": "minio/minio commit f19c534b9f457773dcd043d977433e1a71525c3b",
+      "license": "Archive LICENSE contains AGPL v3; not relicensed by this project",
+      "rebuild": "setup_boptest.ps1 verified download, then infra/storage.Dockerfile",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 23956233,
+      "bundle_sha256": "3a8ec332a6e76076f54840e8ca2a53b8d92a06bff43ca857694c4a7c08f545bc",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "outputs/storage-build/minio.tar.gz",
+          "bytes": 23956233,
+          "sha256": "ac3bc23e5d91981a89921800a931a59aad27146434f952e9a79076b919d8a661",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "mc-source",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/storage-build/mc.tar.gz"
+      ],
+      "sha256": "703d2c20ed692c6d534f680276165fd11e006c273ec64a0c8e708b74d6176112",
+      "source": "minio/mc commit 1e78af443bf0443eb177f26421fe081f08d83dc5",
+      "license": "Archive LICENSE contains AGPL v3; not relicensed by this project",
+      "rebuild": "setup_boptest.ps1 verified download, then infra/storage.Dockerfile",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 560960,
+      "bundle_sha256": "0fce3264b578c76cf15c9344992eab34dd196afa37acc8e6e13039ca16bdcdf9",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "outputs/storage-build/mc.tar.gz",
+          "bytes": 560960,
+          "sha256": "703d2c20ed692c6d534f680276165fd11e006c273ec64a0c8e708b74d6176112",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "baseline-raw",
+      "tier": "research",
+      "paths": [
+        "data/raw/ashrae_db2.csv"
+      ],
+      "expected": {
+        "path": "data/manifest.json",
+        "keys": [
+          "sha256"
+        ]
+      },
+      "source": "historical ASHRAE-format snapshot, exact release unverified",
+      "license": "2026-10-22 provenance record reports upstream CC0 metadata; local snapshot release chain remains unresolved",
+      "rebuild": "Tracked in Git; verify data/manifest.json; do not silently substitute upstream latest",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 55086668,
+      "bundle_sha256": "c9530ba4f97fbe9523dab77e7d9a7d49be404a4f3bed2cbba79985e38f696c7d",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "data/raw/ashrae_db2.csv",
+          "bytes": 55086668,
+          "sha256": "873a83fb9c0d9a6181c663b8af19ff35380153e70ef145e22fe17a32f2727b9a",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "legacy-cleaned",
+      "tier": "research",
+      "paths": [
+        "data/processed/cleaned_asds4.csv"
+      ],
+      "source": "historical processed table",
+      "license": "Same unresolved historical snapshot chain",
+      "rebuild": "thermal_comfort prepare reconstructs and checks historical cleaning; docs/experiments/baseline.md",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 1261576,
+      "bundle_sha256": "210ff47231fa373442cdf4c931a1862bd512dc7ea684423d6343e4c0cc93fd65",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "data/processed/cleaned_asds4.csv",
+          "bytes": 1261576,
+          "sha256": "77bda5d3686ef7c583b983a08e73fd04f1c80686de6318f32ef3c527d8a5f207",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-derived-data",
+      "tier": "research",
+      "paths": [
+        "outputs/baseline/data"
+      ],
+      "source": "baseline.prepare from tracked snapshot/config",
+      "license": "Derived data follows source provenance limitations",
+      "rebuild": "python -m thermal_comfort prepare; docs/experiments/baseline.md",
+      "present": true,
+      "missing": [],
+      "file_count": 3,
+      "bytes": 12771639,
+      "bundle_sha256": "b0bb2c7f5225f7b051d3fd30d8c2a6ad9cec17c318969bb35d7b0148a4c3532d",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/baseline/data/audit.json",
+          "bytes": 2512,
+          "sha256": "8bb0218047ffb89aa262fac0f2b3720b23b415a66231c94fb93a5adbd3f61a6a",
+          "in_git": false
+        },
+        {
+          "path": "outputs/baseline/data/prepared.csv",
+          "bytes": 10532690,
+          "sha256": "5a70d088a598dafb889766da608af2235c9f3edcae16e0e2c78a1f1d099b5ae1",
+          "in_git": false
+        },
+        {
+          "path": "outputs/baseline/data/splits.csv",
+          "bytes": 2236437,
+          "sha256": "de08bf0fdc2a8c645743d63afee7c115173d7ea466dadf6135d69178eaeb5ad6",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "baseline-weights",
+      "tier": "research",
+      "paths": [
+        "outputs/baseline/models"
+      ],
+      "source": "five-seed baseline training",
+      "license": "Derived models plus package/source notices; no new distribution decision",
+      "rebuild": "python -m thermal_comfort run; machine-dependent numerical tolerance applies",
+      "present": true,
+      "missing": [],
+      "file_count": 23,
+      "bytes": 158084516,
+      "bundle_sha256": "63d94bf5e0b2e670934fa1b372b49bdf443f7e4d0775e04dea1a75dccea7dbb7",
+      "expected_sha256_match": null
+    },
+    {
+      "id": "baseline-environment",
+      "tier": "research",
+      "paths": [
+        "outputs/baseline/environment.json",
+        "configs/baseline.json"
+      ],
+      "source": "original training environment and tracked configuration",
+      "license": "Project metadata",
+      "rebuild": "Training writes new environment snapshot; original machine identity cannot be recreated by a new run",
+      "present": true,
+      "missing": [],
+      "file_count": 2,
+      "bytes": 1463,
+      "bundle_sha256": "a5b4c4b13d8f17845f87a37981d09cdd6570fb992d7825ff1438f1066b8ae05c",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/baseline/environment.json",
+          "bytes": 1051,
+          "sha256": "bfd1e6f4cb74d9460b86fb5631d4a0927764560b151967bc76ea14111f89eb49",
+          "in_git": false
+        },
+        {
+          "path": "configs/baseline.json",
+          "bytes": 412,
+          "sha256": "89751e1a1b6f261faf476530176751d96482dea487569075ea1d082e151e0967",
+          "in_git": true
+        }
+      ]
+    },
+    {
+      "id": "excitation-data",
+      "tier": "research",
+      "paths": [
+        "outputs/excitation"
+      ],
+      "source": "pinned house FMU, old registered episode roles",
+      "license": "Generated simulation traces; third-party model notices remain separate",
+      "rebuild": "docs/experiments/dynamics.md; do not relabel consumed tests as fresh holdouts",
+      "present": true,
+      "missing": [],
+      "file_count": 46,
+      "bytes": 18934926,
+      "bundle_sha256": "112a95b08d61d395c8ed01e630c63f178b53a9ddc7c461e5dfe296148a5ab8fd",
+      "expected_sha256_match": null
+    },
+    {
+      "id": "warm-calibration-data",
+      "tier": "research",
+      "paths": [
+        "outputs/recovery-calibration"
+      ],
+      "source": "pinned house recovery-stage collection",
+      "license": "Generated simulation traces; not human comfort labels",
+      "rebuild": "docs/experiments/recovery_mpc.md; historical reproduction only",
+      "present": true,
+      "missing": [],
+      "file_count": 16,
+      "bytes": 6164307,
+      "bundle_sha256": "2d35b1413a4d050ff05d1d50ff050bbc86101d6418e77e045671f6e7389d3eab",
+      "expected_sha256_match": null
+    },
+    {
+      "id": "solar-data",
+      "tier": "research",
+      "paths": [
+        "outputs/solar-data"
+      ],
+      "source": "day147/168/189 house collection",
+      "license": "Generated simulation traces",
+      "rebuild": "docs/experiments/solar_mpc.md; previous data and model prerequisites required",
+      "present": true,
+      "missing": [],
+      "file_count": 23,
+      "bytes": 8210487,
+      "bundle_sha256": "9bd7420ddc2db2bcc2c2c4805718325700d01866d8a57ea7e5a55328697fa5a3",
+      "expected_sha256_match": null
+    },
+    {
+      "id": "house-selected-model",
+      "tier": "research",
+      "paths": [
+        "outputs/solar-selected/model.joblib"
+      ],
+      "expected": {
+        "path": "reports/solar_mpc/model_manifest.json",
+        "keys": [
+          "artifacts_sha256",
+          "model.joblib"
+        ]
+      },
+      "source": "selected RC + learned residual model",
+      "license": "Research model; never loaded from untrusted joblib files",
+      "rebuild": "docs/experiments/solar_mpc.md; staged excitation/recovery/solar dependencies, not app bootstrap",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 2498,
+      "bundle_sha256": "f53ac32ee9fc2ff59862eb1a831496e3802317e6873ee2fceafab6e420095318",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "outputs/solar-selected/model.joblib",
+          "bytes": 2498,
+          "sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "house-freeze-model",
+      "tier": "research",
+      "paths": [
+        "outputs/generalization-freeze/model.joblib"
+      ],
+      "expected": {
+        "path": "reports/solar_mpc/model_manifest.json",
+        "keys": [
+          "artifacts_sha256",
+          "model.joblib"
+        ]
+      },
+      "source": "frozen copy of selected house model",
+      "license": "Research artifact",
+      "rebuild": "docs/experiments/generalization.md; freeze creation in a separate reproduction workspace",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 2498,
+      "bundle_sha256": "0683b2552de5b4eed30dca8a46f1e50d847fb6cf687391ecf8a93b245c176eaf",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "outputs/generalization-freeze/model.joblib",
+          "bytes": 2498,
+          "sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "house-freeze-record",
+      "tier": "research",
+      "paths": [
+        "outputs/generalization-freeze/freeze.json",
+        "outputs/generalization-freeze/policy_config.json"
+      ],
+      "source": "original model/policy/FMU/source freeze",
+      "license": "Project metadata plus referenced upstream notices",
+      "rebuild": "generalization prepare generates a new freeze; cannot recreate original wall-clock metadata byte-for-byte",
+      "present": true,
+      "missing": [],
+      "file_count": 2,
+      "bytes": 9701,
+      "bundle_sha256": "77e1941f810d270ff8c15c61f98b883679758adce49d4f3bd7d47ce36d8aec38",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/generalization-freeze/freeze.json",
+          "bytes": 6871,
+          "sha256": "b031d9127e968900d0f99fecc500dde47a862b02ff3344274a088bfcbfe4d11c",
+          "in_git": false
+        },
+        {
+          "path": "outputs/generalization-freeze/policy_config.json",
+          "bytes": 2830,
+          "sha256": "2463ab6e3ccb12275670c08ee985d52f172cd018b8143fe7be8498d7beef9bc2",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "office-negative-model",
+      "tier": "historical-negative",
+      "paths": [
+        "outputs/office-final-round/model/model.joblib"
+      ],
+      "expected": {
+        "path": "reports/office_final_round/model_manifest.json",
+        "keys": [
+          "artifacts_sha256",
+          "model.joblib"
+        ]
+      },
+      "source": "closed office final candidate; no control qualification under research gates",
+      "license": "Research artifact; redistribution license not established here",
+      "rebuild": "Read-only closure verification in current workspace; any historical reproduction uses a separate workspace and original protocol",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 665,
+      "bundle_sha256": "4a1dfabab703b00f4a4aad7cc9a0dafc7eeb906439cf79a638e47ccd06e06ab5",
+      "expected_sha256_match": true,
+      "files": [
+        {
+          "path": "outputs/office-final-round/model/model.joblib",
+          "bytes": 665,
+          "sha256": "ceb5276fa1e42369a85e81d7cfa844bbbbff652d05cd2bc02f5b516cfdd30d65",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "office-closure",
+      "tier": "historical-negative",
+      "paths": [
+        "outputs/office-final-round/closure.json",
+        "outputs/office-final-round/protocol_lock.json"
+      ],
+      "source": "closed_negative decision and linked original evidence",
+      "license": "Project metadata",
+      "rebuild": "Original hashes/state should be preserved; tracked compact report is the code-only fallback",
+      "present": true,
+      "missing": [],
+      "file_count": 2,
+      "bytes": 7665,
+      "bundle_sha256": "f07d9b2dbf3edf41b9be7bc132d96aefbf52040c515b2badf42330191c2498a5",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/office-final-round/closure.json",
+          "bytes": 1708,
+          "sha256": "d0f010afea694e1fe63b0cd2b92d803ed7155d9ac6ae06492c6da9231da81121",
+          "in_git": false
+        },
+        {
+          "path": "outputs/office-final-round/protocol_lock.json",
+          "bytes": 5957,
+          "sha256": "b772e1c71f749b38d23490263d39a65fe2c1e421aaa717e14080676aeb56d79c",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "office-upstream-freezes",
+      "tier": "historical-negative",
+      "paths": [
+        "outputs/office-freeze/freeze.json",
+        "outputs/terminal-lock/development_lock.json",
+        "outputs/terminal-freeze/freeze.json",
+        "outputs/native-model/manifest.json"
+      ],
+      "source": "upstream dependencies of office closure verification",
+      "license": "Research metadata; no new experiments authorized",
+      "rebuild": "Historical protocols and local archives; not required to start residential workbench",
+      "present": true,
+      "missing": [],
+      "file_count": 4,
+      "bytes": 8856,
+      "bundle_sha256": "e3edbac64da5550435fce6d84115d06f3ea3b000feea267edf876229d28e3d57",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/office-freeze/freeze.json",
+          "bytes": 3145,
+          "sha256": "11bfe85cceb5250d5e2e94343e9c3fc6e211750d93506bdabf46af1f3e0dbaf9",
+          "in_git": false
+        },
+        {
+          "path": "outputs/terminal-lock/development_lock.json",
+          "bytes": 3255,
+          "sha256": "3d73ba0bc45b87aef7f56a47e452a991854e171f6785354d2d6d82ecd0d61a1a",
+          "in_git": false
+        },
+        {
+          "path": "outputs/terminal-freeze/freeze.json",
+          "bytes": 1367,
+          "sha256": "598188f277195f44c58bb1014c34ef1235191a5f27433a833499d758ace64522",
+          "in_git": false
+        },
+        {
+          "path": "outputs/native-model/manifest.json",
+          "bytes": 1089,
+          "sha256": "1014bcb2864df2e6ebc215fa84085a71ebfcfde96f18b516a5ec80fdc1eeb95c",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "old-workbench-evidence",
+      "tier": "demo-history",
+      "paths": [
+        "outputs/workbench/verification.json"
+      ],
+      "source": "V0.1 smoke record; raw sessions local only",
+      "license": "Virtual control intents, not real human comfort observations",
+      "rebuild": "scripts/verify_workbench_live.py generates new run IDs; original session IDs require preserving old files",
+      "present": true,
+      "missing": [],
+      "file_count": 1,
+      "bytes": 3634,
+      "bundle_sha256": "09fe4519cac3e0abde529904b36d02094eded8bbfe11c5d628546da4dd16081f",
+      "expected_sha256_match": null,
+      "files": [
+        {
+          "path": "outputs/workbench/verification.json",
+          "bytes": 3634,
+          "sha256": "813e619245cebb3349e0943cd622daab8b04f791fa1ea18fb3506cf1357d3379",
+          "in_git": false
+        }
+      ]
+    },
+    {
+      "id": "project-code-license",
+      "tier": "distribution-gap",
+      "paths": [
+        "LICENSE"
+      ],
+      "source": "no root license file at audit start",
+      "license": "Unresolved; this audit does not choose a license for the owner",
+      "rebuild": "Owner decision before a uniformly licensed release; source-visible is not a completed licensing audit",
+      "present": false,
+      "missing": [
+        "LICENSE"
+      ],
+      "file_count": 0,
+      "bytes": 0,
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_sha256_match": null,
+      "files": []
+    }
+  ]
+}

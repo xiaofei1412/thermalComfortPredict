@@ -1,0 +1,304 @@
+{
+  "scope": "A audit; local source checkout delivery, not an all-in-one redistribution license",
+  "assets": [
+    {
+      "id": "workbench-source",
+      "tier": "workbench",
+      "paths": [
+        "thermal_comfort/__init__.py",
+        "thermal_comfort/workbench.py",
+        "thermal_comfort/simulation.py",
+        "workbench/index.html",
+        "workbench/app.js",
+        "workbench/style.css",
+        "scripts/start_workbench.ps1"
+      ],
+      "source": "this Git repository",
+      "license": "No root code LICENSE found; license decision remains open",
+      "rebuild": "git clone; docs/workbench.md"
+    },
+    {
+      "id": "read-only-evidence",
+      "tier": "workbench",
+      "paths": [
+        "reports/DELIVERY_V1.md",
+        "reports/solar_mpc/REPORT.md",
+        "reports/office_final_round/BOUNDARY.md"
+      ],
+      "source": "tracked research reports",
+      "license": "Project code/report license decision open",
+      "rebuild": "git clone; reports are read-only evidence, not regenerated on app startup"
+    },
+    {
+      "id": "dependency-spec",
+      "tier": "workbench",
+      "paths": [
+        "pyproject.toml"
+      ],
+      "source": "pinned direct Python dependencies",
+      "license": "Individual package licenses; no blanket license",
+      "rebuild": "docs/workbench.md; CPU environment installation"
+    },
+    {
+      "id": "research-source-and-config",
+      "tier": "research",
+      "paths": [
+        "thermal_comfort",
+        "configs",
+        "scripts",
+        "docs/experiments"
+      ],
+      "source": "current source tree; frozen experiments verified separately",
+      "license": "Project licensing decision open; external sources retain own notices",
+      "rebuild": "git clone; use each historical protocol in a separate reproduction workspace"
+    },
+    {
+      "id": "simulation-deployment",
+      "tier": "live-simulation",
+      "paths": [
+        "scripts/setup_boptest.ps1",
+        "infra/boptest.compose.yml",
+        "infra/storage.Dockerfile"
+      ],
+      "source": "tracked deployment recipes",
+      "license": "Third-party services retain their own notices",
+      "rebuild": "scripts/setup_boptest.ps1 -Action up; WSL Docker prerequisites required"
+    },
+    {
+      "id": "house-fmu",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu"
+      ],
+      "sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+      "source": "ibpsa/project1-boptest commit 9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+      "license": "See upstream LICENSE.md and dependency notices; FMU redistribution not certified by this audit",
+      "rebuild": "setup_boptest.ps1 fetches and verifies the pinned upstream FMU"
+    },
+    {
+      "id": "boptest-license",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/boptest-v0.9.0/LICENSE.md"
+      ],
+      "source": "same pinned BOPTEST checkout",
+      "license": "Composite IBPSA and dependency notices; actual text retained upstream",
+      "rebuild": "setup_boptest.ps1 upstream clone"
+    },
+    {
+      "id": "minio-source",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/storage-build/minio.tar.gz"
+      ],
+      "sha256": "ac3bc23e5d91981a89921800a931a59aad27146434f952e9a79076b919d8a661",
+      "source": "minio/minio commit f19c534b9f457773dcd043d977433e1a71525c3b",
+      "license": "Archive LICENSE contains AGPL v3; not relicensed by this project",
+      "rebuild": "setup_boptest.ps1 verified download, then infra/storage.Dockerfile"
+    },
+    {
+      "id": "mc-source",
+      "tier": "live-simulation",
+      "paths": [
+        "outputs/storage-build/mc.tar.gz"
+      ],
+      "sha256": "703d2c20ed692c6d534f680276165fd11e006c273ec64a0c8e708b74d6176112",
+      "source": "minio/mc commit 1e78af443bf0443eb177f26421fe081f08d83dc5",
+      "license": "Archive LICENSE contains AGPL v3; not relicensed by this project",
+      "rebuild": "setup_boptest.ps1 verified download, then infra/storage.Dockerfile"
+    },
+    {
+      "id": "baseline-raw",
+      "tier": "research",
+      "paths": [
+        "data/raw/ashrae_db2.csv"
+      ],
+      "expected": {
+        "path": "data/manifest.json",
+        "keys": [
+          "sha256"
+        ]
+      },
+      "source": "historical ASHRAE-format snapshot, exact release unverified",
+      "license": "2026-10-22 provenance record reports upstream CC0 metadata; local snapshot release chain remains unresolved",
+      "rebuild": "Tracked in Git; verify data/manifest.json; do not silently substitute upstream latest"
+    },
+    {
+      "id": "legacy-cleaned",
+      "tier": "research",
+      "paths": [
+        "data/processed/cleaned_asds4.csv"
+      ],
+      "source": "historical processed table",
+      "license": "Same unresolved historical snapshot chain",
+      "rebuild": "thermal_comfort prepare reconstructs and checks historical cleaning; docs/experiments/baseline.md"
+    },
+    {
+      "id": "baseline-derived-data",
+      "tier": "research",
+      "paths": [
+        "outputs/baseline/data"
+      ],
+      "source": "baseline.prepare from tracked snapshot/config",
+      "license": "Derived data follows source provenance limitations",
+      "rebuild": "python -m thermal_comfort prepare; docs/experiments/baseline.md"
+    },
+    {
+      "id": "baseline-weights",
+      "tier": "research",
+      "paths": [
+        "outputs/baseline/models"
+      ],
+      "source": "five-seed baseline training",
+      "license": "Derived models plus package/source notices; no new distribution decision",
+      "rebuild": "python -m thermal_comfort run; machine-dependent numerical tolerance applies"
+    },
+    {
+      "id": "baseline-environment",
+      "tier": "research",
+      "paths": [
+        "outputs/baseline/environment.json",
+        "configs/baseline.json"
+      ],
+      "source": "original training environment and tracked configuration",
+      "license": "Project metadata",
+      "rebuild": "Training writes new environment snapshot; original machine identity cannot be recreated by a new run"
+    },
+    {
+      "id": "excitation-data",
+      "tier": "research",
+      "paths": [
+        "outputs/excitation"
+      ],
+      "source": "pinned house FMU, old registered episode roles",
+      "license": "Generated simulation traces; third-party model notices remain separate",
+      "rebuild": "docs/experiments/dynamics.md; do not relabel consumed tests as fresh holdouts"
+    },
+    {
+      "id": "warm-calibration-data",
+      "tier": "research",
+      "paths": [
+        "outputs/recovery-calibration"
+      ],
+      "source": "pinned house recovery-stage collection",
+      "license": "Generated simulation traces; not human comfort labels",
+      "rebuild": "docs/experiments/recovery_mpc.md; historical reproduction only"
+    },
+    {
+      "id": "solar-data",
+      "tier": "research",
+      "paths": [
+        "outputs/solar-data"
+      ],
+      "source": "day147/168/189 house collection",
+      "license": "Generated simulation traces",
+      "rebuild": "docs/experiments/solar_mpc.md; previous data and model prerequisites required"
+    },
+    {
+      "id": "house-selected-model",
+      "tier": "research",
+      "paths": [
+        "outputs/solar-selected/model.joblib"
+      ],
+      "expected": {
+        "path": "reports/solar_mpc/model_manifest.json",
+        "keys": [
+          "artifacts_sha256",
+          "model.joblib"
+        ]
+      },
+      "source": "selected RC + learned residual model",
+      "license": "Research model; never loaded from untrusted joblib files",
+      "rebuild": "docs/experiments/solar_mpc.md; staged excitation/recovery/solar dependencies, not app bootstrap"
+    },
+    {
+      "id": "house-freeze-model",
+      "tier": "research",
+      "paths": [
+        "outputs/generalization-freeze/model.joblib"
+      ],
+      "expected": {
+        "path": "reports/solar_mpc/model_manifest.json",
+        "keys": [
+          "artifacts_sha256",
+          "model.joblib"
+        ]
+      },
+      "source": "frozen copy of selected house model",
+      "license": "Research artifact",
+      "rebuild": "docs/experiments/generalization.md; freeze creation in a separate reproduction workspace"
+    },
+    {
+      "id": "house-freeze-record",
+      "tier": "research",
+      "paths": [
+        "outputs/generalization-freeze/freeze.json",
+        "outputs/generalization-freeze/policy_config.json"
+      ],
+      "source": "original model/policy/FMU/source freeze",
+      "license": "Project metadata plus referenced upstream notices",
+      "rebuild": "generalization prepare generates a new freeze; cannot recreate original wall-clock metadata byte-for-byte"
+    },
+    {
+      "id": "office-negative-model",
+      "tier": "historical-negative",
+      "paths": [
+        "outputs/office-final-round/model/model.joblib"
+      ],
+      "expected": {
+        "path": "reports/office_final_round/model_manifest.json",
+        "keys": [
+          "artifacts_sha256",
+          "model.joblib"
+        ]
+      },
+      "source": "closed office final candidate; no control qualification under research gates",
+      "license": "Research artifact; redistribution license not established here",
+      "rebuild": "Read-only closure verification in current workspace; any historical reproduction uses a separate workspace and original protocol"
+    },
+    {
+      "id": "office-closure",
+      "tier": "historical-negative",
+      "paths": [
+        "outputs/office-final-round/closure.json",
+        "outputs/office-final-round/protocol_lock.json"
+      ],
+      "source": "closed_negative decision and linked original evidence",
+      "license": "Project metadata",
+      "rebuild": "Original hashes/state should be preserved; tracked compact report is the code-only fallback"
+    },
+    {
+      "id": "office-upstream-freezes",
+      "tier": "historical-negative",
+      "paths": [
+        "outputs/office-freeze/freeze.json",
+        "outputs/terminal-lock/development_lock.json",
+        "outputs/terminal-freeze/freeze.json",
+        "outputs/native-model/manifest.json"
+      ],
+      "source": "upstream dependencies of office closure verification",
+      "license": "Research metadata; no new experiments authorized",
+      "rebuild": "Historical protocols and local archives; not required to start residential workbench"
+    },
+    {
+      "id": "old-workbench-evidence",
+      "tier": "demo-history",
+      "paths": [
+        "outputs/workbench/verification.json"
+      ],
+      "source": "V0.1 smoke record; raw sessions local only",
+      "license": "Virtual control intents, not real human comfort observations",
+      "rebuild": "scripts/verify_workbench_live.py generates new run IDs; original session IDs require preserving old files"
+    },
+    {
+      "id": "project-code-license",
+      "tier": "distribution-gap",
+      "paths": [
+        "LICENSE"
+      ],
+      "source": "no root license file at audit start",
+      "license": "Unresolved; this audit does not choose a license for the owner",
+      "rebuild": "Owner decision before a uniformly licensed release; source-visible is not a completed licensing audit"
+    }
+  ]
+}

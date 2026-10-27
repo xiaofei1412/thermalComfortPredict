@@ -6,6 +6,7 @@ let state = {busy:false,session:null}, mode="manual", person="A", preferences={A
 let replay=null, replayIndex=0, replayTimer=null, pending=false, pairedSource=null;
 let listKey="", sourceKey="", pollCount=0;
 let uiError="";
+let connected=false;
 let requestedTarget=21;
 const format=(value,d=2)=>Number.isFinite(value)?value.toFixed(d):"--";
 
@@ -25,7 +26,7 @@ async function action(path, body) {
 function currentIntent(){return {mode,target_C:requestedTarget,preferences:{...preferences}};}
 function selectPerson(value){person=value; renderPreferences();}
 function renderPreferences(){
-  const s=replay||state.session, readOnly=!!replay||!!s?.comparison_of||["completed","error"].includes(s?.status);
+  const s=replay||state.session, readOnly=!!replay||!!s?.comparison_of||["completed","error","interrupted"].includes(s?.status);
   const event=s?.events[(replay?replayIndex:s.frames.length-1)-1];
   const visible=readOnly?(event?.intent.preferences||{A:"hold",B:"hold"}):preferences;
   $("person-a").classList.toggle("active",person==="A"); $("person-b").classList.toggle("active",person==="B");
@@ -49,16 +50,16 @@ function drawTrend(frames,index){
   add("circle",{cx:x(index),cy:y(frames[index].temperature_C),r:4,fill:"#355b49"});
 }
 function render(){
-  const busy=state.busy||pending, s=replay||state.session, frames=s?.frames||[];
+  const busy=state.busy||pending||!connected, s=replay||state.session, frames=s?.frames||[];
   const index=replay?Math.min(replayIndex,frames.length-1):frames.length-1, f=frames[index];
   const active=state.session?.status==="paused", historical=!!replay;
   const event=index>0?s.events[index-1]:null;
-  const readOnly=historical||!!s?.comparison_of||["completed","error"].includes(s?.status);
+  const readOnly=historical||!!s?.comparison_of||["completed","error","interrupted"].includes(s?.status);
   const viewMode=readOnly?(event?.intent.mode||(s?.comparison_of?"rule":"manual")):mode;
   $("create").disabled=busy||active; $("scene").disabled=busy||active;
   ["step","run"].forEach(id=>$(id).disabled=busy||!active||historical||(state.session?.events.length||0)+(id==="run"?16:1)>96);
-  $("end").disabled=busy||!state.session||state.session.status==="completed";
-  $("pause").disabled=!state.busy; $("target").disabled=viewMode==="rule"||readOnly||busy;
+  $("end").disabled=busy||!state.can_end;
+  $("pause").disabled=!connected||pending||!state.busy||!state.session?.frames.length; $("target").disabled=viewMode==="rule"||readOnly||busy;
   ["manual","rule","person-a","person-b"].forEach(id=>$(id).disabled=busy||readOnly);
   document.querySelectorAll("[data-pref]").forEach(b=>b.disabled=busy||readOnly);
   $("manual").classList.toggle("active",viewMode==="manual");$("rule").classList.toggle("active",viewMode==="rule");
@@ -69,6 +70,9 @@ function render(){
   $("status-dot").classList.toggle("busy",state.busy&&!historical);
   $("status").parentElement.classList.toggle("error",!historical&&s?.status==="error");
   $("view-badge").textContent=historical?"HISTORY / 历史回放":s?(s.status==="completed"?(s.comparison_of?"SAVED / 规则对照已保存":"SAVED / 本次已保存"):s.comparison_of?"SIMULATION / 规则对照":"SIMULATION / BOPTEST 实时仿真"):"尚未连接会话";
+  if(historical&&s.status!=="completed")$("view-badge").textContent="HISTORY / 未正常结束 · 仅回放";
+  if(!historical&&["interrupted","error"].includes(s?.status))$("view-badge").textContent="STOPPED / 仅保留最后有效记录";
+  if(!connected&&!historical){$("view-badge").textContent="OFFLINE / 最后已知状态";$("status").textContent="本地服务连接中断，已禁用控制；不会自动重发动作。";}
   const prefs=readOnly?(event?.intent.preferences||{A:"hold",B:"hold"}):preferences;
   $("pref-a").textContent=words[prefs.A]; $("pref-b").textContent=words[prefs.B];
   if(f){
@@ -108,7 +112,7 @@ async function refreshList(){
   const sessions=await api("/api/sessions"),key=JSON.stringify(sessions);
   if(key===listKey)return;listKey=key;const selected=$("session-list").value;
   $("session-list").replaceChildren(new Option("当前实时会话",""));
-  for(const s of sessions) $("session-list").add(new Option(`${{cool:"早春",warm:"暖季",cold:"晚秋"}[s.scene]} · ${s.steps}步 · ${s.id.slice(0,6)}${s.comparison_of?" · 规则对照":""}`,s.id));
+  for(const s of sessions) $("session-list").add(new Option(`${{cool:"早春",warm:"暖季",cold:"晚秋"}[s.scene]} · ${s.steps}步 · ${s.id.slice(0,6)}${s.comparison_of?" · 规则对照":""} · ${{initializing:"预热中",paused:"未结束",interrupted:"仅回放",error:"异常·仅回放",completed:"已保存"}[s.status]||s.status}`,s.id));
   $("session-list").value=selected;
 }
 function stopReplay(){if(replayTimer)clearInterval(replayTimer);replayTimer=null;$("replay-play").textContent="▶ 回放";}
@@ -139,8 +143,8 @@ $("heat-device").onclick=()=>{$("dialog-title").textContent="热泵供暖 · 当
 $("heat-device").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();$("heat-device").onclick();}};
 $("office").onclick=()=>evidence("office");document.querySelectorAll("[data-evidence]").forEach(b=>b.onclick=()=>evidence(b.dataset.evidence));$("close-dialog").onclick=()=>$("details").close();
 async function poll(){
-  try{state=await api("/api/state");await loadPair(replay||state.session);render();if(pollCount++%5===0)await refreshList();}
-  catch(error){$("status").textContent=`本地服务连接中断：${error.message}。不会自动重发控制动作。`;["step","run","create","compare"].forEach(id=>$(id).disabled=true);}
+  try{state=await api("/api/state");connected=true;await loadPair(replay||state.session);render();if(pollCount++%5===0)await refreshList();}
+  catch(error){connected=false;render();}
   finally{setTimeout(poll,1000);}
 }
 render();poll();

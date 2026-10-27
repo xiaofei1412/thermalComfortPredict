@@ -1,16 +1,21 @@
 import copy
+import io
 import json
+from pathlib import Path
+import shutil
+import subprocess
 import tempfile
 import threading
 import unittest
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
+from unittest.mock import patch
 
 import numpy as np
 import pandas as pd
 
 from thermal_comfort.simulation import FORECAST, POWER, integrate
-from thermal_comfort.workbench import (CASE, Conflict, Handler, Workbench, command,
+from thermal_comfort.workbench import (CASE, Conflict, Handler, LocalServer, Workbench, command,
                                        intent, ThreadingHTTPServer)
 
 
@@ -148,6 +153,23 @@ class WorkbenchTests(unittest.TestCase):
         with self.assertRaises(Conflict):
             self.app.create("warm")
 
+    def test_initializing_archive_never_has_negative_step_count(self):
+        original = self.client.call
+        entered, unblock = threading.Event(), threading.Event()
+        def initializing(method, path, data=None):
+            if path.startswith("initialize/"):
+                entered.set()
+                unblock.wait(timeout=4)
+            return original(method, path, data)
+        self.client.call = initializing
+        self.app.create("cool")
+        try:
+            self.assertTrue(entered.wait(timeout=2))
+            self.assertEqual(self.app.sessions()[0]["steps"], 0)
+        finally:
+            unblock.set()
+            self.wait()
+
     def test_native_metrics_save_and_replay_without_engine(self):
         sid = self.completed()
         session = self.app.load(sid)
@@ -200,6 +222,43 @@ class WorkbenchTests(unittest.TestCase):
         self.app.end()
         self.wait()
         self.assertIsNone(self.app.testid)
+
+    def test_expired_engine_session_preserves_trace_and_allows_new_session(self):
+        self.start()
+        self.app.advance({"steps": 1, "intent": REQUEST})
+        self.wait()
+        sid = self.app.session["id"]
+        saved = copy.deepcopy(self.app.session["events"])
+        original = self.client.call
+        def expired(method, path, data=None):
+            if path.startswith(("kpi/", "stop/")):
+                body = json.dumps({"errors": [{"msg": "Invalid testid: fixture", "param": "testid"}]}).encode()
+                error = HTTPError("http://fixture/" + path, 400, "Bad Request", {}, io.BytesIO(body))
+                self.addCleanup(error.close)
+                raise error
+            return original(method, path, data)
+        self.client.call = expired
+        self.app.end()
+        self.app.thread.join(timeout=5)
+        self.assertIsNone(self.app.testid)
+        self.assertEqual(self.app.load(sid)["status"], "interrupted")
+        self.assertEqual(self.app.load(sid)["events"], saved)
+        self.client.call = original
+        self.app.create("warm")
+        self.wait()
+
+    def test_unrelated_http400_does_not_forget_worker(self):
+        self.start()
+        original = self.client.call
+        def bad_request(method, path, data=None):
+            if path.startswith("stop/"):
+                body = json.dumps({"errors": [{"msg": "Other error", "param": "testid"}]}).encode()
+                raise HTTPError("http://fixture/" + path, 400, "Bad Request", {}, io.BytesIO(body))
+            return original(method, path, data)
+        self.client.call = bad_request
+        self.app.end()
+        self.wait()
+        self.assertEqual(self.app.testid, "fixture")
 
     def test_same_start_rule_comparison_preserves_intents_and_checks_conditions(self):
         sid = self.completed()
@@ -275,11 +334,37 @@ class HttpTests(unittest.TestCase):
         self.thread.join(timeout=5)
         self.tmp.cleanup()
 
+    def test_duplicate_listener_cannot_share_port(self):
+        first = LocalServer(("127.0.0.1", 0), Handler)
+        try:
+            with self.assertRaises(OSError):
+                LocalServer(("127.0.0.1", first.server_port), Handler)
+        finally:
+            first.server_close()
+
     def test_static_assets_and_readonly_evidence(self):
-        for path in ["/", "/app.js", "/style.css", "/api/state", "/api/evidence/office"]:
+        for path in ["/", "/app.js", "/style.css", "/api/state", "/api/health", "/api/evidence/office"]:
             with self.subTest(path=path), urlopen(self.base + path) as response:
                 self.assertEqual(response.status, 200)
                 self.assertIn("default-src 'self'", response.headers["Content-Security-Policy"])
+
+    @unittest.skipUnless(shutil.which("pwsh"), "PowerShell launcher requires pwsh")
+    def test_repeated_launcher_reuses_same_workspace_without_python_or_simulator(self):
+        result = subprocess.run(["pwsh", "-NoProfile", "-File", "scripts/start_workbench.ps1",
+                                 "-Port", str(self.server.server_port)], capture_output=True, encoding="utf-8", timeout=15)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("already running", result.stdout)
+        self.assertEqual(self.server.app.client.calls, [])
+
+    @unittest.skipUnless(shutil.which("pwsh"), "PowerShell launcher requires pwsh")
+    def test_launcher_does_not_take_over_other_workspace(self):
+        with patch("thermal_comfort.workbench.ROOT", Path(self.tmp.name)):
+            result = subprocess.run(["pwsh", "-NoProfile", "-File", "scripts/start_workbench.ps1",
+                                     "-Port", str(self.server.server_port)], capture_output=True, encoding="utf-8", timeout=15)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("another workspace", result.stderr)
+        with urlopen(self.base + "/api/health") as response:
+            self.assertEqual(response.status, 200)
 
     def test_reject_office_path_traversal_foreign_origin_and_malformed_json(self):
         cases = [("/api/create", b'{"scene":"office"}', {}, 400),

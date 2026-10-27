@@ -7,6 +7,10 @@
 在项目根目录的 PowerShell 中运行：
 
 ```powershell
+# 首次安装，沿用CPU研究环境；已有环境可跳过以下安装命令。
+py -3.14 -m venv .venv
+./.venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+./.venv/Scripts/python.exe -m pip install -e .
 # 已部署过 BOPTEST 时，先检查服务；首次部署见下方协议。
 ./scripts/setup_boptest.ps1 -Action status
 # 如果服务没有运行：
@@ -14,7 +18,11 @@
 ./scripts/start_workbench.ps1
 ```
 
-打开 <http://127.0.0.1:8765>。终端保持运行，Ctrl+C退出；先在网页结束会话可立即释放仿真工作进程。也可使用 `.venv-cpu/Scripts/python.exe -m thermal_comfort.workbench --port 8765`。启动器要求已有 `.venv-cpu`，安装步骤见[基线协议](experiments/baseline.md)；BOPTEST需要已有WSL/Docker，部署见[仿真协议](experiments/simulation.md)。网页不需要Node、前端构建或外网字体。
+打开 <http://127.0.0.1:8765>。终端保持运行，Ctrl+C退出；先在网页结束会话可立即释放仿真工作进程。启动器依次查找`.venv-cpu`和`.venv`，也支持`-PythonPath`指定已有解释器；不会自动安装依赖。安装步骤见[基线协议](experiments/baseline.md)；BOPTEST需要已有WSL/Docker，部署见[仿真协议](experiments/simulation.md)。网页不需要Node、前端构建或外网字体。
+
+同工作区重复运行启动器会显示已有URL；其他工作区/未知服务占用端口时不会接管，可显式指定`-Port`。Python直接入口在端口被占用时以状态码2退出，Windows使用独占监听防止两个进程分享端口。本次A阶段修复服务运行在<http://127.0.0.1:8768>，可用`./scripts/start_workbench.ps1 -Port 8768`复用。当前交付支持在源码目录运行/editable安装，未声明wheel独立分发；资产和发布缺口见[交付范围](delivery-scope.md)。
+
+复用已有服务不会热更新Python代码。修改源码后，应先结束会话、退出原进程再启动；无法退出时可选空闲端口，但不要同时开展多个实时仿真任务。
 
 服务器只监听本机，不开放外网访问。当前只有一个BOPTEST worker，不要同时运行另一份工作台或研究采集脚本。启动工作台本身不要求BOPTEST在线：已有会话仍可回放，创建新仿真时才检查引擎。
 
@@ -41,6 +49,8 @@
 原始会话在`outputs/workbench/sessions/<id>.json`，包含初始状态、引擎/场景/单位、源码与页面哈希、逐步意图/下发/实际响应、原生采样、天气日程、累计指标和官方KPI核对。每个成功步原子写入；输出与研究数据隔离且不提交Git。`GET /api/download/<id>`导出同一完整记录；列表和界面状态省略大体积原生数组。
 
 进程重启后只恢复历史阅读，不恢复FMU状态。不要用一份JSON冒充实时状态。超时或测量失败会停止会话并尝试释放worker，不自动重试可能已经生效的`advance`。最后成功步可继续回放；失败调用后的物理状态不确定，不作为有效轨迹。若释放失败，界面提示再次“结束”；引擎的空闲超时也可能使长时间暂停的会话失效，此时重建会话，不伪造续跑。强制结束Python进程无法保证即时释放引擎。
+
+引擎明确返回该testid无效时，会话标为`interrupted`，保留有效轨迹并允许新建，不补造最终KPI；其他400错误或超时仍保留ID供释放重试。初始化列表按0步显示，异常/未完成历史带状态标识。服务断线时显示“最后已知状态”并禁用控制，恢复连接不自动重发动作。Ctrl+C退出仍未正常结束的会话会标记`interrupted`，需最终KPI时请先点击网页“结束并保存”。
 
 ## 验证
 

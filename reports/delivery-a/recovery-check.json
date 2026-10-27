@@ -1,0 +1,26 @@
+{
+  "expired_session": "24771f55b2dc",
+  "expired_status": "interrupted",
+  "trace_preserved": true,
+  "final_kpi_not_fabricated": true,
+  "new_session_after_expiry": "5fa30379df43",
+  "new_session_completed": true,
+  "original_user_session_preservation": {
+    "session_id": "44b153284355",
+    "steps": 17,
+    "status_after": "error",
+    "trajectory_preserved": true
+  },
+  "source_copy": {
+    "health": {
+      "service": "thermal-workbench",
+      "schema": 1
+    },
+    "empty_history": true,
+    "static_and_evidence_ok": true,
+    "venv_fallback_start": true,
+    "dependency_install": "shared existing site-packages; not a clean install",
+    "exclusive_port_rejects_second_process": true,
+    "duplicate_start_reused": true
+  }
+}
