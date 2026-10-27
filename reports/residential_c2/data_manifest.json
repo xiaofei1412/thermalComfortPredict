@@ -1,0 +1,142 @@
+{
+  "role": "simulation_train_development_response_only",
+  "runs": [
+    {
+      "name": "train224",
+      "role": "train",
+      "config": {
+        "testcase": "bestest_hydronic_heat_pump",
+        "warmup_days": 7
+      },
+      "start_time_s": 19353600,
+      "end_time_s": 19526400,
+      "transitions": 192,
+      "native_samples": 5761,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 107.97870357405455,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 1.4210854715202004e-14,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "sha256": {
+        "api_kpis.json": "bdb60a37935e012d908ca59c50db6aa0936f4534e6422818015aa55591ab3f42",
+        "demand_events.json": "dc602d814987acd31194372b0d1e461c15e59fd9e5e861c7af079835b428a167",
+        "forecast.csv.gz": "bce702dddb0d6886a7c1c8aa4c72a9689f9d675c42558a680a5240fdc5fc76a3",
+        "interface.json": "d42f39f328b9cf7bc8bd6cb8185d8540684bc8ac73d82270134a96cf8beb58d0",
+        "native.csv.gz": "87b598f99deab2dbe428c6f74b2173b0d5f01f7e54ea6f31b3a629454402a529",
+        "steps.jsonl": "874571914bfcfefbed45ad9c7f2f7a6edf87d9dfaa74c6671bfffc680ba71569"
+      }
+    },
+    {
+      "name": "development287",
+      "role": "development",
+      "config": {
+        "testcase": "bestest_hydronic_heat_pump",
+        "warmup_days": 7
+      },
+      "start_time_s": 24796800,
+      "end_time_s": 24969600,
+      "transitions": 192,
+      "native_samples": 5761,
+      "metrics": {
+        "energy_kWh": 34.37896034993639,
+        "energy_kWh_m2": 0.1790570851559187,
+        "boptest_energy_kWh_m2": 0.17905722840158683,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.04539100739980226,
+        "emissions_kg_m2": 0.029902557143065
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 6.938893903907228e-18,
+        "emis_tot": 3.469446951953614e-18
+      },
+      "sha256": {
+        "api_kpis.json": "c6705e1fffde8a835b65aa1fd7e8dc06eec55684e6a2e1955fc507eb4205e622",
+        "demand_events.json": "94b64d042d6a0efc1bdf12697c69d2ac59d6d8d3e8ffea9058a0f0ca2d826ef6",
+        "forecast.csv.gz": "1f25e0907e86643fa2aa6d76d66c753f3def8865e44e504e8c160aafdaba4a12",
+        "interface.json": "d42f39f328b9cf7bc8bd6cb8185d8540684bc8ac73d82270134a96cf8beb58d0",
+        "native.csv.gz": "e1c16960706951dc9340268c4772c680defc3647fc9e5cb8a6a1730deeeb3439",
+        "steps.jsonl": "9ccf2ea462e029f2278bad29be6365fbf41cbb3dd4488bf5f42467cd1889efa4"
+      }
+    },
+    {
+      "name": "response_low287",
+      "role": "response",
+      "config": {
+        "testcase": "bestest_hydronic_heat_pump",
+        "warmup_days": 7
+      },
+      "start_time_s": 24796800,
+      "end_time_s": 24832800,
+      "transitions": 40,
+      "native_samples": 1201,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "energy_kWh_m2": 0.0,
+        "boptest_energy_kWh_m2": 0.0,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.0,
+        "emissions_kg_m2": 0.0
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 0.0,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "sha256": {
+        "api_kpis.json": "4f6abd5b1e76c31905731793d878cec6111ddc9d3fe5f398b440ba129af6b23b",
+        "demand_events.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "forecast.csv.gz": "18344f7942a6e58cb6b6f972b5b51b8ce60d18af30afa0f4665646579edf6cd7",
+        "interface.json": "d42f39f328b9cf7bc8bd6cb8185d8540684bc8ac73d82270134a96cf8beb58d0",
+        "native.csv.gz": "3972fd7f5b1d46e1d1b28aed586cfcc5ce81e127d786dd125fda6417d22890c8",
+        "steps.jsonl": "0fe77847e8f17d8a5bbc63cfcd4f213c9b4d547d3c991ae1ee492cf3f7d8a506"
+      }
+    },
+    {
+      "name": "response_high287",
+      "role": "response",
+      "config": {
+        "testcase": "bestest_hydronic_heat_pump",
+        "warmup_days": 7
+      },
+      "start_time_s": 24796800,
+      "end_time_s": 24832800,
+      "transitions": 40,
+      "native_samples": 1201,
+      "metrics": {
+        "energy_kWh": 17.34719075104432,
+        "energy_kWh_m2": 0.09034995182835584,
+        "boptest_energy_kWh_m2": 0.0903500241083173,
+        "discomfort_Kh": 0.0,
+        "cost_EUR_m2": 0.022903731111458433,
+        "emissions_kg_m2": 0.015088454026088988
+      },
+      "kpi_absolute_difference": {
+        "ener_tot": 1.3877787807814457e-17,
+        "tdis_tot": 0.0,
+        "cost_tot": 0.0,
+        "emis_tot": 0.0
+      },
+      "sha256": {
+        "api_kpis.json": "cf134f7763cac1e45512b2771aeaafccff3a5db2dcf12523ee62810974ccdad9",
+        "demand_events.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "forecast.csv.gz": "18344f7942a6e58cb6b6f972b5b51b8ce60d18af30afa0f4665646579edf6cd7",
+        "interface.json": "d42f39f328b9cf7bc8bd6cb8185d8540684bc8ac73d82270134a96cf8beb58d0",
+        "native.csv.gz": "27c77924e37bea97ce70166decdfdcbe71d57461bf9c80484bb2083acb9b9fb0",
+        "steps.jsonl": "b91f8a956e9a71eaac8410bb017eba2e7fe17a59de129d5ff1e781b6c2dab87c"
+      }
+    }
+  ],
+  "source_model_unchanged": true
+}

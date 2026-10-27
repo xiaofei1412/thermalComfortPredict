@@ -8,7 +8,7 @@
 
 **可以亲自体验了：[本地房间工作台V0.1](docs/workbench.md)。** 连接真实BOPTEST，支持两位虚拟住户需求的确定性目标映射、冲突裁决、撤销/过期、按需求/手动/演示规则步进、保存回放及同起点规则对照。需求是供暖设定意图，不生成真实热感觉标签；尚未接入MPC或人员预测模型。协议与验证见[B阶段报告](reports/demand-b/REPORT.md)。
 
-[C1住宅数据核查与开发预注册](reports/residential_c/REPORT.md)已完成：建立采纳相同需求的共同规则，固定新时间切分、模型门及停止条件；新需求下的模型训练/资格验证仍待执行。
+[C1预注册](reports/residential_c/REPORT.md)及[C2开发收尾](reports/residential_c2/REPORT.md)已归档：完成464动作需求补采，稳态覆盖与能源门未全过，按约定封存负结果；重拟合/新校准/盲评0次，规则工作台继续可用。
 
 已有Python环境和BOPTEST部署时，在项目根目录运行：
 

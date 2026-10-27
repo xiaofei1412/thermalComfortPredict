@@ -1,0 +1,49 @@
+{
+  "actions": 464,
+  "native_interval_points": 14384,
+  "kpi_max_absolute_difference": 1.4210854715202004e-14,
+  "calibration_test_initializations": 0,
+  "same_response_prelude": true,
+  "all_decisions_replayed": true,
+  "development_scores_recomputed": true,
+  "old_source_hashes_unchanged": 228,
+  "new_registered_episodes": 4,
+  "protected_windows_unconsumed": [
+    {
+      "id": "intent_calibration300",
+      "role": "calibration",
+      "start_day": 300,
+      "warmup_start_day": 293,
+      "end_day": 302
+    },
+    {
+      "id": "intent_test329",
+      "role": "test",
+      "start_day": 329,
+      "warmup_start_day": 322,
+      "end_day": 331
+    },
+    {
+      "id": "intent_test357",
+      "role": "test",
+      "start_day": 357,
+      "warmup_start_day": 350,
+      "end_day": 359
+    }
+  ],
+  "closed_entry_checks": {
+    "collect": {
+      "exit_code": 1,
+      "reason": "closed phase rejected before data mutation",
+      "actual_rejection_reason": "C2已收尾封存，禁止新增采集/拟合"
+    },
+    "evaluate": {
+      "exit_code": 1,
+      "reason": "closed phase rejected before data mutation",
+      "actual_rejection_reason": "C2已收尾封存，禁止新增采集/拟合"
+    }
+  },
+  "operation_ledger_unchanged_after_block_checks": true,
+  "future_label_invariance_origin_horizon_pairs": 168,
+  "global_temperature_energy_RMSE_independent_formulas": true
+}

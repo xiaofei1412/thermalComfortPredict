@@ -292,6 +292,18 @@
       "rebuild": "scripts/verify_workbench_live.py generates new run IDs; original session IDs require preserving old files"
     },
     {
+      "id": "residential-c2-development",
+      "tier": "historical-negative",
+      "paths": [
+        "configs/residential_c2_events.json",
+        "reports/residential_c2",
+        "outputs/residential-c2"
+      ],
+      "source": "C2 frozen residential train224/development287 and paired development response; 464 actions",
+      "license": "Derived FMU/weather trajectories; no blanket redistribution permission; virtual intentions are not human observations",
+      "rebuild": "docs/experiments/residential_c2.md in a separate reproduction workspace with original prerequisites; preserve original local files for exact identities. Current round is closed_negative; calibration/test not authorized"
+    },
+    {
       "id": "project-code-license",
       "tier": "distribution-gap",
       "paths": [

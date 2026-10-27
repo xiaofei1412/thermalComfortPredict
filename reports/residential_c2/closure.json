@@ -1,0 +1,17 @@
+{
+  "status": "closed_negative",
+  "selected": null,
+  "reason": "missing_coverage",
+  "refits": 0,
+  "calibration_rounds": 0,
+  "blind_rounds": 0,
+  "assessment_sha256": "2b8c5404fbb918f424bce8558f90dfa939263dfad24b5d3c4649fe68a32db9eb",
+  "further_collection_or_fit_allowed": false,
+  "data_sha256": {
+    "train224\\summary.json": "34dfb98ad7e16348dd9498fce622973668793c9301222a651ba068fad0b53caa",
+    "development287\\summary.json": "a4d3848ac0de0711358bb63d98585dd26e067606dad9c626daa771eace367dac",
+    "response_low287\\summary.json": "b9048af50e89b105e3861a49c834781d6883a8bc8b09bcab473808dbda796c7d",
+    "response_high287\\summary.json": "b2493f84d813f99adb76803e44a7efdd61307299ceb9a9a367817e83008661ea",
+    "operations.json": "343d93ff8dfa063e8638bc33978e542899b02f38eacdd8376f009c710ce8b1d3"
+  }
+}

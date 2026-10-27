@@ -1,0 +1,21 @@
+{
+  "version": "residential_intent_excitation_v1",
+  "cycle_steps": 24,
+  "phases": [
+    {"offset": 0, "base_C": 23.25, "resolution": "unresolved", "events": [
+      {"action": "submit", "person": "A", "kind": "range", "base_C": 23.25, "lower_C": 22.5, "upper_C": 23.25, "ttl_steps": 4}]},
+    {"offset": 4, "base_C": 18.0, "resolution": "base", "check_rejection": true, "events": [
+      {"action": "submit", "person": "A", "kind": "target", "base_C": 18.0, "target_C": 26.0, "ttl_steps": 4}]},
+    {"offset": 8, "base_C": 18.0, "resolution": "unresolved", "events": []},
+    {"offset": 12, "base_C": 22.5, "resolution": "A", "check_rejection": true, "events": [
+      {"action": "submit", "person": "A", "kind": "warmer", "base_C": 22.5, "ttl_steps": 16},
+      {"action": "submit", "person": "B", "kind": "cooler", "base_C": 22.5, "ttl_steps": 4}]},
+    {"offset": 16, "base_C": 22.5, "resolution": "unresolved", "events": [
+      {"action": "submit", "person": "A", "kind": "hold", "base_C": 22.5, "ttl_steps": 8}]},
+    {"offset": 20, "base_C": 18.0, "resolution": "unresolved", "events": [
+      {"action": "withdraw", "person": "A"}]}
+  ],
+  "response": {"prelude_steps": 16, "prelude_C": 21.0, "steps": 24, "setpoints_C": [18.0, 23.25]},
+  "coverage_first": true,
+  "event_lookback_s": 3600
+}

@@ -1,0 +1,88 @@
+{
+  "created_UTC": "2026-10-27T06:24:23.096029+00:00",
+  "source_base_commit": "e6bb10b0e8da7dc2fa1c81905a07cc72e782a840",
+  "files_sha256": {
+    "configs/residential_c.json": "c85d02f11527f19775dbeb930527a6d5aa04a112c789a0e4257bc9794dbc7fbe",
+    "configs/residential_c2_events.json": "9a55a8f30dee9d42a1eb1cd493eb438ec95983668b46f2ed039f3d874c2416dd",
+    "docs/experiments/residential_c2.md": "79d74497bd4ddad065056a9131e40820ca1f985e4cc77f4505d2aaf1a61687de",
+    "thermal_comfort/residential_c2.py": "74ab9d903e5c706879331e4e163cf5d7a2e1f5ce6690d885d8f42376bfca25ab",
+    "tests/test_residential_c2.py": "9dd68bff2b3450d4ba170310e9c8ee19bc775256827c47f264ac3615d2519ce7",
+    "thermal_comfort/greybox.py": "a7c640d178b2054e1c990525afdae526f907367082896f0955e538758126a2d2",
+    "thermal_comfort/solar.py": "cfe2e5225381a093a5efdb36189d8754c7b6453aa987e06908d98b8481cfba0e",
+    "configs/solar_mpc.json": "0334a65b272205bfd21a5795fdf759b6a16ee987d3e5da31f21fae19dee2b27f",
+    "configs/recovery_mpc.json": "73ca063a7963042d60102b0c6aea555bf5fe8afbfa9a1b352487594fc0488286",
+    "configs/mpc.json": "71eafecff7bf2aa912d750baf2de9c8cf2ab8ae58d7029ab496b8451803fb1f8",
+    "configs/dynamics.json": "3e4beff3c8c17604373af5c8b867cc4ab6c7bef4e5a965194f58ac20f01ece72"
+  },
+  "c1_lock_sha256": "979552e87fc4f8564e1b29b54781bbff2385de7bca509dd563fe0c7fb663a0f6",
+  "model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+  "registry_before_sha256": "640aad731a36e530bdc991c8268a96b511cba6f48d56e3d967a4e26f7b0c6f97",
+  "reserved_windows": [
+    {
+      "id": "intent_train224",
+      "role": "train",
+      "start_day": 224,
+      "warmup_start_day": 217,
+      "end_day": 226
+    },
+    {
+      "id": "intent_development287",
+      "role": "development",
+      "start_day": 287,
+      "warmup_start_day": 280,
+      "end_day": 289
+    },
+    {
+      "id": "intent_calibration300",
+      "role": "calibration",
+      "start_day": 300,
+      "warmup_start_day": 293,
+      "end_day": 302
+    },
+    {
+      "id": "intent_test329",
+      "role": "test",
+      "start_day": 329,
+      "warmup_start_day": 322,
+      "end_day": 331
+    },
+    {
+      "id": "intent_test357",
+      "role": "test",
+      "start_day": 357,
+      "warmup_start_day": 350,
+      "end_day": 359
+    }
+  ],
+  "allowed_runs": [
+    [
+      "train224",
+      "train",
+      224,
+      192,
+      null
+    ],
+    [
+      "development287",
+      "development",
+      287,
+      192,
+      null
+    ],
+    [
+      "response_low287",
+      "response",
+      287,
+      40,
+      18.0
+    ],
+    [
+      "response_high287",
+      "response",
+      287,
+      40,
+      23.25
+    ]
+  ],
+  "advance_limit": 464
+}
