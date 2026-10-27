@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "F03": "closed_private_backup_scope",
+  "verified_at_UTC": "2026-10-27T10:46:16.322469+00:00",
+  "verified_at_Asia_Shanghai": "2026-10-27T18:46:16.322469+08:00",
+  "receipt_trusted_git_commit": "fb34c60e3d9fac36ce02642c6a2890408d54f8b1",
+  "receipt_sha256": "fc121485688916a99be91278739cd27f9f9e0fad30aa20973dbf0c28a9461645",
+  "remote_provenance": {
+    "provider": "Baidu Netdisk",
+    "visibility": "owner private backup as authorized",
+    "transport_actor": "project owner",
+    "evidence": "owner explicitly confirmed upload and fresh download into download directory in this chat",
+    "agent_actions": "verify user-downloaded local file and restore independently; no cloud UI access or bypass",
+    "cloud_contents_independently_observed_by_agent": false,
+    "download_path": "outputs/release-final/download/thermalComfortPredict-private-20261027-r2.7z"
+  },
+  "archive": {
+    "archive": "thermalComfortPredict-private-20261027-r2.7z",
+    "archive_bytes": 1019507886,
+    "archive_sha256": "460f54c8b41a9b4d6a9a5b14330d3d2a105174035d37aecc1d57d8e88852c550",
+    "contents_sha256": "95da606c28cd00f38075e2f09443fe5e773328d4bceec515ce40da8ec4b31329"
+  },
+  "restore": {
+    "encrypted_sha256_verified": true,
+    "decrypted_files_verified": 8,
+    "source_files_restored": 466,
+    "research_files_restored": 4164,
+    "upstream_files_restored": 2,
+    "restored_source": "outputs\\release-final\\remote-restore\\restored-source",
+    "new_research_experiments": 0,
+    "remote_provenance": "caller must document actual remote download; local restore alone is not off-site verification"
+  },
+  "supplement_manifest_entries_verified": 60,
+  "dependency_wheels_verified": 45,
+  "replay": {
+    "sample_id": "0a2e84c3cb66",
+    "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+    "replayed_actions": 5,
+    "native_interval_points": 155,
+    "kpi_max_absolute_difference": 3.469446951953614e-18,
+    "c2_stop_decision_reproduced": true,
+    "new_simulations": 0,
+    "new_model_fits": 0,
+    "scope": "archived trajectory and decision audit; not model retraining or a new control evaluation"
+  },
+  "c2": {
+    "actions": 464,
+    "native_interval_points": 14384,
+    "kpi_max_absolute_difference": 1.4210854715202004e-14,
+    "calibration_test_initializations": 0,
+    "same_response_prelude": true,
+    "all_decisions_replayed": true,
+    "development_scores_recomputed": true
+  },
+  "office_status": "closed_negative",
+  "execution": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "reused_previously_validated_research_venv": true,
+    "module_imports_from_recovered_source": {
+      "modules": [
+        "thermal_comfort/__init__.py",
+        "thermal_comfort/office_final_round.py",
+        "scripts/verify_delivery.py"
+      ],
+      "python": "3.14.3",
+      "root": "D:\\thermalComfortPredict\\outputs\\release-final\\remote-restore\\restored-source"
+    }
+  },
+  "local_artifacts": [
+    {
+      "path": "outputs/release-final/download/thermalComfortPredict-private-20261027-r2.7z",
+      "bytes": 1019507886,
+      "sha256": "460f54c8b41a9b4d6a9a5b14330d3d2a105174035d37aecc1d57d8e88852c550"
+    },
+    {
+      "path": "outputs/release-final/remote-restore.txt",
+      "bytes": 388,
+      "sha256": "20bccfa3a642e8d38f3a1f35e9cd406be1243984cf7e74be9205b874dfa6f5d3"
+    },
+    {
+      "path": "outputs/release-final/remote-replay.txt",
+      "bytes": 435,
+      "sha256": "8ea4676c57ee247e0b200f7c580e02659f16e3493ce8aa0ec59c76890a455ddd"
+    },
+    {
+      "path": "outputs/release-final/remote-c2.txt",
+      "bytes": 247,
+      "sha256": "40b68bdd27a5133148a9fad26ca6fc7dafa3cd4f925ce35fea657d8d1d8f7946"
+    },
+    {
+      "path": "outputs/release-final/remote-office.txt",
+      "bytes": 1708,
+      "sha256": "d0f010afea694e1fe63b0cd2b92d803ed7155d9ac6ae06492c6da9231da81121"
+    },
+    {
+      "path": "outputs/release-final/remote-restore/restore-verification.json",
+      "bytes": 415,
+      "sha256": "575fd262b29d947c9e446554687799e82f945ec94175ab152cb3a8057728326e"
+    }
+  ],
+  "new_model_experiments": 0,
+  "new_fmu_initializations": 0,
+  "new_calibration_rounds": 0,
+  "new_blind_rounds": 0,
+  "scope": [
+    "private disaster recovery; public delivery is reviewed source plus small replay sample",
+    "historical data and upstream licenses unchanged; no public archive sharing or full-history licensing claim",
+    "source rc4 and archive r2 are immutable snapshots; later acceptance docs are recorded separately in Git",
+    "key remains separate; no new encryption, key upload, account access or scheduled backup"
+  ],
+  "disposition": {
+    "A": "complete",
+    "B": "complete",
+    "C": "closed_negative",
+    "D": "not_entered_by_stop_condition",
+    "E": "not_entered_by_stop_condition",
+    "F": "complete_with_declared_source_and_private_backup_scope"
+  },
+  "final_asset_audit": {
+    "assets": 29,
+    "missing_assets": [],
+    "hash_mismatches": [],
+    "direct_dependency_mismatches": []
+  },
+  "changed_markdown_local_links": "passed",
+  "research_source_and_protocol_unchanged": true
+}

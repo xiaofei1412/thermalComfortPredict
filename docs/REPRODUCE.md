@@ -32,7 +32,7 @@ py -3.14 -m venv .venv
 
 ## 本地原始研究证据
 
-`outputs/delivery-f/private-research-evidence.zip`及并列`.manifest.json`复制了本机研究目录与历史CSV，逐文件读取校验。它不提交GitHub，是同一磁盘的副本，**不是异地备份，也未确认完整数据公开分发权限**。
+`outputs/delivery-f/private-research-evidence.zip`及并列`.manifest.json`复制了本机研究目录与历史CSV，逐文件读取校验。该本机zip不提交GitHub；它及核验依赖已封装于r2私有加密归档，经所有者百度网盘上传/重新下载后独立恢复通过，见[远程验收](../reports/release-final/remote-verification.json)。完整数据公开分发权限未因此改变。
 
 C2只读重算需原研究依赖；在独立副本恢复原路径后运行：
 
@@ -45,7 +45,7 @@ py -3.14 -m venv .venv-research
 ./.venv-research/Scripts/python.exe -m thermal_comfort.office_final_round check
 ```
 
-归档内部的路径和SHA对应原始字节与原运行平台，恢复时不要改JSON换行或重命名冻结文件；原始Windows相对路径需在对应平台恢复。本次4,164文件本机恢复及新完整环境中的C2/办公室只读复核已通过；完整历史数据/权重包尚无经过验收的远程获取入口，不能宣称第三方已经能够一键重跑全部研究。
+归档内部的路径和SHA对应原始字节与原运行平台，恢复时不要改JSON换行或重命名冻结文件；原始Windows相对路径需在对应平台恢复。本机及所有者私有网盘重新下载后的4,164研究文件恢复、C2/办公室只读复核均通过；完整历史包没有公开下载入口，第三方复核仍受数据/资产访问条件约束，不宣称全部研究可公开一键重跑。
 
 仓库维护者的完整回归需要完整研究环境和历史CSV：`python -m unittest discover -s tests -v`，本轮在新完整环境通过。不要把这一命令写成轻量源码包已支持的承诺。
 
@@ -53,6 +53,6 @@ py -3.14 -m venv .venv-research
 
 维护者在Git工作区审查并提交/暂存交付文件后，运行`python -m scripts.package_delivery source --output outputs/deployment-f2/thermal-rule-workbench-rc2.zip`。脚本取已审查的Git索引字节，避免Windows换行差异或未审查工作区修改混入，并从zip读回每个文件核对；输出须为新文件名，已有rc1/rc2不可覆盖。包外`.manifest.json`列出全部文件摘要和当前Git基础提交。私有证据包用`private`模式，禁止作为源码候选上传。最终用户运行已解压的工作台不需要Git。
 
-发布条件见[来源说明](../THIRD_PARTY_NOTICES.md)。F02按[实测Windows/WSL范围](../reports/deployment-f2/REPORT.md)关闭；自有代码MIT已由所有者确认，适用范围及第三方/历史数据例外见[LICENSE_SCOPE](../LICENSE_SCOPE.md)。百度网盘私有灾备的真实传输/恢复尚待完成，见[交接](BACKUP.md)。不创建包含原CSV的自动GitHub Release，住宅与办公室封存不重启，保护窗口不消耗。
+发布条件见[来源说明](../THIRD_PARTY_NOTICES.md)。F02按[实测Windows/WSL范围](../reports/deployment-f2/REPORT.md)关闭；自有代码MIT已由所有者确认，适用范围及第三方/历史数据例外见[LICENSE_SCOPE](../LICENSE_SCOPE.md)。百度网盘私有灾备已由所有者传输、代理校验下载及独立恢复，F03按范围关闭，见[记录](BACKUP.md)。不创建包含原CSV的自动GitHub Release，住宅与办公室封存不重启，保护窗口不消耗。
 
-F02候选`outputs/deployment-f2/thermal-rule-workbench-rc2.zip`保留；MIT增量候选使用新文件名`outputs/release-final/thermal-rule-workbench-rc4.zip`，从审查索引打包并附manifest，不覆盖旧包。完整依赖wheel已纳入本轮私有备份范围，远程恢复前不宣称异地保存完成。
+F02候选`outputs/deployment-f2/thermal-rule-workbench-rc2.zip`保留；MIT增量候选使用新文件名`outputs/release-final/thermal-rule-workbench-rc4.zip`，从审查索引打包并附manifest，不覆盖旧包。完整依赖wheel已纳入r2私有备份，重新下载后45个wheel逐项摘要通过；rc4/r2字节不重建，后续闭合文档和远程验收记录在Git中另行保存。

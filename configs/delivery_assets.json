@@ -328,7 +328,7 @@
       ],
       "source": "F source-workspace candidate and read-back verified private local archive",
       "license": "Project-owned code MIT; historical CSV provenance unresolved; private archive not publicly redistributed",
-      "rebuild": "docs/DEPLOYMENT.md; Windows/WSL scoped clean deployment and local restore passed; off-site destination and access remain open"
+      "rebuild": "docs/DEPLOYMENT.md and docs/BACKUP.md; Windows/WSL scoped deployment plus owner-private Baidu download/restore passed; no public full-data distribution"
     },
     {
       "id": "deployment-acceptance-source",
@@ -363,8 +363,8 @@
         "reports/release-final"
       ],
       "source": "Owner-authorized Baidu private backup; standard encrypted archive, local recovery tools and public non-secret receipt",
-      "license": "Project-owned scripts/docs MIT; complete research archive stays private; remote restore not yet verified",
-      "rebuild": "docs/BACKUP.md; owner uploads and re-downloads, trusted SHA receipt and fresh-directory restore required"
+      "license": "Project-owned scripts/docs MIT; owner-private remote restore verified; complete research archive not publicly redistributed",
+      "rebuild": "docs/BACKUP.md; passed remote-verification.json records owner transfer, trusted SHA, fresh directory and read-only checks; future snapshots require new verification"
     }
   ]
 }

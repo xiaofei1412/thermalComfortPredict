@@ -19,7 +19,7 @@ py -3.14 -m venv .venv
 ./scripts/start_workbench.ps1 -PythonPath ./.venv/Scripts/python.exe
 ```
 
-打开终端打印的URL（默认8765），历史列表选`0a2e84`。新建实时仿真才需要[部署BOPTEST](docs/experiments/simulation.md)。[安装与边界](docs/workbench.md) · [F验收/发布缺口](reports/delivery-f/REPORT.md)。[F02独立完整部署与本机恢复](reports/deployment-f2/REPORT.md)已按Windows/WSL范围通过；自有代码已按所有者确认采用[MIT](LICENSE)，[第三方/历史数据例外](LICENSE_SCOPE.md)独立保留；百度网盘私有备份的远程传输/恢复仍待完成，见[交接](docs/BACKUP.md)，不宣称全部研究已公开或交付全部结束。
+打开终端打印的URL（默认8765），历史列表选`0a2e84`。新建实时仿真才需要[部署BOPTEST](docs/experiments/simulation.md)。[安装与边界](docs/workbench.md) · [F验收/发布缺口](reports/delivery-f/REPORT.md)。[F02独立完整部署与本机恢复](reports/deployment-f2/REPORT.md)已按Windows/WSL范围通过；自有代码已按所有者确认采用[MIT](LICENSE)，[第三方/历史数据例外](LICENSE_SCOPE.md)独立保留；所有者完成百度网盘上传/重新下载后，独立恢复与只读复核通过，F03关闭，本轮按源码目录＋小样例＋私有灾备范围交付验收结束，见[验收报告](reports/release-final/REPORT.md)。完整研究包不公开，C2/办公室负结果保持。
 
 ## 项目入口
 
