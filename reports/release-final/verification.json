@@ -1,0 +1,86 @@
+{
+  "status": "local_delivery_verified_remote_transfer_pending",
+  "source_candidate_commit": "aee46cc06df925e016a745630b735da96f32eef7",
+  "authorization": {
+    "self_owned_code_mit": "explicitly confirmed by owner in this chat",
+    "backup_destination": "owner Baidu Netdisk private storage"
+  },
+  "full_regression": {
+    "passed": 203,
+    "seconds": 7.647
+  },
+  "local_archive": {
+    "archive": "thermalComfortPredict-private-20261027-r2.7z",
+    "archive_bytes": 1019507886,
+    "archive_sha256": "460f54c8b41a9b4d6a9a5b14330d3d2a105174035d37aecc1d57d8e88852c550",
+    "contents_sha256": "95da606c28cd00f38075e2f09443fe5e773328d4bceec515ce40da8ec4b31329",
+    "encryption": "standard 7zAES AES-256; encrypted headers",
+    "schema": 2,
+    "upstream_prerequisites_files": 2,
+    "library": "py7zr 1.1.4",
+    "password_required_for_listing": true,
+    "source_archive_sha256": "d9001513c8c8627765d4dbbec98474e95911fa060572eb426e477335c5c08894",
+    "research_archive_sha256": "f78250f1db43cc3de0c85fe93113bd49daf14c0c8adf4607a15c97296dd5f82e",
+    "supplement_members": 61,
+    "wheel_count": 45,
+    "contains_recovery_key": false,
+    "transfer_status": "prepared_local_only_not_uploaded_or_downloaded",
+    "destination_selected": "owner Baidu Netdisk private directory; no public share",
+    "key_location_hint": "outputs/release-final/key/RECOVERY_KEY_R2.txt (local only; not uploaded)"
+  },
+  "local_restore": {
+    "encrypted_sha256_verified": true,
+    "decrypted_files_verified": 8,
+    "source_files_restored": 466,
+    "research_files_restored": 4164,
+    "upstream_files_restored": 2,
+    "restored_source": "outputs\\release-final\\local-restore-r2\\restored-source",
+    "new_research_experiments": 0,
+    "remote_provenance": "caller must document actual remote download; local restore alone is not off-site verification"
+  },
+  "replay": {
+    "sample_id": "0a2e84c3cb66",
+    "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+    "replayed_actions": 5,
+    "native_interval_points": 155,
+    "kpi_max_absolute_difference": 3.469446951953614e-18,
+    "c2_stop_decision_reproduced": true,
+    "new_simulations": 0,
+    "new_model_fits": 0,
+    "scope": "archived trajectory and decision audit; not model retraining or a new control evaluation"
+  },
+  "c2": {
+    "actions": 464,
+    "native_interval_points": 14384,
+    "kpi_max_absolute_difference": 1.4210854715202004e-14,
+    "calibration_test_initializations": 0,
+    "same_response_prelude": true,
+    "all_decisions_replayed": true,
+    "development_scores_recomputed": true
+  },
+  "office_status": "closed_negative",
+  "supplement_members_verified": 60,
+  "dependency_wheels_verified": 45,
+  "key_permissions": {
+    "only_current_user_allowed": true,
+    "parent_inheritance_disabled": true
+  },
+  "key_not_tracked_or_uploaded": true,
+  "first_restore_failure": {
+    "reason": "missing pinned residential FMU required by office freeze chain",
+    "failed_log_sha256": "4af9ec95f570ebe9f89ba400223ff9ffd0ff6839e9619218bdf5f4b87131d583",
+    "resolved_by": "r2 upstream prerequisites manifest; original SHA retained"
+  },
+  "browser_block": {
+    "origin": "https://pan.baidu.com",
+    "reason": "site-safety policy denied observation and prohibited alternate access workarounds",
+    "workaround_attempted": false,
+    "remote_upload_performed": false,
+    "remote_download_verified": false
+  },
+  "new_research_experiments": 0,
+  "new_fmu_actions": 0,
+  "new_calibration_rounds": 0,
+  "new_blind_rounds": 0,
+  "F03": "pending owner manual transfer and verified remote restore"
+}

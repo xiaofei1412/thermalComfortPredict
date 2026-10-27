@@ -1,0 +1,19 @@
+{
+  "archive": "thermalComfortPredict-private-20261027-r2.7z",
+  "archive_bytes": 1019507886,
+  "archive_sha256": "460f54c8b41a9b4d6a9a5b14330d3d2a105174035d37aecc1d57d8e88852c550",
+  "contents_sha256": "95da606c28cd00f38075e2f09443fe5e773328d4bceec515ce40da8ec4b31329",
+  "encryption": "standard 7zAES AES-256; encrypted headers",
+  "schema": 2,
+  "upstream_prerequisites_files": 2,
+  "library": "py7zr 1.1.4",
+  "password_required_for_listing": true,
+  "source_archive_sha256": "d9001513c8c8627765d4dbbec98474e95911fa060572eb426e477335c5c08894",
+  "research_archive_sha256": "f78250f1db43cc3de0c85fe93113bd49daf14c0c8adf4607a15c97296dd5f82e",
+  "supplement_members": 61,
+  "wheel_count": 45,
+  "contains_recovery_key": false,
+  "transfer_status": "prepared_local_only_not_uploaded_or_downloaded",
+  "destination_selected": "owner Baidu Netdisk private directory; no public share",
+  "key_location_hint": "outputs/release-final/key/RECOVERY_KEY_R2.txt (local only; not uploaded)"
+}
