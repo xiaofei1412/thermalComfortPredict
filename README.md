@@ -19,6 +19,7 @@
 
 ## 项目入口
 
+- [V1.0收尾计划：阶段、验收、停止条件与持续更新](ROADMAP.md)
 - [交互工作台：启动、操作、保存与回放](docs/workbench.md)
 - [第一版简要交付报告：做了什么、原因与后续方向](reports/DELIVERY_V1.md)
 - [PROJECT.md：项目总览、里程碑与阶段结果](PROJECT.md)
