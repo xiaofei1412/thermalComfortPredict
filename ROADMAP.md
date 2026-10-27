@@ -1,6 +1,6 @@
 # V1.0收尾计划
 
-> **当前新开发计划：[第二版强化学习路线](ROADMAP_V2.md)。** 2026-10-27已建立总体框架，下一步V2-0，尚未运行RL训练或新仿真。下方完整保留已验收结束的V1收尾计划及历史记录；新任务不重启其C2/办公室攻关，也不重置旧数据用途。
+> **当前新开发计划：[第二版强化学习路线](ROADMAP_V2.md)。** 2026-10-27已完成[V2-0基线/数据角色协议](reports/v2_0/REPORT.md)，下一步V2-1接口验证；无新RL训练或仿真。下方完整保留已验收结束的V1收尾计划及历史记录；新任务不重启其C2/办公室攻关，也不重置旧数据用途。
 
 更新日期：2026-10-27。状态依据[PROJECT](PROJECT.md)、[当前交付报告](DELIVERY.md)、[工作台验收](reports/workbench/REPORT.md)、[A核查](reports/delivery-a/REPORT.md)、[B需求](reports/demand-b/REPORT.md)、[C1预注册](reports/residential_c/REPORT.md)、[C2收尾](reports/residential_c2/REPORT.md)及[F候选验收](reports/delivery-f/REPORT.md)。A/B完成，C2按条件停止，D/E不进入；F源码候选、离线及独立完整部署/本机恢复验收完成，自有代码MIT已落实，百度网盘重新下载/独立恢复已通过，F03按私有灾备范围关闭，本轮交付验收完成。
 

@@ -1,0 +1,277 @@
+{
+  "protocol": "residential_rl_v2_comparison_1",
+  "status": "protocol_ready_for_V2_1_not_training_qualified",
+  "files_sha256": {
+    "configs/v2_0.json": "999440e929d1ebdd0e54ee9641e844bdec958095fd3519dc8c88b6384b57b50e",
+    "thermal_comfort/v2_protocol.py": "d027c603d69d9152ceba06a8b3c3a97f2f56c1d8865ec50728c1f303ddc2025d",
+    "docs/experiments/v2_0.md": "3f45423f096ffaabaef5f0596dda50148fc3f4cbf01c6d4ba099fc7cc763afc6",
+    "tests/test_v2_protocol.py": "d26ba82917a5def9d6851d07541e578b8432ffdf1663059a0b23e022dbe01fec"
+  },
+  "v1_baseline": {
+    "files_sha256": {
+      "thermal_comfort/solar.py": "cfe2e5225381a093a5efdb36189d8754c7b6453aa987e06908d98b8481cfba0e",
+      "thermal_comfort/greybox.py": "a7c640d178b2054e1c990525afdae526f907367082896f0955e538758126a2d2",
+      "thermal_comfort/mpc.py": "a55356058539752019eb7916ab1b441d8aa48575c6aa257e1dacee487283d202",
+      "thermal_comfort/recovery.py": "a4ed0b68e4a00facfa8f1e5273ec7caa9b05e2af19134d45207358a73453c94f",
+      "thermal_comfort/simulation.py": "dad8f1dd8447d63e484ae5588f0cb5fcb868303b1fe2c24c8e1fbb059a90388f",
+      "configs/solar_mpc.json": "0334a65b272205bfd21a5795fdf759b6a16ee987d3e5da31f21fae19dee2b27f",
+      "configs/recovery_mpc.json": "73ca063a7963042d60102b0c6aea555bf5fe8afbfa9a1b352487594fc0488286",
+      "configs/mpc.json": "71eafecff7bf2aa912d750baf2de9c8cf2ab8ae58d7029ab496b8451803fb1f8",
+      "configs/dynamics.json": "3e4beff3c8c17604373af5c8b867cc4ab6c7bef4e5a965194f58ac20f01ece72",
+      "configs\\generalization.json": "aa3246616b32eb92e5d80ac4e0daa542e41e44932360c0e3043f36efb44e0464",
+      "thermal_comfort/generalization.py": "3ad174f155049ba8e3d9ef5c905cb41230b761e84f190ed7ed97fcfcd1f09cdf",
+      "docs/experiments/generalization.md": "2ec2ce5478889de51bc83eeb836e4a27d1b5e399b9232662eb0f18cd5e941505"
+    },
+    "model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+    "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+    "source_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+    "effective_config": {
+      "dynamics_config": "configs/dynamics.json",
+      "observer_mass_gain": 0.2,
+      "residual_alpha": 10.0,
+      "residual_weights": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "validation_selection_days": 3,
+      "validation_calibration_start_day": 4,
+      "fit_max_nfev": 150,
+      "heat_max_kW": 15.0,
+      "horizon_steps": 24,
+      "move_block_steps": 6,
+      "moves_K": [
+        -0.5,
+        0.0,
+        0.5
+      ],
+      "action_min_C": 18.0,
+      "action_max_C": 23.25,
+      "slew_K_per_step": 0.5,
+      "margin_quantile": 0.95,
+      "sensor_margin_K": 0.1,
+      "initial_rule_steps": 8,
+      "support_tolerance": [
+        0.5,
+        1.0,
+        100.0
+      ],
+      "move_weight": 0.05,
+      "rule_occupied_offset_K": 0.5,
+      "rule_unoccupied_offset_K": 3.0,
+      "guard_margin_K": 0.2,
+      "abort_min_C": 18.0,
+      "abort_max_C": 35,
+      "response": {
+        "start_days": [
+          168,
+          189
+        ],
+        "prelude_steps": 16,
+        "steps": 32,
+        "setpoints_C": [
+          18.0,
+          22.0,
+          23.25
+        ]
+      },
+      "closed_loop": {
+        "start_days": [
+          98,
+          119
+        ],
+        "days": 7,
+        "controllers": [
+          "guarded_rule",
+          "mpc"
+        ]
+      },
+      "base_config": "configs/recovery_mpc.json",
+      "extra_episodes": [
+        {
+          "id": "warm_train_day063",
+          "split": "train",
+          "start_day": 63,
+          "seed": 401
+        },
+        {
+          "id": "warm_validation_day084",
+          "split": "validation",
+          "start_day": 84,
+          "seed": 402
+        }
+      ],
+      "extra_nominal_C": 23.25,
+      "extra_levels_K": [
+        -5.25,
+        -2.25,
+        0,
+        0.75
+      ],
+      "extra_hold_steps": 16,
+      "idle_heat_threshold_kW": 0.05,
+      "power_transition_kW": 0.5,
+      "recovery_lookahead_steps": 16,
+      "unoccupied_floor_C": 20.5,
+      "recovery_trigger_K": 0.3,
+      "recovery_release_K": 0.6,
+      "forecast_temperature_error_K": 2.0,
+      "forecast_solar_error_fraction": 0.25,
+      "weather_modes": [
+        "perfect",
+        "warm_bias",
+        "cold_bias"
+      ],
+      "test_start_days": [
+        238,
+        273,
+        315
+      ],
+      "test_days": 7,
+      "response_start_days": [
+        84,
+        90
+      ],
+      "new_episodes": [
+        {
+          "id": "solar_train147",
+          "split": "train",
+          "start_day": 147,
+          "seed": 501
+        },
+        {
+          "id": "solar_validation168",
+          "split": "validation",
+          "start_day": 168,
+          "seed": 601
+        },
+        {
+          "id": "solar_validation189",
+          "split": "validation",
+          "start_day": 189,
+          "seed": 602
+        }
+      ],
+      "validation_start_days": [
+        168,
+        189
+      ],
+      "controllers": [
+        "guarded_rule",
+        "minimum_heat",
+        "solar_mpc"
+      ],
+      "mass_window_steps": 16,
+      "mass_ridge": 0.001,
+      "solar_coast_buffer_K": 0.2,
+      "collection_nominal_C": 21.0,
+      "collection_levels_K": [
+        -3.0,
+        -0.5,
+        1.0
+      ],
+      "minimum_trigger_K": 0.3,
+      "minimum_release_K": 0.6
+    },
+    "model_data_lineage": [
+      {
+        "id": "train_day014_seed101",
+        "split": "train",
+        "original_role": "train",
+        "warmup_start_s": 604800.0,
+        "start_s": 1209600.0,
+        "end_s": 1814400.0,
+        "source": "outputs\\excitation\\train_day014_seed101__excitation"
+      },
+      {
+        "id": "train_day035_seed102",
+        "split": "train",
+        "original_role": "train",
+        "warmup_start_s": 2419200.0,
+        "start_s": 3024000.0,
+        "end_s": 3628800.0,
+        "source": "outputs\\excitation\\train_day035_seed102__excitation"
+      },
+      {
+        "id": "train_day056_seed103",
+        "split": "train",
+        "original_role": "train",
+        "warmup_start_s": 4233600.0,
+        "start_s": 4838400.0,
+        "end_s": 5443200.0,
+        "source": "outputs\\excitation\\train_day056_seed103__excitation"
+      },
+      {
+        "id": "test_day119_seed302",
+        "split": "train",
+        "original_role": "test",
+        "warmup_start_s": 9676800.0,
+        "start_s": 10281600.0,
+        "end_s": 10886400.0,
+        "source": "outputs\\excitation\\test_day119_seed302__excitation"
+      },
+      {
+        "id": "warm_train_day063",
+        "split": "train",
+        "original_role": "train",
+        "warmup_start_s": 4838400.0,
+        "start_s": 5443200.0,
+        "end_s": 6048000.0,
+        "source": "outputs\\recovery-calibration\\warm_train_day063__warm_excitation"
+      },
+      {
+        "id": "solar_train147",
+        "split": "train",
+        "original_role": "train",
+        "warmup_start_s": 12096000.0,
+        "start_s": 12700800.0,
+        "end_s": 13305600.0,
+        "source": "outputs\\solar-data\\solar_train147__solar_excitation"
+      },
+      {
+        "id": "solar_validation168",
+        "split": "validation",
+        "original_role": "validation",
+        "warmup_start_s": 13910400.0,
+        "start_s": 14515200.0,
+        "end_s": 15120000.0,
+        "source": "outputs\\solar-data\\solar_validation168__solar_excitation"
+      },
+      {
+        "id": "solar_validation189",
+        "split": "validation",
+        "original_role": "validation",
+        "warmup_start_s": 15724800.0,
+        "start_s": 16329600.0,
+        "end_s": 16934400.0,
+        "source": "outputs\\solar-data\\solar_validation189__solar_excitation"
+      },
+      {
+        "id": "day238",
+        "split": "test",
+        "warmup_start_s": 19958400,
+        "start_s": 20563200,
+        "end_s": 21168000
+      },
+      {
+        "id": "day273",
+        "split": "test",
+        "warmup_start_s": 22982400,
+        "start_s": 23587200,
+        "end_s": 24192000
+      },
+      {
+        "id": "day315",
+        "split": "test",
+        "warmup_start_s": 26611200,
+        "start_s": 27216000,
+        "end_s": 27820800
+      }
+    ],
+    "manifest_sha256": "f91d3ddc750903152084933505cafaa68f9aefcfbb07fb072ca4a1602b5e6bc7",
+    "model_loaded_or_refitted": false
+  },
+  "old_c2_freeze_sha256": "152949462a15ab21d39cd69412c177b624f1b4cc2daf656f9c052bf80f588569",
+  "old_c2_closure_sha256": "c7a74f2f5c8b1508bc332df2821f291ec59f28e8ec66b0967d50711ede9e9fc4",
+  "audit_sha256": "805adc72a6e742aa39ef5eb665cd9b83af8a7476061f59c2673123e753a402e0"
+}

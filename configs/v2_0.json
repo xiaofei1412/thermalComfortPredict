@@ -1,0 +1,98 @@
+{
+  "protocol": "residential_rl_v2_comparison_1",
+  "phase": "V2-0",
+  "v1_delivery_commit": "da4c803249d76090f1456bffabf05fc799fc297c",
+  "v1_policy_anchor": "d156645b93cd289081b1c8f0755b65121a9c83b0",
+  "environment": {
+    "version": "0.9.0",
+    "source_revision": "9b1610bf7a108826bb3d22c72bffd2d71d7bb0a9",
+    "case": "bestest_hydronic_heat_pump",
+    "area_m2": 192,
+    "fmu_sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+    "step_s": 900,
+    "native_interval_s": 30,
+    "warmup_days": 7,
+    "episode_days": 7,
+    "forecast_steps": 48,
+    "history_steps": 16,
+    "common_rule_prefix_steps": 8,
+    "price_scenario": "constant"
+  },
+  "action": {
+    "input": "oveTSet_u",
+    "activate": "oveTSet_activate",
+    "min_C": 18.0,
+    "max_C": 23.25,
+    "max_delta_C": 0.5,
+    "rl_normalized_delta_range": [-1, 1],
+    "abort_temperature_C": [18, 35]
+  },
+  "baselines": [
+    {"id": "v1_guarded_rule", "class": "thermal_comfort.solar.SolarController", "kind": "guarded_rule", "primary": true},
+    {"id": "v1_solar_mpc", "class": "thermal_comfort.solar.SolarController", "kind": "solar_mpc", "primary": true},
+    {"id": "v1_minimum_heat", "class": "thermal_comfort.solar.SolarController", "kind": "minimum_heat", "primary": false}
+  ],
+  "baseline_model": "outputs/solar-selected/model.joblib",
+  "baseline_model_sha256": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+  "baseline_freeze": "outputs/generalization-freeze/freeze.json",
+  "baseline_manifest": "outputs/solar-selected/manifest.json",
+  "baseline_split_manifest": "outputs/solar-selected/split_manifest.json",
+  "baseline_config_chain": ["configs/mpc.json", "configs/recovery_mpc.json", "configs/solar_mpc.json"],
+  "forecast_points": ["LowerSetp[1]", "UpperSetp[1]", "Occupancy[1]", "TDryBul", "HGloHor", "PriceElectricPowerConstant", "EmissionsElectricPower"],
+  "weather_modes": ["perfect", "warm_bias", "cold_bias"],
+  "weather_bias": {"temperature_K": 2.0, "solar_fraction": 0.25, "ramp_seconds": 21600},
+  "episodes": [
+    {"id": "train014", "role": "train", "start_day": 14},
+    {"id": "train035", "role": "train", "start_day": 35},
+    {"id": "train056", "role": "train", "start_day": 56},
+    {"id": "train063", "role": "train", "start_day": 63},
+    {"id": "train119", "role": "train", "start_day": 119},
+    {"id": "train147", "role": "train", "start_day": 147},
+    {"id": "development084", "role": "development", "start_day": 84},
+    {"id": "development168", "role": "development", "start_day": 168},
+    {"id": "development189", "role": "development", "start_day": 189},
+    {"id": "holdout210", "role": "holdout", "start_day": 210},
+    {"id": "holdout259", "role": "holdout", "start_day": 259},
+    {"id": "holdout342", "role": "holdout", "start_day": 342},
+    {"id": "historical238", "role": "historical_regression", "start_day": 238}
+  ],
+  "legacy_protected": [
+    {"id": "intent_calibration300", "start_day": 300, "days": 2, "warmup_days": 7},
+    {"id": "intent_test329", "start_day": 329, "days": 2, "warmup_days": 7},
+    {"id": "intent_test357", "start_day": 357, "days": 2, "warmup_days": 7}
+  ],
+  "data_rules": {
+    "year_days": 365,
+    "v2_role_isolation_includes_warmup_and_forecast": true,
+    "v1_weather_exposure": "historically_known_same_TMY",
+    "v1_rows_used_in_rl_replay": false,
+    "heldout_metrics_before_policy_freeze": false,
+    "same_role_overlaps_are_not_independent_episodes": true,
+    "v1_protected_initialization_or_labels_allowed": false,
+    "historical_forecast_tail_bound_days": 0.5
+  },
+  "learning": {
+    "authorized_in_this_phase": false,
+    "algorithms": ["SAC", "PPO", "TD3"],
+    "seed_ids": [11, 23, 37],
+    "maximum_development_configs_per_algorithm": 2,
+    "fmustep_budget": null,
+    "reward_parameters": null,
+    "required_before_training": ["V2-1_interface_and_cost_gate", "V2-2_development_baseline_gate", "learning_budget_reward_and_normalization_lock"]
+  },
+  "comparison_gates": {
+    "status": "registered_before_V2_control_results",
+    "active_reference_energy_kWh_min": 1.0,
+    "saving_relative_min": 0.02,
+    "saving_absolute_kWh_min": 0.1,
+    "cold_and_hot_degree_hour_increase_tolerance": 0.000001,
+    "cold_and_hot_duration_increase_s_tolerance": 0.000001,
+    "cold_and_hot_max_deviation_increase_K_tolerance": 0.00001,
+    "low_load_energy_increase_kWh_tolerance": 0.01,
+    "rl_fallback_fraction_max_excluding_common_prefix": 0.2,
+    "all_registered_seeds_must_pass_per_condition": true,
+    "mechanical_violations_max": 0,
+    "aborted_episodes_qualify": false,
+    "actual_load_coverage_gate": "V2-2_pending_no_claim_of_measured_coverage"
+  }
+}
