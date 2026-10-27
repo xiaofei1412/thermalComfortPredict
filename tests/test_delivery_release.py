@@ -61,12 +61,15 @@ class DeliveryReleaseTests(unittest.TestCase):
             root = Path(folder)
             subprocess.run(['git','init','-q'],cwd=root,check=True,capture_output=True)
             (root/'README.md').write_bytes(b'reviewed\n')
-            subprocess.run(['git','add','README.md'],cwd=root,check=True,capture_output=True)
+            (root/'LICENSE').write_bytes(b'reviewed license\n')
+            subprocess.run(['git','add','README.md','LICENSE'],cwd=root,check=True,capture_output=True)
             subprocess.run(['git','-c','user.name=Delivery Test','-c','user.email=test@example.invalid','commit','-qm','fixture'],cwd=root,check=True,capture_output=True)
             (root/'README.md').write_bytes(b'unreviewed changes\n')
+            (root/'LICENSE').write_bytes(b'unreviewed license\n')
             result = package(root,'source',root/'delivery.zip')
             with zipfile.ZipFile(root/'delivery.zip') as archive:
                 self.assertEqual(archive.read('README.md'),b'reviewed\n')
+                self.assertEqual(archive.read('LICENSE'),b'reviewed license\n')
             self.assertTrue(result['read_back_verified'])
 
 

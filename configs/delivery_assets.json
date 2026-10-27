@@ -18,7 +18,7 @@
         "scripts/serve_workbench.py"
       ],
       "source": "this Git repository",
-      "license": "No root code LICENSE found; license decision remains open",
+      "license": "MIT for project-owned code; LICENSE_SCOPE.md exclusions",
       "rebuild": "git clone; docs/workbench.md"
     },
     {
@@ -346,11 +346,25 @@
       "id": "project-code-license",
       "tier": "distribution-gap",
       "paths": [
-        "LICENSE"
+        "LICENSE",
+        "LICENSE_SCOPE.md"
       ],
-      "source": "no root license file at audit start",
-      "license": "Unresolved; this audit does not choose a license for the owner",
-      "rebuild": "Owner decision before a uniformly licensed release; source-visible is not a completed licensing audit"
+      "source": "Owner explicitly confirmed self-owned code authorization and MIT on 2026-10-27",
+      "license": "MIT for project-owned code; explicit third-party/data exclusions",
+      "rebuild": "Tracked LICENSE and LICENSE_SCOPE.md; no claim that historical CSV or upstream assets are MIT"
+    },
+    {
+      "id": "private-backup-handoff",
+      "tier": "delivery",
+      "paths": [
+        "docs/BACKUP.md",
+        "scripts/restore_private_backup.py",
+        "requirements/backup.lock.txt",
+        "reports/release-final"
+      ],
+      "source": "Owner-authorized Baidu private backup; standard encrypted archive, local recovery tools and public non-secret receipt",
+      "license": "Project-owned scripts/docs MIT; complete research archive stays private; remote restore not yet verified",
+      "rebuild": "docs/BACKUP.md; owner uploads and re-downloads, trusted SHA receipt and fresh-directory restore required"
     }
   ]
 }

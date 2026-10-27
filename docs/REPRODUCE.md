@@ -53,6 +53,6 @@ py -3.14 -m venv .venv-research
 
 维护者在Git工作区审查并提交/暂存交付文件后，运行`python -m scripts.package_delivery source --output outputs/deployment-f2/thermal-rule-workbench-rc2.zip`。脚本取已审查的Git索引字节，避免Windows换行差异或未审查工作区修改混入，并从zip读回每个文件核对；输出须为新文件名，已有rc1/rc2不可覆盖。包外`.manifest.json`列出全部文件摘要和当前Git基础提交。私有证据包用`private`模式，禁止作为源码候选上传。最终用户运行已解压的工作台不需要Git。
 
-发布条件见[来源说明](../THIRD_PARTY_NOTICES.md)和[F核查](../reports/delivery-f/REPORT.md)。当前F02按[实测Windows/WSL范围](../reports/deployment-f2/REPORT.md)关闭；[许可及异地存储决策](release-decisions.md)仍待所有者确认。不创建正式GitHub Release、不替所有者选择代码许可证，住宅与办公室封存不重启，校准/盲评窗口不消耗。
+发布条件见[来源说明](../THIRD_PARTY_NOTICES.md)。F02按[实测Windows/WSL范围](../reports/deployment-f2/REPORT.md)关闭；自有代码MIT已由所有者确认，适用范围及第三方/历史数据例外见[LICENSE_SCOPE](../LICENSE_SCOPE.md)。百度网盘私有灾备的真实传输/恢复尚待完成，见[交接](BACKUP.md)。不创建包含原CSV的自动GitHub Release，住宅与办公室封存不重启，保护窗口不消耗。
 
-本轮增量源码候选使用新文件名`outputs/deployment-f2/thermal-rule-workbench-rc2.zip`，提交后从索引打包；rc1不覆盖。完整依赖wheel目录已本机验收，尚未分发或异地保存。
+F02候选`outputs/deployment-f2/thermal-rule-workbench-rc2.zip`保留；MIT增量候选使用新文件名`outputs/release-final/thermal-rule-workbench-rc3.zip`，从审查索引打包并附manifest，不覆盖旧包。完整依赖wheel已纳入本轮私有备份范围，远程恢复前不宣称异地保存完成。
