@@ -1,0 +1,56 @@
+{
+  "status": "closed_fresh_safe_residual_development_only",
+  "utc": "2026-10-28T19:26:18.723303+00:00",
+  "launch_commit": "fdb5910e67db957ea18243c910f167264d5980dd",
+  "closed_counts": {
+    "select": 225,
+    "initialize": 225,
+    "advance": 151200
+  },
+  "completed_seeds": [
+    "SAC-11",
+    "SAC-23",
+    "SAC-37"
+  ],
+  "failed_seeds": [],
+  "not_started": [],
+  "full_tests_before_start": {
+    "count": 354,
+    "seconds": 43.451,
+    "log_sha256": "f883fbc60c3d63012aad776c4b2e73caea2b8c8e1ed75b894f233fec0e6e528d"
+  },
+  "full_tests_after_close": {
+    "count": 359,
+    "seconds": 39.459,
+    "log_sha256": "87fb25a752d42152b1b444f9e0d06c2b28f1eca9502cf4b8a1a4bd2a64cdb14a"
+  },
+  "offline_entry_gate_tests": 16,
+  "first_real_episode_gates": 3,
+  "parent_locks_verified": 11,
+  "previous_failed_trial_119_files_unchanged": true,
+  "previous_completed_trial_864_JSON_unchanged": true,
+  "previous_V2_4_failed_31_files_unchanged": true,
+  "preservation_manifest_sha256": "d33f242d81a7434bba0c95a24e3713ab5709ae4a3454e06b263c9889db217349",
+  "old_web_container_identity_and_start_unchanged": true,
+  "owned_replicas_stopped": true,
+  "registered_sources_match_launch_commit": true,
+  "runtime_source_repairs_or_restarts": 0,
+  "new_hyperparameters_after_results": 0,
+  "offline_audit_schema_fix": {
+    "scope": "compare all shared control fields; validate two record-only flags separately, no score/gate/data change",
+    "original_failure_log_sha256": "8d94633eea9555f10368bfe96206df24c925e00e174821d2512a4dca8c423d34",
+    "final_audit_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "regression_tests": 5
+  },
+  "old_trial_resumed": false,
+  "heldout_initializations": 0,
+  "best_seed_selected": false,
+  "all_three_dates_qualified_seeds": [],
+  "active_rule_and_MPC_joint_passed_combinations": 0,
+  "raw_seed_logs_sha256": {
+    "SAC-11.log": "cc38ecca402c88727d00f94543736195a16d4211af444c1121fe6a456d1f4010",
+    "SAC-23.log": "65a5dc5db74335bd69d12cb4e8df17779d0830cb961b41cc80c5adaae90677c1",
+    "SAC-37.log": "b91a6ce3620f73b307cfcc0354d2129966d5f520bd0f544bffab0123a6335674"
+  },
+  "dispatch_events_sha256": "ffcdebec204f688e5c8689419fb2a710816c68d4e05147654858ffa11126f838"
+}

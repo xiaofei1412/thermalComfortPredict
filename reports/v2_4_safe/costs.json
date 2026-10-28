@@ -1,0 +1,44 @@
+{
+  "controller_process_costs": {
+    "SAC-11": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1762.953125,
+      "update_seconds": 339.2714349119924,
+      "inference_seconds": 1.2082649949006736,
+      "wall_seconds": 6596.661754608154,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.6065587323798562
+    },
+    "SAC-23": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1775.984375,
+      "update_seconds": 342.2850536252372,
+      "inference_seconds": 1.1907251989468932,
+      "wall_seconds": 6590.653940439224,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.5977536139291633
+    },
+    "SAC-37": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1577.109375,
+      "update_seconds": 298.07572869118303,
+      "inference_seconds": 1.2662371909245849,
+      "wall_seconds": 6175.388398885727,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.6356612404239884
+    }
+  },
+  "runtime": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cpu",
+    "gymnasium": "1.4.0",
+    "sb3": "2.9.2",
+    "platform": "Windows",
+    "machine": "AMD64",
+    "torch_threads": 1,
+    "deterministic_algorithms": true
+  },
+  "stage_last_finish_elapsed_seconds": 12769.440743385581,
+  "stage_cap_seconds": 18000,
+  "engine_CPU_time_measured": false,
+  "GPU_used": false,
+  "scope": "same workstation, at most two replicas; original wall includes reset/update/export/checkpoint, CPU is controller only"
+}

@@ -1,0 +1,1982 @@
+{
+  "status": "closed_residual_action_and_native_audit_passed",
+  "base_audit": {
+    "status": "closed_repaired_trial_audit_passed",
+    "seeds": {
+      "SAC-11": {
+        "status": "completed",
+        "counts": {
+          "select": 75,
+          "initialize": 75,
+          "advance": 50400
+        },
+        "successful_calls": {
+          "select": 75,
+          "initialize": 75,
+          "advance": 50400,
+          "stop": 75
+        },
+        "elapsed_seconds": 6596.661754608154,
+        "exports": [
+          {
+            "folder": "development\\development084",
+            "sha256": "0b371594734dfc57d0244ff1e9ba5aacc45df8d9dc60dbabb1946fc9d7c32fa4",
+            "transitions": 672
+          },
+          {
+            "folder": "development\\development168",
+            "sha256": "820fd72dfad8ebce935ef61604c6c9eca52f2a7689203115e7a8a90529b499c0",
+            "transitions": 672
+          },
+          {
+            "folder": "development\\development189",
+            "sha256": "28795e95d8e48cac606ebdaafdbb292602382d979a32494aaa65c0a3dcfa31f7",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train014",
+            "sha256": "151ced33e5298fd73dc73d83d77a8500cf730def3f251a620723925d0db0e442",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train035",
+            "sha256": "8fbb6078e84ef49f51dba566ef5de6321932fc707046175ca7e57786f331d5cb",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train056",
+            "sha256": "347f05cf9694718e92b85be4b780d2c88c1959800713c9d25dcf17bff60fedf3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train063",
+            "sha256": "811c8d1dc660fe9f6ef6c8892925d65ec11bddf635316ff402c742a832387088",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train119",
+            "sha256": "84b3ae821a7b1ac3082918bb4228b6c82100ac69e5a27eb6360d8a200cd8b342",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train147",
+            "sha256": "5f89d96353cd2a4d93306e691dec0d783d32b47ec3dccd6a9128a772cf661366",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train014",
+            "sha256": "59d88ae275159816e359a12c01b31a55e133f3576cbfd1040a6d1fa18e51832f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train035",
+            "sha256": "737fdfc522239f76cde92f203f149a963c462b07547ab4545918a9190809512d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train056",
+            "sha256": "ff7b98d9a35473412bf8a72997fa973d2264edb8f3bbbd12057fde1cd7bd9e21",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train063",
+            "sha256": "1c6f790f15cf17ad03f5f405118b8f499dee4d4cfeeede445faa9332c766d296",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train119",
+            "sha256": "ad5fa42e79cb55d90b90d31903bd4cc895092b69bc67b8c51c02a7f3eafbbada",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train147",
+            "sha256": "03879ddd6cac585094fbfe39f84fc97bfeeb1b3351fbcbcca1444cd772739d6f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train014",
+            "sha256": "ea3568a77bae26a05992fa7b2778078d4d7b8bb97d6d40828299f49cafbb87ad",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train035",
+            "sha256": "91c7153603a0a50a79bde90264882364852b7e3e30b7d54a4ba89cad09554393",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train056",
+            "sha256": "5875fba665db61625b98807214fd620d0b2b3bdb46cec497c1c0393e87acab4a",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train063",
+            "sha256": "b92afe57660c7f43124db7eef57a167f64a26d12bef4df541a47687afb169d4b",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train119",
+            "sha256": "e3fe72b0557aae266994b000258b71aa50bfbd0991bb4c23c1f60233214c9e54",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train147",
+            "sha256": "63e8c517028d71190caf52b6235f46cee24f2342b7411ba6ed0848b09bed0c44",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train014",
+            "sha256": "3727849e546beafaa34af2a382629207a8c07b267ac8a530a38bebb9bc7b3245",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train035",
+            "sha256": "8a8df6403db13366be4c615f2c385917bcb7e999ea49ddf4ff79030fa62c1a0f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train056",
+            "sha256": "c030d46c9e7dc2463f86646155b5f88ccb03ba34934ee08768394f5acb6c0cc3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train063",
+            "sha256": "350ee66dc9c4fa08f7a3a9294f6a09f5cf0ae1e2072d3d02cb415c2ca67fe8f9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train119",
+            "sha256": "c4e442b02def27a365ebbc7041a6760904cb4868df34565066e7991d04fd1cfa",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train147",
+            "sha256": "cbecbc04fb6277596764224888596d37e6620d6dcf209b926f09841e0e4d803f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train014",
+            "sha256": "78f1da3178882da8fdffb78729d0c1d7294fc3012be197e5673637ee68bfdd41",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train035",
+            "sha256": "7430ec3d83da803d8b37196d84b4505f30ef0bffa069500581b74792e50a9ffc",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train056",
+            "sha256": "4aba35540253267a22b5c1b9f9433eaff61e18b8e9d79cef5125167ff80d20ab",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train063",
+            "sha256": "bb95b7e5c66b3e39c4d85e36a1d285dbd7333aef1c9adb0d731e29fdca53c2a6",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train119",
+            "sha256": "7e61e220c6f4f9ba4d08b7bd67c44395aebfaca07866533bc33976f843cbf632",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train147",
+            "sha256": "9c09f97c801e20d5af84c9d187644171e007acf4a15c4ad847d9ce15b353430e",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train014",
+            "sha256": "0e924495961278bbc3d2b0fff5dab125ae0235b4bf3a643d63c514a8d4c8352d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train035",
+            "sha256": "ab461053944dda0ada149631272d7d3f9337f21ce036683804efd3e3ef56b282",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train056",
+            "sha256": "b5a9c2b6927d46103fb6a3aee506c800a7fc09e908ae9406fe63f35ae8d366b7",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train063",
+            "sha256": "aacaac8ee8930c88f2ea930d6a882f88fd90e5bf7e7436765d8871b4d17c6981",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train119",
+            "sha256": "cf858da7b05aacb97fe0495ac8fa3b42b478fdda51264f7aa8e8aef1eae21fa2",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train147",
+            "sha256": "82d100a046a0b6050785798b84f8d3f05db7267688c763a504beacdb6c19097d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train014",
+            "sha256": "7921eb7f862ef25dcec03016d6565a33f797692b36c8e190d702db662d25d980",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train035",
+            "sha256": "92bfafbcc66e9a2718e569efcf83bf5754eada4f68ca5cffc64a458dbc2e2566",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train056",
+            "sha256": "71e6c89d276e742ae0b85efa456dee5aa5bbd19287ca4862e8f9d3751e297d46",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train063",
+            "sha256": "00636079a553f934ef3bd1c9a45a33525e5a37ecb5b2a0b6490a8da82281e372",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train119",
+            "sha256": "848d6649a7e267a6602ab442b0e78ce6c7754023bc7ea0e367a8ad51a7d578fa",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train147",
+            "sha256": "5dad2c8106d4a905c52b48c99f0dfe618775d2293abf73148877f803478eb8d9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train014",
+            "sha256": "3da21d6ca9aa48ee50717bab069639d04c38dcbf9f815a255f8c46736b007a9d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train035",
+            "sha256": "d97a01c27df51658bdebd1c5b0177ad050d488dedf6c276f017d7d12f56a4063",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train056",
+            "sha256": "b6d07a48dacdf55a422ce94e757d6d6b0bbbb614bff97c28005a54ea0f94f8c9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train063",
+            "sha256": "c6b9d5e06827d8c8b3c1eaa2eb9d9ec3609b4acfec7b633dff8dae93500b1b27",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train119",
+            "sha256": "abe13bfee052256bfb7a7f5d61125b540060d732a3c73b0dbaa62f41a0efadef",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train147",
+            "sha256": "66564cfcd28367993d296664b9cf6f592b9ae955a2ed6e0cb14689a2a52f0f6f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train014",
+            "sha256": "3b5eeeeba0706146e1db9b756b45f82775f745939dbf4a03b5bc6f899cee959a",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train035",
+            "sha256": "e48063f12209d614acd20a005734755f742ae77fc5813a8ce733d295ae927acd",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train056",
+            "sha256": "7d0770fb83f8af8977bafbca3ab8c5fbe78cd3bb5c326fe8f3adda4dcdf542b9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train063",
+            "sha256": "632dace01692a1ff9e4e6313a25a7b76fa64125f6f2f99c3d028172022417f80",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train119",
+            "sha256": "7c56e7501728a4ec152fcfa49bb637d989542e78ff98407c182937ea86d3c45c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train147",
+            "sha256": "a0384f8200e43cb89ca2dfb35deeef1b8f28d4396d64f5b157368f1a89afab24",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train014",
+            "sha256": "ba260f8a2d216cf98c75d92857361215d4863f2e01fda471351cbb3b3be09b14",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train035",
+            "sha256": "1b737e9a66142b7d6325376e88511aeed301f65167fabb342ed63685afcd6ca3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train056",
+            "sha256": "8865fb48b51bfcd56a1e426706d07e17905832e50a988678223756d70e478310",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train063",
+            "sha256": "2e57e1bfb4b67b3ce54f77b6a2726122d5d63d26ff22ec3214d99fb3e2f78b74",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train119",
+            "sha256": "dd43d2cc7b1e4eafee8de3bb056279b45275fb732df1f60b1650eb0d5b6eefe9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train147",
+            "sha256": "0cc3b2e58d1bd544162f884229694604bb515e9765bb31079278d3c28b55bca7",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train014",
+            "sha256": "8f96d0e522ed5af279ade1b4d56282c680753ac2f880f4de7b68d8eb08808533",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train035",
+            "sha256": "7a1a981b43b838bdc027f96e4f35ac8c627655f2bd360a4b5611aa7dc3fed394",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train056",
+            "sha256": "efd7e274fcf1c93de784be623833775146353bb0c35bd1dc39bf6c0588f396fa",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train063",
+            "sha256": "2ad6b064c6b3dc32f7a12b05a0bffd033bf2ed4b27e3072cb538641088dab059",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train119",
+            "sha256": "6d82ad7a38750de4cbe26e4517432e4eee7c757d5c633d705d47f23b1be8ca20",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train147",
+            "sha256": "282f06d2a02daeeca62ca7f4e16a9c30b81994d2682e2b528865ec1fa7d34d4f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train014",
+            "sha256": "77631daba2eb1271b3c2dff07673561686387f32cadd1e1fb466a8079d74fe80",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train035",
+            "sha256": "0cb673793a8a49bc478e8d4282e291dbe4daa6e1c1de670fa4c6499324f1d2ca",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train056",
+            "sha256": "2b27dc6d8dcaea2e1511f5cfa5190ce903f89b72f026f37f66e622326fe277f2",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train063",
+            "sha256": "d4434e6734aa2ceacdba0f86c6bb9812346f45e683d4a1bdab744e4ac1995666",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train119",
+            "sha256": "9011c47edc3698bf87591f8b12d9e5125ced5e096ef5efa1562a4ce140d719b1",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train147",
+            "sha256": "9eb36dcc68082a4d0207291bda605dcd3bc0abea26b95d71f2d5ba4b0772d688",
+            "transitions": 672
+          }
+        ],
+        "budgeted_advances_minus_archived_segments": 0,
+        "first_gate": {
+          "status": "passed",
+          "episode": "train014",
+          "prefix": "frozen_reset_compared_all_native_prefix_fields",
+          "counts": {
+            "select": 1,
+            "initialize": 1,
+            "advance": 672
+          },
+          "native_samples": 20161,
+          "kpi_absolute_difference": {
+            "ener_tot": 2.220446049250313e-16,
+            "tdis_tot": 0.0,
+            "cost_tot": 5.551115123125783e-17,
+            "emis_tot": 5.551115123125783e-17
+          },
+          "episode_wall_seconds_including_reset_and_updates": 79.59495629998855,
+          "original_seed_elapsed_seconds": 87.21459579467773,
+          "env_step_seconds_mean_excluding_policy_updates": 0.09558718057078623,
+          "cost_gate": "unchanged_original_seed_and_stage_clocks_no_projected_threshold",
+          "extra_FMU_calls": 0,
+          "max_exported_native_metric_difference": 0.0
+        },
+        "development": {
+          "development084": {
+            "metrics": {
+              "energy_kWh": 250.6333128440559,
+              "energy_kWh_m2": 1.3053818377294577,
+              "boptest_energy_kWh_m2": 1.3053828820349278,
+              "discomfort_Kh": 0.17458565175106647,
+              "cost_EUR_m2": 0.33091456059585417,
+              "emissions_kg_m2": 0.2179989412998329,
+              "cold_Kh": 0.17458565175106647,
+              "cold_duration_s": 12210.0,
+              "cold_max_K": 0.08374192209629427,
+              "hot_Kh": 0.0,
+              "hot_duration_s": 0.0,
+              "hot_max_K": 0.0
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": true,
+                "saving_kWh": -5.447064766930993,
+                "saving_fraction": -0.022216028874578575,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.18546291256808445,
+                  "return_C": 0.6881692190166291,
+                  "supply_C": -1.871615917114866,
+                  "heat_kW": -2.003408498008456
+                }
+              },
+              "solar_mpc": {
+                "active": true,
+                "saving_kWh": -14.792166499254108,
+                "saving_fraction": -0.06272088958399072,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.17256527785627895,
+                  "return_C": 0.4591729214824909,
+                  "supply_C": -2.230378117033297,
+                  "heat_kW": -2.269689784920433
+                }
+              },
+              "minimum_heat": {
+                "active": true,
+                "saving_kWh": -73.17393990777367,
+                "saving_fraction": -0.4123419276030418,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.2429370860046447,
+                  "return_C": -3.873749313898486,
+                  "supply_C": -1.9475856888180942,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          },
+          "development168": {
+            "metrics": {
+              "energy_kWh": 11.458391020339144,
+              "energy_kWh_m2": 0.05967911989759971,
+              "boptest_energy_kWh_m2": 0.05967916764089562,
+              "discomfort_Kh": 5.491905209612258,
+              "cost_EUR_m2": 0.01512866899696704,
+              "emissions_kg_m2": 0.009966420996029568,
+              "cold_Kh": 0.0,
+              "cold_duration_s": 0.0,
+              "cold_max_K": 0.0,
+              "hot_Kh": 5.491905209612258,
+              "hot_duration_s": 47880.0,
+              "hot_max_K": 1.0525947434774707
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": true,
+                "saving_kWh": -2.685246839812228,
+                "saving_fraction": -0.30607576765607786,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.14646898803113118,
+                  "return_C": 0.39931868142423355,
+                  "supply_C": 0.12416935433964227,
+                  "heat_kW": 0.0
+                }
+              },
+              "solar_mpc": {
+                "active": true,
+                "saving_kWh": -4.879067254434614,
+                "saving_fraction": -0.7415757953300595,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.20673808003181193,
+                  "return_C": 0.5661164782542301,
+                  "supply_C": 0.1850187438139983,
+                  "heat_kW": 0.0
+                }
+              },
+              "minimum_heat": {
+                "active": true,
+                "saving_kWh": -6.154951522810581,
+                "saving_fraction": -1.1605584499792687,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.009364605155838035,
+                  "return_C": -5.231868393550769,
+                  "supply_C": -3.1237769479158715,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          },
+          "development189": {
+            "metrics": {
+              "energy_kWh": 0.0,
+              "energy_kWh_m2": 0.0,
+              "boptest_energy_kWh_m2": 0.0,
+              "discomfort_Kh": 292.69712421948964,
+              "cost_EUR_m2": 0.0,
+              "emissions_kg_m2": 0.0,
+              "cold_Kh": 0.0,
+              "cold_duration_s": 0.0,
+              "cold_max_K": 0.0,
+              "hot_Kh": 292.69712421948964,
+              "hot_duration_s": 405315.0,
+              "hot_max_K": 6.080350818884938
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 3.758230320727307e-06,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              },
+              "solar_mpc": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -1.5359889857791131e-06,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              },
+              "minimum_heat": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -2.96069822525169e-06,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          }
+        },
+        "result_sha256": "dc919a9d4493d8944cb84362193cf8d64520e0db8f3d6e5a687d155aea9292af"
+      },
+      "SAC-23": {
+        "status": "completed",
+        "counts": {
+          "select": 75,
+          "initialize": 75,
+          "advance": 50400
+        },
+        "successful_calls": {
+          "select": 75,
+          "initialize": 75,
+          "advance": 50400,
+          "stop": 75
+        },
+        "elapsed_seconds": 6590.653940439224,
+        "exports": [
+          {
+            "folder": "development\\development084",
+            "sha256": "02c4d97faf40d5597955005a4830614b92f22fbe304bdb90ac65a96b48fcaec5",
+            "transitions": 672
+          },
+          {
+            "folder": "development\\development168",
+            "sha256": "3f56755ff2c3b4fee70fdb58c3874ae6102b11816e9f1b486c50eed54b710e59",
+            "transitions": 672
+          },
+          {
+            "folder": "development\\development189",
+            "sha256": "96784474bf1fa25c4045b8a82802c385cfffd63ff5600d19f7f73c454f4e9114",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train014",
+            "sha256": "edd306ceea152426035731be6b60942c6b66e2666cd9c5132de351cf3a44c84d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train035",
+            "sha256": "995a87794c85828474c71067a34944f840ede392c8d5b8b81ad00580d93abce5",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train056",
+            "sha256": "7b41840a3899bae2ef6d37107e7bec119f80498ce47c83df61c5e24ef8531c76",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train063",
+            "sha256": "727ea139b287d6303e411ce3123cd46b11c932d3265e649a76112c3df8491d83",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train119",
+            "sha256": "43bd55b3886f69460cdd555953a20e0a1a5758490422eba847355ee0cbdcc5dd",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train147",
+            "sha256": "98f3a42957e4fae72b34b40a0666648e482aeb1cd5e0c3080b4cf4d99d9acdb4",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train014",
+            "sha256": "bc4f98a0a847de6c21346ec46c17347d5ebeaac33d1e5e18c6ad2cdf0853e5f3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train035",
+            "sha256": "29de6250c5b352f569a692698a2a0a960e36eca5d4ec794bd3abd19bcd787eef",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train056",
+            "sha256": "dc7621c0084c0194a08169af1dc39c1f94733cc20d228e3b6dd8138da6baa785",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train063",
+            "sha256": "0aa475887ac7f18aea70e8fc9a6df7b6857cce7c1bde2d27501309e56666d029",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train119",
+            "sha256": "ada269b18bfb00a8c4de21f9131cfe2637c5cf7294b2a9abc30b85d7566e0e19",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train147",
+            "sha256": "2117e0986612a6a7660f4ccba04e1e8c7b088728d7b7eb3800fe8d6a128b3a29",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train014",
+            "sha256": "b3ce0d34bc29ca09678f305cb4a3a056d5bc742017e22315d39654a5c328e39f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train035",
+            "sha256": "45913f97ca5d2dbfaba850f9f1f19661a19f8a2a53364e82967651bb1cb27f63",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train056",
+            "sha256": "a277af1448196e47b4bbebbb8c34b88d2a17365fa2c97791c6cece1c4a3a59e1",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train063",
+            "sha256": "355724e2790316ce01ca78a7a7cc5f01c2b390cc773676adfd0f327bc61941f4",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train119",
+            "sha256": "f17d20e401b593b48b0e076a82b48884ef33a71173be52f60c100d82c76ee387",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train147",
+            "sha256": "7c7c984642c463bcace821ac5e593a4eeca2821e43fc49e22466047ec7b871af",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train014",
+            "sha256": "73cca2c13f4106a8f991d7c556b924a667517d2ba49af9a29622bef91eeddacc",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train035",
+            "sha256": "df05e2918a7d655bf62dfe35de5e07d055a2b1f5936cdec2b37615787b9f9817",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train056",
+            "sha256": "e8329571a98c38892502c80390e666d29a5a9fe59631aa3d198ed5fd81a2d1ee",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train063",
+            "sha256": "203cf56d973e9463588f8589f3be4946766d1810e443309348c29b6ef263fcdc",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train119",
+            "sha256": "3429b153b69e183212551b356ba93de5ff6de063c7ce4f5a112798623b0e5685",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train147",
+            "sha256": "0a58bc36a538a681246a68bdb6f2577433c2086620059f9143a9bee9d8de8544",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train014",
+            "sha256": "39153551d7abe85f8e071a3c450baf5a3180fed10ee91b57fa77ae58ca0c5620",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train035",
+            "sha256": "c071123dbab2583e3d4dba1694192ff86f0cd67eba37b053cbcadb34c026ba6b",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train056",
+            "sha256": "2b7117e92830d2e3e2dfe117493ec850a632f59e7f2291cb9971d120dd26c962",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train063",
+            "sha256": "1bfc491926ab789ddc3a65a2b823cd5bf44446e3718412a5d5fd4d65154cce17",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train119",
+            "sha256": "5b893c93105c1a9582601cb958168df1c298cb04753e0d9ff95f49aa0df7231c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train147",
+            "sha256": "002589fcb55ca3c9fbe1692562ada23c35eb2b946a7bdf18b961d8d474febc39",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train014",
+            "sha256": "708d2293f17552cfc7399b5e83b8272a1867c886f4f0ed9ca6d38bdb7166865a",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train035",
+            "sha256": "07c3ea835ca8ef50247868239253a43edac9d429efa4b4cd25d9549717afbee2",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train056",
+            "sha256": "bd7b522c4b9dc1429681beff13da6a8024404505053fcb914e0f4b82c432f8ab",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train063",
+            "sha256": "c8f32d8131a48199dffcbd36472619d053fbaaecccf427cf53e31a511d7d9ada",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train119",
+            "sha256": "59ddff49ebfc41913ce4d25a074b2795e7d4e3dacd0d5eff5ae7afe6aa53c7f8",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train147",
+            "sha256": "a7e8128990919895e075292c031b3924f8d921e1115c454275d81822853408eb",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train014",
+            "sha256": "18941be64da3f1596637d7158f55258e510f1b49ccaafa6fcee549d0f3d7b3bc",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train035",
+            "sha256": "872eec84ed6e0d60a1347738fab57068917f335d3364ce04242af141cf3c0d8a",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train056",
+            "sha256": "e9d67b982c5b4ed481e53578311245ada191507010ff3cfcae857b537bad38a1",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train063",
+            "sha256": "676c1cf9ea499ebf661ea276da9b2f3fdff367ab8a347123f40bf85c2df0811b",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train119",
+            "sha256": "8d2bfbb1a051fd662cfd981fbf9e47017123592902d8527e5dda767a9d7972de",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train147",
+            "sha256": "604c57ed4a9b7308861dccffbd60b676753592cf712430ef67bc84aabd1276de",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train014",
+            "sha256": "73412ce04f9fb95bbb0587a92ad549e6b8020e64acace99bb29f29f606104b71",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train035",
+            "sha256": "1f0ae3b7bdae0db18af63cd37d969b7e9f098d11bd8b4bd2659b20765ed83784",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train056",
+            "sha256": "2da6550cfbfa04ba7050cfd7970a4bbb3884268c84b74def2f634858a26a52f3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train063",
+            "sha256": "f572e54ab1fb3f878a97af68576c36e62b1e6c4a99c7fe12d0c71eb13517b19d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train119",
+            "sha256": "54e2c0fbac21ed94fcae48c0f575931e5aeebd4e194203da7a7b551077d2af5a",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train147",
+            "sha256": "ebfb0cab53f9310b06d126c05b498d93f0cfe6717d1acb6dda192e24bfed22bb",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train014",
+            "sha256": "52ae2a73f3d322e24477473f7a3072f3a395f847afb4c1f1f8a0d40260b5eb18",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train035",
+            "sha256": "6058e3102fe9eeb3e55cc36206fbc5f488fb1a0f5694a918f517c999c76aaa03",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train056",
+            "sha256": "ea0a15715dee233ec9cf61b258896dd38df48447d42aba7e25d60e86f01380b8",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train063",
+            "sha256": "6b96aefcdac5890ac30e8383c3204178ad293c164d1f0e39b01d358585fcc052",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train119",
+            "sha256": "f1f888245208f5cafd133acd8f96ec51b9c5501ab4628cfc7bbcf8651e96e393",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train147",
+            "sha256": "24fe8de74a1065a594b7c5044f06c6d6abfee9d77e25c0e24d31070f6ccb7e65",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train014",
+            "sha256": "1edca39120d1defd486250946839dbd74e2a5697907071d7a307bf5272ba3e25",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train035",
+            "sha256": "4ae060de7705054314668453034c1a9d45f8be2032a084dcac126816664214d5",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train056",
+            "sha256": "211337dac764530c7c6dda9bfd0b611b4015040f6b17c0281b0df2577e281715",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train063",
+            "sha256": "771f077c1d79bf038e2d99eaae67fc18a514d6e062960e9a1827991eed41294e",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train119",
+            "sha256": "c0b4a4ebde96c251f344411be8dd269d1eeccedcd40d391a32bdc7a586168165",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train147",
+            "sha256": "d231c60dec7082b5ba99d6a66cb118bc904d4092f454cdf6b6b07328b5c4f5b8",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train014",
+            "sha256": "6b41f5e18231c6e3182162660d500722f42bfdf74d764210f155025fbee38ea3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train035",
+            "sha256": "ba43059068c8ae22c62cf8ea318bbbd3e0a8da46806d377b1b31e926cb4f0fe7",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train056",
+            "sha256": "bec56c27ccb898e2c5c413eb69c287e1339baf4a87f6073f06c7f01c476639e5",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train063",
+            "sha256": "77766fe756f299c9e7d98bf463e2fcbe4cacf660039131ad08ddab25fde38d58",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train119",
+            "sha256": "c108fa928e8764a007737493bc45e21d9ac5621ee8b38081b44d5eafc1e07e5c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train147",
+            "sha256": "7b1385661bb9ea03b8da63e30b1efe5bf15e74b18018aa4ec94667234fa6d446",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train014",
+            "sha256": "cb31512ee8ca34d80f49937fb38cea5a054736d8d18e85f6637d2a4f41aa7f82",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train035",
+            "sha256": "e85f798ea7622beecb59e5bb76445f37b7c47c5095b90cf4deb65c8871dd099f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train056",
+            "sha256": "0fd0126d38acca1a66ad9f0214a29a1a96f81682d01357bf70189e784081ec02",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train063",
+            "sha256": "48620e5833ea316568db5024bff596d57ab49d178fcc7de699e81b2a83ff2fbd",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train119",
+            "sha256": "f3abfff3ed14955e9d18987c8ddaf300402d87d258bb842e4bcd9ff083372b68",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train147",
+            "sha256": "39381c2ceca2cc9a32dc79ff0bb90a8e688f7cfd7f2eee1b9a3bcfedd4cb1e8c",
+            "transitions": 672
+          }
+        ],
+        "budgeted_advances_minus_archived_segments": 0,
+        "first_gate": {
+          "status": "passed",
+          "episode": "train014",
+          "prefix": "frozen_reset_compared_all_native_prefix_fields",
+          "counts": {
+            "select": 1,
+            "initialize": 1,
+            "advance": 672
+          },
+          "native_samples": 20161,
+          "kpi_absolute_difference": {
+            "ener_tot": 2.220446049250313e-16,
+            "tdis_tot": 0.0,
+            "cost_tot": 1.1102230246251565e-16,
+            "emis_tot": 0.0
+          },
+          "episode_wall_seconds_including_reset_and_updates": 79.9599365000613,
+          "original_seed_elapsed_seconds": 87.96098790015094,
+          "env_step_seconds_mean_excluding_policy_updates": 0.09728688870399561,
+          "cost_gate": "unchanged_original_seed_and_stage_clocks_no_projected_threshold",
+          "extra_FMU_calls": 0,
+          "max_exported_native_metric_difference": 0.0
+        },
+        "development": {
+          "development084": {
+            "metrics": {
+              "energy_kWh": 217.20044134360134,
+              "energy_kWh_m2": 1.1312522986645903,
+              "boptest_energy_kWh_m2": 1.1312532036664293,
+              "discomfort_Kh": 0.35639614047168494,
+              "cost_EUR_m2": 0.2867726871294398,
+              "emissions_kg_m2": 0.18891928501229371,
+              "cold_Kh": 0.35639614047168494,
+              "cold_duration_s": 6780.0,
+              "cold_max_K": 0.44903413026867156,
+              "hot_Kh": 0.0,
+              "hot_duration_s": 0.0,
+              "hot_max_K": 0.0
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": true,
+                "saving_kWh": 27.98580673352356,
+                "saving_fraction": 0.11414101301766502,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.1667177278897043,
+                  "return_C": 5.01320532218881,
+                  "supply_C": 0.5914355952323262,
+                  "heat_kW": -2.003408498008456
+                }
+              },
+              "solar_mpc": {
+                "active": true,
+                "saving_kWh": 18.640705001200445,
+                "saving_fraction": 0.07903924014152973,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.1538200931778988,
+                  "return_C": 4.784209024654672,
+                  "supply_C": 0.23267339531389553,
+                  "heat_kW": -2.269689784920433
+                }
+              },
+              "minimum_heat": {
+                "active": true,
+                "saving_kWh": -39.74106840731912,
+                "saving_fraction": -0.22394460066974525,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.22419190132626454,
+                  "return_C": 0.4512867892736949,
+                  "supply_C": 0.5154658235290981,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          },
+          "development168": {
+            "metrics": {
+              "energy_kWh": 14.746842380850055,
+              "energy_kWh_m2": 0.07680647073359403,
+              "boptest_energy_kWh_m2": 0.07680653217877062,
+              "discomfort_Kh": 5.36526259890471,
+              "cost_EUR_m2": 0.019470455907318347,
+              "emissions_kg_m2": 0.012826690873854693,
+              "cold_Kh": 0.0,
+              "cold_duration_s": 0.0,
+              "cold_max_K": 0.0,
+              "hot_Kh": 5.36526259890471,
+              "hot_duration_s": 51570.0,
+              "hot_max_K": 1.0526037466402158
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": true,
+                "saving_kWh": -5.973698200323138,
+                "saving_fraction": -0.680907332354403,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.11453596543191225,
+                  "return_C": 0.9568755079570792,
+                  "supply_C": 0.3828295743509216,
+                  "heat_kW": 0.0
+                }
+              },
+              "solar_mpc": {
+                "active": true,
+                "saving_kWh": -8.167518614945525,
+                "saving_fraction": -1.2413918064454226,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.174805057432593,
+                  "return_C": 1.1236733047870757,
+                  "supply_C": 0.4436789638252776,
+                  "heat_kW": 0.0
+                }
+              },
+              "minimum_heat": {
+                "active": true,
+                "saving_kWh": -9.443402883321491,
+                "saving_fraction": -1.780618575496558,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": -0.041297627755056965,
+                  "return_C": -4.674311567017924,
+                  "supply_C": -2.865116727904592,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          },
+          "development189": {
+            "metrics": {
+              "energy_kWh": 0.0,
+              "energy_kWh_m2": 0.0,
+              "boptest_energy_kWh_m2": 0.0,
+              "discomfort_Kh": 292.6952017548432,
+              "cost_EUR_m2": 0.0,
+              "emissions_kg_m2": 0.0,
+              "cold_Kh": 0.0,
+              "cold_duration_s": 0.0,
+              "cold_max_K": 0.0,
+              "hot_Kh": 292.6952017548432,
+              "hot_duration_s": 405315.0,
+              "hot_max_K": 6.0803317770376
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": true,
+                "joint_gate_passed": true,
+                "terminal_difference": {
+                  "operative_C": -1.4101360477525304e-05,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              },
+              "solar_mpc": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": true,
+                "joint_gate_passed": true,
+                "terminal_difference": {
+                  "operative_C": -1.9395579784031725e-05,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              },
+              "minimum_heat": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": true,
+                "joint_gate_passed": true,
+                "terminal_difference": {
+                  "operative_C": -2.08202890235043e-05,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          }
+        },
+        "result_sha256": "d7c5d86c67d585ecb34adb7f24abd6f68d95cda651f5e4556d5208bbb242ea37"
+      },
+      "SAC-37": {
+        "status": "completed",
+        "counts": {
+          "select": 75,
+          "initialize": 75,
+          "advance": 50400
+        },
+        "successful_calls": {
+          "select": 75,
+          "initialize": 75,
+          "advance": 50400,
+          "stop": 75
+        },
+        "elapsed_seconds": 6175.388398885727,
+        "exports": [
+          {
+            "folder": "development\\development084",
+            "sha256": "514dddfc088d3c873fcf58a9d657dc2b6b3329ae2abf52d97192163fea8a6125",
+            "transitions": 672
+          },
+          {
+            "folder": "development\\development168",
+            "sha256": "1e58b2fde59f7452b133b5020f4551508f40c25748ef0f8ea773fcd84b612376",
+            "transitions": 672
+          },
+          {
+            "folder": "development\\development189",
+            "sha256": "fbe605f4d5d21ef82c3c35026643a791d49d51632f0ceb3c038da8428967deb4",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train014",
+            "sha256": "0186d141aca04e2f8157fc82ae14c994fb714e8373a85408b30e071122297fc3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train035",
+            "sha256": "abe47eca8deea88f757660e30be543b3ad9a290ef0f14984a0c088c0ab1e1a1b",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train056",
+            "sha256": "5d4640cfe9f87155da149e57691afb7a9c4e115b54437ef87c94695065f34c79",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train063",
+            "sha256": "03955b1b66ce8cc22080e445ca2c638661a9f1f6da9afcbf36637e9e10c7f2e9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train119",
+            "sha256": "996647f6321a3727994b66b803b5797a3f799e632649095f72073775bd11adb5",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-01\\train147",
+            "sha256": "f9a632b992deb20b37afcd1670bc14911d7dca1dcc886f451f2f68f40dac0360",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train014",
+            "sha256": "485093cebb6d35edec53a96452d32a0ce56618c56afae7da9e6c69d69e16ba46",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train035",
+            "sha256": "65714510fc6319604cbd767b25764593e73287a76dcdcf09d5669bd24871f6c9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train056",
+            "sha256": "16b1efa3243c7d9aa5737143732ac262bb48f4cfbf8d6fa186c74e343fafa712",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train063",
+            "sha256": "5a588408d74f4c37ef6f3e1a49a5e4954c48dd74676345273912070d15e294b3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train119",
+            "sha256": "c84d8b56eb9c893b7d2c20da01c02e5f2727651d4773fde8832270c712b8f757",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-02\\train147",
+            "sha256": "c1acfb246ce37e2de0127c1cb0cdca1c3b8ad2bef2ae41a8703858819cdb9350",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train014",
+            "sha256": "8a60f01a6e67eb5c3a92d0fc96239ec6f69994b9849593fc551c049206509d4b",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train035",
+            "sha256": "9e44844d79ce99b9651b228248ae0422327ddd4273052ff442e5180d196fa26e",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train056",
+            "sha256": "fc7e041264bcf79ca040e31979ee18177e611f27c5fd5f6abb0ea46ac8dcd22c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train063",
+            "sha256": "29c14d07a07d60dbe560c9e483b5708b1e9b3ca70919929ad2c15b61aeaa3bea",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train119",
+            "sha256": "3b4710c4135ed0df2962f2dca9002507fa7a89c1f9695a315547aacb50533745",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-03\\train147",
+            "sha256": "15b6b86e3bcb1cb4f5564e2d092a2c1eb6c9eb018e6c5334f25ef7e53ea394f4",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train014",
+            "sha256": "6aee008ddea9c44d372ffbee756e3e093e17f430cc7b88f39406de4baded0866",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train035",
+            "sha256": "a077e933f9b791cd65dac293cb6c8322a18ef27a8365a6100bf5c8e83722100d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train056",
+            "sha256": "14b7ef8241b6383fe19d234bde0d2b10a2165af4673647c8f4b1d9b929aa50c4",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train063",
+            "sha256": "64e98e271200b3b62177fba9debef23f46f95bb70bdc8e67c32dea2edc4e6381",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train119",
+            "sha256": "76d239ae0c8bb8f84572ec41e1c3d229ea0c1aab6fdf2efd11f1effe3b065210",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-04\\train147",
+            "sha256": "c933f33aa9090549b6669fdb6a28c233e1ba12dd4a18eeb2df537f29a90722a7",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train014",
+            "sha256": "337b238a453b19cba977108303df533809718dbd8ba4f1e7038c2a3b38be5a78",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train035",
+            "sha256": "9bbf9ddba8204a2246485007876c2b609cc8769ed8b87fe1ca1fc61ff6a773f6",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train056",
+            "sha256": "e197679d89499efb76f811b8f3cfddcb594b6b21329e0c5d99c76cadfaf4097c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train063",
+            "sha256": "36d6a738b183adedff6684b212fce5c0f3b882986e8182b1cb28da55793d7b13",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train119",
+            "sha256": "d50b328e8a29c66026d7050c7633e27b9a84f1063d8c1f1f613558468eb628df",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-05\\train147",
+            "sha256": "45e62529b6c60f5091e168205d69690a197402089bb9e5e11511ebc250afce77",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train014",
+            "sha256": "eb5bcf93c0bc12030f8164f48cb03576779ce3c516742e328e00e03ba1dead23",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train035",
+            "sha256": "4b3aa9b3addaf1308db791419ee66657c76d960fac2c3ea709eb3fd0218d1076",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train056",
+            "sha256": "3661e50283877671c728f531adddd838b0d2b11013d35b3a2373ea260d13eac1",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train063",
+            "sha256": "9bbe3edb2d0d25f0beb9b0011bd0e7ff84cdf53d09e7279cecb95c842b22f4dc",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train119",
+            "sha256": "1bbdcc0ae25ebe1a6181988057ac0e148ad5a9a012ae58784dbb51cb1d17a36d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-06\\train147",
+            "sha256": "4d109a90fcc286493c27edda1d5df9c31a8e42bc1de294e2bdd76fd4b23a832c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train014",
+            "sha256": "2658a0a577887b0b397f681b3ca75abf4883005e2c51fbedc055d892ef858750",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train035",
+            "sha256": "9902f9454652375131465c3b079ef58d2b2431f7faf4762b267d99c97689db00",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train056",
+            "sha256": "cafd12a7ee8eb772d1374ef9a5a28e5572aa718230a0f7af358b3834ee2fd12c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train063",
+            "sha256": "0868e26badc0412af216f47a37b97a89932018b2481a72feda2f0b4df803ec8b",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train119",
+            "sha256": "0379fbad732f1406dd83f739771798880b6f453a73f8b3e9c7326890ed4767c3",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-07\\train147",
+            "sha256": "ac01311c751ede155e76e5aa0d7478360f7687c3943209f9a09bd4acae89b5c6",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train014",
+            "sha256": "705b01907decf10e2fe2a0dbbe2c81d0c36eb043881fde59b52b71e0955e9c5c",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train035",
+            "sha256": "23e96f432389242c982b8046910874908e7cc795880a67d0f7b1134fb7171af9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train056",
+            "sha256": "65708ef0ed7a68470fc6a9e0b96c665b40040728e3b801f857f1e8b1dc04d94e",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train063",
+            "sha256": "31bf99862bb9d65fd511d0d71cb36c5030ce4bddeb0966ccf902c7e2f35de2d9",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train119",
+            "sha256": "017900e4632aa455d0d6c214360480005aebd80c6d7695af0f9c36c68b0eb148",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-08\\train147",
+            "sha256": "3a45963162d35e09e6ebdb07a9505d12e0c648df74ef7884be41ef68405e9800",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train014",
+            "sha256": "cb93eea90ca82f26b861d62e7a6bd03976bd909a6f14182de274a6b5de945a04",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train035",
+            "sha256": "a8cb811f21b049a4a68973a65a0731136ffc85276c2c725d02d811abf668d30d",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train056",
+            "sha256": "7ba1dec4a45392fae93579b9940ef427e13a6b19c53f0404f0777bffc954f2cf",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train063",
+            "sha256": "788372d1368ecb6a5aa9eb0c614c08f718494c7d416e6c0d5f7844e5b7a2e5bc",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train119",
+            "sha256": "e40628f99cb1870787b1aaa473f8fe9e7c21eaf0f5574b027f02733c0c2af69e",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-09\\train147",
+            "sha256": "a929134ad3cceece47cf94cfc116b29786204709ed8c4ecf0aa9db75a60407eb",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train014",
+            "sha256": "41d1ade2a152780f8d3f79cceb2797cde004809338ff0011b537f471d03e7988",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train035",
+            "sha256": "086127af8a13148bfb0c17674d0f941a0a31c7fd16820cc76346029cae4d5108",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train056",
+            "sha256": "ff8731395867a29b4a85082bfa83c6f53e44471e68e023e41ba95cc1fb5de385",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train063",
+            "sha256": "fef0e313a4f8fcdfa350fecb597c58aa07804cb8c655da85f1551816367188fd",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train119",
+            "sha256": "98b704e29383dcbcbe1bafed2ae77df1ffc7e25a4b0e6795ea7617303d58ae26",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-10\\train147",
+            "sha256": "f6ee7667c5e2b6697ed0a78ecd9d7de6a8bc183aff888a9b068a09f73d2a6182",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train014",
+            "sha256": "375a52ad67de64ca3228f313733d22ec20ae3511fa2c519a90be4f201ec286da",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train035",
+            "sha256": "a118030ee450dfa492a80d817672487f08e9ee75f9f051a79055cb87007c2d45",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train056",
+            "sha256": "9a7a4187aac0db5372f93e0c4bbcf38ab0c662d5082b275b719a7a661e4f5763",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train063",
+            "sha256": "97a0d667b658ca1a56bd09c451a7f1fe686b55c28e2c436fc3c7a89d135542b2",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train119",
+            "sha256": "b245d2826a165849a99d83e2d95a4cc937280b609b47a571ec18db7642a4858e",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-11\\train147",
+            "sha256": "8cb7e2c46d88ab1e4da0d1954cb65fdae73068b5a9787bed0f35d5b961587187",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train014",
+            "sha256": "9e7b02b6836e9b5d0041d5b19dafd3769b5271b3b1fa51985b2b8e342e7a1b11",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train035",
+            "sha256": "0a8a354a804c5fbe4bf0b4ce5bd16459df00444d727175d7a56cd96d19f59569",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train056",
+            "sha256": "93e5b926f14cd5b179b66ec5f3953a3c3ccd345dd5382acdda8eaafc6cb8406f",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train063",
+            "sha256": "bbadbdc6ad034c1c234d0ad056415980b270006a76ff8974faae703163439270",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train119",
+            "sha256": "2815a873218a700c8c09dfe373bd1e24447c1aac01ddd859d08a4f4c2c943794",
+            "transitions": 672
+          },
+          {
+            "folder": "train\\cycle-12\\train147",
+            "sha256": "bace6d35f423d4888d80ddbcacdd87b220cc3f55c5b9cec9d2c4f7abfe9a40a1",
+            "transitions": 672
+          }
+        ],
+        "budgeted_advances_minus_archived_segments": 0,
+        "first_gate": {
+          "status": "passed",
+          "episode": "train014",
+          "prefix": "frozen_reset_compared_all_native_prefix_fields",
+          "counts": {
+            "select": 1,
+            "initialize": 1,
+            "advance": 672
+          },
+          "native_samples": 20161,
+          "kpi_absolute_difference": {
+            "ener_tot": 2.220446049250313e-16,
+            "tdis_tot": 0.0,
+            "cost_tot": 5.551115123125783e-17,
+            "emis_tot": 5.551115123125783e-17
+          },
+          "episode_wall_seconds_including_reset_and_updates": 68.4468284000177,
+          "original_seed_elapsed_seconds": 81.91208600997925,
+          "env_step_seconds_mean_excluding_policy_updates": 0.08352295360990789,
+          "cost_gate": "unchanged_original_seed_and_stage_clocks_no_projected_threshold",
+          "extra_FMU_calls": 0,
+          "max_exported_native_metric_difference": 0.0
+        },
+        "development": {
+          "development084": {
+            "metrics": {
+              "energy_kWh": 227.69951164200273,
+              "energy_kWh_m2": 1.1859349564687642,
+              "boptest_energy_kWh_m2": 1.1859359052167293,
+              "discomfort_Kh": 5.703232332181437,
+              "cost_EUR_m2": 0.30063475197244083,
+              "emissions_kg_m2": 0.1980512961711938,
+              "cold_Kh": 5.703232332181437,
+              "cold_duration_s": 55560.0,
+              "cold_max_K": 0.9561522313764499,
+              "hot_Kh": 0.0,
+              "hot_duration_s": 0.0,
+              "hot_max_K": 0.0
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": true,
+                "saving_kWh": 17.486736435122168,
+                "saving_fraction": 0.07132021706870609,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.5269464634941983,
+                  "return_C": 0.349032694005075,
+                  "supply_C": 0.05854978456011395,
+                  "heat_kW": -0.19924134848074204
+                }
+              },
+              "solar_mpc": {
+                "active": true,
+                "saving_kWh": 8.141634702799053,
+                "saving_fraction": 0.03452168897998788,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.5398440982060038,
+                  "return_C": 0.12003639647093678,
+                  "supply_C": -0.3002124153583168,
+                  "heat_kW": -0.4655226353927191
+                }
+              },
+              "minimum_heat": {
+                "active": true,
+                "saving_kWh": -50.24013870572051,
+                "saving_fraction": -0.28310783406047263,
+                "thermal_nonincrease": true,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.469472290057638,
+                  "return_C": -4.21288583891004,
+                  "supply_C": -0.017419987143114213,
+                  "heat_kW": 1.804167149527714
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          },
+          "development168": {
+            "metrics": {
+              "energy_kWh": 16.375204357666792,
+              "energy_kWh_m2": 0.08528752269618121,
+              "boptest_energy_kWh_m2": 0.08528759092619936,
+              "discomfort_Kh": 6.270528565057207,
+              "cost_EUR_m2": 0.021620404299791535,
+              "emissions_kg_m2": 0.014243027684675292,
+              "cold_Kh": 0.0,
+              "cold_duration_s": 0.0,
+              "cold_max_K": 0.0,
+              "hot_Kh": 6.270528565057207,
+              "hot_duration_s": 47880.0,
+              "hot_max_K": 1.0525988301105258
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": true,
+                "saving_kWh": -7.602060177139876,
+                "saving_fraction": -0.8665149028342192,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.3320793246215885,
+                  "return_C": 1.303203949531735,
+                  "supply_C": 0.559045607396115,
+                  "heat_kW": 0.0
+                }
+              },
+              "solar_mpc": {
+                "active": true,
+                "saving_kWh": -9.795880591762263,
+                "saving_fraction": -1.4888886670278518,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.39234841662226927,
+                  "return_C": 1.4700017463617314,
+                  "supply_C": 0.619894996870471,
+                  "heat_kW": 0.0
+                }
+              },
+              "minimum_heat": {
+                "active": true,
+                "saving_kWh": -11.071764860138229,
+                "saving_fraction": -2.087657427844278,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": false,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 0.1762457314346193,
+                  "return_C": -4.327983125443268,
+                  "supply_C": -2.6889006948593988,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          },
+          "development189": {
+            "metrics": {
+              "energy_kWh": 0.0,
+              "energy_kWh_m2": 0.0,
+              "boptest_energy_kWh_m2": 0.0,
+              "discomfort_Kh": 292.69723769288703,
+              "cost_EUR_m2": 0.0,
+              "emissions_kg_m2": 0.0,
+              "cold_Kh": 0.0,
+              "cold_duration_s": 0.0,
+              "cold_max_K": 0.0,
+              "hot_Kh": 292.69723769288703,
+              "hot_duration_s": 405315.0,
+              "hot_max_K": 6.080351632080692
+            },
+            "comparisons": {
+              "guarded_rule": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 1.0735771809322614e-05,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              },
+              "solar_mpc": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 5.441552502816194e-06,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              },
+              "minimum_heat": {
+                "active": false,
+                "saving_kWh": 0.0,
+                "saving_fraction": null,
+                "thermal_nonincrease": false,
+                "energy_gate_passed": true,
+                "joint_gate_passed": false,
+                "terminal_difference": {
+                  "operative_C": 4.016843263343617e-06,
+                  "return_C": 0.0,
+                  "supply_C": 0.0,
+                  "heat_kW": 0.0
+                }
+              }
+            },
+            "fallback_fraction": 0.0,
+            "fallback_gate_passed": true
+          }
+        },
+        "result_sha256": "4acd2b4010ed386334200d0486566f71561419e3112a99dea28c121ddb76953e"
+      }
+    },
+    "ledger_counts": {
+      "select": 225,
+      "initialize": 225,
+      "advance": 151200
+    },
+    "successful_service_calls": {
+      "select": 225,
+      "initialize": 225,
+      "advance": 151200,
+      "stop": 225
+    },
+    "archived_transitions_checked": 151200,
+    "native_points_checked": 4536225,
+    "forecast_snapshots_checked": 151200,
+    "complete_episode_KPI_archives": 225,
+    "max_official_KPI_difference": 5.684341886080802e-14,
+    "final_candidates": 3,
+    "heldout_initializations": 0,
+    "additional_FMU_calls": 0,
+    "best_seed_selected": false
+  },
+  "action_checks": {
+    "SAC-11": {
+      "actor_actions_checked": 49800,
+      "training_actions": 47808,
+      "development_actions": 1992,
+      "mean_abs_residual": 0.6797541282442678,
+      "mean_abs_effective_offset_K": 0.29086783066391947,
+      "nonzero_effective_offset_fraction": 0.8893975903614458,
+      "at_physical_bound_fraction": 0.052389558232931725,
+      "development_effective_actions": {
+        "development084": {
+          "mean_effective_offset_K": 0.1249670916831637,
+          "mean_abs_effective_offset_K": 0.3910334744905851,
+          "nonzero_effective_offset_fraction": 0.9683734939759037
+        },
+        "development168": {
+          "mean_effective_offset_K": -0.20695138807935887,
+          "mean_abs_effective_offset_K": 0.3136619043547705,
+          "nonzero_effective_offset_fraction": 0.8569277108433735
+        },
+        "development189": {
+          "mean_effective_offset_K": -0.07009200953755033,
+          "mean_abs_effective_offset_K": 0.13153708362615252,
+          "nonzero_effective_offset_fraction": 0.34789156626506024
+        }
+      },
+      "development_rule_replay": {
+        "development084": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        },
+        "development168": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        },
+        "development189": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        }
+      },
+      "complete_export_and_final_journal_binding_passed": true
+    },
+    "SAC-23": {
+      "actor_actions_checked": 49800,
+      "training_actions": 47808,
+      "development_actions": 1992,
+      "mean_abs_residual": 0.6886203852283906,
+      "mean_abs_effective_offset_K": 0.3032850226927474,
+      "nonzero_effective_offset_fraction": 0.9010843373493976,
+      "at_physical_bound_fraction": 0.04036144578313253,
+      "development_effective_actions": {
+        "development084": {
+          "mean_effective_offset_K": -0.010879950485674732,
+          "mean_abs_effective_offset_K": 0.28336268120321884,
+          "nonzero_effective_offset_fraction": 0.9487951807228916
+        },
+        "development168": {
+          "mean_effective_offset_K": -0.15817549869597677,
+          "mean_abs_effective_offset_K": 0.36488103031753055,
+          "nonzero_effective_offset_fraction": 0.8825301204819277
+        },
+        "development189": {
+          "mean_effective_offset_K": 0.2232402835983828,
+          "mean_abs_effective_offset_K": 0.28613088899348155,
+          "nonzero_effective_offset_fraction": 0.7590361445783133
+        }
+      },
+      "development_rule_replay": {
+        "development084": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        },
+        "development168": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        },
+        "development189": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        }
+      },
+      "complete_export_and_final_journal_binding_passed": true
+    },
+    "SAC-37": {
+      "actor_actions_checked": 49800,
+      "training_actions": 47808,
+      "development_actions": 1992,
+      "mean_abs_residual": 0.6814812458207808,
+      "mean_abs_effective_offset_K": 0.2951367287367702,
+      "nonzero_effective_offset_fraction": 0.8946385542168674,
+      "at_physical_bound_fraction": 0.0463855421686747,
+      "development_effective_actions": {
+        "development084": {
+          "mean_effective_offset_K": -0.25978730811950673,
+          "mean_abs_effective_offset_K": 0.3631471459675266,
+          "nonzero_effective_offset_fraction": 0.9668674698795181
+        },
+        "development168": {
+          "mean_effective_offset_K": -0.20195424395153322,
+          "mean_abs_effective_offset_K": 0.37148002723613416,
+          "nonzero_effective_offset_fraction": 0.911144578313253
+        },
+        "development189": {
+          "mean_effective_offset_K": 0.002375683825777238,
+          "mean_abs_effective_offset_K": 0.17368062365665493,
+          "nonzero_effective_offset_fraction": 0.4307228915662651
+        }
+      },
+      "development_rule_replay": {
+        "development084": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        },
+        "development168": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        },
+        "development189": {
+          "steps": 672,
+          "max_anchor_difference_K": 0.0,
+          "scope": "frozen rule replayed on the residual policy's actual state, native intervals and archived forecasts"
+        }
+      },
+      "complete_export_and_final_journal_binding_passed": true
+    }
+  },
+  "training_action_mapping_checked": 143424,
+  "development_action_mapping_checked": 5976,
+  "development_rule_replay_steps": 6048,
+  "additional_FMU_calls": 0,
+  "heldout_initializations": 0
+}

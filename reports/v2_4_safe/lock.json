@@ -1,0 +1,59 @@
+{
+  "protocol": "residential_rl_v2_4_rule_residual_safe_1",
+  "status": "closed_negative_no_control_upgrade",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01",
+    "reports/v2_runner/lock.json": "f69e9ee3e86bd7d41ce95cb115d5db71254c049f50bb44d1abe46d37574eda54",
+    "reports/v2_formal/lock.json": "c24314d26105adab193c7b956852357dd836edf36b23e6ed0c7761ff1395d8b2",
+    "reports/v2_io_repair/lock.json": "a27d4ec77625bba3451928b6c4181e88cc7b6105021a62ad80390b1e409f71a3",
+    "reports/v2_safe_formal/lock.json": "e7924f2b560d9fddf5121f2d71a3f391a6c1a82d25efc51fb0b64ecba229353b",
+    "reports/v2_4/lock.json": "aa7235f9a69da9a9d4db3cd786c49c447ba4653115db204c1b740e9f35a82308"
+  },
+  "files_sha256": {
+    "configs/v2_4_safe.json": "7fd4ce823e1896ab6b8d4b66893b79a39a06fd3279d2d68d512e2763cfddadd6",
+    "scripts/run_v2_residual_safe.py": "d3c104ea7268c25fb1e93867f0445732878666f0ad685bfbe75a631ebe066f4f",
+    "scripts/check_v2_residual_safe.py": "f18bed755f35bc2d6338250fefc740a42d3db478076eeaa12107b3ea5e7311c8",
+    "tests/test_v2_residual_safe.py": "8ce65080879d1b044037df09664edfa2750a7799db7ed9c6b8e659cacd54569f",
+    "scripts/audit_v2_residual_safe.py": "3214dcf64f4c6c5eee9ad4e0880daae7381f36e330acb35118af945650bedb27",
+    "tests/test_v2_residual_audit.py": "938eafe97245c18fb0746829fbffe93223cc1840faf458e6dc300c4b7cb38d3a",
+    "docs/experiments/v2_4_safe.md": "7246b279eca1efa817d49df7852450fa3ca8d8caca12cfe285857094fc7f4b0a",
+    "docs/experiments/v2_4_safe_results.md": "e79f4aef0a634f4733ed22e70f18096b8b3f4e2e0c0f75f62ed81167a8e5c414",
+    "reports/v2_4_safe/archive-audit.json": "68e7ddfe34c1236a22f59e7b86e7a554e7081571ed93be8b7e402fa203c65269",
+    "reports/v2_4_safe/authorization.json": "e8883cfe366afe451792bc2e9c381c69ef65ff10507d029fd5f2536980f6df86",
+    "reports/v2_4_safe/budget.json": "b1925cf3f13b5acc5458ecc9413ca6597b6c24706bb5f71276fd13ff778a865e",
+    "reports/v2_4_safe/closure.json": "fcea20b97cc6604e3c2ae871f79eb13d1b0f342ce9f50cd7d13290f22c0951f1",
+    "reports/v2_4_safe/comparison.json": "0b31b1ab3b6df0a17a59c54c72b850e7190fa0b271356df1e392d5f7416ece1a",
+    "reports/v2_4_safe/costs.json": "84b7f1dbc126d9332933b8f4353d52e37f1c45578180be79f4b8f8bfa69fe1f3",
+    "reports/v2_4_safe/diagnostic.json": "7fd73ff46a3396b724fd3474bb2e3121e59f24dc59eed4164e7189509d782e92",
+    "reports/v2_4_safe/entry-gate.json": "d46733bf880107a46411cc281270fb7c54d121463ed58b28081febaffac52a55",
+    "reports/v2_4_safe/ENTRY_ACCEPTANCE.md": "4f292991fc0bd52f1b2c547983fa77cfa00a0c572417b7bfbad4683dfcf2c9a0",
+    "reports/v2_4_safe/evidence.json": "1ace1d74837be93d19607b88b362c6bc5c84cc1d12cdb5f9b8ba43c582baa259",
+    "reports/v2_4_safe/preflight.json": "d9f00310c123986079337afeb156208060cc5efa54e79a29ac1e562bc499d787",
+    "reports/v2_4_safe/registration-authorized.json": "af9e1d72b7dc33a9d433b92c58bb27ff67cc6ef2ed83a635d1305797aae89362",
+    "reports/v2_4_safe/registration-before-authorization.json": "ca3eee16399fa60d4c72e0a117593fb8b9da4a62c86a468feacb3d2a5e9302cb",
+    "reports/v2_4_safe/registration.json": "5cf6993be6caf12647111bd6ed878e3929bd9b7681b03f82c90f9279145ec56c",
+    "reports/v2_4_safe/REPORT.md": "ab3207a195c43beec1a4507891a87469c2fb7d31960ad46768fc8374cab9a718"
+  },
+  "launch_commit": "fdb5910e67db957ea18243c910f167264d5980dd",
+  "completed_seeds": [
+    11,
+    23,
+    37
+  ],
+  "actual_counts": {
+    "select": 225,
+    "initialize": 225,
+    "advance": 151200
+  },
+  "heldout_initializations": 0,
+  "active_joint_gate_passed_combinations": 0,
+  "active_combinations": 6,
+  "overall_control_upgrade": false,
+  "additional_search_authorized": false,
+  "resumption_authorized": false
+}

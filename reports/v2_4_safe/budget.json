@@ -1,0 +1,53 @@
+{
+  "plan_sha256": "dc7eb391fe6eebd0ad84caebb6cff8e2d88416b89b00b0ddec93f0a98293cc4e",
+  "stage_start": {
+    "wall": 1793202173.6151278,
+    "monotonic": 1184069.8574691
+  },
+  "counts": {
+    "select": 225,
+    "initialize": 225,
+    "advance": 151200
+  },
+  "seeds": {
+    "SAC-11": {
+      "status": "completed",
+      "start": {
+        "wall": 1793202169.4750314,
+        "monotonic": 1184065.7173731
+      },
+      "elapsed_seconds": 6596.661754608154,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "SAC-23": {
+      "status": "completed",
+      "start": {
+        "wall": 1793202175.7280304,
+        "monotonic": 1184071.9703723
+      },
+      "elapsed_seconds": 6590.653940439224,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "SAC-37": {
+      "status": "completed",
+      "start": {
+        "wall": 1793208767.667472,
+        "monotonic": 1190663.9098136
+      },
+      "elapsed_seconds": 6175.388398885727,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    }
+  }
+}

@@ -1,0 +1,1389 @@
+{
+  "seed_and_date_pairs": {
+    "SAC-11": {
+      "development084": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 250.6333128440559,
+            "energy_kWh_m2": 1.3053818377294577,
+            "boptest_energy_kWh_m2": 1.3053828820349278,
+            "discomfort_Kh": 0.17458565175106647,
+            "cost_EUR_m2": 0.33091456059585417,
+            "emissions_kg_m2": 0.2179989412998329,
+            "cold_Kh": 0.17458565175106647,
+            "cold_duration_s": 12210.0,
+            "cold_max_K": 0.08374192209629427,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": -5.447064766930993,
+              "saving_fraction": -0.022216028874578575,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.18546291256808445,
+                "return_C": 0.6881692190166291,
+                "supply_C": -1.871615917114866,
+                "heat_kW": -2.003408498008456
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": -14.792166499254108,
+              "saving_fraction": -0.06272088958399072,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.17256527785627895,
+                "return_C": 0.4591729214824909,
+                "supply_C": -2.230378117033297,
+                "heat_kW": -2.269689784920433
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -73.17393990777367,
+              "saving_fraction": -0.4123419276030418,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.2429370860046447,
+                "return_C": -3.873749313898486,
+                "supply_C": -1.9475856888180942,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 213.77529144491092,
+            "energy_kWh_m2": 1.1134129762755778,
+            "boptest_energy_kWh_m2": 1.1134138670059588,
+            "discomfort_Kh": 2.6675423069499526,
+            "cost_EUR_m2": 0.2822504152860106,
+            "emissions_kg_m2": 0.18594011578999514,
+            "cold_Kh": 2.6675423069499526,
+            "cold_duration_s": 52470.0,
+            "cold_max_K": 0.6272022078506438,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 31.41095663221398,
+              "saving_fraction": 0.1281105970606209,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.48635401498484043,
+                "return_C": 4.256116312093582,
+                "supply_C": -0.08285188910957686,
+                "heat_kW": -2.003408498008456
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": 22.065854899890866,
+              "saving_fraction": 0.0935623628102214,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.4992516496966459,
+                "return_C": 4.0271200145594435,
+                "supply_C": -0.4416140890280076,
+                "heat_kW": -2.269689784920433
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -36.3159185086287,
+              "saving_fraction": -0.20464356380695728,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.4288798415482802,
+                "return_C": -0.3058022208215334,
+                "supply_C": -0.15882166081280502,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 36.858021399144974,
+          "energy_kWh_m2": 0.19196886145387992,
+          "boptest_energy_kWh_m2": 0.19196901502896901,
+          "discomfort_Kh": -2.492956655198886,
+          "cost_EUR_m2": 0.04866414530984359,
+          "emissions_kg_m2": 0.03205882550983777,
+          "cold_Kh": -2.492956655198886,
+          "cold_duration_s": -40260.0,
+          "cold_max_K": -0.5434602857543496,
+          "hot_Kh": 0.0,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 0.0
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": true
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": true
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": false
+      },
+      "development168": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 11.458391020339144,
+            "energy_kWh_m2": 0.05967911989759971,
+            "boptest_energy_kWh_m2": 0.05967916764089562,
+            "discomfort_Kh": 5.491905209612258,
+            "cost_EUR_m2": 0.01512866899696704,
+            "emissions_kg_m2": 0.009966420996029568,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 5.491905209612258,
+            "hot_duration_s": 47880.0,
+            "hot_max_K": 1.0525947434774707
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": -2.685246839812228,
+              "saving_fraction": -0.30607576765607786,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.14646898803113118,
+                "return_C": 0.39931868142423355,
+                "supply_C": 0.12416935433964227,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": -4.879067254434614,
+              "saving_fraction": -0.7415757953300595,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.20673808003181193,
+                "return_C": 0.5661164782542301,
+                "supply_C": 0.1850187438139983,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -6.154951522810581,
+              "saving_fraction": -1.1605584499792687,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.009364605155838035,
+                "return_C": -5.231868393550769,
+                "supply_C": -3.1237769479158715,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 4.557155610182288,
+            "energy_kWh_m2": 0.023735185469699414,
+            "boptest_energy_kWh_m2": 0.023735204457847794,
+            "discomfort_Kh": 5.767365421500635,
+            "cost_EUR_m2": 0.006016874330064415,
+            "emissions_kg_m2": 0.003963779144460582,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 5.767365421500635,
+            "hot_duration_s": 47880.0,
+            "hot_max_K": 1.0526223571661717
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 4.215988570344629,
+              "saving_fraction": 0.4805561704665175,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.19569470419139634,
+                "return_C": 3.6628980255269994,
+                "supply_C": 1.7695841064248157,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": 2.022168155722243,
+              "saving_fraction": 0.30735197532025293,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.2559637961920771,
+                "return_C": 3.829695822356996,
+                "supply_C": 1.8304334958991717,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": 0.7462838873462756,
+              "saving_fraction": 0.1407169606995703,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": 0.03986111100442713,
+                "return_C": -1.9682890494480034,
+                "supply_C": -1.478362195830698,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 6.901235410156857,
+          "energy_kWh_m2": 0.035943934427900295,
+          "boptest_energy_kWh_m2": 0.03594396318304782,
+          "discomfort_Kh": -0.2754602118883769,
+          "cost_EUR_m2": 0.009111794666902625,
+          "emissions_kg_m2": 0.006002641851568986,
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": -0.2754602118883769,
+          "hot_duration_s": 0.0,
+          "hot_max_K": -2.7613688700967032e-05
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": true,
+            "water_gt_1K": false
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": false
+      },
+      "development189": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 292.69712421948964,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 292.69712421948964,
+            "hot_duration_s": 405315.0,
+            "hot_max_K": 6.080350818884938
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 3.758230320727307e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -1.5359889857791131e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -2.96069822525169e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 292.69624282059766,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 292.69624282059766,
+            "hot_duration_s": 405315.0,
+            "hot_max_K": 6.080335605334199
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 6.6339683257865545e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": 1.3397490192801342e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -8.496022019244265e-08,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 0.0,
+          "energy_kWh_m2": 0.0,
+          "boptest_energy_kWh_m2": 0.0,
+          "discomfort_Kh": 0.0008813988919769145,
+          "cost_EUR_m2": 0.0,
+          "emissions_kg_m2": 0.0,
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 0.0008813988919769145,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 1.5213550739190396e-05
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": false
+      }
+    },
+    "SAC-23": {
+      "development084": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 217.20044134360134,
+            "energy_kWh_m2": 1.1312522986645903,
+            "boptest_energy_kWh_m2": 1.1312532036664293,
+            "discomfort_Kh": 0.35639614047168494,
+            "cost_EUR_m2": 0.2867726871294398,
+            "emissions_kg_m2": 0.18891928501229371,
+            "cold_Kh": 0.35639614047168494,
+            "cold_duration_s": 6780.0,
+            "cold_max_K": 0.44903413026867156,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 27.98580673352356,
+              "saving_fraction": 0.11414101301766502,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.1667177278897043,
+                "return_C": 5.01320532218881,
+                "supply_C": 0.5914355952323262,
+                "heat_kW": -2.003408498008456
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": 18.640705001200445,
+              "saving_fraction": 0.07903924014152973,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.1538200931778988,
+                "return_C": 4.784209024654672,
+                "supply_C": 0.23267339531389553,
+                "heat_kW": -2.269689784920433
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -39.74106840731912,
+              "saving_fraction": -0.22394460066974525,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.22419190132626454,
+                "return_C": 0.4512867892736949,
+                "supply_C": 0.5154658235290981,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 245.1780208087403,
+            "energy_kWh_m2": 1.2769688583788559,
+            "boptest_energy_kWh_m2": 1.2769698799539426,
+            "discomfort_Kh": 1.4398390843038247,
+            "cost_EUR_m2": 0.3237118645683244,
+            "emissions_kg_m2": 0.21325396995230841,
+            "cold_Kh": 1.4398390843038247,
+            "cold_duration_s": 27390.0,
+            "cold_max_K": 0.670106064719107,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 0.008227268384587205,
+              "saving_fraction": 3.3555178763530264e-05,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.8687444951105476,
+                "return_C": 5.32652823927242,
+                "supply_C": 0.6702126544458338,
+                "heat_kW": -2.003408498008456
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": -9.336874463938528,
+              "saving_fraction": -0.03958967554494472,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.8816421298223531,
+                "return_C": 5.097531941738282,
+                "supply_C": 0.31145045452740305,
+                "heat_kW": -2.269689784920433
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -67.71864787245809,
+              "saving_fraction": -0.3816008518004448,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.8112703216739874,
+                "return_C": 0.7646097063573052,
+                "supply_C": 0.5942428827426056,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": -27.977579465138973,
+          "energy_kWh_m2": -0.14571655971426556,
+          "boptest_energy_kWh_m2": -0.14571667628751328,
+          "discomfort_Kh": -1.0834429438321398,
+          "cost_EUR_m2": -0.036939177438884585,
+          "emissions_kg_m2": -0.0243346849400147,
+          "cold_Kh": -1.0834429438321398,
+          "cold_duration_s": -20610.0,
+          "cold_max_K": -0.2210719344504355,
+          "hot_Kh": 0.0,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 0.0
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": true
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": true
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": false
+      },
+      "development168": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 14.746842380850055,
+            "energy_kWh_m2": 0.07680647073359403,
+            "boptest_energy_kWh_m2": 0.07680653217877062,
+            "discomfort_Kh": 5.36526259890471,
+            "cost_EUR_m2": 0.019470455907318347,
+            "emissions_kg_m2": 0.012826690873854693,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 5.36526259890471,
+            "hot_duration_s": 51570.0,
+            "hot_max_K": 1.0526037466402158
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": -5.973698200323138,
+              "saving_fraction": -0.680907332354403,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.11453596543191225,
+                "return_C": 0.9568755079570792,
+                "supply_C": 0.3828295743509216,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": -8.167518614945525,
+              "saving_fraction": -1.2413918064454226,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.174805057432593,
+                "return_C": 1.1236733047870757,
+                "supply_C": 0.4436789638252776,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -9.443402883321491,
+              "saving_fraction": -1.780618575496558,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.041297627755056965,
+                "return_C": -4.674311567017924,
+                "supply_C": -2.865116727904592,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 4.280235955566503,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 4.280235955566503,
+            "hot_duration_s": 41235.0,
+            "hot_max_K": 1.0526197874413583
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 8.773144180526916,
+              "saving_fraction": 1.0,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -0.22126260087696892,
+                "return_C": 0.259836492065574,
+                "supply_C": 0.033937139686713635,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": 6.5793237659045305,
+              "saving_fraction": 1.0,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -0.16099350887628816,
+                "return_C": 0.42663428889557053,
+                "supply_C": 0.09478652916106967,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": 5.303439497528563,
+              "saving_fraction": 1.0,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -0.37709619406393813,
+                "return_C": -5.371350582909429,
+                "supply_C": -3.2140091625688,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 14.746842380850055,
+          "energy_kWh_m2": 0.07680647073359403,
+          "boptest_energy_kWh_m2": 0.07680653217877062,
+          "discomfort_Kh": 1.0850266433382076,
+          "cost_EUR_m2": 0.019470455907318347,
+          "emissions_kg_m2": 0.012826690873854693,
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 1.0850266433382076,
+          "hot_duration_s": 10335.0,
+          "hot_max_K": -1.6040801142480632e-05
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": true
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": true
+      },
+      "development189": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 292.6952017548432,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 292.6952017548432,
+            "hot_duration_s": 405315.0,
+            "hot_max_K": 6.0803317770376
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -1.4101360477525304e-05,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -1.9395579784031725e-05,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -2.08202890235043e-05,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 292.69652473564514,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 292.69652473564514,
+            "hot_duration_s": 405315.0,
+            "hot_max_K": 6.08033941148625
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 4.007591769550345e-08,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -5.254143388810917e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -6.678852628283494e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 0.0,
+          "energy_kWh_m2": 0.0,
+          "boptest_energy_kWh_m2": 0.0,
+          "discomfort_Kh": -0.0013229808019445954,
+          "cost_EUR_m2": 0.0,
+          "emissions_kg_m2": 0.0,
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": -0.0013229808019445954,
+          "hot_duration_s": 0.0,
+          "hot_max_K": -7.634448650151171e-06
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": true,
+        "original_rule_and_MPC_joint": false
+      }
+    },
+    "SAC-37": {
+      "development084": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 227.69951164200273,
+            "energy_kWh_m2": 1.1859349564687642,
+            "boptest_energy_kWh_m2": 1.1859359052167293,
+            "discomfort_Kh": 5.703232332181437,
+            "cost_EUR_m2": 0.30063475197244083,
+            "emissions_kg_m2": 0.1980512961711938,
+            "cold_Kh": 5.703232332181437,
+            "cold_duration_s": 55560.0,
+            "cold_max_K": 0.9561522313764499,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 17.486736435122168,
+              "saving_fraction": 0.07132021706870609,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.5269464634941983,
+                "return_C": 0.349032694005075,
+                "supply_C": 0.05854978456011395,
+                "heat_kW": -0.19924134848074204
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": 8.141634702799053,
+              "saving_fraction": 0.03452168897998788,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.5398440982060038,
+                "return_C": 0.12003639647093678,
+                "supply_C": -0.3002124153583168,
+                "heat_kW": -0.4655226353927191
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -50.24013870572051,
+              "saving_fraction": -0.28310783406047263,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.469472290057638,
+                "return_C": -4.21288583891004,
+                "supply_C": -0.017419987143114213,
+                "heat_kW": 1.804167149527714
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 240.17554283199706,
+            "energy_kWh_m2": 1.250914285583318,
+            "boptest_energy_kWh_m2": 1.2509152863147466,
+            "discomfort_Kh": 1.1904580124090247,
+            "cost_EUR_m2": 0.3171070250807882,
+            "emissions_kg_m2": 0.20890285281456267,
+            "cold_Kh": 1.1904580124090247,
+            "cold_duration_s": 28770.0,
+            "cold_max_K": 0.5600583544573396,
+            "hot_Kh": 0.0,
+            "hot_duration_s": 0.0,
+            "hot_max_K": 0.0
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 5.010705245127838,
+              "saving_fraction": 0.020436322527973463,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.22922675531816594,
+                "return_C": 0.1945878795615954,
+                "supply_C": 0.5542128654478802,
+                "heat_kW": 0.7043900973201551
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": -4.334396487195278,
+              "saving_fraction": -0.01837845750994762,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.21632912060636045,
+                "return_C": -0.03440841797254279,
+                "supply_C": 0.19545066552944945,
+                "heat_kW": 0.43810881040817806
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -62.71616989571484,
+              "saving_fraction": -0.35341142515043955,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": -0.2867009287547262,
+                "return_C": -4.36733065335352,
+                "supply_C": 0.478243093744652,
+                "heat_kW": 2.7077985953286112
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": -12.47603118999433,
+          "energy_kWh_m2": -0.06497932911455373,
+          "boptest_energy_kWh_m2": -0.06497938109801726,
+          "discomfort_Kh": 4.512774319772412,
+          "cost_EUR_m2": -0.01647227310834737,
+          "emissions_kg_m2": -0.01085155664336887,
+          "cold_Kh": 4.512774319772412,
+          "cold_duration_s": 26790.0,
+          "cold_max_K": 0.39609387691911024,
+          "hot_Kh": 0.0,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 0.0
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": true,
+            "water_gt_1K": false
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": true,
+            "water_gt_1K": false
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": false
+      },
+      "development168": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 16.375204357666792,
+            "energy_kWh_m2": 0.08528752269618121,
+            "boptest_energy_kWh_m2": 0.08528759092619936,
+            "discomfort_Kh": 6.270528565057207,
+            "cost_EUR_m2": 0.021620404299791535,
+            "emissions_kg_m2": 0.014243027684675292,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 6.270528565057207,
+            "hot_duration_s": 47880.0,
+            "hot_max_K": 1.0525988301105258
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": -7.602060177139876,
+              "saving_fraction": -0.8665149028342192,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.3320793246215885,
+                "return_C": 1.303203949531735,
+                "supply_C": 0.559045607396115,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": -9.795880591762263,
+              "saving_fraction": -1.4888886670278518,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.39234841662226927,
+                "return_C": 1.4700017463617314,
+                "supply_C": 0.619894996870471,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": -11.071764860138229,
+              "saving_fraction": -2.087657427844278,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": false,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 0.1762457314346193,
+                "return_C": -4.327983125443268,
+                "supply_C": -2.6889006948593988,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 4.28023802132094,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 4.28023802132094,
+            "hot_duration_s": 41235.0,
+            "hot_max_K": 1.0526197874413583
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": true,
+              "saving_kWh": 8.773144180526916,
+              "saving_fraction": 1.0,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -0.221261685885338,
+                "return_C": 0.259836492065574,
+                "supply_C": 0.033937139686713635,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": true,
+              "saving_kWh": 6.5793237659045305,
+              "saving_fraction": 1.0,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -0.16099259388465725,
+                "return_C": 0.42663428889557053,
+                "supply_C": 0.09478652916106967,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": true,
+              "saving_kWh": 5.303439497528563,
+              "saving_fraction": 1.0,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": -0.3770952790723072,
+                "return_C": -5.371350582909429,
+                "supply_C": -3.2140091625688,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 16.375204357666792,
+          "energy_kWh_m2": 0.08528752269618121,
+          "boptest_energy_kWh_m2": 0.08528759092619936,
+          "discomfort_Kh": 1.9902905437362666,
+          "cost_EUR_m2": 0.021620404299791535,
+          "emissions_kg_m2": 0.014243027684675292,
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 1.9902905437362666,
+          "hot_duration_s": 6645.0,
+          "hot_max_K": -2.0957330832516163e-05
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": true,
+            "water_gt_1K": true
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": true,
+            "water_gt_1K": true
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": true
+      },
+      "development189": {
+        "residual_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 292.69723769288703,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 292.69723769288703,
+            "hot_duration_s": 405315.0,
+            "hot_max_K": 6.080351632080692
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 1.0735771809322614e-05,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 5.441552502816194e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 4.016843263343617e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "original_incremental_SAC": {
+          "metrics": {
+            "energy_kWh": 0.0,
+            "energy_kWh_m2": 0.0,
+            "boptest_energy_kWh_m2": 0.0,
+            "discomfort_Kh": 292.6965603895993,
+            "cost_EUR_m2": 0.0,
+            "emissions_kg_m2": 0.0,
+            "cold_Kh": 0.0,
+            "cold_duration_s": 0.0,
+            "cold_max_K": 0.0,
+            "hot_Kh": 292.6965603895993,
+            "hot_duration_s": 405315.0,
+            "hot_max_K": 6.08033941148625
+          },
+          "comparisons": {
+            "guarded_rule": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 6.718928545978997e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "solar_mpc": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": false,
+              "energy_gate_passed": true,
+              "joint_gate_passed": false,
+              "terminal_difference": {
+                "operative_C": 1.4247092394725769e-06,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            },
+            "minimum_heat": {
+              "active": false,
+              "saving_kWh": 0.0,
+              "saving_fraction": null,
+              "thermal_nonincrease": true,
+              "energy_gate_passed": true,
+              "joint_gate_passed": true,
+              "terminal_difference": {
+                "operative_C": 0.0,
+                "return_C": 0.0,
+                "supply_C": 0.0,
+                "heat_kW": 0.0
+              }
+            }
+          },
+          "fallback_fraction": 0.0,
+          "fallback_gate_passed": true
+        },
+        "delta_residual_minus_original_metrics": {
+          "energy_kWh": 0.0,
+          "energy_kWh_m2": 0.0,
+          "boptest_energy_kWh_m2": 0.0,
+          "discomfort_Kh": 0.0006773032877163132,
+          "cost_EUR_m2": 0.0,
+          "emissions_kg_m2": 0.0,
+          "cold_Kh": 0.0,
+          "cold_duration_s": 0.0,
+          "cold_max_K": 0.0,
+          "hot_Kh": 0.0006773032877163132,
+          "hot_duration_s": 0.0,
+          "hot_max_K": 1.2220594442169386e-05
+        },
+        "existing_terminal_warnings": {
+          "guarded_rule": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          },
+          "solar_mpc": {
+            "operative_gt_0_2K": false,
+            "water_gt_1K": false
+          }
+        },
+        "rule_and_MPC_joint_including_fallback": false,
+        "original_rule_and_MPC_joint": false
+      }
+    }
+  },
+  "active_joint_passed_combinations": 0,
+  "active_combinations": 6,
+  "all_three_seeds_joint_passed_per_date": {
+    "development084": false,
+    "development168": false,
+    "development189": false
+  },
+  "all_three_dates_qualified_seeds": [],
+  "best_seed_selected": false,
+  "terminal_threshold_source": "unchanged V2-2 warnings: operative .2K, supply/return 1K; not extra acceptance gates",
+  "old_SAC_delta_interpretation": "paired descriptive change at same seed/date/budget, not a new gate or independent weather replication"
+}

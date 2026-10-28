@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "utc": "2026-10-28T15:42:22.403842+00:00",
+  "replicas": [
+    {
+      "project": "thermal-sac-11",
+      "port": 8083
+    },
+    {
+      "project": "thermal-sac-23",
+      "port": 8084
+    }
+  ],
+  "findings": [
+    {
+      "project": "thermal-sac-11",
+      "port": 8083,
+      "version": {
+        "version": "0.9.0"
+      },
+      "testcases": [
+        {
+          "testcaseid": "bestest_air"
+        },
+        {
+          "testcaseid": "bestest_hydronic_heat_pump"
+        }
+      ],
+      "stored_FMU": {
+        "sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+        "bytes": 14505302
+      },
+      "worker_image": "ghcr.io/ibpsa/boptest-worker:v0.9.0@sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+      "worker_image_id": "sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+      "worker_started_at": "2026-10-28T15:40:36.389839062Z"
+    },
+    {
+      "project": "thermal-sac-23",
+      "port": 8084,
+      "version": {
+        "version": "0.9.0"
+      },
+      "testcases": [
+        {
+          "testcaseid": "bestest_air"
+        },
+        {
+          "testcaseid": "bestest_hydronic_heat_pump"
+        }
+      ],
+      "stored_FMU": {
+        "sha256": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e",
+        "bytes": 14505302
+      },
+      "worker_image": "ghcr.io/ibpsa/boptest-worker:v0.9.0@sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+      "worker_image_id": "sha256:08ae9e6f49ff05c38847174fb776e547888c962f2d0b283ae45ebc6f972f0bb7",
+      "worker_started_at": "2026-10-28T15:41:16.307073016Z"
+    }
+  ],
+  "FMU_select_or_initialize_calls": 0,
+  "wall_seconds": 1.0729501999448985,
+  "source_commit": "fdb5910e67db957ea18243c910f167264d5980dd"
+}
