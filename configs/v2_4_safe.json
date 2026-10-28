@@ -1,0 +1,15 @@
+{
+  "protocol": "residential_rl_v2_4_rule_residual_safe_1",
+  "scientific_protocol": "configs/v2_4.json",
+  "parent_lock": "reports/v2_4/lock.json",
+  "variant": "rule_anchored_residual_SAC",
+  "total_select_max": 225,
+  "total_initialize_max": 225,
+  "total_advance_max": 151200,
+  "seed_wall_seconds_max": 10800,
+  "stage_wall_seconds_max": 18000,
+  "parallel_max": 2,
+  "entry_gate_required": true,
+  "heldout_initializations_authorized": 0,
+  "resume_or_replace_failed_seeds": false
+}
