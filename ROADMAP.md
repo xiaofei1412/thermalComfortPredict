@@ -1,5 +1,7 @@
 # V1.0收尾计划
 
+V2-4当前仅执行[一套规则残差SAC的有限改进](docs/experiments/v2_4.md)，预算和停止条件见ROADMAP_V2；保留第一代交付及V2-3负结果，不启用留出。此条为学习前登记，尚无新效果结论。
+
 > **当前新开发计划：[第二版强化学习路线](ROADMAP_V2.md)。** [全新正式九种子开发比较](reports/v2_safe_formal/REPORT.md)已完成，453,600推进、322回归/归档核验通过，留出0；SAC/TD3仅各2/6有效供暖组合联合通过，PPO0/6，无全条件胜者。旧设施失败、九父锁和旧119文件保持，授权已关闭；下一步限量登记诊断，不追加本轮、恢复旧试次或自动启用留出。V1交付保持。
 
 更新日期：2026-10-28。状态依据[PROJECT](PROJECT.md)、[当前交付报告](DELIVERY.md)、[工作台验收](reports/workbench/REPORT.md)、[A核查](reports/delivery-a/REPORT.md)、[B需求](reports/demand-b/REPORT.md)、[C1预注册](reports/residential_c/REPORT.md)、[C2收尾](reports/residential_c2/REPORT.md)及[F候选验收](reports/delivery-f/REPORT.md)。A/B完成，C2按条件停止，D/E不进入；F源码候选、离线及独立完整部署/本机恢复验收完成，自有代码MIT已落实，百度网盘重新下载/独立恢复已通过，F03按私有灾备范围关闭，本轮交付验收完成。
