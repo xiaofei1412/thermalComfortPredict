@@ -1,0 +1,28 @@
+{
+  "status": "offline_candidate_contract_verified",
+  "frozen_registered_fault_reproduced": "KeyError: select_max",
+  "original_counts_after_rejected_reservation": {
+    "select": 0,
+    "initialize": 0,
+    "advance": 0
+  },
+  "original_stage_start": null,
+  "fail_fast_validation": "Missing ledger contract: select_max",
+  "candidate_budget": {
+    "stage_wall_seconds_max": 18000,
+    "select_max": 225,
+    "initialize_max": 225,
+    "advance_max": 151200
+  },
+  "candidate_fixture_predebits": {
+    "select": 1,
+    "initialize": 1,
+    "advance": 1
+  },
+  "fixture_only": true,
+  "FMU_calls": 0,
+  "training_steps": 0,
+  "new_authorization_or_trial_created": false,
+  "frozen_entry_modified": false,
+  "required_next_step": "bind validated plan in a separately versioned entry; test full transport and dispatch before new owner-authorized trial"
+}

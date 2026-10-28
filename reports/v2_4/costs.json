@@ -1,0 +1,28 @@
+{
+  "seed_processes": {
+    "SAC-11": {
+      "status": "failed",
+      "wall_seconds": 3.8783624172210693,
+      "actor_steps": 0,
+      "physical_select": 0,
+      "physical_initialize": 0,
+      "physical_advance": 0
+    },
+    "SAC-23": {
+      "status": "failed",
+      "wall_seconds": 3.8603923320770264,
+      "actor_steps": 0,
+      "physical_select": 0,
+      "physical_initialize": 0,
+      "physical_advance": 0
+    }
+  },
+  "stage_first_select_clock": null,
+  "stage_FMU_elapsed_seconds": null,
+  "not_started": [
+    "SAC-37"
+  ],
+  "GPU_used": false,
+  "controller_CPU_or_engine_CPU_measured": false,
+  "not_zero_resource_cost": "setup, preflight and process startup still consumed resources"
+}

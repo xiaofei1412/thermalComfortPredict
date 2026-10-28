@@ -1,0 +1,167 @@
+{
+  "status": "closed_engineering_failure_before_physical_select",
+  "archive_integrity": "closed_repaired_trial_audit_passed",
+  "not_an_algorithm_negative_result": true,
+  "base_audit": {
+    "status": "closed_repaired_trial_audit_passed",
+    "seeds": {
+      "SAC-11": {
+        "status": "failed",
+        "counts": {
+          "select": 0,
+          "initialize": 0,
+          "advance": 0
+        },
+        "successful_calls": {
+          "select": 0,
+          "initialize": 0,
+          "advance": 0,
+          "stop": 0
+        },
+        "elapsed_seconds": 3.8783624172210693,
+        "exports": [],
+        "budgeted_advances_minus_archived_segments": 0,
+        "first_gate": null,
+        "failure": {
+          "error": "'select_max'",
+          "cycle": 0,
+          "actor_steps": 0,
+          "budget": {
+            "plan_sha256": "56457df6c59fb94055047fe82a2cf490cfa35c2b526a491f564529f0f020d6d1",
+            "stage_start": null,
+            "counts": {
+              "select": 0,
+              "initialize": 0,
+              "advance": 0
+            },
+            "seeds": {
+              "SAC-11": {
+                "status": "running",
+                "start": {
+                  "wall": 1793200571.017996,
+                  "monotonic": 1182467.2603377
+                },
+                "elapsed_seconds": 3.8447463512420654,
+                "counts": {
+                  "select": 0,
+                  "initialize": 0,
+                  "advance": 0
+                }
+              }
+            }
+          },
+          "completed_episode_folders": []
+        }
+      },
+      "SAC-23": {
+        "status": "failed",
+        "counts": {
+          "select": 0,
+          "initialize": 0,
+          "advance": 0
+        },
+        "successful_calls": {
+          "select": 0,
+          "initialize": 0,
+          "advance": 0,
+          "stop": 0
+        },
+        "elapsed_seconds": 3.8603923320770264,
+        "exports": [],
+        "budgeted_advances_minus_archived_segments": 0,
+        "first_gate": null,
+        "failure": {
+          "error": "'select_max'",
+          "cycle": 0,
+          "actor_steps": 0,
+          "budget": {
+            "plan_sha256": "56457df6c59fb94055047fe82a2cf490cfa35c2b526a491f564529f0f020d6d1",
+            "stage_start": null,
+            "counts": {
+              "select": 0,
+              "initialize": 0,
+              "advance": 0
+            },
+            "seeds": {
+              "SAC-11": {
+                "status": "failed",
+                "start": {
+                  "wall": 1793200571.017996,
+                  "monotonic": 1182467.2603377
+                },
+                "elapsed_seconds": 3.8783624172210693,
+                "counts": {
+                  "select": 0,
+                  "initialize": 0,
+                  "advance": 0
+                }
+              },
+              "SAC-23": {
+                "status": "running",
+                "start": {
+                  "wall": 1793200577.068217,
+                  "monotonic": 1182473.3105586
+                },
+                "elapsed_seconds": 3.8308043479919434,
+                "counts": {
+                  "select": 0,
+                  "initialize": 0,
+                  "advance": 0
+                }
+              }
+            }
+          },
+          "completed_episode_folders": []
+        }
+      },
+      "SAC-37": {
+        "status": "not_started"
+      }
+    },
+    "ledger_counts": {
+      "select": 0,
+      "initialize": 0,
+      "advance": 0
+    },
+    "successful_service_calls": {
+      "select": 0,
+      "initialize": 0,
+      "advance": 0,
+      "stop": 0
+    },
+    "archived_transitions_checked": 0,
+    "native_points_checked": 0,
+    "forecast_snapshots_checked": 0,
+    "complete_episode_KPI_archives": 0,
+    "max_official_KPI_difference": 0.0,
+    "final_candidates": 0,
+    "heldout_initializations": 0,
+    "additional_FMU_calls": 0,
+    "best_seed_selected": false
+  },
+  "local_attempts": {
+    "SAC-11": {
+      "local_select_intents_rejected_before_transport_client": 1,
+      "physical_selects": 0,
+      "model_actor_steps": 0,
+      "error": "'select_max'",
+      "failure_sha256": "8bdf6d4e22bd51dc99625cc1f7b9f7d7cb04e55d84cb6e5edeeedf6f5873da3b",
+      "calls_sha256": "9c6c7ca49b6f8ef4f5c07b96729468bf9e61c7a2441b1d47e9f9b15bf35df90e"
+    },
+    "SAC-23": {
+      "local_select_intents_rejected_before_transport_client": 1,
+      "physical_selects": 0,
+      "model_actor_steps": 0,
+      "error": "'select_max'",
+      "failure_sha256": "d4d9799dba664334208fa5dd6603d3baf7a24a51ada5002db23b4642d81d6939",
+      "calls_sha256": "b371ec36ceb919159fd868375c066d3044ca94d5b954dc40edb0f14d6d61d160"
+    }
+  },
+  "first_episode_gate_passed": false,
+  "official_KPI_comparison_performed": false,
+  "stage_clock_started": false,
+  "wall_cost_source": "original per-seed elapsed clocks; zero physical work does not mean zero process cost",
+  "additional_FMU_calls": 0,
+  "new_trial_or_restart": false,
+  "heldout_initializations": 0
+}

@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-28T15:15:56.546730+00:00",
+  "basis": "explicit_owner_request_for_V2_4_in_current_chat",
+  "request": "V2-4\u6709\u9650\u6539\u8fdb\uff1a\u5355\u4e00\u89c4\u5219\u6b8b\u5deeSAC\u56fa\u5b9a\u9884\u7b97\uff1b\u4fdd\u7559\u65e7\u7ed3\u679c\uff0c\u4e0d\u78b0\u7559\u51fa",
+  "protocol_sha256": "cc0d167ac33a1cc0c4219dc16e61489b9420457ed510d2390ff905f42ae14fa6",
+  "base_protocol_sha256": "79f2d84a690721cf816cde3ed04026b458e0f30dce8f3fc9ab3306dceb30f32d",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01",
+    "reports/v2_runner/lock.json": "f69e9ee3e86bd7d41ce95cb115d5db71254c049f50bb44d1abe46d37574eda54",
+    "reports/v2_formal/lock.json": "c24314d26105adab193c7b956852357dd836edf36b23e6ed0c7761ff1395d8b2",
+    "reports/v2_io_repair/lock.json": "a27d4ec77625bba3451928b6c4181e88cc7b6105021a62ad80390b1e409f71a3",
+    "reports/v2_safe_formal/lock.json": "e7924f2b560d9fddf5121f2d71a3f391a6c1a82d25efc51fb0b64ecba229353b"
+  },
+  "frozen_assets_sha256": {
+    "outputs/solar-selected/model.joblib": "ffcbeb0b4c41199ce8642d91967c200a1711a0e61baf23ffc74bb94ce3ce8f17",
+    "outputs/boptest-v0.9.0/testcases/bestest_hydronic_heat_pump/models/wrapped.fmu": "674b9500c1c89fdbec64f2c053af8ddcd06afebe63bd7c1b7fc708692a11863e"
+  },
+  "replicas": [
+    {
+      "project": "thermal-sac-11",
+      "port": 8083
+    },
+    {
+      "project": "thermal-sac-23",
+      "port": 8084
+    }
+  ],
+  "actual_max_parallel": 2,
+  "heldout_initializations_authorized": 0,
+  "old_trial_resumption_authorized": false,
+  "initial_registration_sha256": "fa6eaa310fd3ab584fa667c30cd5cbb42e69e5000a6f7fcca7f7bbd74672540f",
+  "preflight_sha256": "baa0a6db49c202acc05e7a73aa595f1c02d6f5fb6cb9c0c63296a3c4e160db60",
+  "diagnostic_sha256": "7fd73ff46a3396b724fd3474bb2e3121e59f24dc59eed4164e7189509d782e92"
+}

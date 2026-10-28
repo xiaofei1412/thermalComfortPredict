@@ -1,0 +1,53 @@
+{
+  "status": "closed_engineering_failure_no_RL_effect_estimate",
+  "utc": "2026-10-28T15:21:47.162760+00:00",
+  "launch_commit": "db2020db1397f9ebb4ba828c9c42c40f0a6288eb",
+  "closed_counts": {
+    "select": 0,
+    "initialize": 0,
+    "advance": 0
+  },
+  "failed_seeds": [
+    "SAC-11",
+    "SAC-23"
+  ],
+  "not_started": [
+    "SAC-37"
+  ],
+  "new_training_actor_steps": 0,
+  "new_model_candidates": 0,
+  "new_development_evaluations": 0,
+  "heldout_initializations": 0,
+  "FMU_initializations": 0,
+  "first_episode_gate_passed": false,
+  "local_select_intents_rejected_before_transport_client": 2,
+  "successful_read_only_version_calls": 2,
+  "full_tests_before_start": {
+    "count": 332,
+    "seconds": 43.245,
+    "log_sha256": "9bd1626890741e4c338004af526a51477df0cb18915db7e00fbf3d6c028c4ad0"
+  },
+  "full_tests_after_close": {
+    "count": 338,
+    "seconds": 37.737,
+    "log_sha256": "aacb69a9fef6200d40cf29d3da95f72afd15c74fd3dc1e2a9879ab3be6381f76"
+  },
+  "preservation_manifest_sha256": "0fd802bc2452afd53cfcc0934cb9761ca895da706bc8e3dd207c82e51b67ec6a",
+  "parent_locks_verified": 10,
+  "previous_failed_trial_119_files_unchanged": true,
+  "previous_completed_trial_JSON_unchanged": true,
+  "previous_completed_trial_JSON_count": 864,
+  "old_web_container_identity_and_start_unchanged": true,
+  "owned_replicas_stopped": true,
+  "registered_sources_match_launch_commit": true,
+  "runtime_source_repairs_or_restarts": 0,
+  "new_configurations_after_results": 0,
+  "offline_correction_is_fixture_only": true,
+  "raw_seed_logs_sha256": {
+    "SAC-11.log": "793d49f22e22c9eb46fc7197b0ff549f47895e6f2faf98424a5b9f294cb45130",
+    "SAC-23.log": "793d49f22e22c9eb46fc7197b0ff549f47895e6f2faf98424a5b9f294cb45130"
+  },
+  "dispatch_events_sha256": "6ae3fd562d0d850d7c78bb351462aba0ba57b1271505728e4c8ad7e395009489",
+  "diagnostic_history_is_development_only": true,
+  "algorithm_outcome": "unassessed_engineering_gate_failed"
+}
