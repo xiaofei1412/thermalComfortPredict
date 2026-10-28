@@ -1,0 +1,90 @@
+{
+  "controller_process_costs": {
+    "SAC-11": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1826.125,
+      "update_seconds": 335.95744041819125,
+      "inference_seconds": 1.4037322010844946,
+      "wall_seconds": 6762.863421201706,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.7046848399018547
+    },
+    "SAC-23": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1833.125,
+      "update_seconds": 339.4075632218737,
+      "inference_seconds": 1.3947324973996729,
+      "wall_seconds": 6766.462579250336,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.7001669163652976
+    },
+    "SAC-37": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1563.03125,
+      "update_seconds": 289.261454195017,
+      "inference_seconds": 1.1703815020155162,
+      "wall_seconds": 6140.369725227356,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.5875409146664238
+    },
+    "PPO-11": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1422.96875,
+      "update_seconds": 12.42130919941701,
+      "inference_seconds": 1.092011394444853,
+      "wall_seconds": 6585.78777217865,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.5481984911871752
+    },
+    "PPO-23": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1405.34375,
+      "update_seconds": 11.48836630047299,
+      "inference_seconds": 1.1076571978628635,
+      "wall_seconds": 6590.910475730896,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.5560528101721203
+    },
+    "PPO-37": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1393.140625,
+      "update_seconds": 12.167009899159893,
+      "inference_seconds": 1.0494797013234347,
+      "wall_seconds": 5910.401845693588,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.5268472396201982
+    },
+    "TD3-11": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1862.90625,
+      "update_seconds": 230.9712619872298,
+      "inference_seconds": 1.10714850272052,
+      "wall_seconds": 7243.770710229874,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.555797441124759
+    },
+    "TD3-23": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1849.0625,
+      "update_seconds": 229.7262827917002,
+      "inference_seconds": 1.1538249033037573,
+      "wall_seconds": 7187.679397106171,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.5792293691283922
+    },
+    "TD3-37": {
+      "cpu_seconds_including_updates_exports_and_checkpoints": 1823.78125,
+      "update_seconds": 225.12831389484927,
+      "inference_seconds": 0.946280702482909,
+      "wall_seconds": 7108.417368888855,
+      "evaluation_actor_decisions": 1992,
+      "mean_inference_ms": 0.47504051329463304
+    }
+  },
+  "runtime": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cpu",
+    "gymnasium": "1.4.0",
+    "sb3": "2.9.2",
+    "platform": "Windows",
+    "machine": "AMD64",
+    "torch_threads": 1,
+    "deterministic_algorithms": true
+  },
+  "engine_CPU_time_measured": false,
+  "GPU_used": false,
+  "scope": "shared workstation, fixed two replicas; wall includes resets/updates/exports; CPU is controller process only"
+}

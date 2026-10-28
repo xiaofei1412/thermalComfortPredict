@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-28T14:28:55.645047+00:00",
+  "status": "closed_no_restart_or_replacement",
+  "counts": {
+    "select": 675,
+    "initialize": 675,
+    "advance": 453600
+  },
+  "authorized_registration_sha256": "b5c2b4b7c3bae646c184ba6582386f8e1af53fcadd628d766362829bc4c96037",
+  "closed_registration_sha256": "0df4d68eb0c4d665c886337e9037914a78ab01d143d6eb524688c347b977268e"
+}

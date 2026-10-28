@@ -1,0 +1,131 @@
+{
+  "plan_sha256": "bbe61408b59dd90efa72109650ffff0c1f6444b8ceb8772c847f6d3b1dc6dc69",
+  "stage_start": {
+    "wall": 1793157985.1548042,
+    "monotonic": 1139881.3971454
+  },
+  "counts": {
+    "select": 675,
+    "initialize": 675,
+    "advance": 453600
+  },
+  "seeds": {
+    "SAC-11": {
+      "status": "completed",
+      "start": {
+        "wall": 1793157980.7150927,
+        "monotonic": 1139876.9574345
+      },
+      "elapsed_seconds": 6762.863421201706,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "SAC-23": {
+      "status": "completed",
+      "start": {
+        "wall": 1793157987.3594294,
+        "monotonic": 1139883.6017712
+      },
+      "elapsed_seconds": 6766.462579250336,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "SAC-37": {
+      "status": "completed",
+      "start": {
+        "wall": 1793164748.6878633,
+        "monotonic": 1146644.9302052
+      },
+      "elapsed_seconds": 6140.369725227356,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "PPO-11": {
+      "status": "completed",
+      "start": {
+        "wall": 1793170890.9672782,
+        "monotonic": 1152787.2096203
+      },
+      "elapsed_seconds": 6585.78777217865,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "PPO-23": {
+      "status": "completed",
+      "start": {
+        "wall": 1793170897.906695,
+        "monotonic": 1152794.1490367
+      },
+      "elapsed_seconds": 6590.910475730896,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "PPO-37": {
+      "status": "completed",
+      "start": {
+        "wall": 1793177479.9945855,
+        "monotonic": 1159376.2369273
+      },
+      "elapsed_seconds": 5910.401845693588,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "TD3-11": {
+      "status": "completed",
+      "start": {
+        "wall": 1793183393.2953558,
+        "monotonic": 1165289.5376976
+      },
+      "elapsed_seconds": 7243.770710229874,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "TD3-23": {
+      "status": "completed",
+      "start": {
+        "wall": 1793183401.1416066,
+        "monotonic": 1165297.3839484
+      },
+      "elapsed_seconds": 7187.679397106171,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    },
+    "TD3-37": {
+      "status": "completed",
+      "start": {
+        "wall": 1793190593.4601896,
+        "monotonic": 1172489.7025316
+      },
+      "elapsed_seconds": 7108.417368888855,
+      "counts": {
+        "select": 75,
+        "initialize": 75,
+        "advance": 50400
+      }
+    }
+  }
+}

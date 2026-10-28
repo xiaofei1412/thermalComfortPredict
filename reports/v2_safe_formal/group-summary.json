@@ -1,0 +1,481 @@
+{
+  "algorithms": {
+    "SAC": {
+      "active_seed_date_combinations": 6,
+      "joint_rule_and_MPC": 2,
+      "joint_per_reference": {
+        "guarded_rule": 2,
+        "solar_mpc": 2
+      },
+      "energy_per_reference": {
+        "guarded_rule": 5,
+        "solar_mpc": 4
+      },
+      "thermal_per_reference": {
+        "guarded_rule": 2,
+        "solar_mpc": 2
+      },
+      "development_fallback_fractions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_three_seed_passed_active_conditions": []
+    },
+    "PPO": {
+      "active_seed_date_combinations": 6,
+      "joint_rule_and_MPC": 0,
+      "joint_per_reference": {
+        "guarded_rule": 0,
+        "solar_mpc": 0
+      },
+      "energy_per_reference": {
+        "guarded_rule": 2,
+        "solar_mpc": 0
+      },
+      "thermal_per_reference": {
+        "guarded_rule": 1,
+        "solar_mpc": 1
+      },
+      "development_fallback_fractions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_three_seed_passed_active_conditions": []
+    },
+    "TD3": {
+      "active_seed_date_combinations": 6,
+      "joint_rule_and_MPC": 2,
+      "joint_per_reference": {
+        "guarded_rule": 2,
+        "solar_mpc": 2
+      },
+      "energy_per_reference": {
+        "guarded_rule": 5,
+        "solar_mpc": 5
+      },
+      "thermal_per_reference": {
+        "guarded_rule": 2,
+        "solar_mpc": 2
+      },
+      "development_fallback_fractions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_three_seed_passed_active_conditions": []
+    }
+  },
+  "terminal_warning_thresholds": {
+    "operative_difference_K": 0.2,
+    "water_difference_K": 1.0
+  },
+  "terminal_warnings": [
+    {
+      "seed": "SAC-11",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.48635401498484043,
+        "return_C": 4.256116312093582,
+        "supply_C": -0.08285188910957686,
+        "heat_kW": -2.003408498008456
+      }
+    },
+    {
+      "seed": "SAC-11",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.4992516496966459,
+        "return_C": 4.0271200145594435,
+        "supply_C": -0.4416140890280076,
+        "heat_kW": -2.269689784920433
+      }
+    },
+    {
+      "seed": "SAC-11",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.19569470419139634,
+        "return_C": 3.6628980255269994,
+        "supply_C": 1.7695841064248157,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "SAC-11",
+      "episode": "development168",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.2559637961920771,
+        "return_C": 3.829695822356996,
+        "supply_C": 1.8304334958991717,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "SAC-23",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.8687444951105476,
+        "return_C": 5.32652823927242,
+        "supply_C": 0.6702126544458338,
+        "heat_kW": -2.003408498008456
+      }
+    },
+    {
+      "seed": "SAC-23",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.8816421298223531,
+        "return_C": 5.097531941738282,
+        "supply_C": 0.31145045452740305,
+        "heat_kW": -2.269689784920433
+      }
+    },
+    {
+      "seed": "SAC-23",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": true,
+      "terminal_difference": {
+        "operative_C": -0.22126260087696892,
+        "return_C": 0.259836492065574,
+        "supply_C": 0.033937139686713635,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "SAC-37",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": -0.22922675531816594,
+        "return_C": 0.1945878795615954,
+        "supply_C": 0.5542128654478802,
+        "heat_kW": 0.7043900973201551
+      }
+    },
+    {
+      "seed": "SAC-37",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": -0.21632912060636045,
+        "return_C": -0.03440841797254279,
+        "supply_C": 0.19545066552944945,
+        "heat_kW": 0.43810881040817806
+      }
+    },
+    {
+      "seed": "SAC-37",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": true,
+      "terminal_difference": {
+        "operative_C": -0.221261685885338,
+        "return_C": 0.259836492065574,
+        "supply_C": 0.033937139686713635,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "PPO-11",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.7335949523043723,
+        "return_C": 3.3521634942808305,
+        "supply_C": 4.008696570519135,
+        "heat_kW": 1.3877227687043958
+      }
+    },
+    {
+      "seed": "PPO-11",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.7464925870161778,
+        "return_C": 3.1231671967466923,
+        "supply_C": 3.649934370600704,
+        "heat_kW": 1.1214414817924188
+      }
+    },
+    {
+      "seed": "PPO-11",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.0275942450833213,
+        "return_C": 2.636833430098932,
+        "supply_C": 1.2315873328723228,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "PPO-11",
+      "episode": "development168",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.087863337084002,
+        "return_C": 2.8036312269289283,
+        "supply_C": 1.2924367223466788,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "PPO-23",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.830930316138108,
+        "return_C": 4.527708237996819,
+        "supply_C": 5.43065981908336,
+        "heat_kW": 1.983698777161511
+      }
+    },
+    {
+      "seed": "PPO-23",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.8438279508499136,
+        "return_C": 4.298711940462681,
+        "supply_C": 5.071897619164929,
+        "heat_kW": 1.717417490249534
+      }
+    },
+    {
+      "seed": "PPO-23",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.8758152633438385,
+        "return_C": 1.5118686610176155,
+        "supply_C": 0.7618100875959044,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "PPO-23",
+      "episode": "development168",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.9360843553445193,
+        "return_C": 1.678666457847612,
+        "supply_C": 0.8226594770702604,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "PPO-37",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.7223472503385437,
+        "return_C": 3.683364387117763,
+        "supply_C": 4.45130503823367,
+        "heat_kW": 1.6272490622251703
+      }
+    },
+    {
+      "seed": "PPO-37",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.7352448850503492,
+        "return_C": 3.4543680895836246,
+        "supply_C": 4.092542838315239,
+        "heat_kW": 1.3609677753131932
+      }
+    },
+    {
+      "seed": "PPO-37",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.7137817605751593,
+        "return_C": 2.0810894251665104,
+        "supply_C": 1.0847737715359926,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "PPO-37",
+      "episode": "development168",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.77405085257584,
+        "return_C": 2.247887221996507,
+        "supply_C": 1.1456231610103487,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "TD3-11",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.021133002488795682,
+        "return_C": 3.1850370211262202,
+        "supply_C": 6.723249151721461,
+        "heat_kW": 6.995988423913065
+      }
+    },
+    {
+      "seed": "TD3-11",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.03403063720060118,
+        "return_C": 2.956040723592082,
+        "supply_C": 6.3644869518030305,
+        "heat_kW": 6.729707137001088
+      }
+    },
+    {
+      "seed": "TD3-11",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.07189588467923613,
+        "return_C": 1.4698091659017791,
+        "supply_C": 0.7762192648782502,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "TD3-11",
+      "episode": "development168",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.1321649766799169,
+        "return_C": 1.6366069627317756,
+        "supply_C": 0.8370686543526062,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "TD3-23",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.1411558351548479,
+        "return_C": 7.185613710320524,
+        "supply_C": 12.400619427059041,
+        "heat_kW": 10.505091616820119
+      }
+    },
+    {
+      "seed": "TD3-23",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 1.1540534698666534,
+        "return_C": 6.956617412786386,
+        "supply_C": 12.04185722714061,
+        "heat_kW": 10.23881032990814
+      }
+    },
+    {
+      "seed": "TD3-23",
+      "episode": "development168",
+      "reference": "guarded_rule",
+      "joint_gate_passed": true,
+      "terminal_difference": {
+        "operative_C": -0.10115708176465432,
+        "return_C": 2.4467911430966183,
+        "supply_C": 1.6034507537400486,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "TD3-23",
+      "episode": "development168",
+      "reference": "solar_mpc",
+      "joint_gate_passed": true,
+      "terminal_difference": {
+        "operative_C": -0.040887989763973565,
+        "return_C": 2.613588939926615,
+        "supply_C": 1.6643001432144047,
+        "heat_kW": 0.0
+      }
+    },
+    {
+      "seed": "TD3-37",
+      "episode": "development084",
+      "reference": "guarded_rule",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.21832978993143115,
+        "return_C": 3.5328413425008875,
+        "supply_C": 0.08892700412189924,
+        "heat_kW": -2.003408498008456
+      }
+    },
+    {
+      "seed": "TD3-37",
+      "episode": "development084",
+      "reference": "solar_mpc",
+      "joint_gate_passed": false,
+      "terminal_difference": {
+        "operative_C": 0.23122742464323665,
+        "return_C": 3.3038450449667494,
+        "supply_C": -0.2698351957965315,
+        "heat_kW": -2.269689784920433
+      }
+    }
+  ],
+  "terminal_warning_is_not_new_pass_gate": true,
+  "all_registered_seeds_used": true,
+  "new_data_or_simulation_calls": 0
+}

@@ -1,0 +1,102 @@
+{
+  "status": "closed_fresh_safe_formal_trial",
+  "utc": "2026-10-28T14:42:05.094142+00:00",
+  "launch_commit": "b3a9300af14ab6afcdd6479d192671d8765125e4",
+  "closed_counts": {
+    "select": 675,
+    "initialize": 675,
+    "advance": 453600
+  },
+  "completed_seeds": [
+    "SAC-11",
+    "SAC-23",
+    "SAC-37",
+    "PPO-11",
+    "PPO-23",
+    "PPO-37",
+    "TD3-11",
+    "TD3-23",
+    "TD3-37"
+  ],
+  "failed_seeds": [],
+  "not_started_seeds": [],
+  "all_three_development_dates_rule_and_MPC_joint_and_fallback_passed": [],
+  "full_tests_after_close": {
+    "count": 322,
+    "seconds": 44.835,
+    "log_sha256": "eff44596fb0de82e75695995172ca8d288e7c2a1e303aab944748a1e4d3db6b4"
+  },
+  "full_tests_before_start": {
+    "count": 322,
+    "seconds": 40.778,
+    "log_sha256": "6edd62a87005407e4e94525a28fe3e84e92db2f750e93e53ab042f6cf422d94b"
+  },
+  "portable_authorization_test_fixture": {
+    "tests": 4,
+    "seconds": 0.572,
+    "log_sha256": "d06faa130c4d4698912ccf3f2e3b7c3a7a2aec256fae7ceb23a98f7804a976d9",
+    "scope": "stub only absent private assets in tests; runtime launch sources unchanged"
+  },
+  "parent_locks_verified": 9,
+  "old_trial_119_files_unchanged": true,
+  "completed_candidate_75_exports_zero_missing_segments_and_final_manifest_verified": true,
+  "old_trial_before_manifest_sha256": "6398cb6d96e4ece37369f389502db85a4a1feef756e8c147a945a41e61474fa5",
+  "old_trial_after_manifest_sha256": "6398cb6d96e4ece37369f389502db85a4a1feef756e8c147a945a41e61474fa5",
+  "dispatcher_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "dispatcher_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "dispatch_events_sha256": "4b2426c426df1ff75c9a759797ee8211f4cebd3f12c4507eb596569d11d81c5e",
+  "raw_seed_logs_sha256": {
+    "PPO-11.log": "a8f89028ef7d139bc04660b7e93c81c691b627537cc0b7be5b5f57de2c0811a0",
+    "PPO-23.log": "1c3b4fbfce5e0d96aa5e41decbb72f9c89a214c022cecaa47a407aec73d7f7e5",
+    "PPO-37.log": "5ee149f5e52246cfd8a3d4df433f4604de6aa2cd7685d0b349561284ca9ff343",
+    "SAC-11.log": "cc38ecca402c88727d00f94543736195a16d4211af444c1121fe6a456d1f4010",
+    "SAC-23.log": "65a5dc5db74335bd69d12cb4e8df17779d0830cb961b41cc80c5adaae90677c1",
+    "SAC-37.log": "b91a6ce3620f73b307cfcc0354d2129966d5f520bd0f544bffab0123a6335674",
+    "TD3-11.log": "47920107a07da7d89267fea43308c63b1add8c6cb32118b98fbf6fcef3295218",
+    "TD3-23.log": "75333ca9b9c44262e2ebd37106f3909c450922a3c5acf2277f8290165e6d17a6",
+    "TD3-37.log": "b52d12faf8fe531109410ec418f4a955b4791c683fd7f35b9a223514444376f9"
+  },
+  "workbench_before": {
+    "8768": {
+      "error": "URLError"
+    },
+    "8770": {
+      "error": "URLError"
+    }
+  },
+  "old_trial_resumed": false,
+  "heldout_initializations": 0,
+  "runtime_source_repairs_or_restarts": 0,
+  "new_hyperparameters_after_results": 0,
+  "best_seed_selected": false,
+  "old_services_unchanged": true,
+  "old_services_before": {
+    "thermal-boptest-web-1": {
+      "id": "4ef324797b9c59dfd2bf0a0a526d5f819ddf1fa8c007a398d384dab17454ff86",
+      "started_at": "2026-10-22T08:56:16.375120642Z"
+    },
+    "thermal-accept-f2-web-1": {
+      "id": "e22948f06752bcddb95216fb1f9d7d0391b5ec51ffb14b766cc2adb7bf8a415d",
+      "started_at": "2026-10-27T08:32:06.944993677Z"
+    }
+  },
+  "old_services_after": {
+    "thermal-boptest-web-1": {
+      "id": "4ef324797b9c59dfd2bf0a0a526d5f819ddf1fa8c007a398d384dab17454ff86",
+      "started_at": "2026-10-22T08:56:16.375120642Z"
+    },
+    "thermal-accept-f2-web-1": {
+      "id": "e22948f06752bcddb95216fb1f9d7d0391b5ec51ffb14b766cc2adb7bf8a415d",
+      "started_at": "2026-10-27T08:32:06.944993677Z"
+    }
+  },
+  "active_window_seconds_first_select_to_last_finalization": 39716.722754240036,
+  "all_seed_clocks_within_original_cap": true,
+  "owned_replicas_shutdown": true,
+  "study_processes_exited_before_authorization_close": true,
+  "aggregate_active_joint_pass_counts": {
+    "SAC": 2,
+    "PPO": 0,
+    "TD3": 2
+  }
+}
