@@ -1,0 +1,47 @@
+{
+  "version": "v2.0.0",
+  "research_status": "closed_no_more_experiments",
+  "research_source_commit": "fe646d7e6373b8a09ca5ac6ed744e20cbe909c16",
+  "parent_locks_sha256": {
+    "reports/v2_0/lock.json": "5286ec6ae621f62c37a0fdfe31ca8c2bd54a247ca7e0df0ea89feb43f78e0ff6",
+    "reports/v2_1/lock.json": "9faff94eb491806a393a6f5bf836be2c1899423e980aef1da45ee1837b6e6581",
+    "reports/v2_2/lock.json": "420389a5bd12a4c7e4fb053665b4b1639b0c75f13d52d70ffea4b9b91278809a",
+    "reports/v2_3_numerics/lock.json": "e0400bceb65bc0248b9deede6df82cd25735ec9d8f423ca80db9f606ad081e13",
+    "reports/v2_sac/lock.json": "5438d7a352976537d6c15bd0461754676c3a84fec67e07735526cb2b0dcbef4d",
+    "reports/v2_comparison/lock.json": "9696618036d1726832aba4bf825da92f3309a16664674078b583d6e86c93ad01",
+    "reports/v2_runner/lock.json": "f69e9ee3e86bd7d41ce95cb115d5db71254c049f50bb44d1abe46d37574eda54",
+    "reports/v2_formal/lock.json": "c24314d26105adab193c7b956852357dd836edf36b23e6ed0c7761ff1395d8b2",
+    "reports/v2_io_repair/lock.json": "a27d4ec77625bba3451928b6c4181e88cc7b6105021a62ad80390b1e409f71a3",
+    "reports/v2_safe_formal/lock.json": "e7924f2b560d9fddf5121f2d71a3f391a6c1a82d25efc51fb0b64ecba229353b",
+    "reports/v2_4/lock.json": "aa7235f9a69da9a9d4db3cd786c49c447ba4653115db204c1b740e9f35a82308",
+    "reports/v2_4_safe/lock.json": "690163d0abfa730fe02f6aef32d580d58f4140dbd018bf925dbb9b4c866f8c41",
+    "reports/v2_delivery/lock.json": "18a269ab7ee599915ecc896ede4bb1a8fea2205bd50ebc33e4ae81477a9c1ab1"
+  },
+  "files_sha256": {
+    ".gitignore": "74e7475583c98f33d51a37c1e75962ae8ab0d92784f8906357785de844746b45",
+    "LICENSE_SCOPE.md": "600814afaed7ce9696c059a5f877f205fecccc22d7f02b2d148b3694c1bd535e",
+    "README.md": "adfa2292c39c74eea8f1daf46c25d232ef97e38b3f84dbc11e175909ffff6a67",
+    "data/README.md": "b84d7f3f24825c1a57b080d0cf78064744bd2d80a3a3dc8b663c37cc356bb459",
+    "legacy/README.md": "0b9cd1ea9a52e624db6d91d5ac4a19a95fa21a1340e555202a3b4027e453b4c4",
+    "tests/test_baseline.py": "11a4a6e2f32c4e4d2c87d9a852c0e57f7e6cc17a3d418a7b3cd614462ed99955",
+    ".github/workflows/pages.yml": "9444c966a8447ad1cd8ad2e658f034d76a11f2efa7ad1d94ae9b2198fd3a4b91",
+    "scripts/build_public_site.py": "410251d5e49c0d9ce55cf9d6a58fd91d4b8e82eb18a86f713f3773045ceec167",
+    "site/index.html": "2cafc6ce42788cf8f9218297c77f64b2e763a09f5dee0249097cd06dcbfdafce",
+    "tests/test_public_site.py": "3e4b3d1dcba847027fad7425bcb9a1f709d3f55569cd9ff908a2cd3bd8c602e0",
+    "docs/FINAL_STATUS.md": "8cffd3fa307342362d1aff1fe7a82d1e7ebac4d0f1cf67a06aaeaea1cdeef2da",
+    "reports/final/REPORT.md": "71df27f753d4909e139191e285be1419fffe2d980adf664bb72d545a534a7610",
+    "reports/final/backup-status.json": "28f96103356706dcbf6b5bbe3e1b23d87360c30ee19240b7beb63ead9a4983b1",
+    "reports/final/cleanup-summary.json": "66e92a94109609a056718751d489923cd5d1446a40b8fe8cd0e0088d58e77c62"
+  },
+  "removed_from_current_main": [
+    "data/raw/ashrae_db2.csv",
+    "data/processed/cleaned_asds4.csv",
+    "legacy/ffnn2.py",
+    "legacy/preprocess4.py"
+  ],
+  "V2-R01": "uploaded_owner_confirmed_restore_deferred",
+  "new_model_experiments": 0,
+  "FMU_calls": 0,
+  "heldout_initializations": 0,
+  "scope": "immutable public release content; rolling project plans, development log and later publication/remote proof are separate"
+}

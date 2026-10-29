@@ -14,6 +14,9 @@ from thermal_comfort.data import (
 from thermal_comfort.models import fit_neural, load_neural, predict_neural, save_neural
 
 
+@unittest.skipUnless((ROOT / 'data/raw/ashrae_db2.csv').is_file()
+                     and (ROOT / 'data/processed/cleaned_asds4.csv').is_file(),
+                     'Private historical CSV omitted from the public release; restore the owner archive to run data checks')
 class DataIntegrityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

@@ -1,0 +1,96 @@
+{
+  "status": "research_closed_public_source_cleaned_local_archive_retained",
+  "completed_at": "2026-10-29T14:13:09.817395+08:00",
+  "owner_decision": "stop research; remove archived original research assets and redundant intermediates",
+  "deleted_targets": 144,
+  "cleanup_failures": 0,
+  "original_files_archive_checksum_matched": 12174,
+  "original_bytes_archive_checksum_matched": 20805142038,
+  "free_bytes_before": 35428577280,
+  "free_bytes_after": 122990968832,
+  "disk_bytes_released": 87562391552,
+  "final_archives": [
+    {
+      "path": "outputs/release-final/upload-final/thermalComfortPredict-private-20261027-r2.7z",
+      "bytes": 1019507886,
+      "sha256": "460f54c8b41a9b4d6a9a5b14330d3d2a105174035d37aecc1d57d8e88852c550",
+      "key_present": true
+    },
+    {
+      "path": "outputs/v2-delivery/upload/thermalComfortPredict-V2-private-20261029.7z",
+      "bytes": 13278724878,
+      "sha256": "b69119a23f3efa036edfba97ac5b3fefd403bfb1688c3d807d0fa6efb3a3c79e",
+      "key_present": true
+    }
+  ],
+  "uncovered_small_evidence_files_retained": 36,
+  "private_csv_removed_from_main": [
+    {
+      "path": "data/raw/ashrae_db2.csv",
+      "sha256": "873a83fb9c0d9a6181c663b8af19ff35380153e70ef145e22fe17a32f2727b9a",
+      "covered_by_V1_final_archive": true
+    },
+    {
+      "path": "data/processed/cleaned_asds4.csv",
+      "sha256": "77bda5d3686ef7c583b983a08e73fd04f1c80686de6318f32ef3c527d8a5f207",
+      "covered_by_V1_final_archive": true
+    }
+  ],
+  "git_history_rewritten": false,
+  "retained_validation_environment": {
+    "path": "outputs/v2-delivery/clean-env",
+    "reason": "automatic approval review rejected deletion with blocked by policy; no alternative deletion attempted",
+    "approximate_bytes": 1100000000,
+    "retained": true
+  },
+  "tests": {
+    "discovered": 367,
+    "passed": 357,
+    "skipped_private_csv": 9,
+    "skipped_windows_symlink_privilege": 1,
+    "seconds": 66.151
+  },
+  "public_v1_verification": {
+    "sample_id": "0a2e84c3cb66",
+    "source_sha256": "69565a553e32195f7d6b10b518bc3fa4a683a9286601140002bc8b00dca84780",
+    "replayed_actions": 5,
+    "native_interval_points": 155,
+    "kpi_max_absolute_difference": 3.469446951953614e-18,
+    "c2_stop_decision_reproduced": true,
+    "new_simulations": 0,
+    "new_model_fits": 0,
+    "scope": "archived trajectory and decision audit; not model retraining or a new control evaluation"
+  },
+  "public_v2_verification": {
+    "status": "public_delivery_verified",
+    "cases": 45,
+    "frames": 30285,
+    "full_precision_metric_rows": 45,
+    "active_joint_passed": {
+      "SAC": 2,
+      "PPO": 0,
+      "TD3": 2,
+      "residual_SAC": 0
+    },
+    "active_combinations_per_RL_method": 6,
+    "all_dates_qualified_seeds": {
+      "SAC": [],
+      "PPO": [],
+      "TD3": [],
+      "residual_SAC": []
+    },
+    "new_model_experiments": 0,
+    "FMU_calls": 0,
+    "heldout_initializations": 0,
+    "scope": "public bundle bytes, all frozen development metrics/gates and display structure; raw native audit requires private archive"
+  },
+  "new_model_experiments": 0,
+  "new_FMU_calls": 0,
+  "heldout_initializations": 0,
+  "V2-R01": "owner confirmed uploaded; actual remote restoration deferred due to disk space",
+  "evidence_sha256": {
+    "cleanup-plan.json": "cfb6619b1b7a4a5efc878a6c366d312d28458bc131dae0cbcbe6b9976951b8b7",
+    "cleanup-result.json": "1ebc060b22df7aa24c85582a7687810ff69126d040bf6d91f6613d596cbec8b8",
+    "final-regression.log": "655a949994cd86548e09e888d7de411ae5377a1456e02c21c6e28a9a5ab5da1c"
+  }
+}

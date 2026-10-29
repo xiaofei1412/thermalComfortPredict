@@ -1,0 +1,12 @@
+{
+  "reported_on": "2026-10-29",
+  "V2-R01": "uploaded_owner_confirmed_restore_deferred",
+  "provider": "Baidu Netdisk owner private backup",
+  "owner_confirmed_uploaded": true,
+  "owner_requested_no_redownload_due_to_disk_space": true,
+  "cloud_contents_independently_observed": false,
+  "remote_restore_verified": false,
+  "local_restore_previously_passed": true,
+  "blocks_research_closeout": false,
+  "new_model_experiments": 0
+}

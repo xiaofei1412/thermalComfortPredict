@@ -1,18 +1,9 @@
-# 数据说明
+# 历史数据清单
 
-| 路径 | 当前用途 | 状态 |
-| --- | --- | --- |
-| `raw/ashrae_db2.csv` | 107,584 行历史原始快照 | 原文件不变；SHA-256 与字段映射已固定，准确上游发行版仍未确定 |
-| `processed/cleaned_asds4.csv` | 60,699 行历史五列表 | 已由新流程逐值复核；不作为新主评测的最终训练表 |
-| `manifest.json` | 原始摘要、位置式字段、单位、质控和来源依据 | 用于每次重建的前置校验 |
+最终公开main不再分发历史原始CSV和清洗CSV。原快照为107,584行，旧清洗表60,699行；字段、单位、版本依据和SHA保留在[manifest.json](manifest.json)，不是用当前上游最新版替代冻结数据。
 
-冷热感觉、舒适程度、冷热偏好及可接受性分别保留。本阶段训练冷热感觉和冷热偏好任务，保留小数热感觉标签。损坏的单位列采用固定位置读取，并通过摄氏/华氏成对数值核验。主评测使用上游维护脚本的标签无关室温质控，不套用旧温度—标签过滤规则。
+所有者可从V1最终私有归档恢复`data/raw/ashrae_db2.csv`及`data/processed/cleaned_asds4.csv`后运行原数据完整性测试；公开环境缺少这些文件时，9项依赖该快照的检查明确跳过。其他单元测试、V1小样例和V2公开回放仍可运行。历史文件仍可在Git历史`fe646d7`中查阅，本次没有重写历史或重新授权。
 
-重新生成的数据、切分和审计默认位于 `outputs/baseline/data/`。紧凑审计归档在 [`reports/baseline/data/audit.json`](../reports/baseline/data/audit.json)，协议见 [实验说明](../docs/experiments/baseline.md)，来源与许可证据见 [核查记录](../docs/experiments/data-provenance.md)。
+热感觉、热舒适程度、冷热偏好和可接受性不混用。新流程的源分组、标签无关质控和冻结切分见[实验协议](../docs/experiments/baseline.md)，结果见[基线报告](../reports/baseline/REPORT.md)。
 
-参考来源：
-
-- [ASHRAE Global Thermal Comfort Database II 官方维护仓库](https://github.com/CenterForTheBuiltEnvironment/ashrae-db-II)
-- [官方数据档案](https://datadryad.org/dataset/doi:10.6078/D1F671)
-
-现存文件不视为官方最新版，也不视为已恢复原实验室的完整数据。当前 Dryad 元数据声明 CC0-1.0，但本地历史副本的完整版本链仍需核实。后续新增数据继续记录来源、版本、校验值与使用条件；代码许可与第三方数据许可分别处理。
+来源：[官方维护仓库](https://github.com/CenterForTheBuiltEnvironment/ashrae-db-II)与[数据档案](https://datadryad.org/dataset/doi:10.6078/D1F671)。历史快照的精确发行链仍有缺口；不宣称它是最新数据或原实验室完整数据。

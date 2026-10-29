@@ -17,6 +17,9 @@ __pycache__/
 
 # Generated experiments and model weights
 outputs/
+/data/raw/
+/data/processed/
+/legacy/*.py
 runs/
 checkpoints/
 mlruns/
