@@ -1,0 +1,102 @@
+{
+  "status": "public_pages_content_verified",
+  "verified_at": "2026-10-29T14:17:30.827965+08:00",
+  "url": "https://xiaofei1412.github.io/thermalComfortPredict/",
+  "source_commit": "8bdcc2c81d573c386d53d518000583946fb39541",
+  "assets": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 6488,
+      "sha256": "2cafc6ce42788cf8f9218297c77f64b2e763a09f5dee0249097cd06dcbfdafce",
+      "equal_to_local_allowlisted_build": true
+    },
+    {
+      "path": "replay/index.html",
+      "status": 200,
+      "bytes": 15933,
+      "sha256": "95a2559726b7f396e3357a35ec0d640903f73bf44bc122862f40c1eafd0cc004",
+      "equal_to_local_allowlisted_build": true
+    },
+    {
+      "path": "replay/data.json",
+      "status": 200,
+      "bytes": 2542049,
+      "sha256": "c3b3b5f73cc1df2379466425a771795569e08ab575f306151ecd15cfcd66aea6",
+      "equal_to_local_allowlisted_build": true
+    },
+    {
+      "path": "assets/demo.png",
+      "status": 200,
+      "bytes": 86065,
+      "sha256": "f7c84323d3e3fff21eb2dc44a13b149b9030a22f4654c6abf3447662b78f1308",
+      "equal_to_local_allowlisted_build": true
+    }
+  ],
+  "private_assets_published": false,
+  "new_model_experiments": 0,
+  "FMU_calls": 0,
+  "version": "v2.0.0",
+  "verified_ci": [
+    {
+      "id": 40828103733,
+      "name": "V2 public archive replay",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40828103733",
+      "head_sha": "8bdcc2c81d573c386d53d518000583946fb39541"
+    },
+    {
+      "id": 40828103715,
+      "name": "Project showcase on GitHub Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40828103715",
+      "head_sha": "8bdcc2c81d573c386d53d518000583946fb39541"
+    },
+    {
+      "id": 40828103746,
+      "name": "Windows RL snapshot concurrency",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40828103746",
+      "head_sha": "8bdcc2c81d573c386d53d518000583946fb39541"
+    },
+    {
+      "id": 40828103752,
+      "name": "Prediction, dynamics and MPC checks",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40828103752",
+      "head_sha": "8bdcc2c81d573c386d53d518000583946fb39541"
+    }
+  ],
+  "repository": {
+    "description": "楼宇热环境预测与受约束控制研究：RC灰箱与残差、MPC及SAC/PPO/TD3对照；可交互回放与可复核负结果。",
+    "homepage": "https://xiaofei1412.github.io/thermalComfortPredict/",
+    "topics": [
+      "boptest",
+      "building-control",
+      "model-predictive-control",
+      "reinforcement-learning",
+      "reproducible-research",
+      "simulation",
+      "thermal-comfort"
+    ]
+  },
+  "browser_verification": {
+    "landing_loaded": true,
+    "replay_loaded": true,
+    "family": "TD3",
+    "seed": 37,
+    "episode": "development168",
+    "time_step": 672,
+    "displayed_energy_kWh": 1.58,
+    "displayed_hot_Kh": 4.452,
+    "scope_label": "this seed and window only"
+  },
+  "owner_summary_and_resume_git_ignored": true,
+  "original_scientific_locks_unchanged": true,
+  "V2_R01": "uploaded owner confirmed; remote restore deferred",
+  "notes": "The later closure receipt commit changes documentation only; website and research content remain bound by the release lock."
+}
