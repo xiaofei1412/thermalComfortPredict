@@ -1,0 +1,1420 @@
+{
+  "status": "public_delivery_verified",
+  "cases": 45,
+  "frames": 30285,
+  "full_precision_metric_rows": 45,
+  "active_joint_passed": {
+    "SAC": 2,
+    "PPO": 0,
+    "TD3": 2,
+    "residual_SAC": 0
+  },
+  "active_combinations_per_RL_method": 6,
+  "all_dates_qualified_seeds": {
+    "SAC": [],
+    "PPO": [],
+    "TD3": [],
+    "residual_SAC": []
+  },
+  "rows": [
+    {
+      "episode": "development084",
+      "family": "guarded_rule",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 245.1862480771249,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": 0.0
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": -9.345101732323116,
+          "saving_fraction": -0.03962456033291365
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "solar_mpc",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 235.84114634480179,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 9.345101732323116,
+          "saving_fraction": 0.038114298031036206
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": 0.0
+        }
+      },
+      "fallback_fraction": 0.6792168674698795
+    },
+    {
+      "episode": "development084",
+      "family": "minimum_heat",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 177.45937293628222,
+        "cold_Kh": 13.940631426001614,
+        "cold_duration_s": 104280.0,
+        "cold_max_K": 1.8519601718609238,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 67.72687514084268,
+          "saving_fraction": 0.27622623891833753
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 58.381773408519564,
+          "saving_fraction": 0.24754702185497737
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "SAC",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 213.77529144491092,
+        "cold_Kh": 2.6675423069499526,
+        "cold_duration_s": 52470.0,
+        "cold_max_K": 0.6272022078506438,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 31.41095663221398,
+          "saving_fraction": 0.1281105970606209
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 22.065854899890866,
+          "saving_fraction": 0.0935623628102214
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "SAC",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 245.1780208087403,
+        "cold_Kh": 1.4398390843038247,
+        "cold_duration_s": 27390.0,
+        "cold_max_K": 0.670106064719107,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.008227268384587205,
+          "saving_fraction": 3.3555178763530264e-05
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -9.336874463938528,
+          "saving_fraction": -0.03958967554494472
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "SAC",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 240.17554283199706,
+        "cold_Kh": 1.1904580124090247,
+        "cold_duration_s": 28770.0,
+        "cold_max_K": 0.5600583544573396,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 5.010705245127838,
+          "saving_fraction": 0.020436322527973463
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -4.334396487195278,
+          "saving_fraction": -0.01837845750994762
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "PPO",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 249.71601218114927,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": -4.529764104024366,
+          "saving_fraction": -0.01847478861293844
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": -13.874865836347482,
+          "saving_fraction": -0.058831404321883295
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "PPO",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 239.70246384258456,
+        "cold_Kh": 0.1885964267860672,
+        "cold_duration_s": 4950.0,
+        "cold_max_K": 0.37467522743781956,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 5.483784234540337,
+          "saving_fraction": 0.02236579040442504
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -3.861317497782778,
+          "saving_fraction": -0.016372535317215168
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "PPO",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 236.83118681376268,
+        "cold_Kh": 0.3950957203387697,
+        "cold_duration_s": 11490.0,
+        "cold_max_K": 0.4035895104420888,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 8.355061263362217,
+          "saving_fraction": 0.03407638613048999
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -0.990040468960899,
+          "saving_fraction": -0.004197912384268398
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "TD3",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 203.29578463089533,
+        "cold_Kh": 0.6593734612207532,
+        "cold_duration_s": 9840.0,
+        "cold_max_K": 0.5082157377613612,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 41.890463446229575,
+          "saving_fraction": 0.1708516027091889
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 32.54536171390646,
+          "saving_fraction": 0.1379969620158005
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "TD3",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 201.42706638902632,
+        "cold_Kh": 1.8622858773119142,
+        "cold_duration_s": 53100.0,
+        "cold_max_K": 0.39591961112523677,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 43.75918168809858,
+          "saving_fraction": 0.17847323017208472
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 34.41407995577546,
+          "saving_fraction": 0.14592059311593483
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "TD3",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 212.57004282946917,
+        "cold_Kh": 1.0044376993297575,
+        "cold_duration_s": 32040.0,
+        "cold_max_K": 0.4142136674578296,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 32.61620524765573,
+          "saving_fraction": 0.13302624230946303
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 23.271103515332612,
+          "saving_fraction": 0.09867278834080148
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "residual_SAC",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 250.6333128440559,
+        "cold_Kh": 0.17458565175106647,
+        "cold_duration_s": 12210.0,
+        "cold_max_K": 0.08374192209629427,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -5.447064766930993,
+          "saving_fraction": -0.022216028874578575
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -14.792166499254108,
+          "saving_fraction": -0.06272088958399072
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "residual_SAC",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 217.20044134360134,
+        "cold_Kh": 0.35639614047168494,
+        "cold_duration_s": 6780.0,
+        "cold_max_K": 0.44903413026867156,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 27.98580673352356,
+          "saving_fraction": 0.11414101301766502
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 18.640705001200445,
+          "saving_fraction": 0.07903924014152973
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development084",
+      "family": "residual_SAC",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 227.69951164200273,
+        "cold_Kh": 5.703232332181437,
+        "cold_duration_s": 55560.0,
+        "cold_max_K": 0.9561522313764499,
+        "hot_Kh": 0.0,
+        "hot_duration_s": 0.0,
+        "hot_max_K": 0.0
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 17.486736435122168,
+          "saving_fraction": 0.07132021706870609
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 8.141634702799053,
+          "saving_fraction": 0.03452168897998788
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "guarded_rule",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 8.773144180526916,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.913889917546553,
+        "hot_duration_s": 45975.0,
+        "hot_max_K": 1.0526214781158387
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": 0.0
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -2.193820414622386,
+          "saving_fraction": -0.3334416260210866
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "solar_mpc",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 6.5793237659045305,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.7106799316571095,
+        "hot_duration_s": 44355.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 2.193820414622386,
+          "saving_fraction": 0.2500609096898057
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": 0.0
+        }
+      },
+      "fallback_fraction": 0.2575301204819277
+    },
+    {
+      "episode": "development168",
+      "family": "minimum_heat",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 5.303439497528563,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 5.959623182939908,
+        "hot_duration_s": 61830.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 3.469704682998353,
+          "saving_fraction": 0.3954915833595661
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 1.2758842683759672,
+          "saving_fraction": 0.1939233139715473
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "SAC",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 4.557155610182288,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 5.767365421500635,
+        "hot_duration_s": 47880.0,
+        "hot_max_K": 1.0526223571661717
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 4.215988570344629,
+          "saving_fraction": 0.4805561704665175
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 2.022168155722243,
+          "saving_fraction": 0.30735197532025293
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "SAC",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.280235955566503,
+        "hot_duration_s": 41235.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 8.773144180526916,
+          "saving_fraction": 1.0
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 6.5793237659045305,
+          "saving_fraction": 1.0
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "SAC",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.28023802132094,
+        "hot_duration_s": 41235.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 8.773144180526916,
+          "saving_fraction": 1.0
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 6.5793237659045305,
+          "saving_fraction": 1.0
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "PPO",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 56.758753468386296,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 16.040219407907447,
+        "hot_duration_s": 95670.0,
+        "hot_max_K": 1.635901550174367
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -47.985609287859376,
+          "saving_fraction": -5.469602265783959
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -50.17942970248176,
+          "saving_fraction": -7.626836964996668
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "PPO",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 49.307745300459366,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 16.938819753496908,
+        "hot_duration_s": 91230.0,
+        "hot_max_K": 1.4697424604590879
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -40.53460111993245,
+          "saving_fraction": -4.620304908461898
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -42.72842153455483,
+          "saving_fraction": -6.494348515873728
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "PPO",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 39.434432169076274,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 12.414096750652785,
+        "hot_duration_s": 83070.0,
+        "hot_max_K": 1.301755647635673
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -30.661287988549358,
+          "saving_fraction": -3.4949030082744903
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -32.85510840317174,
+          "saving_fraction": -4.9936907761606095
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "TD3",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 9.115282141402815,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 5.183450027419698,
+        "hot_duration_s": 47880.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -0.342137960875899,
+          "saving_fraction": -0.0389983287445927
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -2.535958375498285,
+          "saving_fraction": -0.3854436209143812
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "TD3",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 2.1156821326392383,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.588253809079244,
+        "hot_duration_s": 43485.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 6.6574620478876785,
+          "saving_fraction": 0.7588456214665595
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 4.463641633265292,
+          "saving_fraction": 0.6784347133662645
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "TD3",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 1.5801104387914788,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 4.45222536029269,
+        "hot_duration_s": 42585.0,
+        "hot_max_K": 1.0526197874413583
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 7.193033741735437,
+          "saving_fraction": 0.8198923434657861
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 4.999213327113051,
+          "saving_fraction": 0.7598369536121705
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "residual_SAC",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 11.458391020339144,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 5.491905209612258,
+        "hot_duration_s": 47880.0,
+        "hot_max_K": 1.0525947434774707
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -2.685246839812228,
+          "saving_fraction": -0.30607576765607786
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -4.879067254434614,
+          "saving_fraction": -0.7415757953300595
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "residual_SAC",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 14.746842380850055,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 5.36526259890471,
+        "hot_duration_s": 51570.0,
+        "hot_max_K": 1.0526037466402158
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -5.973698200323138,
+          "saving_fraction": -0.680907332354403
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -8.167518614945525,
+          "saving_fraction": -1.2413918064454226
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development168",
+      "family": "residual_SAC",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 16.375204357666792,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 6.270528565057207,
+        "hot_duration_s": 47880.0,
+        "hot_max_K": 1.0525988301105258
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -7.602060177139876,
+          "saving_fraction": -0.8665149028342192
+        },
+        "solar_mpc": {
+          "energy_gate_passed": false,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": -9.795880591762263,
+          "saving_fraction": -1.4888886670278518
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "guarded_rule",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69565746214255,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080333109387539
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "solar_mpc",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965509467684,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080341816450243
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.3132530120481928
+    },
+    {
+      "episode": "development189",
+      "family": "minimum_heat",
+      "seed": null,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965603895993,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "SAC",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69624282059766,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080335605334199
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "SAC",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69652473564514,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "SAC",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965603895993,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "PPO",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69857819652685,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080366464277972
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "PPO",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69364738956784,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080317839637587
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "PPO",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6987264831388,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.0803702974400835
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "TD3",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965603895993,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "TD3",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69656106208794,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "TD3",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6965603895993,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.08033941148625
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "residual_SAC",
+      "seed": 11,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69712421948964,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080350818884938
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "residual_SAC",
+      "seed": 23,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.6952017548432,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.0803317770376
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": true,
+          "joint_gate_passed": true,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    },
+    {
+      "episode": "development189",
+      "family": "residual_SAC",
+      "seed": 37,
+      "metrics": {
+        "energy_kWh": 0.0,
+        "cold_Kh": 0.0,
+        "cold_duration_s": 0.0,
+        "cold_max_K": 0.0,
+        "hot_Kh": 292.69723769288703,
+        "hot_duration_s": 405315.0,
+        "hot_max_K": 6.080351632080692
+      },
+      "comparisons": {
+        "guarded_rule": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        },
+        "solar_mpc": {
+          "energy_gate_passed": true,
+          "thermal_nonincrease": false,
+          "joint_gate_passed": false,
+          "saving_kWh": 0.0,
+          "saving_fraction": null
+        }
+      },
+      "fallback_fraction": 0.0
+    }
+  ],
+  "new_model_experiments": 0,
+  "FMU_calls": 0,
+  "heldout_initializations": 0,
+  "scope": "public bundle bytes, all frozen development metrics/gates and display structure; raw native audit requires private archive"
+}

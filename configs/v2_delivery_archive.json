@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "private_output_folders": ["v2-0", "v2-1", "v2-2", "v2-3-numerics", "v2-4", "v2-4-safe", "v2-formal", "v2-io-repair", "v2-plan", "v2-rng", "v2-runner", "v2-sac", "v2-safe-formal", "solar-selected"],
+  "closed_formal_folders": ["v2-formal", "v2-safe-formal", "v2-4", "v2-4-safe"],
+  "excluded_directory_names": ["env", "venv", ".venv", "__pycache__"],
+  "scope": "V2 closed studies and engineering evidence plus the frozen residential guard model; no virtual environments, credentials or running FMU state"
+}

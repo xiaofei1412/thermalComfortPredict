@@ -1,0 +1,22 @@
+name: V2 public archive replay
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  readonly-delivery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.14'
+      - name: Verify all archived methods and seeds with the standard library
+        run: |
+          python -m scripts.verify_v2_delivery
+          python -m unittest discover -s tests -p test_v2_delivery.py -v
