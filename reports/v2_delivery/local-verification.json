@@ -1,0 +1,243 @@
+{
+  "status": "local_independent_encrypted_restore_and_readonly_audits_passed",
+  "verified_at": "2026-10-29T13:17:07.446313+08:00",
+  "source_candidate_commit": "8d985faf880e7c77775cd73657b487430b4dd2e0",
+  "source_archive": {
+    "kind": "source",
+    "source_base_commit": "8d985faf880e7c77775cd73657b487430b4dd2e0",
+    "archive": "thermalComfortPredict-v2-negative-source-rc1.zip",
+    "archive_sha256": "be062347e2bbd57d209d48868a6884b51958270502a89b0e245a254b162b2511",
+    "archive_bytes": 7631395,
+    "file_count": 683,
+    "uncompressed_bytes": 14073585,
+    "read_back_verified": true,
+    "scope": "source workspace, no historical CSV/weights/FMU"
+  },
+  "research_archive": {
+    "kind": "private_v2_closed_evidence",
+    "archive": "research-evidence.zip",
+    "archive_sha256": "54c5498d5e2598d12f1d22e8b1305bbef11fe373e0a0e901edda606ceab96bae",
+    "archive_bytes": 12998167073,
+    "file_count": 8046,
+    "uncompressed_bytes": 19459302293,
+    "source_base_commit": "c1ab3da20441a4bee75d19de9763ef9440e80a26",
+    "read_back_verified": true,
+    "new_model_experiments": 0,
+    "FMU_calls": 0,
+    "scope": "private closed V2 evidence; not an off-site verification, redistribution license or live simulator checkpoint"
+  },
+  "trusted_backup_receipt_sha256": "987462c7cd4d6d8a3f8a901d6a43382a5f83535a48b70a1d8badacd38bb2b212",
+  "encrypted_restore": {
+    "encrypted_sha256_verified": true,
+    "decrypted_files_verified": 9,
+    "source_files_restored": 683,
+    "research_files_restored": 8046,
+    "upstream_files_restored": 2,
+    "restored_source": "outputs\\v2-delivery\\local-restore\\restored-source",
+    "new_research_experiments": 0,
+    "remote_provenance": "caller must document actual remote download; local restore alone is not off-site verification",
+    "runtime_members_restored": 35,
+    "wheel_count": 34,
+    "scope": "local independent restore only; actual remote download must be documented separately"
+  },
+  "runtime": {
+    "interpreter": "D:\\thermalComfortPredict\\outputs\\v2-delivery\\local-restore\\restored-source\\.venv-v2\\Scripts\\python.exe",
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "restored_import": "D:\\thermalComfortPredict\\outputs\\v2-delivery\\local-restore\\restored-source\\thermal_comfort\\__init__.py",
+    "packages": 34,
+    "exact_original_freeze_equal": true
+  },
+  "public_verification": {
+    "status": "public_delivery_verified",
+    "cases": 45,
+    "frames": 30285,
+    "full_precision_metric_rows": 45,
+    "active_joint_passed": {
+      "SAC": 2,
+      "PPO": 0,
+      "TD3": 2,
+      "residual_SAC": 0
+    },
+    "active_combinations_per_RL_method": 6,
+    "all_dates_qualified_seeds": {
+      "SAC": [],
+      "PPO": [],
+      "TD3": [],
+      "residual_SAC": []
+    },
+    "new_model_experiments": 0,
+    "FMU_calls": 0,
+    "heldout_initializations": 0,
+    "scope": "public bundle bytes, all frozen development metrics/gates and display structure; raw native audit requires private archive"
+  },
+  "decryption_prerequisite": {
+    "py7zr": "1.1.4",
+    "acceptance_environment": "preexisting optional V1 backup-venv",
+    "interpreter_or_decryption_installer_in_archive": false,
+    "offline_scope": "numerical verification after decryption; bootstrap needs a preinstalled tool or network"
+  },
+  "tests": {
+    "original_tree_fresh_environment": {
+      "run": 366,
+      "skipped": 1,
+      "seconds": 43.14
+    },
+    "restored_source_fresh_offline_environment": {
+      "run": 105,
+      "skipped": 1,
+      "seconds": 7.034
+    },
+    "final_public_closeout": {
+      "run": 7,
+      "skipped": 1,
+      "seconds": 0.763,
+      "ResourceWarning_as_error": true,
+      "change": "explicit close of HTTPError response in new tests only"
+    },
+    "skip_reason": "Windows symlink creation privilege unavailable; Linux public CI also exercises the delivery tests"
+  },
+  "native_audits": {
+    "baselines": {
+      "summary": {
+        "status": "passed",
+        "calls": {
+          "initialize": 15,
+          "advance": 6192,
+          "stop": 15,
+          "forecast": 6192
+        },
+        "holdout_initializations": 0,
+        "training_runs": 0,
+        "frozen_action_max_absolute_difference_K": 0.0,
+        "official_kpi_max_absolute_difference": 2.2737367544323206e-13,
+        "stage_gates_recomputed": true,
+        "paired_prefix_and_exogenous_equal": true,
+        "source_result_sha256": "e161dc8b1bed3c02af97067b575fd6dd1d8adf9c2e1ddb39f94dfb59fe3b4066",
+        "runs": 15,
+        "native_points_checked": 185775
+      },
+      "equal_to_original_frozen_receipt": true,
+      "fresh_receipt": "outputs/v2-delivery/local-restore/restored-source/outputs/v2-delivery/verification/baselines.json",
+      "fresh_sha256": "18ca2cfcfb5edaa654175ab94eeb916ba94bf890403eea2849ecab590ce5185b",
+      "original_receipt": "reports/v2_2/archive-audit.json",
+      "original_sha256": "9d8be36b29b4e932b291b6b126877807ca5487bddfce8d4e16162a09d7b3ed9d"
+    },
+    "main-audit": {
+      "summary": {
+        "status": "closed_repaired_trial_audit_passed",
+        "ledger_counts": {
+          "select": 675,
+          "initialize": 675,
+          "advance": 453600
+        },
+        "successful_service_calls": {
+          "select": 675,
+          "initialize": 675,
+          "advance": 453600,
+          "stop": 675
+        },
+        "archived_transitions_checked": 453600,
+        "native_points_checked": 13608675,
+        "forecast_snapshots_checked": 453600,
+        "complete_episode_KPI_archives": 675,
+        "max_official_KPI_difference": 4.263256414560601e-14,
+        "final_candidates": 9,
+        "heldout_initializations": 0,
+        "additional_FMU_calls": 0,
+        "best_seed_selected": false
+      },
+      "equal_to_original_frozen_receipt": true,
+      "fresh_receipt": "outputs/v2-delivery/local-restore/restored-source/outputs/v2-delivery/verification/main-audit.json",
+      "fresh_sha256": "f5128de7dfecf67e76f1c049ebac1bf1f02569ce106a82b32d364ede85233122",
+      "original_receipt": "reports/v2_safe_formal/archive-audit.json",
+      "original_sha256": "f5128de7dfecf67e76f1c049ebac1bf1f02569ce106a82b32d364ede85233122"
+    },
+    "residual-audit": {
+      "summary": {
+        "status": "closed_residual_action_and_native_audit_passed",
+        "training_action_mapping_checked": 143424,
+        "development_action_mapping_checked": 5976,
+        "development_rule_replay_steps": 6048,
+        "additional_FMU_calls": 0,
+        "heldout_initializations": 0,
+        "base_audit": {
+          "status": "closed_repaired_trial_audit_passed",
+          "ledger_counts": {
+            "select": 225,
+            "initialize": 225,
+            "advance": 151200
+          },
+          "successful_service_calls": {
+            "select": 225,
+            "initialize": 225,
+            "advance": 151200,
+            "stop": 225
+          },
+          "archived_transitions_checked": 151200,
+          "native_points_checked": 4536225,
+          "forecast_snapshots_checked": 151200,
+          "complete_episode_KPI_archives": 225,
+          "max_official_KPI_difference": 5.684341886080802e-14,
+          "final_candidates": 3,
+          "heldout_initializations": 0,
+          "additional_FMU_calls": 0,
+          "best_seed_selected": false
+        }
+      },
+      "equal_to_original_frozen_receipt": true,
+      "fresh_receipt": "outputs/v2-delivery/local-restore/restored-source/outputs/v2-delivery/verification/residual-audit.json",
+      "fresh_sha256": "68e7ddfe34c1236a22f59e7b86e7a554e7081571ed93be8b7e402fa203c65269",
+      "original_receipt": "reports/v2_4_safe/archive-audit.json",
+      "original_sha256": "68e7ddfe34c1236a22f59e7b86e7a554e7081571ed93be8b7e402fa203c65269"
+    }
+  },
+  "original_preservation": {
+    "original_files_checked": 8046,
+    "all_original_bytes_unchanged": true,
+    "new_FMU_calls": 0
+  },
+  "source_candidate_ci": [
+    {
+      "id": 40820405952,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40820405952",
+      "head_sha": "8d985faf880e7c77775cd73657b487430b4dd2e0"
+    },
+    {
+      "id": 40820405933,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40820405933",
+      "head_sha": "8d985faf880e7c77775cd73657b487430b4dd2e0"
+    },
+    {
+      "id": 40820405919,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/xiaofei1412/thermalComfortPredict/actions/runs/40820405919",
+      "head_sha": "8d985faf880e7c77775cd73657b487430b4dd2e0"
+    }
+  ],
+  "log_sha256": {
+    "full-tests.log": "b7e0d1e871890cef910ea6cc685848a02a269a1c1101f9c91d36c08e77bd1acc",
+    "restored-install.log": "9a231156d0cdda226ba4418a3555b999a44eab3cada58c69a3598230e51195e1",
+    "restored-pip-check.log": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+    "restored-tests.log": "4861ba64bc7d66482a2c219288a6fc594bed1fc582d3fee048bae55b2ad29be6",
+    "restored-runtime.json": "f82486c4ff9b98509ba9c07f904c6d192afbca1a6f284d20f0fb4f3ec7c48856",
+    "local-restore.log": "b31f3c7823a856e9941d0d651ebf20838af62a606f731c5bf6186f5be0c18519",
+    "restored-baselines.log": "6c964e870820cc3e5cd266b4db869895c3e279d41c4bee6898cc7ef75a4662b6",
+    "restored-main-audit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restored-residual-audit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final-public-tests.log": "5edea4b9e082b59ca185a4861e4d68f1fc4a6537aed06fabf564726caf1610e4"
+  },
+  "new_model_experiments": 0,
+  "additional_FMU_calls": 0,
+  "heldout_initializations": 0,
+  "offsite_verification": {
+    "status": "open_V2-R01",
+    "actual_upload_or_remote_download_performed_this_round": false,
+    "source": "local encrypted archive; never represented as a remote download"
+  }
+}

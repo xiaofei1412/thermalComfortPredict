@@ -6,12 +6,16 @@
 
 ## 制作和本机恢复
 
+当前[本机独立恢复及只读审计已通过](../reports/v2_delivery/REPORT.md)，[可信收据](../reports/v2_delivery/backup-receipt.json)记录新包13,278,724,878字节。收据的prepared状态保留制作时事实；恢复结论由[独立证明](../reports/v2_delivery/local-verification.json)另记。V2-R01仍待实际异地传输。
+
 `scripts.package_v2_evidence`逐文件复制、读回校验主档案；`scripts.build_v2_backup`按已审查源码ZIP构建7z AES-256并加密文件名。密钥只放本机独立key目录并限制当前用户访问，不写入源码、收据、上传目录或聊天。大ZIP用同卷临时硬链接进入加密载荷，不代表异地副本；恢复仍会从加密字节解密到全新目录。
 
 发布目录：`outputs/v2-delivery/upload`，只包含`.7z`、`backup-receipt.json`及上传说明。可信收据另存`reports/v2_delivery/backup-receipt.json`并提交Git。密钥位于`outputs/v2-delivery/key/RECOVERY_KEY_V2.txt`；请另存到自己可靠的离线位置，同机密钥不能抵御整机丢失。
 
+新电脑先从本仓库取得恢复脚本，并已有Python3.14。解密需要可选备份依赖，本机验收使用`py7zr==1.1.4`；可另建环境执行`py -3.14 -m venv .venv-backup`、`./.venv-backup/Scripts/python.exe -m pip install py7zr==1.1.4`，再用该解释器执行下方恢复命令。首次安装解密工具需要联网或另备安装介质；34个精确wheel在加密包内，只覆盖解密后的数值复核，不含解释器或解密工具。不是整机离线恢复镜像。
+
 ```powershell
-# 可选备份环境沿用V1已安装py7zr的outputs/release-final/backup-venv；不加到演示运行时。
+# 本机验收沿用V1已安装py7zr1.1.4的outputs/release-final/backup-venv；不加到演示运行时。
 outputs/release-final/backup-venv/Scripts/python.exe -m scripts.restore_v2_backup --archive outputs/v2-delivery/upload/thermalComfortPredict-V2-private-20261029.7z --receipt reports/v2_delivery/backup-receipt.json --key-file outputs/v2-delivery/key/RECOVERY_KEY_V2.txt --destination outputs/v2-delivery/local-restore
 ```
 

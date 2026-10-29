@@ -19,4 +19,4 @@ jobs:
       - name: Verify all archived methods and seeds with the standard library
         run: |
           python -m scripts.verify_v2_delivery
-          python -m unittest discover -s tests -p test_v2_delivery.py -v
+          python -W error::ResourceWarning -m unittest discover -s tests -p test_v2_delivery.py -v

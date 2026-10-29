@@ -51,6 +51,7 @@ class PublicV2DeliveryTests(unittest.TestCase):
                 with self.assertRaises(urllib.error.HTTPError) as error:
                     urllib.request.urlopen(urllib.request.Request(base+path,method=method))
                 self.assertEqual(error.exception.code,405 if method=='POST' else 404)
+                error.exception.close()
         finally:
             http.shutdown()
             http.server_close()

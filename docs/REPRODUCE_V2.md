@@ -20,6 +20,8 @@ py -3.14 -m scripts.serve_v2_demo --port 8772
 
 ## 固定环境与独立恢复
 
+2026-10-29已在全新恢复源码目录中用包内wheel重建独立环境：34项版本相等、pip check/105项V2专项通过（1项Windows符号链接权限跳过），三组完整原生审计与原封存收据完全一致。源码导入位置和字节摘要见[验收证明](../reports/v2_delivery/local-verification.json)。这是本机恢复；新增资产异地项仍待V2-R01。
+
 Windows amd64 / Python3.14原V2环境的34项实际包版本和wheel SHA保存在`requirements/v2-windows-py314.lock.txt`。私有归档包含这些wheel；无需把venv或editable项目路径打包。Python解释器本身不在包内，需已有受支持解释器。其他平台公开标准库回放可用，完整数值复核以验收平台为准，不承诺跨版本逐字节重训一致。
 
 使用[备份说明](BACKUP_V2.md)从可信收据恢复到新目录。以下命令在恢复后的`restored-source`根目录执行，解释器路径指向新建独立环境：
