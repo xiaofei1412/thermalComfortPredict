@@ -1,26 +1,34 @@
-# thermalComfortPredict
+[![English](docs/assets/readme-english.svg)](README.md)
+[![简体中文](docs/assets/readme-chinese.svg)](README.zh-CN.md)
 
-楼宇热环境预测与受约束控制研究：从旧热舒适预测实验，重建可复现的建模、控制与强化学习对照流程。
+# HBTC · Hybrid Building Thermal Control
 
-[项目展示](https://xiaofei1412.github.io/thermalComfortPredict/) · [交互回放](https://xiaofei1412.github.io/thermalComfortPredict/replay/) · [项目记录](PROJECT.md) · [最终交付范围](docs/FINAL_STATUS.md)
+**Can a building use less heating electricity without increasing indoor temperature violations?**
 
-## 项目目标
+HBTC studies heating control in a single-zone home simulated with BOPTEST. A building stores heat, so a setpoint change now can affect indoor temperature hours later. Outdoor weather and solar gains also change when heating is needed. The project compares model predictive control and reinforcement learning as two ways to make that decision.
 
-在没有自有楼宇硬件的条件下，用公开数据和BOPTEST仿真研究：如何结合人员热需求、建筑热惯性与控制约束，在温度越界不增加时降低耗电，并明确方法的适用边界。
+The work grew from predicting occupants’ reported thermal sensation and preferences. Those predictions address how people feel or what they want. The control study measures electricity use and how far and how long operative temperature falls outside a scheduled band. [Project overview](PROJECT.md)
 
-## 项目内容
+[Project site](https://xiaofei1412.github.io/thermalComfortPredict/) · [Interactive replay](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
 
-- **预测基线**：区分热感觉与冷热偏好，重建传统学习、神经网络及物理参照，按来源分组评估。
-- **动态建模与MPC**：RC灰箱结合学习残差，预测温度与能耗，加入误差裕量、动作约束和规则回退。
-- **强化学习对照**：固定预算与三随机种子，比较SAC、PPO、TD3及规则残差SAC，保留全部正负结果。
-- **可交互工作台**：确定性处理人员冷热意图、多人冲突、撤销与过期；公开页面提供45条封存开发轨迹的同步房间回放。
+## Model predictive control · Plan with a thermal model
 
-[![两代控制的房间回放](reports/v2_delivery/demo.png)](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
+A gray-box model uses thermal resistance and capacitance to represent heat flow and storage. A learned residual corrects the model’s predictions of temperature and power. At each step, MPC forecasts the effects of candidate heating plans, checks them against temperature margins and setpoint limits, and selects a plan using predicted electricity use and setpoint movement. It applies the first action and plans again with new measurements.
 
-## 主要结果
+The controller can reduce heating early when it predicts that stored heat and solar gains will keep the room warm enough. A recovery rule provides a fallback when conditions fall outside the model’s supported range or no feasible plan is found.
 
-第一版MPC在9组固定住宅留出仿真对照中节电 **1.62%～9.49%**，温度越界未增加。第二版RL仅有局部开发收益，尚无稳定超越规则/MPC的合格方案，研究按预设停止条件结项。
+Across nine held-out date and forecast combinations in the simulated home, MPC used **1.62%–9.49% less electricity** than the recovery rule, with no increase in temperature violations. [MPC study](reports/solar_mpc/REPORT.md)
 
-[第一版研究结果](reports/DELIVERY_V1.md) · [两代对照](DELIVERY_V2.md) · [策略边界](docs/V2_POLICY_CARD.md) · [运行与复现](docs/REPRODUCE_V2.md)
+## Reinforcement learning · Learn a setpoint policy
 
-本项目属于有限范围的软件仿真研究；操作温度越界与真实人体舒适分别解释，尚未验证真实楼宇闭环、真实同步数字孪生或Sim-to-Real。公开仓库保留源码、配置、小样例和证据；完整历史数据、模型和轨迹由所有者私有归档。自有代码采用[MIT](LICENSE)，[第三方资产与许可例外](LICENSE_SCOPE.md)独立保留。
+An RL policy learns from repeated simulated heating episodes. The reward penalizes electricity use, temperature violations, and setpoint changes. During evaluation, the policy maps observations and available forecasts to setpoint adjustments. HBTC compares **SAC, PPO, and TD3**, which learn adjustments directly, and **rule-anchored residual SAC**, which learns a bounded correction to a rule-based action. The policies use a fixed training budget and three seeds per method. The comparison aligns forecast access, setpoint limits, and evaluation conditions with the rule and MPC references.
+
+Some SAC and TD3 policies saved electricity in warmer development windows while meeting the temperature criteria. Performance varied by weather and seed. No policy consistently met both criteria against the rule and MPC references, so the RL comparison concluded at the development stage. [RL comparison](DELIVERY_V2.md) · [Policy scope](docs/V2_POLICY_CARD.md)
+
+## Explore the controls
+
+The public replay shows the recovery rule, MPC, and a selected RL policy responding to the same weather. Switch the evaluation window or training seed to compare heating setpoints, temperature, and electricity across 45 archived development trajectories. The separate local workbench lets users submit heating preferences and explore how rules resolve conflicting requests. [Replay guide](docs/DEMO_V2.md) · [Workbench guide](docs/workbench.md)
+
+[![Side-by-side room replay for rule-based control, MPC, and reinforcement learning](reports/v2_delivery/demo.png)](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
+
+[Run and reproduce](docs/REPRODUCE_V2.md) · [MIT license](LICENSE) · [Third-party asset terms](LICENSE_SCOPE.md)
