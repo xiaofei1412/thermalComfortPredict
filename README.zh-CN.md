@@ -9,7 +9,7 @@ HBTC（Hybrid Building Thermal Control）以 BOPTEST 单热区住宅仿真为对
 
 项目起于对住户热感觉和冷热偏好的预测。这部分研究关注住户感到冷暖的程度和希望怎样调整。控制研究则衡量耗电，以及操作温度偏离预设区间的幅度和时长。[项目总览](PROJECT.md)
 
-[项目展示](https://xiaofei1412.github.io/thermalComfortPredict/) · [交互回放](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
+[项目展示](https://xiaofei1412.github.io/thermalComfortPredict/zh-CN/) · [交互回放](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
 
 ## 模型预测控制（MPC） · 用热模型提前规划
 

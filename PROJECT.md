@@ -13,7 +13,7 @@
 
 ## 当前状态
 
-2026-11-04，研究以 **HBTC（Hybrid Building Thermal Control）** 展示。GitHub 默认首页为英文版，顶部提供简体中文切换。两版按研究问题、MPC 和强化学习的决策方式、仿真结论组织。`v2.0.0` 的发布锁对应标签中的历史首页。[英文 README](README.md) · [中文 README](README.zh-CN.md)
+2026-11-04，研究以 **HBTC（Hybrid Building Thermal Control）** 展示。GitHub README 和 Pages 均默认英文，顶部提供简体中文切换。两版按研究问题、MPC 和强化学习的决策方式、仿真结论组织，并链接同一组 45 条交互回放轨迹。`v2.0.0` 的发布锁对应标签中的历史展示内容。[英文 README](README.md) · [中文 README](README.zh-CN.md) · [英文展示页](https://xiaofei1412.github.io/thermalComfortPredict/) · [中文展示页](https://xiaofei1412.github.io/thermalComfortPredict/zh-CN/)
 
 **V2-7本机交付验收完成，V2-R01异地验收待办。** [两代对照](DELIVERY_V2.md)、[策略边界](docs/V2_POLICY_CARD.md)、[45轨迹只读房间回放](docs/DEMO_V2.md)和[复现/私有归档](docs/REPRODUCE_V2.md)已整理。加密包在全新目录恢复、34项依赖离线安装、105项V2专项及三组完整原生审计通过，结果与原封存收据一致；原树新环境366项回归通过。[交付验收](reports/v2_delivery/REPORT.md)保留范围和证据。新增V2资产仍需所有者实际百度网盘上传/回下载后认证，不能沿用V1认证。本轮0新模型实验/FMUs/留出，V2-5/6不进入，第一版规则工作台保持。
 

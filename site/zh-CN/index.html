@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HBTC 在单热区住宅仿真中比较模型预测控制和强化学习，研究如何在控制温度越界的同时降低供暖用电。">
+  <title>HBTC · 楼宇热环境混合控制</title>
+  <link rel="stylesheet" href="../assets/showcase.css">
+</head>
+<body>
+  <nav class="topbar" aria-label="站点导航">
+    <a class="wordmark" href="./">HBTC</a>
+    <div class="language-switch" aria-label="语言">
+      <a href="../" hreflang="en" lang="en">English</a>
+      <a href="./" hreflang="zh-CN" lang="zh-CN" aria-current="page">简体中文</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">楼宇供暖研究 · BOPTEST 仿真</p>
+        <h1>楼宇热环境混合控制</h1>
+        <p class="question">如何在不增加室内温度越界的前提下，降低供暖用电？</p>
+        <p>HBTC（Hybrid Building Thermal Control）以单热区住宅仿真为对象。建筑可以蓄热，此刻调整供暖设定值，可能数小时后才充分反映在室温上。天气和太阳辐射也会改变供暖需求。</p>
+        <div class="actions">
+          <a class="button primary" href="../replay/">打开交互回放 <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://github.com/xiaofei1412/thermalComfortPredict/blob/main/README.zh-CN.md">查看 GitHub 项目</a>
+        </div>
+      </div>
+      <figure>
+        <a href="../replay/"><img src="../assets/demo.png" alt="规则控制、MPC 和强化学习策略的房间对照回放"></a>
+        <figcaption>45 条封存开发轨迹 · 可切换算法与随机种子</figcaption>
+      </figure>
+    </header>
+
+    <section class="approaches" aria-labelledby="approaches">
+      <h2 id="approaches">两条供暖控制路径</h2>
+      <div class="approach-grid">
+        <article class="card">
+          <p class="eyebrow">01 · 用热模型提前规划</p>
+          <h3>模型预测控制（MPC）</h3>
+          <p>热阻—热容灰箱模型描述传热和蓄热，学习残差修正温度与功率预测。MPC 根据天气预报评估候选供暖计划，按温度裕量和设定值限制筛选方案，执行首步后再重新规划。</p>
+          <p>当蓄热和太阳辐射足以让房间保持温暖时，MPC 可以提前减少供暖。遇到模型适用范围外的工况或找不到可行方案时，控制器回退到恢复规则。</p>
+          <div class="finding">
+            <strong>供暖节电 1.62%～9.49%</strong>
+            <p>在该住宅仿真的九组留出日期与预报组合中，MPC 相对恢复规则节电，温度越界未增加。</p>
+            <a href="https://github.com/xiaofei1412/thermalComfortPredict/blob/main/reports/solar_mpc/REPORT.md">查看 MPC 研究 <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="eyebrow">02 · 从仿真交互中学习调节策略</p>
+          <h3>强化学习（RL）</h3>
+          <p>策略通过反复的供暖仿真学习设定值调整，奖励对耗电、温度越界和设定值变化施加惩罚。SAC、PPO、TD3 直接学习调整量，规则残差 SAC 则在规则动作上学习有界修正。</p>
+          <p>每种方法使用三个随机种子和固定训练预算。评估时，学习策略、MPC 与恢复规则使用共同的预报权限和设定值限制。</p>
+          <div class="finding">
+            <strong>部分开发窗口获得节电收益</strong>
+            <p>部分 SAC 和 TD3 策略在较暖窗口节电并满足温度指标。收益随天气和种子变化，研究在开发评估阶段收尾。</p>
+            <a href="https://github.com/xiaofei1412/thermalComfortPredict/blob/main/DELIVERY_V2.md">查看强化学习对照 <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="replay-callout" aria-labelledby="replay">
+      <div>
+        <h2 id="replay">观察控制策略如何响应</h2>
+        <p>并列查看恢复规则、MPC 和所选强化学习策略在同一天气下的表现。切换评估窗口或训练种子，比较供暖设定值、操作温度和耗电随时间的变化。</p>
+      </div>
+      <a class="button primary" href="../replay/">打开交互回放 <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>HBTC · 单热区住宅仿真</span>
+    <a href="https://github.com/xiaofei1412/thermalComfortPredict/blob/main/README.zh-CN.md">项目文档</a>
+  </footer>
+</body>
+</html>

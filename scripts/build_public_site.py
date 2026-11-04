@@ -13,16 +13,19 @@ def build(destination, root=ROOT):
     if source.count("fetch('/data.json')") != 1:
         raise ValueError('Archived replay entry changed; review the relative data route')
     destination.mkdir(parents=True, exist_ok=False)
+    (destination / 'zh-CN').mkdir()
     (destination / 'replay').mkdir()
     (destination / 'assets').mkdir()
     (destination / 'index.html').write_bytes((root / 'site/index.html').read_bytes())
+    (destination / 'zh-CN/index.html').write_bytes((root / 'site/zh-CN/index.html').read_bytes())
+    (destination / 'assets/showcase.css').write_bytes((root / 'site/showcase.css').read_bytes())
     (destination / 'replay/index.html').write_text(
         source.replace("fetch('/data.json')", "fetch('./data.json')"), encoding='utf-8', newline='\n')
     (destination / 'replay/data.json').write_bytes(gzip.decompress((root / 'examples/v2/replay.json.gz').read_bytes()))
     (destination / 'assets/demo.png').write_bytes((root / 'reports/v2_delivery/demo.png').read_bytes())
     (destination / '.nojekyll').write_bytes(b'')
-    return {'cases': result['cases'], 'published_files': 5, 'FMU_calls': 0,
-            'scope': 'public archived replay and project overview only'}
+    return {'cases': result['cases'], 'published_files': 7, 'FMU_calls': 0,
+            'scope': 'public archived replay and bilingual project overview only'}
 
 
 if __name__ == '__main__':
