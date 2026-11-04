@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HBTC · Interactive replay</title>
+  <link rel="stylesheet" href="../assets/showcase.css">
+  <link rel="stylesheet" href="./replay.css">
+  <script type="module" src="./replay.js"></script>
+</head>
+<body class="replay-page">
+  <header class="replay-header">
+    <a id="home" class="wordmark" href="../" data-aria="home">HBTC</a>
+    <span class="archive" data-copy="archive"></span>
+    <nav class="language-switch" data-aria="language">
+      <a href="./" lang="en" hreflang="en" aria-current="page">English</a>
+      <a href="?lang=zh-CN" lang="zh-CN" hreflang="zh-CN">简体中文</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="replay-intro">
+      <div>
+        <p class="eyebrow" data-copy="eyebrow"></p>
+        <h1 data-copy="headline"></h1>
+        <p data-copy="intro"></p>
+        <p class="hint" data-copy="history"></p>
+      </div>
+      <div class="verdict">
+        <strong data-copy="verdict"></strong>
+        <div id="counts" class="hint" role="status"></div>
+        <div class="hint" data-copy="joint"></div>
+      </div>
+    </section>
+    <p id="error" role="alert" hidden></p>
+
+    <div id="player" class="loading" inert aria-busy="true">
+      <section class="toolbar" data-aria="selection">
+        <label><span data-copy="episode"></span>
+          <select id="episode">
+            <option value="development084" data-copy="winter"></option>
+            <option value="development168" data-copy="warm"></option>
+            <option value="development189" data-copy="zeroLoad"></option>
+          </select>
+        </label>
+        <label><span data-copy="method"></span>
+          <select id="family">
+            <option value="SAC" data-copy="sac"></option>
+            <option value="PPO" data-copy="ppo"></option>
+            <option value="TD3" data-copy="td3"></option>
+            <option value="residual_SAC" data-copy="residual"></option>
+            <option value="minimum_heat" data-copy="minimum"></option>
+          </select>
+        </label>
+        <label><span data-copy="seed"></span>
+          <select id="seed"><option>11</option><option>23</option><option>37</option></select>
+        </label>
+        <div class="clock"><strong id="clock"></strong><span id="phase" class="hint"></span></div>
+        <span id="weather" class="hint"></span>
+      </section>
+      <div id="rooms" class="rooms"></div>
+
+      <section class="transport" data-aria="transport">
+        <button id="play" class="button primary" type="button"></button>
+        <button id="restart" class="button" type="button" data-copy="restart"></button>
+        <div class="scrub">
+          <input id="timeline" type="range" min="0" max="672" value="0" step="1" data-aria="timeline">
+          <div class="step-line"><span id="start-hour"></span><span id="position"></span><span id="end-hour"></span></div>
+        </div>
+        <label><span data-copy="speed"></span>
+          <select id="speed">
+            <option value="1" data-copy="fifteenMinutes"></option>
+            <option value="4" data-copy="oneHour" selected></option>
+            <option value="16" data-copy="fourHours"></option>
+          </select>
+        </label>
+        <button id="cold" class="button" type="button" data-copy="coldJump"></button>
+        <span id="interval-note" class="hint" role="status"></span>
+      </section>
+
+      <section class="chartbox">
+        <div class="chart-head">
+          <strong data-copy="chartHeading"></strong>
+          <div class="legend">
+            <span><i class="rule-line"></i><span data-copy="ruleLegend"></span></span>
+            <span><i class="mpc-line"></i><span data-copy="mpcLegend"></span></span>
+            <span><i class="comparison-line"></i><span data-copy="comparisonLegend"></span></span>
+            <span data-copy="bandLegend"></span>
+          </div>
+        </div>
+        <svg id="chart" class="chart" viewBox="0 0 1100 210" role="img" data-aria="chartAria"></svg>
+        <p class="hint" data-copy="chartHint"></p>
+      </section>
+    </div>
+
+    <details>
+      <summary data-copy="scope"></summary>
+      <ul>
+        <li data-copy="scope1"></li><li data-copy="scope2"></li><li data-copy="scope3"></li>
+        <li data-copy="scope4"></li><li data-copy="scope5"></li>
+      </ul>
+    </details>
+    <p class="hint replay-footnote"><span data-copy="footer"></span>
+      <a href="https://github.com/xiaofei1412/thermalComfortPredict/blob/main/DELIVERY_V2.md" target="_blank" rel="noreferrer" data-copy="report"></a>
+    </p>
+  </main>
+</body>
+</html>

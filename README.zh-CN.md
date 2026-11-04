@@ -9,7 +9,7 @@ HBTC（Hybrid Building Thermal Control）以 BOPTEST 单热区住宅仿真为对
 
 项目起于对住户热感觉和冷热偏好的预测。这部分研究关注住户感到冷暖的程度和希望怎样调整。控制研究则衡量耗电，以及操作温度偏离预设区间的幅度和时长。[项目总览](PROJECT.md)
 
-[项目展示](https://xiaofei1412.github.io/thermalComfortPredict/zh-CN/) · [交互回放](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
+[项目展示](https://xiaofei1412.github.io/thermalComfortPredict/zh-CN/) · [交互回放](https://xiaofei1412.github.io/thermalComfortPredict/replay/?lang=zh-CN)
 
 ## 模型预测控制（MPC） · 用热模型提前规划
 
@@ -29,6 +29,6 @@ HBTC（Hybrid Building Thermal Control）以 BOPTEST 单热区住宅仿真为对
 
 公开回放并列展示恢复规则、MPC 和所选强化学习策略在同一天气下的响应。可切换评估窗口和训练种子，在 45 条封存开发轨迹中比较供暖设定值、温度和耗电。项目也提供本地工作台，可提交冷热偏好并查看规则如何处理相互冲突的请求。[回放说明](docs/DEMO_V2.md) · [工作台说明](docs/workbench.md)
 
-[![规则控制、MPC 和强化学习的房间对照回放](reports/v2_delivery/demo.png)](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
+[![规则控制、MPC 和强化学习的房间对照回放](site/replay-preview.png)](https://xiaofei1412.github.io/thermalComfortPredict/replay/?lang=zh-CN)
 
 [运行与复现](docs/REPRODUCE_V2.md) · [MIT 许可证](LICENSE) · [第三方资产许可说明](LICENSE_SCOPE.md)

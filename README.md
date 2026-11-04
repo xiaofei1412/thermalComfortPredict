@@ -29,6 +29,6 @@ Some SAC and TD3 policies saved electricity in warmer development windows while 
 
 The public replay shows the recovery rule, MPC, and a selected RL policy responding to the same weather. Switch the evaluation window or training seed to compare heating setpoints, temperature, and electricity across 45 archived development trajectories. The separate local workbench lets users submit heating preferences and explore how rules resolve conflicting requests. [Replay guide](docs/DEMO_V2.md) · [Workbench guide](docs/workbench.md)
 
-[![Side-by-side room replay for rule-based control, MPC, and reinforcement learning](reports/v2_delivery/demo.png)](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
+[![Side-by-side room replay for rule-based control, MPC, and reinforcement learning](site/replay-preview.png)](https://xiaofei1412.github.io/thermalComfortPredict/replay/)
 
 [Run and reproduce](docs/REPRODUCE_V2.md) · [MIT license](LICENSE) · [Third-party asset terms](LICENSE_SCOPE.md)
